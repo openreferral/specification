@@ -10,7 +10,7 @@ If you're not familiar with git, there are number of guides. Here's a [one of th
 
 ### The specification in other formats
 
-A commentable copy of the document is in [Google Docs](https://docs.google.com/document/d/1SO_DbHPb-LNW_tddfLEGAyiw9HHv74Dy2eRcq8XL_XU/edit?usp=sharing)
+A commentable copy of the document is in [Google Docs](https://docs.google.com/file/d/0B3hyYXEFZTPQb3hKMERqdWNodXM/edit?usp=sharing)
 
 Word, PDF, and HTML versions of the document are available.
 
