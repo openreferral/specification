@@ -1,6 +1,6 @@
 # HSDS
 
-Human Services Data Specification defines content that provides the minimum set of data for Information and Retrieval (I&R) applications as well as specialized service directory applications.
+Human Services Data Specification defines content that provides the minimum set of data for Information and Retrieval (I&R) applications as well as specialized service directory applications. Read the [spec here](https://github.com/codeforamerica/hsd_specification/blob/master/HSD_specification.mdown).
 
 ## A note on contributing to the specification
 
@@ -12,7 +12,7 @@ If you're not familiar with git, there are number of guides. Here's a [one of th
 
 A commentable copy of the document is in [Google Docs](https://docs.google.com/file/d/0B3hyYXEFZTPQb3hKMERqdWNodXM/edit?usp=sharing)
 
-Word, PDF, and HTML versions of the document are available.
+[Word](https://github.com/codeforamerica/hsd_specification/blob/master/HSD_specification.docx), [PDF](https://github.com/codeforamerica/hsd_specification/blob/master/HSD_specification.pdf), and [HTML](https://github.com/codeforamerica/hsd_specification/blob/master/HSD_specification.html) versions of the document are available.
 
 ## License
 
