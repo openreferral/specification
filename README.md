@@ -1,4 +1,4 @@
-# HSDS
+# OpenReferral 
 
 Human Services Data Specification defines content that provides the minimum set of data for Information and Retrieval (I&R) applications as well as specialized service directory applications. Read the [spec here](https://github.com/codeforamerica/hsd_specification/blob/master/HSD_specification.mdown).
 
