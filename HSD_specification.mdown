@@ -399,130 +399,115 @@ Mapping JSON objects to a flat file format requires normalization of data. This 
 
 
 ### Organizations 
-organization.csv
+organizations.csv
 
 | HSD Name  | Data Type | Required | Details |
 |:----------|:----------|:----------|:---------|
-| organization_id | string | required | Organization_id is an ID that uniquely identifies an organization|
-| organization_name | string | required | The name of the organization |
-| FEIN | string | required | Federal Employe Identification Numner |
-| AKA | string | optional | Alias or Also Known As |
+| id | string | required | ID that uniquely identifies an organization |
+| name | string | required | The name of the organization |
+| fein | string | optional | Federal Employe Identification Numner |
+| aka | string | optional | Alias or Also Known As |
+| urls | comma-separated strings | optional | The organization's website URLs. Must include "http://" or "https://" |
 
 ### Locations
-location.csv
+locations.csv
 
 | HSD Name  | Data Type | Required | Details |
 |:----------|:----------|:---------|:--------|
-| organization_id | string | required | An ID that uniquely identifies an organization |
-| location_id | string | required | An ID that uniquely identifies a location |
-| location_name      | string | required | The name of the location |
-| description | string | required | A verbose description of a location |
-| short_desc | string | optional | A succinct description of a location |
-| hours | string | optional | The hours of operation of a location |
-| transportation | string | optional | Availability of public transportation near a location |
+| id | string | required | ID that uniquely identifies the location |
+| organization_id | string | required | ID that uniquely identifies the organization the location belongs to | 
+| accessibility | comma-separated strings | optional | Accessibility options available at the location. See [Accessibility](#accessibility) section for accepted values. |
+| longitude | string | optional | The x coordinate expressed in decimal degrees in the WGS84 datum with up to 8 digits of precision |
+| latitude | string | optional | The y coordinate expressed in decimal degrees in the WGS84 datum with up to 8 digits of precision |
+| description | string | required | Description of services provided at the location |
+| emails | comma-separated strings | optional | General Email addresses for location. Emails that belong to contacts should go in the Contact object. |
+| hours | string | optional | Hours of operation for the location |
+| languages | comma-separated strings | optional | Languages spoken at the location |
+| name | string | required | Name of the location |
+| short_desc | string | required | Succinct description of services provided at the location. 200 characters maximum. | 
+| transportation | string | optional | Public transportation options near the location |
+| urls | comma-separated strings | optional | The location's website URLs. Must include "http://" or "https://" |
+
+### Address
+addresses.csv
+
+| HSD Name  | Data Type | Required | Detail |
+|:----------|:----------|:---------|:--------|
+| location_id | string | required | ID that uniquely identifies the location the address belongs to |
+| street | string | required | Contains the street number, street prefix, street name, street postfix |
+| city | string | required | The city or appropriate administrative unit where the location resides |
+| state | string | required | The state or appropriate administrative unit where the location resides, If in the US, use the two letter abbreviation |
+| postal_code | string | required | The postal code where the location resides. |
+| country | string | optional | The country where the location resides. Use [ISO 3166](http://www.iso.org/iso/home/standards/country_codes.htm) for country designators. |
+
+### Contacts
+contacts.csv
+
+| HSD Name  | Data Type | Required | Detail |
+|:----------|:----------|:---------|:---------|
+| location_id | string | required | ID that uniquely identifies the location the contact belongs to |
+| name | string | required | The Contact's full name |
+| title | string | required | The Contact's title |
+| email | string | optional | The Contact's email address |
+| fax | string | optional | The Contact's 10-digit US fax number. Formatting is lenient. |
+| phone | string | optional | The Contact's 10-digit US phone number. Formatting is lenient. |
+| extension | string | optional | The Contact's phone number extension. For example: "x1234" |
+
+###Faxes
+faxes.csv
+
+| Name | Type | Requirement | Detail |
+|:-----|:-----|:---------|:-------|
+| location_id | string | required | ID that uniquely identifies the location the fax belongs to |
+| number | string | required | The Location's 10-digit US fax number. Formatting is lenient. |
+| department | string | optional | The Location's department this fax number reaches. |
+
+###Mail Address
+mailing_addresses.csv
+
+| Name | Type | Requirement | Detail |
+|:-----|:-----|:---------|:-------|
+| location_id | string | required | ID that uniquely identifies the location the mailing address belongs to |
+| attention | string | optional | Name of person or organization receiving mail |
+| street | string | required | The Street Address |
+| city | string | required | The City name |
+| state | string | required | 2-letter US state abbreviation |
+| zip | string | required | A valid US 5 or 9-digit ZIP code. 9-digit ZIP codes are separated with a dash, like this: 94025-9881. |
+
+###Phones
+phones.csv
+
+| Name | Type | Requirement | Detail |
+|:-----|:-----|:---------|:-------|
+| location_id | string | required | ID that uniquely identifies the location the phone number belongs to |
+| number | string | required | The Location's 10-digit US phone number. Formatting is lenient. |
+| vanity_number | string | optional | The Location's 10-digit US phone number with vanity letters. For example: 703-555-HELP |
+| extension | string | optional | The Location's phone number extension. For example: "x1234" |
+| department | string | optional | The Location's department this phone number reaches. |
+| type | string | required | Phone type values can be voice, fax, or tty. |
+| country_code | string | optional | Country telephone code prefix based in [ITU E.123](http://www.itu.int/rec/T-REC-E.123-200102-I/en) standard.
+
 
 ### Service
 service.csv
 
 | HSD Name  | Data Type | Required | Details |
 |:----------|:----------|:----------|:---------|
-| organization_id | string | required | An ID that uniquely identifies an organization |
-| location_id | string | required | An ID that uniquely identifies a location |
-| service_id | string | required | An ID that uniquely identifies a service |
-| eligibility | string | required | Requirements to receive the service |
-| fees | string | required | Fees charged to receive the service |
-| how_to_apply | string | required | Description of how to apply to receive the service |
-| audience | string | optional | Clients that require the service |
+| location_id | string | required | An ID that uniquely identifies the location the service belongs to |
+| id | string | required | An ID that uniquely identifies the service |
+| audience | string | optional | Group of people served |
+| description | string | optional | Description of the service provided |
+| eligibility | string | optional | Requirements to receive the service |
+| fees | string | optional | Fees charged to receive the service |
+| funding_sources | comma-separated strings | optional | Source of funds used to support the service |
+| keywords | comma-separated strings | optional | Keywords that define this service for search purposes |
+| how_to_apply | string | optional | Description of how to apply to receive the service |
+| name | string | optional | Name of the service |
+| service_areas | comma-separated strings | optional | Cities and Counties served. See [Service Areas](#wiki-service-areas) section for more details. |
+| short_desc | string | optional | Succinct description of the service provided. 200 characters maximum. | 
+| urls | comma-separated strings | optional | The service's website URLs. Must include "http://" or "https://"
 | wait | string | optional | Wait times associated with the service |
 
-### Address
-address.csv
-
-| HSD Name  | Data Type | Required | Detail |
-|:----------|:----------|:---------|:--------|
-| location_id | string | required | An ID that uniquely identifies a location |
-| type | string | required | Type can either be the physical address or the mailing address |
-| street_1 | string | required | Contains the street number, street prefix, street name, street postfix |
-| city | string | required | The city or appropriate administrative unit where the location resides |
-| state | string | required | The state or appropriate administrative unit where the location resides, If in the US, use the two letter abbreviation |
-| postal_code | string | required | The postal code where the location resides. |
-| street_2 | string | optional | Additional address information such as suite number |
-| country | string | optional | The country where the location resides. Use [ISO 3166](http://www.iso.org/iso/home/standards/country_codes.htm) for country designators. |
-
-
-### Phone
-phone.csv
-
-| HSD Name  | Data Type | Required | Detail | 
-|:----------|:----------|:---------|:---------|
-| location_id | string | required | An ID that uniquely identifies a location |
-| phone_number | string | required | The phone number follows the pattern of area code, exchange prefix, line number; e.g. 5551234567 |
-| phone_type | string | required | Phone type values can be voice, fax, or tty. |
-| phone_extension| string | optional | Phone extension is prefixed with a lowercase "x" followed by the extension; e.g. x1111 |
-| phone_hours | string | optional | Hours that the phones will be ansewerd |
-| country_code| string | optional | Country telephone code prefix based in [ITU E.123](http://www.itu.int/rec/T-REC-E.123-200102-I/en) standard.
-
-
-
-### Administrative Contact
-admin_contact.csv
-
-| HSD Name  | Data Type | Required | Detail |
-|:----------|:----------|:---------|:---------|
-| organization_id | string | required | An ID that uniquely identifies a location |
-| contact_name | string | required | Name of administrative contact |
-| contact_title | string | optional | Title of administrative contact |
-
-### Service Contacts
-service_contact.csv
-
-| HSD Name  | Data Type | Required | Detail
-|:----------|:----------|:---------|:---------|
-| location_id | string | required | An ID that uniquely identifies a location |
-| service_poc | string | required | Name of service provider contact |
-| poc_title | string | optional | Title of point of contact |
-
-### Internet Resource
-internet_resource.csv
-
-| HSD Name  | Data Type |Required | Detail |
-|:----------|:----------|:--------|:-------|
-| organization_id | string | required | An ID that uniquely identifies a location |
-| resource | string | optional | A URL or email address for contacting the organization
-| resource_type | string | optional | Type of resource is either a URL in the form of http://organization.org/ or an email in the form of persont@organization.org |
-
-### Accessibility
-accessibility.csv
-
-| HSD Name  | Data Type | Required | Detail |
-|:----------|:----------|:---------|:-------|
-| location_id | string | required |  An ID that uniquely identifies a service |
-| accomodation | string | required | A description of an accessibility service available at the location. E.g. wheelchair ramp, sign interpreter, etc. |
-
-### Keyword
-keyword.csv
-
-| HSD Name  | Data Type | Required | Detail |
-|:----------|:----------|:---------|:-------|
-| service_id | string | required | An ID that uniquely identifies a service |
-| keyword | string | required | A keyword that describes the service and can be used for classifying services under a taxonomy |
-
-### Funding
-funding.csv
-
-| HSD Name  |  Data Type | Required | Detail |
-|:----------|:-----------|:---------|:-------|
-| organization_id | string | required | An ID that uniquely identifies a organization |
-| source | string | required | A description of funding sources, e,g. county, state, private donors |
-
-### Location Coordinates
-location_coordinates.csv
-
-| HSD Name  |  Data Type | Required | Detail |
-|:----------|:-----------|:---------|:-------|
-| location_id | string | required | An ID that uniquely identifies a organization |
-| latitude | number | required | The y coordinate expressed in decimal degrees in the WGS84 datum |
-| longitude | number | required | The x coordinate expressed in decimal degrees in the WGS84 datum |
 
 # Extension
 
