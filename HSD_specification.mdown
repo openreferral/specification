@@ -104,7 +104,7 @@ of its locations, and all the services for each location.
         "zip": "94063"
       },
       "name": "Fair Oaks Adult Activity Center",
-       "phones": [
+      "phones": [
         {
           "number": "650 780-7525",
           "department": "Reception"
