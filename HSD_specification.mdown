@@ -323,6 +323,9 @@ One or more of the following strings:
 | vanity_number | string | optional | The Location's 10-digit US phone number with vanity letters. For example: 703-555-HELP |
 | extension | string | optional | The Location's phone number extension. For example: "x1234" |
 | department | string | optional | The Location's department this phone number reaches. |
+| type | string | required | Phone type values can be voice, fax, or tty. |
+| country_code | string | optional | Country telephone code prefix based in [ITU E.123](http://www.itu.int/rec/T-REC-E.123-200102-I/en) standard.
+
 
 ## Services
 
