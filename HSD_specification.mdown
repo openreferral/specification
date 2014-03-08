@@ -43,95 +43,408 @@ JSON has two boolean values, true and false.
 
 # Data Model
 
-The basic entities are an organization or agency, a program or service, and a site or location. The structure is hierarchical in that an organization has programs that have locations. Note that an organization can have one or more locations and locations can have one or more programs.
+The basic entities are an organization or agency, a location or site, and a service or program. The structure is hierarchical in that an organization has one or more locations that provide one or more services.
 
 The data model can be expressed as JSON. Note that this is an application specific way to express the data, it can be expressed to fit other schemas or application models.
 
-	[
-	  {
-	    "name": "Mid-Peninsula Speech and Language Clinic",
-	    "locations": [
-	      {
-	        "name": "Mid-Peninsula Speech and Language Clinic",
-	        "contacts": [
-	          {
-    	        "contact_name": "Donna Dagenais, MA",
-        	    "contact_title": "Director"
-	          }
-    	    ],
-        	"description": "Provides evaluation, therapy and follow-up to persons of any age who have speech, language or learning disorders. Speech and language disorders may include articulation problems, cleft palate, voice disorders, stuttering, speech retraining following stroke or neurological trauma or neurologic disease. Individuals are first seen for evaluation, after which recommendations are made regarding appropriate treatment or referral for other professional services. Suggestions can be made to help design individual education plans for children needing special services in school, individual and group treatment, tutorial assistance and family counseling.",
-        	"short_desc": "Provides evaluation, therapy and follow-up to persons of any age who have speech, language or learning disorders.",
-        	"address": {
-	          "street": "445 Sherman Avenue, Suite O",
-	          "city": "Palo Alto",
-	          "state": "CA",
-	          "zip": "94306",
-	          "type": "physical"
-	        },
-	        {
-	          "attention": "Mid-Pen Speech & Language Clin",
-	          "street": "445 Sherman Avenue, Suite O",
-	          "city": "Palo Alto",
-	          "state": "CA",
-	          "zip": "94306",
-	          "type": "mailing"
-	        },
-	        "service_poc": [
-	          "Kathy Kinkaid (kkinkaid@mpslc.com)"
-	        ],
-	        "hours": "By appointment",
-	        "transportation": "SAMTRANS stops within 3 blocks, CALTRAIN within 3 blocks.",
-	        "accessibility": [
-	          "restroom",
-	          "wheelchair"
-	        ],
-	        "languages": null,
-	        "phones": [
-	          {
-	            "number": "650 321-8111",
-	            "phone_hours": "(Monday-Friday, 8-5)"
-	            "type": "voice"
-	          },
-	          {
-	          	"number": "650 321-8122"
-	          	"type": "fax"
-	          }
-	        ],
-	        "internet_resource": [
-	          "url": http://www.mpslc.com",
-	          "email": "ddagenais@mpslc.com"
-	        ],
-	        "services": [
-	          {
-	            "audience": "Voice disorders, stutterers, children with developmental speech and/or language disorders",
-	            "eligibility": null,
-	            "fees": "Individual speech therapy $85 per half-hour session. Group therapy $60 per session. Fees for evaluation vary. Cash, checks and credit cards accepted.",
-	            "how_to_apply": "Apply by phone.",
-	            "service_areas": [
-	              "Alameda County",
-	              "Contra Costa County",
-	              "Marin County",
-	              "San Francisco County",
-	              "San Mateo County",
-	              "Santa Clara County"
-	            ],
-	            "keywords": [
-	              "DEVELOPMENTAL DISABILITIES SERVICES",
-	              "Speech Therapy",
-	              "HANDICAP SERVICES",
-	              "Screening/Diagnosis",
-	              "Speech and Language Evaluations"
-	            ],
-	            "wait": "Varies, usually not very long.",
-	            "funding_sources": [
-	              "Fees"
-	            ]
-	          }
-	        ]
-	      }
-	    ]
-	  }
-	]
+```json
+{
+  "name": "Peninsula Family Service",
+  "locs": [
+    {
+      "name": "Fair Oaks Adult Activity Center",
+      "contacts": [
+        {
+          "name": "Susan Houston",
+          "title": "Director of Older Adult Services"
+        },
+        {
+          "name": " Christina Gonzalez",
+          "title": "Center Director"
+        }
+      ],
+      "description": "A walk-in center for older adults that provides social services, wellness, recreational, educational and creative activities including arts and crafts, computer classes and gardening classes. Coffee and healthy breakfasts are available daily. A hot lunch is served Tuesday-Friday for persons age 60 or over and spouse.        Provides case management (including in-home assessments) and bilingual information and referral about community services to persons age 60 or over on questions of housing, employment, household help, recreation and social activities, home delivered meals, health and counseling services and services to shut-ins. Health insurance and legal counseling is available by appointment. Lectures on a variety of health and fitness topics are held monthly in both English and Spanish.  Provides a variety of physical fitness opportunities, including a garden club, yoga, tai chi, soul line dance and aerobics classes geared toward older adults. Also provides free monthly blood pressure screenings, quarterly blood glucose monitoring and health screenings by a visiting nurse. Offers a Brown Bag Program in which low-income seniors can receive a bag of groceries each week for a membership fee of $10 a year. Offers Spanish lessons. Formerly known as Peninsula Family Service, Fair Oaks Intergenerational Center. Formerly known as the Fair Oaks Senior Center. Formerly known as Family Service Agency of San Mateo County, Fair Oaks Intergenerational Center.",
+      "short_desc": "A multipurpose senior citizens' center serving the Redwood City area.",
+      "address": {
+        "street": "2600 Middlefield Road",
+        "city": "Redwood City",
+        "state": "CA",
+        "zip": "94063"
+      },
+      "mail_address": {
+        "attention": "Fair Oaks Intergenerational Center",
+        "street": "2600 Middlefield Road",
+        "city": "Redwood City",
+        "state": "CA",
+        "zip": "94063"
+      },
+      "hours": "Monday-Friday, 9-5",
+      "transportation": "SAMTRANS stops in front.",
+      "accessibility": [
+        "ramp",
+        "restroom",
+        "disabled_parking",
+        "wheelchair"
+      ],
+      "languages": [
+        "Filipino (Tagalog)",
+        "Spanish"
+      ],
+      "emails": [
+        "cgonzalez@peninsulafamilyservice.org"
+      ],
+      "faxes": [
+        {
+          "number": "650 701-0856"
+        }
+      ],
+      "phones": [
+        {
+          "number": "650 780-7525",
+          "hours": "(Monday-Friday, 8:30-5)"
+        }
+      ],
+      "urls": [
+        "http://www.peninsulafamilyservice.org"
+      ],
+      "servs": [
+        {
+          "audience": "Older adults age 55 or over, ethnic minorities and low-income persons",
+          "eligibility": "Age 55 or over for most programs, age 60 or over for lunch program",
+          "fees": "$2.50 suggested donation for lunch for age 60 or over, donations for other services appreciated. Cash and checks accepted.",
+          "how_to_apply": "Walk in or apply by phone.",
+          "service_areas": [
+            "Redwood City"
+          ],
+          "keywords": [
+            "ADULT PROTECTION AND CARE SERVICES",
+            "Meal Sites/Home-delivered Mea",
+            "COMMUNITY SERVICES",
+            "Group Support",
+            "Information and Referral",
+            "EDUCATION SERVICES",
+            "English Language",
+            "RECREATION/LEISURE SERVICES",
+            "Arts and Crafts",
+            "Sports/Games/Exercise",
+            "Brown Bag Food Programs",
+            "Congregate Meals/Nutrition Sites",
+            "Senior Centers",
+            "Older Adults"
+          ],
+          "wait": "No wait.",
+          "funding_sources": [
+            "City",
+            "County",
+            "Donations",
+            "Fees",
+            "Fundraising"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Second Career Employment Program",
+      "contacts": [
+        {
+          "name": "Brenda Brown",
+          "title": "Director, Second Career Services"
+        }
+      ],
+      "description": "Provides training and job placement to eligible people age 55 or over who meet certain income qualifications. An income of 125% of poverty level or less is required for subsidized employment and training. (No income requirements for job matchup program.) If a person seems likely to be qualified after a preliminary phone call or visit, he or she must complete an application at this office. Staff will locate appropriate placements for applicants, provide orientation and on-the-job training and assist with finding a job outside the program. Any county resident, regardless of income, age 55 or over has access to the program, job developers and the job bank. Also provides referrals to classroom training. Formerly known as Family Service Agency of San Mateo County, Senior Employment Services.",
+      "short_desc": "Provides training and job placement to eligible persons age 55 or over. All persons age 55 or over have access to information in the program's job bank.",
+      "address": {
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94401"
+      },
+      "mail_address": {
+        "attention": "PFS Second Career Services",
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94401"
+      },
+      "hours": "Monday-Friday, 9-5",
+      "transportation": "SAMTRANS stops within 1 block, CALTRAIN stops within 6 blocks.",
+      "accessibility": [
+        "wheelchair"
+      ],
+      "languages": [
+        "Chinese (Mandarin)",
+        "Filipino (Tagalog)",
+        "Italian",
+        "Spanish"
+      ],
+      "emails": [
+        "bbrown@peninsulafamilyservice.org"
+      ],
+      "faxes": [
+        {
+          "number": "650 403-4302"
+        }
+      ],
+      "phones": [
+        {
+          "number": "650 403-4300",
+          "department": " Ext. 4385",
+          "hours": "(Monday-Friday, 9-5)"
+        }
+      ],
+      "urls": [
+        "http://www.peninsulafamilyservice.org"
+      ],
+      "servs": [
+        {
+          "audience": "Residents of San Mateo County age 55 or over",
+          "eligibility": "Age 55 or over, county resident and willing and able to work. Income requirements vary according to program",
+          "fees": "None. Donations requested of clients who can afford it.",
+          "how_to_apply": "Apply by phone for an appointment.",
+          "service_areas": [
+            "San Mateo County"
+          ],
+          "keywords": [
+            "EMPLOYMENT/TRAINING SERVICES",
+            "Job Development",
+            "Job Information/Placement/Referral",
+            "Job Training",
+            "Job Training Formats",
+            "Job Search/Placement",
+            "Older Adults"
+          ],
+          "wait": "Varies.",
+          "funding_sources": [
+            "County",
+            "Federal",
+            "State"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Senior Peer Counseling",
+      "contacts": [
+        {
+          "name": "Howard Lader, LCSW",
+          "title": "Manager, Senior Peer Counseling"
+        }
+      ],
+      "description": "Offers supportive counseling services to San Mateo County residents age 55 or over. Volunteer counselors are selected and professionally trained to help their peers face the challenges and concerns of growing older.  Training provides topics that include understanding depression, cultural competence, sexuality, community resources, and other subjects that are relevant to working with older adults. After completion of training, weekly supervision groups are provided for the volunteer senior peer counselors, as well as quarterly in-service training seminars. Peer counseling services are provided in English, Spanish, Chinese (Cantonese and Mandarin), Tagalog, and to the lesbian, gay, bisexual, transgender older adult community. Formerly known as Family Service Agency of San Mateo County, Senior Peer Counseling.",
+      "short_desc": "Offers supportive counseling services to older persons.",
+      "address": {
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94403"
+      },
+      "mail_address": {
+        "attention": "PFS Senior Peer Counseling",
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94403"
+      },
+      "hours": "Any time that is convenient for the client and peer counselor",
+      "transportation": "Service is provided in person's home or at a mutually agreed upon location.",
+      "accessibility": [],
+      "languages": [
+        "Chinese (Cantonese)",
+        "Chinese (Mandarin)",
+        "Filipino (Tagalog)",
+        "Spanish"
+      ],
+      "emails": null,
+      "faxes": [
+        {
+          "number": "650 403-4303"
+        }
+      ],
+      "phones": [
+        {
+          "number": "650 403-4300",
+          "department": "English"
+        }
+      ],
+      "urls": null,
+      "servs": [
+        {
+          "audience": "Older adults age 55 or over who can benefit from counseling",
+          "eligibility": "Resident of San Mateo County age 55 or over",
+          "fees": "None.",
+          "how_to_apply": "Phone for information (403-4300 Ext. 4322).",
+          "service_areas": [
+            "San Mateo County"
+          ],
+          "keywords": [
+            "Geriatric Counseling",
+            "Older Adults",
+            "Gay, Lesbian, Bisexual, Transgender Individuals"
+          ],
+          "wait": "Varies.",
+          "funding_sources": [
+            "County",
+            "Donations",
+            "Grants"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Family Visitation Center",
+      "contacts": [
+        {
+          "name": "Kimberly Pesavento",
+          "title": "Director of Visitation"
+        }
+      ],
+      "description": "Provides supervised visitation services and a neutral site for parents to carry out supervised exchanges of children in a safe manner. Therapeutic visitation and other counseling services available. Kids in the Middle is an education class for separating or divorcing parents. The goal is to enable parents to focus on their children's needs while the family is going through separation, divorce or other transition. The class explores the psychological aspects of divorce and its impact on children, builds effective communication techniques and points out areas in which outside help may be indicated. The fee is $50 for working parents, $15 for unemployed people. Classes are scheduled on Saturdays and Sundays and held at various sites throughout the county. Call 650-403-4300 ext. 4500 to register. Formerly known as Family Service Agency of San Mateo County, Family Visitation Center.",
+      "short_desc": "Provides supervised visitation services and a neutral site for parents in extremely hostile divorces to carry out supervised exchanges of children.",
+      "address": {
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94401"
+      },
+      "mail_address": {
+        "attention": "PFS Family Visitation Center",
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94401"
+      },
+      "hours": "Monday, 10-6; Tuesday-Friday, 10-8; Saturday, Sunday, 9:30-5:30",
+      "transportation": "SAMTRANS stops within 1 block, CALTRAIN stops within 4 blocks.",
+      "accessibility": [
+        "wheelchair"
+      ],
+      "languages": [
+        "Spanish"
+      ],
+      "emails": [
+        "kpesavento@peninsulafamilyservice.org"
+      ],
+      "faxes": [
+        {
+          "number": "650 403-4303"
+        }
+      ],
+      "phones": [
+        {
+          "number": "650 403-4300",
+          "extensions": [
+            "4500"
+          ],
+          "hours": "(Tuesday, Wednesday, 10-6; Thursday, Friday, 10-8; Saturday, Sunday, 9:30-5:30)"
+        }
+      ],
+      "urls": [
+        "http://www.peninsulafamilyservice.org"
+      ],
+      "servs": [
+        {
+          "audience": "Parents, children, families with problems of custody disputes, domestic violence or substance abuse, families going through a separation or divorce",
+          "eligibility": "None",
+          "fees": "Vary according to income ($5-$90). Cash, checks and credit cards accepted.",
+          "how_to_apply": "Apply by phone.",
+          "service_areas": [
+            "San Mateo County"
+          ],
+          "keywords": [
+            "INDIVIDUAL AND FAMILY DEVELOPMENT SERVICES",
+            "Growth and Adjustment",
+            "LEGAL AND CRIMINAL JUSTICE SERVICES",
+            "Mediation",
+            "Parental Visitation Monitoring",
+            "Divorce Counseling",
+            "Youth"
+          ],
+          "wait": "No wait.",
+          "funding_sources": [
+            "County",
+            "Donations",
+            "Grants"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Economic Self - Sufficiency Program",
+      "contacts": [
+        {
+          "name": "Joe Bloom",
+          "title": "Financial Empowerment Programs Program Director"
+        }
+      ],
+      "description": "Provides fixed 8% short term loans to eligible applicants for the purchase of a reliable, used autmobile. Loans are up to $6,000 over 2 1/2 years (30 months). Funds must go towards the entire purchase of the automobile. Peninsula Family Service originates loans and collaborates with commercial partner banks to service the loans, helping clients build credit histories. Formerly known as Family Service Agency of San Mateo County, Ways to Work Family Loan Program.",
+      "short_desc": "Makes small loans to working families.",
+      "address": {
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94401"
+      },
+      "mail_address": {
+        "attention": "Economic Self - Sufficiency Program",
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94401"
+      },
+      "hours": null,
+      "transportation": "SAMTRANS stops within 1 block. CALTRAIN stops within 6 blocks.",
+      "accessibility": [
+        "wheelchair"
+      ],
+      "languages": [
+        "Hindi",
+        "Spanish"
+      ],
+      "emails": [
+        "waystowork@peninsulafamilyservice.org"
+      ],
+      "faxes": [
+        {
+          "number": "650 403-4303"
+        }
+      ],
+      "phones": [
+        {
+          "number": "650 403-4300",
+          "extensions": [
+            "4100"
+          ]
+        }
+      ],
+      "urls": [
+        "http://www.peninsulafamilyservice.org"
+      ],
+      "servs": [
+        {
+          "audience": "Target group: Low-income working families with children transitioning from welfare to work and poor or who do not have access to conventional credit",
+          "eligibility": "Eligibility: Low-income family with legal custody of a minor child or an involved parent of a dependent minor child. Must reside and/or work in San Mateo County. Must be working and have verifiable income and ability to pay off loan. No bankruptcies in the past two years and unable to qualify for other funding sources. Loans approved by loan committee.",
+          "fees": "$60 application fee. Cash or checks accepted.",
+          "how_to_apply": "Phone for information.",
+          "service_areas": [
+            "San Mateo County"
+          ],
+          "keywords": [
+            "COMMUNITY SERVICES",
+            "Speakers",
+            "Automobile Loans"
+          ],
+          "wait": null,
+          "funding_sources": [
+            "County",
+            "Grants",
+            "State"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
 The lowest common denominator for data exchange is the comma delimited text file or CSV. CSV are simple table structures. In order to represent complex data types such as arrays and objects, they need to be decomposed into individual tables that are joined to parent tables via a foreign key. The entity relationship diagram below shows how the CSV files are joined to form a single organization.
 
