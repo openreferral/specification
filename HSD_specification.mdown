@@ -10,7 +10,7 @@ This specification defines a minimum set of data elements for a human services d
 
 # Conventions
 
-This specification uses snake case where compound words are joined by an underscore. Field name are all lower case and in snake case, e.g. 'organization_id'.
+This specification uses snake case where compound words are joined by an underscore. Field names are all lower case and in snake case, e.g. `organization_id`.
 
 
 # Data Types
@@ -43,34 +43,59 @@ JSON has two boolean values, true and false.
 
 # Data Model
 
-The basic entities are an organization or agency, a location or site, and a service or program. The structure is hierarchical in that an organization has one or more locations that provide one or more services.
+The basic entities are an organization or agency, a location or site, and a service or program. 
+The structure is hierarchical in that an organization has one or more locations that provide one or more services.
 
-The data model can be expressed as JSON. Note that this is an application specific way to express the data, it can be expressed to fit other schemas or application models.
+The data model can be expressed as JSON. Below is an example JSON object that represents one organization, along with all 
+of its locations, and all the services for each location.
 
 ```json
 {
   "name": "Peninsula Family Service",
-  "locs": [
+  "locations": [
     {
-      "name": "Fair Oaks Adult Activity Center",
-      "contacts": [
-        {
-          "name": "Susan Houston",
-          "title": "Director of Older Adult Services"
-        },
-        {
-          "name": " Christina Gonzalez",
-          "title": "Center Director"
-        }
+      "accessibility": [
+        "ramp",
+        "restroom",
+        "disabled_parking",
+        "wheelchair"
       ],
-      "description": "A walk-in center for older adults that provides social services, wellness, recreational, educational and creative activities including arts and crafts, computer classes and gardening classes. Coffee and healthy breakfasts are available daily. A hot lunch is served Tuesday-Friday for persons age 60 or over and spouse.        Provides case management (including in-home assessments) and bilingual information and referral about community services to persons age 60 or over on questions of housing, employment, household help, recreation and social activities, home delivered meals, health and counseling services and services to shut-ins. Health insurance and legal counseling is available by appointment. Lectures on a variety of health and fitness topics are held monthly in both English and Spanish.  Provides a variety of physical fitness opportunities, including a garden club, yoga, tai chi, soul line dance and aerobics classes geared toward older adults. Also provides free monthly blood pressure screenings, quarterly blood glucose monitoring and health screenings by a visiting nurse. Offers a Brown Bag Program in which low-income seniors can receive a bag of groceries each week for a membership fee of $10 a year. Offers Spanish lessons. Formerly known as Peninsula Family Service, Fair Oaks Intergenerational Center. Formerly known as the Fair Oaks Senior Center. Formerly known as Family Service Agency of San Mateo County, Fair Oaks Intergenerational Center.",
-      "short_desc": "A multipurpose senior citizens' center serving the Redwood City area.",
       "address": {
         "street": "2600 Middlefield Road",
         "city": "Redwood City",
         "state": "CA",
         "zip": "94063"
       },
+      "contacts": [
+        {
+          "name": "Susan Houston",
+          "title": "Director of Older Adult Services",
+          "email": "susan@houston.org",
+          "fax": "703-555-1212",
+          "phone": "703-555-1212",
+          "extension": "x1234"
+        },
+        {
+          "name": " Christina Gonzalez",
+          "title": "Center Director"
+        }
+      ],
+      "coordinates": [-122.2141324, 37.4773738],
+      "description": "A walk-in center for older adults that provides social services, wellness, recreational, educational and creative activities including arts and crafts, computer classes and gardening classes. Coffee and healthy breakfasts are available daily. A hot lunch is served Tuesday-Friday for persons age 60 or over and spouse.        Provides case management (including in-home assessments) and bilingual information and referral about community services to persons age 60 or over on questions of housing, employment, household help, recreation and social activities, home delivered meals, health and counseling services and services to shut-ins. Health insurance and legal counseling is available by appointment. Lectures on a variety of health and fitness topics are held monthly in both English and Spanish.  Provides a variety of physical fitness opportunities, including a garden club, yoga, tai chi, soul line dance and aerobics classes geared toward older adults. Also provides free monthly blood pressure screenings, quarterly blood glucose monitoring and health screenings by a visiting nurse. Offers a Brown Bag Program in which low-income seniors can receive a bag of groceries each week for a membership fee of $10 a year. Offers Spanish lessons. Formerly known as Peninsula Family Service, Fair Oaks Intergenerational Center. Formerly known as the Fair Oaks Senior Center. Formerly known as Family Service Agency of San Mateo County, Fair Oaks Intergenerational Center.",
+      "emails": [
+        "cgonzalez@peninsulafamilyservice.org"
+      ],
+      "faxes": [
+        {
+          "number": "650 701-0856",
+          "department": "Application Processing"
+        }
+      ],
+      "hours": "Monday-Friday, 9-5",
+      "languages": [
+        "Filipino (Tagalog)",
+        "Spanish"
+      ],
       "mail_address": {
         "attention": "Fair Oaks Intergenerational Center",
         "street": "2600 Middlefield Road",
@@ -78,43 +103,29 @@ The data model can be expressed as JSON. Note that this is an application specif
         "state": "CA",
         "zip": "94063"
       },
-      "hours": "Monday-Friday, 9-5",
-      "transportation": "SAMTRANS stops in front.",
-      "accessibility": [
-        "ramp",
-        "restroom",
-        "disabled_parking",
-        "wheelchair"
-      ],
-      "languages": [
-        "Filipino (Tagalog)",
-        "Spanish"
-      ],
-      "emails": [
-        "cgonzalez@peninsulafamilyservice.org"
-      ],
-      "faxes": [
-        {
-          "number": "650 701-0856"
-        }
-      ],
-      "phones": [
+      "name": "Fair Oaks Adult Activity Center",
+       "phones": [
         {
           "number": "650 780-7525",
-          "hours": "(Monday-Friday, 8:30-5)"
+          "department": "Reception"
         }
       ],
+      "short_desc": "A multipurpose senior citizens' center serving the Redwood City area.",
+      "transportation": "SAMTRANS stops in front.",
       "urls": [
         "http://www.peninsulafamilyservice.org"
       ],
-      "servs": [
+      "services": [
         {
           "audience": "Older adults age 55 or over, ethnic minorities and low-income persons",
           "eligibility": "Age 55 or over for most programs, age 60 or over for lunch program",
-          "fees": "$2.50 suggested donation for lunch for age 60 or over, donations for other services appreciated. Cash and checks accepted.",
-          "how_to_apply": "Walk in or apply by phone.",
-          "service_areas": [
-            "Redwood City"
+          "fees": "$2.50 suggested donation for lunch for age 60 or over, donations for other services appreciated.",
+          "funding_sources": [
+            "City",
+            "County",
+            "Donations",
+            "Fees",
+            "Fundraising"
           ],
           "keywords": [
             "ADULT PROTECTION AND CARE SERVICES",
@@ -132,19 +143,24 @@ The data model can be expressed as JSON. Note that this is an application specif
             "Senior Centers",
             "Older Adults"
           ],
-          "wait": "No wait.",
-          "funding_sources": [
-            "City",
-            "County",
-            "Donations",
-            "Fees",
-            "Fundraising"
-          ]
+          "how_to_apply": "Walk in or apply by phone.",
+          "service_areas": [
+            "Redwood City"
+          ],
+          "wait": "No wait."
         }
       ]
     },
     {
-      "name": "Second Career Employment Program",
+      "accessibility": [
+        "wheelchair"
+      ],
+      "address": {
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94401"
+      },
       "contacts": [
         {
           "name": "Brenda Brown",
@@ -152,31 +168,6 @@ The data model can be expressed as JSON. Note that this is an application specif
         }
       ],
       "description": "Provides training and job placement to eligible people age 55 or over who meet certain income qualifications. An income of 125% of poverty level or less is required for subsidized employment and training. (No income requirements for job matchup program.) If a person seems likely to be qualified after a preliminary phone call or visit, he or she must complete an application at this office. Staff will locate appropriate placements for applicants, provide orientation and on-the-job training and assist with finding a job outside the program. Any county resident, regardless of income, age 55 or over has access to the program, job developers and the job bank. Also provides referrals to classroom training. Formerly known as Family Service Agency of San Mateo County, Senior Employment Services.",
-      "short_desc": "Provides training and job placement to eligible persons age 55 or over. All persons age 55 or over have access to information in the program's job bank.",
-      "address": {
-        "street": "24 Second Avenue",
-        "city": "San Mateo",
-        "state": "CA",
-        "zip": "94401"
-      },
-      "mail_address": {
-        "attention": "PFS Second Career Services",
-        "street": "24 Second Avenue",
-        "city": "San Mateo",
-        "state": "CA",
-        "zip": "94401"
-      },
-      "hours": "Monday-Friday, 9-5",
-      "transportation": "SAMTRANS stops within 1 block, CALTRAIN stops within 6 blocks.",
-      "accessibility": [
-        "wheelchair"
-      ],
-      "languages": [
-        "Chinese (Mandarin)",
-        "Filipino (Tagalog)",
-        "Italian",
-        "Spanish"
-      ],
       "emails": [
         "bbrown@peninsulafamilyservice.org"
       ],
@@ -185,6 +176,21 @@ The data model can be expressed as JSON. Note that this is an application specif
           "number": "650 403-4302"
         }
       ],
+      "hours": "Monday-Friday, 9-5",
+      "languages": [
+        "Chinese (Mandarin)",
+        "Filipino (Tagalog)",
+        "Italian",
+        "Spanish"
+      ],
+      "mail_address": {
+        "attention": "PFS Second Career Services",
+        "street": "24 Second Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zip": "94401"
+      },
+      "name": "Second Career Employment Program",
       "phones": [
         {
           "number": "650 403-4300",
@@ -192,17 +198,20 @@ The data model can be expressed as JSON. Note that this is an application specif
           "hours": "(Monday-Friday, 9-5)"
         }
       ],
+      "short_desc": "Provides training and job placement to eligible persons age 55 or over. All persons age 55 or over have access to information in the program's job bank.",
+      "transportation": "SAMTRANS stops within 1 block, CALTRAIN stops within 6 blocks.",
       "urls": [
         "http://www.peninsulafamilyservice.org"
       ],
-      "servs": [
+      "services": [
         {
           "audience": "Residents of San Mateo County age 55 or over",
           "eligibility": "Age 55 or over, county resident and willing and able to work. Income requirements vary according to program",
           "fees": "None. Donations requested of clients who can afford it.",
-          "how_to_apply": "Apply by phone for an appointment.",
-          "service_areas": [
-            "San Mateo County"
+          "funding_sources": [
+            "County",
+            "Federal",
+            "State"
           ],
           "keywords": [
             "EMPLOYMENT/TRAINING SERVICES",
@@ -213,232 +222,11 @@ The data model can be expressed as JSON. Note that this is an application specif
             "Job Search/Placement",
             "Older Adults"
           ],
-          "wait": "Varies.",
-          "funding_sources": [
-            "County",
-            "Federal",
-            "State"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Senior Peer Counseling",
-      "contacts": [
-        {
-          "name": "Howard Lader, LCSW",
-          "title": "Manager, Senior Peer Counseling"
-        }
-      ],
-      "description": "Offers supportive counseling services to San Mateo County residents age 55 or over. Volunteer counselors are selected and professionally trained to help their peers face the challenges and concerns of growing older.  Training provides topics that include understanding depression, cultural competence, sexuality, community resources, and other subjects that are relevant to working with older adults. After completion of training, weekly supervision groups are provided for the volunteer senior peer counselors, as well as quarterly in-service training seminars. Peer counseling services are provided in English, Spanish, Chinese (Cantonese and Mandarin), Tagalog, and to the lesbian, gay, bisexual, transgender older adult community. Formerly known as Family Service Agency of San Mateo County, Senior Peer Counseling.",
-      "short_desc": "Offers supportive counseling services to older persons.",
-      "address": {
-        "street": "24 Second Avenue",
-        "city": "San Mateo",
-        "state": "CA",
-        "zip": "94403"
-      },
-      "mail_address": {
-        "attention": "PFS Senior Peer Counseling",
-        "street": "24 Second Avenue",
-        "city": "San Mateo",
-        "state": "CA",
-        "zip": "94403"
-      },
-      "hours": "Any time that is convenient for the client and peer counselor",
-      "transportation": "Service is provided in person's home or at a mutually agreed upon location.",
-      "accessibility": [],
-      "languages": [
-        "Chinese (Cantonese)",
-        "Chinese (Mandarin)",
-        "Filipino (Tagalog)",
-        "Spanish"
-      ],
-      "emails": null,
-      "faxes": [
-        {
-          "number": "650 403-4303"
-        }
-      ],
-      "phones": [
-        {
-          "number": "650 403-4300",
-          "department": "English"
-        }
-      ],
-      "urls": null,
-      "servs": [
-        {
-          "audience": "Older adults age 55 or over who can benefit from counseling",
-          "eligibility": "Resident of San Mateo County age 55 or over",
-          "fees": "None.",
-          "how_to_apply": "Phone for information (403-4300 Ext. 4322).",
+          "how_to_apply": "Apply by phone for an appointment.",
           "service_areas": [
             "San Mateo County"
           ],
-          "keywords": [
-            "Geriatric Counseling",
-            "Older Adults",
-            "Gay, Lesbian, Bisexual, Transgender Individuals"
-          ],
-          "wait": "Varies.",
-          "funding_sources": [
-            "County",
-            "Donations",
-            "Grants"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Family Visitation Center",
-      "contacts": [
-        {
-          "name": "Kimberly Pesavento",
-          "title": "Director of Visitation"
-        }
-      ],
-      "description": "Provides supervised visitation services and a neutral site for parents to carry out supervised exchanges of children in a safe manner. Therapeutic visitation and other counseling services available. Kids in the Middle is an education class for separating or divorcing parents. The goal is to enable parents to focus on their children's needs while the family is going through separation, divorce or other transition. The class explores the psychological aspects of divorce and its impact on children, builds effective communication techniques and points out areas in which outside help may be indicated. The fee is $50 for working parents, $15 for unemployed people. Classes are scheduled on Saturdays and Sundays and held at various sites throughout the county. Call 650-403-4300 ext. 4500 to register. Formerly known as Family Service Agency of San Mateo County, Family Visitation Center.",
-      "short_desc": "Provides supervised visitation services and a neutral site for parents in extremely hostile divorces to carry out supervised exchanges of children.",
-      "address": {
-        "street": "24 Second Avenue",
-        "city": "San Mateo",
-        "state": "CA",
-        "zip": "94401"
-      },
-      "mail_address": {
-        "attention": "PFS Family Visitation Center",
-        "street": "24 Second Avenue",
-        "city": "San Mateo",
-        "state": "CA",
-        "zip": "94401"
-      },
-      "hours": "Monday, 10-6; Tuesday-Friday, 10-8; Saturday, Sunday, 9:30-5:30",
-      "transportation": "SAMTRANS stops within 1 block, CALTRAIN stops within 4 blocks.",
-      "accessibility": [
-        "wheelchair"
-      ],
-      "languages": [
-        "Spanish"
-      ],
-      "emails": [
-        "kpesavento@peninsulafamilyservice.org"
-      ],
-      "faxes": [
-        {
-          "number": "650 403-4303"
-        }
-      ],
-      "phones": [
-        {
-          "number": "650 403-4300",
-          "extensions": [
-            "4500"
-          ],
-          "hours": "(Tuesday, Wednesday, 10-6; Thursday, Friday, 10-8; Saturday, Sunday, 9:30-5:30)"
-        }
-      ],
-      "urls": [
-        "http://www.peninsulafamilyservice.org"
-      ],
-      "servs": [
-        {
-          "audience": "Parents, children, families with problems of custody disputes, domestic violence or substance abuse, families going through a separation or divorce",
-          "eligibility": "None",
-          "fees": "Vary according to income ($5-$90). Cash, checks and credit cards accepted.",
-          "how_to_apply": "Apply by phone.",
-          "service_areas": [
-            "San Mateo County"
-          ],
-          "keywords": [
-            "INDIVIDUAL AND FAMILY DEVELOPMENT SERVICES",
-            "Growth and Adjustment",
-            "LEGAL AND CRIMINAL JUSTICE SERVICES",
-            "Mediation",
-            "Parental Visitation Monitoring",
-            "Divorce Counseling",
-            "Youth"
-          ],
-          "wait": "No wait.",
-          "funding_sources": [
-            "County",
-            "Donations",
-            "Grants"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Economic Self - Sufficiency Program",
-      "contacts": [
-        {
-          "name": "Joe Bloom",
-          "title": "Financial Empowerment Programs Program Director"
-        }
-      ],
-      "description": "Provides fixed 8% short term loans to eligible applicants for the purchase of a reliable, used autmobile. Loans are up to $6,000 over 2 1/2 years (30 months). Funds must go towards the entire purchase of the automobile. Peninsula Family Service originates loans and collaborates with commercial partner banks to service the loans, helping clients build credit histories. Formerly known as Family Service Agency of San Mateo County, Ways to Work Family Loan Program.",
-      "short_desc": "Makes small loans to working families.",
-      "address": {
-        "street": "24 Second Avenue",
-        "city": "San Mateo",
-        "state": "CA",
-        "zip": "94401"
-      },
-      "mail_address": {
-        "attention": "Economic Self - Sufficiency Program",
-        "street": "24 Second Avenue",
-        "city": "San Mateo",
-        "state": "CA",
-        "zip": "94401"
-      },
-      "hours": null,
-      "transportation": "SAMTRANS stops within 1 block. CALTRAIN stops within 6 blocks.",
-      "accessibility": [
-        "wheelchair"
-      ],
-      "languages": [
-        "Hindi",
-        "Spanish"
-      ],
-      "emails": [
-        "waystowork@peninsulafamilyservice.org"
-      ],
-      "faxes": [
-        {
-          "number": "650 403-4303"
-        }
-      ],
-      "phones": [
-        {
-          "number": "650 403-4300",
-          "extensions": [
-            "4100"
-          ]
-        }
-      ],
-      "urls": [
-        "http://www.peninsulafamilyservice.org"
-      ],
-      "servs": [
-        {
-          "audience": "Target group: Low-income working families with children transitioning from welfare to work and poor or who do not have access to conventional credit",
-          "eligibility": "Eligibility: Low-income family with legal custody of a minor child or an involved parent of a dependent minor child. Must reside and/or work in San Mateo County. Must be working and have verifiable income and ability to pay off loan. No bankruptcies in the past two years and unable to qualify for other funding sources. Loans approved by loan committee.",
-          "fees": "$60 application fee. Cash or checks accepted.",
-          "how_to_apply": "Phone for information.",
-          "service_areas": [
-            "San Mateo County"
-          ],
-          "keywords": [
-            "COMMUNITY SERVICES",
-            "Speakers",
-            "Automobile Loans"
-          ],
-          "wait": null,
-          "funding_sources": [
-            "County",
-            "Grants",
-            "State"
-          ]
+          "wait": "Varies."
         }
       ]
     }
@@ -457,52 +245,115 @@ The data model is divided in organizations, locations and services. The followin
 
 ## Organization
 
-| Name | Type | Required | Detail |
+| Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
-| organization_id | int | required | ID that uniquely identifies the organization | 
-| organization_name | string | required | Name of the organization
-| FEIN | string | required | Federal Employe Identification Numner |
-| AKA | string | optional | Alias or Also Known As |
-| admin_contact | array | optional | Administrative contact(s) |
+| id | int | required | ID that uniquely identifies the organization | 
+| name | string | required | Name of the organization
+| fein | string | optional | Federal Employer Identification Number |
+| aka | string | optional | Alias or Also Known As |
+| contacts | array of strings | optional | Administrative contact(s) |
+| urls | array of strings | optional | The organization's website URLs. Must include "http://" or "https://" |
 
 
-## Locations
+## Location
 
-| Name | Type | Required | Detail |
+| Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
-| organization_id | int | required | ID that uniquely identifies the organization | 
-| location_id | int | required | ID that uniquely identifies the organization |
-| location_name | string | required | Name of the location |
-| address | object | required | Physical address of location |
-| description | string | required | Descrption of services provided at the location  |
-| hours | string | required | Hours of operation for the location |
-| phone | array | required | Phone number for the location |
-| mail_address | object | optional | Mailing address of location |
-| service_contact | object | optional | Point of contact for service(s) provided | 
-| short_desc | string | optional | Succinct description of services provided at the location | 
-| email | string | optional | Email address for location |
-| fax | array | optional | Fax number for the location |
-| tty | array | optional | TTY number for the location |
-| languages | array | optional | Languages spoken at the location |
-| transportation | string | optional | Public transportation alternatives near the location |
-| accessibility | array | optional | Accessibility options available at the location |
-| spatial_location | object | optional | Coordinates of the location expressed as latitude and longitude using the WGS84 datum |
+| id | int | required | ID that uniquely identifies the location |
+| organization_id | int | required | ID that uniquely identifies the organization the location belongs to | 
+| accessibility | array of strings | optional | Accessibility options available at the location. See [Accessibility](#accessibility) section for accepted values. |
+| address | object | required | Physical address of location. See [Address](#wiki-address) section for object fields. |
+| contacts | array of objects | optional | Points of contact at the location. See [Contacts](#wiki-contacts) section for object fields. |
+| coordinates | array of floats | optional | Coordinates of the location expressed as [longitude, latitude] using the WGS84 datum |
+| description | string | required | Description of services provided at the location |
+| emails | array of strings | optional | General Email addresses for location. Emails that belong to contacts should go in the Contact object. |
+| faxes | array of objects | optional | Fax numbers for the location. See [Faxes](#wiki-faxes) section for object fields. |
+| hours | string | optional | Hours of operation for the location |
+| languages | array of strings | optional | Languages spoken at the location |
+| mail_address | object | optional | Mailing address of location.  See [Mail Address](#wiki-mail-address) section for object fields. |
+| name | string | required | Name of the location |
+| phones | array of objects | optional | Phone numbers for the location. See [Phones](#wiki-phones) section for object fields. |
+| short_desc | string | required | Succinct description of services provided at the location. 200 characters maximum. | 
+| transportation | string | optional | Public transportation options near the location |
+| urls | array of strings | optional | The location's website URLs. Must include "http://" or "https://" |
+
+Note that a location must have at least one type of address, whether the `address` or `mail_address` object.
+
+###Accessibility
+One or more of the following strings:
+
+| String | Description |
+|:-------|:------------|
+| "cd" | Information on CD |
+| "deaf_interpreter" | Interpreter for the deaf |
+| "disabled_parking" | Disabled Parking |
+| "elevator" | Elevator |
+| "ramp" | Ramp |
+| "restroom" | Disabled Restroom |
+| "tape_braille" | Information on tape or in Braille |
+| "tty" | TTY option available |
+| "wheelchair" | Wheelchairs available |
+| "wheelchair_van" | Wheelchair-accessible van available |
+
+###Address
+| Name | Type | Requirement | Detail |
+|:-----|:-----|:---------|:-------|
+| street | string | required | The Street Address |
+| city | string | required | The City name |
+| state | string | required | 2-letter US state abbreviation |
+| zip | string | required | A valid US 5 or 9-digit ZIP code. 9-digit ZIP codes are separated with a dash, like this: 94025-9881. |
+
+###Contacts
+| Name | Type | Requirement | Detail |
+|:-----|:-----|:---------|:-------|
+| name | string | required | The Contact's full name |
+| title | string | required | The Contact's title |
+| email | string | optional | The Contact's email address |
+| fax | string | optional | The Contact's 10-digit US fax number. Formatting is lenient. |
+| phone | string | optional | The Contact's 10-digit US phone number. Formatting is lenient. |
+| extension | string | optional | The Contact's phone number extension. For example: "x1234" |
+
+###Faxes
+| Name | Type | Requirement | Detail |
+|:-----|:-----|:---------|:-------|
+| number | string | required | The Location's 10-digit US fax number. Formatting is lenient. |
+| department | string | optional | The Location's department this fax number reaches. |
+
+###Mail Address
+| Name | Type | Requirement | Detail |
+|:-----|:-----|:---------|:-------|
+| attention | string | optional | Name of person or organization receiving mail |
+| street | string | required | The Street Address |
+| city | string | required | The City name |
+| state | string | required | 2-letter US state abbreviation |
+| zip | string | required | A valid US 5 or 9-digit ZIP code. 9-digit ZIP codes are separated with a dash, like this: 94025-9881. |
+
+###Phones
+| Name | Type | Requirement | Detail |
+|:-----|:-----|:---------|:-------|
+| number | string | required | The Location's 10-digit US phone number. Formatting is lenient. |
+| vanity_number | string | optional | The Location's 10-digit US phone number with vanity letters. For example: 703-555-HELP |
+| extension | string | optional | The Location's phone number extension. For example: "x1234" |
+| department | string | optional | The Location's department this phone number reaches. |
 
 ## Services
 
-| Name | Type | Required | Detail |
+| Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
-| organization_id | string | required | An ID that uniquely identifies an organization |
-| location_id | string | required | An ID that uniquely identifies a location |
-| service_id | string | required | An ID that uniquely identifies a service |
-| how_to_apply | string | required | Description of how to apply to receive the service |
-| eligibility | string | required | Requirements to receive the service |
-| fees | string | required | Fees charged to receive the service |
-| audience | string | optional | Clients that require the service |
+| location_id | string | required | An ID that uniquely identifies the location the service belongs to |
+| id | string | required | An ID that uniquely identifies the service |
+| audience | string | optional | Group of people served |
+| description | string | optional | Description of the service provided |
+| eligibility | string | optional | Requirements to receive the service |
+| fees | string | optional | Fees charged to receive the service |
+| funding_sources | array of strings | optional | Source of funds used to support the service |
+| keywords | array of strings | optional | Keywords that define this service for search purposes |
+| how_to_apply | string | optional | Description of how to apply to receive the service |
+| name | string | optional | Name of the service |
+| service_areas | array of strings | optional | Cities and Counties served. See [Service Areas](#wiki-service-areas) section for more details. |
+| short_desc | string | optional | Succinct description of the service provided. 200 characters maximum. | 
+| urls | array of strings | optional | The service's website URLs. Must include "http://" or "https://"
 | wait | string | optional | Wait times associated with the service |
-| service_areas | array | optional | Areas served |
-| funding_sources | array | optional | Source of funds used to support the service |
-
 
 
 # Files
