@@ -15,7 +15,7 @@ This specification uses snake case where compound words are joined by an undersc
 
 # Data Format
 
-The data format is [JSON, or JavaScript Object Notation](http://json.org). JSON is a lightweight data-interchange format easy for humans to read and write and for machines to parse and generate. JSON is a text format that is completely language independent. Learn more at [JSON.org](http://json.org).
+The data format is [JSON, or JavaScript Object Notation](http://json.org). JSON is a lightweight data-interchange format easy for humans to read and write and for machines to parse and generate. JSON is a text format that is completely language independent. Learn more at [JSON.org](http://json.org) or [Wikipedia/JSON](http://en.wikipedia.org/wiki/JSON).
 
 
 # Data Model
