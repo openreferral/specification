@@ -85,12 +85,6 @@ of its locations, and all the services for each location.
       "emails": [
         "cgonzalez@peninsulafamilyservice.org"
       ],
-      "faxes": [
-        {
-          "number": "650 701-0856",
-          "department": "Application Processing"
-        }
-      ],
       "hours": "Monday-Friday, 9-5",
       "languages": [
         "Filipino (Tagalog)",
@@ -107,7 +101,13 @@ of its locations, and all the services for each location.
       "phones": [
         {
           "number": "650 780-7525",
-          "department": "Reception"
+          "department": "Reception",
+          "type": "voice"
+        },
+        {
+          "number": "703 555-1212",
+          "department": "Reception",
+          "type": "fax"
         }
       ],
       "short_desc": "A multipurpose senior citizens' center serving the Redwood City area.",
@@ -170,11 +170,6 @@ of its locations, and all the services for each location.
       "description": "Provides training and job placement to eligible people age 55 or over who meet certain income qualifications. An income of 125% of poverty level or less is required for subsidized employment and training. (No income requirements for job matchup program.) If a person seems likely to be qualified after a preliminary phone call or visit, he or she must complete an application at this office. Staff will locate appropriate placements for applicants, provide orientation and on-the-job training and assist with finding a job outside the program. Any county resident, regardless of income, age 55 or over has access to the program, job developers and the job bank. Also provides referrals to classroom training. Formerly known as Family Service Agency of San Mateo County, Senior Employment Services.",
       "emails": [
         "bbrown@peninsulafamilyservice.org"
-      ],
-      "faxes": [
-        {
-          "number": "650 403-4302"
-        }
       ],
       "hours": "Monday-Friday, 9-5",
       "languages": [
@@ -267,7 +262,6 @@ The data model is divided in organizations, locations and services. The followin
 | coordinates | array of floats | optional | Coordinates of the location expressed as [longitude, latitude] using the WGS84 datum |
 | description | string | required | Description of services provided at the location |
 | emails | array of strings | optional | General Email addresses for location. Emails that belong to contacts should go in the Contact object. |
-| faxes | array of objects | optional | Fax numbers for the location. See [Faxes](#faxes) section for object fields. |
 | hours | string | optional | Hours of operation for the location |
 | languages | array of strings | optional | Languages spoken at the location |
 | mail_address | object | optional | Mailing address of location.  See [Mail Address](#mail-address) section for object fields. |
@@ -313,12 +307,6 @@ One or more of the following strings:
 | phone | string | optional | The Contact's 10-digit US phone number. Formatting is lenient. |
 | extension | string | optional | The Contact's phone number extension. For example: "x1234" |
 
-###Faxes
-| Name | Type | Requirement | Detail |
-|:-----|:-----|:---------|:-------|
-| number | string | required | The Location's 10-digit US fax number. Formatting is lenient. |
-| department | string | optional | The Location's department this fax number reaches. |
-
 ###Mail Address
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
@@ -363,19 +351,13 @@ The following table list the files that are part of the Human Services Data Spec
 
 | File  | Required | Defines |
 |:------|:---------:|:--------|
-| organization.csv | required | Organization that provides human services. |
-| location.csv | required | Locations that provide human services. |
-| service.csv | required | Services provided at a location. |
-| address.csv | required | location and mailing addresses |
-| phone.csv | required | Phone numbers, hours, and types (voice, fax, tty).|
-| keyword.csv | required | Key words for categorization. |
-| service_contact.csv | required | Service point of contact. |
-| admin_contact.csv | optional | Organization point of contact and phone number. |
-| internet_resource.csv | optional | Email addresses and urls. |
-| service_area.csv | optional | Area where service is available. |
-| accessibility.csv | optional | Accessibility options available. |
-| location_coordinates.csv | optional | Coordinates for locations. |
-
+| organizations.csv | required | Organization that provides human services. |
+| locations.csv | required | Locations that provide human services. |
+| services.csv | required | Services provided at a location. |
+| addresses.csv | required | location addresses |
+| contacts.csv | optional | Location points of contact and their contact details. |
+| mailing_addresses.csv | required only if physical address is not present | location mailing addresses |
+| phones.csv | required | Phone numbers, departments, and types (voice, fax, tty).|
 
 ## File Requirements
 
@@ -428,7 +410,7 @@ locations.csv
 | transportation | string | optional | Public transportation options near the location |
 | urls | comma-separated strings | optional | The location's website URLs. Must include "http://" or "https://" |
 
-### Address
+### Addresses
 addresses.csv
 
 | HSD Name  | Data Type | Required | Detail |
@@ -453,16 +435,8 @@ contacts.csv
 | phone | string | optional | The Contact's 10-digit US phone number. Formatting is lenient. |
 | extension | string | optional | The Contact's phone number extension. For example: "x1234" |
 
-###Faxes
-faxes.csv
 
-| Name | Type | Requirement | Detail |
-|:-----|:-----|:---------|:-------|
-| location_id | string | required | ID that uniquely identifies the location the fax belongs to |
-| number | string | required | The Location's 10-digit US fax number. Formatting is lenient. |
-| department | string | optional | The Location's department this fax number reaches. |
-
-###Mail Address
+###Mailing Addresses
 mailing_addresses.csv
 
 | Name | Type | Requirement | Detail |
@@ -488,8 +462,8 @@ phones.csv
 | country_code | string | optional | Country telephone code prefix based in [ITU E.123](http://www.itu.int/rec/T-REC-E.123-200102-I/en) standard.
 
 
-### Service
-service.csv
+### Services
+services.csv
 
 | HSD Name  | Data Type | Required | Details |
 |:----------|:----------|:----------|:---------|
