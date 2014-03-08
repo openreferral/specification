@@ -262,17 +262,17 @@ The data model is divided in organizations, locations and services. The followin
 | id | int | required | ID that uniquely identifies the location |
 | organization_id | int | required | ID that uniquely identifies the organization the location belongs to | 
 | accessibility | array of strings | optional | Accessibility options available at the location. See [Accessibility](#accessibility) section for accepted values. |
-| address | object | required | Physical address of location. See [Address](#wiki-address) section for object fields. |
-| contacts | array of objects | optional | Points of contact at the location. See [Contacts](#wiki-contacts) section for object fields. |
+| address | object | required | Physical address of location. See [Address](#address) section for object fields. |
+| contacts | array of objects | optional | Points of contact at the location. See [Contacts](#contacts) section for object fields. |
 | coordinates | array of floats | optional | Coordinates of the location expressed as [longitude, latitude] using the WGS84 datum |
 | description | string | required | Description of services provided at the location |
 | emails | array of strings | optional | General Email addresses for location. Emails that belong to contacts should go in the Contact object. |
-| faxes | array of objects | optional | Fax numbers for the location. See [Faxes](#wiki-faxes) section for object fields. |
+| faxes | array of objects | optional | Fax numbers for the location. See [Faxes](#faxes) section for object fields. |
 | hours | string | optional | Hours of operation for the location |
 | languages | array of strings | optional | Languages spoken at the location |
-| mail_address | object | optional | Mailing address of location.  See [Mail Address](#wiki-mail-address) section for object fields. |
+| mail_address | object | optional | Mailing address of location.  See [Mail Address](#mail-address) section for object fields. |
 | name | string | required | Name of the location |
-| phones | array of objects | optional | Phone numbers for the location. See [Phones](#wiki-phones) section for object fields. |
+| phones | array of objects | optional | Phone numbers for the location. See [Phones](#phones) section for object fields. |
 | short_desc | string | required | Succinct description of services provided at the location. 200 characters maximum. | 
 | transportation | string | optional | Public transportation options near the location |
 | urls | array of strings | optional | The location's website URLs. Must include "http://" or "https://" |
