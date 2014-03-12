@@ -8,11 +8,15 @@ The specification is written in extended markdown and rendered by Github. If you
 
 If you're not familiar with git, there are number of guides. Here's a [one of them](http://rogerdudler.github.io/git-guide/)
 
+
+<!---
 ### The specification in other formats
 
 A commentable copy of the document is in [Google Docs](https://docs.google.com/file/d/0B3hyYXEFZTPQb3hKMERqdWNodXM/edit?usp=sharing)
 
 [Word](https://github.com/codeforamerica/hsd_specification/blob/master/HSD_specification.docx), [PDF](https://github.com/codeforamerica/hsd_specification/blob/master/HSD_specification.pdf), and [HTML](https://github.com/codeforamerica/hsd_specification/blob/master/HSD_specification.html) versions of the document are available.
+
+-->
 
 ## License
 
