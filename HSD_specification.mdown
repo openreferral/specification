@@ -13,33 +13,10 @@ This specification defines a minimum set of data elements for a human services d
 This specification uses snake case where compound words are joined by an underscore. Field names are all lower case and in snake case, e.g. `organization_id`.
 
 
-# Data Types
-Data types are borrowed from JSON (JavaScript Object Notation). The types represented in JSON are strings, numbers, objects, arrays, booleans, and null.
+# Data Format
 
-!["Data types"](http://json.org/value.gif "Data Types")
+The data format is [JSON, or JavaScript Object Notation](http://json.org). JSON is a lightweight data-interchange format easy for humans to read and write and for machines to parse and generate. JSON is a text format that is completely language independent. Learn more at [JSON.org](http://json.org) or [Wikipedia/JSON](http://en.wikipedia.org/wiki/JSON).
 
-
-A string is a sequence of zero or more characters wrapped in quotes with backslash escapement. 
-
-!["String"](http://json.org/string.gif "String")
-
-
-A number can be represented as integer, real, or floating point. JSON does not support octal or hex because it is minimal. It does not have values for NaN or Infinity. Numbers are not quoted. 
-
-!["Number"](http://json.org/number.gif "Number")
-
-
-A JSON object is an unordered collection of key/value pairs wrapped in curly braces. The keys are strings and the values are any of the JSON types. A colon separates the keys from the values, and comma separates the pairs. 
-
-!["Object"](http://json.org/object.gif "Object")
-
-
-The JSON array is an ordered collection of values separated by commas wrapped in square brackets. 
-
-!["Array"](http://json.org/array.gif "Array")
-
-
-JSON has two boolean values, true and false.
 
 # Data Model
 
