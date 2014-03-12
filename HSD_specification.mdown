@@ -401,6 +401,7 @@ locations.csv
 |:----------|:----------|:---------|:--------|
 | id | string | required | ID that uniquely identifies the location |
 | organization_id | string | required | ID that uniquely identifies the organization the location belongs to | 
+| aka | string | optional | Alias or Also Known As |
 | accessibility | comma-separated strings | optional | Accessibility options available at the location. See [Accessibility](#accessibility) section for accepted values. |
 | longitude | string | optional | The x coordinate expressed in decimal degrees in the WGS84 datum with up to 8 digits of precision |
 | latitude | string | optional | The y coordinate expressed in decimal degrees in the WGS84 datum with up to 8 digits of precision |
