@@ -476,6 +476,7 @@ services.csv
 | audience | string | optional | Group of people served |
 | description | string | optional | Description of the service provided |
 | eligibility | string | optional | Requirements to receive the service |
+| documentation_required | comma-separated strings | Documentation needed to receive service |
 | fees | string | optional | Fees charged to receive the service |
 | funding_sources | comma-separated strings | optional | Source of funds used to support the service |
 | keywords | comma-separated strings | optional | Keywords that define this service for search purposes |
