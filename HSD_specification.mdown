@@ -486,6 +486,7 @@ services.csv
 | short_desc | string | optional | Succinct description of the service provided. 200 characters maximum. | 
 | urls | comma-separated strings | optional | The service's website URLs. Must include "http://" or "https://"
 | wait | string | optional | Wait times associated with the service |
+| hours | string | optional | Hours of operation for the service |
 
 
 # Extension
