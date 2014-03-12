@@ -248,7 +248,8 @@ The data model is divided in organizations, locations and services. The followin
 | aka | string | optional | Alias or Also Known As |
 | contacts | array of strings | optional | Administrative contact(s) |
 | urls | array of strings | optional | The organization's website URLs. Must include "http://" or "https://" |
-
+| legal_status | string | optional | Legal business structure of the organization |
+| year_of_incorporation | date | optional | Date organization was founded or incorporated |
 
 ## Location
 
@@ -345,6 +346,7 @@ One or more of the following strings:
 | short_desc | string | optional | Succinct description of the service provided. 200 characters maximum. | 
 | urls | array of strings | optional | The service's website URLs. Must include "http://" or "https://"
 | wait | string | optional | Wait times associated with the service |
+| method_of_payment | array of strings | optional | Types of payment accepted, can be enumerated |
 
 
 # Files
@@ -393,6 +395,8 @@ organizations.csv
 | fein | string | optional | Federal Employe Identification Numner |
 | aka | string | optional | Alias or Also Known As |
 | urls | comma-separated strings | optional | The organization's website URLs. Must include "http://" or "https://" |
+| licenses | comma-separated strings | optional | Licenses that the organization holds | 
+| accreditation | comma-separated strings | optional | Accreditations earned by the organizationa |
 
 ### Locations
 locations.csv
@@ -408,7 +412,7 @@ locations.csv
 | description | string | required | Description of services provided at the location |
 | emails | comma-separated strings | optional | General Email addresses for location. Emails that belong to contacts should go in the Contact object. |
 | hours | string | optional | Hours of operation for the location |
-| languages | comma-separated strings | optional | Languages spoken at the location |
+| languages | comma-separated strings | optional | Languages in which service is regularly available |
 | name | string | required | Name of the location |
 | short_desc | string | required | Succinct description of services provided at the location. 200 characters maximum. | 
 | transportation | string | optional | Public transportation options near the location |
@@ -466,8 +470,8 @@ phones.csv
 | country_code | string | optional | Country telephone code prefix based in [ITU E.123](http://www.itu.int/rec/T-REC-E.123-200102-I/en) standard.
 
 
-### Services
-services.csv
+### Service
+service.csv
 
 | HSD Name  | Data Type | Required | Details |
 |:----------|:----------|:----------|:---------|
@@ -475,7 +479,7 @@ services.csv
 | id | string | required | An ID that uniquely identifies the service |
 | audience | string | optional | Group of people served |
 | description | string | optional | Description of the service provided |
-| eligibility | string | optional | Requirements to receive the service |
+| eligibility | string | optional | Requirements to receive the service (can be enumerations from AIRS) |
 | documentation_required | comma-separated strings | Documentation needed to receive service |
 | fees | string | optional | Fees charged to receive the service |
 | funding_sources | comma-separated strings | optional | Source of funds used to support the service |
@@ -487,6 +491,7 @@ services.csv
 | urls | comma-separated strings | optional | The service's website URLs. Must include "http://" or "https://"
 | wait | string | optional | Wait times associated with the service |
 | hours | string | optional | Hours of operation for the service |
+| languages | comma-separated strings | optional | Languages in which service is regularly available |
 
 
 # Extension
