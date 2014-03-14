@@ -232,80 +232,63 @@ The data model is divided in organizations, locations and services. The followin
 
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
-| id | int | required | ID that uniquely identifies the location |
+| location_id | int | required | ID that uniquely identifies the location |
 | organization_id | int | required | ID that uniquely identifies the organization the location belongs to | 
 | accessibility | array of strings | optional | Accessibility options available at the location. See [Accessibility](#accessibility) section for accepted values. |
-| address | object | required | Physical address of location. See [Address](#address) section for object fields. |
+| address | object | required | Physical or mailing address of location. See [Address](#address) section for object fields. |
 | contacts | array of objects | optional | Points of contact at the location. See [Contacts](#contacts) section for object fields. |
 | coordinates | array of floats | optional | Coordinates of the location expressed as [longitude, latitude] using the WGS84 datum |
 | description | string | required | Description of services provided at the location |
 | emails | array of strings | optional | General Email addresses for location. Emails that belong to contacts should go in the Contact object. |
 | hours | string | optional | Hours of operation for the location |
 | languages | array of strings | optional | Languages spoken at the location |
-| mail_address | object | optional | Mailing address of location.  See [Mail Address](#mail-address) section for object fields. |
 | name | string | required | Name of the location |
 | phones | array of objects | optional | Phone numbers for the location. See [Phones](#phones) section for object fields. |
 | short_desc | string | required | Succinct description of services provided at the location. 200 characters maximum. | 
 | transportation | string | optional | Public transportation options near the location |
 | urls | array of strings | optional | The location's website URLs. Must include "http://" or "https://" |
+| accessibility | enumerated or comma separated strings | optional | Accessibility features at the location |
 
 Note that a location must have at least one type of address, whether the `address` or `mail_address` object.
-
-###Accessibility
-One or more of the following strings:
-
-| String | Description |
-|:-------|:------------|
-| "cd" | Information on CD |
-| "deaf_interpreter" | Interpreter for the deaf |
-| "disabled_parking" | Disabled Parking |
-| "elevator" | Elevator |
-| "ramp" | Ramp |
-| "restroom" | Disabled Restroom |
-| "tape_braille" | Information on tape or in Braille |
-| "tty" | TTY option available |
-| "wheelchair" | Wheelchairs available |
-| "wheelchair_van" | Wheelchair-accessible van available |
 
 ###Address
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
+| location_id | int | required | ID that uniquely identifies the location |
+| organization_id | int | required | ID that uniquely identifies the organization the location belongs to |
 | street | string | required | The Street Address |
 | city | string | required | The City name |
 | state | string | required | 2-letter US state abbreviation |
 | zip | string | required | A valid US 5 or 9-digit ZIP code. 9-digit ZIP codes are separated with a dash, like this: 94025-9881. |
+| type | string | required | Indicates whether it is a physical or mailing address
+| attention | string | optional | Name of person or organization receiving mail |
 
-###Contacts
+###Contact
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
-| name | string | required | The Contact's full name |
+| location_id | int | required | ID that uniquely identifies the location |
+| organization_id | int | required | ID that uniquely identifies the organization the location belongs to |
+| type | string | required | Differentiate between service and administrative contacts |
+| contact_name | string | required | The Contact's full name |
 | title | string | required | The Contact's title |
 | email | string | optional | The Contact's email address |
 | fax | string | optional | The Contact's 10-digit US fax number. Formatting is lenient. |
 | phone | string | optional | The Contact's 10-digit US phone number. Formatting is lenient. |
 | extension | string | optional | The Contact's phone number extension. For example: "x1234" |
 
-###Mail Address
-| Name | Type | Requirement | Detail |
-|:-----|:-----|:---------|:-------|
-| attention | string | optional | Name of person or organization receiving mail |
-| street | string | required | The Street Address |
-| city | string | required | The City name |
-| state | string | required | 2-letter US state abbreviation |
-| zip | string | required | A valid US 5 or 9-digit ZIP code. 9-digit ZIP codes are separated with a dash, like this: 94025-9881. |
 
-###Phones
+###Phone
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
-| number | string | required | The Location's 10-digit US phone number. Formatting is lenient. |
+| phone_number | string | required | The Location's 10-digit US phone number. Formatting is lenient. |
 | vanity_number | string | optional | The Location's 10-digit US phone number with vanity letters. For example: 703-555-HELP |
-| extension | string | optional | The Location's phone number extension. For example: "x1234" |
+| phone_extension | string | optional | The Location's phone number extension. For example: "x1234" |
+| phone_hours | string | optional | Hours that phone number is manned |
 | department | string | optional | The Location's department this phone number reaches. |
 | type | string | required | Phone type values can be voice, fax, or tty. |
 | country_code | string | optional | Country telephone code prefix based in [ITU E.123](http://www.itu.int/rec/T-REC-E.123-200102-I/en) standard.
 
-
-## Services
+## Service
 
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
@@ -315,15 +298,15 @@ One or more of the following strings:
 | description | string | optional | Description of the service provided |
 | eligibility | string | optional | Requirements to receive the service |
 | fees | string | optional | Fees charged to receive the service |
-| funding_sources | array of strings | optional | Source of funds used to support the service |
+| funding_sources | comma separated string | optional | Source of funds used to support the service |
 | keywords | array of strings | optional | Keywords that define this service for search purposes |
 | how_to_apply | string | optional | Description of how to apply to receive the service |
 | name | string | optional | Name of the service |
-| service_areas | array of strings | optional | Cities and Counties served. See [Service Areas](#wiki-service-areas) section for more details. |
+| service_areas | text | optional | Cities and Counties served. See [Service Areas](#wiki-service-areas) section for more details. |
 | short_desc | string | optional | Succinct description of the service provided. 200 characters maximum. | 
-| urls | array of strings | optional | The service's website URLs. Must include "http://" or "https://"
+| urls | comma separated strings | optional | The service's website URLs. Must include "http://" or "https://"
 | wait | string | optional | Wait times associated with the service |
-| method_of_payment | array of strings | optional | Types of payment accepted, can be enumerated |
+| method_of_payment | comma separated strings | optional | Types of payment accepted, can be enumerated |
 
 
 # Files
@@ -391,7 +374,7 @@ locations.csv
 | hours | string | optional | Hours of operation for the location |
 | languages | comma-separated strings | optional | Languages in which service is regularly available |
 | name | string | required | Name of the location |
-| short_desc | string | required | Succinct description of services provided at the location. 200 characters maximum. | 
+| short_desc | string | optional | Succinct description of services provided at the location. 200 characters maximum. | 
 | transportation | string | optional | Public transportation options near the location |
 | urls | comma-separated strings | optional | The location's website URLs. Must include "http://" or "https://" |
 
