@@ -1,0 +1,1522 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HSD_specification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+/* 
+   This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
+   Please leave this notice in place, along with any additional credits below.
+   ---------------------------------------------------------------
+   Title: Theme title
+   Author: Your name and optional url
+   Description: Basic description of the theme.
+*/
+
+body
+{
+    -webkit-font-smoothing:antialiased;
+    font:normal .8764em/1.5em Arial,Verdana,sans-serif;
+    margin:0
+}
+
+html>body
+{
+    font-size:13px
+}
+
+li
+{
+    font-size:110%
+}
+
+li li
+{
+    font-size:100%
+}
+
+li p
+{
+    font-size:100%;
+    margin:.5em 0
+}
+
+h1
+{
+    color:#000;
+    font-size:2.2857em;
+    line-height:.6563em;
+    margin:.6563em 0
+}
+
+h2
+{
+    color:#111;
+    font-size:1.7143em;
+    line-height:.875em;
+    margin:.875em 0
+}
+
+h3
+{
+    color:#111;
+    font-size:1.5em;
+    line-height:1em;
+    margin:1em 0
+}
+
+h4
+{
+    color:#111;
+    font-size:1.2857em;
+    line-height:1.1667em;
+    margin:1.1667em 0
+}
+
+h5
+{
+    color:#111;
+    font-size:1.15em;
+    line-height:1.3em;
+    margin:1.3em 0
+}
+
+h6
+{
+    font-size:1em;
+    line-height:1.5em;
+    margin:1.5em 0
+}
+
+body,p,td,div
+{
+    color:#111;
+    font-family:"Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    word-wrap:break-word
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    line-height:1.5em
+}
+
+a
+{
+    -webkit-transition:color .2s ease-in-out;
+    color:#0d6ea1;
+    text-decoration:none
+}
+
+a:hover
+{
+    color:#3593d9
+}
+
+/*h2 em
+{
+    color:#111;
+    padding-left:10px;
+    text-shadow:0 1px 0 #FFF
+}*/
+
+blockquote p
+{
+  font-size:110%;
+  font-style:italic;
+  line-height:1.6em;
+}
+
+.footnote
+{
+    color:#0d6ea1;
+    font-size:.8em;
+    vertical-align:super
+}
+
+#wrapper img
+{
+    max-width:100%;
+    height:auto
+}
+
+dd
+{
+    margin-bottom:1em
+}
+
+li > p:first-child
+{
+    margin:0
+}
+
+ul ul,ul ol
+{
+    margin-bottom:.4em
+}
+
+caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr
+{
+    border-spacing:0
+}
+
+table
+{
+    border:1px solid rgba(0,0,0,0.25);
+    border-collapse:collapse;
+    display:table;
+    empty-cells:hide;
+    margin:-1px 0 23px;
+    padding:0;
+    table-layout:fixed
+}
+
+caption
+{
+    display:table-caption;
+    font-weight:700
+}
+
+col
+{
+    display:table-column
+}
+
+colgroup
+{
+    display:table-column-group
+}
+
+tbody
+{
+    display:table-row-group
+}
+
+tfoot
+{
+    display:table-footer-group
+}
+
+thead
+{
+    display:table-header-group
+}
+
+td,th
+{
+    display:table-cell
+}
+
+tr
+{
+    display:table-row
+}
+
+table th,table td
+{
+    font-size:1.1em;
+    line-height:23px;
+    padding:0 1em
+}
+
+table thead
+{
+    background:rgba(0,0,0,0.15);
+    border:1px solid rgba(0,0,0,0.15);
+    border-bottom:1px solid rgba(0,0,0,0.2)
+}
+
+table tbody
+{
+    background:rgba(0,0,0,0.05)
+}
+
+table tfoot
+{
+    background:rgba(0,0,0,0.15);
+    border:1px solid rgba(0,0,0,0.15);
+    border-top:1px solid rgba(0,0,0,0.2)
+}
+
+figure
+{
+    display:inline-block;
+    margin-bottom:1.2em;
+    position:relative;
+    margin:1em 0
+}
+
+figcaption
+{
+    font-style:italic;    
+    text-align:center;
+    background:rgba(0,0,0,.9);
+    color:rgba(255,255,255,1);
+    position:absolute;
+    left:0;
+    bottom:-24px;
+    width:98%;
+    padding:1%;
+    -webkit-transition:all .2s ease-in-out;
+}
+
+figure:hover>figcaption
+{
+    /* background:rgba(0,0,0,1) */
+}
+
+/* Styles used when "Tab-indented text is poetry" is set */
+.poetry pre
+{
+    display:block;
+    font-family:Georgia, Garamond, serif!important;
+    font-size:110%!important;
+    font-style:italic;
+    line-height:1.6em;
+    margin-left:1em
+}
+
+.poetry pre code
+{
+    font-family:Georgia, Garamond, serif!important
+}
+
+/* important rules for keeping line-height from being affected by sub */
+sup,sub,a.footnote
+{
+    font-size:1.4ex;
+    height:0;
+    line-height:1;
+    position:relative;
+}
+
+sup {
+    vertical-align:super;
+}
+
+sub {
+    vertical-align: sub;
+    top: -1px;
+}
+
+p,h5
+{
+    font-size:1.1429em;
+    line-height:1.3125em;
+    margin:1.3125em 0
+}
+
+dt,th
+{
+    font-weight:700
+}
+
+table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd)
+{
+    background:rgba(255,255,255,0.06)
+}
+
+table tr:nth-child(even),table td:nth-child(even)
+{
+    background:rgba(0,0,0,0.06)
+}
+
+@media print {
+    /* print only styles. Keep it clean */
+    body
+    {
+        overflow:auto
+    }
+    img, pre, blockquote, table, figure, p {
+        page-break-inside: avoid
+    }
+    .footnotes { page-break-before: always }
+
+    #wrapper
+    {
+        background:#fff;
+        color:#303030;
+        font-size:85%;
+        padding:10px;
+        position:relative;
+        text-indent:0
+    }
+}
+
+@media screen {
+    /* Screen-only styles, including inverted styles */
+    .inverted #wrapper,.inverted {
+        background:rgba(37, 42, 42, 1)
+    }
+    .inverted hr {
+        border-color: rgba(51, 63, 64, 1) !important;
+    }
+    .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted pre,.inverted code,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt
+    {
+        color:#eee!important
+    }
+    .inverted table tr:nth-child(odd), .inverted table th:nth-child(odd), .inverted table td:nth-child(odd) {
+      background: none;
+    }
+    .inverted a
+    {
+        color:rgba(172, 209, 213, 1);
+    }
+
+    #wrapper
+    {
+        padding:20px
+    }
+
+    /* styles for more colorful selection highlights */
+    ::selection { background:rgba(157, 193, 200,.5)}
+    h1::selection { background-color:rgba(45, 156, 208, .3)}
+    h2::selection { background-color:rgba(90, 182, 224, .3)}
+    h3::selection,
+    h4::selection,
+    h5::selection,
+    h6::selection,li::selection,ol::selection { background-color:rgba(133, 201, 232, .3)}
+    code::selection { background-color:rgba(0,0,0,.7);color:#eee}
+    code span::selection {background-color:rgba(0,0,0,.7) !important;color:#eee !important}
+    a::selection { background-color:rgba(255, 230, 102,.2)}
+    .inverted a::selection { background-color:rgba(255, 230, 102,.6)}
+	td::selection,th::selection,caption::selection { background-color: rgba(180, 237, 95, .5);}
+}
+
+
+</style>
+<style>#wrapper { max-width:900px; margin:0 auto }</style>
+</head>
+<body class="normal">
+  <div id="wrapper">
+      <h1 id="humanservicesdataspecification">Human Services Data Specification</h1>
+
+<p>This specification defines a minimum set of data elements for a human services data specification. The idea behind the data specification is to create data sets that can be used by multiple domains of expertise. The goal is to derive a specification robust enough to support Information and Retrieval (IR) applications and flexible enough to support localized directories. The focus of this specification is content but a large portion of the specification is dedicated to format because reducing complex data structures into a commonly used format such as comma delimited files (CSV) requires decomposing them into separate files.</p>
+
+<h1 id="termdefinitions">Term Definitions</h1>
+
+<ul>
+<li><p>Field required - The field column must be included in your feed, and a value must be provided for each record. Some required fields permit an empty string as a value. To enter an empty string, just omit any text between the commas for that field. Note that 0 is interpreted as &#8220;a string of value 0&#8221;, and is not an empty string. Please see the field definition for details.</p></li>
+<li><p>Field optional - The field column may be omitted from your feed. If you choose to include an optional column, each record in your feed must have a value for that column. You may include an empty string as a value for records that do not have values for the column. Some optional fields permit an empty string as a value. To enter an empty string, just omit any text between the commas for that field. Note that 0 is interpreted as &#8220;a string of value 0&#8221;, and is not an empty string.</p></li>
+</ul>
+
+<h1 id="conventions">Conventions</h1>
+
+<p>This specification uses snake case where compound words are joined by an underscore. Field name are all lower case and in snake case, e.g. &#8216;organization_id&#8217;.</p>
+
+<h1 id="datatypes">Data Types</h1>
+
+<p>Data types are borrowed from JSON (JavaScript Object Notation). The types represented in JSON are strings, numbers, objects, arrays, booleans, and null.</p>
+
+<figure>
+<img src="http://json.org/value.gif" alt="Data types" title="Data Types" />
+<figcaption>&#8220;Data types&#8221;</figcaption></figure>
+
+
+
+<p>A string is a sequence of zero or more characters wrapped in quotes with backslash escapement. </p>
+
+<figure>
+<img src="http://json.org/string.gif" alt="String" title="String" />
+<figcaption>&#8220;String&#8221;</figcaption></figure>
+
+
+
+<p>A number can be represented as integer, real, or floating point. JSON does not support octal or hex because it is minimal. It does not have values for NaN or Infinity. Numbers are not quoted. </p>
+
+<figure>
+<img src="http://json.org/number.gif" alt="Number" title="Number" />
+<figcaption>&#8220;Number&#8221;</figcaption></figure>
+
+
+
+<p>A JSON object is an unordered collection of key/value pairs wrapped in curly braces. The keys are strings and the values are any of the JSON types. A colon separates the keys from the values, and comma separates the pairs. </p>
+
+<figure>
+<img src="http://json.org/object.gif" alt="Object" title="Object" />
+<figcaption>&#8220;Object&#8221;</figcaption></figure>
+
+
+
+<p>The JSON array is an ordered collection of values separated by commas wrapped in square brackets. </p>
+
+<figure>
+<img src="http://json.org/array.gif" alt="Array" title="Array" />
+<figcaption>&#8220;Array&#8221;</figcaption></figure>
+
+
+
+<p>JSON has two boolean values, true and false.</p>
+
+<h1 id="datamodel">Data Model</h1>
+
+<p>The basic entities are an organization or agency, a program or service, and a site or location. The structure is hierarchical in that an organization has programs that have locations. Note that an organization can have one or more locations and locations can have one or more programs.</p>
+
+<p>The data model can be expressed as JSON. Note that this is an application specific way to express the data, it can be expressed to fit other schemas or application models.</p>
+
+<pre><code>[
+  {
+    &quot;name&quot;: &quot;Mid-Peninsula Speech and Language Clinic&quot;,
+    &quot;locations&quot;: [
+      {
+        &quot;name&quot;: &quot;Mid-Peninsula Speech and Language Clinic&quot;,
+        &quot;contacts&quot;: [
+          {
+            &quot;contact_name&quot;: &quot;Donna Dagenais, MA&quot;,
+            &quot;contact_title&quot;: &quot;Director&quot;
+          }
+        ],
+        &quot;description&quot;: &quot;Provides evaluation, therapy and follow-up to persons of any age who have speech, language or learning disorders. Speech and language disorders may include articulation problems, cleft palate, voice disorders, stuttering, speech retraining following stroke or neurological trauma or neurologic disease. Individuals are first seen for evaluation, after which recommendations are made regarding appropriate treatment or referral for other professional services. Suggestions can be made to help design individual education plans for children needing special services in school, individual and group treatment, tutorial assistance and family counseling.&quot;,
+        &quot;short_desc&quot;: &quot;Provides evaluation, therapy and follow-up to persons of any age who have speech, language or learning disorders.&quot;,
+        &quot;address&quot;: {
+          &quot;street&quot;: &quot;445 Sherman Avenue, Suite O&quot;,
+          &quot;city&quot;: &quot;Palo Alto&quot;,
+          &quot;state&quot;: &quot;CA&quot;,
+          &quot;zip&quot;: &quot;94306&quot;,
+          &quot;type&quot;: &quot;physical&quot;
+        },
+        {
+          &quot;attention&quot;: &quot;Mid-Pen Speech &amp; Language Clin&quot;,
+          &quot;street&quot;: &quot;445 Sherman Avenue, Suite O&quot;,
+          &quot;city&quot;: &quot;Palo Alto&quot;,
+          &quot;state&quot;: &quot;CA&quot;,
+          &quot;zip&quot;: &quot;94306&quot;,
+          &quot;type&quot;: &quot;mailing&quot;
+        },
+        &quot;service_poc&quot;: [
+          &quot;Kathy Kinkaid (kkinkaid@mpslc.com)&quot;
+        ],
+        &quot;hours&quot;: &quot;By appointment&quot;,
+        &quot;transportation&quot;: &quot;SAMTRANS stops within 3 blocks, CALTRAIN within 3 blocks.&quot;,
+        &quot;accessibility&quot;: [
+          &quot;restroom&quot;,
+          &quot;wheelchair&quot;
+        ],
+        &quot;languages&quot;: null,
+        &quot;phones&quot;: [
+          {
+            &quot;number&quot;: &quot;650 321-8111&quot;,
+            &quot;phone_hours&quot;: &quot;(Monday-Friday, 8-5)&quot;
+            &quot;type&quot;: &quot;voice&quot;
+          },
+          {
+            &quot;number&quot;: &quot;650 321-8122&quot;
+            &quot;type&quot;: &quot;fax&quot;
+          }
+        ],
+        &quot;internet_resource&quot;: [
+          &quot;url&quot;: http://www.mpslc.com&quot;,
+          &quot;email&quot;: &quot;ddagenais@mpslc.com&quot;
+        ],
+        &quot;services&quot;: [
+          {
+            &quot;audience&quot;: &quot;Voice disorders, stutterers, children with developmental speech and/or language disorders&quot;,
+            &quot;eligibility&quot;: null,
+            &quot;fees&quot;: &quot;Individual speech therapy $85 per half-hour session. Group therapy $60 per session. Fees for evaluation vary. Cash, checks and credit cards accepted.&quot;,
+            &quot;how_to_apply&quot;: &quot;Apply by phone.&quot;,
+            &quot;service_areas&quot;: [
+              &quot;Alameda County&quot;,
+              &quot;Contra Costa County&quot;,
+              &quot;Marin County&quot;,
+              &quot;San Francisco County&quot;,
+              &quot;San Mateo County&quot;,
+              &quot;Santa Clara County&quot;
+            ],
+            &quot;keywords&quot;: [
+              &quot;DEVELOPMENTAL DISABILITIES SERVICES&quot;,
+              &quot;Speech Therapy&quot;,
+              &quot;HANDICAP SERVICES&quot;,
+              &quot;Screening/Diagnosis&quot;,
+              &quot;Speech and Language Evaluations&quot;
+            ],
+            &quot;wait&quot;: &quot;Varies, usually not very long.&quot;,
+            &quot;funding_sources&quot;: [
+              &quot;Fees&quot;
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
+</code></pre>
+
+<p>The lowest common denominator for data exchange is the comma delimited text file or CSV. CSV are simple table structures. In order to represent complex data types such as arrays and objects, they need to be decomposed into individual tables that are joined to parent tables via a foreign key. The entity relationship diagram below shows how the CSV files are joined to form a single organization.</p>
+
+<figure>
+<img src="img/entity_relationship.png" alt="Entity-relationship" title="ER Diagram" />
+<figcaption>&#8220;Entity-relationship&#8221;</figcaption></figure>
+
+
+
+<h1 id="content">Content</h1>
+
+<p>The data model is divided in organizations, locations and services. The following tables define the minimum set of data needed for a human services data specification.</p>
+
+<h2 id="organization">Organization</h2>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Name</th>
+	<th style="text-align:left;">Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">int</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">ID that uniquely identifies the organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">organization_name</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Name of the organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">FEIN</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Federal Employe Identification Numner</td>
+</tr>
+<tr>
+	<td style="text-align:left;">AKA</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Alias or Also Known As</td>
+</tr>
+<tr>
+	<td style="text-align:left;">admin_contact</td>
+	<td style="text-align:left;">array</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Administrative contact(s)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="locations">Locations</h2>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Name</th>
+	<th style="text-align:left;">Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">int</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">ID that uniquely identifies the organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">int</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">ID that uniquely identifies the organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">location_name</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Name of the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">address</td>
+	<td style="text-align:left;">object</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Physical address of location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">description</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Descrption of services provided at the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">hours</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Hours of operation for the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">phone</td>
+	<td style="text-align:left;">array</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Phone number for the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">mail_address</td>
+	<td style="text-align:left;">object</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Mailing address of location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">service_contact</td>
+	<td style="text-align:left;">object</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Point of contact for service(s) provided</td>
+</tr>
+<tr>
+	<td style="text-align:left;">short_desc</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Succinct description of services provided at the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">email</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Email address for location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">fax</td>
+	<td style="text-align:left;">array</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Fax number for the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">tty</td>
+	<td style="text-align:left;">array</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">TTY number for the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">languages</td>
+	<td style="text-align:left;">array</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Languages spoken at the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">transportation</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Public transportation alternatives near the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">accessibility</td>
+	<td style="text-align:left;">array</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Accessibility options available at the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">spatial_location</td>
+	<td style="text-align:left;">object</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Coordinates of the location expressed as latitude and longitude using the WGS84 datum</td>
+</tr>
+</tbody>
+</table>
+<h2 id="services">Services</h2>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Name</th>
+	<th style="text-align:left;">Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies an organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">service_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">how_to_apply</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Description of how to apply to receive the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">eligibility</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Requirements to receive the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">fees</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Fees charged to receive the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">audience</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Clients that require the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">wait</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Wait times associated with the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">service_areas</td>
+	<td style="text-align:left;">array</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Areas served</td>
+</tr>
+<tr>
+	<td style="text-align:left;">funding_sources</td>
+	<td style="text-align:left;">array</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Source of funds used to support the service</td>
+</tr>
+</tbody>
+</table>
+<h1 id="files">Files</h1>
+
+<p>The following table list the files that are part of the Human Services Data Specification.</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">File</th>
+	<th style="text-align:center;">Required</th>
+	<th style="text-align:left;">Defines</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization.csv</td>
+	<td style="text-align:center;">required</td>
+	<td style="text-align:left;">Organization that provides human services.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">location.csv</td>
+	<td style="text-align:center;">required</td>
+	<td style="text-align:left;">Locations that provide human services.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">service.csv</td>
+	<td style="text-align:center;">required</td>
+	<td style="text-align:left;">Services provided at a location.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">address.csv</td>
+	<td style="text-align:center;">required</td>
+	<td style="text-align:left;">location and mailing addresses</td>
+</tr>
+<tr>
+	<td style="text-align:left;">phone.csv</td>
+	<td style="text-align:center;">required</td>
+	<td style="text-align:left;">Phone numbers, hours, and types (voice, fax, tty).</td>
+</tr>
+<tr>
+	<td style="text-align:left;">keyword.csv</td>
+	<td style="text-align:center;">required</td>
+	<td style="text-align:left;">Key words for categorization.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">service_contact.csv</td>
+	<td style="text-align:center;">required</td>
+	<td style="text-align:left;">Service point of contact.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">admin_contact.csv</td>
+	<td style="text-align:center;">optional</td>
+	<td style="text-align:left;">Organization point of contact and phone number.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">internet_resource.csv</td>
+	<td style="text-align:center;">optional</td>
+	<td style="text-align:left;">Email addresses and urls.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">service_area.csv</td>
+	<td style="text-align:center;">optional</td>
+	<td style="text-align:left;">Area where service is available.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">accessibility.csv</td>
+	<td style="text-align:center;">optional</td>
+	<td style="text-align:left;">Accessibility options available.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">location_coordinates.csv</td>
+	<td style="text-align:center;">optional</td>
+	<td style="text-align:left;">Coordinates for locations.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="filerequirements">File Requirements</h2>
+
+<p>This section defines the format and contents of files.</p>
+
+<ul>
+<li>Data is saved in a comma-delimited file, string elements must be enclosed by double quotes</li>
+<li>The first line of each file must contain field names. Each subsection of the Field Definitions section corresponds to one of the files and lists the field names you may use in that file.</li>
+<li>Field names are case sensitive</li>
+<li>Field values may not contain tabs, carriage returns or new lines
+*Field values that contain quotation marks or commas must be enclosed within quotation marks. In addition, each quotation mark in the field value must be preceded with a quotation mark. This is consistent with the manner in which Microsoft Excel outputs comma-delimited (CSV) files. For more information on the CSV file format, see http://tools.ietf.org/html/rfc4180.
+
+<ul>
+<li>The following example demonstrates how a field value would appear in a comma-delimited file:</li>
+<li>Original field value: Contains &#8220;quotes&#8221;, commas and text</li>
+<li>Field value in CSV file: &#8220;Contains &#8221;&#8220;quotes&#8221;&#8220;, commas and text&#8221;</li>
+</ul></li>
+<li>Field values must not contain HTML tags, comments or escape sequences.</li>
+<li>Remove any extra spaces between fields or field names.</li>
+<li>Each line must end with a CRLF or LF linebreak character.</li>
+<li>Files should be encoded in UTF&#8211;8 to support all Unicode characters.</li>
+</ul>
+
+<h2 id="fielddefinitions">Field Definitions</h2>
+
+<p>Mapping JSON objects to a flat file format requires normalization of data. This means breaking up objects and arrays into individual tables and adding keys to enable joining them in either a JSON object or in a relational database.</p>
+
+<h3 id="organizations">Organizations</h3>
+
+<p>organization.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Organization_id is an ID that uniquely identifies an organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">organization_name</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">The name of the organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">FEIN</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Federal Employe Identification Numner</td>
+</tr>
+<tr>
+	<td style="text-align:left;">AKA</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Alias or Also Known As</td>
+</tr>
+</tbody>
+</table>
+<h3 id="locations">Locations</h3>
+
+<p>location.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies an organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">location_name</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">The name of the location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">description</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">A verbose description of a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">short_desc</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">A succinct description of a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">hours</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">The hours of operation of a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">transportation</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Availability of public transportation near a location</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service">Service</h3>
+
+<p>service.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Details</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies an organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">service_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">eligibility</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Requirements to receive the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">fees</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Fees charged to receive the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">how_to_apply</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Description of how to apply to receive the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">audience</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Clients that require the service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">wait</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Wait times associated with the service</td>
+</tr>
+</tbody>
+</table>
+<h3 id="address">Address</h3>
+
+<p>address.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">type</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Type can either be the physical address or the mailing address</td>
+</tr>
+<tr>
+	<td style="text-align:left;">street_1</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Contains the street number, street prefix, street name, street postfix</td>
+</tr>
+<tr>
+	<td style="text-align:left;">city</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">The city or appropriate administrative unit where the location resides</td>
+</tr>
+<tr>
+	<td style="text-align:left;">state</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">The state or appropriate administrative unit where the location resides, If in the US, use the two letter abbreviation</td>
+</tr>
+<tr>
+	<td style="text-align:left;">postal_code</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">The postal code where the location resides.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">street_2</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Additional address information such as suite number</td>
+</tr>
+<tr>
+	<td style="text-align:left;">country</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">The country where the location resides. Use <a href="http://www.iso.org/iso/home/standards/country_codes.htm">ISO 3166</a> for country designators.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="phone">Phone</h3>
+
+<p>phone.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">phone_number</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">The phone number follows the pattern of area code, exchange prefix, line number; e.g. 5551234567</td>
+</tr>
+<tr>
+	<td style="text-align:left;">phone_type</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Phone type values can be voice, fax, or tty.</td>
+</tr>
+<tr>
+	<td style="text-align:left;">phone_extension</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Phone extension is prefixed with a lowercase &#8220;x&#8221; followed by the extension; e.g. x1111</td>
+</tr>
+<tr>
+	<td style="text-align:left;">phone_hours</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Hours that the phones will be ansewerd</td>
+</tr>
+<tr>
+	<td style="text-align:left;">country_code</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Country telephone code prefix based in <a href="http://www.itu.int/rec/T-REC-E.123-200102-I/en">ITU E.123</a> standard.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="administrativecontact">Administrative Contact</h3>
+
+<p>admin_contact.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">contact_name</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Name of administrative contact</td>
+</tr>
+<tr>
+	<td style="text-align:left;">contact_title</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Title of administrative contact</td>
+</tr>
+</tbody>
+</table>
+<h3 id="servicecontacts">Service Contacts</h3>
+
+<p>service_contact.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">service_poc</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">Name of service provider contact</td>
+</tr>
+<tr>
+	<td style="text-align:left;">poc_title</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Title of point of contact</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internetresource">Internet Resource</h3>
+
+<p>internet_resource.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a location</td>
+</tr>
+<tr>
+	<td style="text-align:left;">resource</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">A URL or email address for contacting the organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">resource_type</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">optional</td>
+	<td style="text-align:left;">Type of resource is either a URL in the form of http://organization.org/ or an email in the form of persont@organization.org</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accessibility">Accessibility</h3>
+
+<p>accessibility.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">accomodation</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">A description of an accessibility service available at the location. E.g. wheelchair ramp, sign interpreter, etc.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="keyword">Keyword</h3>
+
+<p>keyword.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">service_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a service</td>
+</tr>
+<tr>
+	<td style="text-align:left;">keyword</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">A keyword that describes the service and can be used for classifying services under a taxonomy</td>
+</tr>
+</tbody>
+</table>
+<h3 id="funding">Funding</h3>
+
+<p>funding.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">organization_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">source</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">A description of funding sources, e,g. county, state, private donors</td>
+</tr>
+</tbody>
+</table>
+<h3 id="locationcoordinates">Location Coordinates</h3>
+
+<p>location_coordinates.csv</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">HSD Name</th>
+	<th style="text-align:left;">Data Type</th>
+	<th style="text-align:left;">Required</th>
+	<th style="text-align:left;">Detail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">location_id</td>
+	<td style="text-align:left;">string</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">An ID that uniquely identifies a organization</td>
+</tr>
+<tr>
+	<td style="text-align:left;">latitude</td>
+	<td style="text-align:left;">number</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">The y coordinate expressed in decimal degrees in the WGS84 datum</td>
+</tr>
+<tr>
+	<td style="text-align:left;">longitude</td>
+	<td style="text-align:left;">number</td>
+	<td style="text-align:left;">required</td>
+	<td style="text-align:left;">The x coordinate expressed in decimal degrees in the WGS84 datum</td>
+</tr>
+</tbody>
+</table>
+<h1 id="extension">Extension</h1>
+
+<p>The specification can be extended or modified with additional data elements. If the data type is simple it can be directly added to the organizations, locations and services table definitions. If the data type is complex, e.g. an array or an object, then an additional CSV file will be necessary. Foreign key should be assigned as needed with the intended purpose of the data.</p>
+    </div>
+</body>
+</html>
