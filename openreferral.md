@@ -1,19 +1,19 @@
 # OpenReferral
 
-This specification defines a minimum set of data elements for OpenReferral, a human services data interchange specification. The idea behind the specification is to create shareable multi-purpose human service data sets. The goal is to derive a specification robust enough to support Information and Retrieval (IR) applications, yet flexible enough to support localized directories. The focus of this specification is content but a significan portion of the specification is dedicated to a design that reduces data structures into comma delimited files (CSV).
+This specification defines a minimum set of data elements for OpenReferral, a human services data interchange specification. The idea behind the specification is to create shareable multi-purpose human service data sets. The goal is to derive a specification robust enough to support Information and Retrieval (IR) applications, yet flexible enough to support localized and specialized directories. The focus of this specification is content but a significant portion of the specification is dedicated to a design that reduces data structures into comma delimited files (CSV).
 
-# Term Definitions
+# 1.0 Term Definitions
 
 * Field required - The field column must be included in your feed, and a value must be provided for each record. Some required fields permit an empty string as a value. To enter an empty string, just omit any text between the commas for that field. Note that 0 is interpreted as "a string of value 0", and is not an empty string. Please see the field definition for details.
 
 * Field optional - The field column may be omitted from your feed. If you choose to include an optional column, each record in your feed must have a value for that column. You may include an empty string as a value for records that do not have values for the column. Some optional fields permit an empty string as a value. To enter an empty string, just omit any text between the commas for that field. Note that 0 is interpreted as "a string of value 0", and is not an empty string.
 
-# Conventions
+# 2.0 Conventions
 
 This specification uses snake case where compound words are joined by an underscore. Field names are all lower case and in snake case, e.g. `organization_id`.
 
 
-# Data Model
+# 3.0 Data Model
 
 The basic entities are an organization or agency, a location (or site), and a service or program. 
 The structure supports a model where organization has one or more locations that provide one or more services, or conversely one or more services can have one or more locations.
@@ -23,32 +23,32 @@ The lowest common denominator for data exchange is the comma delimited text file
 !["Entity-relationship"](img/entity_relationship.png "ER Diagram")
 
 
-# Content
+# 4.0 Content
 
 The data model is divided in organizations, locations and services. The following tables define the minimum set of data needed for a human services data specification.
 
-## Organization
+## 4.1 Tables
 
+### Organization
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | organization_id | int | required | ID that uniquely identifies the organization | 
-| name | string | required | Name of the organization
+| name | string | required | Name of the organization |
 | fein | string | optional | Federal Employer Identification Number |
 | aka | string | optional | Alias or Also Known As |
 | legal_status | string | optional | Legal business structure of the organization |
 | year_of_incorporation | date | optional | Date organization was founded or incorporated |
 | licenses | text | optional | Licenses that the organization holds | 
-| accreditation | text | optional | Accreditations earned by the organizationa |
+| accreditation | text | optional | Accreditations earned by the organizations |
 
-## Location
-
+### Location
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | int | required | ID that uniquely identifies the location |
 | organization_id | int | required | ID that uniquely identifies the organization the location belongs to | 
 | name | string | required | Name of the location |
 | aka | string | optional | Alias or Also Known As |
-| accessibility | array of strings | optional | Accessibility options available at the location. See [Accessibility](#accessibility) section for accepted values. |
+| accessibility | array of strings | optional | Accessibility options available at the location |
 | coordinates | text | optional | Coordinates of the location expressed as [longitude, latitude] using the WGS84 datum |
 | description | string | required | Description of services provided at the location |
 | location_hours | string | optional | Hours of operation for the location | 
@@ -59,8 +59,7 @@ The data model is divided in organizations, locations and services. The followin
 | transportation | string | optional | Public transportation options near the location |
 | accessibility | enumerated or comma separated strings | optional | Accessibility features at the location |
 
-## Service
-
+### Service
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | string | required | An ID that uniquely identifies the location the service belongs to |
@@ -73,14 +72,14 @@ The data model is divided in organizations, locations and services. The followin
 | fees | string | optional | Fees charged to receive the service |
 | keywords | text | optional | Keywords that define this service for search purposes |
 | how_to_apply | string | optional | Description of how to apply to receive the service |
-| service_areas | text | optional | Cities and Counties served. See [Service Areas](#wiki-service-areas) section for more details. |
+| service_areas | text | optional | Cities, counties and areas served |
 | short_desc | string | optional | Succinct description of the service provided. 200 characters maximum. | 
 | service_hours | string | optional | Hours of operation for the service |
 | service_languages | comma-separated strings | optional | Languages in which service is regularly available |
 | wait | string | optional | Wait times associated with the service |
 | method_of_payment | comma separated strings | optional | Types of payment accepted, can be enumerated |
 
-###Address
+### Address
 | HSD Name  | Data Type | Required | Detail |
 |:----------|:----------|:---------|:--------|
 | location_id | string | required | ID that uniquely identifies the location the address belongs to |
@@ -93,7 +92,7 @@ The data model is divided in organizations, locations and services. The followin
 | postal_code | string | required | The postal code where the location resides. |
 | country | string | optional | The country where the location resides. Use [ISO 3166](http://www.iso.org/iso/home/standards/country_codes.htm) for country designators. |
 
-###Contact
+### Contact
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | int | required | ID that uniquely identifies the location |
@@ -107,7 +106,7 @@ The data model is divided in organizations, locations and services. The followin
 | phone | string | optional | The Contact's 10-digit US phone number. Formatting is lenient. |
 | extension | string | optional | The Contact's phone number extension. For example: "x1234" |
 
-###Phone
+### Phone
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | string | required | ID that uniquely identifies the location the phone number belongs to |
@@ -121,26 +120,24 @@ The data model is divided in organizations, locations and services. The followin
 | type | string | required | Phone type values can be voice, fax, or tty. |
 | country_code | string | optional | Country telephone code prefix based in [ITU E.123](http://www.itu.int/rec/T-REC-E.123-200102-I/en) standard.
 
-###Internet_Resource
-
+### Internet_Resource
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | string | optional | ID that uniquely identifies the location the phone number belongs to |
 | organization_id | int | optional | ID that uniquely identifies the organization the location belongs to |
 | service_id | string | required | An ID that uniquely identifies the service |
-| resource | text | required | URI or email address to resource|
+| resource | text | required | URI or email address to resource |
 | resource_type | required | Type of resource: email, website, application |
 
-###Funding
-
+### Funding
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | organization_id | int | optional | ID that uniquely identifies the organization the location belongs to |
 | service_id | string | required | An ID that uniquely identifies the service |
-| source | text | required | URI or email address to resource|
+| source | text | required | URI or email address to resource |
 
 
-# Data Format
+# 5.0 Data Format
 
 The OpenReferral interchange format is composed of a set of files. This section defines the format and contents of files.
 
@@ -154,11 +151,11 @@ The OpenReferral interchange format is composed of a set of files. This section 
   * Field value in CSV file: "Contains ""quotes"", commas and text"
 * Field values must not contain HTML tags, comments or escape sequences.
 * Remove any extra spaces between fields or field names.
-* Each line must end with a CRLF or LF linebreak character.
+* Each line must end with a CRLF or LF line break character.
 * Files should be encoded in UTF-8 to support all Unicode characters.
 
 
-## Files
+## 5.1 Files
 
 The following table list the files that make up the OpenReferral interchange format.
 
@@ -174,47 +171,41 @@ The following table list the files that make up the OpenReferral interchange for
 | funding.csv | optional | Funding sources. |
 
 
-## Field Definitions
+## 5.2 Field Definitions
 Mapping JSON objects to a flat file format requires normalization of data. This means breaking up objects and arrays into individual tables and adding keys to enable joining them in either a JSON object or in a relational database.
 
 
-### Organization 
-organization.csv
-
+### Organization (organization.csv)
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | organization_id | int | required | ID that uniquely identifies the organization | 
-| name | string | required | Name of the organization
+| name | string | required | Name of the organization |
 | fein | string | optional | Federal Employer Identification Number |
 | aka | string | optional | Alias or Also Known As |
 | legal_status | string | optional | Legal business structure of the organization |
 | year_of_incorporation | date | optional | Date organization was founded or incorporated |
 | licenses | comma-separated strings | optional | Licenses that the organization holds | 
-| accreditation | comma-separated strings | optional | Accreditations earned by the organizationa |
+| accreditation | comma-separated strings | optional | Accreditations earned by the organization |
 
-### Location
-location.csv
-
+### Location (location.csv)
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | int | required | ID that uniquely identifies the location |
 | organization_id | int | required | ID that uniquely identifies the organization the location belongs to | 
 | name | string | required | Name of the location |
 | aka | string | optional | Alias or Also Known As |
-| accessibility | array of strings | optional | Accessibility options available at the location. See [Accessibility](#accessibility) section for accepted values. |
+| accessibility | array of strings | optional | Accessibility options available at the location |
 | coordinates | text | optional | Coordinates of the location expressed as [longitude, latitude] using the WGS84 datum |
 | description | string | required | Description of services provided at the location |
 | location_hours | string | optional | Hours of operation for the location | 
 | location_languages | array of strings | optional | Languages spoken at the location |
 | name | string | required | Name of the location |
-| phones | array of objects | optional | Phone numbers for the location. See [Phones](#phones) section for object fields. |
+| phones | array of objects | optional | Phone numbers for the location |
 | short_desc | string | required | Succinct description of services provided at the location. 200 characters maximum. | 
 | transportation | string | optional | Public transportation options near the location |
 | accessibility | enumerated or comma separated strings | optional | Accessibility features at the location |
 
-### Service
-service.csv
-
+### Service (service.csv)
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | string | required | An ID that uniquely identifies the location the service belongs to |
@@ -234,9 +225,7 @@ service.csv
 | service_languages | comma-separated strings | optional | Languages in which service is regularly available |
 | method_of_payment | comma separated strings | optional | Types of payment accepted, can be enumerated |
 
-### Address
-address.csv
-
+### Address (address.csv)
 | HSD Name  | Data Type | Required | Detail |
 |:----------|:----------|:---------|:--------|
 | location_id | string | required | ID that uniquely identifies the location the address belongs to |
@@ -250,9 +239,7 @@ address.csv
 | postal_code | string | required | The postal code where the location resides. |
 | country | string | optional | The country where the location resides. Use [ISO 3166](http://www.iso.org/iso/home/standards/country_codes.htm) for country designators. |
 
-### Contact
-contact.csv
-
+### Contact (contact.csv)
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | int | required | ID that uniquely identifies the location |
@@ -266,9 +253,7 @@ contact.csv
 | phone | string | optional | The Contact's 10-digit US phone number. Formatting is lenient. |
 | extension | string | optional | The Contact's phone number extension. For example: "x1234" |
 
-###Phone
-phone.csv
-
+###Phone (phone.csv)
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | string | required | ID that uniquely identifies the location the phone number belongs to |
@@ -281,37 +266,33 @@ phone.csv
 | type | string | required | Phone type values can be voice, fax, or tty. |
 | country_code | string | optional | Country telephone code prefix based in [ITU E.123](http://www.itu.int/rec/T-REC-E.123-200102-I/en) standard.
 
-###Internet Resource
-internet_resource.csv
-
+###Internet Resource (internet_resource.csv)
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | location_id | string | optional | ID that uniquely identifies the location the phone number belongs to |
 | organization_id | int | optional | ID that uniquely identifies the organization the location belongs to |
 | service_id | string | required | An ID that uniquely identifies the service |
-| resource | text | required | URI or email address to resource|
+| resource | text | required | URI or email address to resource |
 | resource_type | required | Type of resource: email, website, application |
 
-###funding
-funding.csv
-
+###Funding (funding.csv)
 | Name | Type | Requirement | Detail |
 |:-----|:-----|:---------|:-------|
 | organization_id | int | optional | ID that uniquely identifies the organization the location belongs to |
 | service_id | string | required | An ID that uniquely identifies the service |
-| source | text | required | URI or email address to resource|
+| source | text | required | URI or email address to resource |
 
 
-##Alternate formats
+# 6.0 Alternate formats
 
 The data model can be expressed as [JSON, or JavaScript Object Notation](http://json.org). JSON is a lightweight data-interchange format easy for humans to read and write and for machines to parse and generate. JSON is a text format that is completely language independent. Learn more at [JSON.org](http://json.org) or [Wikipedia/JSON](http://en.wikipedia.org/wiki/JSON).
 
 
-Below is an example JSON object that represents one organization, along with all of its locations, and all the services for each location. 
+Below is an example JSON object that represents one organization in a single locations and two services at that location. 
 
 ```json
 {
-  "name": "Peninsula Family Service",
+  "name": "Local Family Service",
   "locations": [
     {
       "accessibility": [
@@ -321,46 +302,48 @@ Below is an example JSON object that represents one organization, along with all
         "wheelchair"
       ],
       "address": {
-        "street": "2600 Middlefield Road",
-        "city": "Redwood City",
+        "type": "physical",
+        "street": "1600 Middlefield Road",
+        "city": "Redland City",
         "state": "CA",
-        "zip": "94063"
+        "zip": "94064"
       },
-      "contacts": [
+      "contact": [
         {
-          "name": "Susan Houston",
-          "title": "Director of Older Adult Services",
-          "email": "susan@houston.org",
+          "contact_name": "Betsy Dallas",
+          "contact_title": "Director of Senior Services",
+          "email": "betsy@dallas.org",
           "fax": "703-555-1212",
           "phone": "703-555-1212",
           "extension": "x1234"
         },
         {
-          "name": " Christina Gonzalez",
-          "title": "Center Director"
+          "contact_name": " Christian Johnson",
+          "contact_title": "Center Director"
         }
       ],
       "coordinates": [-122.2141324, 37.4773738],
-      "description": "A walk-in center for older adults that provides social services, wellness, recreational, educational and creative activities including arts and crafts, computer classes and gardening classes. Coffee and healthy breakfasts are available daily. A hot lunch is served Tuesday-Friday for persons age 60 or over and spouse.        Provides case management (including in-home assessments) and bilingual information and referral about community services to persons age 60 or over on questions of housing, employment, household help, recreation and social activities, home delivered meals, health and counseling services and services to shut-ins. Health insurance and legal counseling is available by appointment. Lectures on a variety of health and fitness topics are held monthly in both English and Spanish.  Provides a variety of physical fitness opportunities, including a garden club, yoga, tai chi, soul line dance and aerobics classes geared toward older adults. Also provides free monthly blood pressure screenings, quarterly blood glucose monitoring and health screenings by a visiting nurse. Offers a Brown Bag Program in which low-income seniors can receive a bag of groceries each week for a membership fee of $10 a year. Offers Spanish lessons. Formerly known as Peninsula Family Service, Fair Oaks Intergenerational Center. Formerly known as the Fair Oaks Senior Center. Formerly known as Family Service Agency of San Mateo County, Fair Oaks Intergenerational Center.",
+      "description": "A walk-in center for older adults that provides social services, wellness, recreational, educational and creative activities including arts and crafts, computer classes and gardening classes. Coffee and healthy breakfasts are available daily. A hot lunch is served Tuesday-Friday for persons age 60 or over and spouse. Provides case management (including in-home assessments) and bilingual information and referral about community services to persons age 60 or over on questions of housing, employment, household help, recreation and social activities, home delivered meals, health and counseling services and services to shut-ins. Health insurance and legal counseling is available by appointment. Lectures on a variety of health and fitness topics are held monthly in both English and Spanish.  Provides a variety of physical fitness opportunities, including a garden club, yoga, tai chi, soul line dance and aerobics classes geared toward older adults. Also provides free monthly blood pressure screenings, quarterly blood glucose monitoring and health screenings by a visiting nurse. Offers a Brown Bag Program in which low-income seniors can receive a bag of groceries each week for a membership fee of $10 a year. Offers Spanish lessons. Formerly known as Peninsula Family Service, Fair Oaks Intergenerational Center. Formerly known as the Fair Oaks Senior Center. Formerly known as Family Service Agency of San Mateo County, Fair Oaks Intergenerational Center.",
       "emails": [
-        "cgonzalez@peninsulafamilyservice.org"
+        "cjohnson@localfamilyservice.org"
       ],
-      "hours": "Monday-Friday, 9-5",
-      "languages": [
+      "location_hours": "Monday-Friday, 9-5",
+      "location_languages": [
         "Filipino (Tagalog)",
         "Spanish"
       ],
-      "mail_address": {
-        "attention": "Fair Oaks Intergenerational Center",
-        "street": "2600 Middlefield Road",
-        "city": "Redwood City",
+      "address": {
+        "type": "mailing",
+        "attention": "Fairfield Senior Center",
+        "street": "1600 Middlefield Road",
+        "city": "Redland City",
         "state": "CA",
-        "zip": "94063"
+        "zip": "94064"
       },
-      "name": "Fair Oaks Adult Activity Center",
+      "name": "Fairfiel Adult Activity Center",
       "phones": [
         {
-          "number": "650 780-7525",
+          "number": "650 708-7255",
           "department": "Reception",
           "type": "voice"
         },
@@ -373,7 +356,7 @@ Below is an example JSON object that represents one organization, along with all
       "short_desc": "A multipurpose senior citizens' center serving the Redwood City area.",
       "transportation": "SAMTRANS stops in front.",
       "urls": [
-        "http://www.peninsulafamilyservice.org"
+        "http://www.localfamilyservice.org"
       ],
       "services": [
         {
@@ -389,7 +372,7 @@ Below is an example JSON object that represents one organization, along with all
           ],
           "keywords": [
             "ADULT PROTECTION AND CARE SERVICES",
-            "Meal Sites/Home-delivered Mea",
+            "Meal Sites/Home-delivered Meals",
             "COMMUNITY SERVICES",
             "Group Support",
             "Information and Referral",
@@ -405,7 +388,7 @@ Below is an example JSON object that represents one organization, along with all
           ],
           "how_to_apply": "Walk in or apply by phone.",
           "service_areas": [
-            "Redwood City"
+            "Redland City"
           ],
           "wait": "No wait."
         }
@@ -416,47 +399,48 @@ Below is an example JSON object that represents one organization, along with all
         "wheelchair"
       ],
       "address": {
-        "street": "24 Second Avenue",
+        "street": "2473 Second Avenue",
         "city": "San Mateo",
         "state": "CA",
-        "zip": "94401"
+        "zip": "94404"
       },
       "contacts": [
         {
-          "name": "Brenda Brown",
-          "title": "Director, Second Career Services"
+          "name": "Alice Smith",
+          "title": "Director, Career Services"
         }
       ],
       "description": "Provides training and job placement to eligible people age 55 or over who meet certain income qualifications. An income of 125% of poverty level or less is required for subsidized employment and training. (No income requirements for job matchup program.) If a person seems likely to be qualified after a preliminary phone call or visit, he or she must complete an application at this office. Staff will locate appropriate placements for applicants, provide orientation and on-the-job training and assist with finding a job outside the program. Any county resident, regardless of income, age 55 or over has access to the program, job developers and the job bank. Also provides referrals to classroom training. Formerly known as Family Service Agency of San Mateo County, Senior Employment Services.",
       "emails": [
-        "bbrown@peninsulafamilyservice.org"
+        "asmith@localfamilyservice.org"
       ],
-      "hours": "Monday-Friday, 9-5",
-      "languages": [
+      "service_hours": "Monday-Friday, 9-5",
+      "service_languages": [
         "Chinese (Mandarin)",
         "Filipino (Tagalog)",
         "Italian",
         "Spanish"
       ],
-      "mail_address": {
-        "attention": "PFS Second Career Services",
-        "street": "24 Second Avenue",
+      "address": {
+        "type": "mailing"
+        "attn": "Local Career Services",
+        "street": "2473 Second Avenue",
         "city": "San Mateo",
         "state": "CA",
-        "zip": "94401"
+        "zip": "94404"
       },
-      "name": "Second Career Employment Program",
+      "name": "Career Employment Program",
       "phones": [
         {
-          "number": "650 403-4300",
-          "department": " Ext. 4385",
+          "number": "650 430-4003",
+          "department": " Ext. 4845",
           "hours": "(Monday-Friday, 9-5)"
         }
       ],
       "short_desc": "Provides training and job placement to eligible persons age 55 or over. All persons age 55 or over have access to information in the program's job bank.",
       "transportation": "SAMTRANS stops within 1 block, CALTRAIN stops within 6 blocks.",
       "urls": [
-        "http://www.peninsulafamilyservice.org"
+        "http://www.localfamilyservice.org"
       ],
       "services": [
         {
@@ -489,6 +473,6 @@ Below is an example JSON object that represents one organization, along with all
 }
 ```
 
-# Extending OpenReferral 
+# 7.0 Extending OpenReferral 
 
 The specification can be extended or modified with additional data elements. If the data type is simple it can be directly added to the organizations, locations and services table definitions. If the data type is complex, e.g. an array or an object, then an additional CSV file will be necessary. Foreign key should be assigned as needed with the intended purpose of the data.
