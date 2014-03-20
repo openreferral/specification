@@ -1,10 +1,10 @@
 {
 	"name" : "OpenReferral",
 	"repository" :
-  {
-  	"type" : "git",
-  	"url" : "http://github.com/codeforamerica/OpenReferral.git"
-  },
+	{
+		"type" : "git",
+		"url" : "http://github.com/codeforamerica/OpenReferral.git"
+	},
 	"dependencies" :
 	{
 		"grunt" : "~0.4.1",
