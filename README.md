@@ -19,6 +19,8 @@ A commentable copy of the document is in [Google Docs](https://docs.google.com/f
 -->
 
 ### The specification in other formats
+***Note: the following requires that nodejs is installed, follow the [node installation instructions](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) for your system if needed.***
+
 To generate a PDF file of the current specification, perform the following from the terminal:
 
  1. Clone the project with `git clone http://github.com/codeforamerica/OpenReferral.git ~/OpenReferral`
@@ -27,6 +29,7 @@ To generate a PDF file of the current specification, perform the following from 
  4. Generate a PDF with `grunt pdf`
 
 The PDF will appear in `~/OpenReferral/pdf/openreferral-[commit ID].pdf`
+
 
 ## License
 
