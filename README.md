@@ -20,11 +20,13 @@ A commentable copy of the document is in [Google Docs](https://docs.google.com/f
 
 ### The specification in other formats
 To generate a PDF file of the current specification, perform the following from the terminal:
+
  1. Clone the project with `git clone http://github.com/codeforamerica/OpenReferral.git ~/OpenReferral`
  2. Move into the directory with `cd ~/OpenReferral`
  3. Install node modules with `npm install`
  4. Generate a PDF with `grunt pdf`
-The PDF will appear in `~/OpenReferral/pdf/openreferral-[commit ID].pdf`.
+
+The PDF will appear in `~/OpenReferral/pdf/openreferral-[commit ID].pdf`
 
 ## License
 
