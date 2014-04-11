@@ -4,7 +4,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-git-rev-parse');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-rename');
 
   grunt.initConfig(
   {
@@ -20,13 +19,18 @@ module.exports = function(grunt){
 
     copy:
     {
-      files: {expand: true, src: ['openreferral.md'], dest: "tmp", filter: 'isFile'}
+      files: {
+        expand: true,
+        src: ['openreferral.md'],
+        dest: "tmp",
+        filter: 'isFile',
+        rename: function(dest, src) {
+          var returnVal = dest+'/'+src.substring(0, src.indexOf('.md')) +
+          '-<%= grunt.config.get(\'git-revision\') %>.md';
+          return returnVal;
+        } // rename
+      } // files
     }, // copy
-
-    rename:
-    {
-      files: {src: ['tmp/openreferral.md'], dest: 'tmp/openreferral-<%= grunt.config.get(\'git-revision\') %>.md'}
-    }, // rename
 
     markdownpdf:
     {
@@ -41,5 +45,5 @@ module.exports = function(grunt){
 
   });
 
-  grunt.registerTask('pdf', ['git-rev-parse','copy','rename','markdownpdf','clean']);
+  grunt.registerTask('pdf', ['git-rev-parse','copy','markdownpdf','clean']);
 } //exports
