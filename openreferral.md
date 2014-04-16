@@ -282,7 +282,7 @@ Mapping JSON objects to a flat file format requires normalization of data. This 
 | service_id | string | required | An ID that uniquely identifies the service |
 | source | text | required | URI or email address to resource |
 
-
+<!--
 # 6.0 Alternate formats
 
 The data model can be expressed as [JSON, or JavaScript Object Notation](http://json.org). JSON is a lightweight data-interchange format easy for humans to read and write and for machines to parse and generate. JSON is a text format that is completely language independent. Learn more at [JSON.org](http://json.org) or [Wikipedia/JSON](http://en.wikipedia.org/wiki/JSON).
@@ -472,7 +472,7 @@ Below is an example JSON object that represents one organization in a single loc
   ]
 }
 ```
-
-# 7.0 Extending OpenReferral 
+-->
+# 6.0 Extending OpenReferral 
 
 The specification can be extended or modified with additional data elements. If the data type is simple it can be directly added to the organizations, locations and services table definitions. If the data type is complex, e.g. an array or an object, then an additional CSV file will be necessary. Foreign key should be assigned as needed with the intended purpose of the data.
