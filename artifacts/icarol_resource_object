@@ -1,0 +1,96 @@
+"{",,
+,"“id“:“identifier“, ",
+,"“databaseID“:int, ","Database ID "
+,"“names“:[{ ","Array of resourceName objects. "
+,"“value“:“string“, ","Name of the resource "
+,"“purpose“:“string“, ","The purpose of this name. Typically one of these "
+,,"values: "
+,," Primary "
+,," Alternate "
+,," Official "
+,"“language“:“languageCode“ ","If this name is specific to a particular language, a "
+,,"language code following the IETF RFC 4646 standard. "
+,"}], ",
+,"“type“:“resourceType“, ","Type of the resource. "
+,," Agency "
+,," Program "
+,," Site "
+,," ProgramAtSite "
+,,"(Hint: see the iCarol website for a description of how "
+,,"these types interact) "
+,"“status“:“string“, ","Current status of this resource. Common values: "
+,," Active "
+,," Inactive "
+,"“taxonomy“:[“taxonomyCode“], ","Array of taxonomyCode strings which may be linked by "
+,,"joining multiple terms together in one string separated "
+,,"by the delimiter “ * “. "
+,"“categories“:[categoryID], ","Array of categoryID integers. "
+,"“description“:“string“, ","Primary description of the resource. Note: This field "
+,,"can contain HTML. "
+,"“descriptionText“:“string“, ","Primary description of the resource. Note: This field "
+,,"contains the same text as description, but any HTML "
+,,"has been stripped but may still contain line breaks. "
+,"“searchHints“:[“string“], ","A list of keywords used during resource searching. "
+,"“temporaryMessage“:“string“, ","If defined, contains a message that should be displayed "
+,,"along with the resource description. "
+,"“verificationExpired“:“dateTime“, ","If defined, the date on which this resources' previous "
+,,"validation has expired. This resource record may "
+,,"contain obsolete or incorrect information. (ISO 8601) "
+,"“legalStatus“:“string“, ","If defined, the legal status of this resource. "
+,"“related“:[{ ","Array of resourceRelationship objects. "
+,"“id“:“identifier“, ","Resource ID "
+,"“name“:“string“, ",
+,"“type“:“resourceType“ ",
+,"}], ",
+"“contactDetails“:[{ ","Array of contactDetail objects. "
+"“isConfidential“:boolean, ","If true, this contactMethod should not be exposed to "
+,"public users. "
+"“contact“:{contactMethod}, ","A single contactMethod object. See Below. "
+"}], ",
+"“languagesOffered“:“string“ ","Describes the language services offered by this "
+,"resource. (Plain Text) "
+"“isFeatured“:boolean, ","If true, this resource record should be displayed at the "
+,"top of search results. "
+"“isConfidential“:boolean, ","If true, this resource should not be exposed to public "
+,"users. "
+"“coverage“:[{postalAddress}], ","Array of postalAddress objects denoting the areas "
+,"serviced by this resource. See contactMethods. "
+"“coverageNote“:“string“, ",
+"“specialNotes“:[“string“], ",
+"“modified“:“dateTime“, ","Date/Time when this resource was last modified. (UTC, "
+,"ISO 8601) "
+"“hours“:{resourceHours}, ","A single resourceHours object. "
+"“notes“:{ ","If defined, special notes fields for internal staff of "
+"“type“:“string“, ","various types. "
+"… "," Editors "
+"}, "," Internal "
+"“accessibility“:{ ","If defined, accessibility details of various types: "
+"“type“:“string“ "," Bus "
+"}, "," Disabled "
+," Public "
+"“fees“:“string“, ",
+"“requiredDocumentation“:“string“, ",
+"“applicationProcess“:“string“, ",
+"“customFields“:[{ ","An array of customFieldValue objects. "
+"“id“:int, ","The ID of this field definition "
+"“label“:“string“, ","The display name of the field. "
+"“valueText“:“string“, ","For text fields. "
+"“selectedValues“:{ ","For checkboxes, radio buttons and multi-selects, a "
+"“int“:“string“, ","dictionary of key-value pairs. Note that this is NOT an "
+"… ","array, but may have multiple key/value pairs. "
+"} ",
+"}], ",
+"“fein“:“string“, ","Federal EIN number "
+"“eligibility“:“string“, ",
+"“capacity“:“string“, ",
+"“sourceOfFunds“:“string“, ",
+"“volunteering“:{ ","If defined, a volunteerInfo object. "
+"“opportunitiesAvailable“: ",
+"boolean, ",
+"“requirements“:“string“, ",
+"“duties“:“string“ ",
+"}, ",
+"“translations“:[“string“] A list of languages for which complete or partial "
+"translations of this record exist. (IETF RFC 4646 "
+"standard language codes) "
+"} "
