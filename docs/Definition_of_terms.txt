@@ -1,8 +1,9 @@
 DRAFT
 
-Organization
 
-Defintion:
+Primitives:
+
+Organization
 
 Is a group of people that delivers services. An organization can be informal
 group or a legally recognized group, incorporated or a government agency.
@@ -82,8 +83,7 @@ Properties:
 
 Service
 
-Defintion:
-	A service is the type of aid that an organization provides.
+A service is the type of aid that an organization provides.
 
 Properties
 	Resource id:
@@ -194,8 +194,7 @@ Properties
 
 Location
 
-Defintion:
-	The physical site of an Organization or Service.
+The physical site of an Organization or Service.
 
 Properties:
 	Resource id:
@@ -294,206 +293,218 @@ Properties:
 		Example:	34.4987
 
 
+Metadata
+
+A history for each record of an Organization, Location or Service will be maintained through metadata at the row level.
+
+Properties:
+
+	Unique id:
+		Each source of funds will have a unique numeric id.
+
+		Example: 1234567
+	
+	Resource id: 
+		Each source of funds will have a Resource Id that will tie it to an Organization or a Service 
+
+		Example: 7654321
+
+	Date added:
+		The date an Organization, Serice, or Location was added to the data
+
+		Example: 2014-12-03T08:24:15
+
+	Date last verified:
+		The date the information was last checked.
+
+		Example: 2014-12-03T08:24:15
+
+	Date last action:
+		The date when information was edited, added, or deleted.
+
+		Example: 2014-12-03T08:24:15
+
+	Last action type:
+		The kind of change made to the data.
+
+		Example: 	Edit, Create, Update, Delete
+
+
+
+Properties:
+
+
 Address
-	A way to locate an Organization, Service, or Location using a well known method of referencing the location.
 
-	Properties:
-		Unique id:
-			Each address will have a unique numeric id.
+A way to locate an Organization, Service, or Location using a well known method of referencing the location.
 
-			Example:	1234567
+Properties:
+	Unique id:
+		Each address will have a unique numeric id.
 
-		Resource id:
-			Each address will have a Resource Id that will tie it to an Organization, Service or Location
+		Example:	1234567
 
-			Example:	7654321
+	Resource id:
+		Each address will have a Resource Id that will tie it to an Organization, Service or Location
 
-		Type:
-			An address can be a physical, mailing or other type
+		Example:	7654321
 
-			Example:	physical
+	Type:
+		An address can be a physical, mailing or other type
 
-		Attention:
-			An address can have an 'Attention' label to specify the recipient. This is an optional property.
+		Example:	physical
 
-			Example: 	Attention: Joshua Fisher
+	Attention:
+		An address can have an 'Attention' label to specify the recipient. This is an optional property.
 
-		Street_1:
-			This property can contain the street number, prefix, street name, and suffix. This is a required property.
+		Example: 	Attention: Joshua Fisher
 
-			Example: 	2022 S. Palmetto Ave.
+	Street_1:
+		This property can contain the street number, prefix, street name, and suffix. This is a required property.
 
-		Street_2:
-			This property can contain additional information such as the suite.
+		Example: 	2022 S. Palmetto Ave.
 
-			Example: 	Suite 201
-		
-		City:
-			The city where the Organization, Service or Loaction resides.
+	Street_2:
+		This property can contain additional information such as the suite.
 
-			Example: 	Redwood City
+		Example: 	Suite 201
+	
+	City:
+		The city where the Organization, Service or Loaction resides.
 
-		State:
-			The state (or province) that the Organization, Service or Loaction resides.
+		Example: 	Redwood City
 
-			Example: 	California
-		
-		Postal code:
-			The postal code that the Organization, Service or Location resides.
+	State:
+		The state (or province) that the Organization, Service or Loaction resides.
 
-			Example: 	99043
+		Example: 	California
+	
+	Postal code:
+		The postal code that the Organization, Service or Location resides.
 
-		Country:
-			The country where the Organization, Service or Location is located.
-		
-			Example: USA
+		Example: 	99043
+
+	Country:
+		The country where the Organization, Service or Location is located.
+	
+		Example: USA
 
 Contact
+
+A person designated to speak for the organization, service, or location
 	
-	Properties:
+Properties:
 
-		Unique id:
-			Each contact will have a unique numeric id.
+	Unique id:
+		Each contact will have a unique numeric id.
 
-			Example:	1234567
+		Example:	1234567
 
-		Resource id:
-			Each contact will have a Resource Id that will tie it to an Organization, Service or Location
+	Resource id:
+		Each contact will have a Resource Id that will tie it to an Organization, Service or Location
 
-			Example:	7654321
+		Example:	7654321
 
-		Name:
-			Name of the contact.
+	Name:
+		Name of the contact.
 
-			Example: Mary Bauer
+		Example: Mary Bauer
 
-		Title:
-			Title of the contact.
+	Title:
+		Title of the contact.
 
-			Example: Director
+		Example: Director
 
-		Department:
-			The department that the contact works in.
+	Department:
+		The department that the contact works in.
 
-		Example:	Human Resources
+	Example:	Human Resources
 
 Phone
 
-	Properties:
+Telephone numbers for an organization, location, or service
 
-		Unique id:
-			Each phone will have a unique numeric id.
+Properties:
 
-			Example: 1234567
-		
-		Resource id: 
-			Each phone will have a Resource Id that will tie it to an Organization, Service or Location
+	Unique id:
+		Each phone will have a unique numeric id.
 
-			Example: 7654321
+		Example: 1234567
+	
+	Resource id: 
+		Each phone will have a Resource Id that will tie it to an Organization, Service or Location
 
-		Number:
-			The phone number including the area code
+		Example: 7654321
 
-			Example: 512-493-8778
+	Number:
+		The phone number including the area code
 
-		Extension:
-			Phone extension for a specific party.
+		Example: 512-493-8778
 
-			Example: ext: 210
-		
-		Type:
-			The kind of phone determined by its use, such as voice, fax, tty, or hotline.
+	Extension:
+		Phone extension for a specific party.
 
-			Example:	Toll-free line
+		Example: ext: 210
+	
+	Type:
+		The kind of phone determined by its use, such as voice, fax, tty, or hotline.
 
-		Department:
-			The department that the phone belongs to.
+		Example:	Toll-free line
 
-			Example:	Warehouse
+	Department:
+		The department that the phone belongs to.
 
-		Country code:
-			The country code prefix of the phone.
+		Example:	Warehouse
 
-			Example:	19
+	Country code:
+		The country code prefix of the phone.
+
+		Example:	19
 
 Internet Resource
 
-	Properties:
+A way to contact and organization via the Internet.
 
-		Unique id:
-			Each internet resource will have a unique numeric id.
+Properties:
 
-		Example: 1234567
-		
-		Resource id: 
-			Each internet resource will have a Resource Id that will tie it to an Organization, Service or Location
+	Unique id:
+		Each internet resource will have a unique numeric id.
 
-			Example: 7654321
+	Example: 1234567
+	
+	Resource id: 
+		Each internet resource will have a Resource Id that will tie it to an Organization, Service or Location
 
-		Resource type:
-			The kind of resource available via the Internet such as email, website, RSS feed, or Application Programming Interface.
+		Example: 7654321
 
-			Example:	website
-		
-		Resource:
-			The Internet address to the resource.
+	Resource type:
+		The kind of resource available via the Internet such as email, website, RSS feed, or Application Programming Interface.
 
-			Example: 	http://mswc.org/
+		Example:	website
+	
+	Resource:
+		The Internet address to the resource.
 
-
+		Example: 	http://mswc.org/
 
 Funding
 
-	Properties:
+Source of funds for an organization, location, or service.
 
-		Unique id:
-			Each source of funds will have a unique numeric id.
+Properties:
 
-		Example: 1234567
-		
-		Resource id: 
-			Each source of funds will have a Resource Id that will tie it to an Organization or a Service 
+	Unique id:
+		Each source of funds will have a unique numeric id.
 
-			Example: 7654321
-		
-		Source:		
-			Where the funding came from for a Organization or a Service
-
-			Example: 	Philanthropical Ventures
-
-
-Metadata
-	A history for each record of an Organization, Location or Service will be maintained through metadata at the row level.
-
-	Properties:
-
-		Unique id:
-			Each source of funds will have a unique numeric id.
-
-			Example: 1234567
-		
-		Resource id: 
-			Each source of funds will have a Resource Id that will tie it to an Organization or a Service 
-
-			Example: 7654321
-
-		Date added:
-			The date an Organization, Serice, or Location was added to the data
-
-			Example: 2014-12-03T08:24:15
-
-		Date last verified:
-			The date the information was last checked.
-
-			Example: 2014-12-03T08:24:15
-
-		Date last action:
-			The date when information was edited, added, or deleted.
-
-			Example: 2014-12-03T08:24:15
-
-		Last action type:
-			The kind of change made to the data.
-
-			Example: 	Edit, Create, Update, Delete
+	Example: 1234567
 	
+	Resource id: 
+		Each source of funds will have a Resource Id that will tie it to an Organization or a Service 
+
+		Example: 7654321
+	
+	Source:		
+		Where the funding came from for a Organization or a Service
+
+		Example: 	Philanthropical Ventures
+
