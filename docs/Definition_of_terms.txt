@@ -5,7 +5,7 @@ Primitives:
 
 Organization
 
-Is a group of people that delivers services. An organization can be informal
+Is a group of people that delivers services. An organization can be an informal
 group or a legally recognized group, incorporated or a government agency.
 
 
@@ -19,7 +19,7 @@ Properties:
 		Example: 1234567
 
 	Resource Id:
-		In the case of an organization, the Resource Id is th the same as the Organization Id.
+		In the case of an organization, the Resource Id is the the same as the Organization Id.
 
 		Example: 1234567
 
@@ -44,7 +44,7 @@ Properties:
 		Example: April Smith, Director
 
 	Internet Resource:
-		Internet resources such as email, web site, ftp server, Application Programming Interfaces
+		Internet resources such as email, web site, ftp server, Application Programming Interfaces.
 
 		Example: htttp://havenforhope.org/ or asmith@havenforhope.org
 
@@ -55,7 +55,7 @@ Properties:
 		Example: Charitable organizations typically are a 501(c)(3) 
 
 	FEIN:
-		Federal Employer Identification Number is a 9 digit number issued for the purpose of tax administration
+		Federal Employer Identification Number is a 9 digit number issued for the purpose of tax administration.
 
 		Example: 12-3456789
 
@@ -78,7 +78,7 @@ Properties:
 	Accreditation(s):
 		An organization may have an accreditation from an external organization to show proficiency in the service they provide.
 
-		Example: A daycare maybe accredited by a third party organization to show that they meet certain standards.
+		Example: A daycare may be accredited by a third party organization to show that they meet certain standards.
 
 
 Service
@@ -87,7 +87,7 @@ A service is the type of aid that an organization provides.
 
 Properties
 	Resource id:
-		Each service will have a unique numerical code. An organization's name may change but the unique id will remain the same for the organization. Unique ids are integers.
+		Each service will have a unique numerical code. A service's name may change but the unique id will remain the same for the service. Unique ids are integers.
 
 	Parent id:
 		Each service is a child to an organization. The parent id is the same as the Organization id of the parent organization.
@@ -103,7 +103,7 @@ Properties
 		Example: MSWC Pre-Natal Program		
 
 	Description:
-		A summary of the service and type(s) of assistance provided in a short pargraph.
+		A summary, in a short pargraph, of the service and type(s) of assistance provided.
 
 		Example: Girl Zone is a year-round after school program and summer camp that enhances academic potential, nurtures high self esteem and supports the healthy development of neighborhood girls, ages 9-14. 
 
@@ -130,12 +130,12 @@ Properties
 			San Antonio, TX 78210
 
 	Phone(s):
-		The phone number used to contact where the service is provided. A phone number can include extensions, type of phone (fax, tty, hotline) and functions. See phone for the defintion of properties.
+		The phone number used to contact where the service is provided. A phone number can include extensions, type of phone (fax, tty, hotline) and functions. See phone for the definition of properties.
 
 		Example 210-512-3345
 
 	Internet resource(s):
-		Internet resources such as email, web site, ftp server, Application Programming Interfaces
+		Internet resources such as email, web site, ftp server, Application Programming Interfaces.
 
 		Example: htttp://havenforhope.org/ or asmith@havenforhope.org
 
@@ -198,7 +198,7 @@ The physical site of an Organization or Service.
 
 Properties:
 	Resource id:
-		Each location will have a unique numerical code. An organization's name may change but the unique id will remain the same for the organization. Unique ids are integers.
+		Each location will have a unique numerical code. A location's name may change but the unique id will remain the same for the location. Unique ids are integers.
 
 		Example: 123456789
 
@@ -250,7 +250,7 @@ Properties:
 		Example 210-512-3345
 
 	Internet resource(s):
-		Internet resources such as email, web site, ftp server, Application Programming Interfaces
+		Internet resources such as email, web site, ftp server, Application Programming Interfaces.
 
 		Example: htttp://havenforhope.org/ or asmith@havenforhope.org
 
@@ -370,12 +370,12 @@ Properties:
 		Example: 	Suite 201
 	
 	City:
-		The city where the Organization, Service or Loaction resides.
+		The city where the Organization, Service or Location resides.
 
 		Example: 	Redwood City
 
 	State:
-		The state (or province) that the Organization, Service or Loaction resides.
+		The state (or province) that the Organization, Service or Location resides.
 
 		Example: 	California
 	
@@ -432,12 +432,12 @@ Properties:
 		Example: 1234567
 	
 	Resource id: 
-		Each phone will have a Resource Id that will tie it to an Organization, Service or Location
+		Each phone will have a Resource Id that will tie it to an Organization, Service or Location.
 
 		Example: 7654321
 
 	Number:
-		The phone number including the area code
+		The phone number including the area code.
 
 		Example: 512-493-8778
 
@@ -483,7 +483,7 @@ Properties:
 		Example:	website
 	
 	Resource:
-		The Internet address to the resource.
+		The Internet address of the resource.
 
 		Example: 	http://mswc.org/
 
