@@ -11,7 +11,7 @@ group or a legally recognized group, incorporated or a government agency.
 
 Properties:
 
-	Organization Id:
+	Id:
 		Each organization will have a unique numerical code. An organization's
 		name may change but the unique id will remain the same for the
 		organization. Unique ids are integers.
@@ -80,6 +80,10 @@ Properties:
 
 		Example: A daycare may be accredited by a third party organization to show that they meet certain standards.
 
+	Funding:
+		The source of funds.
+		
+		Example:	Philanthropic Ventures
 
 Service
 
@@ -89,9 +93,13 @@ Properties
 	Resource id:
 		Each service will have a unique numerical code. A service's name may change but the unique id will remain the same for the service. Unique ids are integers.
 
+		Example: 1234567
+		
 	Parent id:
 		Each service is a child to an organization. The parent id is the same as the Organization id of the parent organization.
 
+		Example: 7654321
+		
 	Name:
 		The official or public name of the service.
 
@@ -148,13 +156,13 @@ Properties
 		Time and days when the service is available to the public.
 
 		Example: 	Sunday, 9:00AM - 1:00PM
-					Monday, 8:00AM - 5:00PM
+				Monday, 8:00AM - 5:00PM
 
 	Application process:
 		The steps needed to access the service.
 
 		Example:	Walk-in for groceries.
-					Call for appointment with councilor.
+				Call for appointment with councilor.
 
 	Eligibility:
 		Rules or guidelines that determine who can receive the service.
@@ -191,6 +199,11 @@ Properties
 
 		Example: Sliding scale: $10 - $30 per visit.
 
+
+	Funding:
+		The source of funds.
+		
+		Example:	Philanthropic Ventures
 
 Location
 
@@ -299,7 +312,7 @@ A history for each record of an Organization, Location or Service will be mainta
 
 Properties:
 
-	Unique id:
+	Id:
 		Each source of funds will have a unique numeric id.
 
 		Example: 1234567
@@ -330,15 +343,12 @@ Properties:
 		Example: 	Edit, Create, Update, Delete
 
 
-
-Properties:
-
-
 Address
 
 A way to locate an Organization, Service, or Location using a well known method of referencing the location.
 
-Properties:
+Attributes:
+
 	Unique id:
 		Each address will have a unique numeric id.
 
@@ -393,7 +403,7 @@ Contact
 
 A person designated to speak for the organization, service, or location
 	
-Properties:
+Attributes:
 
 	Unique id:
 		Each contact will have a unique numeric id.
@@ -424,7 +434,7 @@ Phone
 
 Telephone numbers for an organization, location, or service
 
-Properties:
+Attributes:
 
 	Unique id:
 		Each phone will have a unique numeric id.
@@ -465,7 +475,7 @@ Internet Resource
 
 A way to contact and organization via the Internet.
 
-Properties:
+Attributes:
 
 	Unique id:
 		Each internet resource will have a unique numeric id.
@@ -487,23 +497,7 @@ Properties:
 
 		Example: 	http://mswc.org/
 
-Funding
 
-Source of funds for an organization, location, or service.
-
-Properties:
-
-	Unique id:
-		Each source of funds will have a unique numeric id.
-
-	Example: 1234567
-	
-	Resource id: 
-		Each source of funds will have a Resource Id that will tie it to an Organization or a Service 
-
-		Example: 7654321
-	
-	Source:		
 		Where the funding came from for a Organization or a Service
 
 		Example: 	Philanthropical Ventures
