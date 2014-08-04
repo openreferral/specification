@@ -1,6 +1,6 @@
 # OpenReferral
 
-This specification defines a minimum set of data elements for OpenReferral, a human services data interchange specification. The idea behind the specification is to create shareable multi-purpose human service data sets. The goal is to derive a specification robust enough to support Information and Retrieval (IR) applications, yet flexible enough to support localized and specialized directories. The focus of this specification is content but a significant portion of the specification is dedicated to a design that reduces data structures into comma delimited files (CSV).
+This specification defines a minimum set of data elements for OpenReferral, a human services data interchange specification. The idea behind the specification is to create shareable multi-purpose human service data sets. The goal is to derive a specification robust enough to support Information and Referral (I&R) applications, yet flexible enough to support localized and specialized directories. The focus of this specification is content but a significant portion of the specification is dedicated to a design that reduces data structures into comma delimited files (CSV).
 
 # 1.0 Term Definitions
 
