@@ -1,3 +1,7 @@
 node_modules/*
 pdf/*
 tmp/*
+examples/*
+img/*
+model/*
+sql/*
