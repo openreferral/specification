@@ -180,9 +180,7 @@ The relationship between organizations as the primary entity and services and lo
 The specification supports:
 
 * Provisioning the minimum amount of data needed to implement a service for search and discovery of human services provided by organizations
-
 * Machine readable format that can be imported directly into a relational database or viewed and edited using commonly available software such as a spreadsheet or a text editor
-
 * A common data exchange format between different information and referral systems.
 
 ### Specification Governance
@@ -211,14 +209,14 @@ HSDS uses[ E.164](http://www.itu.int/rec/T-REC-E.164-201011-I/en) number formatt
 
 At the time this document was drafted, a standard addressing format has not been established. ISO 19160  is in the preliminary stages of an addressing standard but has not yet produced a standard. Based on address standards by country from the Universal Postal Union,  the following format will capture the majority of addresses in use globally.
 
-address_1<br>
-address_2<br>
-address_3<br>
-adderss_4<br>
-city/locality<br>
-state/province/region<br>
-postal code<br>
-country<br>
+	* address_1<br>
+	* address_2<br>
+	* address_3<br>
+	* adderss_4<br>
+	* city/locality<br>
+	* state/province/region<br>
+	* postal code<br>
+	* country<br>
 
 Because of the variety of addressing systems, every field is composed of alphanumeric characters. The country field uses ISO-3166 alpha 2 codes.
 
