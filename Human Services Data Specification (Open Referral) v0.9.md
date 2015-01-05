@@ -1190,7 +1190,8 @@ The following is the schema for the logical data model in the datapackage.json f
 
 <table>
   <tr>
-    <td>```    {
+    <td><pre>
+       {
         "name": "human_services_data",
         "title": "Human Services Data",
         "license": [
@@ -2305,7 +2306,7 @@ The following is the schema for the logical data model in the datapackage.json f
                 }
             }
         ]
-    } ```
+    } </pre>
 </td>
   </tr>
 </table>
