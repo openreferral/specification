@@ -18,7 +18,8 @@ The development of Open Referral has to date been sponsored and funded by the Kn
 
 __Section 1: About Human Services Data Specification__
 
-[Related Standards][]
+
+[Related Standards][#relatedstandards]
 
 [Use Cases](#bookmark=id.qyjlfqpe25of)
 
@@ -62,6 +63,7 @@ __Appendix D__
 
 ## Human Services Data Specifications
 
+< a name="relatedstandards">
 ### Related Standards
 
 #### AIRS Standards
