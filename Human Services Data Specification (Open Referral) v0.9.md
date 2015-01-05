@@ -12,6 +12,8 @@ Government entities, community organizations, and businesses often face difficul
 
 The development of Open Referral has to date been sponsored and funded by the Knight Foundation and Code for America. Learn more about Code for America’s support of data standards [here](http://www.codeforamerica.org/cities/data-standards-faq/).
 
+***
+
 **Table of Contents**
 
 Section 1
