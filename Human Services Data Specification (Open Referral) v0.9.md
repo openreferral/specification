@@ -1,4 +1,4 @@
-*Human Services Data Specification (Open Referral) v0.9*
+# Human Services Data Specification (Open Referral) v0.9
 
 **Introduction**
 
