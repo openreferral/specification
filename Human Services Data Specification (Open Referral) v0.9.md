@@ -117,11 +117,9 @@ A** **Referrer** **is the person who engages directly with a help-seeker (often 
 
 Referrers require:
 
-a) accurate information,
-
-b) the service’s relevance (is the client eligible), and 
-
-c) the quality of the service. 
+1. accurate information,
+2. the service’s relevance (is the client eligible), and 
+3. the quality of the service. 
 
 Referrers commonly interact with help seekers using a structured workflow that includes a screening process to identify important attributes of the help-seeker’s situation. Referrers match information gathered from the help-seeker to accessible and relevant services. 
 
