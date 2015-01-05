@@ -60,11 +60,11 @@ __Appendix D__
 
 ***
 
-**Human Services Data Specifications**
+## Human Services Data Specifications
 
-**Related Standards**
+### Related Standards
 
-**AIRS Standards**
+###AIRS Standards
 
 The AIRS Standards defines expected practices within an information and referral (I&R) program and best practices to meet the needs of their community. According to [AIRS Standards and Quality Indicators for Professional Information and Referra](http://www.airs.org/files/public/AIRS_Standards_7_Final.pdf)l:
 
