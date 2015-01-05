@@ -63,8 +63,7 @@ __Appendix D__
 
 ## Human Services Data Specifications
 
-< a name="relatedstandards">
-### Related Standards
+< a name="relatedstandards">### Related Standards
 
 #### AIRS Standards
 
