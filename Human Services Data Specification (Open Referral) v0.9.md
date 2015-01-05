@@ -1,6 +1,6 @@
 # Human Services Data Specification (Open Referral) v0.9
 
-**Introduction**
+## Introduction
 
 The Human Services Data Specification (Open Referral) is an exchange format for publishing machine readable data about health, human, and social services, their locations, and the organizations that provide them.  For the purposes of this specification, human services are broadly defined, ranging from food assistance to job training and health care. This exchange format is meant to complement –not replace– existing storage formats currently in use.
 
@@ -14,7 +14,7 @@ The development of Open Referral has to date been sponsored and funded by the Kn
 
 ***
 
-**Table of Contents**
+## Table of Contents
 
 __Section 1: About Human Services Data Specification__
 
@@ -61,12 +61,10 @@ __Appendix D__
 
 ***
 
-## Human Services Data Specifications
-
 <a name="relatedstandards">
-### Related Standards
+## Related Standards
 
-#### AIRS Standards
+### AIRS Standards
 
 The AIRS Standards defines expected practices within an information and referral (I&R) program and best practices to meet the needs of their community. According to [AIRS Standards and Quality Indicators for Professional Information and Referra](http://www.airs.org/files/public/AIRS_Standards_7_Final.pdf)l:
 
@@ -76,19 +74,19 @@ The Resource Database Standard of the AIRS Standards is pertinent to the Human S
 
 "The Resource Database standards require that the I&R service develop, maintain, use and disseminate an accurate, up-to-date resource database that contains information about available community resources including details about the services they provide and the conditions under which services are available. The database includes resources that support the inquirer’s right to accurate, consistent, comprehensive and unbiased information and the ability of the I&R service to be a non-partisan, non-ideological and impartial information source for available nonprofit, government and for-profit services that meet the organization’s inclusion/exclusion criteria. The database is maintained by trained resource specialists." 
 
-#### schema.org for Public Civic Services
+### schema.org for Public Civic Services
 
 [Public Civil Services](http://www.w3.org/wiki/images/0/03/Services_for_schema.org_%28DRAFT_2013-06-27%29.pdf) is a [W3C proposal](http://www.w3.org/wiki/WebSchemas/CivicServices) by the Google.org Social Impact team that extends the Schema.org schemas to better support the description of public civic services.
 
 It is a new vocabulary, similar to the European Commission ISA Core Public Service vocabulary. Its purpose is to improve search engines’ understanding of these services. The schema will provide "*enough information to determine the service, the area covered by the service, and relevant information for using the service*." 
 
-**Open Eligibility**
+### Open Eligibility
 
 [Open Eligibility](http://openeligibility.org/) is a "*simple way to categorize human services and human situations*." It uses common categories for quickly finding human services for people in need, service providers and navigators. It takes a different approach than the AIRS standards by grouping similar services and repeatedly and empirically testing the categories. Open Eligibility explains their taxonomy as:
 
 "Every provider administers at least one program. Every program provides at least one client-facing service. And every service is represented with a service tag. Our taxonomy is a categorization of those service tags."
 
-#### National Information Exchange Model (NIEM)
+### National Information Exchange Model (NIEM)
 
 NIEM is the National Information Exchange Model. It is an interagency initiative to create a national-level interoperable information sharing and data exchange. The NIEM project began in 2005 as a joint venture between the U.S. Department of Homeland Security (DHS) and the U.S. Department of Justice (DOJ). The NIEM uses both the Global Justice XML Data Model (GJXDM) reference model and the GJXDM XML-based framework and support infrastructure.
 
@@ -101,9 +99,9 @@ The schema for the core components are available from [niem.gov](http://release.
 
 ***
 
-### Use Cases
+## Use Cases
 
-#### Help Seeker
+### Help Seeker
 
 Help seekers  (i.e. patients, clients, consumers, victims, survivors, etc.) have a need (or multiple needs) that can be addressed by services in their community. To find services, help seekers must receive accurate, relevant, and easily understandable information about services which they can access and for which they are eligible. 
 
@@ -113,7 +111,7 @@ Help seekers might currently look for help by searching the Internet or turning 
 
 *As a help-seeker, I want to find services that meet my needs.*
 
-#### Referrer
+### Referrer
 
 A** **Referrer** **is the person who engages directly with a help-seeker (often face-to-face) and helps them find relevant and accessible services. A ‘referrer’ is usually (but not always) a professional or a volunteer who is working for an organization that itself provides as a service to its community (i.e. case manager, social worker, health worker, EMT, patient intake, librarian, teacher, etc.). Referrers are typically the primary users of resource directory information systems. 
 
@@ -127,7 +125,7 @@ Referrers commonly interact with help seekers using a structured workflow that i
 
 *As a referrer (aka service provider, etc), I want to provide relevant and accurate information about services.*
 
-#### Researcher
+### Researcher
 
 A Researcher** **uses service directory data, in synthesis with other kinds of data, for the purpose of understanding community health, predicting future needs, identifying funding gaps, and other kinds of analysis. Such a role is often played by funders, policymakers, planners, or community leaders.
 
@@ -135,7 +133,7 @@ Researchers study the effectiveness of *programs*, which may not be specific ser
 
 *As a researcher, I need *data in raw formats over a specific time period and * *meaningful context for service information so that I can perform efforts-to-outcomes and population-level analysis.
 
-#### Data Administrator
+### Data Administrator
 
 A Data Administrator is responsible for  information systems that are a compilation of directories. Data administrators produce and maintain information; tasks include updating records, maintaining naming conventions, running reports, designing mechanisms for retrieval and delivery, etc. They may be responsible for reporting directly to funders and government agencies. These responsibilities are sometimes shared among several roles in an organization. 
 
@@ -143,7 +141,7 @@ A Data Administrator is responsible for  information systems that are a compilat
 
 ***
 
-### Design Principles
+## Design Principles
 
 The design of  Human Services Data Specification is based on five principles: simplicity, factual, fidelity, provenance, and accessibility.
 
@@ -159,7 +157,7 @@ The data must be a machine readable and writable format that can be created, upd
 
 ***
 
-### Human Services Data Specification Roadmap
+## Human Services Data Specification Roadmap
 
 Open Referral does not yet incorporate the full range of data necessary to meet domain specific use cases. Specifically, the working group intends to address the following topics. 
 
@@ -169,7 +167,7 @@ Open Referral does not yet incorporate the full range of data necessary to meet 
 * Develop process for creating domain specific profiles and incorporating taxonomy
 * Develop process for creating wire formats 
 
-#### A Common Vocabulary
+### A Common Vocabulary
 
 The Human Services Data Specification seeks to establish a common vocabulary among information and referral (I&R) practitioners. The vocabulary reflects the simple model of four required entities: Organizations, Locations, Services, and Metadata. An optional entity is Programs, which is available for organizations that use Programs for grouping Services.  Entities have attendant properties and some properties are complex and have multiple attributes. For example addresses are comprised of several pieces of information.. 
 
@@ -177,7 +175,7 @@ The relationship between organizations as the primary entity and services and lo
 
 ***
 
-### Current Human Services Data Capabilities
+## Current Human Services Data Capabilities
 
 The specification supports:
 
@@ -299,9 +297,9 @@ Provided test scripts and example data
 
 v0.8	Added formatting specification for address, phone, description	
 
-#### **Appendix A**
+## Appendix A
 
-**A ****Controlled Vocabulary**** for Human Services Data**
+###A Controlled Vocabulary for Human Services Data
 
 <table>
   <tr>
@@ -1192,7 +1190,7 @@ The following is the schema for the logical data model in the datapackage.json f
 
 <table>
   <tr>
-    <td>    {
+    <td>```    {
         "name": "human_services_data",
         "title": "Human Services Data",
         "license": [
@@ -2307,7 +2305,7 @@ The following is the schema for the logical data model in the datapackage.json f
                 }
             }
         ]
-    }
+    } ```
 </td>
   </tr>
 </table>
