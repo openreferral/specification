@@ -199,7 +199,7 @@ This working document--and the [complementary Google Group](https://groups.googl
 
 ## Producing and Sharing Compliant Data 
 
-### CSV**** Formatting
+### CSV Formatting
 
 For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv). The CSV format described herein conforms to [RFC4180](http://tools.ietf.org/html/rfc4180). Text will used the UTF-8 character set.
 
@@ -211,21 +211,14 @@ HSDS uses[ E.164](http://www.itu.int/rec/T-REC-E.164-201011-I/en) number formatt
 
 At the time this document was drafted, a standard addressing format has not been established. ISO 19160  is in the preliminary stages of an addressing standard but has not yet produced a standard. Based on address standards by country from the Universal Postal Union,  the following format will capture the majority of addresses in use globally.
 
-address_1
-
-address_2
-
-address_3
-
-adderss_4
-
-city/locality
-
-state/province/region
-
-postal code
-
-country
+address_1<br>
+address_2<br>
+address_3<br>
+adderss_4<br>
+city/locality<br>
+state/province/region<br>
+postal code<br>
+country<br>
 
 Because of the variety of addressing systems, every field is composed of alphanumeric characters. The country field uses ISO-3166 alpha 2 codes.
 
@@ -251,51 +244,40 @@ No changest.
 
 v0.1	
 
-Changes from comment period, workshop comments, and a running [summary of comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing).
-
-	Directly references [RFC4180](http://tools.ietf.org/html/rfc4180) for CSV formatting
+* Changes from comment period, workshop comments, and a running [summary of comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing).
+* Directly references [RFC4180](http://tools.ietf.org/html/rfc4180) for CSV formatting
 
 v0.2 	
 
-Added similar standards
-
-	Added use cases based on persona
-
-	Reformatted the controlled vocabulary.
-
-	Added a logical model
-
-	Made changes from [comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing) collected during the second RFC period
-
-	Added Appendix C: Tabular  Data Package description
+* Added related standards
+* Aded use cases based on persona
+* Reformatted the controlled vocabulary.
+* Added a logical model
+* Made changes from [comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing) collected during the second RFC period
+* Added Appendix C: Tabular  Data Package description
 
 v0.3	
 
-Refined logical model to conform to Boyce-Codd third normal form
-
-Updated datapackage.json to match logical model
-
-Included enumerations for  entities in datapackage.json
-
-Added section on NIEM and relation to specification
-
-Made changes based on reviewer comments.
+* Refined logical model to conform to Boyce-Codd third normal form
+* Updated datapackage.json to match logical model
+* Included enumerations for  entities in datapackage.json
+* Added section on NIEM and relation to specification
+* Made changes based on reviewer comments.
 
 v0.4 - v0.7	
 
-Updated data model based on reviewer comments
+* Updated data model based on reviewer comments
+* Tested logical model by importing data from iCarol database
+* Exported data in HSDS format from previous tes
+* Added Open Eligibility taxonomic overlay to logical model using Postgres ltree
+* Tested OE taxonomy by querying the service_taxonomy to return the related service
+* Provided test scripts and example data
 
-Tested logical model by importing data from iCarol database
+v0.8
 
-Exported data in HSDS format from previous tes
+* Added formatting specification for address, phone, description	
 
-Added Open Eligibility taxonomic overlay to logical model using Postgres ltree
-
-Tested OE taxonomy by querying the service_taxonomy to return the related service
-
-Provided test scripts and example data
-
-v0.8	Added formatting specification for address, phone, description	
+***
 
 ## Appendix A
 
@@ -717,16 +699,17 @@ San Antonio, TX 78210</td>
   </tr>
 </table>
 
+***
 
-#### **Appendix B**
+## Appendix B
 
-**Logical Model**
+### Logical Model
 
 ![image alt text](image_0.png)	
 
 *  Note that although the relationships are not depicted, metadata.resource_id is the foreign key to all entities 
 
-**Entities**
+### Entities
 
 <table>
   <tr>
@@ -937,12 +920,12 @@ character_set</td>
   </tr>
 </table>
 
-
+***
 		
 
-**Appendix C**
+## Appendix C
 
-**Tabular Data Package**
+### Tabular Data Package
 
 The data will be in CSV formatted files with one CSV file per entity. This is the minimum requirement for distributing data.  The recommended format for distributing data is the [Tabular Data Package](http://data.okfn.org/doc/tabular-data-package) which is composed of the data in CSV files and a metadata file, called datapackage.json, that stores the schema in a JSON file using the [Data Package format](http://data.okfn.org/doc/data-package).
 
@@ -2311,10 +2294,11 @@ The following is the schema for the logical data model in the datapackage.json f
   </tr>
 </table>
 
+***
 
-**Appendix D**
+## Appendix D
 
-Taxonomy
+### Taxonomy
 
 The Human Services Data Specification is agnostic with regards to taxonomy or any other method of classification or categorization of services. Data providers may have an existing taxonomy that they wish to include with their services data.  
 
@@ -2322,11 +2306,11 @@ Taxonomies are often hierarchical, such as AIRS.  A common way of representing h
 
 The elements in the hierarchy are separated by periods or ".", e.g. ‘emergency.disaster_response’.
 
-Logical Model
+### Logical Model
 
 ![image alt text](image_1.png)
 
-CSV
+#### CSV
 
 <table>
   <tr>
@@ -2346,7 +2330,7 @@ taxonomy_id</td>
 </table>
 
 
-Example
+#### Example
 
 <table>
   <tr>
