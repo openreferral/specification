@@ -92,9 +92,8 @@ NIEM is the National Information Exchange Model. It is an interagency initiative
 
 NIEM consists of a  collection of data components organized in multiple kinds of XML Schema that are classified into broad categories. Of interest to the Human Services Data  Standard are the NIEM Core Components. There are two types of NIEM Core components:
 
-a) Universal components such as Person, Date, Location etc., that are relevant and understood across all domains
- 
-b) Common components such as LocationStateUSPostalServiceCode, LocationStateCanadianProvinceCode etc., that are relevant and understood across two or more domains
+a. Universal components such as Person, Date, Location etc., that are relevant and understood across all domains
+b. Common components such as LocationStateUSPostalServiceCode, LocationStateCanadianProvinceCode etc., that are relevant and understood across two or more domains
 
 The schema for the core components are available from [niem.gov](http://release.niem.gov/niem/niem-core/2.0/niem-core.xsd).
 
