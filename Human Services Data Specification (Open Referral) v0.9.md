@@ -51,19 +51,21 @@ __Section 3: Document Status__
 
 __Appendix A__
 
-[A Controlled Vocabulary for Human Services Data](#bookmark=id.6yfhvap1orpd)
+[A Controlled Vocabulary for Human Services Data](#vocabulary)
 
 __Appendix B__
 
-[Logical Model](#bookmark=id.kkz9eshg0h6w)
+[Logical Model](#model)
+
+[Entities](#entities)
 
 __Appendix C__
 
-[Tabular Data Package](#bookmark=id.ei8bg6eepdbc)
+[Tabular Data Package](#package)
 
 __Appendix D__
 
-[Taxonomic Overlays](#bookmark=id.q5flk185onr)
+[Taxonomic Overlays](#taxonomy)
 
 ***
 
@@ -301,7 +303,8 @@ v0.8
 
 ## Appendix A
 
-###A Controlled Vocabulary for Human Services Data
+<a name="vocabulary">
+### A Controlled Vocabulary for Human Services Data
 
 <table>
   <tr>
@@ -723,12 +726,14 @@ San Antonio, TX 78210</td>
 
 ## Appendix B
 
+<a name="model">
 ### Logical Model
 
 ![image alt text](image_0.png)	
 
 *  Note that although the relationships are not depicted, metadata.resource_id is the foreign key to all entities 
 
+<a name="entities">
 ### Entities
 
 <table>
@@ -945,6 +950,7 @@ character_set</td>
 
 ## Appendix C
 
+<a name="package">
 ### Tabular Data Package
 
 The data will be in CSV formatted files with one CSV file per entity. This is the minimum requirement for distributing data.  The recommended format for distributing data is the [Tabular Data Package](http://data.okfn.org/doc/tabular-data-package) which is composed of the data in CSV files and a metadata file, called datapackage.json, that stores the schema in a JSON file using the [Data Package format](http://data.okfn.org/doc/data-package).
@@ -2318,6 +2324,7 @@ The following is the schema for the logical data model in the datapackage.json f
 
 ## Appendix D
 
+<a name="taxonomy">
 ### Taxonomy
 
 The Human Services Data Specification is agnostic with regards to taxonomy or any other method of classification or categorization of services. Data providers may have an existing taxonomy that they wish to include with their services data.  
