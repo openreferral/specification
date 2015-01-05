@@ -113,7 +113,7 @@ Help seekers might currently look for help by searching the Internet or turning 
 
 ### Referrer
 
-A** **Referrer** **is the person who engages directly with a help-seeker (often face-to-face) and helps them find relevant and accessible services. A ‘referrer’ is usually (but not always) a professional or a volunteer who is working for an organization that itself provides as a service to its community (i.e. case manager, social worker, health worker, EMT, patient intake, librarian, teacher, etc.). Referrers are typically the primary users of resource directory information systems. 
+A Referrer is the person who engages directly with a help-seeker (often face-to-face) and helps them find relevant and accessible services. A ‘referrer’ is usually (but not always) a professional or a volunteer who is working for an organization that itself provides as a service to its community (i.e. case manager, social worker, health worker, EMT, patient intake, librarian, teacher, etc.). Referrers are typically the primary users of resource directory information systems. 
 
 Referrers require:
 
@@ -127,11 +127,11 @@ Referrers commonly interact with help seekers using a structured workflow that i
 
 ### Researcher
 
-A Researcher** **uses service directory data, in synthesis with other kinds of data, for the purpose of understanding community health, predicting future needs, identifying funding gaps, and other kinds of analysis. Such a role is often played by funders, policymakers, planners, or community leaders.
+A Researcher uses service directory data, in synthesis with other kinds of data, for the purpose of understanding community health, predicting future needs, identifying funding gaps, and other kinds of analysis. Such a role is often played by funders, policymakers, planners, or community leaders.
 
 Researchers study the effectiveness of *programs*, which may not be specific services but rather a set of services bundled through a funding stream and around a common mission. Researchers seek accountability for the performance of the health, human, and social service system overall. They want their work to make this data useful for system-level decision-making. Researchers need reliably structured data, from across institutional and jurisdictional boundaries, that can be readily ‘mashed up’ with other kinds of data (census, funding, etc). 
 
-*As a researcher, I need *data in raw formats over a specific time period and * *meaningful context for service information so that I can perform efforts-to-outcomes and population-level analysis.
+*As a researcher, I need data in raw formats over a specific time period and meaningful context for service information so that I can perform efforts-to-outcomes and population-level analysis.*
 
 ### Data Administrator
 
