@@ -16,32 +16,38 @@ The development of Open Referral has to date been sponsored and funded by the Kn
 
 ## Table of Contents
 
-__Section 1: About Human Services Data Specification__
+__Section 1: About the Human Services Data Specification__
 
 
 [Related Standards](#relatedstandards)
 
 [Use Cases](#usecases)
 
-[Design Principles](#bookmark=id.ef97rupfdvhb)
+[Design Principles](#designprinciples)
 
-[Human Services Data Specification Roadmap](#bookmark=id.oz8vll8monms)
+[Human Services Data Specification Roadmap](#roadmap)
 
-[Human Services Data Specification Data Capabilities](#bookmark=id.rhpbm8997l7g)
+[Human Services Data Specification Data Capabilities](#capabilities)
 
-[Specification Governance](#bookmark=id.6ujsbdmkux10)
+[Specification Governance](#governance)
 
-__Section 2: The Specification__
+__Section 2: Producing Compliant Data__
 
-[An Overview of the Specification](#bookmark=kix.fms9vgvmgw1t)
+[CSV Formatting](#csv)
 
-[Producing and Sharing Compliant Data ](#bookmark=id.ukk6kpfl3ej8)
+[Telephone Formatting](#telephone)
 
-__Section 3__
+[Address Formatting](#address)
 
-[Version](#bookmark=id.63ip0079nqtk)
+[Description Field Formatting](#description)
 
-[Changelog](#bookmark=id.dgi4hplpap59)
+__Section 3: Document Status__
+
+[Version](#version)
+
+[Copyright](#copyright)
+
+[Changelog](#changes)
 
 __Appendix A__
 
@@ -142,6 +148,7 @@ A Data Administrator is responsible for  information systems that are a compilat
 
 ***
 
+<a name="designprinciples">
 ## Design Principles
 
 The design of  Human Services Data Specification is based on five principles: simplicity, factual, fidelity, provenance, and accessibility.
@@ -156,8 +163,8 @@ The standard must include information about the provenance of the data as well a
 
 The data must be a machine readable and writable format that can be created, updated and deleted with a basic text editor.
 
-***
 
+<a name="roadmap">
 ## Human Services Data Specification Roadmap
 
 Open Referral does not yet incorporate the full range of data necessary to meet domain specific use cases. Specifically, the working group intends to address the following topics. 
@@ -176,6 +183,7 @@ The relationship between organizations as the primary entity and services and lo
 
 ***
 
+<a name="capabilities">
 ## Current Human Services Data Capabilities
 
 The specification supports:
@@ -184,6 +192,7 @@ The specification supports:
 * Machine readable format that can be imported directly into a relational database or viewed and edited using commonly available software such as a spreadsheet or a text editor
 * A common data exchange format between different information and referral systems.
 
+<a name="governance">
 ### Specification Governance
 
 To promote participation and accessibility, this Google Document serves as the working draft of the next version of Human Services Data Specification.  Edits, improvements and changes should first be discussed using the Comments feature. 
@@ -196,16 +205,20 @@ This working document--and the [complementary Google Group](https://groups.googl
 
 ***
 
-## Producing and Sharing Compliant Data 
 
+## Section 2: Producing and Sharing Compliant Data 
+
+<a name="csv">
 ### CSV Formatting
 
 For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv). The CSV format described herein conforms to [RFC4180](http://tools.ietf.org/html/rfc4180). Text will used the UTF-8 character set.
 
+<a name="telephone">
 ### Telephone Formatting
 
 HSDS uses[ E.164](http://www.itu.int/rec/T-REC-E.164-201011-I/en) number formatting for phone numbers E.164 numbers can have a maximum of fifteen digits and are usually written as follows: [+][country code][subscriber number including area/region code]. Phone numbers can contain delimiters.
 
+<a name="address">
 ### Address Formatting
 
 At the time this document was drafted, a standard addressing format has not been established. ISO 19160  is in the preliminary stages of an addressing standard but has not yet produced a standard. Based on address standards by country from the Universal Postal Union,  the following format will capture the majority of addresses in use globally.
@@ -221,25 +234,33 @@ At the time this document was drafted, a standard addressing format has not been
 
 Because of the variety of addressing systems, every field is composed of alphanumeric characters. The country field uses ISO-3166 alpha 2 codes.
 
+<a name="description">
 ### Description Field Formatting
 
 The description field may include HTML or MarkDown tags.
 
+***
+
+## Section 3: Document Status
+
+<a name="version">
 ### Version
 
 This is version 0.9 of the specification.  
 
+<a name="copyright">
 ### Copyright
 
 Human Services Data Specification is licensed under  [Public Domain](http://choosealicense.com/licenses/unlicense/)
 
 ***
 
-## Changelog
+<a name="changes">
+### Changelog
 
 v0.0 	
 
-No changest.
+No changes.
 
 v0.1	
 
