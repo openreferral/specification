@@ -19,7 +19,7 @@ The development of Open Referral has to date been sponsored and funded by the Kn
 __Section 1: About Human Services Data Specification__
 
 
-[Related Standards][#relatedstandards]
+[Related Standards](#relatedstandards)
 
 [Use Cases](#bookmark=id.qyjlfqpe25of)
 
