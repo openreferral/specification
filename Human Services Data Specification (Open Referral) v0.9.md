@@ -21,7 +21,7 @@ __Section 1: About Human Services Data Specification__
 
 [Related Standards](#relatedstandards)
 
-[Use Cases](#bookmark=id.qyjlfqpe25of)
+[Use Cases](#usecases)
 
 [Design Principles](#bookmark=id.ef97rupfdvhb)
 
@@ -99,6 +99,7 @@ The schema for the core components is available from [niem.gov](http://release.n
 
 ***
 
+<a name="usecases">
 ## Use Cases
 
 ### Help Seeker
