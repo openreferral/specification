@@ -84,7 +84,7 @@ It is a new vocabulary, similar to the European Commission ISA Core Public Servi
 
 [Open Eligibility](http://openeligibility.org/) is a "*simple way to categorize human services and human situations*." It uses common categories for quickly finding human services for people in need, service providers and navigators. It takes a different approach than the AIRS standards by grouping similar services and repeatedly and empirically testing the categories. Open Eligibility explains their taxonomy as:
 
-"Every provider administers at least one program. Every program provides at least one client-facing service. And every service is represented with a service tag. Our taxonomy is a categorization of those service tags."
+> "Every provider administers at least one program. Every program provides at least one client-facing service. And every service is represented with a service tag. Our taxonomy is a categorization of those service tags."
 
 ### National Information Exchange Model (NIEM)
 
@@ -95,7 +95,7 @@ NIEM consists of a  collection of data components organized in multiple kinds of
 1. Universal components such as Person, Date, Location etc., that are relevant and understood across all domains
 2. Common components such as LocationStateUSPostalServiceCode, LocationStateCanadianProvinceCode etc., that are relevant and understood across two or more domains
 
-The schema for the core components are available from [niem.gov](http://release.niem.gov/niem/niem-core/2.0/niem-core.xsd).
+The schema for the core components is available from [niem.gov](http://release.niem.gov/niem/niem-core/2.0/niem-core.xsd).
 
 ***
 
