@@ -18,7 +18,7 @@ The development of Open Referral has to date been sponsored and funded by the Kn
 
 __Section 1: About Human Services Data Specification__
 
-[Existing Standards](#bookmark=id.nbjvjsov7znj)
+[Related Standards][]
 
 [Use Cases](#bookmark=id.qyjlfqpe25of)
 
@@ -155,21 +155,19 @@ The standard must include information about the provenance of the data as well a
 
 The data must be a machine readable and writable format that can be created, updated and deleted with a basic text editor.
 
-**Human Services Data Specification**** Roadmap**
+***
+
+### Human Services Data Specification Roadmap
 
 Open Referral does not yet incorporate the full range of data necessary to meet domain specific use cases. Specifically, the working group intends to address the following topics. 
 
 * Acceptance of initial specification with regards to content, data type, and format 
-
 * Process for receiving, validating, and incorporating user input
-
 * Develop a long term roadmap leading to the 1.0 release
-
 * Develop process for creating domain specific profiles and incorporating taxonomy
-
 * Develop process for creating wire formats 
 
-**A Common Vocabulary**
+#### A Common Vocabulary
 
 The Human Services Data Specification seeks to establish a common vocabulary among information and referral (I&R) practitioners. The vocabulary reflects the simple model of four required entities: Organizations, Locations, Services, and Metadata. An optional entity is Programs, which is available for organizations that use Programs for grouping Services.  Entities have attendant properties and some properties are complex and have multiple attributes. For example addresses are comprised of several pieces of information.. 
 
