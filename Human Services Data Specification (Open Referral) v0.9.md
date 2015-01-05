@@ -16,9 +16,7 @@ The development of Open Referral has to date been sponsored and funded by the Kn
 
 **Table of Contents**
 
-Section 1
-
-**_About Human Services Data Specification_**
+__Section 1: About Human Services Data Specification__
 
 [Existing Standards](#bookmark=id.nbjvjsov7znj)
 
@@ -26,41 +24,41 @@ Section 1
 
 [Design Principles](#bookmark=id.ef97rupfdvhb)
 
-Human Services Data Specification[ Roadmap](#bookmark=id.oz8vll8monms)
+[Human Services Data Specification Roadmap](#bookmark=id.oz8vll8monms)
 
-Human Services Data Specification[ Data Capabilities](#bookmark=id.rhpbm8997l7g)
+[Human Services Data Specification Data Capabilities](#bookmark=id.rhpbm8997l7g)
 
 [Specification Governance](#bookmark=id.6ujsbdmkux10)
 
-Section 2
-
-**_The Specification_**
+__Section 2: The Specification__
 
 [An Overview of the Specification](#bookmark=kix.fms9vgvmgw1t)
 
 [Producing and Sharing Compliant Data ](#bookmark=id.ukk6kpfl3ej8)
 
-Section 3
+__Section 3__
 
 [Version](#bookmark=id.63ip0079nqtk)
 
 [Changelog](#bookmark=id.dgi4hplpap59)
 
-Appendix A
+__Appendix A__
 
 [A Controlled Vocabulary for Human Services Data](#bookmark=id.6yfhvap1orpd)
 
-Appendix B
+__Appendix B__
 
 [Logical Model](#bookmark=id.kkz9eshg0h6w)
 
-Appendix C
+__Appendix C__
 
 [Tabular Data Package](#bookmark=id.ei8bg6eepdbc)
 
-Appendix D
+__Appendix D__
 
 [Taxonomic Overlays](#bookmark=id.q5flk185onr)
+
+***
 
 **Human Services Data Specifications**
 
