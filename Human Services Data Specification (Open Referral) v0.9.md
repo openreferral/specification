@@ -64,7 +64,7 @@ __Appendix D__
 
 ### Related Standards
 
-###AIRS Standards
+#### AIRS Standards
 
 The AIRS Standards defines expected practices within an information and referral (I&R) program and best practices to meet the needs of their community. According to [AIRS Standards and Quality Indicators for Professional Information and Referra](http://www.airs.org/files/public/AIRS_Standards_7_Final.pdf)l:
 
@@ -74,7 +74,7 @@ The Resource Database Standard of the AIRS Standards is pertinent to the Human S
 
 "The Resource Database standards require that the I&R service develop, maintain, use and disseminate an accurate, up-to-date resource database that contains information about available community resources including details about the services they provide and the conditions under which services are available. The database includes resources that support the inquirer’s right to accurate, consistent, comprehensive and unbiased information and the ability of the I&R service to be a non-partisan, non-ideological and impartial information source for available nonprofit, government and for-profit services that meet the organization’s inclusion/exclusion criteria. The database is maintained by trained resource specialists." 
 
-**schema.org for Public Civic Services**
+#### schema.org for Public Civic Services
 
 [Public Civil Services](http://www.w3.org/wiki/images/0/03/Services_for_schema.org_%28DRAFT_2013-06-27%29.pdf) is a [W3C proposal](http://www.w3.org/wiki/WebSchemas/CivicServices) by the Google.org Social Impact team that extends the Schema.org schemas to better support the description of public civic services.
 
@@ -86,23 +86,23 @@ It is a new vocabulary, similar to the European Commission ISA Core Public Servi
 
 "Every provider administers at least one program. Every program provides at least one client-facing service. And every service is represented with a service tag. Our taxonomy is a categorization of those service tags."
 
-**National Information Exchange Model (NIEM)**
+#### National Information Exchange Model (NIEM)
 
 NIEM is the National Information Exchange Model. It is an interagency initiative to create a national-level interoperable information sharing and data exchange. The NIEM project began in 2005 as a joint venture between the U.S. Department of Homeland Security (DHS) and the U.S. Department of Justice (DOJ). The NIEM uses both the Global Justice XML Data Model (GJXDM) reference model and the GJXDM XML-based framework and support infrastructure.
 
 NIEM consists of a  collection of data components organized in multiple kinds of XML Schema that are classified into broad categories. Of interest to the Human Services Data  Standard are the NIEM Core Components. There are two types of NIEM Core components:
 
- a) Universal components such as Person, Date, Location etc., that are relevant and understood across all domains
-
+a) Universal components such as Person, Date, Location etc., that are relevant and understood across all domains
  
-
 b) Common components such as LocationStateUSPostalServiceCode, LocationStateCanadianProvinceCode etc., that are relevant and understood across two or more domains
 
 The schema for the core components are available from [niem.gov](http://release.niem.gov/niem/niem-core/2.0/niem-core.xsd).
 
-**Use Cases**
+***
 
-**Help Seeker**
+### Use Cases
+
+#### Help Seeker
 
 Help seekers  (i.e. patients, clients, consumers, victims, survivors, etc.) have a need (or multiple needs) that can be addressed by services in their community. To find services, help seekers must receive accurate, relevant, and easily understandable information about services which they can access and for which they are eligible. 
 
@@ -112,7 +112,7 @@ Help seekers might currently look for help by searching the Internet or turning 
 
 *As a help-seeker, I want to find services that meet my needs.*
 
-**Referrer**
+#### Referrer
 
 A** **Referrer** **is the person who engages directly with a help-seeker (often face-to-face) and helps them find relevant and accessible services. A ‘referrer’ is usually (but not always) a professional or a volunteer who is working for an organization that itself provides as a service to its community (i.e. case manager, social worker, health worker, EMT, patient intake, librarian, teacher, etc.). Referrers are typically the primary users of resource directory information systems. 
 
@@ -128,7 +128,7 @@ Referrers commonly interact with help seekers using a structured workflow that i
 
 *As a referrer (aka service provider, etc), I want to provide relevant and accurate information about services.*
 
-**Researcher**
+#### Researcher
 
 A Researcher** **uses service directory data, in synthesis with other kinds of data, for the purpose of understanding community health, predicting future needs, identifying funding gaps, and other kinds of analysis. Such a role is often played by funders, policymakers, planners, or community leaders.
 
@@ -136,13 +136,15 @@ Researchers study the effectiveness of *programs*, which may not be specific ser
 
 *As a researcher, I need *data in raw formats over a specific time period and * *meaningful context for service information so that I can perform efforts-to-outcomes and population-level analysis.
 
-**Data Administrator**
+#### Data Administrator
 
 A Data Administrator is responsible for  information systems that are a compilation of directories. Data administrators produce and maintain information; tasks include updating records, maintaining naming conventions, running reports, designing mechanisms for retrieval and delivery, etc. They may be responsible for reporting directly to funders and government agencies. These responsibilities are sometimes shared among several roles in an organization. 
 
 *As a data administrator, I want a data maintenance process flow enabled by a simple and easy to use interface to update data quickly and efficiently.*
 
-**Design Principles**
+***
+
+### Design Principles
 
 The design of  Human Services Data Specification is based on five principles: simplicity, factual, fidelity, provenance, and accessibility.
 
@@ -176,7 +178,9 @@ The Human Services Data Specification seeks to establish a common vocabulary amo
 
 The relationship between organizations as the primary entity and services and locations as subordinate entities is loosely coupled in recognition that service providers may organize the data in different ways and that human services continue to evolve. For example, some services such as virtual support groups or informational websites may not have a physical location.
 
-**Current Human Services Data Capabilities**
+***
+
+### Current Human Services Data Capabilities
 
 The specification supports:
 
@@ -186,29 +190,29 @@ The specification supports:
 
 * A common data exchange format between different information and referral systems.
 
-**Specification Governance**
+### Specification Governance
 
 To promote participation and accessibility, this Google Document serves as the working draft of the next version of Human Services Data Specification.  Edits, improvements and changes should first be discussed using the Comments feature. 
 
-**Versions**
+#### Versions
 
 Subsequent to publishing version 1.0, the specification will not change for a given period of time, to be determined by the Working Group. This will allow data producers and consumers to reliably build upon the specification. 
 
 This working document--and the [complementary Google Group](https://groups.google.com/forum/#!forum/plats-discussion)-- will continue to serve as a forum for discussion and feedback. These conversations will inform the future evolution of the specification.
 
-**Producing and Sharing Compliant Data **
+***
 
-**CSV**** Formatting**
+## Producing and Sharing Compliant Data 
 
-For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv). The CSV format described herein conforms to [RFC4180](http://tools.ietf.org/html/rfc4180). Text will used the 
+### CSV**** Formatting
 
-UTF-8 character set.
+For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv). The CSV format described herein conforms to [RFC4180](http://tools.ietf.org/html/rfc4180). Text will used the UTF-8 character set.
 
-**Telephone Formatting**
+### Telephone Formatting
 
 HSDS uses[ E.164](http://www.itu.int/rec/T-REC-E.164-201011-I/en) number formatting for phone numbers E.164 numbers can have a maximum of fifteen digits and are usually written as follows: [+][country code][subscriber number including area/region code]. Phone numbers can contain delimiters.
 
-**Address Formatting**
+### Address Formatting
 
 At the time this document was drafted, a standard addressing format has not been established. ISO 19160  is in the preliminary stages of an addressing standard but has not yet produced a standard. Based on address standards by country from the Universal Postal Union,  the following format will capture the majority of addresses in use globally.
 
@@ -230,19 +234,21 @@ country
 
 Because of the variety of addressing systems, every field is composed of alphanumeric characters. The country field uses ISO-3166 alpha 2 codes.
 
-**Description Field Formatting**
+### Description Field Formatting
 
 The description field may include HTML or MarkDown tags.
 
-**Version**
+### Version
 
 This is version 0.9 of the specification.  
 
-Copyright:
+### Copyright
 
 Human Services Data Specification is licensed under  [Public Domain](http://choosealicense.com/licenses/unlicense/)
 
-**Changelog**
+***
+
+## Changelog
 
 v0.0 	
 
