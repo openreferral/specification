@@ -1,3 +1,5 @@
+docs/*
+artifacts/*
 node_modules/*
 pdf/*
 tmp/*
