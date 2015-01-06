@@ -1200,7 +1200,7 @@ The following is the schema for the logical data model in the datapackage.json f
 <table>
   <tr>
     <td><pre>
-       {
+      {
         "name": "human_services_data",
         "title": "Human Services Data",
         "license": [
@@ -1468,6 +1468,10 @@ The following is the schema for the logical data model in the datapackage.json f
                             "name": "id",
                             "description": "",
                             "type": "string"
+                        },{
+                            "name": "location_id",
+                            "description": "",
+                            "type": "string"
                         },
                         {
                             "name": "service_id",
@@ -1511,6 +1515,13 @@ The following is the schema for the logical data model in the datapackage.json f
                             "fields": "organization_id",
                             "reference": {
                                 "resource": "organization.csv",
+                                "fields": "id"
+                            }
+                        },
+                        {
+                            "fields": "location_id",
+                            "reference": {
+                                "resource": "location.csv",
                                 "fields": "id"
                             }
                         },
@@ -1661,7 +1672,7 @@ The following is the schema for the logical data model in the datapackage.json f
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "location_id",
                             "reference": {
                                 "resource": "location.csv",
                                 "fields": "id"
@@ -1736,7 +1747,7 @@ The following is the schema for the logical data model in the datapackage.json f
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "location_id",
                             "reference": {
                                 "resource": "location.csv",
                                 "fields": "id"
@@ -2032,8 +2043,7 @@ The following is the schema for the logical data model in the datapackage.json f
                             "name": "payment",
                             "description": "",
                             "type": "string",
-                            "values": [“cash”, “check”, “money order”, “credit card”, “medicare”, 
-                                    “SNAP”, “WIC”, “EBT”]
+                            "values": ["cash","check","money order","credit card","medicare","SNAP","WIC","EBT"]
                         }
                     ],
                     "primaryKey": "id",
@@ -2284,7 +2294,7 @@ The following is the schema for the logical data model in the datapackage.json f
                 }
             },
            {
-                "name": "meta_table_descrition",
+                "name": "meta_table_description",
                 "path": "meta_table_description.csv",
                 "format": "csv",
                 "mediatype": "text/csv",

@@ -1,0 +1,98 @@
+Issues:
+
+Phone number formating conventions:
+
+There are a number of ways that phone numbers can be represented, for example:
+
+754-3010:			Local
+(541) 754-3010:		Domestic
++1-541-754-3010:	International
+1-541-754-3010: 	Dialed in the US
+001-541-754-3010:	Dialed from Germany
+191 541 754 3010:	Dialed from France
+
+
+ITU- E.123 (file:///Users/sparafina/Downloads/T-REC-E.123-200102-I!!PDF-E.pdf)
+
+Telephone numbers in the North American numbering plan:
+
+
+country code (CC): 	+cc 
+area code (NPA):	xxx 
+exchange (NXX):		xxx 
+subscriber no:		xxx
+
+national: (123) 456 7890
+international: + 1 123 456 7890
+
+Country codes and ISO 3661-1
+
+ISO country codes identify the country, not the dialing code, because countries share codes. However, for countries with dialing codes but not ISO codes, use the dialing code instead.
+
+
+
+Handling extensions;
+
+There doesn't seem to be a standard way to express extensions, these are common ways of indicating an extensionL
+
+ x
+ ext
+ ext.
+ extension
+ Ext
+ Ext.
+ Extension
+ #
+
+ While this can be handled programatically by an application, I suggest using 'ext.' as the standard indicator for an extension.
+
+
+
+E.123 also extends to email and web addresses
+
+email: aperson@organization.org
+web: www.organization.org  
+
+
+
+
+Schema:
+
+I would think then you would have those multiple Locations as independent objects, all linked to the Service table, and then note (perhaps in the association table?) which Locations correspond to which Days. I just think putting location information both in the Service record and in the Location records is less than ideal. Developers will be unsure where to look.
+
+
+
+Relationship between a Service and a Location
+
+ Regardless of the decision on 3, there also needs to be a way to express a relationship between a Service and a Location. Maybe some sort of association object?
+
+I don't disagree when it comes to implementation (I would throw in a join support table), but wondering if there was a more clever way to associate n Locations to a Service and n Services to a location.
+
+++I leave that to you to do in the specification. It probably requires ID's for all of these objects so the relationships can be traversed, similar to how you have Service and Location be children of Agency via the Agency's ID.
+
+
+===
+
+Use cases:
+
+1. A service occurs at a location, e.g (or location has a service). food pantry at local food bank.
+2. A service occurs at multiple locations, e.g. mobile primary care/medical on a bus.
+3. A location with multiple services, e.g. A agency with job placement, food distribution, household goods distribution.
+
+
+
+Service Area Definition
+
+You are on the horns of a great difficulty, indeed. The ultimate here is indeed geographic polygons reflecting physical areas. But implementation is nearly impossible (even with shape files representing every geopolitcal entity, which are obtainable). Sometimes, eligibility to a Service can be as rigid as the boundary of a zip code or town, strictly enforced. Other times it is just a loosely defined / colloquial area. The way we have threaded that needle is to base coverage areas on defined geopolitical entities (Country, State/Province, County, City, Zip Code) and then refine as needed in the free text of the Coverage and/or Eligibility fields. This misses two important entity types - regions (e.g. "Central Florida" or "Upstate New York") and neigborhoods ("Tribeca", "Mission District", "SOHO") - but these are generally colloquial without boundaries anyways. So for the former you tend to just assemble Counties and for the latter you assemble Zip Codes. To paraphrase Winston Churchill, this might be the worst way to do things, except for all the other possible ways ;-)
+
+
+Scale dependent location coordinates
+
+
+We started playing with attributes like "Precise" or "Approximate" and ultimately found that a scale reflecting the precision of the coordinates was more appropriate, measured in meters and on orders of magnitude. 1m would be a precise/GPS address, 100m might be the geographic center of a small zip code, 1000m might be the geographic center of a small town, etc. Like item 5 above, I'm not sure it is the best way but it is better than nothing. When you put a pin on a map and the person zooms in, they are expecting the place to be exactly there. If it is not, and it is off by 1000m or more, you will have an unhappy camper on your hands.
+
+
+Best practices:
+
+http://maps.google.com/help/maps/mapcontent/transit/bestpractices.html
+

@@ -266,6 +266,10 @@
                             "name": "id",
                             "description": "",
                             "type": "string"
+                        },{
+                            "name": "location_id",
+                            "description": "",
+                            "type": "string"
                         },
                         {
                             "name": "service_id",
@@ -309,6 +313,13 @@
                             "fields": "organization_id",
                             "reference": {
                                 "resource": "organization.csv",
+                                "fields": "id"
+                            }
+                        },
+                        {
+                            "fields": "location_id",
+                            "reference": {
+                                "resource": "location.csv",
                                 "fields": "id"
                             }
                         },
@@ -459,7 +470,7 @@
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "location_id",
                             "reference": {
                                 "resource": "location.csv",
                                 "fields": "id"
@@ -534,7 +545,7 @@
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "location_id",
                             "reference": {
                                 "resource": "location.csv",
                                 "fields": "id"
@@ -1081,7 +1092,7 @@
                 }
             },
            {
-                "name": "meta_table_descrition",
+                "name": "meta_table_description",
                 "path": "meta_table_description.csv",
                 "format": "csv",
                 "mediatype": "text/csv",
