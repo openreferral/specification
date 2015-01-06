@@ -1296,7 +1296,7 @@ The following is the schema for the logical data model in the datapackage.json f
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "organization_id",
                             "reference": {
                                 "resource": "organization.csv",
                                 "fields": "id"
@@ -1372,7 +1372,7 @@ The following is the schema for the logical data model in the datapackage.json f
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "organization_id",
                             "reference": {
                                 "resource": "organization.csv",
                                 "fields": "id"
@@ -1441,7 +1441,7 @@ The following is the schema for the logical data model in the datapackage.json f
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "organization_id",
                             "reference": {
                                 "resource": "organization.csv",
                                 "fields": "id"

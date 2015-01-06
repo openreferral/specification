@@ -94,7 +94,7 @@
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "organization_id",
                             "reference": {
                                 "resource": "organization.csv",
                                 "fields": "id"
@@ -170,7 +170,7 @@
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "organization_id",
                             "reference": {
                                 "resource": "organization.csv",
                                 "fields": "id"
@@ -239,7 +239,7 @@
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "parent_id",
+                            "fields": "organization_id",
                             "reference": {
                                 "resource": "organization.csv",
                                 "fields": "id"
