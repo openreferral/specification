@@ -452,13 +452,13 @@ Recommended or Optional</td>
     <td>Regular Schedule</td>
     <td>Time and days when the service is available to the public. </td>
     <td>2013-11-05T13:15:30Z</td>
-    <td>required</td>
+    <td>optional</td>
   </tr>
   <tr>
     <td>Holiday Schedule</td>
     <td>Time and days when the service is available to the public during public holidays or other events</td>
     <td>2013-11-05T13:15:30Z</td>
-    <td>required</td>
+    <td>optional</td>
   </tr>
   <tr>
     <td>Id</td>
@@ -1077,7 +1077,7 @@ location
 weekday
 opens_at
 closes_at</td>
-    <td>required</td>
+    <td>optional</td>
   </tr>
   <tr>
     <td>holiday_schedule.csv</td>
@@ -1089,7 +1089,7 @@ closes_at
 closed
 start_date
 end_date</td>
-    <td>required</td>
+    <td>optional</td>
   </tr>
   <tr>
     <td>metadata.csv</td>
