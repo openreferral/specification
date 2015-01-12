@@ -299,6 +299,10 @@ v0.8
 
 * Added formatting specification for address, phone, description	
 
+v0.9
+
+* Changes based on public comments in v0.8
+
 ***
 
 ## Appendix A
