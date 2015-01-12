@@ -354,7 +354,7 @@ Recommended or Optional</td>
     <td>Closes At </td>
     <td>Time when a service or location is closed</td>
     <td>2013-11-05T13:15:30Z</td>
-    <td>required</td>
+    <td>optional</td>
   </tr>
   <tr>
     <td>Closed</td>
@@ -524,7 +524,7 @@ Recommended or Optional</td>
     <td>Opens At </td>
     <td>Time when a service or location is open</td>
     <td>2013-11-05T13:15:30Z</td>
-    <td>required</td>
+    <td>optional</td>
   </tr>
   <tr>
     <td>Physical Address</td>
