@@ -41,6 +41,8 @@ __Section 2: Producing Compliant Data__
 
 [Description Field Formatting](#description)
 
+[Guidance on Mapping Fields and Values](#guidance)
+
 __Section 3: Document Status__
 
 [Version](#version)
