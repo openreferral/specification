@@ -748,7 +748,7 @@ San Antonio, TX 78210</td>
 <a name="model">
 ### Logical Model
 
-![image alt text](image_0.png)	
+![image alt text](Logical8landscape.png)	
 
 *  Note that although the relationships are not depicted, metadata.resource_id is the foreign key to all entities 
 
