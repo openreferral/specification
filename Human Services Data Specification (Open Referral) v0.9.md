@@ -722,8 +722,8 @@ San Antonio, TX 78210</td>
     <td>optional</td>
   </tr>
   <tr>
-    <td>Website</td>
-    <td>Website of the organization or a service</td>
+    <td>URL</td>
+    <td>URL of the organization or a service</td>
     <td>htttp://havenforhope.org/</td>
     <td>optional</td>
   </tr>
@@ -767,7 +767,7 @@ name
 alternate_name
 description
 email
-website
+url
 tax_status
 tax_id
 year_incorporated
@@ -789,7 +789,7 @@ location_id
 name
 alternate_name
 description
-website
+url
 email
 status
 application_process
@@ -989,7 +989,7 @@ name
 alternate_name
 description
 email
-website
+url
 legal_status
 tax_status
 tax_id
@@ -1014,7 +1014,7 @@ location_id
 name
 alternate_name
 description
-website
+url
 email
 status
 application_process
@@ -1260,7 +1260,7 @@ The following is the schema for the logical data model in the datapackage.json f
                             "type": "string"
                         },
                         {
-                            "name": "website",
+                            "name": "url",
                             "type": "string"
                         },
                         {
@@ -1362,7 +1362,7 @@ The following is the schema for the logical data model in the datapackage.json f
                             "type": "string"
                         },
                         {
-                            "name": "website",
+                            "name": "url",
                             "description": "",
                             "type": "string"
                         },

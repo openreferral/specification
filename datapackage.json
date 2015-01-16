@@ -39,7 +39,7 @@
                             "type": "string"
                         },
                         {
-                            "name": "website",
+                            "name": "url",
                             "type": "string"
                         },
                         {
@@ -141,7 +141,7 @@
                             "type": "string"
                         },
                         {
-                            "name": "website",
+                            "name": "url",
                             "description": "",
                             "type": "string"
                         },
