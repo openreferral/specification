@@ -2,6 +2,7 @@
 
 Human Services Data Specification defines content that provides the minimum set of data for Information and Referral (I&R) applications as well as specialized service directory applications. Read the [spec here](https://docs.google.com/a/codeforamerica.org/document/d/1gmNS4pBvkX4cI2wtH3Qco3uGF4LLTq1OJ0Pb_CLuxlk/edit).
 
+Information about the OpenReferral Initiative is available [here](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit#).
 <!--
 
 ## A note on contributing to the specification
@@ -36,7 +37,7 @@ The PDF will appear in `~/OpenReferral/pdf/openreferral-[commit ID].pdf`
 
 ## License
 
-This work is licensed under the Creative Commons Attribution 3.0 Unported License. To view a copy of this license, visit [Creative Commons License](http://creativecommons.org/licenses/by/3.0/).
+This work is licensed under the CC0 is the "no copyright reserved" option in the Creative Commons toolkit - it effectively means relinquishing all copyright and similar rights that you hold in a work and dedicating those rights to the public domain. To view a copy of this license, visit [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/).
 
 We highly encourage you to use the same license for your data.
 
