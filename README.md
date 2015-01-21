@@ -37,7 +37,7 @@ The PDF will appear in `~/OpenReferral/pdf/openreferral-[commit ID].pdf`
 
 ## License
 
-This work is licensed under the CC0 is the "no copyright reserved" option in the Creative Commons toolkit - it effectively means relinquishing all copyright and similar rights that you hold in a work and dedicating those rights to the public domain. To view a copy of this license, visit [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/).
+This work is licensed under the CC0 licenense, which is the "no copyright reserved" option in the Creative Commons toolkit - it effectively means relinquishing all copyright and similar rights that you hold in a work and dedicating those rights to the public domain. To view a copy of this license, visit [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/).
 
 We highly encourage you to use the same license for your data.
 
