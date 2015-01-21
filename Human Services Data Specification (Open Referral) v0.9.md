@@ -250,7 +250,7 @@ Source data may or may not map directly to the HSDS. Guidelines are listed below
 
 * A null value is acceptable for required fields. 
 * If there are no values for an entity, the corresponding CSV file can be omitted. 
-* A data source may have  field that can map to an HSDS field but in many cases are not populated. A null value is acceptable
+* A data source may have a field that can map to an HSDS field but in many cases are not populated. A null value is acceptable.
 * In some cases, such as name, using the organization name for either or both location or service is acceptable. This is up to the discretion of the data producer.
 * Mapping a field is at the data producer’s discretion, but it is acceptable for some entities to map to multiple entities, for example an organization, service, or location can have a contact.
 * The HSDS is a baseline of data, if the the data producer’s has additional fields or entities that they wish to add, the specification can be extended to incorporate them. The data producer should provide documentation of how the specification has been extended.
@@ -268,7 +268,7 @@ This is version 0.9 of the specification.
 <a name="copyright">
 ### Copyright
 
-Human Services Data Specification is licensed under  [Public Domain](http://choosealicense.com/licenses/unlicense/)
+Human Services Data Specification is licensed under [Public Domain](http://choosealicense.com/licenses/unlicense/)
 
 ***
 
@@ -316,7 +316,13 @@ v0.8
 
 v0.9
 
-* Changes based on public comments in v0.8
+* Changes based on public comments in v0.8 include:
+	- revising revising schedule entities and attributes  as recommended, 
+	- grammatical and punctuation edits, 
+	- changing SMS attribute to a phone type
+	- changed language_line to interpretation_services 
+* Released on github as a markdown document
+* Added a datapackage.json example on github
 
 ***
 
@@ -639,7 +645,7 @@ San Antonio, TX 78210</td>
   </tr>
   <tr>
     <td>State/Province</td>
-    <td>The state (or province) that the Organization, Service or Location resides. Uses ISO 3361-2 state codes (two letter abbreviations) in the US</td>
+    <td>The state (or province) that the Organization, Service or Location resides. Uses ISO 3361-2 state codes (two letter abbreviations), for example in the US and Canada</td>
     <td>CA</td>
     <td>required</td>
   </tr>
@@ -748,7 +754,7 @@ San Antonio, TX 78210</td>
 <a name="model">
 ### Logical Model
 
-![image alt text](Logical8landscape.png)	
+![image alt text](Logical9landscape.png)	
 
 *  Note that although the relationships are not depicted, metadata.resource_id is the foreign key to all entities 
 
@@ -1120,7 +1126,7 @@ field_name
 previous_value
 replacement_value
 updated_by</td>
-    <td>required</td>
+    <td>recommended</td>
   </tr>
   <tr>
     <td>accreditation.csv</td>
@@ -1202,7 +1208,7 @@ accessibility</td>
     <td>required</td>
   </tr>
   <tr>
-    <td>meta_table_description</td>
+    <td>meta_table_description.csv</td>
     <td>id
 name
 language
