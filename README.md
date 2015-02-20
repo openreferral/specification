@@ -37,9 +37,8 @@ The PDF will appear in `~/OpenReferral/pdf/openreferral-[commit ID].pdf`
 
 ## License
 
-This work is licensed under the CC0 licenense, which is the "no copyright reserved" option in the Creative Commons toolkit - it effectively means relinquishing all copyright and similar rights that you hold in a work and dedicating those rights to the public domain. To view a copy of this license, visit [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/).
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 license (CC BY-SA 4.0). This license enables free usage and adaptation of the material; it also requires attribution to Open Referral, the indication of any changes, and preservation of this license in any adapted versions derived from the original. [Read more about this license here](http://creativecommons.org/licenses/by-sa/4.0/), with [full legal code here](http://creativecommons.org/licenses/by-sa/4.0/legalcode)
 
-We highly encourage you to use the same license for your data.
 
 
 
