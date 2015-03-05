@@ -774,213 +774,213 @@ San Antonio, TX 78210</td>
   </tr>
   <tr>
     <td>organization</td>
-    <td>id
-name
-alternate_name
-description
-email
-url
-tax_status
-tax_id
+    <td>id<br>
+name<br>
+alternate_name<br>
+description<br>
+email<br>
+url<br>
+tax_status<br>
+tax_id<br>
 year_incorporated
 </td>
   </tr>
   <tr>
     <td>program</td>
-    <td>id
-organization_id
-name
+    <td>id<br>
+organization_id<br>
+name<br>
 alternate_name</td>
   </tr>
   <tr>
     <td>service</td>
-    <td>id
-organization_id
-program_id
-location_id
-name
-alternate_name
-description
-url
-email
-status
-application_process
+    <td>id<br>
+organization_id<br>
+program_id<br>
+location_id<br>
+name<br>
+alternate_name<br>
+description<br>
+url<br>
+email<br>
+status<br>
+application_process<br>
 wait_time</td>
   </tr>
   <tr>
     <td>service_at_location</td>
-    <td>id
-service_id
-location_id
-url
+    <td>id<br>
+service_id<br>
+location_id<br>
+url<br>
 email
 </td>
   </tr>  
   <tr>
     <td>location</td>
-    <td>id
-organization_id
-name
-alternate_name
-transportation
-latitude
-longitude
+    <td>id<br>
+organization_id<br>
+name<br>
+alternate_name<br>
+transportation<br>
+latitude<br>
+longitude<br>
 description</td>
   </tr>
   <tr>
     <td>phone</td>
-    <td>id
-service_id
-organization_id
-contact_id
-number
-extension
-type
-department
+    <td>id<br>
+service_id<br>
+organization_id<br>
+contact_id<br>
+number<br>
+extension<br>
+type<br>
+department<br>
 country_prefix</td>
   </tr>
   <tr>
     <td>contact</td>
-    <td>id
-organization_id
-service_id
-name
-title
-department
+    <td>id<br>
+organization_id<br>
+service_id<br>
+name<br>
+title<br>
+department<br>
 email</td>
   </tr>
   <tr>
     <td>physical_address</td>
-    <td>id
-location_id
-attention
-address_1
-address_2
-address_3
-address_4
-city
-state_province
-postal_code
+    <td>id<br>
+location_id<br>
+attention<br>
+address_1<br>
+address_2<br>
+address_3<br>
+address_4<br>
+city<br>
+state_province<br>
+postal_code<br>
 country</td>
   </tr>
   <tr>
     <td>postal_address</td>
-    <td>id
-location_id
-attention
-address_1
-address_2
-address_3
-address_4
-city
-state_province
-postal_code
+    <td>id<br>
+location_id<br>
+attention<br>
+address_1<br>
+address_2<br>
+address_3<br>
+address_4<br>
+city<br>
+state_province<br>
+postal_code<br>
 country</td>
   </tr>
   <tr>
     <td>regular_schedule</td>
-    <td>id
-service_id
-location
-weekday
-opens_at
+    <td>id<br>
+service_id<br>
+location<br>
+weekday<br>
+opens_at<br>
 closes_at</td>
   </tr>
   <tr>
     <td>holiday_schedule</td>
-    <td>id
-service_id
-location_id 
-opens_at
-closes_at
-closed
-start_date
+    <td>id<br>
+service_id<br>
+location_id<br>
+opens_at<br>
+closes_at<br>
+closed<br>
+start_date<br>
 end_date</td>
   </tr>
   <tr>
     <td>metadata</td>
-    <td>id
-resource_id
-last_action_date
-last_action_type
-field_name
-previous_value
-replacement_value
+    <td>id<br>
+resource_id<br>
+last_action_date<br>
+last_action_type<br>
+field_name<br>
+previous_value<br>
+replacement_value<br>
 updated_by</td>
   </tr>
   <tr>
     <td>accreditation</td>
-    <td>id
-organization_id
+    <td>id<br>
+organization_id<br>
 accreditation</td>
   </tr>
   <tr>
     <td>license</td>
-    <td>id
-organization_id
+    <td>id<br>
+organization_id<br>
 license</td>
   </tr>
   <tr>
     <td>funding</td>
-    <td>id
-organization_id
-service
+    <td>id<br>
+organization_id<br>
+service<br>
 source</td>
   </tr>
   <tr>
     <td>eligibility</td>
-    <td>id
-service_id
+    <td>id<br>
+service_id<br>
 eligibility</td>
   </tr>
   <tr>
     <td>service_area</td>
-    <td>id
-service_id
+    <td>id<br>
+service_id<br>
 service_area</td>
   </tr>
   <tr>
     <td>required_document</td>
-    <td>id
-service_id
+    <td>id<br>
+service_id<br>
 document</td>
   </tr>
   <tr>
     <td>fee</td>
-    <td>id
-service_id
+    <td>id<br>
+service_id<br>
 fee</td>
   </tr>
   <tr>
     <td>payement_accepted</td>
-    <td>id
-service_id
+    <td>id<br>
+service_id<br>
 payment</td>
   </tr>
   <tr>
     <td>interpretation_services</td>
-    <td>id
-service_id
+    <td>id<br>
+service_id<br>
 language</td>
   </tr>
   <tr>
     <td>language</td>
-    <td>id
-service_id
-location_id
+    <td>id<br>
+service_id<br>
+location_id<br>
 language</td>
   </tr>
   <tr>
     <td>accessibility_for_disabilities</td>
-    <td>id
-location_id
+    <td>id<br>
+location_id<br>
 accessibility</td>
   </tr>
   <tr>
     <td>meta_table_description</td>
-    <td>id
-name
-language
+    <td>id<br>
+name<br>
+language<br>
 character_set</td>
   </tr>
 </table>
