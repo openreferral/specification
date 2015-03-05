@@ -1,6 +1,6 @@
 # OpenReferral
 
-Human Services Data Specification defines content that provides the minimum set of data for Information and Referral (I&R) applications as well as specialized service directory applications. Read the [spec here](https://docs.google.com/a/codeforamerica.org/document/d/1gmNS4pBvkX4cI2wtH3Qco3uGF4LLTq1OJ0Pb_CLuxlk/edit).
+Human Services Data Specification defines content that provides the minimum set of data for Information and Referral (I&R) applications as well as specialized service directory applications. Read the [spec here](https://docs.google.com/a/codeforamerica.org/document/d/1jbgO92cPAUygQI-0_DtLXrdPQKbPNNIkxDr-3WvdFNE/edit).
 
 Information about the OpenReferral Initiative is available [here](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit#).
 <!--
