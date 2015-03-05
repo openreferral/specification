@@ -1,6 +1,6 @@
 # OpenReferral
 
-Human Services Data Specification defines content that provides the minimum set of data for Information and Referral (I&R) applications as well as specialized service directory applications. Read the [spec here](https://docs.google.com/a/codeforamerica.org/document/d/1gmNS4pBvkX4cI2wtH3Qco3uGF4LLTq1OJ0Pb_CLuxlk/edit).
+Human Services Data Specification defines content that provides the minimum set of data for Information and Referral (I&R) applications as well as specialized service directory applications. Read the [spec here](OpenReferral/Human Services Data Specification v1.0.md) or on [Google Docs](https://docs.google.com/document/d/1dkipRm_YL3K28oTSG-NFZRMHYiv10ZZJzJlakZglOyc/edit?usp=sharing).
 
 Information about the OpenReferral Initiative is available [here](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit#).
 <!--
@@ -39,7 +39,7 @@ The PDF will appear in `~/OpenReferral/pdf/openreferral-[commit ID].pdf`
 
 This work is licensed under the CC0 licenense, which is the "no copyright reserved" option in the Creative Commons toolkit - it effectively means relinquishing all copyright and similar rights that you hold in a work and dedicating those rights to the public domain. To view a copy of this license, visit [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/).
 
-We highly encourage you to use the same license for your data.
+We encourage you to use the same license for your data.
 
 
 
