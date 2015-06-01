@@ -71,7 +71,7 @@ __Appendix D__
 
 ***
 
-<a name="relatedstandards">
+<a name="relatedstandards"/>
 ## Related Standards
 
 ### AIRS Standards
@@ -109,7 +109,7 @@ The schema for the core components is available from [niem.gov](http://release.n
 
 ***
 
-<a name="usecases">
+<a name="usecases"/>
 ## Use Cases
 
 ### Help Seeker
@@ -152,7 +152,7 @@ A Data Administrator is responsible for  information systems that are a compilat
 
 ***
 
-<a name="designprinciples">
+<a name="designprinciples"/>
 ## Design Principles
 
 The design of  Human Services Data Specification is based on five principles: simplicity, factual, fidelity, provenance, and accessibility.
@@ -168,7 +168,7 @@ The standard must include information about the provenance of the data as well a
 The data must be a machine readable and writable format that can be created, updated and deleted with a basic text editor.
 
 
-<a name="roadmap">
+<a name="roadmap"/>
 ## Human Services Data Specification Roadmap
 
 Open Referral does not yet incorporate the full range of data necessary to meet domain specific use cases. Specifically, the working group intends to address the following topics.
@@ -187,7 +187,7 @@ The relationship between organizations as the primary entity and services and lo
 
 ***
 
-<a name="capabilities">
+<a name="capabilities"/>
 ## Current Human Services Data Capabilities
 
 The specification supports:
@@ -196,7 +196,7 @@ The specification supports:
 * Machine readable format that can be imported directly into a relational database or viewed and edited using commonly available software such as a spreadsheet or a text editor
 * A common data exchange format between different information and referral systems.
 
-<a name="governance">
+<a name="governance"/>
 ### Specification Governance
 
 To promote participation and accessibility, this Google Document serves as the working draft of the next version of Human Services Data Specification.  Edits, improvements and changes should first be discussed using the Comments feature.
@@ -212,17 +212,17 @@ This working document--and the [complementary Google Group](https://groups.googl
 
 ## Section 2: Producing and Sharing Compliant Data
 
-<a name="csv">
+<a name="csv"/>
 ### CSV Formatting
 
 For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv). The CSV format described herein conforms to [RFC4180](http://tools.ietf.org/html/rfc4180). Text will used the UTF-8 character set.
 
-<a name="telephone">
+<a name="telephone"/>
 ### Telephone Formatting
 
 HSDS uses[ E.164](http://www.itu.int/rec/T-REC-E.164-201011-I/en) number formatting for phone numbers E.164 numbers can have a maximum of fifteen digits and are usually written as follows: [+][country code][subscriber number including area/region code]. Phone numbers can contain delimiters.
 
-<a name="address">
+<a name="address"/>
 ### Address Formatting
 
 At the time this document was drafted, a standard addressing format has not been established. ISO 19160  is in the preliminary stages of an addressing standard but has not yet produced a standard. Based on address standards by country from the Universal Postal Union,  the following format will capture the majority of addresses in use globally.
@@ -238,12 +238,12 @@ At the time this document was drafted, a standard addressing format has not been
 
 Because of the variety of addressing systems, every field is composed of alphanumeric characters. The country field uses ISO-3166 alpha 2 codes.
 
-<a name="description">
+<a name="description"/>
 ### Description Field Formatting
 
 The description field may include HTML or MarkDown tags.
 
-<a name="guidance">
+<a name="guidance"/>
 ### Guidance on Mapping Fields and Values
 
 Source data may or may not map directly to the HSDS. Guidelines are listed below to reduce ambiguity.
@@ -260,12 +260,12 @@ Source data may or may not map directly to the HSDS. Guidelines are listed below
 
 ## Section 3: Document Status
 
-<a name="version">
+<a name="version"/>
 ### Version
 
 This is version 0.9 of the specification.
 
-<a name="copyright">
+<a name="copyright"/>
 ### Copyright
 
 Human Services Data Specification is licensed under the CC0 license, which is the "no copyright reserved" option in the Creative Commons toolkit - it effectively means relinquishing all copyright and similar rights that you hold in a work and dedicating those rights to the public domain. To view a copy of this license, visit [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/).
@@ -273,7 +273,7 @@ Human Services Data Specification is licensed under the CC0 license, which is th
 
 ***
 
-<a name="changes">
+<a name="changes"/>
 ### Changelog
 
 [v0.0](https://docs.google.com/document/d/1RwHkuPeG5cztk-gcofuqsXRxWaTYZeHa8mLjC2doCwk/edit?usp=sharing)
@@ -334,16 +334,16 @@ No changes.
 
 ## Appendix A
 
-<a name="vocabulary">
+<a name="vocabulary"/>
 ### A Controlled Vocabulary for Human Services Data
 
 <table>
   <tr>
-    <td>Term</td>
-    <td>Description</td>
-    <td>Example</td>
-    <td>Required,
-Recommended or Optional</td>
+    <th>Term</th>
+    <th>Description</th>
+    <th>Example</th>
+    <th>Required,
+Recommended or Optional</th>
   </tr>
   <tr>
     <td>Accessibility for Disabilities</td>
@@ -757,20 +757,20 @@ San Antonio, TX 78210</td>
 
 ## Appendix B
 
-<a name="model">
+<a name="model"/>
 ### Logical Model
 
 ![image alt text](Logical10landscape.png)
 
 *  Note that although the relationships are not depicted, metadata.resource_id is the foreign key to all entities
 
-<a name="entities">
+<a name="entities"/>
 ### Entities
 
 <table>
   <tr>
-    <td>Entity</td>
-    <td>Attributes</td>
+    <th>Entity</th>
+    <th>Attributes</th>
   </tr>
   <tr>
     <td>organization</td>
@@ -990,7 +990,7 @@ character_set</td>
 
 ## Appendix C
 
-<a name="package">
+<a name="package"/>
 ### Tabular Data Package
 
 The data will be in CSV formatted files with one CSV file per entity. This is the minimum requirement for distributing data.  The recommended format for distributing data is the [Tabular Data Package](http://data.okfn.org/doc/tabular-data-package) which is composed of the data in CSV files and a metadata file, called datapackage.json, that stores the schema in a JSON file using the [Data Package format](http://data.okfn.org/doc/data-package).
@@ -999,9 +999,9 @@ A CSV file is required for each entity in the logical model. The files and their
 
 <table>
   <tr>
-    <td>File</td>
-    <td>Attributes</td>
-    <td>Required/Optional</td>
+    <th>File</th>
+    <th>Attributes</th>
+    <th>Required/Optional</th>
   </tr>
   <tr>
     <td>organization.csv</td>
@@ -2481,7 +2481,7 @@ The following is the schema for the logical data model in the datapackage.json f
 
 ## Appendix D
 
-<a name="taxonomy">
+<a name="taxonomy"/>
 ### Taxonomy
 
 The Human Services Data Specification is agnostic with regards to taxonomy or any other method of classification or categorization of services. Data providers may have an existing taxonomy that they wish to include with their services data.
@@ -2498,8 +2498,8 @@ The elements in the hierarchy are separated by periods or ".", e.g. ‘emergency
 
 <table>
   <tr>
-    <td>File</td>
-    <td>Attributes</td>
+    <th>File</th>
+    <th>Attributes</th>
   </tr>
   <tr>
     <td>service_taxonomy.csv</td>
@@ -2518,13 +2518,13 @@ taxonomy_id</td>
 
 <table>
   <tr>
-    <td>id</td>
-    <td>organization_name</td>
-    <td>organization_id</td>
-    <td>service_name</td>
-    <td>service_id</td>
-    <td>taxonomy</td>
-    <td>taxonomy_id</td>
+    <th>id</th>
+    <th>organization_name</th>
+    <th>organization_id</th>
+    <th>service_name</th>
+    <th>service_id</th>
+    <th>taxonomy</th>
+    <th>taxonomy_id</th>
   </tr>
   <tr>
     <td>16478826-2010-44af-94c2-ca012144e78e</td>
