@@ -6,7 +6,7 @@ The Human Services Data Specification (Open Referral) is an exchange format for 
 
 All organizations that provide services or referrals, as well as entities that consume or distribute digital human services information, are invited to publish their data in this format, whether they be governments at the local, state, or federal level; civic organizations, or companies.
 
-**The primary use case served by Open Referral is the provision of information about many services to a common or overlapping audience.** 
+**The primary use case served by Open Referral is the provision of information about many services to a common or overlapping audience.**
 
 Government entities, community organizations, and businesses often face difficulty obtaining timely and correct data about human services. The Human Services Data Specification facilitates the open exchange and use of data and information among these stakeholders.  To that end, the specification is designed to provide an interoperable format for web and application developers.
 
@@ -71,7 +71,7 @@ __Appendix D__
 
 ***
 
-<a name="relatedstandards">
+<a name="relatedstandards"/>
 ## Related Standards
 
 ### AIRS Standards
@@ -82,13 +82,13 @@ The AIRS Standards defines expected practices within an information and referral
 
 The Resource Database Standard of the AIRS Standards is pertinent to the Human Services Data Specification. As described in the AIRS Standards and Quality Indicators publication, the Resource Database Standard:
 
-"The Resource Database standards require that the I&R service develop, maintain, use and disseminate an accurate, up-to-date resource database that contains information about available community resources including details about the services they provide and the conditions under which services are available. The database includes resources that support the inquirer’s right to accurate, consistent, comprehensive and unbiased information and the ability of the I&R service to be a non-partisan, non-ideological and impartial information source for available nonprofit, government and for-profit services that meet the organization’s inclusion/exclusion criteria. The database is maintained by trained resource specialists." 
+"The Resource Database standards require that the I&R service develop, maintain, use and disseminate an accurate, up-to-date resource database that contains information about available community resources including details about the services they provide and the conditions under which services are available. The database includes resources that support the inquirer’s right to accurate, consistent, comprehensive and unbiased information and the ability of the I&R service to be a non-partisan, non-ideological and impartial information source for available nonprofit, government and for-profit services that meet the organization’s inclusion/exclusion criteria. The database is maintained by trained resource specialists."
 
 ### schema.org for Public Civic Services
 
 [Public Civil Services](http://www.w3.org/wiki/images/0/03/Services_for_schema.org_%28DRAFT_2013-06-27%29.pdf) is a [W3C proposal](http://www.w3.org/wiki/WebSchemas/CivicServices) by the Google.org Social Impact team that extends the Schema.org schemas to better support the description of public civic services.
 
-It is a new vocabulary, similar to the European Commission ISA Core Public Service vocabulary. Its purpose is to improve search engines’ understanding of these services. The schema will provide "*enough information to determine the service, the area covered by the service, and relevant information for using the service*." 
+It is a new vocabulary, similar to the European Commission ISA Core Public Service vocabulary. Its purpose is to improve search engines’ understanding of these services. The schema will provide "*enough information to determine the service, the area covered by the service, and relevant information for using the service*."
 
 ### Open Eligibility
 
@@ -109,14 +109,14 @@ The schema for the core components is available from [niem.gov](http://release.n
 
 ***
 
-<a name="usecases">
+<a name="usecases"/>
 ## Use Cases
 
 ### Help Seeker
 
-Help seekers  (i.e. patients, clients, consumers, victims, survivors, etc.) have a need (or multiple needs) that can be addressed by services in their community. To find services, help seekers must receive accurate, relevant, and easily understandable information about services which they can access and for which they are eligible. 
+Help seekers  (i.e. patients, clients, consumers, victims, survivors, etc.) have a need (or multiple needs) that can be addressed by services in their community. To find services, help seekers must receive accurate, relevant, and easily understandable information about services which they can access and for which they are eligible.
 
-Help seekers may not be capable of articulating the addressable aspect of their needs. They may have limited media literacy and limited access to technology. They may not know about the existence of relevant services, let alone the ‘correct’ terms to describe those services. They may have difficulty processing and/or trusting information. They may struggle with anticipated or actual stigmatization for seeking help. Incorrect information can cost help-seekers time, money, or even conceivably lives. 
+Help seekers may not be capable of articulating the addressable aspect of their needs. They may have limited media literacy and limited access to technology. They may not know about the existence of relevant services, let alone the ‘correct’ terms to describe those services. They may have difficulty processing and/or trusting information. They may struggle with anticipated or actual stigmatization for seeking help. Incorrect information can cost help-seekers time, money, or even conceivably lives.
 
 Help seekers might currently look for help by searching the Internet or turning to a trusted community anchor like a library, school, or religious institution. They might talk to a service provider ("referrer") who can help identify addressable needs (through some screening process) and provide them with actionable information about services.
 
@@ -124,15 +124,15 @@ Help seekers might currently look for help by searching the Internet or turning 
 
 ### Referrer
 
-A Referrer is the person who engages directly with a help-seeker (often face-to-face) and helps them find relevant and accessible services. A ‘referrer’ is usually (but not always) a professional or a volunteer who is working for an organization that itself provides as a service to its community (i.e. case manager, social worker, health worker, EMT, patient intake, librarian, teacher, etc.). Referrers are typically the primary users of resource directory information systems. 
+A Referrer is the person who engages directly with a help-seeker (often face-to-face) and helps them find relevant and accessible services. A ‘referrer’ is usually (but not always) a professional or a volunteer who is working for an organization that itself provides as a service to its community (i.e. case manager, social worker, health worker, EMT, patient intake, librarian, teacher, etc.). Referrers are typically the primary users of resource directory information systems.
 
 Referrers require:
 
 1. accurate information,
-2. the service’s relevance (is the client eligible), and 
-3. the quality of the service. 
+2. the service’s relevance (is the client eligible), and
+3. the quality of the service.
 
-Referrers commonly interact with help seekers using a structured workflow that includes a screening process to identify important attributes of the help-seeker’s situation. Referrers match information gathered from the help-seeker to accessible and relevant services. 
+Referrers commonly interact with help seekers using a structured workflow that includes a screening process to identify important attributes of the help-seeker’s situation. Referrers match information gathered from the help-seeker to accessible and relevant services.
 
 *As a referrer (aka service provider, etc), I want to provide relevant and accurate information about services.*
 
@@ -140,19 +140,19 @@ Referrers commonly interact with help seekers using a structured workflow that i
 
 A Researcher uses service directory data, in synthesis with other kinds of data, for the purpose of understanding community health, predicting future needs, identifying funding gaps, and other kinds of analysis. Such a role is often played by funders, policymakers, planners, or community leaders.
 
-Researchers study the effectiveness of *programs*, which may not be specific services but rather a set of services bundled through a funding stream and around a common mission. Researchers seek accountability for the performance of the health, human, and social service system overall. They want their work to make this data useful for system-level decision-making. Researchers need reliably structured data, from across institutional and jurisdictional boundaries, that can be readily ‘mashed up’ with other kinds of data (census, funding, etc). 
+Researchers study the effectiveness of *programs*, which may not be specific services but rather a set of services bundled through a funding stream and around a common mission. Researchers seek accountability for the performance of the health, human, and social service system overall. They want their work to make this data useful for system-level decision-making. Researchers need reliably structured data, from across institutional and jurisdictional boundaries, that can be readily ‘mashed up’ with other kinds of data (census, funding, etc).
 
 *As a researcher, I need data in raw formats over a specific time period and meaningful context for service information so that I can perform efforts-to-outcomes and population-level analysis.*
 
 ### Data Administrator
 
-A Data Administrator is responsible for  information systems that are a compilation of directories. Data administrators produce and maintain information; tasks include updating records, maintaining naming conventions, running reports, designing mechanisms for retrieval and delivery, etc. They may be responsible for reporting directly to funders and government agencies. These responsibilities are sometimes shared among several roles in an organization. 
+A Data Administrator is responsible for  information systems that are a compilation of directories. Data administrators produce and maintain information; tasks include updating records, maintaining naming conventions, running reports, designing mechanisms for retrieval and delivery, etc. They may be responsible for reporting directly to funders and government agencies. These responsibilities are sometimes shared among several roles in an organization.
 
 *As a data administrator, I want a data maintenance process flow enabled by a simple and easy to use interface to update data quickly and efficiently.*
 
 ***
 
-<a name="designprinciples">
+<a name="designprinciples"/>
 ## Design Principles
 
 The design of  Human Services Data Specification is based on five principles: simplicity, factual, fidelity, provenance, and accessibility.
@@ -168,26 +168,26 @@ The standard must include information about the provenance of the data as well a
 The data must be a machine readable and writable format that can be created, updated and deleted with a basic text editor.
 
 
-<a name="roadmap">
+<a name="roadmap"/>
 ## Human Services Data Specification Roadmap
 
-Open Referral does not yet incorporate the full range of data necessary to meet domain specific use cases. Specifically, the working group intends to address the following topics. 
+Open Referral does not yet incorporate the full range of data necessary to meet domain specific use cases. Specifically, the working group intends to address the following topics.
 
-* Acceptance of initial specification with regards to content, data type, and format 
+* Acceptance of initial specification with regards to content, data type, and format
 * Process for receiving, validating, and incorporating user input
 * Develop a long term roadmap leading to the 1.0 release
 * Develop process for creating domain specific profiles and incorporating taxonomy
-* Develop process for creating wire formats 
+* Develop process for creating wire formats
 
 ### A Common Vocabulary
 
-The Human Services Data Specification seeks to establish a common vocabulary among information and referral (I&R) practitioners. The vocabulary reflects the simple model of four required entities: Organizations, Locations, Services, and Metadata. An optional entity is Programs, which is available for organizations that use Programs for grouping Services.  Entities have attendant properties and some properties are complex and have multiple attributes. For example addresses are comprised of several pieces of information.. 
+The Human Services Data Specification seeks to establish a common vocabulary among information and referral (I&R) practitioners. The vocabulary reflects the simple model of four required entities: Organizations, Locations, Services, and Metadata. An optional entity is Programs, which is available for organizations that use Programs for grouping Services.  Entities have attendant properties and some properties are complex and have multiple attributes. For example addresses are comprised of several pieces of information..
 
 The relationship between organizations as the primary entity and services and locations as subordinate entities is loosely coupled in recognition that service providers may organize the data in different ways and that human services continue to evolve. For example, some services such as virtual support groups or informational websites may not have a physical location.
 
 ***
 
-<a name="capabilities">
+<a name="capabilities"/>
 ## Current Human Services Data Capabilities
 
 The specification supports:
@@ -196,33 +196,33 @@ The specification supports:
 * Machine readable format that can be imported directly into a relational database or viewed and edited using commonly available software such as a spreadsheet or a text editor
 * A common data exchange format between different information and referral systems.
 
-<a name="governance">
+<a name="governance"/>
 ### Specification Governance
 
-To promote participation and accessibility, this Google Document serves as the working draft of the next version of Human Services Data Specification.  Edits, improvements and changes should first be discussed using the Comments feature. 
+To promote participation and accessibility, this Google Document serves as the working draft of the next version of Human Services Data Specification.  Edits, improvements and changes should first be discussed using the Comments feature.
 
 #### Versions
 
-Subsequent to publishing version 1.0, the specification will not change for a given period of time, to be determined by the Working Group. This will allow data producers and consumers to reliably build upon the specification. 
+Subsequent to publishing version 1.0, the specification will not change for a given period of time, to be determined by the Working Group. This will allow data producers and consumers to reliably build upon the specification.
 
 This working document--and the [complementary Google Group](https://groups.google.com/forum/#!forum/plats-discussion)-- will continue to serve as a forum for discussion and feedback. These conversations will inform the future evolution of the specification.
 
 ***
 
 
-## Section 2: Producing and Sharing Compliant Data 
+## Section 2: Producing and Sharing Compliant Data
 
-<a name="csv">
+<a name="csv"/>
 ### CSV Formatting
 
 For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv). The CSV format described herein conforms to [RFC4180](http://tools.ietf.org/html/rfc4180). Text will used the UTF-8 character set.
 
-<a name="telephone">
+<a name="telephone"/>
 ### Telephone Formatting
 
 HSDS uses[ E.164](http://www.itu.int/rec/T-REC-E.164-201011-I/en) number formatting for phone numbers E.164 numbers can have a maximum of fifteen digits and are usually written as follows: [+][country code][subscriber number including area/region code]. Phone numbers can contain delimiters.
 
-<a name="address">
+<a name="address"/>
 ### Address Formatting
 
 At the time this document was drafted, a standard addressing format has not been established. ISO 19160  is in the preliminary stages of an addressing standard but has not yet produced a standard. Based on address standards by country from the Universal Postal Union,  the following format will capture the majority of addresses in use globally.
@@ -238,18 +238,18 @@ At the time this document was drafted, a standard addressing format has not been
 
 Because of the variety of addressing systems, every field is composed of alphanumeric characters. The country field uses ISO-3166 alpha 2 codes.
 
-<a name="description">
+<a name="description"/>
 ### Description Field Formatting
 
 The description field may include HTML or MarkDown tags.
 
-<a name="guidance">
+<a name="guidance"/>
 ### Guidance on Mapping Fields and Values
 
 Source data may or may not map directly to the HSDS. Guidelines are listed below to reduce ambiguity.
 
-* A null value is acceptable for required fields. 
-* If there are no values for an entity, the corresponding CSV file can be omitted. 
+* A null value is acceptable for required fields.
+* If there are no values for an entity, the corresponding CSV file can be omitted.
 * A data source may have a field that can map to an HSDS field but in many cases are not populated. A null value is acceptable.
 * In some cases, such as name, using the organization name for either or both location or service is acceptable. This is up to the discretion of the data producer.
 * Mapping a field is at the data producer’s discretion, but it is acceptable for some entities to map to multiple entities, for example an organization, service, or location can have a contact.
@@ -260,12 +260,12 @@ Source data may or may not map directly to the HSDS. Guidelines are listed below
 
 ## Section 3: Document Status
 
-<a name="version">
+<a name="version"/>
 ### Version
 
-This is version 0.9 of the specification.  
+This is version 0.9 of the specification.
 
-<a name="copyright">
+<a name="copyright"/>
 ### Copyright
 
 Human Services Data Specification is licensed under the CC0 license, which is the "no copyright reserved" option in the Creative Commons toolkit - it effectively means relinquishing all copyright and similar rights that you hold in a work and dedicating those rights to the public domain. To view a copy of this license, visit [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/).
@@ -273,19 +273,19 @@ Human Services Data Specification is licensed under the CC0 license, which is th
 
 ***
 
-<a name="changes">
+<a name="changes"/>
 ### Changelog
 
-[v0.0](https://docs.google.com/document/d/1RwHkuPeG5cztk-gcofuqsXRxWaTYZeHa8mLjC2doCwk/edit?usp=sharing) 	
+[v0.0](https://docs.google.com/document/d/1RwHkuPeG5cztk-gcofuqsXRxWaTYZeHa8mLjC2doCwk/edit?usp=sharing)
 
 No changes.
 
-[v0.1](https://docs.google.com/document/d/18vdB0DUvBfp6UcYQ78KaMmN3Ei2riThJL48V7TTOHHQ/edit?usp=sharing)	
+[v0.1](https://docs.google.com/document/d/18vdB0DUvBfp6UcYQ78KaMmN3Ei2riThJL48V7TTOHHQ/edit?usp=sharing)
 
 * Changes from comment period, workshop comments, and a running [summary of comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing).
 * Directly references [RFC4180](http://tools.ietf.org/html/rfc4180) for CSV formatting
 
-[v0.2](https://docs.google.com/document/d/1z4jSLCoDIqvkKnazZVH_7qP_5HkcgKhnPJLu1mUZBgA/edit?usp=sharing)	
+[v0.2](https://docs.google.com/document/d/1z4jSLCoDIqvkKnazZVH_7qP_5HkcgKhnPJLu1mUZBgA/edit?usp=sharing)
 
 * Added related standards
 * Aded use cases based on persona
@@ -294,7 +294,7 @@ No changes.
 * Made changes from [comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing) collected during the second RFC period
 * Added Appendix C: Tabular  Data Package description
 
-[v0.3](https://docs.google.com/document/d/1RH89UY7FDndivWNmtQkql4tdRTwYnCZluyu8itp5nTw/edit?usp=sharing)	
+[v0.3](https://docs.google.com/document/d/1RH89UY7FDndivWNmtQkql4tdRTwYnCZluyu8itp5nTw/edit?usp=sharing)
 
 * Refined logical model to conform to Boyce-Codd third normal form
 * Updated datapackage.json to match logical model
@@ -313,15 +313,15 @@ No changes.
 
 [v0.8](https://docs.google.com/document/d/1gmNS4pBvkX4cI2wtH3Qco3uGF4LLTq1OJ0Pb_CLuxlk/edit?usp=sharing)
 
-* Added formatting specification for address, phone, description	
+* Added formatting specification for address, phone, description
 
 [v0.9](https://docs.google.com/document/d/1jbgO92cPAUygQI-0_DtLXrdPQKbPNNIkxDr-3WvdFNE/edit?usp=sharing)
 
 * Changes based on public comments in v0.8 include:
-	- revising revising schedule entities and attributes  as recommended, 
-	- grammatical and punctuation edits, 
+	- revising revising schedule entities and attributes  as recommended,
+	- grammatical and punctuation edits,
 	- changing SMS attribute to a phone type
-	- changed language_line to interpretation_services 
+	- changed language_line to interpretation_services
 * Released on github as a markdown document
 * Added a datapackage.json example on github
 
@@ -334,16 +334,16 @@ No changes.
 
 ## Appendix A
 
-<a name="vocabulary">
+<a name="vocabulary"/>
 ### A Controlled Vocabulary for Human Services Data
 
 <table>
   <tr>
-    <td>Term</td>
-    <td>Description</td>
-    <td>Example</td>
-    <td>Required,
-Recommended or Optional</td>
+    <th>Term</th>
+    <th>Description</th>
+    <th>Example</th>
+    <th>Required,
+Recommended or Optional</th>
   </tr>
   <tr>
     <td>Accessibility for Disabilities</td>
@@ -757,20 +757,20 @@ San Antonio, TX 78210</td>
 
 ## Appendix B
 
-<a name="model">
+<a name="model"/>
 ### Logical Model
 
-![image alt text](Logical10landscape.png)	
+![image alt text](Logical10landscape.png)
 
-*  Note that although the relationships are not depicted, metadata.resource_id is the foreign key to all entities 
+*  Note that although the relationships are not depicted, metadata.resource_id is the foreign key to all entities
 
-<a name="entities">
+<a name="entities"/>
 ### Entities
 
 <table>
   <tr>
-    <td>Entity</td>
-    <td>Attributes</td>
+    <th>Entity</th>
+    <th>Attributes</th>
   </tr>
   <tr>
     <td>organization</td>
@@ -815,7 +815,7 @@ location_id<br>
 url<br>
 email
 </td>
-  </tr>  
+  </tr>
   <tr>
     <td>location</td>
     <td>id<br>
@@ -986,11 +986,11 @@ character_set</td>
 </table>
 
 ***
-		
+
 
 ## Appendix C
 
-<a name="package">
+<a name="package"/>
 ### Tabular Data Package
 
 The data will be in CSV formatted files with one CSV file per entity. This is the minimum requirement for distributing data.  The recommended format for distributing data is the [Tabular Data Package](http://data.okfn.org/doc/tabular-data-package) which is composed of the data in CSV files and a metadata file, called datapackage.json, that stores the schema in a JSON file using the [Data Package format](http://data.okfn.org/doc/data-package).
@@ -999,9 +999,9 @@ A CSV file is required for each entity in the logical model. The files and their
 
 <table>
   <tr>
-    <td>File</td>
-    <td>Attributes</td>
-    <td>Required/Optional</td>
+    <th>File</th>
+    <th>Attributes</th>
+    <th>Required/Optional</th>
   </tr>
   <tr>
     <td>organization.csv</td>
@@ -1053,7 +1053,7 @@ email
 	</td>
     <td>required</td>
   </tr>
-  <tr>  
+  <tr>
     <td>location.csv</td>
     <td>id
 organization_id
@@ -1134,7 +1134,7 @@ closes_at</td>
     <td>holiday_schedule.csv</td>
     <td>id
 service_id
-location_id 
+location_id
 opens_at
 closes_at
 closed
@@ -1378,12 +1378,12 @@ The following is the schema for the logical data model in the datapackage.json f
                             "name": "program_id",
                             "description": "",
                             "type": "string"
-                        },                 
+                        },
                         {
                             "name": "location_id",
                             "description": "",
                             "type": "string"
-                        },                       
+                        },
                         {
                             "name": "name",
                             "description": "",
@@ -1463,7 +1463,7 @@ The following is the schema for the logical data model in the datapackage.json f
                             "name": "location_id",
                             "description": "",
                             "type": "string"
-                        },                       
+                        },
                         {
                             "name": "url",
                             "description": "",
@@ -1581,12 +1581,12 @@ The following is the schema for the logical data model in the datapackage.json f
                             "name": "organization_id",
                             "description": "",
                             "type": "string"
-                        },                    
+                        },
                         {
                             "name": "contact_id",
                             "description": "",
                             "type": "string"
-                        },                    
+                        },
                         {
                             "name": "number",
                             "description": "",
@@ -1638,7 +1638,7 @@ The following is the schema for the logical data model in the datapackage.json f
                                 "fields": "id"
                             }
                         }
-                        
+
                     ]
                 }
             },
@@ -1854,7 +1854,7 @@ The following is the schema for the logical data model in the datapackage.json f
                         }
                     ]
                 }
-            },        
+            },
             {
                 "name": "regular_schedule",
                 "path": "regular_schedule.csv",
@@ -1876,7 +1876,7 @@ The following is the schema for the logical data model in the datapackage.json f
                             "name": "location_id",
                             "description": "",
                             "type": "string"
-                        },                    
+                        },
                         {
                             "name": "weekday",
                             "description": "",
@@ -2203,7 +2203,7 @@ The following is the schema for the logical data model in the datapackage.json f
                         }
                     ]
                 }
-            },                              
+            },
             {
                 "name": "intepretation_services",
                 "path": "interpretation_services.csv",
@@ -2260,7 +2260,7 @@ The following is the schema for the logical data model in the datapackage.json f
                             "name": "location_id",
                             "description": "",
                             "type": "string"
-                        },                        
+                        },
                         {
                             "name": "language",
                             "description": "",
@@ -2285,7 +2285,7 @@ The following is the schema for the logical data model in the datapackage.json f
                         }
                     ]
                 }
-            },  
+            },
             {
                 "name": "accessibility_for_disabilities",
                 "path": "accessibility_for_disabilities.csv",
@@ -2481,10 +2481,10 @@ The following is the schema for the logical data model in the datapackage.json f
 
 ## Appendix D
 
-<a name="taxonomy">
+<a name="taxonomy"/>
 ### Taxonomy
 
-The Human Services Data Specification is agnostic with regards to taxonomy or any other method of classification or categorization of services. Data providers may have an existing taxonomy that they wish to include with their services data.  
+The Human Services Data Specification is agnostic with regards to taxonomy or any other method of classification or categorization of services. Data providers may have an existing taxonomy that they wish to include with their services data.
 
 Taxonomies are often hierarchical, such as AIRS.  A common way of representing hierarchy in relational databases and in flat files is [materialized paths](http://railsware.com/blog/2013/07/15/storing-tree-structures-in-the-rdbms/).  They are a very common pattern for flattening a hierarchical structure into list, for example the URL in a browser is a materialized path. Materialized paths stores each element in a full path all the way to the root element, e.g. ‘fruit.apple.golden delicious’. Because materialized paths are such a common pattern, many relational (Oracle, MS SQLServer, MySQL, Postgres  and nosql (MongoDB) databases implement it and provide a  domain specific language to handle hierarchical data.
 
@@ -2498,8 +2498,8 @@ The elements in the hierarchy are separated by periods or ".", e.g. ‘emergency
 
 <table>
   <tr>
-    <td>File</td>
-    <td>Attributes</td>
+    <th>File</th>
+    <th>Attributes</th>
   </tr>
   <tr>
     <td>service_taxonomy.csv</td>
@@ -2518,13 +2518,13 @@ taxonomy_id</td>
 
 <table>
   <tr>
-    <td>id</td>
-    <td>organization_name</td>
-    <td>organization_id</td>
-    <td>service_name</td>
-    <td>service_id</td>
-    <td>taxonomy</td>
-    <td>taxonomy_id</td>
+    <th>id</th>
+    <th>organization_name</th>
+    <th>organization_id</th>
+    <th>service_name</th>
+    <th>service_id</th>
+    <th>taxonomy</th>
+    <th>taxonomy_id</th>
   </tr>
   <tr>
     <td>16478826-2010-44af-94c2-ca012144e78e</td>
