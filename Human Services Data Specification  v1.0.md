@@ -952,7 +952,7 @@ service_id<br>
 fee</td>
   </tr>
   <tr>
-    <td>payement_accepted</td>
+    <td>payment_accepted</td>
     <td>id<br>
 service_id<br>
 payment</td>
