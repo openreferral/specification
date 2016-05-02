@@ -263,7 +263,7 @@ Source data may or may not map directly to the HSDS. Guidelines are listed below
 <a name="version"/>
 ### Version
 
-This is version 0.9 of the specification.
+This is version 1.0 of the specification.
 
 <a name="copyright"/>
 ### Copyright
