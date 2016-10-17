@@ -3,10 +3,9 @@
         "title": "Human Services Data",
         "license": [
             {
-                "url": "http://opendatacommons.org/licenses/pddl/",
-                "name": "Open Data Commons Public Domain",
-                "version": "1.0",
-                "id": "odc-pddl"
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "type": "CC-BY-SA-4.0",
+                "name": "Creative Commons Attribution-ShareAlike 4.0"
             }
         ],
         "resources": [
