@@ -1,13 +1,11 @@
       {
         "name": "human_services_data",
         "title": "Human Services Data",
-        "license": [
-            {
+        "license": {
                 "url": "https://creativecommons.org/licenses/by-sa/4.0/",
                 "type": "CC-BY-SA-4.0",
                 "name": "Creative Commons Attribution-ShareAlike 4.0"
-            }
-        ],
+        },
         "resources": [
             {
                 "name": "organization",
