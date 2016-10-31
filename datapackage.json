@@ -389,12 +389,12 @@
                         {
                             "name": "latitude",
                             "description": "",
-                            "type": "float"
+                            "type": "number"
                         },
                         {
                             "name": "longitude",
                             "description": "",
-                            "type": "float"
+                            "type": "number"
                         }
                     ],
                     "primaryKey": "id",
