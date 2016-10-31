@@ -153,7 +153,7 @@
                         {
                             "fields": "organization_id",
                             "reference": {
-                                "resource": "organization.csv",
+                                "resource": "organization",
                                 "fields": "id"
                             }
                         }
@@ -266,21 +266,21 @@
                         {
                             "fields": "organization_id",
                             "reference": {
-                                "resource": "organization.csv",
+                                "resource": "organization",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "program_id",
                             "reference": {
-                                "resource": "program.csv",
+                                "resource": "program",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "location_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         }
@@ -342,14 +342,14 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "location_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         }
@@ -404,14 +404,14 @@
                         {
                             "fields": "organization_id",
                             "reference": {
-                                "resource": "organization.csv",
+                                "resource": "organization",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -475,28 +475,28 @@
                         {
                             "fields": "organization_id",
                             "reference": {
-                                "resource": "organization.csv",
+                                "resource": "organization",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "location_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "contact_id",
                             "reference": {
-                                "resource": "contact.csv",
+                                "resource": "contact",
                                 "fields": "id"
                             }
                         }
@@ -553,14 +553,14 @@
                         {
                             "fields": "organization_id",
                             "reference": {
-                                "resource": "organization.csv",
+                                "resource": "organization",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -635,7 +635,7 @@
                         {
                             "fields": "location_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         }
@@ -710,7 +710,7 @@
                         {
                             "fields": "location_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         }
@@ -760,14 +760,14 @@
                         {
                             "fields": "location_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -827,14 +827,14 @@
                         {
                             "fields": "location_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -874,14 +874,14 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "organization_id",
                             "reference": {
-                                "resource": "organization.csv",
+                                "resource": "organization",
                                 "fields": "id"
                             }
                         }
@@ -918,7 +918,7 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -953,7 +953,7 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -988,7 +988,7 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -1023,7 +1023,7 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -1059,7 +1059,7 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -1094,7 +1094,7 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -1134,14 +1134,14 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "location_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         }
@@ -1178,7 +1178,7 @@
                         {
                             "fields": "service_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -1238,63 +1238,63 @@
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "location.csv",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "service.csv",
+                                "resource": "service",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "organization.csv",
+                                "resource": "organization",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "program.csv",
+                                "resource": "program",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "address.csv",
+                                "resource": "address",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "contact.csv",
+                                "resource": "contact",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "holiday_schedules.csv",
+                                "resource": "holiday_schedules",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "regular_schedules.csv",
+                                "resource": "regular_schedules",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "phone.csv",
+                                "resource": "phone",
                                 "fields": "id"
                             }
                         }
