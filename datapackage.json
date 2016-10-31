@@ -237,8 +237,8 @@
                             "name": "status",
                             "description": "The current status of the service.",
                             "type": "string",
-                            "values": ["active", "inactive", "defunct", "temporarily closed"],
                             "constraints": {
+                                "enum": ["active", "inactive", "defunct", "temporarily closed"],
                                 "required":true
                             }
                         },
@@ -907,8 +907,10 @@
                             "name": "eligibility",
                             "description": "",
                             "type": "string",
-                            "values": ["adult","child","teen","family","female","male",
-                                "Transgender", "Transgender - M to F", "Transgender - F to M" ]
+                            "constraints": {
+                                "enum": ["adult","child","teen","family","female","male",
+                                    "Transgender", "Transgender - M to F", "Transgender - F to M" ]
+                            }
                         }
                     ],
                     "primaryKey": "id",
@@ -1049,7 +1051,9 @@
                             "name": "payment",
                             "description": "",
                             "type": "string",
-                            "values": ["cash","check","money order","credit card","medicare","SNAP","WIC","EBT"]
+                            "constraints": {
+                                "enum": ["cash","check","money order","credit card","medicare","SNAP","WIC","EBT"]
+                            }
                         }
                     ],
                     "primaryKey": "id",
@@ -1167,8 +1171,10 @@
                             "name": "accessibility",
                             "description": "",
                             "type": "string",
-                            "values": ["cd","deaf_interpreter","disabled_parking","elevator",
-                                "ramp","restroom","tape_braille","tty","wheelchair","wheelchair_van"]
+                            "constraints": {
+                                "enum": ["cd","deaf_interpreter","disabled_parking","elevator",
+                                    "ramp","restroom","tape_braille","tty","wheelchair","wheelchair_van"]
+                            }
                         }
                     ],
                     "primaryKey": "id",
