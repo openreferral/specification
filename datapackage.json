@@ -307,7 +307,7 @@
                             "description": "The identifier of the service at a give location.",
                             "type": "string",
                             "constraints": {
-                                "required":true,
+                                "required":true
                             }
                         },    
                         {
@@ -315,7 +315,7 @@
                             "description": "The identifier of the location where this service operates.",
                             "type": "string",
                             "constraints": {
-                                "required":true,
+                                "required":true
                             }
                         },                       
                         {
@@ -323,7 +323,7 @@
                             "description": "If the service at this location has a specific URL, that can be provided here.",
                             "type": "string",
                             "constraints": {
-                                "required":false,
+                                "required":false
                             }
                         },
                         {
