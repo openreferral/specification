@@ -25,4 +25,11 @@ cd docs
 make dirhtml
 ```
 
+### Translations
 
+```
+cd docs
+sphinx-intl update-txconfig-resources --transifex-project-name open-referral-1-0
+```
+
+Then follow the rest of the instructions at https://github.com/open-contracting/standard#translations
