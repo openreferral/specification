@@ -347,6 +347,32 @@ texinfo_documents = [
 
 
 
+
+from docutils.parsers.rst import directives
+from docutils.parsers.rst import Directive
+from docutils import nodes
+import json
+from collections import OrderedDict
+
+class JSONTableSchemaInclude(Directive):
+    required_arguments = 1
+
+    def run(self):
+        with open(self.arguments[0]) as fp:
+            json_obj = json.load(fp, object_pairs_hook=OrderedDict)
+        out = []
+        for resource in json_obj['resources']:
+            out.append(nodes.paragraph(resource['name'], resource['name']))
+            for field in resource['schema']['fields']:
+                out.append(nodes.paragraph(field['name'], field['name']))
+                out.append(nodes.paragraph(field['description'], field['description']))
+        return out
+
+directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)
+
+
+
+
 def setup(app):
     app.add_config_value('recommonmark_config', {
         #'url_resolver': lambda url: github_doc_root + url,

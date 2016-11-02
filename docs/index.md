@@ -13,6 +13,13 @@ Contents:
 
 
 
+```eval_rst
+.. jsontableschemainclude:: ../datapackage.json
+
+test
+```
+
+
 Indices and tables
 ==================
 
