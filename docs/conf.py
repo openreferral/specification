@@ -350,9 +350,15 @@ texinfo_documents = [
 
 from docutils.parsers.rst import directives
 from docutils.parsers.rst import Directive
+from docutils.parsers.rst.directives.tables import ListTable
 from docutils import nodes
 import json
 from collections import OrderedDict
+
+
+def wrap_table_text(rows):
+    return [[nodes.paragraph(cell, cell) for cell in row] for row in rows]
+
 
 class JSONTableSchemaInclude(Directive):
     required_arguments = 1
@@ -370,6 +376,22 @@ class JSONTableSchemaInclude(Directive):
         out = []
         for resource in json_obj['resources']:
             out.append(nodes.paragraph(resource['name'], resource['name']))
+
+            table_data = wrap_table_text([
+                ['name', resource['name']],
+                ['path', resource['path']],
+                ['description', resource.get('description')],
+                ['format', resource['format']],
+                ['mediatype', resource['mediatype']],
+            ])
+            table = ListTable.build_table_from_list(
+                self=None,
+                table_data=table_data,
+                col_widths=[1, 1],
+                header_rows=0,
+                stub_columns=None)
+            out.append(table)
+
             columns = OrderedDict([
                 ('Field Name',
                     lambda x: x['name']),
@@ -382,33 +404,14 @@ class JSONTableSchemaInclude(Directive):
                 ('Unique?',
                     lambda x: x.get('constraints', {}).get('unique', False)),
             ])
-            # Based on https://github.com/chevah/docutils/blob/763f19d1a33fa750659b1a7f08dc69da9df82c41/docutils/docutils/parsers/rst/directives/tables.py#L433
-            table = nodes.table()
-            tgroup = nodes.tgroup(cols=2)
-            for column_name in columns:
-                colspec = nodes.colspec(colwidth=1)
-                tgroup += colspec
-            table += tgroup
-            thead = nodes.thead()
-            header_row_node = nodes.row()
-            for column_name in columns:
-                entry = nodes.entry()
-                entry += nodes.paragraph(column_name, column_name)
-                header_row_node += entry
-            thead.extend([header_row_node])
-            tgroup += thead
-            rows = []
-            for field in resource['schema']['fields']:
-                row_node = nodes.row()
-                for column_f in columns.values():
-                    entry = nodes.entry()
-                    text = column_f(field)
-                    entry += nodes.paragraph(text, text)
-                    row_node += entry
-                rows.append(row_node)
-            tbody = nodes.tbody()
-            tbody.extend(rows)
-            tgroup += tbody
+            table_data = [columns.keys()] + [[f(field) for f in columns.values()] for field in resource['schema']['fields']]
+            table_data = wrap_table_text(table_data)
+            table = ListTable.build_table_from_list(
+                self=None,
+                table_data=table_data,
+                col_widths=[1]*len(columns),
+                header_rows=1,
+                stub_columns=None)
             out.append(table)
         return out
 
