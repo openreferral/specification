@@ -375,7 +375,9 @@ class JSONTableSchemaInclude(Directive):
             json_obj = json.load(fp, object_pairs_hook=OrderedDict)
         out = []
         for resource in json_obj['resources']:
-            out.append(nodes.paragraph(resource['name'], resource['name']))
+            section = nodes.section(ids=resource['name'], names=resource['name'])
+            out.append(section)
+            section += nodes.title(resource['name'], resource['name'])
 
             table_data = wrap_table_text([
                 ['name', resource['name']],
@@ -384,13 +386,12 @@ class JSONTableSchemaInclude(Directive):
                 ['format', resource['format']],
                 ['mediatype', resource['mediatype']],
             ])
-            table = ListTable.build_table_from_list(
+            section += ListTable.build_table_from_list(
                 self=None,
                 table_data=table_data,
                 col_widths=[1, 1],
                 header_rows=0,
                 stub_columns=None)
-            out.append(table)
 
             columns = OrderedDict([
                 ('Field Name',
@@ -406,13 +407,12 @@ class JSONTableSchemaInclude(Directive):
             ])
             table_data = [columns.keys()] + [[f(field) for f in columns.values()] for field in resource['schema']['fields']]
             table_data = wrap_table_text(table_data)
-            table = ListTable.build_table_from_list(
+            section += ListTable.build_table_from_list(
                 self=None,
                 table_data=table_data,
                 col_widths=[1]*len(columns),
                 header_rows=1,
                 stub_columns=None)
-            out.append(table)
         return out
 
 directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)
