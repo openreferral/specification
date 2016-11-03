@@ -370,19 +370,40 @@ class JSONTableSchemaInclude(Directive):
         out = []
         for resource in json_obj['resources']:
             out.append(nodes.paragraph(resource['name'], resource['name']))
+            columns = OrderedDict([
+                ('Field Name',
+                    lambda x: x['name']),
+                ('Type (Format)',
+                    lambda x: x['type'] + (' ({})'.format(x['format']) if 'format' in x else '')),
+                ('Description',
+                    lambda x: x['description']),
+                ('Required?',
+                    lambda x: x.get('constraints', {}).get('required', False)),
+                ('Unique?',
+                    lambda x: x.get('constraints', {}).get('unique', False)),
+            ])
             # Based on https://github.com/chevah/docutils/blob/763f19d1a33fa750659b1a7f08dc69da9df82c41/docutils/docutils/parsers/rst/directives/tables.py#L433
             table = nodes.table()
             tgroup = nodes.tgroup(cols=2)
-            for key in ['name', 'description']:
+            for column_name in columns:
                 colspec = nodes.colspec(colwidth=1)
                 tgroup += colspec
             table += tgroup
+            thead = nodes.thead()
+            header_row_node = nodes.row()
+            for column_name in columns:
+                entry = nodes.entry()
+                entry += nodes.paragraph(column_name, column_name)
+                header_row_node += entry
+            thead.extend([header_row_node])
+            tgroup += thead
             rows = []
             for field in resource['schema']['fields']:
                 row_node = nodes.row()
-                for key in ['name', 'description']:
+                for column_f in columns.values():
                     entry = nodes.entry()
-                    entry += nodes.paragraph(field[key], field[key])
+                    text = column_f(field)
+                    entry += nodes.paragraph(text, text)
                     row_node += entry
                 rows.append(row_node)
             tbody = nodes.tbody()
