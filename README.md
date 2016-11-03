@@ -6,7 +6,7 @@ Information about the Open Referral Initiative is available at [https://openrefe
 
 ## License
 
-The Human Services Data Specification and it's documentation are [licensed](LICENSE) under the Creative Commons Attribution-ShareAlike (CC BY-SA) license.
+The Human Services Data Specification and its documentation are [licensed](LICENSE) under the Creative Commons Attribution-ShareAlike (CC BY-SA) license.
 
 We encourage you to use an [open license](http://licenses.opendefinition.org/) for any data you publish using the specification. 
 
