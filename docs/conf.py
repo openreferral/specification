@@ -357,15 +357,38 @@ from collections import OrderedDict
 class JSONTableSchemaInclude(Directive):
     required_arguments = 1
 
+
+    option_spec = {'header-rows': directives.nonnegative_int,
+                   'stub-columns': directives.nonnegative_int,
+                   'widths': directives.positive_int_list,
+                   'class': directives.class_option,
+                   'name': directives.unchanged}
+
     def run(self):
         with open(self.arguments[0]) as fp:
             json_obj = json.load(fp, object_pairs_hook=OrderedDict)
         out = []
         for resource in json_obj['resources']:
             out.append(nodes.paragraph(resource['name'], resource['name']))
+            # Based on https://github.com/chevah/docutils/blob/763f19d1a33fa750659b1a7f08dc69da9df82c41/docutils/docutils/parsers/rst/directives/tables.py#L433
+            table = nodes.table()
+            tgroup = nodes.tgroup(cols=2)
+            for key in ['name', 'description']:
+                colspec = nodes.colspec(colwidth=1)
+                tgroup += colspec
+            table += tgroup
+            rows = []
             for field in resource['schema']['fields']:
-                out.append(nodes.paragraph(field['name'], field['name']))
-                out.append(nodes.paragraph(field['description'], field['description']))
+                row_node = nodes.row()
+                for key in ['name', 'description']:
+                    entry = nodes.entry()
+                    entry += nodes.paragraph(field[key], field[key])
+                    row_node += entry
+                rows.append(row_node)
+            tbody = nodes.tbody()
+            tbody.extend(rows)
+            tgroup += tbody
+            out.append(table)
         return out
 
 directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)

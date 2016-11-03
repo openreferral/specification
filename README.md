@@ -21,6 +21,7 @@ Assuming a unix based system with Python 3 installed:
 ```
 python3 -m venv .ve    
 source .ve/bin/activate
+pip install -r requirements.txt
 cd docs
 make dirhtml
 ```
