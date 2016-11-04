@@ -375,7 +375,7 @@ class JSONTableSchemaInclude(Directive):
             json_obj = json.load(fp, object_pairs_hook=OrderedDict)
         out = []
         for resource in json_obj['resources']:
-            section = nodes.section(ids=resource['name'], names=resource['name'])
+            section = nodes.section(ids=[resource['name']], names=[resource['name']])
             out.append(section)
             section += nodes.title(resource['name'], resource['name'])
 
