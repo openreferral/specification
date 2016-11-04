@@ -7,16 +7,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   about
+   reference
 
-```
-
-
-
-```eval_rst
-.. jsontableschemainclude:: ../datapackage.json
-
-test
 ```
 
 
