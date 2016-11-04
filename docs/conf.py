@@ -378,11 +378,13 @@ class JSONTableSchemaInclude(Directive):
             section = nodes.section(ids=[resource['name']], names=[resource['name']])
             out.append(section)
             section += nodes.title(resource['name'], resource['name'])
+            description = resource.get('description', '')
+            section += nodes.paragraph(description, description)
+
 
             table_data = wrap_table_text([
                 ['name', resource['name']],
                 ['path', resource['path']],
-                ['description', resource.get('description')],
                 ['format', resource['format']],
                 ['mediatype', resource['mediatype']],
             ])
