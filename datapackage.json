@@ -167,7 +167,7 @@
                 "schema": {
                     "fields": [
                         {
-                            "name": "id",                            
+                            "name": "id",
                             "type": "string",
                             "description":"Each service must have a unique identifier.",
                             "constraints": {
@@ -191,7 +191,7 @@
                             "constraints": {
                                 "required":false
                             }
-                        },                 
+                        },
                         {
                             "name": "location_id",
                             "description": "The identifier of the location where this service is delivered.",
@@ -199,7 +199,7 @@
                             "constraints": {
                                 "required":false
                             }
-                        },                       
+                        },
                         {
                             "name": "name",
                             "description": "The official or public name of the service.",
@@ -304,12 +304,12 @@
                         },
                         {
                             "name": "service_id",
-                            "description": "The identifier of the service at a give location.",
+                            "description": "The identifier of the service at a given location.",
                             "type": "string",
                             "constraints": {
                                 "required":true
                             }
-                        },    
+                        },
                         {
                             "name": "location_id",
                             "description": "The identifier of the location where this service operates.",
@@ -317,7 +317,7 @@
                             "constraints": {
                                 "required":true
                             }
-                        },                       
+                        },
                         {
                             "name": "url",
                             "description": "If the service at this location has a specific URL, that can be provided here.",
@@ -363,37 +363,37 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each location must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "organization_id",
-                            "description": "",
+                            "description": "Each location must belong to a single organization. The identifier of the organization should be given here.",
                             "type": "string"
                         },
                         {
                             "name": "name",
-                            "description": "",
+                            "description": "The name of the location",
                             "type": "string"
                         },
                         {
                             "name": "alternate_name",
-                            "description": "",
+                            "description": "An alternative name for the location",
                             "type": "string"
                         },
                         {
                             "name": "transportation",
-                            "description": "",
+                            "description": "A description of the access to public or private transportation to and from the location.",
                             "type": "string"
                         },
                         {
                             "name": "latitude",
-                            "description": "",
+                            "description": "Y coordinate of location expressed in decimal degrees in WGS84 datum.",
                             "type": "number"
                         },
                         {
                             "name": "longitude",
-                            "description": "",
+                            "description": "X coordinate of location expressed in decimal degrees in WGS84 datum.",
                             "type": "number"
                         }
                     ],
@@ -425,46 +425,46 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },{
                             "name": "location_id",
-                            "description": "",
+                            "description": "The identifier of the location where this phone number is located",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this is the phone number",
                             "type": "string"
                         },
                         {
                             "name": "organization_id",
-                            "description": "",
+                            "description": "The identifier of the organisation for which this is the phone number",
                             "type": "string"
-                        },                    
+                        },
                         {
                             "name": "contact_id",
-                            "description": "",
+                            "description": "The identifier of the contact for which this is the phone number",
                             "type": "string"
-                        },                    
+                        },
                         {
                             "name": "number",
-                            "description": "",
+                            "description": "The phone number",
                             "type": "string"
                         },
                         {
                             "name": "extension",
-                            "description": "",
+                            "description": "The extension of the phone number",
                             "type": "number"
                         },
                         {
                             "name": "type",
-                            "description": "",
+                            "description": "Whether the phone number relates to a fixed or cellular phone",
                             "type": "string"
                         },
                         {
                             "name": "department",
-                            "description": "",
+                            "description": "The department for which this is the phone number",
                             "type": "string"
                         }
                     ],
@@ -498,7 +498,7 @@
                                 "fields": "id"
                             }
                         }
-                        
+
                     ]
                 }
             },
@@ -511,38 +511,38 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each contact must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "organization_id",
-                            "description": "",
+                            "description": "The identifier of the organization for which this is a contact",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this is a contact",
                             "type": "string"
                         },
 
                         {
                             "name": "name",
-                            "description": "",
+                            "description": "The name of the person who is the contact",
                             "type": "string"
                         },
                         {
                             "name": "title",
-                            "description": "",
+                            "description": "The job title of the person who is the contact",
                             "type": "string"
                         },
                         {
                             "name": "department",
-                            "description": "",
+                            "description": "The department of the entity for which this is a contact",
                             "type": "string"
                         },
                         {
                             "name": "email",
-                            "description": "",
+                            "description": "The email address of the entity for which this is a contact",
                             "type": "string"
                         }
                     ],
@@ -574,57 +574,57 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each physical address must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "location_id",
-                            "description": "",
+                            "description": "The identifier of the location for which this is the address",
                             "type": "string"
                         },
                         {
                             "name": "attention",
-                            "description": "",
+                            "description": "The person or entity whose attention should be sought at the location",
                             "type": "string"
                         },
                         {
                             "name": "address_1",
-                            "description": "",
+                            "description": "The first line of the address",
                             "type": "string"
                         },
                         {
                             "name": "address_2",
-                            "description": "",
+                            "description": "The second line of the address",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "",
+                            "description": "The third line of the address",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "",
+                            "description": "The fourth line of the address",
                             "type": "string"
                         },
                         {
                             "name": "city",
-                            "description": "",
+                            "description": "The city in which the address is located",
                             "type": "string"
                         },
                         {
                             "name": "state_province",
-                            "description": "",
+                            "description": "The state or province in which the address is located",
                             "type": "string"
                         },
                         {
                             "name": "postal_code",
-                            "description": "",
+                            "description": "The postal code for the address",
                             "type": "string"
                         },
                         {
                             "name": "country",
-                            "description": "",
+                            "description": "The country in which the address is located",
                             "type": "string"
                         }
                     ],
@@ -649,57 +649,57 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each postal address must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "location_id",
-                            "description": "",
+                            "description": "The identifier of the location for which this is the address",
                             "type": "string"
                         },
                         {
                             "name": "attention",
-                            "description": "",
+                            "description": "The person or entity for whose attention mail should be marked",
                             "type": "string"
                         },
                         {
                             "name": "address_1",
-                            "description": "",
+                            "description": "The first line of the address",
                             "type": "string"
                         },
                         {
                             "name": "address_2",
-                            "description": "",
+                            "description": "The second line of the address",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "",
+                            "description": "The third line of the address",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "",
+                            "description": "The fourth line of the address",
                             "type": "string"
                         },
                         {
                             "name": "city",
-                            "description": "",
+                            "description": "The city in which the address is located",
                             "type": "string"
                         },
                         {
                             "name": "state_province",
-                            "description": "",
+                            "description": "The state or province in which the address is located",
                             "type": "string"
                         },
                         {
                             "name": "postal_code",
-                            "description": "",
+                            "description": "The postal code for the address",
                             "type": "string"
                         },
                         {
                             "name": "country",
-                            "description": "",
+                            "description": "The country in which the address is located",
                             "type": "string"
                         }
                     ],
@@ -714,7 +714,7 @@
                         }
                     ]
                 }
-            },        
+            },
             {
                 "name": "regular_schedule",
                 "path": "regular_schedule.csv",
@@ -724,32 +724,32 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this is the regular schedule",
                             "type": "string"
                         },
                         {
                             "name": "location_id",
-                            "description": "",
+                            "description": "The identifier of the location for which this is the regular schedule",
                             "type": "string"
-                        },                    
+                        },
                         {
                             "name": "weekday",
-                            "description": "",
+                            "description": "The day of the week that this entry relates to",
                             "type": "integer"
                         },
                         {
                             "name": "opens_at",
-                            "description": "",
+                            "description": "The time when a service or location opens",
                             "type": "time"
                         },
                         {
                             "name": "closes_at",
-                            "description": "",
+                            "description": "The time when a service or location opens",
                             "type": "time"
                         }
                     ],
@@ -781,42 +781,42 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this is the holiday schedule",
                             "type": "string"
                         },
                         {
                             "name": "location_id",
-                            "description": "",
+                            "description": "The identifier of the location for which this is the holiday schedule",
                             "type": "string"
                         },
                         {
                             "name": "closed",
-                            "description": "",
+                            "description": "Indicates if a service or location is closed during a public holiday",
                             "type": "boolean"
                         },
                         {
                             "name": "opens_at",
-                            "description": "",
+                            "description": "The time when a service or location opens",
                             "type": "time"
                         },
                         {
                             "name": "closes_at",
-                            "description": "",
+                            "description": "The time when a service or location closes",
                             "type": "time"
                         },
                         {
                             "name": "start_date",
-                            "description": "",
+                            "description": "The first day that a service or location is closed during a public or private holiday",
                             "type": "date"
                         },
                         {
                             "name": "end_date",
-                            "description": "",
+                            "description": "The last day that a service or location is closed during a public or private holiday",
                             "type": "date"
                         }
                     ],
@@ -848,22 +848,22 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "organization_id",
-                            "description": "",
+                            "description": "The identifier of the organization for which this entry describes the source of funding",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this entry describes the source of funding",
                             "type": "string"
                         },
                         {
                             "name": "source",
-                            "description": "",
+                            "description": "Source of funds for organization or service",
                             "type": "string"
                         }
                     ],
@@ -895,17 +895,17 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this entry describes the eligibility criteria",
                             "type": "string"
                         },
                         {
                             "name": "eligibility",
-                            "description": "",
+                            "description": "The rules or guidelines that determine who can receive the service.",
                             "type": "string",
                             "constraints": {
                                 "enum": ["adult","child","teen","family","female","male",
@@ -934,17 +934,17 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each service area must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this entry describes the service area",
                             "type": "string"
                         },
                         {
                             "name": "service_area",
-                            "description": "",
+                            "description": "The geographic area where a service is available.",
                             "type": "string"
                         }
                     ],
@@ -969,12 +969,12 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each document must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this entry describes the required document",
                             "type": "string"
                         },
                         {
@@ -1004,17 +1004,17 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which this entry describes the costs of service",
                             "type": "string"
                         },
                         {
                             "name": "fee",
-                            "description": "",
+                            "description": "A listing of the costs of services, including free ones",
                             "type": "string"
                         }
                     ],
@@ -1039,17 +1039,17 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the services for which the entry describes the accepted payment methods",
                             "type": "string"
                         },
                         {
                             "name": "payment",
-                            "description": "",
+                            "description": "The methods of payment accepted for the service",
                             "type": "string",
                             "constraints": {
                                 "enum": ["cash","check","money order","credit card","medicare","SNAP","WIC","EBT"]
@@ -1067,7 +1067,7 @@
                         }
                     ]
                 }
-            },                              
+            },
             {
                 "name": "intepretation_services",
                 "path": "interpretation_services.csv",
@@ -1077,17 +1077,17 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each service must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the services for which the entry describes the interpretation services available",
                             "type": "string"
                         },
                         {
                             "name": "language",
-                            "description": "",
+                            "description": "Languages, other than English, for which interpretation is available. Languages are listed as ISO639-1 codes.",
                             "type": "string"
                         }
                     ],
@@ -1112,22 +1112,22 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each language must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "",
+                            "description": "The identifier of the service for which the entry describes the languages in which services are delivered",
                             "type": "string"
                         },
                         {
                             "name": "location_id",
-                            "description": "",
+                            "description": "The identifier of the location for which the entry describes the languages in which services are delivered",
                             "type": "string"
-                        },                        
+                        },
                         {
                             "name": "language",
-                            "description": "",
+                            "description": "Languages, other than English, in which the service is delivered. Languages are listed as ISO639-1 codes.",
                             "type": "string"
                         }
                     ],
@@ -1149,7 +1149,7 @@
                         }
                     ]
                 }
-            },  
+            },
             {
                 "name": "accessibility_for_disabilities",
                 "path": "accessibility_for_disabilities.csv",
@@ -1159,17 +1159,17 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "location_id",
-                            "description": "",
+                            "description": "The identifier of the location for which the entry describes the accessibility provision",
                             "type": "string"
                         },
                         {
                             "name": "accessibility",
-                            "description": "",
+                            "description": "Description of assistance or infrastructure that facilitate access to clients with disabilities.",
                             "type": "string",
                             "constraints": {
                                 "enum": ["cd","deaf_interpreter","disabled_parking","elevator",
@@ -1198,42 +1198,42 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
                             "name": "resource_id",
-                            "description": "",
+                            "description": "Each service, program. location, address, or contact will have a unique identifier. Unique ids are UUIDs.",
                             "type": "string"
                         },
                         {
                             "name": "last_action_date",
-                            "description": "",
+                            "description": "The date when data was changed.",
                             "type": "string"
                         },
                         {
                             "name": "last_action_type",
-                            "description": "",
+                            "description": "The kind of change made to the data; eg create, update, delete",
                             "type": "string"
                         },
                         {
                             "name": "field_name",
-                            "description": "",
+                            "description": "The name of field that has been modified",
                             "type": "string"
                         },
                         {
                             "name": "previous_value",
-                            "description": "",
+                            "description": "The previous value of a field that has been updated",
                             "type": "string"
                         },
                         {
                             "name": "replacement_value",
-                            "description": "",
+                            "description": "The new value of a field that has been updated",
                             "type": "string"
                         },
                         {
                             "name": "updated_by",
-                            "description": "",
+                            "description": "The name of the person who updated a value",
                             "type": "string"
                         }
                     ],
@@ -1314,7 +1314,7 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "",
+                            "description": "Each entry must have a unique identifier",
                             "type": "string"
                         },
                         {
