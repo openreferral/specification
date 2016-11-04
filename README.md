@@ -12,9 +12,15 @@ We encourage you to use an [open license](http://licenses.opendefinition.org/) f
 
 Earlier versions were licensed under CC0.
 
+## Building the documentation
 
+### ReadTheDocs
 
-## Build the docs locally
+Any change pushed to the master branch on GitHub will be built and pushed to http://openreferral.readthedocs.io/en/latest/ automatically by readthedocs. Build info is found at https://readthedocs.org/projects/openreferral/builds/
+
+Other branches are not built automatically, but can be configured by admin's of the 'openreferral' project on readthedocs, on this page - https://readthedocs.org/projects/openreferral/versions/
+
+### Building locally
 
 Assuming a unix based system with Python 3 installed:
 
@@ -27,6 +33,11 @@ make dirhtml
 ```
 
 ### Translations
+
+Translations wil be done using this transifex project - https://www.transifex.com/OpenDataServices/open-referral-1-0/
+
+How to push new text up to Transifex:
+First, do a local build, then:
 
 ```
 cd docs
