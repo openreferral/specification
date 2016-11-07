@@ -356,30 +356,30 @@ import json
 from collections import OrderedDict
 
 
-def wrap_table_text(rows):
-    return [[nodes.paragraph(cell, cell) for cell in row] for row in rows]
-
-
 class JSONTableSchemaInclude(Directive):
     required_arguments = 1
 
-
-    option_spec = {'header-rows': directives.nonnegative_int,
-                   'stub-columns': directives.nonnegative_int,
-                   'widths': directives.positive_int_list,
-                   'class': directives.class_option,
-                   'name': directives.unchanged}
-
     def run(self):
-        with open(self.arguments[0]) as fp:
+        fname = self.arguments[0]
+        with open(fname) as fp:
             json_obj = json.load(fp, object_pairs_hook=OrderedDict)
+
+        def wrap_table_text(rows):
+            def _wrap(cell):
+                para = nodes.paragraph(cell, cell)
+                para.source = fname
+                return para
+            return [[_wrap(cell) for cell in row] for row in rows]
+
         out = []
         for resource in json_obj['resources']:
             section = nodes.section(ids=[resource['name']], names=[resource['name']])
             out.append(section)
             section += nodes.title(resource['name'], resource['name'])
             description = resource.get('description', '')
-            section += nodes.paragraph(description, description)
+            para = nodes.paragraph(description, description)
+            para.source = fname
+            section += para
 
 
             table_data = wrap_table_text([
@@ -393,7 +393,7 @@ class JSONTableSchemaInclude(Directive):
                 table_data=table_data,
                 col_widths=[1, 1],
                 header_rows=0,
-                stub_columns=None)
+                stub_columns=0)
 
             columns = OrderedDict([
                 ('Field Name',
@@ -403,9 +403,9 @@ class JSONTableSchemaInclude(Directive):
                 ('Description',
                     lambda x: x['description']),
                 ('Required?',
-                    lambda x: x.get('constraints', {}).get('required', False)),
+                    lambda x: str(x.get('constraints', {}).get('required', False))),
                 ('Unique?',
-                    lambda x: x.get('constraints', {}).get('unique', False)),
+                    lambda x: str(x.get('constraints', {}).get('unique', False))),
             ])
             table_data = [columns.keys()] + [[f(field) for f in columns.values()] for field in resource['schema']['fields']]
             table_data = wrap_table_text(table_data)
@@ -414,7 +414,7 @@ class JSONTableSchemaInclude(Directive):
                 table_data=table_data,
                 col_widths=[1]*len(columns),
                 header_rows=1,
-                stub_columns=None)
+                stub_columns=0)
         return out
 
 directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)

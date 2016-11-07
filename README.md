@@ -41,6 +41,7 @@ First, do a local build, then:
 
 ```
 cd docs
+make gettext
 sphinx-intl update-txconfig-resources --transifex-project-name open-referral-1-0
 ```
 
