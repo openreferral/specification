@@ -12,3 +12,7 @@ file_filter = locale/<lang>/LC_MESSAGES/reference.po
 source_file = _build/locale/reference.pot
 source_lang = en
 
+[open-referral-1-0.entities]
+file_filter = locale/<lang>/LC_MESSAGES/entities.po
+source_file = _build/locale/entities.pot
+source_lang = en
