@@ -23,6 +23,19 @@ Contents:
    :maxdepth: 2
 
    reference
+   entities
+   logical_model
+   producing_sharing
+   vocabulary
+   current_capabilities
+
+   use_cases
+   design_principles
+   roadmap
+   governance
+   related_standards
+
+   changelog
 
 ```
 
