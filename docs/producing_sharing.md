@@ -7,12 +7,10 @@ HSDS is a [Frictionless Data Datapackage](http://specs.frictionlessdata.io/data-
 
 For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv). The CSV format described herein conforms to [RFC4180](http://tools.ietf.org/html/rfc4180). Text will used the UTF-8 character set.
 
-<a name="telephone"/>
 ### Telephone Formatting
 
 HSDS uses[ E.164](http://www.itu.int/rec/T-REC-E.164-201011-I/en) number formatting for phone numbers E.164 numbers can have a maximum of fifteen digits and are usually written as follows: [+][country code][subscriber number including area/region code]. Phone numbers can contain delimiters.
 
-<a name="address"/>
 ### Address Formatting
 
 At the time this document was drafted, a standard addressing format has not been established. ISO 19160  is in the preliminary stages of an addressing standard but has not yet produced a standard. Based on address standards by country from the Universal Postal Union,  the following format will capture the majority of addresses in use globally.
@@ -28,12 +26,10 @@ At the time this document was drafted, a standard addressing format has not been
 
 Because of the variety of addressing systems, every field is composed of alphanumeric characters. The country field uses ISO-3166 alpha 2 codes.
 
-<a name="description"/>
 ### Description Field Formatting
 
 The description field may include HTML or MarkDown tags.
 
-<a name="guidance"/>
 ### Guidance on Mapping Fields and Values
 
 Source data may or may not map directly to the HSDS. Guidelines are listed below to reduce ambiguity.
