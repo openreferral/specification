@@ -356,7 +356,8 @@
             },
             {
                 "name": "location",
-                "path": "program.csv",
+                "path": "location.csv",
+                "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have may locations.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -419,6 +420,7 @@
             {
                 "name": "phone",
                 "path": "phone.csv",
+                "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -505,6 +507,7 @@
             {
                 "name": "contact",
                 "path": "contact.csv",
+                "description": "The contact table contains details of the named contacts for services and organizations",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -527,22 +530,22 @@
 
                         {
                             "name": "name",
-                            "description": "The name of the person who is the contact",
+                            "description": "The name of the person",
                             "type": "string"
                         },
                         {
                             "name": "title",
-                            "description": "The job title of the person who is the contact",
+                            "description": "The job title of the person",
                             "type": "string"
                         },
                         {
                             "name": "department",
-                            "description": "The department of the entity for which this is a contact",
+                            "description": "The department that the person is part of",
                             "type": "string"
                         },
                         {
                             "name": "email",
-                            "description": "The email address of the entity for which this is a contact",
+                            "description": "The email address of the person",
                             "type": "string"
                         }
                     ],
@@ -567,7 +570,8 @@
             },
             {
                 "name": "physical_address",
-                "path": "address.csv",
+                "path": "physical_address.csv",
+                "description": "The addresses table contains the physical addresses for locations",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -642,7 +646,8 @@
             },
             {
                 "name": "postal_address",
-                "path": "address.csv",
+                "path": "postal_address.csv",
+                "description": "The postal_address table contains the postal addresses for mail to a certain location. This may differ from the physical location.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -654,7 +659,7 @@
                         },
                         {
                             "name": "location_id",
-                            "description": "The identifier of the location for which this is the address",
+                            "description": "The identifier of the location for which this is the postal address",
                             "type": "string"
                         },
                         {
@@ -718,6 +723,7 @@
             {
                 "name": "regular_schedule",
                 "path": "regular_schedule.csv",
+                "description": "The regular_schedule table contains details of when a service or location is open under normal circumstances. Each entry in the table can relate to one and only one day of the week.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -775,6 +781,7 @@
             {
                 "name": "holiday_schedule",
                 "path": "holiday_schedule.csv",
+                "description": "The holiday_schedule table contains details of when a service or location is open during holidays. Each entry in the table describes a period of one or more days, and the operating times on those days.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -842,6 +849,7 @@
             {
                 "name": "funding",
                 "path": "funding.csv",
+                "description": "The funding table describes the sources of funding for a service or organisation",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -889,6 +897,7 @@
             {
                 "name": "eligibility",
                 "path": "eligibility.csv",
+                "description": "The eligibility tables contains details of the eligibility criteria for particular services",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -928,6 +937,7 @@
             {
                 "name": "service_area",
                 "path": "service_area.csv",
+                "description": "The service_area table contains details of the geographic area for which a service is available.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -944,7 +954,7 @@
                         },
                         {
                             "name": "service_area",
-                            "description": "The geographic area where a service is available.",
+                            "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
                             "type": "string"
                         }
                     ],
@@ -963,6 +973,7 @@
             {
                 "name": "required_document",
                 "path": "required_document.csv",
+                "description": "The required_document table contains details of any documents that are required in order to access or use services.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -979,7 +990,7 @@
                         },
                         {
                             "name": "document",
-                            "description": "",
+                            "description": "The document required to apply for or receive the service. e.g. 'Government-issued ID', 'EU Passport'",
                             "type": "string"
                         }
                     ],
@@ -998,6 +1009,7 @@
             {
                 "name": "fee",
                 "path": "fee.csv",
+                "description": "The fee table contains details of the costs of services, including those that are free",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -1033,6 +1045,7 @@
             {
                 "name": "payment_accepted",
                 "path": "payment_accepted.csv",
+                "description": "The payment_accepted table contains details of the methods of payment that can be used in order to pay for services",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -1071,6 +1084,7 @@
             {
                 "name": "intepretation_services",
                 "path": "interpretation_services.csv",
+                "description": "The interpretation_services table contains details of the interpretation services which are available at a certain service.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -1106,6 +1120,7 @@
             {
                 "name": "language",
                 "path": "language.csv",
+                "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with intepretation.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -1153,6 +1168,7 @@
             {
                 "name": "accessibility_for_disabilities",
                 "path": "accessibility_for_disabilities.csv",
+                "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -1192,6 +1208,7 @@
             {
                 "name": "metadata",
                 "path": "metadata.csv",
+                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -1308,6 +1325,7 @@
            {
                 "name": "meta_table_description",
                 "path": "meta_table_description.csv",
+                "description": "The meta_table_description table contains metadata about individual tables.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
