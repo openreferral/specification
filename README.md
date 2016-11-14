@@ -1,8 +1,8 @@
 # Open Referral
 
-Human Services Data Specification defines a minimal set of data for publishing machine-readable directory information about health, human, and social services; their locations and accessibility details; and the organizations that provide them. Read the [spec here](Human%20Services%20Data%20Specification%20%20v1.0.md).
+Human Services Data Specification defines a minimal set of data for publishing machine-readable directory information about health, human, and social services; their locations and accessibility details; and the organizations that provide them. Read the [spec here](http://docs.openreferral.org).
 
-Information about the Open Referral Initiative is available at [https://openreferral.org](https://openreferral.org)
+A detailed FAQ about the project is [found here](http://docs.openreferral.org/en/latest/faq), and additional information about the Open Referral Initiative is available at [https://openreferral.org](https://openreferral.org)
 
 ## License
 

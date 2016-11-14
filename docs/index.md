@@ -35,6 +35,8 @@ Contents:
    governance
    related_standards
 
+   faq
+
    changelog
 
 ```
