@@ -365,7 +365,10 @@
                         {
                             "name": "id",
                             "description": "Each location must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "organization_id",
@@ -428,7 +431,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },{
                             "name": "location_id",
                             "description": "The identifier of the location where this phone number is located",
@@ -452,7 +458,10 @@
                         {
                             "name": "number",
                             "description": "The phone number",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "extension",
@@ -515,7 +524,10 @@
                         {
                             "name": "id",
                             "description": "Each contact must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "organization_id",
@@ -579,7 +591,10 @@
                         {
                             "name": "id",
                             "description": "Each physical address must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "location_id",
@@ -594,7 +609,10 @@
                         {
                             "name": "address_1",
                             "description": "The first line of the address",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "address_2",
@@ -614,22 +632,34 @@
                         {
                             "name": "city",
                             "description": "The city in which the address is located",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "state_province",
                             "description": "The state or province in which the address is located",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "postal_code",
                             "description": "The postal code for the address",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "country",
-                            "description": "The country in which the address is located",
-                            "type": "string"
+                            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         }
                     ],
                     "primaryKey": "id",
@@ -655,7 +685,10 @@
                         {
                             "name": "id",
                             "description": "Each postal address must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "location_id",
@@ -731,7 +764,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -746,7 +782,10 @@
                         {
                             "name": "weekday",
                             "description": "The day of the week that this entry relates to",
-                            "type": "integer"
+                            "type": "integer",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "opens_at",
@@ -789,7 +828,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -804,7 +846,10 @@
                         {
                             "name": "closed",
                             "description": "Indicates if a service or location is closed during a public holiday",
-                            "type": "boolean"
+                            "type": "boolean",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "opens_at",
@@ -819,12 +864,18 @@
                         {
                             "name": "start_date",
                             "description": "The first day that a service or location is closed during a public or private holiday",
-                            "type": "date"
+                            "type": "date",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "end_date",
                             "description": "The last day that a service or location is closed during a public or private holiday",
-                            "type": "date"
+                            "type": "date",
+                            "constraints": {
+                                "required":true
+                            }
                         }
                     ],
                     "primaryKey": "id",
@@ -857,7 +908,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "organization_id",
@@ -905,7 +959,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -945,7 +1002,10 @@
                         {
                             "name": "id",
                             "description": "Each service area must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -981,7 +1041,10 @@
                         {
                             "name": "id",
                             "description": "Each document must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -1017,7 +1080,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -1053,7 +1119,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -1092,7 +1161,10 @@
                         {
                             "name": "id",
                             "description": "Each service must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -1128,7 +1200,10 @@
                         {
                             "name": "id",
                             "description": "Each language must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "service_id",
@@ -1176,7 +1251,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "location_id",
@@ -1216,42 +1294,66 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "resource_id",
                             "description": "Each service, program. location, address, or contact will have a unique identifier. Unique ids are UUIDs.",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "last_action_date",
                             "description": "The date when data was changed.",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "last_action_type",
                             "description": "The kind of change made to the data; eg create, update, delete",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "field_name",
                             "description": "The name of field that has been modified",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "previous_value",
                             "description": "The previous value of a field that has been updated",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "replacement_value",
                             "description": "The new value of a field that has been updated",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "updated_by",
                             "description": "The name of the person who updated a value",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         }
                     ],
                     "primaryKey": "id",
@@ -1333,7 +1435,10 @@
                         {
                             "name": "id",
                             "description": "Each entry must have a unique identifier",
-                            "type": "string"
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "name",
