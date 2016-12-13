@@ -9,9 +9,17 @@ There are three key concepts in HSDS:
 
 In addition, HSDS can be used to capture extra information about the **programs** that organisations use to organise and fund collections of services.
 
+The central model is represented below:
 
+![HSDS Logical Model](assets/simple-logical-model.png)
 
+Alongside tables describing each organisation, location and service, a number of more loosely coupled tables exist. These may include foreign keys for one or more of organisations, services and locations. 
 
+For example, the [phone](reference.md#phone) table can link a phone number to a location, a service, or an organization **or** to a combination of those (e.g. to specify that it is the phone number of a specific service *at* a specific location). 
+
+### Draft model
+
+The model below is now deprecated and should not be used. It is maintained here until version 1.1 for reference. 
 
 ![HSDS Logical Model](https://github.com/openreferral/specification/raw/master/Logical10landscape.png)
 
