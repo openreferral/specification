@@ -409,13 +409,6 @@
                                 "resource": "organization",
                                 "fields": "id"
                             }
-                        },
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
                         }
                     ]
                 }
