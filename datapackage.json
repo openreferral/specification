@@ -461,8 +461,11 @@
                         },
                         {
                             "name": "type",
-                            "description": "Whether the phone number relates to a fixed or cellular phone",
-                            "type": "string"
+                            "description": "Indicates the type of phone service, drawing from the RFC6350 list of types (text (for SMS), voice, fax, cell, video, pager, textphone).",
+                            "type": "string",
+                            "constraints":{
+                                "enum":["text","voice","fax","cell","video","pager","textphone"]
+                            }
                         },
                         {
                             "name": "department",
