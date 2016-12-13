@@ -85,7 +85,7 @@
                         {
                             "name": "year_incorporated",
                             "type": "date",
-                            "format": "yyyy",
+                            "format": "%Y",
                             "description":"The year in which the organization was legally formed.",
                             "constraints": {
                                 "required":false
@@ -1303,7 +1303,7 @@
                         {
                             "name": "last_action_date",
                             "description": "The date when data was changed.",
-                            "type": "string",
+                            "type": "datetime",
                             "constraints": {
                                 "required":true
                             }
