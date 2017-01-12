@@ -222,7 +222,7 @@
                         },
                         {
                             "name":"description",
-                            "description":"A description of the service",
+                            "description":"A description of the service.",
                             "type":"string",
                             "constraints":{
                                 "required":false
@@ -395,6 +395,14 @@
                             "name": "alternate_name",
                             "description": "An alternative name for the location",
                             "type": "string"
+                        },
+                        {
+                            "name":"description",
+                            "description":"A description of this location.",
+                            "type":"string",
+                            "constraints":{
+                                "required":false
+                            }
                         },
                         {
                             "name": "transportation",
