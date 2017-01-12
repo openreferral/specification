@@ -1,11 +1,14 @@
       {
         "name": "human_services_data",
-        "title": "Human Services Data",
+        "title": "Human Services Data Specification Template",
+        "description":"This is a template datapackage.json file for producing a Tabular Data Package of data according to the Human Services Data Specification. You should provide an edited version of this file as part of any datapackage you provide, updating the title, description, license and homepage information to reflect the data you are publishing.", 
         "license": {
                 "url": "https://creativecommons.org/licenses/by-sa/4.0/",
                 "type": "CC-BY-SA-4.0",
                 "name": "Creative Commons Attribution-ShareAlike 4.0"
         },
+        "version":"1.0",
+        "homepage":"http://docs.openreferral.org",
         "resources": [
             {
                 "name": "organization",
@@ -216,6 +219,14 @@
                                 "required":false
                             }
 
+                        },
+                        {
+                            "name":"description",
+                            "description":"A description of the service",
+                            "type":"string",
+                            "constraints":{
+                                "required":false
+                            }
                         },
                         {
                             "name": "url",
