@@ -12,7 +12,7 @@
         "resources": [
             {
                 "name": "organization",
-                "path": "organization.csv",
+                "path": "organizations.csv",
                 "description":"The organization record is used to provide basic description and details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -108,7 +108,7 @@
             },
             {
                 "name": "program",
-                "path": "program.csv",
+                "path": "programs.csv",
                 "description":"Some organizations organise their services into programs. A program brings together a number of related services.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -164,7 +164,7 @@
             {
                 "name": "service",
                 "description":"Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
-                "path": "service.csv",
+                "path": "services.csv",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -268,6 +268,14 @@
                             "constraints": {
                                 "required":false
                             }
+                        },
+                        {
+                            "name":"taxonomy_ids",
+                            "description":"A comma separated list of identifiers from the taxonomy table. Advanced users may also include composite categories, using * to combine two taxonomy terms. For example: 'Food Pantry*Immigrants,Food Pantry*Homeless' (where 'Food Pantry','Immigrants' and 'Homeless' are identifiers in the taxonomy table), would indicate a food pantry service for the homeless or immigrants, but not available to other client groups.",
+                            "type":"string",
+                            "constraints": {
+                                "required":false
+                            }
                         }
                     ],
                     "primaryKey": "id",
@@ -298,7 +306,7 @@
             },
             {
                 "name": "service_at_location",
-                "path": "service_at_location.csv",
+                "path": "services_at_location.csv",
                 "description":"The services at location table creates a link between a service and a specific location.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -367,7 +375,7 @@
             },
             {
                 "name": "location",
-                "path": "location.csv",
+                "path": "locations.csv",
                 "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have may locations.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -434,7 +442,7 @@
             },
             {
                 "name": "phone",
-                "path": "phone.csv",
+                "path": "phones.csv",
                 "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -527,7 +535,7 @@
             },
             {
                 "name": "contact",
-                "path": "contact.csv",
+                "path": "contacts.csv",
                 "description": "The contact table contains details of the named contacts for services and organizations",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -594,7 +602,7 @@
             },
             {
                 "name": "physical_address",
-                "path": "physical_address.csv",
+                "path": "physical_addresses.csv",
                 "description": "The addresses table contains the physical addresses for locations",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -688,7 +696,7 @@
             },
             {
                 "name": "postal_address",
-                "path": "postal_address.csv",
+                "path": "postal_addresses.csv",
                 "description": "The postal_address table contains the postal addresses for mail to a certain location. This may differ from the physical location.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -767,7 +775,7 @@
             },
             {
                 "name": "regular_schedule",
-                "path": "regular_schedule.csv",
+                "path": "regular_schedules.csv",
                 "description": "The regular_schedule table contains details of when a service or location is open under normal circumstances. Each entry in the table can relate to one and only one day of the week.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -831,7 +839,7 @@
             },
             {
                 "name": "holiday_schedule",
-                "path": "holiday_schedule.csv",
+                "path": "holiday_schedules.csv",
                 "description": "The holiday_schedule table contains details of when a service or location is open during holidays. Each entry in the table describes a period of one or more days, and the operating times on those days.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -1005,7 +1013,7 @@
             },
             {
                 "name": "service_area",
-                "path": "service_area.csv",
+                "path": "service_areas.csv",
                 "description": "The service_area table contains details of the geographic area for which a service is available.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -1044,7 +1052,7 @@
             },
             {
                 "name": "required_document",
-                "path": "required_document.csv",
+                "path": "required_documents.csv",
                 "description": "The required_document table contains details of any documents that are required in order to access or use services.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -1083,7 +1091,7 @@
             },
             {
                 "name": "fee",
-                "path": "fee.csv",
+                "path": "fees.csv",
                 "description": "The fee table contains details of the costs of services, including those that are free",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -1122,7 +1130,7 @@
             },
             {
                 "name": "payment_accepted",
-                "path": "payment_accepted.csv",
+                "path": "payments_accepted.csv",
                 "description": "The payment_accepted table contains details of the methods of payment that can be used in order to pay for services",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -1203,7 +1211,7 @@
             },
             {
                 "name": "language",
-                "path": "language.csv",
+                "path": "languages.csv",
                 "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with intepretation.",
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -1290,6 +1298,50 @@
                             "reference": {
                                 "resource": "service",
                                 "fields": "id"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "taxonomy",
+                "path": "taxonomy.csv",
+                "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy table contains a list of taxonomy identifiers, their names, and, for hierarchical taxonomies, their structure.",
+                "format": "csv",
+                "mediatype": "text/csv",
+                "schema": {
+                    "fields": [
+                        {
+                            "name": "id",
+                            "description": "Each taxonomy entry must have a unique identifier. If combining multiple taxonomies with overlapping identifiers, use a prefix to distinguish them.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true,
+                                "unique":true
+                            }
+                        },
+                        {
+                            "name": "name",
+                            "description": "The name of this taxonomy term or category.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
+                        },
+                        {
+                            "name":"parent_id",
+                            "description":"If this is a child category in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
+                            "type":"string",
+                            "constraints": {
+                                "required":false
+                            }
+                        },
+                        {
+                            "name":"parent_name",
+                            "description":"If this is a child category in a hierarchical taxonomy, give the name of the parent category. For top-level categories, this should be left blank.",
+                            "type":"string",
+                            "constraints": {
+                                "required":false
                             }
                         }
                     ]
@@ -1438,7 +1490,7 @@
             },
            {
                 "name": "meta_table_description",
-                "path": "meta_table_description.csv",
+                "path": "meta_table_descriptions.csv",
                 "description": "The meta_table_description table contains metadata about individual tables.",
                 "format": "csv",
                 "mediatype": "text/csv",
