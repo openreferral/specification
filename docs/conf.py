@@ -22,6 +22,9 @@
 # sys.path.insert(0, os.path.abspath('.'))
 from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
+import sphinx_rtd_theme
+
+
 
 # -- General configuration ------------------------------------------------
 
@@ -127,7 +130,17 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 # Commenting this causes readthedocs theme to be used  on readthedocs
-#html_theme = 'alabaster'
+# html_theme = 'alabaster'
+html_theme = "sphinx_rtd_theme"
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+html_static_path = ['_static']
+
+html_context = {
+    'css_files': [
+        '_static/theme_overrides.css',  # overrides for wide tables in RTD theme
+        ],
+    }
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -412,7 +425,7 @@ class JSONTableSchemaInclude(Directive):
             section += ListTable.build_table_from_list(
                 self=None,
                 table_data=table_data,
-                col_widths=[1]*len(columns),
+                col_widths=[0.2,0.2,0.6,0.1,0.1],
                 header_rows=1,
                 stub_columns=0)
         return out

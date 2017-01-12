@@ -188,16 +188,16 @@
 
                         },
                         {
-                            "name": "program_id",
-                            "description": "The identifier of the program this service is delivered under (optional)",
+                            "name": "location_id",
+                            "description": "The identifier of the location where this service is delivered.",
                             "type": "string",
                             "constraints": {
                                 "required":false
                             }
                         },
                         {
-                            "name": "location_id",
-                            "description": "The identifier of the location where this service is delivered.",
+                            "name": "program_id",
+                            "description": "The identifier of the program this service is delivered under.",
                             "type": "string",
                             "constraints": {
                                 "required":false
