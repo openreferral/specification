@@ -54,3 +54,8 @@ No changes.
 
 * Final version
 * Changed relationship between location and service from 1:n to n:m
+
+[v1.0.1](https://github.com/openreferral/specification/issues?utf8=%E2%9C%93&q=is%3Aissue%20milestone%3A%221.0%20Tidy%20Up%22%20)
+
+* Bug fixes to schema and documentation
+* Removed redundant documentation pages
