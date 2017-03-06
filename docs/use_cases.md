@@ -1,6 +1,10 @@
 Use Cases
 =========
 
+HSDS is designed around a number of use-cases. The data model of HSDS aims to provie a bridge between data providers, users and interemediaries.
+
+The following illustrative use cases should guide both standard development and implementation.
+
 ### Help Seeker
 
 Help seekers  (i.e. patients, clients, consumers, victims, survivors, etc.) have a need (or multiple needs) that can be addressed by services in their community. To find services, help seekers must receive accurate, relevant, and easily understandable information about services which they can access and for which they are eligible.
