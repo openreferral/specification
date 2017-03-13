@@ -64,6 +64,7 @@
                         {
                             "name": "url",
                             "type": "string",
+                            "format":"url",
                             "description":"The URL (website address) of the organization.",
                             "constraints": {
                                 "required":false
@@ -232,6 +233,7 @@
                             "name": "url",
                             "description": "URL of the service",
                             "type": "string",
+                            "format":"url",
                             "constraints": {
                                 "required":false
                             }
@@ -240,6 +242,7 @@
                             "name": "email",
                             "description": "Email address for the service",
                             "type": "string",
+                            "format":"email",
                             "constraints": {
                                 "required":false
                             }
@@ -341,6 +344,7 @@
                             "name": "url",
                             "description": "If the service at this location has a specific URL, that can be provided here.",
                             "type": "string",
+                            "format":"url",
                             "constraints": {
                                 "required":false
                             }
@@ -349,6 +353,7 @@
                             "name": "email",
                             "description": "If the service at this location has a specific email address, that can be provided here.",
                             "type": "string",
+                            "format":"email",
                             "constraints": {
                                 "required":false
                             }
@@ -581,7 +586,8 @@
                         {
                             "name": "email",
                             "description": "The email address of the person",
-                            "type": "string"
+                            "type": "string",
+                            "format":"email"
                         }
                     ],
                     "primaryKey": "id",
