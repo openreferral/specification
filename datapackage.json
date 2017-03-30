@@ -1353,7 +1353,8 @@
                                 "required":false
                             }
                         }
-                    ]
+                    ],
+                    "primaryKey": "id"
                 }
             },
             {
