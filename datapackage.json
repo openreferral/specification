@@ -637,7 +637,7 @@
                         },
                         {
                             "name": "address_1",
-                            "description": "The first line of the address",
+                            "description": "The first line of the address.",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -645,17 +645,17 @@
                         },
                         {
                             "name": "address_2",
-                            "description": "The second line of the address",
+                            "description": "The second line of the address.",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "The third line of the address",
+                            "description": "The third line of the address.",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "The fourth line of the address",
+                            "description": "The fourth line of the address.",
                             "type": "string"
                         },
                         {
@@ -1303,9 +1303,9 @@
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "service_id",
+                            "fields": "location_id",
                             "reference": {
-                                "resource": "service",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         }
