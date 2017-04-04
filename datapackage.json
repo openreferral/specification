@@ -539,8 +539,13 @@
                             "type":"string"
                         },
                         {
+                            "name":"description",
+                            "description":"A description providing extra information about the phone service (e.g. any special arrangements for accessing, or details of availability at particular times.",
+                            "type":"string"
+                        },
+                        {
                             "name": "department",
-                            "description": "The department for which this is the phone number",
+                            "description": "The department for which this is the phone number. (This field is deprecated and will be removed in a future version of HSDS).",
                             "type": "string"
                         }
                     ],
