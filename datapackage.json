@@ -257,6 +257,14 @@
                             }
                         },
                         {
+                            "name":"interpretation_services",
+                            "description":"A description of any interpretation services available for accessing this service.",
+                            "type": "string",
+                            "constraints": {
+                                "required":false
+                            }
+                        },
+                        {
                             "name": "application_process",
                             "description": "The steps needed to access the service.",
                             "type": "string",
@@ -269,6 +277,30 @@
                             "description": "Time a client may expect to wait before receiving a service.",
                             "type": "string",
                             "constraints": {
+                                "required":false
+                            }
+                        },
+                        {
+                            "name":"fees",
+                            "description":"Details of any charges for service users to access this service.",
+                            "type":"string",
+                            "constraints": {
+                                "required":false
+                            }
+                        },
+                        {
+                            "name":"accrediations",
+                            "description":"Details of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
+                            "type":"string",
+                            "constraints":{
+                                "required":false
+                            }
+                        },
+                        {
+                            "name":"licenses",
+                            "description":"An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
+                            "type":"string",
+                            "constraints":{
                                 "required":false
                             }
                         },
@@ -1104,45 +1136,6 @@
                 }
             },
             {
-                "name": "fee",
-                "path": "fees.csv",
-                "description": "The fee table contains details of the costs of services, including those that are free",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this entry describes the costs of service",
-                            "type": "string"
-                        },
-                        {
-                            "name": "fee",
-                            "description": "A listing of the costs of services, including free ones",
-                            "type": "string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
                 "name": "payment_accepted",
                 "path": "payments_accepted.csv",
                 "description": "The payment_accepted table contains details of the methods of payment that can be used in order to pay for services",
@@ -1170,45 +1163,6 @@
                             "constraints": {
                                 "enum": ["cash","check","money order","credit card","medicare","SNAP","WIC","EBT"]
                             }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "intepretation_services",
-                "path": "interpretation_services.csv",
-                "description": "The interpretation_services table contains details of the interpretation services which are available at a certain service.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each service must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the services for which the entry describes the interpretation services available",
-                            "type": "string"
-                        },
-                        {
-                            "name": "language",
-                            "description": "Languages, other than English, for which interpretation is available. Languages are listed as ISO639-1 codes.",
-                            "type": "string"
                         }
                     ],
                     "primaryKey": "id",
@@ -1303,6 +1257,14 @@
                                 "enum": ["cd","deaf_interpreter","disabled_parking","elevator",
                                     "ramp","restroom","tape_braille","tty","wheelchair","wheelchair_van"]
                             }
+                        },
+                        {
+                            "name":"details",
+                            "description":"Any further details relating to the relevant accessibility arrangements at this location. E.g. whether advance notice is required to use an accessibility facility.",
+                             "type": "string",
+                             "constraints":{
+                                "required":false
+                             }
                         }
                     ],
                     "primaryKey": "id",
