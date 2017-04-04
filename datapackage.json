@@ -393,7 +393,7 @@
                                 "resource": "taxonomy",
                                 "fields": "id"
                             }
-                        },
+                        }
                     ]
                 }
             },
@@ -407,7 +407,7 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "Each entry must have a unique identifier",
+                            "description": "Each entry must have a unique identifier.",
                             "type": "string",
                             "constraints": {
                                 "required":true,
@@ -431,22 +431,9 @@
                             }
                         },
                         {
-                            "name": "url",
-                            "description": "If the service at this location has a specific URL, that can be provided here.",
-                            "type": "string",
-                            "format":"url",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "email",
-                            "description": "If the service at this location has a specific email address, that can be provided here.",
-                            "type": "string",
-                            "format":"email",
-                            "constraints": {
-                                "required":false
-                            }
+                            "name":"description",
+                            "description":"Any additional information that should be displayed to users about the service at this specific location.",
+                            "type":"string"
                         }
                     ],
                     "primaryKey": "id",
@@ -571,6 +558,11 @@
                             "type": "string"
                         },
                         {
+                            "name": "service_at_location_id",
+                            "description": "The identifier of the 'service at location' table entry, when this phone number is specific to a service in a particular location.",
+                            "type": "string"
+                        },
+                        {
                             "name": "number",
                             "description": "The phone number",
                             "type": "string",
@@ -636,8 +628,14 @@
                                 "resource": "contact",
                                 "fields": "id"
                             }
+                        },
+                        {
+                            "fields": "service_at_location_id",
+                            "reference": {
+                                "resource": "service_at_location",
+                                "fields": "id"
+                            }
                         }
-
                     ]
                 }
             },
@@ -667,7 +665,11 @@
                             "description": "The identifier of the service for which this is a contact",
                             "type": "string"
                         },
-
+                        {
+                            "name": "service_at_location_id",
+                            "description": "The identifier of the 'service at location' table entry, when this contact is specific to a service in a particular location.",
+                            "type": "string"
+                        },
                         {
                             "name": "name",
                             "description": "The name of the person",
@@ -703,6 +705,13 @@
                             "fields": "service_id",
                             "reference": {
                                 "resource": "service",
+                                "fields": "id"
+                            }
+                        },
+                        {
+                            "fields": "service_at_location_id",
+                            "reference": {
+                                "resource": "service_at_location",
                                 "fields": "id"
                             }
                         }
@@ -941,6 +950,11 @@
                             "type": "string"
                         },
                         {
+                            "name": "service_at_location_id",
+                            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
+                            "type": "string"
+                        },
+                        {
                             "name": "weekday",
                             "description": "The day of the week that this entry relates to",
                             "type": "integer",
@@ -974,6 +988,13 @@
                                 "resource": "service",
                                 "fields": "id"
                             }
+                        },
+                        {
+                            "fields": "service_at_location_id",
+                            "reference": {
+                                "resource": "service_at_location",
+                                "fields": "id"
+                            }
                         }
                     ]
                 }
@@ -1002,6 +1023,11 @@
                         {
                             "name": "location_id",
                             "description": "The identifier of the location for which this is the holiday schedule",
+                            "type": "string"
+                        },
+                        {
+                            "name": "service_at_location_id",
+                            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
                             "type": "string"
                         },
                         {
@@ -1052,6 +1078,13 @@
                             "fields": "service_id",
                             "reference": {
                                 "resource": "service",
+                                "fields": "id"
+                            }
+                        },
+                        {
+                            "fields": "service_at_location_id",
+                            "reference": {
+                                "resource": "service_at_location",
                                 "fields": "id"
                             }
                         }
@@ -1416,7 +1449,7 @@
                             }
                         },
                         {
-                            "name":"Vocabulary",
+                            "name":"vocabulary",
                             "description":"If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility.",
                             "type":"string",
                             "constraints":{
