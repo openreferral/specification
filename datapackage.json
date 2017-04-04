@@ -366,7 +366,15 @@
                         },
                         {
                             "name":"taxonomy_id",
-                            "description":"The identifier of this classification from the taxonomy table. Advanced users may also include composite categories, using * to combine two taxonomy terms. For example: 'Food Pantry*Homeless' (where 'Food Pantry' and 'Homeless' are identifiers in the taxonomy table) to indicate a food pantry service for homeless clients, but not available to other client groups.",
+                            "description":"The identifier of this classification from the taxonomy table.",
+                            "type":"string",
+                            "constraints": {
+                                "required":true
+                            }
+                        },
+                        {
+                            "name":"taxonomy_detail",
+                            "description":"For advanced uses, this field can indicate a constraint on this classification, using * to combine two taxonomy terms. For example: 'Food Pantry*Homeless' (where 'Food Pantry' and 'Homeless' are identifiers in the taxonomy table) to indicate a food pantry service for homeless clients, but not available to other client groups. In this example, there would be two entries in service_taxonomy, one with 'Food Pantry' and one for 'Homeless' in the taxonomy_id field, but both with the same 'Food Pantry*Homeless' value in the taxonomy_detail field.",
                             "type":"string"
                         }
                     ],
@@ -378,7 +386,14 @@
                                 "resource": "service",
                                 "fields": "id"
                             }
-                        }
+                        },
+                        {
+                            "fields": "taxonomy_id",
+                            "reference": {
+                                "resource": "taxonomy",
+                                "fields": "id"
+                            }
+                        },
                     ]
                 }
             },
@@ -1397,6 +1412,14 @@
                             "description":"If this is a child category in a hierarchical taxonomy, give the name of the parent category. For top-level categories, this should be left blank.",
                             "type":"string",
                             "constraints": {
+                                "required":false
+                            }
+                        },
+                        {
+                            "name":"Vocabulary",
+                            "description":"If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility.",
+                            "type":"string",
+                            "constraints":{
                                 "required":false
                             }
                         }
