@@ -1013,17 +1013,17 @@
                         },
                         {
                             "name": "organization_id",
-                            "description": "The identifier of the organization for which this entry describes the source of funding",
+                            "description": "The identifier of the organization in receipt of this funding.",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "The identifier of the service for which this entry describes the source of funding",
+                            "description": "The identifier of the service in receipt of this funding",
                             "type": "string"
                         },
                         {
                             "name": "source",
-                            "description": "Source of funds for organization or service",
+                            "description": "A free text description of the source of funds for this organization or service.",
                             "type": "string"
                         }
                     ],
