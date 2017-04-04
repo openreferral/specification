@@ -428,7 +428,7 @@
                         },
                         {
                             "name": "organization_id",
-                            "description": "Each location must belong to a single organization. The identifier of the organization should be given here.",
+                            "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organisation delivers at this location should be provided in the services_at_location table.",
                             "type": "string"
                         },
                         {
