@@ -306,7 +306,7 @@
                         },
                         {
                             "name":"taxonomy_ids",
-                            "description":"A comma separated list of identifiers from the taxonomy table. Advanced users may also include composite categories, using * to combine two taxonomy terms. For example: 'Food Pantry*Immigrants,Food Pantry*Homeless' (where 'Food Pantry','Immigrants' and 'Homeless' are identifiers in the taxonomy table), would indicate a food pantry service for the homeless or immigrants, but not available to other client groups.",
+                            "description":"(Deprecated) A comma separated list of identifiers from the taxonomy table. This field is deprecated in favour of using the service_taxonomy table.",
                             "type":"string",
                             "constraints": {
                                 "required":false
@@ -333,6 +333,49 @@
                             "fields": "location_id",
                             "reference": {
                                 "resource": "location",
+                                "fields": "id"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "service_taxonomy",
+                "path": "services_taxonomy.csv",
+                "description":"The service taxonomy creates a link between a service and one or more classifications that describe the nature of the service provided.",
+                "format": "csv",
+                "mediatype": "text/csv",
+                "schema": {
+                    "fields": [   
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "description":"Each service must have a unique identifier.",
+                            "constraints": {
+                                "required":true,
+                                "unique":true
+                            }
+                        },
+                        {
+                            "name": "service_id",
+                            "description": "The identifier of the service at a given location.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
+                        },
+                        {
+                            "name":"taxonomy_id",
+                            "description":"The identifier of this classification from the taxonomy table. Advanced users may also include composite categories, using * to combine two taxonomy terms. For example: 'Food Pantry*Homeless' (where 'Food Pantry' and 'Homeless' are identifiers in the taxonomy table) to indicate a food pantry service for homeless clients, but not available to other client groups.",
+                            "type":"string"
+                        }
+                    ],
+                    "primaryKey": "id",
+                    "foreignKeys": [
+                        {
+                            "fields": "service_id",
+                            "reference": {
+                                "resource": "service",
                                 "fields": "id"
                             }
                         }
@@ -545,7 +588,7 @@
                         },
                         {
                             "name": "department",
-                            "description": "The department for which this is the phone number. (This field is deprecated and will be removed in a future version of HSDS).",
+                            "description": "(Deprecated) The department for which this is the phone number. This field is deprecated and will be removed in a future version of HSDS.",
                             "type": "string"
                         }
                     ],
@@ -687,17 +730,17 @@
                         },
                         {
                             "name": "address_2",
-                            "description": "A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
@@ -789,17 +832,17 @@
                         },
                         {
                             "name": "address_2",
-                            "description": "A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
