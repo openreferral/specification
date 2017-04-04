@@ -502,6 +502,11 @@
                             }
                         },
                         {
+                            "name":"language",
+                            "description":"A comma separated list of ISO 639-1, or ISO 639-2 [language codes](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the languages available from this phone service. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                            "type":"string"
+                        },
+                        {
                             "name": "department",
                             "description": "The department for which this is the phone number",
                             "type": "string"
