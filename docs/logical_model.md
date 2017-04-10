@@ -12,14 +12,14 @@ Additional information about organisations, locations and services is held in se
 
 The table below indicates the foreign keys that exist. 
 
-<table>
+<table class="docutils">
     <thead>
         <tr>
-            <td>Table</td>
-            <td>organization</td>
-            <td>service</td>
-            <td>location</td>
-            <td>service_at_location</td>
+            <th class="head">Table</th>
+            <th class="head">organization</th>
+            <th class="head">service</th>
+            <th class="head">location</th>
+            <th class="head">service_at_location</th>
         </tr>
     </thead>
     <tbody>
