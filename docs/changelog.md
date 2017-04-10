@@ -59,3 +59,18 @@ No changes.
 
 * Bug fixes to schema and documentation
 * Removed redundant documentation pages
+
+[v1.1.0](https://github.com/openreferral/specification/issues?utf8=%E2%9C%93&q=is%3Aissue%20milestone%3A%221.1%20Release%22%20)
+
+* Updated logical model: providing guidance on handling multiple foreign keys, and clarifying use of service_at_location;
+* Removing direct location_id from service so that services should always be connected to locations via the service_at_location table;
+* Adding the service_taxonomy table (missing from earlier releases);
+* Adding description to service_area;
+* Updates to the description of the funding table;
+* Updates to the address block to include region, and deprecate additional address fields;
+* Moving fees and interpretations into the service table;
+* Adding missing accreditations and licenses fields;
+* Adding a language field to phone;
+* Adding a missing primary key to the taxonomy table;
+* Fixing the foreign key on accessibility_for_disabilities;
+* Adding format validation for URIs and e-mail addresses to the schema;
