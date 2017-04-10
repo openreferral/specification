@@ -1,26 +1,139 @@
 Logical Model
 =============
 
-There are three key concepts in HSDS:
+There are four core tables in HSDS:
 
-1. **Services** - which may have descriptions, contact details, opening times, target groups, eligibility requirements, accessibility information, and other important facts about them published so that people are able to identify and access services that can meet their needs. 
-2. **Organisations** - who provide those services.
-3. **Locations** - where those services are delivered - either physically, or virtually (over the phone or Internet).
+1. **organization** - that provide services;
+2. **service** - that have descriptions, classifications and other information to allow potential service users to identify those services that can meet their needs;
+3. **location** - where services are delivered - either physically, or virtually (over the phone or Internet);
+4. **service_at_location** - a link table used to record where particular services are available, and to over-ride any default service or location information, with information specific to the service at a specific location.
 
-In addition, HSDS can be used to capture extra information about the **programs** that organisations use to organise and fund collections of services.
+Additional information about organisations, locations and services is held in separate tables and linked by a foreign key. Some tables only have a single foreign key for a single core table. Others can be linked to different core tables. 
 
-The central model is represented below:
+The table below indicates the foreign keys that exist. 
 
-![HSDS Logical Model](assets/simple-logical-model.png)
+<table>
+    <thead>
+        <tr>
+            <td>Table</td>
+            <td>organization</td>
+            <td>service</td>
+            <td>location</td>
+            <td>service_at_location</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>programs</td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>funding</td>
+            <td>X</td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>service_taxonomy</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>phone*</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>contact</td>
+            <td>X</td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>regular_schedule</td>
+            <td></td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>holiday_schedule</td>
+            <td></td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>eligibility</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>service_area</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>required_document</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>payment_accepted</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>language</td>
+            <td></td>
+            <td>X</td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>physical_address</td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>postal_address</td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>accessibility_for_disabilities</td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
-Alongside tables describing each organisation, location and service, a number of more loosely coupled tables exist. These may include foreign keys for one or more of organisations, services and locations. 
+*Phone can also be linked to **contact**. 
 
-For example, the [phone](reference.md#phone) table can link a phone number to a location, a service, or an organization **or** to a combination of those (e.g. to specify that it is the phone number of a specific service *at* a specific location). 
+When a single row contains multiple foreign keys, these will be interpreted as 'OR' relationships. 
 
-### Draft model
+E.g. a phone number applies to the service OR the organisation OR the service_at_location. 
 
-The model below is now deprecated and should not be used. It is maintained here until version 1.1 for reference. 
-
-![HSDS Logical Model](https://github.com/openreferral/specification/raw/master/Logical10landscape.png)
-
-*  Note that although the relationships are not depicted, metadata.resource_id is the foreign key to all entities
