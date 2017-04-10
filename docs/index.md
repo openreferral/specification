@@ -3,7 +3,7 @@ Open Referral
 
 ![HSDS Logical Model](assets/OpenReferral_Logo_Green.png)
 
-Human Services Data Specification v1.0
+Human Services Data Specification v1.1
 ======================================
 
 The Human Services Data Specification (Open Referral) is an exchange format for publishing machine readable data about health, human, and social services, their locations, and the organizations that provide them. For the purposes of this specification, human services are broadly defined, ranging from food assistance to job training and health care. 
