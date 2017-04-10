@@ -1202,6 +1202,11 @@
                             "name": "service_area",
                             "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
                             "type": "string"
+                        },
+                        {
+                            "name":"description",
+                            "description":"A more detailed description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
+                            "type":"string"
                         }
                     ],
                     "primaryKey": "id",
