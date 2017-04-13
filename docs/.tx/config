@@ -16,3 +16,64 @@ source_lang = en
 file_filter = locale/<lang>/LC_MESSAGES/entities.po
 source_file = _build/locale/entities.pot
 source_lang = en
+
+[open-referral-1-0.changelog]
+file_filter = locale/<lang>/LC_MESSAGES/changelog.po
+source_file = _build/locale/changelog.pot
+source_lang = en
+
+[open-referral-1-0.credits]
+file_filter = locale/<lang>/LC_MESSAGES/credits.po
+source_file = _build/locale/credits.pot
+source_lang = en
+
+[open-referral-1-0.current_capabilities]
+file_filter = locale/<lang>/LC_MESSAGES/current_capabilities.po
+source_file = _build/locale/current_capabilities.pot
+source_lang = en
+
+[open-referral-1-0.design_principles]
+file_filter = locale/<lang>/LC_MESSAGES/design_principles.po
+source_file = _build/locale/design_principles.pot
+source_lang = en
+
+[open-referral-1-0.faq]
+file_filter = locale/<lang>/LC_MESSAGES/faq.po
+source_file = _build/locale/faq.pot
+source_lang = en
+
+[open-referral-1-0.governance]
+file_filter = locale/<lang>/LC_MESSAGES/governance.po
+source_file = _build/locale/governance.pot
+source_lang = en
+
+[open-referral-1-0.logical_model]
+file_filter = locale/<lang>/LC_MESSAGES/logical_model.po
+source_file = _build/locale/logical_model.pot
+source_lang = en
+
+[open-referral-1-0.producing_sharing]
+file_filter = locale/<lang>/LC_MESSAGES/producing_sharing.po
+source_file = _build/locale/producing_sharing.pot
+source_lang = en
+
+[open-referral-1-0.related_standards]
+file_filter = locale/<lang>/LC_MESSAGES/related_standards.po
+source_file = _build/locale/related_standards.pot
+source_lang = en
+
+[open-referral-1-0.roadmap]
+file_filter = locale/<lang>/LC_MESSAGES/roadmap.po
+source_file = _build/locale/roadmap.pot
+source_lang = en
+
+[open-referral-1-0.use_cases]
+file_filter = locale/<lang>/LC_MESSAGES/use_cases.po
+source_file = _build/locale/use_cases.pot
+source_lang = en
+
+[open-referral-1-0.vocabulary]
+file_filter = locale/<lang>/LC_MESSAGES/vocabulary.po
+source_file = _build/locale/vocabulary.pot
+source_lang = en
+

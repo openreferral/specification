@@ -64,6 +64,7 @@
                         {
                             "name": "url",
                             "type": "string",
+                            "format":"url",
                             "description":"The URL (website address) of the organization.",
                             "constraints": {
                                 "required":false
@@ -188,14 +189,6 @@
 
                         },
                         {
-                            "name": "location_id",
-                            "description": "The identifier of the location where this service is delivered.",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
                             "name": "program_id",
                             "description": "The identifier of the program this service is delivered under.",
                             "type": "string",
@@ -232,6 +225,7 @@
                             "name": "url",
                             "description": "URL of the service",
                             "type": "string",
+                            "format":"url",
                             "constraints": {
                                 "required":false
                             }
@@ -240,6 +234,7 @@
                             "name": "email",
                             "description": "Email address for the service",
                             "type": "string",
+                            "format":"email",
                             "constraints": {
                                 "required":false
                             }
@@ -251,6 +246,14 @@
                             "constraints": {
                                 "enum": ["active", "inactive", "defunct", "temporarily closed"],
                                 "required":true
+                            }
+                        },
+                        {
+                            "name":"interpretation_services",
+                            "description":"A description of any interpretation services available for accessing this service.",
+                            "type": "string",
+                            "constraints": {
+                                "required":false
                             }
                         },
                         {
@@ -270,8 +273,32 @@
                             }
                         },
                         {
+                            "name":"fees",
+                            "description":"Details of any charges for service users to access this service.",
+                            "type":"string",
+                            "constraints": {
+                                "required":false
+                            }
+                        },
+                        {
+                            "name":"accrediations",
+                            "description":"Details of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
+                            "type":"string",
+                            "constraints":{
+                                "required":false
+                            }
+                        },
+                        {
+                            "name":"licenses",
+                            "description":"An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
+                            "type":"string",
+                            "constraints":{
+                                "required":false
+                            }
+                        },
+                        {
                             "name":"taxonomy_ids",
-                            "description":"A comma separated list of identifiers from the taxonomy table. Advanced users may also include composite categories, using * to combine two taxonomy terms. For example: 'Food Pantry*Immigrants,Food Pantry*Homeless' (where 'Food Pantry','Immigrants' and 'Homeless' are identifiers in the taxonomy table), would indicate a food pantry service for the homeless or immigrants, but not available to other client groups.",
+                            "description":"(Deprecated) A comma separated list of identifiers from the taxonomy table. This field is deprecated in favour of using the service_taxonomy table.",
                             "type":"string",
                             "constraints": {
                                 "required":false
@@ -305,6 +332,64 @@
                 }
             },
             {
+                "name": "service_taxonomy",
+                "path": "services_taxonomy.csv",
+                "description":"The service taxonomy creates a link between a service and one or more classifications that describe the nature of the service provided.",
+                "format": "csv",
+                "mediatype": "text/csv",
+                "schema": {
+                    "fields": [   
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "description":"Each service must have a unique identifier.",
+                            "constraints": {
+                                "required":true,
+                                "unique":true
+                            }
+                        },
+                        {
+                            "name": "service_id",
+                            "description": "The identifier of the service at a given location.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
+                        },
+                        {
+                            "name":"taxonomy_id",
+                            "description":"The identifier of this classification from the taxonomy table.",
+                            "type":"string",
+                            "constraints": {
+                                "required":true
+                            }
+                        },
+                        {
+                            "name":"taxonomy_detail",
+                            "description":"For advanced uses, this field can indicate a constraint on this classification, using * to combine two taxonomy terms. For example: 'Food Pantry*Homeless' (where 'Food Pantry' and 'Homeless' are identifiers in the taxonomy table) to indicate a food pantry service for homeless clients, but not available to other client groups. In this example, there would be two entries in service_taxonomy, one with 'Food Pantry' and one for 'Homeless' in the taxonomy_id field, but both with the same 'Food Pantry*Homeless' value in the taxonomy_detail field.",
+                            "type":"string"
+                        }
+                    ],
+                    "primaryKey": "id",
+                    "foreignKeys": [
+                        {
+                            "fields": "service_id",
+                            "reference": {
+                                "resource": "service",
+                                "fields": "id"
+                            }
+                        },
+                        {
+                            "fields": "taxonomy_id",
+                            "reference": {
+                                "resource": "taxonomy",
+                                "fields": "id"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
                 "name": "service_at_location",
                 "path": "services_at_location.csv",
                 "description":"The services at location table creates a link between a service and a specific location.",
@@ -314,7 +399,7 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "Each entry must have a unique identifier",
+                            "description": "Each entry must have a unique identifier.",
                             "type": "string",
                             "constraints": {
                                 "required":true,
@@ -338,20 +423,9 @@
                             }
                         },
                         {
-                            "name": "url",
-                            "description": "If the service at this location has a specific URL, that can be provided here.",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "email",
-                            "description": "If the service at this location has a specific email address, that can be provided here.",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
+                            "name":"description",
+                            "description":"Any additional information that should be displayed to users about the service at this specific location.",
+                            "type":"string"
                         }
                     ],
                     "primaryKey": "id",
@@ -391,7 +465,7 @@
                         },
                         {
                             "name": "organization_id",
-                            "description": "Each location must belong to a single organization. The identifier of the organization should be given here.",
+                            "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organisation delivers at this location should be provided in the services_at_location table.",
                             "type": "string"
                         },
                         {
@@ -476,6 +550,11 @@
                             "type": "string"
                         },
                         {
+                            "name": "service_at_location_id",
+                            "description": "The identifier of the 'service at location' table entry, when this phone number is specific to a service in a particular location.",
+                            "type": "string"
+                        },
+                        {
                             "name": "number",
                             "description": "The phone number",
                             "type": "string",
@@ -490,12 +569,25 @@
                         },
                         {
                             "name": "type",
-                            "description": "Whether the phone number relates to a fixed or cellular phone",
-                            "type": "string"
+                            "description": "Indicates the type of phone service, drawing from the RFC6350 list of types (text (for SMS), voice, fax, cell, video, pager, textphone).",
+                            "type": "string",
+                            "constraints":{
+                                "enum":["text","voice","fax","cell","video","pager","textphone"]
+                            }
+                        },
+                        {
+                            "name":"language",
+                            "description":"A comma separated list of ISO 639-1, or ISO 639-2 [language codes](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the languages available from this phone service. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                            "type":"string"
+                        },
+                        {
+                            "name":"description",
+                            "description":"A description providing extra information about the phone service (e.g. any special arrangements for accessing, or details of availability at particular times.",
+                            "type":"string"
                         },
                         {
                             "name": "department",
-                            "description": "The department for which this is the phone number",
+                            "description": "(Deprecated) The department for which this is the phone number. This field is deprecated and will be removed in a future version of HSDS.",
                             "type": "string"
                         }
                     ],
@@ -528,8 +620,14 @@
                                 "resource": "contact",
                                 "fields": "id"
                             }
+                        },
+                        {
+                            "fields": "service_at_location_id",
+                            "reference": {
+                                "resource": "service_at_location",
+                                "fields": "id"
+                            }
                         }
-
                     ]
                 }
             },
@@ -559,7 +657,11 @@
                             "description": "The identifier of the service for which this is a contact",
                             "type": "string"
                         },
-
+                        {
+                            "name": "service_at_location_id",
+                            "description": "The identifier of the 'service at location' table entry, when this contact is specific to a service in a particular location.",
+                            "type": "string"
+                        },
                         {
                             "name": "name",
                             "description": "The name of the person",
@@ -578,7 +680,8 @@
                         {
                             "name": "email",
                             "description": "The email address of the person",
-                            "type": "string"
+                            "type": "string",
+                            "format":"email"
                         }
                     ],
                     "primaryKey": "id",
@@ -596,6 +699,13 @@
                                 "resource": "service",
                                 "fields": "id"
                             }
+                        },
+                        {
+                            "fields": "service_at_location_id",
+                            "reference": {
+                                "resource": "service_at_location",
+                                "fields": "id"
+                            }
                         }
                     ]
                 }
@@ -610,7 +720,7 @@
                     "fields": [
                         {
                             "name": "id",
-                            "description": "Each physical address must have a unique identifier",
+                            "description": "Each physical address must have a unique identifier.",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -618,17 +728,17 @@
                         },
                         {
                             "name": "location_id",
-                            "description": "The identifier of the location for which this is the address",
+                            "description": "The identifier of the location for which this is the address.",
                             "type": "string"
                         },
                         {
                             "name": "attention",
-                            "description": "The person or entity whose attention should be sought at the location",
+                            "description": "The person or entity whose attention should be sought at the location (Often included as 'care of' component of an address.)",
                             "type": "string"
                         },
                         {
                             "name": "address_1",
-                            "description": "The first line of the address",
+                            "description": "The first line(s) of the address, including office, building number and street.",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -636,30 +746,38 @@
                         },
                         {
                             "name": "address_2",
-                            "description": "The second line of the address",
+                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "The third line of the address",
+                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "The fourth line of the address",
+                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "city",
-                            "description": "The city in which the address is located",
+                            "description": "The city in which the address is located.",
                             "type": "string",
                             "constraints": {
                                 "required":true
                             }
                         },
                         {
+                            "name":"region",
+                            "description":"The region in which the address is located (optional).",
+                            "type":"string",
+                            "constraints": {
+                                "required":false
+                            }
+                        },
+                        {
                             "name": "state_province",
-                            "description": "The state or province in which the address is located",
+                            "description": "The state or province in which the address is located.",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -667,7 +785,7 @@
                         },
                         {
                             "name": "postal_code",
-                            "description": "The postal code for the address",
+                            "description": "The postal code for the address.",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -675,7 +793,7 @@
                         },
                         {
                             "name": "country",
-                            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
+                            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation).",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -712,53 +830,77 @@
                         },
                         {
                             "name": "location_id",
-                            "description": "The identifier of the location for which this is the postal address",
+                            "description": "The identifier of the location for which this is the postal address.",
                             "type": "string"
                         },
                         {
                             "name": "attention",
-                            "description": "The person or entity for whose attention mail should be marked",
+                            "description": "The person or entity whose attention should be sought at the location (Often included as 'care of' component of an address.)",
                             "type": "string"
                         },
                         {
                             "name": "address_1",
-                            "description": "The first line of the address",
-                            "type": "string"
+                            "description": "The first line(s) of the address, including office, building number and street.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "address_2",
-                            "description": "The second line of the address",
+                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "The third line of the address",
+                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "The fourth line of the address",
+                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "city",
-                            "description": "The city in which the address is located",
-                            "type": "string"
+                            "description": "The city in which the address is located.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
+                        },
+                        {
+                            "name":"region",
+                            "description":"The region in which the address is located (optional).",
+                            "type":"string",
+                            "constraints": {
+                                "required":false
+                            }
                         },
                         {
                             "name": "state_province",
-                            "description": "The state or province in which the address is located",
-                            "type": "string"
+                            "description": "The state or province in which the address is located.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "postal_code",
-                            "description": "The postal code for the address",
-                            "type": "string"
+                            "description": "The postal code for the address.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
                         },
                         {
                             "name": "country",
-                            "description": "The country in which the address is located",
-                            "type": "string"
+                            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
+
                         }
                     ],
                     "primaryKey": "id",
@@ -800,6 +942,11 @@
                             "type": "string"
                         },
                         {
+                            "name": "service_at_location_id",
+                            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
+                            "type": "string"
+                        },
+                        {
                             "name": "weekday",
                             "description": "The day of the week that this entry relates to",
                             "type": "integer",
@@ -833,6 +980,13 @@
                                 "resource": "service",
                                 "fields": "id"
                             }
+                        },
+                        {
+                            "fields": "service_at_location_id",
+                            "reference": {
+                                "resource": "service_at_location",
+                                "fields": "id"
+                            }
                         }
                     ]
                 }
@@ -861,6 +1015,11 @@
                         {
                             "name": "location_id",
                             "description": "The identifier of the location for which this is the holiday schedule",
+                            "type": "string"
+                        },
+                        {
+                            "name": "service_at_location_id",
+                            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
                             "type": "string"
                         },
                         {
@@ -913,6 +1072,13 @@
                                 "resource": "service",
                                 "fields": "id"
                             }
+                        },
+                        {
+                            "fields": "service_at_location_id",
+                            "reference": {
+                                "resource": "service_at_location",
+                                "fields": "id"
+                            }
                         }
                     ]
                 }
@@ -935,17 +1101,17 @@
                         },
                         {
                             "name": "organization_id",
-                            "description": "The identifier of the organization for which this entry describes the source of funding",
+                            "description": "The identifier of the organization in receipt of this funding.",
                             "type": "string"
                         },
                         {
                             "name": "service_id",
-                            "description": "The identifier of the service for which this entry describes the source of funding",
+                            "description": "The identifier of the service in receipt of this funding",
                             "type": "string"
                         },
                         {
                             "name": "source",
-                            "description": "Source of funds for organization or service",
+                            "description": "A free text description of the source of funds for this organization or service.",
                             "type": "string"
                         }
                     ],
@@ -1036,6 +1202,11 @@
                             "name": "service_area",
                             "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
                             "type": "string"
+                        },
+                        {
+                            "name":"description",
+                            "description":"A more detailed description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
+                            "type":"string"
                         }
                     ],
                     "primaryKey": "id",
@@ -1090,45 +1261,6 @@
                 }
             },
             {
-                "name": "fee",
-                "path": "fees.csv",
-                "description": "The fee table contains details of the costs of services, including those that are free",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this entry describes the costs of service",
-                            "type": "string"
-                        },
-                        {
-                            "name": "fee",
-                            "description": "A listing of the costs of services, including free ones",
-                            "type": "string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
                 "name": "payment_accepted",
                 "path": "payments_accepted.csv",
                 "description": "The payment_accepted table contains details of the methods of payment that can be used in order to pay for services",
@@ -1156,45 +1288,6 @@
                             "constraints": {
                                 "enum": ["cash","check","money order","credit card","medicare","SNAP","WIC","EBT"]
                             }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "intepretation_services",
-                "path": "interpretation_services.csv",
-                "description": "The interpretation_services table contains details of the interpretation services which are available at a certain service.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each service must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the services for which the entry describes the interpretation services available",
-                            "type": "string"
-                        },
-                        {
-                            "name": "language",
-                            "description": "Languages, other than English, for which interpretation is available. Languages are listed as ISO639-1 codes.",
-                            "type": "string"
                         }
                     ],
                     "primaryKey": "id",
@@ -1289,14 +1382,22 @@
                                 "enum": ["cd","deaf_interpreter","disabled_parking","elevator",
                                     "ramp","restroom","tape_braille","tty","wheelchair","wheelchair_van"]
                             }
+                        },
+                        {
+                            "name":"details",
+                            "description":"Any further details relating to the relevant accessibility arrangements at this location. E.g. whether advance notice is required to use an accessibility facility.",
+                             "type": "string",
+                             "constraints":{
+                                "required":false
+                             }
                         }
                     ],
                     "primaryKey": "id",
                     "foreignKeys": [
                         {
-                            "fields": "service_id",
+                            "fields": "location_id",
                             "reference": {
-                                "resource": "service",
+                                "resource": "location",
                                 "fields": "id"
                             }
                         }
@@ -1343,8 +1444,17 @@
                             "constraints": {
                                 "required":false
                             }
+                        },
+                        {
+                            "name":"vocabulary",
+                            "description":"If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility.",
+                            "type":"string",
+                            "constraints":{
+                                "required":false
+                            }
                         }
-                    ]
+                    ],
+                    "primaryKey": "id"
                 }
             },
             {
