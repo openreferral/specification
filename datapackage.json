@@ -320,13 +320,6 @@
                                 "resource": "program",
                                 "fields": "id"
                             }
-                        },
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
                         }
                     ]
                 }
