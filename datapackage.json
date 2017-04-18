@@ -443,7 +443,7 @@
             {
                 "name": "location",
                 "path": "locations.csv",
-                "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have may locations.",
+                "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
