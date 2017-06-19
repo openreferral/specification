@@ -281,7 +281,7 @@
                             }
                         },
                         {
-                            "name":"accrediations",
+                            "name":"accreditations",
                             "description":"Details of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
                             "type":"string",
                             "constraints":{
