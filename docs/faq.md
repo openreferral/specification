@@ -84,7 +84,7 @@ You can also see deployments of the Ohana API and compatible APIs [here](https:/
 
 ### Who do I contact if I need help with this project?
 
-You can contact Greg Bloom ([@greggish](https://github.com/greggish) | [bloom@openreferral.org](mailto:bloom@openreferral.org), the chief organizing officer for Open Referral.
+You can contact Greg Bloom ([@greggish](https://github.com/greggish) | [bloom@openreferral.org](mailto:bloom@openreferral.org)), the chief organizing officer for Open Referral.
 
 
 ### What languages is this project in?
