@@ -137,3 +137,6 @@ When a single row contains multiple foreign keys, these will be interpreted as '
 
 E.g. a phone number applies to the service OR the organisation OR the service_at_location. 
 
+### ER Diagram for Human Services Data Specification v1.1
+![ER Diagram HSDS v1.1](/../er_diagram/OPENREF ER DIAGRAM V1.1.png)
+
