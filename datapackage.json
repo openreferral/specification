@@ -1,1637 +1,1581 @@
-      {
-        "name": "human_services_data",
-        "title": "Human Services Data Specification Template",
-        "description":"This is a template datapackage.json file for producing a Tabular Data Package of data according to the Human Services Data Specification. You should provide an edited version of this file as part of any datapackage you provide, updating the title, description, license and homepage information to reflect the data you are publishing.", 
-        "license": {
-                "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-                "type": "CC-BY-SA-4.0",
-                "name": "Creative Commons Attribution-ShareAlike 4.0"
-        },
-        "version":"1.0",
-        "homepage":"http://docs.openreferral.org",
-        "resources": [
-            {
-                "name": "organization",
-                "path": "organizations.csv",
-                "description":"The organization record is used to provide basic description and details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "type": "string",
-                            "description":"Each organization must have a unique identifier.",
-                            "format":"uuid",
-                            "constraints": {
-                                "required":true,
-                                "unique":true
-                            }
-                        },
-                        {
-                            "name": "name",
-                            "type": "string",
-                            "description":"The official or public name of the organization.",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "alternate_name",
-                            "type": "string",
-                            "description":"Alternative or commonly used name for the organization.",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "description",
-                            "type": "string",
-                            "description":"A brief summary about the organization. It can contain markup such as HTML or Markdown.",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "email",
-                            "type": "string",
-                            "description":"The contact e-mail address for the organization.",
-                            "format":"email",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "url",
-                            "type": "string",
-                            "format":"url",
-                            "description":"The URL (website address) of the organization.",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "tax_status",
-                            "type": "string",
-                            "description":"Government assigned tax designation for for tax-exempt organizations.",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "tax_id",
-                            "type": "string",
-                            "description":"A government issued identifier used for the purpose of tax administration.",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "year_incorporated",
-                            "type": "date",
-                            "format": "%Y",
-                            "description":"The year in which the organization was legally formed.",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "legal_status",
-                            "type": "string",
-                            "description":"The legal status defines the conditions that an organization is operating under; e.g. non-profit, private corporation or a government organization.",
-                            "constraints": {
-                                "required":false
-                            }
-                        }
-                    ],
-                    "primaryKey": "id"
-                }
-            },
-            {
-                "name": "program",
-                "path": "programs.csv",
-                "description":"Some organizations organise their services into programs. A program brings together a number of related services.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "type": "string",
-                            "description":"Each program must have a unique identifier.",
-                            "constraints": {
-                                "required":true,
-                                "unique":true
-                            }
-                        },
-                        {
-                            "name": "organization_id",
-                            "type": "string",
-                            "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
-                            "format":"uuid",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "name",
-                            "description": "The name of the program",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "alternate_name",
-                            "description": "An alternative name for the program",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "organization_id",
-                            "reference": {
-                                "resource": "organization",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "service",
-                "description":"Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
-                "path": "services.csv",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "type": "string",
-                            "description":"Each service must have a unique identifier.",
-                            "constraints": {
-                                "required":true,
-                                "unique":true
-                            }
-                        },
-                        {
-                            "name": "organization_id",
-                            "type": "string",
-                            "description": "The identifier of the organization that provides this service.",
-                            "constraints": {
-                                "required":true
-                            }
-
-                        },
-                        {
-                            "name": "program_id",
-                            "description": "The identifier of the program this service is delivered under.",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "name",
-                            "description": "The official or public name of the service.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "alternate_name",
-                            "description": "Alternative or commonly used name for a service.",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
-
-                        },
-                        {
-                            "name":"description",
-                            "description":"A description of the service.",
-                            "type":"string",
-                            "constraints":{
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "url",
-                            "description": "URL of the service",
-                            "type": "string",
-                            "format":"url",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "email",
-                            "description": "Email address for the service",
-                            "type": "string",
-                            "format":"email",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "status",
-                            "description": "The current status of the service.",
-                            "type": "string",
-                            "constraints": {
-                                "enum": ["active", "inactive", "defunct", "temporarily closed"],
-                                "required":true
-                            }
-                        },
-                        {
-                            "name":"interpretation_services",
-                            "description":"A description of any interpretation services available for accessing this service.",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "application_process",
-                            "description": "The steps needed to access the service.",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "wait_time",
-                            "description": "Time a client may expect to wait before receiving a service.",
-                            "type": "string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name":"fees",
-                            "description":"Details of any charges for service users to access this service.",
-                            "type":"string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name":"accrediations",
-                            "description":"Details of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
-                            "type":"string",
-                            "constraints":{
-                                "required":false
-                            }
-                        },
-                        {
-                            "name":"licenses",
-                            "description":"An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
-                            "type":"string",
-                            "constraints":{
-                                "required":false
-                            }
-                        },
-                        {
-                            "name":"taxonomy_ids",
-                            "description":"(Deprecated) A comma separated list of identifiers from the taxonomy table. This field is deprecated in favour of using the service_taxonomy table.",
-                            "type":"string",
-                            "constraints": {
-                                "required":false
-                            }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "organization_id",
-                            "reference": {
-                                "resource": "organization",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "program_id",
-                            "reference": {
-                                "resource": "program",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "service_taxonomy",
-                "path": "services_taxonomy.csv",
-                "description":"The service taxonomy creates a link between a service and one or more classifications that describe the nature of the service provided.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [   
-                        {
-                            "name": "id",
-                            "type": "string",
-                            "description":"Each service must have a unique identifier.",
-                            "constraints": {
-                                "required":true,
-                                "unique":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service at a given location.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name":"taxonomy_id",
-                            "description":"The identifier of this classification from the taxonomy table.",
-                            "type":"string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name":"taxonomy_detail",
-                            "description":"For advanced uses, this field can indicate a constraint on this classification, using * to combine two taxonomy terms. For example: 'Food Pantry*Homeless' (where 'Food Pantry' and 'Homeless' are identifiers in the taxonomy table) to indicate a food pantry service for homeless clients, but not available to other client groups. In this example, there would be two entries in service_taxonomy, one with 'Food Pantry' and one for 'Homeless' in the taxonomy_id field, but both with the same 'Food Pantry*Homeless' value in the taxonomy_detail field.",
-                            "type":"string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "taxonomy_id",
-                            "reference": {
-                                "resource": "taxonomy",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "service_at_location",
-                "path": "services_at_location.csv",
-                "description":"The services at location table creates a link between a service and a specific location.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true,
-                                "unique":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service at a given location.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "location_id",
-                            "description": "The identifier of the location where this service operates.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name":"description",
-                            "description":"Any additional information that should be displayed to users about the service at this specific location.",
-                            "type":"string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "location",
-                "path": "locations.csv",
-                "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have may locations.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each location must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "organization_id",
-                            "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organisation delivers at this location should be provided in the services_at_location table.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "name",
-                            "description": "The name of the location",
-                            "type": "string"
-                        },
-                        {
-                            "name": "alternate_name",
-                            "description": "An alternative name for the location",
-                            "type": "string"
-                        },
-                        {
-                            "name":"description",
-                            "description":"A description of this location.",
-                            "type":"string",
-                            "constraints":{
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "transportation",
-                            "description": "A description of the access to public or private transportation to and from the location.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "latitude",
-                            "description": "Y coordinate of location expressed in decimal degrees in WGS84 datum.",
-                            "type": "number"
-                        },
-                        {
-                            "name": "longitude",
-                            "description": "X coordinate of location expressed in decimal degrees in WGS84 datum.",
-                            "type": "number"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "organization_id",
-                            "reference": {
-                                "resource": "organization",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "phone",
-                "path": "phones.csv",
-                "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },{
-                            "name": "location_id",
-                            "description": "The identifier of the location where this phone number is located",
-                            "type": "string"
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this is the phone number",
-                            "type": "string"
-                        },
-                        {
-                            "name": "organization_id",
-                            "description": "The identifier of the organisation for which this is the phone number",
-                            "type": "string"
-                        },
-                        {
-                            "name": "contact_id",
-                            "description": "The identifier of the contact for which this is the phone number",
-                            "type": "string"
-                        },
-                        {
-                            "name": "service_at_location_id",
-                            "description": "The identifier of the 'service at location' table entry, when this phone number is specific to a service in a particular location.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "number",
-                            "description": "The phone number",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "extension",
-                            "description": "The extension of the phone number",
-                            "type": "number"
-                        },
-                        {
-                            "name": "type",
-                            "description": "Indicates the type of phone service, drawing from the RFC6350 list of types (text (for SMS), voice, fax, cell, video, pager, textphone).",
-                            "type": "string",
-                            "constraints":{
-                                "enum":["text","voice","fax","cell","video","pager","textphone"]
-                            }
-                        },
-                        {
-                            "name":"language",
-                            "description":"A comma separated list of ISO 639-1, or ISO 639-2 [language codes](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the languages available from this phone service. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
-                            "type":"string"
-                        },
-                        {
-                            "name":"description",
-                            "description":"A description providing extra information about the phone service (e.g. any special arrangements for accessing, or details of availability at particular times.",
-                            "type":"string"
-                        },
-                        {
-                            "name": "department",
-                            "description": "(Deprecated) The department for which this is the phone number. This field is deprecated and will be removed in a future version of HSDS.",
-                            "type": "string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "organization_id",
-                            "reference": {
-                                "resource": "organization",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "contact_id",
-                            "reference": {
-                                "resource": "contact",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "service_at_location_id",
-                            "reference": {
-                                "resource": "service_at_location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "contact",
-                "path": "contacts.csv",
-                "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each contact must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "organization_id",
-                            "description": "The identifier of the organization for which this is a contact",
-                            "type": "string"
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this is a contact",
-                            "type": "string"
-                        },
-                        {
-                            "name": "service_at_location_id",
-                            "description": "The identifier of the 'service at location' table entry, when this contact is specific to a service in a particular location.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "name",
-                            "description": "The name of the person",
-                            "type": "string"
-                        },
-                        {
-                            "name": "title",
-                            "description": "The job title of the person",
-                            "type": "string"
-                        },
-                        {
-                            "name": "department",
-                            "description": "The department that the person is part of",
-                            "type": "string"
-                        },
-                        {
-                            "name": "email",
-                            "description": "The email address of the person",
-                            "type": "string",
-                            "format":"email"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "organization_id",
-                            "reference": {
-                                "resource": "organization",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "service_at_location_id",
-                            "reference": {
-                                "resource": "service_at_location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "physical_address",
-                "path": "physical_addresses.csv",
-                "description": "The addresses table contains the physical addresses for locations",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each physical address must have a unique identifier.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "location_id",
-                            "description": "The identifier of the location for which this is the address.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "attention",
-                            "description": "The person or entity whose attention should be sought at the location (Often included as 'care of' component of an address.)",
-                            "type": "string"
-                        },
-                        {
-                            "name": "address_1",
-                            "description": "The first line(s) of the address, including office, building number and street.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "address_2",
-                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
-                            "type": "string"
-                        },
-                        {
-                            "name": "address_3",
-                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
-                            "type": "string"
-                        },
-                        {
-                            "name": "address_4",
-                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
-                            "type": "string"
-                        },
-                        {
-                            "name": "city",
-                            "description": "The city in which the address is located.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name":"region",
-                            "description":"The region in which the address is located (optional).",
-                            "type":"string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "state_province",
-                            "description": "The state or province in which the address is located.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "postal_code",
-                            "description": "The postal code for the address.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "country",
-                            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation).",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "postal_address",
-                "path": "postal_addresses.csv",
-                "description": "The postal_address table contains the postal addresses for mail to a certain location. This may differ from the physical location.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each postal address must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "location_id",
-                            "description": "The identifier of the location for which this is the postal address.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "attention",
-                            "description": "The person or entity whose attention should be sought at the location (Often included as 'care of' component of an address.)",
-                            "type": "string"
-                        },
-                        {
-                            "name": "address_1",
-                            "description": "The first line(s) of the address, including office, building number and street.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "address_2",
-                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
-                            "type": "string"
-                        },
-                        {
-                            "name": "address_3",
-                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
-                            "type": "string"
-                        },
-                        {
-                            "name": "address_4",
-                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
-                            "type": "string"
-                        },
-                        {
-                            "name": "city",
-                            "description": "The city in which the address is located.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name":"region",
-                            "description":"The region in which the address is located (optional).",
-                            "type":"string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name": "state_province",
-                            "description": "The state or province in which the address is located.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "postal_code",
-                            "description": "The postal code for the address.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "country",
-                            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "regular_schedule",
-                "path": "regular_schedules.csv",
-                "description": "The regular_schedule table contains details of when a service or location is open under normal circumstances. Each entry in the table can relate to one and only one day of the week.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this is the regular schedule",
-                            "type": "string"
-                        },
-                        {
-                            "name": "location_id",
-                            "description": "The identifier of the location for which this is the regular schedule",
-                            "type": "string"
-                        },
-                        {
-                            "name": "service_at_location_id",
-                            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "weekday",
-                            "description": "The day of the week that this entry relates to",
-                            "type": "integer",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "opens_at",
-                            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time. ",
-                            "type": "time"
-                        },
-                        {
-                            "name": "closes_at",
-                            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
-                            "type": "time"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "service_at_location_id",
-                            "reference": {
-                                "resource": "service_at_location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "holiday_schedule",
-                "path": "holiday_schedules.csv",
-                "description": "The holiday_schedule table contains details of when a service or location is open during holidays. Each entry in the table describes a period of one or more days, and the operating times on those days.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this is the holiday schedule",
-                            "type": "string"
-                        },
-                        {
-                            "name": "location_id",
-                            "description": "The identifier of the location for which this is the holiday schedule",
-                            "type": "string"
-                        },
-                        {
-                            "name": "service_at_location_id",
-                            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "closed",
-                            "description": "Indicates if a service or location is closed during a public holiday",
-                            "type": "boolean",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "opens_at",
-                            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
-                            "type": "time"
-                        },
-                        {
-                            "name": "closes_at",
-                            "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
-                            "type": "time"
-                        },
-                        {
-                            "name": "start_date",
-                            "description": "The first day that a service or location is closed during a public or private holiday",
-                            "type": "date",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "end_date",
-                            "description": "The last day that a service or location is closed during a public or private holiday",
-                            "type": "date",
-                            "constraints": {
-                                "required":true
-                            }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "service_at_location_id",
-                            "reference": {
-                                "resource": "service_at_location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "funding",
-                "path": "funding.csv",
-                "description": "The funding table describes the sources of funding for a service or organisation",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "organization_id",
-                            "description": "The identifier of the organization in receipt of this funding.",
-                            "type": "string"
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service in receipt of this funding",
-                            "type": "string"
-                        },
-                        {
-                            "name": "source",
-                            "description": "A free text description of the source of funds for this organization or service.",
-                            "type": "string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "organization_id",
-                            "reference": {
-                                "resource": "organization",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "eligibility",
-                "path": "eligibility.csv",
-                "description": "The eligibility tables contains details of the eligibility criteria for particular services",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this entry describes the eligibility criteria",
-                            "type": "string"
-                        },
-                        {
-                            "name": "eligibility",
-                            "description": "The rules or guidelines that determine who can receive the service.",
-                            "type": "string",
-                            "constraints": {
-                                "enum": ["adult","child","teen","family","female","male",
-                                    "Transgender", "Transgender - M to F", "Transgender - F to M" ]
-                            }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "service_area",
-                "path": "service_areas.csv",
-                "description": "The service_area table contains details of the geographic area for which a service is available.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each service area must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this entry describes the service area",
-                            "type": "string"
-                        },
-                        {
-                            "name": "service_area",
-                            "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
-                            "type": "string"
-                        },
-                        {
-                            "name":"description",
-                            "description":"A more detailed description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
-                            "type":"string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "required_document",
-                "path": "required_documents.csv",
-                "description": "The required_document table contains details of any documents that are required in order to access or use services.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each document must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this entry describes the required document",
-                            "type": "string"
-                        },
-                        {
-                            "name": "document",
-                            "description": "The document required to apply for or receive the service. e.g. 'Government-issued ID', 'EU Passport'",
-                            "type": "string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "payment_accepted",
-                "path": "payments_accepted.csv",
-                "description": "The payment_accepted table contains details of the methods of payment that can be used in order to pay for services",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the services for which the entry describes the accepted payment methods",
-                            "type": "string"
-                        },
-                        {
-                            "name": "payment",
-                            "description": "The methods of payment accepted for the service",
-                            "type": "string",
-                            "constraints": {
-                                "enum": ["cash","check","money order","credit card","medicare","SNAP","WIC","EBT"]
-                            }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "language",
-                "path": "languages.csv",
-                "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with intepretation.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each language must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which the entry describes the languages in which services are delivered",
-                            "type": "string"
-                        },
-                        {
-                            "name": "location_id",
-                            "description": "The identifier of the location for which the entry describes the languages in which services are delivered",
-                            "type": "string"
-                        },
-                        {
-                            "name": "language",
-                            "description": "Languages, other than English, in which the service is delivered. Languages are listed as ISO639-1 codes.",
-                            "type": "string"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "accessibility_for_disabilities",
-                "path": "accessibility_for_disabilities.csv",
-                "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "location_id",
-                            "description": "The identifier of the location for which the entry describes the accessibility provision",
-                            "type": "string"
-                        },
-                        {
-                            "name": "accessibility",
-                            "description": "Description of assistance or infrastructure that facilitate access to clients with disabilities.",
-                            "type": "string",
-                            "constraints": {
-                                "enum": ["cd","deaf_interpreter","disabled_parking","elevator",
-                                    "ramp","restroom","tape_braille","tty","wheelchair","wheelchair_van"]
-                            }
-                        },
-                        {
-                            "name":"details",
-                            "description":"Any further details relating to the relevant accessibility arrangements at this location. E.g. whether advance notice is required to use an accessibility facility.",
-                             "type": "string",
-                             "constraints":{
-                                "required":false
-                             }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "taxonomy",
-                "path": "taxonomy.csv",
-                "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy table contains a list of taxonomy identifiers, their names, and, for hierarchical taxonomies, their structure.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each taxonomy entry must have a unique identifier. If combining multiple taxonomies with overlapping identifiers, use a prefix to distinguish them.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true,
-                                "unique":true
-                            }
-                        },
-                        {
-                            "name": "name",
-                            "description": "The name of this taxonomy term or category.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name":"parent_id",
-                            "description":"If this is a child category in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
-                            "type":"string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name":"parent_name",
-                            "description":"If this is a child category in a hierarchical taxonomy, give the name of the parent category. For top-level categories, this should be left blank.",
-                            "type":"string",
-                            "constraints": {
-                                "required":false
-                            }
-                        },
-                        {
-                            "name":"vocabulary",
-                            "description":"If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility.",
-                            "type":"string",
-                            "constraints":{
-                                "required":false
-                            }
-                        }
-                    ],
-                    "primaryKey": "id"
-                }
-            },
-            {
-                "name": "metadata",
-                "path": "metadata.csv",
-                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "resource_id",
-                            "description": "Each service, program. location, address, or contact will have a unique identifier. Unique ids are UUIDs.",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "last_action_date",
-                            "description": "The date when data was changed.",
-                            "type": "datetime",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "last_action_type",
-                            "description": "The kind of change made to the data; eg create, update, delete",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "field_name",
-                            "description": "The name of field that has been modified",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "previous_value",
-                            "description": "The previous value of a field that has been updated",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "replacement_value",
-                            "description": "The new value of a field that has been updated",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "updated_by",
-                            "description": "The name of the person who updated a value",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "organization",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "program",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "address",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "contact",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "holiday_schedules",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "regular_schedules",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "phone",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-           {
-                "name": "meta_table_description",
-                "path": "meta_table_descriptions.csv",
-                "description": "The meta_table_description table contains metadata about individual tables.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
-                        {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
-                            "type": "string",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "name",
-                            "description": "",
-                            "type": "string"
-                        },
-                        {
-                            "name": "language",
-                            "description": "",
-                            "type": "string"
-                        },
-                        {
-                            "name": "character_set",
-                            "description": "",
-                            "type": "string"
-                        }
-                    ],
-                    "primaryKey": "id"
-                }
+{
+  "name": "human_services_data",
+  "title": "Human Services Data Specification Template",
+  "description": "This is a template datapackage.json file for producing a Tabular Data Package of data according to the Human Services Data Specification. You should provide an edited version of this file as part of any datapackage you provide, updating the title, description, license and homepage information to reflect the data you are publishing.",
+  "license": {
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "type": "CC-BY-SA-4.0",
+    "name": "Creative Commons Attribution-ShareAlike 4.0"
+  },
+  "version": "1.1",
+  "homepage": "http://docs.openreferral.org",
+  "resources": [{
+      "name": "organization",
+      "path": "organizations.csv",
+      "description": "The organization record is used to provide basic description and details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "type": "string",
+            "description": "Each organization must have a unique identifier.",
+            "format": "uuid",
+            "constraints": {
+              "required": true,
+              "unique": true
             }
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "The official or public name of the organization.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "alternate_name",
+            "type": "string",
+            "description": "Alternative or commonly used name for the organization.",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": "A brief summary about the organization. It can contain markup such as HTML or Markdown.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "email",
+            "type": "string",
+            "description": "The contact e-mail address for the organization.",
+            "format": "email",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "format": "uri",
+            "description": "The URL (website address) of the organization.",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "tax_status",
+            "type": "string",
+            "description": "Government assigned tax designation for for tax-exempt organizations.",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "tax_id",
+            "type": "string",
+            "description": "A government issued identifier used for the purpose of tax administration.",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "year_incorporated",
+            "type": "date",
+            "format": "%Y",
+            "description": "The year in which the organization was legally formed.",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "legal_status",
+            "type": "string",
+            "description": "The legal status defines the conditions that an organization is operating under; e.g. non-profit, private corporation or a government organization.",
+            "constraints": {
+              "required": false
+            }
+          }
+        ],
+        "primaryKey": ["id"]
+      }
+    },
+    {
+      "name": "program",
+      "path": "programs.csv",
+      "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "type": "string",
+            "description": "Each program must have a unique identifier.",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "organization_id",
+            "type": "string",
+            "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
+            "format": "uuid",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "name",
+            "description": "The name of the program",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "alternate_name",
+            "description": "An alternative name for the program",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["organization_id"],
+          "reference": {
+            "resource": "organization",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "service",
+      "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
+      "path": "services.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "type": "string",
+            "description": "Each service must have a unique identifier.",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "organization_id",
+            "type": "string",
+            "description": "The identifier of the organization that provides this service.",
+            "constraints": {
+              "required": true
+            }
+
+          },
+          {
+            "name": "program_id",
+            "description": "The identifier of the program this service is delivered under.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "name",
+            "description": "The official or public name of the service.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "alternate_name",
+            "description": "Alternative or commonly used name for a service.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+
+          },
+          {
+            "name": "description",
+            "description": "A description of the service.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "url",
+            "description": "URL of the service",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "email",
+            "description": "Email address for the service",
+            "type": "string",
+            "format": "email",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "status",
+            "description": "The current status of the service.",
+            "type": "string",
+            "constraints": {
+              "enum": ["active", "inactive", "defunct", "temporarily closed"],
+              "required": true
+            }
+          },
+          {
+            "name": "interpretation_services",
+            "description": "A description of any interpretation services available for accessing this service.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "application_process",
+            "description": "The steps needed to access the service.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "wait_time",
+            "description": "Time a client may expect to wait before receiving a service.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "fees",
+            "description": "Details of any charges for service users to access this service.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "accrediations",
+            "description": "Details of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "licenses",
+            "description": "An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "taxonomy_ids",
+            "description": "(Deprecated) A comma separated list of identifiers from the taxonomy table. This field is deprecated in favour of using the service_taxonomy table.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["organization_id"],
+            "reference": {
+              "resource": "organization",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["program_id"],
+            "reference": {
+              "resource": "program",
+              "fields": ["id"]
+            }
+          }
         ]
+      }
+    },
+    {
+      "name": "service_taxonomy",
+      "path": "services_taxonomy.csv",
+      "description": "The service taxonomy creates a link between a service and one or more classifications that describe the nature of the service provided.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "type": "string",
+            "description": "Each service must have a unique identifier.",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service at a given location.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "taxonomy_id",
+            "description": "The identifier of this classification from the taxonomy table.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "taxonomy_detail",
+            "description": "For advanced uses, this field can indicate a constraint on this classification, using * to combine two taxonomy terms. For example: 'Food Pantry*Homeless' (where 'Food Pantry' and 'Homeless' are identifiers in the taxonomy table) to indicate a food pantry service for homeless clients, but not available to other client groups. In this example, there would be two entries in service_taxonomy, one with 'Food Pantry' and one for 'Homeless' in the taxonomy_id field, but both with the same 'Food Pantry*Homeless' value in the taxonomy_detail field.",
+            "type": "string"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["service_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["taxonomy_id"],
+            "reference": {
+              "resource": "taxonomy",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "service_at_location",
+      "path": "services_at_location.csv",
+      "description": "The services at location table creates a link between a service and a specific location.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier.",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service at a given location.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "location_id",
+            "description": "The identifier of the location where this service operates.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "description",
+            "description": "Any additional information that should be displayed to users about the service at this specific location.",
+            "type": "string"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["service_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["location_id"],
+            "reference": {
+              "resource": "location",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "location",
+      "path": "locations.csv",
+      "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each location must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "organization_id",
+            "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organisation delivers at this location should be provided in the services_at_location table.",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "description": "The name of the location",
+            "type": "string"
+          },
+          {
+            "name": "alternate_name",
+            "description": "An alternative name for the location",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "description": "A description of this location.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "transportation",
+            "description": "A description of the access to public or private transportation to and from the location.",
+            "type": "string"
+          },
+          {
+            "name": "latitude",
+            "description": "Y coordinate of location expressed in decimal degrees in WGS84 datum.",
+            "type": "number"
+          },
+          {
+            "name": "longitude",
+            "description": "X coordinate of location expressed in decimal degrees in WGS84 datum.",
+            "type": "number"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["organization_id"],
+          "reference": {
+            "resource": "organization",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "phone",
+      "path": "phones.csv",
+      "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }, {
+            "name": "location_id",
+            "description": "The identifier of the location where this phone number is located",
+            "type": "string"
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service for which this is the phone number",
+            "type": "string"
+          },
+          {
+            "name": "organization_id",
+            "description": "The identifier of the organisation for which this is the phone number",
+            "type": "string"
+          },
+          {
+            "name": "contact_id",
+            "description": "The identifier of the contact for which this is the phone number",
+            "type": "string"
+          },
+          {
+            "name": "service_at_location_id",
+            "description": "The identifier of the 'service at location' table entry, when this phone number is specific to a service in a particular location.",
+            "type": "string"
+          },
+          {
+            "name": "number",
+            "description": "The phone number",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "extension",
+            "description": "The extension of the phone number",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "description": "Indicates the type of phone service, drawing from the RFC6350 list of types (text (for SMS), voice, fax, cell, video, pager, textphone).",
+            "type": "string",
+            "constraints": {
+              "enum": ["text", "voice", "fax", "cell", "video", "pager", "textphone"]
+            }
+          },
+          {
+            "name": "language",
+            "description": "A comma separated list of ISO 639-1, or ISO 639-2 [language codes](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the languages available from this phone service. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "description": "A description providing extra information about the phone service (e.g. any special arrangements for accessing, or details of availability at particular times.",
+            "type": "string"
+          },
+          {
+            "name": "department",
+            "description": "(Deprecated) The department for which this is the phone number. This field is deprecated and will be removed in a future version of HSDS.",
+            "type": "string"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["organization_id"],
+            "reference": {
+              "resource": "organization",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["location_id"],
+            "reference": {
+              "resource": "location",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["service_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["contact_id"],
+            "reference": {
+              "resource": "contact",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["service_at_location_id"],
+            "reference": {
+              "resource": "service_at_location",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "contact",
+      "path": "contacts.csv",
+      "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each contact must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "organization_id",
+            "description": "The identifier of the organization for which this is a contact",
+            "type": "string"
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service for which this is a contact",
+            "type": "string"
+          },
+          {
+            "name": "service_at_location_id",
+            "description": "The identifier of the 'service at location' table entry, when this contact is specific to a service in a particular location.",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "description": "The name of the person",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "description": "The job title of the person",
+            "type": "string"
+          },
+          {
+            "name": "department",
+            "description": "The department that the person is part of",
+            "type": "string"
+          },
+          {
+            "name": "email",
+            "description": "The email address of the person",
+            "type": "string",
+            "format": "email"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["organization_id"],
+            "reference": {
+              "resource": "organization",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["service_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["service_at_location_id"],
+            "reference": {
+              "resource": "service_at_location",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "physical_address",
+      "path": "physical_addresses.csv",
+      "description": "The addresses table contains the physical addresses for locations",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each physical address must have a unique identifier.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "location_id",
+            "description": "The identifier of the location for which this is the address.",
+            "type": "string"
+          },
+          {
+            "name": "attention",
+            "description": "The person or entity whose attention should be sought at the location (Often included as 'care of' component of an address.)",
+            "type": "string"
+          },
+          {
+            "name": "address_1",
+            "description": "The first line(s) of the address, including office, building number and street.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "address_2",
+            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+            "type": "string"
+          },
+          {
+            "name": "address_3",
+            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+            "type": "string"
+          },
+          {
+            "name": "address_4",
+            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+            "type": "string"
+          },
+          {
+            "name": "city",
+            "description": "The city in which the address is located.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "region",
+            "description": "The region in which the address is located (optional).",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "state_province",
+            "description": "The state or province in which the address is located.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "postal_code",
+            "description": "The postal code for the address.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "country",
+            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation).",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["location_id"],
+          "reference": {
+            "resource": "location",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "postal_address",
+      "path": "postal_addresses.csv",
+      "description": "The postal_address table contains the postal addresses for mail to a certain location. This may differ from the physical location.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each postal address must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "location_id",
+            "description": "The identifier of the location for which this is the postal address.",
+            "type": "string"
+          },
+          {
+            "name": "attention",
+            "description": "The person or entity whose attention should be sought at the location (Often included as 'care of' component of an address.)",
+            "type": "string"
+          },
+          {
+            "name": "address_1",
+            "description": "The first line(s) of the address, including office, building number and street.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "address_2",
+            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+            "type": "string"
+          },
+          {
+            "name": "address_3",
+            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+            "type": "string"
+          },
+          {
+            "name": "address_4",
+            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+            "type": "string"
+          },
+          {
+            "name": "city",
+            "description": "The city in which the address is located.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "region",
+            "description": "The region in which the address is located (optional).",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "state_province",
+            "description": "The state or province in which the address is located.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "postal_code",
+            "description": "The postal code for the address.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "country",
+            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["location_id"],
+          "reference": {
+            "resource": "location",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "regular_schedule",
+      "path": "regular_schedules.csv",
+      "description": "The regular_schedule table contains details of when a service or location is open under normal circumstances. Each entry in the table can relate to one and only one day of the week.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service for which this is the regular schedule",
+            "type": "string"
+          },
+          {
+            "name": "location_id",
+            "description": "The identifier of the location for which this is the regular schedule",
+            "type": "string"
+          },
+          {
+            "name": "service_at_location_id",
+            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
+            "type": "string"
+          },
+          {
+            "name": "weekday",
+            "description": "The day of the week that this entry relates to",
+            "type": "integer",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "opens_at",
+            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time. ",
+            "type": "time"
+          },
+          {
+            "name": "closes_at",
+            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
+            "type": "time"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["location_id"],
+            "reference": {
+              "resource": "location",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["service_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["service_at_location_id"],
+            "reference": {
+              "resource": "service_at_location",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "holiday_schedule",
+      "path": "holiday_schedules.csv",
+      "description": "The holiday_schedule table contains details of when a service or location is open during holidays. Each entry in the table describes a period of one or more days, and the operating times on those days.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service for which this is the holiday schedule",
+            "type": "string"
+          },
+          {
+            "name": "location_id",
+            "description": "The identifier of the location for which this is the holiday schedule",
+            "type": "string"
+          },
+          {
+            "name": "service_at_location_id",
+            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
+            "type": "string"
+          },
+          {
+            "name": "closed",
+            "description": "Indicates if a service or location is closed during a public holiday",
+            "type": "boolean",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "opens_at",
+            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
+            "type": "time"
+          },
+          {
+            "name": "closes_at",
+            "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
+            "type": "time"
+          },
+          {
+            "name": "start_date",
+            "description": "The first day that a service or location is closed during a public or private holiday",
+            "type": "date",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "end_date",
+            "description": "The last day that a service or location is closed during a public or private holiday",
+            "type": "date",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["location_id"],
+            "reference": {
+              "resource": "location",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["service_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["service_at_location_id"],
+            "reference": {
+              "resource": "service_at_location",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "funding",
+      "path": "funding.csv",
+      "description": "The funding table describes the sources of funding for a service or organisation",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "organization_id",
+            "description": "The identifier of the organization in receipt of this funding.",
+            "type": "string"
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service in receipt of this funding",
+            "type": "string"
+          },
+          {
+            "name": "source",
+            "description": "A free text description of the source of funds for this organization or service.",
+            "type": "string"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["service_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["organization_id"],
+            "reference": {
+              "resource": "organization",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "eligibility",
+      "path": "eligibility.csv",
+      "description": "The eligibility tables contains details of the eligibility criteria for particular services",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service for which this entry describes the eligibility criteria",
+            "type": "string"
+          },
+          {
+            "name": "eligibility",
+            "description": "The rules or guidelines that determine who can receive the service.",
+            "type": "string",
+            "constraints": {
+              "enum": ["adult", "child", "teen", "family", "female", "male",
+                "Transgender", "Transgender - M to F", "Transgender - F to M"
+              ]
+            }
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["service_id"],
+          "reference": {
+            "resource": "service",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "service_area",
+      "path": "service_areas.csv",
+      "description": "The service_area table contains details of the geographic area for which a service is available.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each service area must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service for which this entry describes the service area",
+            "type": "string"
+          },
+          {
+            "name": "service_area",
+            "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "description": "A more detailed description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
+            "type": "string"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["service_id"],
+          "reference": {
+            "resource": "service",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "required_document",
+      "path": "required_documents.csv",
+      "description": "The required_document table contains details of any documents that are required in order to access or use services.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each document must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service for which this entry describes the required document",
+            "type": "string"
+          },
+          {
+            "name": "document",
+            "description": "The document required to apply for or receive the service. e.g. 'Government-issued ID', 'EU Passport'",
+            "type": "string"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["service_id"],
+          "reference": {
+            "resource": "service",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "payment_accepted",
+      "path": "payments_accepted.csv",
+      "description": "The payment_accepted table contains details of the methods of payment that can be used in order to pay for services",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the services for which the entry describes the accepted payment methods",
+            "type": "string"
+          },
+          {
+            "name": "payment",
+            "description": "The methods of payment accepted for the service",
+            "type": "string",
+            "constraints": {
+              "enum": ["cash", "check", "money order", "credit card", "medicare", "SNAP", "WIC", "EBT"]
+            }
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["service_id"],
+          "reference": {
+            "resource": "service",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "language",
+      "path": "languages.csv",
+      "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with intepretation.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each language must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "service_id",
+            "description": "The identifier of the service for which the entry describes the languages in which services are delivered",
+            "type": "string"
+          },
+          {
+            "name": "location_id",
+            "description": "The identifier of the location for which the entry describes the languages in which services are delivered",
+            "type": "string"
+          },
+          {
+            "name": "language",
+            "description": "Languages, other than English, in which the service is delivered. Languages are listed as ISO639-1 codes.",
+            "type": "string"
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["service_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["location_id"],
+            "reference": {
+              "resource": "location",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "accessibility_for_disabilities",
+      "path": "accessibility_for_disabilities.csv",
+      "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "location_id",
+            "description": "The identifier of the location for which the entry describes the accessibility provision",
+            "type": "string"
+          },
+          {
+            "name": "accessibility",
+            "description": "Description of assistance or infrastructure that facilitate access to clients with disabilities.",
+            "type": "string",
+            "constraints": {
+              "enum": ["cd", "deaf_interpreter", "disabled_parking", "elevator",
+                "ramp", "restroom", "tape_braille", "tty", "wheelchair", "wheelchair_van"
+              ]
+            }
+          },
+          {
+            "name": "details",
+            "description": "Any further details relating to the relevant accessibility arrangements at this location. E.g. whether advance notice is required to use an accessibility facility.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+          "fields": ["location_id"],
+          "reference": {
+            "resource": "location",
+            "fields": ["id"]
+          }
+        }]
+      }
+    },
+    {
+      "name": "taxonomy",
+      "path": "taxonomy.csv",
+      "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy table contains a list of taxonomy identifiers, their names, and, for hierarchical taxonomies, their structure.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each taxonomy entry must have a unique identifier. If combining multiple taxonomies with overlapping identifiers, use a prefix to distinguish them.",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "name",
+            "description": "The name of this taxonomy term or category.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "parent_id",
+            "description": "If this is a child category in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "parent_name",
+            "description": "If this is a child category in a hierarchical taxonomy, give the name of the parent category. For top-level categories, this should be left blank.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "vocabulary",
+            "description": "If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility.",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          }
+        ],
+        "primaryKey": ["id"]
+      }
+    },
+    {
+      "name": "metadata",
+      "path": "metadata.csv",
+      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "resource_id",
+            "description": "Each service, program. location, address, or contact will have a unique identifier. Unique ids are UUIDs.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "last_action_date",
+            "description": "The date when data was changed.",
+            "type": "datetime",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "last_action_type",
+            "description": "The kind of change made to the data; eg create, update, delete",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "field_name",
+            "description": "The name of field that has been modified",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "previous_value",
+            "description": "The previous value of a field that has been updated",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "replacement_value",
+            "description": "The new value of a field that has been updated",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "updated_by",
+            "description": "The name of the person who updated a value",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": ["id"],
+        "foreignKeys": [{
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "location",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "service",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "organization",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "program",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "address",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "contact",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "holiday_schedules",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "regular_schedules",
+              "fields": ["id"]
+            }
+          },
+          {
+            "fields": ["resource_id"],
+            "reference": {
+              "resource": "phone",
+              "fields": ["id"]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "meta_table_description",
+      "path": "meta_table_descriptions.csv",
+      "description": "The meta_table_description table contains metadata about individual tables.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "description": "Each entry must have a unique identifier",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "name",
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "language",
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "character_set",
+            "description": "",
+            "type": "string"
+          }
+        ],
+        "primaryKey": ["id"]
+      }
     }
+  ]
+}
