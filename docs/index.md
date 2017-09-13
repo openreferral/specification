@@ -13,7 +13,7 @@ Open Referral’s ecosystem includes a range of working open source software app
 
 You can learn more about the Open Referral Initiative’s ‘Architecture of Participation’ in our Project Documents on [Google Drive](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit)
 
-**Join Open Referral's Community of Practice: **
+**Join Open Referral's Community of Practice**
 
 * We are formally convened [in this Google Group](https://groups.google.com/forum/#!forum/openreferral).
 * Request an invite to [our Slack team](https://openreferral.slack.com/).
