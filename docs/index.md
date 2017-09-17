@@ -9,9 +9,9 @@ The **Human Services Data Specification (HSDS)** is the technical name for Open 
 
 **The Human Services Data API (HSDA)** is the technical name for Open Referral's OpenAPI protocol. HSDA provides a ‘blueprint’ for resource directory APIs. [About HSDA](https://openreferral.github.io/api-specification/) | [OpenAPI](https://openreferral.github.io/api-specification/hsda/) | [reference implementation](http://developer.open.referral.adopta.agency/)
 
-Open Referral’s ecosystem includes a range of working open source software applications that can be freely redeployed to work with HSDS-compatible data and/or HSDA-compatible APIs. 
+Open Referral’s ecosystem includes a range of working open source software applications that can be freely redeployed to work with HSDS-compatible data and/or HSDA-compatible APIs. Many of these tools can be found in [our Github organizaiton page](http://github.com/openreferral).
 
-You can learn more about the Open Referral Initiative’s ‘Architecture of Participation’ in our Project Documents on [Google Drive](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit)
+Learn more about the why's, how's, and who's of the Open Referral Initiative in [our Public Documentation](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit?usp=drive_web), and browse our Google Drive Project Documents on [Google Drive](https://drive.google.com/folderview?id=0B-5CZ4ZLjTHqfk12WTFUbVk1NjBYMjRaZTlZRlN1UjhWMS1MN0tLV3Q4ejY3TWpOYWwwVDg&usp=sharing)
 
 **Join Open Referral's Community of Practice**
 
