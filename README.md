@@ -16,7 +16,7 @@ Earlier versions were licensed under CC0.
 
 ### ReadTheDocs
 
-Any change pushed to the master branch on GitHub will be built and pushed to http://openreferral.readthedocs.io/en/latest/ automatically by readthedocs. Build info is found at https://readthedocs.org/projects/openreferral/builds/
+Any change pushed to the master branch on GitHub will be built and pushed to http://docs.openreferral.org/en/latest/ automatically by readthedocs. Build info is found at https://readthedocs.org/projects/openreferral/builds/
 
 Other branches are not built automatically, but can be configured by admin's of the 'openreferral' project on readthedocs, on this page - https://readthedocs.org/projects/openreferral/versions/
 
