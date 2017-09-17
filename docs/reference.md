@@ -1,4 +1,5 @@
-# Reference
+HSDS Reference
+==============
 
 The Human Services Data Specification defines a set of objects and the relationships between them.
 

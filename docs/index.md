@@ -1,20 +1,23 @@
 Open Referral
 =============
 
-![HSDS Logical Model](assets/OpenReferral_Logo_Green.png)
+![Open Referral](assets/OpenReferral_Logo_Green.png)
 
-Human Services Data Specification v1.1
-======================================
+The Open Referral Initiative develops data standards and open platforms that make it easy to share and find information about community resources. Learn more about the initiative at [OpenReferral.org](http://www.openreferral.org).
 
-The Human Services Data Specification (Open Referral) is an exchange format for publishing machine readable data about health, human, and social services, their locations, and the organizations that provide them. For the purposes of this specification, human services are broadly defined, ranging from food assistance to job training and health care. 
+The **Human Services Data Specification (HSDS)** is the technical name for Open Referral's core data format. HSDS is designed to support the publication of open, inter-operable resource directory data. [About HSDS](about) | [schema](reference) | [sample data](https://github.com/openreferral/sample-data)
 
-This exchange format is meant to complement –not replace– existing storage formats currently in use.
+**The Human Services Data API (HSDA)** is the technical name for Open Referral's OpenAPI protocol. HSDA provides a ‘blueprint’ for resource directory APIs. [About HSDA](https://openreferral.github.io/api-specification/) | [OpenAPI](https://openreferral.github.io/api-specification/hsda/) | [reference implementation](http://developer.open.referral.adopta.agency/)
 
-All organizations that provide services or referrals, as well as entities that consume or distribute digital human services information, are invited to publish their data in this format, whether they be governments at the local, state, or federal level; civic organizations, or companies.
+Open Referral’s ecosystem includes a range of working open source software applications that can be freely redeployed to work with HSDS-compatible data and/or HSDA-compatible APIs. Many of these tools can be found in [our Github organizaiton page](http://github.com/openreferral).
 
-**The primary use case served by Open Referral is the provision of information about many services to a common or overlapping audience.**
+Learn more about the why's, how's, and who's of the Open Referral Initiative in [our Public Documentation](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit?usp=drive_web), and browse our Project Documents on [Google Drive](https://drive.google.com/folderview?id=0B-5CZ4ZLjTHqfk12WTFUbVk1NjBYMjRaZTlZRlN1UjhWMS1MN0tLV3Q4ejY3TWpOYWwwVDg&usp=sharing)
 
-Government entities, community organizations, and businesses often face difficulty obtaining timely and correct data about human services. The Human Services Data Specification facilitates the open exchange and use of data and information among these stakeholders. To that end, the specification is designed to provide an interoperable format for web and application developers.
+**Join Open Referral's Community of Practice**
+
+* We are formally convened [in this Google Group](https://groups.google.com/forum/#!forum/openreferral).
+* Request an invite to [our Slack team](https://openreferral.slack.com/).
+* Sign up for our email newsletter [on our homepage](https://openreferral.org/).
 
 
 Contents:
@@ -23,6 +26,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   about
    reference
    use_cases
    logical_model
