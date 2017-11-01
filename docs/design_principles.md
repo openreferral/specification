@@ -14,14 +14,6 @@ The format also specifies information about the _provenance_ of the data, as wel
 In order to ensure accessibility, the data must be a machine-readable and -writable format that can also be created, updated and deleted with a basic text editor.
 
 
-### Current Human Services Data Specification Capabilities
-
-Version 1.0 of the specification supports:
-
-* Provisioning the minimum amount of data needed to implement a service for search and discovery of human services provided by organizations
-* Machine readable format that can be imported directly into a relational database or viewed and edited using commonly available software such as a spreadsheet or a text editor
-* A common data exchange format between different information and referral systems.
-
 
 ### Related standards
 
