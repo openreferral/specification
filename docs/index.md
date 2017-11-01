@@ -21,7 +21,7 @@ Learn more about the why's, how's, and who's of the Open Referral Initiative in 
 
 **Questions not answered here? Suggestions for us?**
 
-[Email us!](mailto:info@openreferral.org). We can discuss directly, and/or invite you to join us in Slack, where we conduct weekly office hours on Fridays at 12p EST.
+[Email us!](mailto:info@openreferral.org) We can discuss directly, and/or invite you to join us in Slack, where we conduct weekly office hours on Fridays at 12p EST.
 
 
 
