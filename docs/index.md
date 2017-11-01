@@ -31,11 +31,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   about-HSDS
-   reference
-   use_cases
-   logical_model
-   producing_sharing
+   human-services-data-schema
    
    governance
    vocabulary  
