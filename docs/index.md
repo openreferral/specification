@@ -48,8 +48,6 @@ Contents:
    
    faq
 
-   changelog
-
    credits
 
 ```
