@@ -14,6 +14,7 @@ Contents:
    use_cases
    logical_model
    producing_sharing
+   hsds-changelog
   
   
    ```
