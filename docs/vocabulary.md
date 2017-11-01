@@ -1,7 +1,7 @@
 Common Vocabulary
 =================
 
-TODO: UPDATE THIS PAGE WITH A VOCAB DRAWN FROM THE SCHEMA
+THIS PAGE HAS BEEN DEPRECATED. FOR THE SCHEMA'S VOCABULARY, REFER TO [THE HSDS REFERENCE TABLES](https://github.com/openreferral/specification/blob/master/docs/reference.md).
 
 
 The Human Services Data Specification seeks to establish a common vocabulary among information and referral (I&R) practitioners. The vocabulary reflects the simple model of four required entities: Organizations, Locations, Services, and Metadata. An optional entity is Programs, which is available for organizations that use Programs for grouping Services.  Entities have attendant properties and some properties are complex and have multiple attributes. For example addresses are comprised of several pieces of information..
