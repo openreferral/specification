@@ -43,13 +43,6 @@ The [Civic Services schema](https://www.w3.org/wiki/WebSchemas/CivicServices) is
 It is a new vocabulary, similar to the European Commission ISA Core Public Service vocabulary. Its purpose is to improve search engines’ understanding of these services. The schema will provide "*enough information to determine the service, the area covered by the service, and relevant information for using the service*."
 
 
-#### Open Eligibility
-
-[Open Eligibility](http://openeligibility.org/) is a "*simple way to categorize human services and human situations*." It uses common categories for quickly finding human services for people in need, service providers and navigators. It takes a different approach than the AIRS standards by grouping similar services and repeatedly and empirically testing the categories. Open Eligibility explains their taxonomy as:
-
-> "Every provider administers at least one program. Every program provides at least one client-facing service. And every service is represented with a service tag. Our taxonomy is a categorization of those service tags."
-
-
 #### National Information Exchange Model (NIEM)
 
 NIEM is the National Information Exchange Model. It is an interagency initiative to create a national-level interoperable information sharing and data exchange. The NIEM project began in 2005 as a joint venture between the U.S. Department of Homeland Security (DHS) and the U.S. Department of Justice (DOJ). The NIEM uses both the Global Justice XML Data Model (GJXDM) reference model and the GJXDM XML-based framework and support infrastructure.
@@ -60,3 +53,25 @@ NIEM consists of a  collection of data components organized in multiple kinds of
 2. Common components such as LocationStateUSPostalServiceCode, LocationStateCanadianProvinceCode etc., that are relevant and understood across two or more domains
 
 The schema for the core components is available from [niem.gov](http://release.niem.gov/niem/niem-core/2.0/niem-core.xsd). Open Referral encourages the establishment of compatibility with NIEM.
+
+
+### Related Taxonomies
+
+Open Referral recognizes the existence of a diverse array of taxonomies to describe types of services, organizations, and people for whom services are available. Given that such categories are inherently subjective, whereas Open Referral's format is describing only *factual* data, we do not prescribe a specific taxonomy. In the meantime, we recognize the existence of the following taxonomies, and offer guidance for using them in conjunction with HSDS.
+
+
+#### AIRS/211 Taxonomy
+
+[The AIRS/211 taxonomy](https://www.airs.org/i4a/pages/index.cfm?pageid=3386) is widely used among certified providers of ‘information and referral’ services, as well as some government agencies. The Taxonomy is a hierarchical system that contains more than 9,000 fully-defined terms that cover the complete range of human services. 
+
+The AIRS/211 taxonomy is the intellectual property of 2-1-1 Los Angeles. Licensees can use the taxonomy with data formatted in HSDS.
+
+
+#### Open Eligibility
+
+[Open Eligibility](http://openeligibility.org/) is a "*simple way to categorize human services and human situations*." It uses common categories for quickly finding human services for people in need, service providers and navigators. It takes a different approach than the AIRS taxonomy by offering up sets of 'tags' that describe _types of services_ and _types of situations_. Open Referral has included [a fork of Open Eligibility in our Github organization](https://github.com/openreferral/openeligibility).
+
+
+#### National Taxonomy of Exempt Entities (NTEE)
+
+[The NTEE system](http://nccs.urban.org/classification/national-taxonomy-exempt-entities) is used by the IRS and the National Center for Charitable Statistics to classify nonprofit organizations. It is also used by the Foundation Center to classify both grants and grant recipients (typically nonprofits or governments).
