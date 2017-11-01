@@ -25,29 +25,38 @@ Version 1.0 of the specification supports:
 
 ### Related standards
 
-During the development of HSDS we have had reference to a range of related standards. These include:
+During the development of HSDS, we have charted our course in conscious relation to a range of related standards. These include:
 
 #### AIRS Standards
 
-The AIRS Standards defines expected practices within an information and referral (I&R) program and best practices to meet the needs of their community. According to [AIRS Standards and Quality Indicators for Professional Information and Referra](http://www.airs.org/files/public/AIRS_Standards_7_Final.pdf)l:
+The [Alliance of Information and Referral Systems](http://airs.org) is an international professional association that provides standards, accreditations and certifications for the information and referral sector. 
 
-"The Standards address all aspects of an I&R operation. They define the information and referral process in concrete terms; establish criteria for database development; mandate support for community planning activities; incorporate a broad view of collaboration at the local, state or provincial, regional and national levels; include provisions for the socially responsible use of technology; and describe the role of information and referral services in times of disaster. “
+AIRS and Open Referral engaged in active dialogue during the development of HSDS, to ensure interoperability across the emerging HSDS and [the AIRS XML schema](https://github.com/airsalliance/airs-xml/blob/v3.1.0/trunk/airs.xsd).
 
-The Resource Database Standard of the AIRS Standards is pertinent to the Human Services Data Specification. As described in the AIRS Standards and Quality Indicators publication, the Resource Database Standard:
+AIRS standards' define expected practices within an information and referral (I&R) program, and promotes best practices to meet the needs of an I&R program's community. According to [AIRS Standards and Quality Indicators for Professional Information and Referral](http://www.airs.org/files/public/AIRS_Standards_7_Final.pdf):
 
-"The Resource Database standards require that the I&R service develop, maintain, use and disseminate an accurate, up-to-date resource database that contains information about available community resources including details about the services they provide and the conditions under which services are available. The database includes resources that support the inquirer’s right to accurate, consistent, comprehensive and unbiased information and the ability of the I&R service to be a non-partisan, non-ideological and impartial information source for available nonprofit, government and for-profit services that meet the organization’s inclusion/exclusion criteria. The database is maintained by trained resource specialists."
+> The Standards address all aspects of an I&R operation. They define the information and referral process in concrete terms; establish criteria for database development; mandate support for community planning activities; incorporate a broad view of collaboration at the local, state or provincial, regional and national levels; include provisions for the socially responsible use of technology; and describe the role of information and referral services in times of disaster.
 
-#### schema.org for Public Civic Services
+As described in the AIRS Standards and Quality Indicators publication, the Resource Database Standard:
 
-[Public Civil Services](http://www.w3.org/wiki/images/0/03/Services_for_schema.org_%28DRAFT_2013-06-27%29.pdf) is a [W3C proposal](http://www.w3.org/wiki/WebSchemas/CivicServices) by the Google.org Social Impact team that extends the Schema.org schemas to better support the description of public civic services.
+> The Resource Database standards require that the I&R service develop, maintain, use and disseminate an accurate, up-to-date resource database that contains information about available community resources including details about the services they provide and the conditions under which services are available. The database includes resources that support the inquirer’s right to accurate, consistent, comprehensive and unbiased information and the ability of the I&R service to be a non-partisan, non-ideological and impartial information source for available nonprofit, government and for-profit services that meet the organization’s inclusion/exclusion criteria. The database is maintained by trained resource specialists.
+
+In part through engagement with Open Referral, [AIRS recently adopted an open source license (CC 4.0 BY-SA) for their Style Guide](https://openreferral.org/the-2016-airs-style-guide-newly-open-sourced/).
+
+
+#### schema.org for Civic Services (W3C)
+
+The [Civic Services schema](https://www.w3.org/wiki/WebSchemas/CivicServices) is a W3C-approved vocabulary, originally proposed by the Google.org Social Impact team in 2013, to extend the Schema.org schemas to better support the description of public civic services.
 
 It is a new vocabulary, similar to the European Commission ISA Core Public Service vocabulary. Its purpose is to improve search engines’ understanding of these services. The schema will provide "*enough information to determine the service, the area covered by the service, and relevant information for using the service*."
+
 
 #### Open Eligibility
 
 [Open Eligibility](http://openeligibility.org/) is a "*simple way to categorize human services and human situations*." It uses common categories for quickly finding human services for people in need, service providers and navigators. It takes a different approach than the AIRS standards by grouping similar services and repeatedly and empirically testing the categories. Open Eligibility explains their taxonomy as:
 
 > "Every provider administers at least one program. Every program provides at least one client-facing service. And every service is represented with a service tag. Our taxonomy is a categorization of those service tags."
+
 
 #### National Information Exchange Model (NIEM)
 
@@ -58,4 +67,4 @@ NIEM consists of a  collection of data components organized in multiple kinds of
 1. Universal components such as Person, Date, Location etc., that are relevant and understood across all domains
 2. Common components such as LocationStateUSPostalServiceCode, LocationStateCanadianProvinceCode etc., that are relevant and understood across two or more domains
 
-The schema for the core components is available from [niem.gov](http://release.niem.gov/niem/niem-core/2.0/niem-core.xsd).
+The schema for the core components is available from [niem.gov](http://release.niem.gov/niem/niem-core/2.0/niem-core.xsd). Open Referral encourages the establishment of compatibility with NIEM.
