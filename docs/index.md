@@ -1,5 +1,5 @@
-Open Referral
-=============
+About
+=====
 
 ![Open Referral](assets/OpenReferral_Logo_Green.png)
 
@@ -40,6 +40,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   index
+
    hsds_docs_index
    
    governance
@@ -52,9 +54,7 @@ Contents:
 
 ```
 
-
-Indices and tables
-==================
+### Indices and tables
 
 ```eval_rst
 * :ref:`genindex`
