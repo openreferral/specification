@@ -3,7 +3,7 @@ HSDS Reference
 
 The Human Services Data Specification defines a set of objects and the relationships between them.
 
-This page provides the canonical definition of each object and it's required or optional fields.
+This page provides the canonical definition of each object and its required or optional fields.
 
 A collection of HSDS data can be serialised as a [Tabular Data Package](http://specs.frictionlessdata.io/tabular-data-package/) consisting of csv files for each of the objects required, and a [package descriptor (datapackage.json)](http://specs.frictionlessdata.io/tabular-data-package/#specification) file adapted from the current [HSDS specification](https://github.com/openreferral/specification/blob/master/datapackage.json) to include any additional fields and meta-data from the data publisher.
 
