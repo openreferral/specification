@@ -25,7 +25,7 @@ Our work was initially co-sponsored by [Code for America](https://www.codeforame
 
 There are three types of _ultimate_ stakeholders for Open Referral: 1) people in need of help of some kind (**‘help-seekers’**) — and 2) people who are in some kind of position to assist such help-seekers (**‘service providers’**). Another important stakeholder group is comprised of 3) **‘researchers’** — i.e. analysts, as well as policymakers and funders and anyone seeking to understand the patterns of resource allocation in their community.
 
-The **_primary_** users of Open Referral are **people and organizations that aggregate, maintain, and/or deliver community resource directory data** — i.e. database administrators, to simplify the matter. Our objective is to help such database administrators share higher quality resource directory data at lower cost, with the goal of making it easier for people to find such information across a wide array of channels.
+The **_primary_** users of Open Referral are **people and organizations that aggregate, maintain, and/or deliver community resource directory data** — we simplify this by referring to such stakeholders as *database administrators*. Our objective is to help such database administrators share higher quality resource directory data at lower cost, with the goal of making it easier for people to find such information across a wide array of channels.
 
 Read more about each of these types of users [here in our User Personas documentation](https://docs.google.com/document/d/1XqueBVbRVgR0BVGjDbUdN4suUYfMKm7yJm1f3nRsGtY/edit?usp=drive_web).
 
