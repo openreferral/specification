@@ -32,15 +32,15 @@ Questions not answered here? Suggestions for us?
 
 [Email us!](mailto:info@openreferral.org) We can discuss directly, and/or invite you to join us in Slack, where we conduct weekly office hours on Fridays at 12p EST.
 
-**Site contents**
 
-Contents:
+## Contents
 
 ```eval_rst
 .. toctree::
    :maxdepth: 2
+   
+   self
 
-   index
    hsds/index
    hsda/index
    
