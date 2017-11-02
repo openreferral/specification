@@ -40,7 +40,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   human-services-data-schema
+   hsds_docs_index
    
    governance
    vocabulary  
