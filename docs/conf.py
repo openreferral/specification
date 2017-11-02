@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Open Referral'
-copyright = '2016, Open Referral'
+copyright = '2017, Open Referral. CC 4.0 BY SA'
 author = 'Open Referral'
 
 # The version info for the project you're documenting, acts as replacement for
