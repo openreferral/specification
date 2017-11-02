@@ -1,0 +1,3 @@
+[submodule "api-specification"]
+	path = api-specification
+	url = https://github.com/openreferral/api-specification.git

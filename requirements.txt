@@ -3,6 +3,9 @@ sphinx-intl==0.9.9
 transifex-client==0.12.2
 # recommonmark commit pinned from master branch
 -e git+https://github.com/rtfd/recommonmark.git@81d7c6f7b37981ac22571dd91a7cc9d24c3e66a1#egg=recommonmark
+-e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@964e709dcdde1b3a2d145a81a03f1c30b698d0b7#egg=sphinxcontrib_jsonschema
+-e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@22ab29ca7397b003a96eb3923e1be67e38a577b0#egg=sphinxcontrib_openapi
+sphinx-rtd-theme==0.2.4
 ## The following requirements were added by pip freeze:
 alabaster==0.7.9
 Babel==2.3.4
@@ -11,9 +14,14 @@ CommonMark==0.5.4
 docutils==0.12
 imagesize==0.7.1
 Jinja2==2.8
+jsonpointer==1.14
+jsonref==0.1
+jsonschema==2.6.0
 MarkupSafe==0.23
 Pygments==2.1.3
 pytz==2016.7
+PyYAML==3.12
 six==1.10.0
 snowballstemmer==1.2.1
+sphinxcontrib-httpdomain==1.5.0
 urllib3==1.18.1
