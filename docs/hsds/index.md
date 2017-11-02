@@ -9,12 +9,12 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   hsds_about
+   about
    reference
    use_cases
    logical_model
    producing_sharing
-   hsds_changelog
+   changelog
   
   
    ```

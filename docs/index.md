@@ -3,7 +3,7 @@ About
 
 ![Open Referral](assets/OpenReferral_Logo_Green.png)
 
-### About Open Referral
+## About Open Referral
 
 The Open Referral Initiative develops data standards and open platforms that make it easy to share and find information about community resources. Learn more about the initiative at [OpenReferral.org](http://www.openreferral.org).
 
@@ -17,22 +17,22 @@ Learn more about the why's, how's, and who's of the Open Referral Initiative in 
 * Request an invite to [our Slack team](https://openreferral.slack.com/).
 * Sign up for our email newsletter [on our homepage](https://openreferral.org/).
 
-### About This Website
+## About This Website
 
 To promote participation and accessibility, this website presents the working drafts of the Human Services Data Specification and the Human Services Data API.
 
-**The Human Services Data Specification (HSDS)** is the technical name for Open Referral's core data exchange format. HSDS is designed to support the publication of open, inter-operable resource directory data. [About HSDS](about-hsds) | [schema](reference) | [sample data](https://github.com/openreferral/sample-data)
+**The Human Services Data Specification (HSDS)** is the technical name for Open Referral's core data exchange format. HSDS is designed to support the publication of open, inter-operable resource directory data. [About HSDS](hsds/about.md) | [schema](hsds/reference.md) | [sample data](https://github.com/openreferral/sample-data)
 
 **The Human Services Data API (HSDA)** is the technical name for Open Referral's OpenAPI protocol. HSDA provides a ‘blueprint’ for resource directory APIs. [About HSDA](https://openreferral.github.io/api-specification/) | [OpenAPI](https://openreferral.github.io/api-specification/hsda/) | [reference implementation](http://developer.open.referral.adopta.agency/)
 
 
-### Get in touch
+## Get in touch
 
 Questions not answered here? Suggestions for us?
 
 [Email us!](mailto:info@openreferral.org) We can discuss directly, and/or invite you to join us in Slack, where we conduct weekly office hours on Fridays at 12p EST.
 
-
+**Site contents**
 
 Contents:
 
@@ -41,8 +41,8 @@ Contents:
    :maxdepth: 2
 
    index
-
-   hsds_docs_index
+   hsds/index
+   hsda/index
    
    governance
    vocabulary  
@@ -54,10 +54,3 @@ Contents:
 
 ```
 
-### Indices and tables
-
-```eval_rst
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-```
