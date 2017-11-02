@@ -40,7 +40,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   index
+   self
    hsds/index
    hsda/index
    
