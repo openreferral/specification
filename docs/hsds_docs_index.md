@@ -9,7 +9,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   about-HSDS
+   about_HSDS
    reference
    use_cases
    logical_model
