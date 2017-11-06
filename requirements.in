@@ -4,5 +4,5 @@ transifex-client
 # recommonmark commit pinned from master branch
 -e git+https://github.com/rtfd/recommonmark.git@81d7c6f7b37981ac22571dd91a7cc9d24c3e66a1#egg=recommonmark
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@964e709dcdde1b3a2d145a81a03f1c30b698d0b7#egg=sphinxcontrib_jsonschema
--e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@22ab29ca7397b003a96eb3923e1be67e38a577b0#egg=sphinxcontrib_openapi
+-e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@d8a1045ba3b7d985ea52c9c632017afb9dc70574#egg=sphinxcontrib_openapi
 sphinx-rtd-theme==0.2.4

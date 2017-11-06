@@ -33,7 +33,7 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.openapi', 'sphinxcontrib.jsonschema']
+extensions = ['sphinxcontrib.openapi']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -139,14 +139,14 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
   html_theme = 'sphinx_rtd_theme'
   html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
   html_style = 'css/custom.css'
-else:
-  html_context = { 
+
+html_context = { 
     'css_files': [
         'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
         'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
         '_static/theme_overrides.css',
     ],
-  }
+}
 
 
 
@@ -440,6 +440,58 @@ class JSONTableSchemaInclude(Directive):
         return out
 
 directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)
+
+
+
+
+import sphinxcontrib.jsonschema
+
+def type_format_simple(prop):
+    prop_type = prop.attributes.get('type')
+    if prop.format:
+        return prop.format
+    elif isinstance(prop_type, list) and len(prop_type) == 2 and prop_type[1] == 'null':
+        return prop_type[0]
+    else:
+        return prop.type
+
+class JSONSchemaDirective(sphinxcontrib.jsonschema.JSONSchemaDirective):
+    headers = ['Name', 'Description', 'Type', 'Required']
+    widths = [1, 3, 1, 1]
+    option_spec = {
+        'child': directives.unchanged,
+    }
+    child = None
+
+    def make_nodes(self, schema):
+        child = self.options.get('child')
+        if child:
+            for prop in schema:
+                if prop.name == child:
+                    return [nodes.paragraph('', nodes.Text(prop.description)), self.table(prop)]
+            else:
+                raise KeyError
+        else:
+            return [self.table(schema)]
+    
+    def row(self, prop, tbody):
+        # Don't display rows for arrays and objects (only their children)
+        if isinstance(prop, (sphinxcontrib.jsonschema.Array, sphinxcontrib.jsonschema.Object)):
+            return
+        #if not prop.rollup and prop.parent.parent.name != self.options.get('child'):
+        #    return
+        assert prop.name.startswith('/0/')
+        name = prop.name[3:]
+        name_cell = nodes.entry('', nodes.literal('', nodes.Text(name)))
+        row = nodes.row()
+        row += name_cell
+        row += self.cell(prop.description or '')
+        row += self.cell(type_format_simple(prop))
+        row += self.cell(prop.required)
+        tbody += row
+
+directives.register_directive('jsonschema', JSONSchemaDirective)
+
 
 
 
