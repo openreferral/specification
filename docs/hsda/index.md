@@ -6,7 +6,13 @@ Information about HSDA will be shared here shortly.
 .. toctree::
    :maxdepth: 2
 
-   api
-   api-search
+   hsda
+   hsda-search
+   hsda-bulk
+   hsda-taxonomy
+   hsda-orchestration
+   hsda-meta
+   hsda-management
+   hsda-utility
 
 ```
