@@ -57,7 +57,12 @@ If you have questions about how this might be useful in your community, please r
 
 Here are some examples of mapped schema: A comparative analysis of a resource directory from [Evanston]([https://docs.google.com/document/d/1eUoX2Fgl56ekF3ZIZYlOIVpgc6FlrEvqgZbaOqvT79k/edit](https://docs.google.com/document/d/1eUoX2Fgl56ekF3ZIZYlOIVpgc6FlrEvqgZbaOqvT79k/edit)) to an earlier version of HSDS. The [humanitarian service data model]([https://docs.google.com/spreadsheets/d/1bOTdGmHo73t8FOvwt5sfJQD0QugpTtRmWIihOHjKXyA/edit#gid=1867626204](https://docs.google.com/spreadsheets/d/1bOTdGmHo73t8FOvwt5sfJQD0QugpTtRmWIihOHjKXyA/edit#gid=1867626204)) ([more about this project here](https://openreferral.org/introducing-the-humanitarian-service-data-model/)). The [DMV Maternal Mental Health resource guide](https://docs.google.com/spreadsheets/d/1mrjpcoOY_INCeK3bALgylgUtY2YZhhYvQOt85hfPtpc/edit). [Here is an example of a script](https://github.com/BCH-Online-Advocate/Migration-Script) to transform and load data into Ohana, from Boston’s Helpsteps roject.
 
-Read more in our Contributors Guide.
+Read more in [our Contributors Guide](https://github.com/openreferral/specification/blob/master/CONTRIBUTING.md).
+
+
+### How do you address the matter of taxonomy (of types of services and situations)? 
+
+Open Referral recognizes the existence of a diverse array of taxonomies to describe types of services, organizations, and people for whom services are available. Given that such categories are inherently subjective, whereas Open Referral's format is describing only factual data, we do not prescribe a specific taxonomy. We do [recognize the existence of an array of taxonomies currently in use](https://github.com/openreferral/specification/blob/master/docs/design_principles.md#related-taxonomies), and our HSDS format [includes specifications for including any taxonomy in open data](http://docs.openreferral.org/en/latest/hsds/reference/#service_taxonomy).
 
 
 ### What if I collect important information that isn't included in the Open Referral specification?
