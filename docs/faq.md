@@ -60,17 +60,61 @@ Here are some examples of mapped schema: A comparative analysis of a resource di
 Read more in [our Contributors Guide](https://github.com/openreferral/specification/blob/master/CONTRIBUTING.md).
 
 
+### How are decisions made about the Open Referral specifications?
+
+Our governance model is structured around three activities: 1) a semi-regular Assembly video call, open to all participants [see an archive of these videos <a href="https://www.youtube.com/channel/UCtbojLVi_ti_MWyGD2-AM4A">here</a>], 2) convenings of diverse stakeholders in Open Referral workshops [read the reportback <a href="https://docs.google.com/document/d/1kivG6TTw1LKhJRAQHeqH7fTIxZZaDojXRRBYEd_ltWw/edit">here</a>], and 3) ad hoc ‘workgroups’ consisting of leaders with a varied set of perspectives and experiences [see the workgroup archive <a href="http://groups.google.com/forum/#!forum/openreferral-workgroup">here</a>].
+
+Of all the feedback received from many different contributors, we assign priority to the perspectives of the lead stakeholders of our pilot projects. This feedback is submitted to Open Referral's deputized technical leads, who ultimately make decisions with documentation and established methods for future review.
+
+[Open Referral’s initial governance model is <a href="https://docs.google.com/document/d/16sZXY6nQZJqq-TJaaLY2K3pE2G__q1myYX8JC3ZKHmk/edit">described in more detail in this memo</a>. You can also read more about the nature of this ‘polycentric’ approach to governance in <a href="http://openreferral.org/toward-seamless-information-referral-polycentric-experiment/">Derek Coursen’s blog post here</a>.]
+
+
+### What is the Human Services Data Specification (HSDS)?
+
+AKA 'the Open Referral format,' the HSDS is a data interchange format that enables resource directory data to be published in bulk for use by many systems. HSDS provides a common vocabulary for information about services, the organizations that provide them, and the locations where they can be accessed. HSDS is essentially an <i>interlingua</i> — in other words, it’s a common language that can be used by anyone to enable community resource directories to ’talk’ to each other.
+ [<a href="https://github.com/OpenReferral/specification">See the data specification in Github</a> or on <a href="https://openreferral.readthedocs.io">our Documentation Site</a>.]
+
+
+### What is in the Human Services Data Specification (HSDS)?
+
+First, HSDS identifies a vocabulary of terms that describe what a service is, the institution that provides it, where the service can be accessed, and how to access it. These terms are designated as ‘required,’ ‘recommended,’ and ‘optional.’ The spec provides instructions for formatting these terms, with examples.
+
+On a more technical level, HSDS also includes a <a href="https://openreferral.org/wp-content/uploads/2017/11/HSDS-1.1-ERD-high-res.png">logical model</a> that diagrams the relationships between these terms. 
+
+Finally, HSDS provides guidance for structuring and packaging data so that it can be published on the web and/or exchanged between systems. [See: <a href="https://github.com/codeforamerica/openreferral/specification">Github</a> or <a href="https://openreferral.readthedocs.io">our documentation site</a>.]
+
+
+### What is not in the Human Services Data Specification (HSDS)?
+
+HSDS does not attempt to describe every type of information that might be relevant to people working with resource directory data. We have attempted to maintain a strict focus on specifying only relevant factual attributes that are shared by <i>most</i> services. That means we excluded many kinds of information that are unique to specific kinds of services (such as the accreditation of child care providers, or the availability of beds in a shelter).
+
+HSDS also does not specify a taxonomy of types of services and types of personal attributes that determine eligibility for various types of services. Many such taxonomies already exist, so HSDS merely provides instructions for how to overlay a taxonomy of the user’s choosing. By default, information systems that use HSDS and/or the Ohana API can use the open source <a href="http://openeligibility.org/">Open Eligibility taxonomy</a>. (Expect future cycles of the Open Referral initiative to take on these issues more directly; however, for now we are merely looking to learn from the different ways in which various users address these common problems.)
+
+Finally, HSDS does not specify any information regarding how referrals actually get made (i.e. setting appointments, following up, etc) or as to feedback regarding the quality of those services. These kinds of information are critically important, but inherently so variable and context-dependent that we don’t think it’s feasible or appropriate to specify them at this point in time.
+
+That said, this model can and should be extended! Users can expand HSDS to meet their own needs, in their own systems. Groups of stakeholders from particular subdomains can develop extended ‘profiles’ that are tailored to their situation. (<a href="https://groups.google.com/forum/#!forum/legalaid-openreferral">A group of civil legal service providers</a> have already begun working on precisely that.) In future iterations of the Open Referral process, these expansions will then be considered for inclusion as part of the primary model.
+
+
+### What is the format of the HSDS? Why CSV?
+
+With the goal of broad accessibility in mind, the initial HSDS developer Sophia Parafina chose Comma-Separated Values (CSV) as the building blocks for HSDS. <b>CSV serves as a ‘lowest common denominator’</b> that is simplest to use and most accessible to users with a modicum of technical abilities, as it can be edited in a simple text editor, and ingested by almost any information system. (For more reasoning behind this decision, consider Waldo Jaquith’s recent post, <a href="https://usopendata.org/2015/03/10/csv/">‘In Praise of CSV.’</a>) 
+
+For version 1.0, Parafina chose to accompany a more-complex set of CSV files with a JSON datapackage (using <a href="http://frictionlessdata.io/">the Open Knowledge Foundation's frictionless data specification</a>) to describe the CSVs' contents. 
+
+Members of the Open Referral community have observed that they may need more structured data formats for use cases that involve complex, sensitive, and/or large-scale uses. We recognize the validity of these perspectives, and in fact we expect the HSDS model to evolve over time. Pilot projects and community members are already discussing plans to develop complementary formats (such as XML and JSON-LD) — and as these formats are field-tested and validated, they may become formal components of HSDS in future iterations. 
+
+
 ### How do you address the matter of taxonomy (of types of services and situations)? 
 
 Open Referral recognizes the existence of a diverse array of taxonomies to describe types of services, organizations, and people for whom services are available. Given that such categories are inherently subjective, whereas Open Referral's format is describing only factual data, we do not prescribe a specific taxonomy. We do [recognize the existence of an array of taxonomies currently in use](https://github.com/openreferral/specification/blob/master/docs/design_principles.md#related-taxonomies), and our HSDS format [includes specifications for including any taxonomy in open data](http://docs.openreferral.org/en/latest/hsds/reference/#service_taxonomy).
 
 
-### What if I collect important information that isn't included in the Open Referral specification?
+### What if I collect important information that isn't included in the Human Service Data specification?
 
 That's ok! The Human Services Data Specification is an extensible format to which additional layers of information can be added. (But we'd like to learn from your experience, so please share these insights!)
 
 
-### What if your specification requires kinds of information that I don't collect?
+### What if the Human Service Data Specification requires kinds of information that I don't collect?
 
 The Open Referral format has been developed to require a pretty minimal set of information. If your resource directory doesn’t contain certain required elements, we may need to get creative. Ask in [our Issues queue](https://github.com/openreferral/specification/issues) for clarification and context, and we'll try to answer you promptly.
 
