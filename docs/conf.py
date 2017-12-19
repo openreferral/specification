@@ -56,7 +56,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'Open Referral'
+project = 'Open Referral Data Specifications'
 copyright = '2016, Open Referral'
 author = 'Open Referral'
 
@@ -288,7 +288,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OpenReferral.tex', 'Open Referral Documentation',
+    (master_doc, 'OpenReferral.tex', 'Open Referral Data Specifications',
      'Open Referral', 'manual'),
 ]
 
@@ -330,7 +330,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'openreferral', 'Open Referral Documentation',
+    (master_doc, 'openreferral', 'Open Referral Data Specifications',
      [author], 1)
 ]
 
@@ -345,8 +345,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'OpenReferral', 'Open Referral Documentation',
-     author, 'OpenReferral', 'One line description of project.',
+    (master_doc, 'OpenReferral', 'Open Referral Data Specifications',
+     author, 'OpenReferral', 'Making it easy to share and find information about community resources',
      'Miscellaneous'),
 ]
 
