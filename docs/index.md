@@ -23,15 +23,6 @@ Learn more about the why's, how's, and who's of the Open Referral Initiative in 
 * Request an invite to [our Slack team](https://openreferral.slack.com/).
 * Sign up for our email newsletter [on our homepage](https://openreferral.org/).
 
-## About This Website
-
-To promote participation and accessibility, this website presents the working drafts of the Human Services Data Specification and the Human Services Data API.
-
-**The Human Services Data Specification (HSDS)** is the technical name for Open Referral's core data exchange format. HSDS is designed to support the publication of open, inter-operable resource directory data. [About HSDS](hsds-about) | [schema](hsds-spec) | [sample data](hsds-sample)
-
-**The Human Services Data API (HSDA)** is the technical name for Open Referral's OpenAPI protocol. HSDA provides a ‘blueprint’ for resource directory APIs. [About HSDA](hsda) | [OpenAPI](hsda-spec) | [reference implementation](http://developer.open.referral.adopta.agency/)
-
-
 ## Get in touch
 
 Questions not answered here? Suggestions for us?
