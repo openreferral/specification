@@ -61,9 +61,6 @@ These secondary specifications facilitate the monitoring, permissioning and asso
 
 * [HSDA Orchestration](hsda-orchestration): the Orchestration protocol facilitates activities across  and between HSDA protocols.
 
-## Developer Portal & Demonstrator
-
-[The Open Referral Developer Portal](http://developer.open.referral.adopta.agency/) serves as both fully-functional documentation of the HSDA suite and redeployable code that can serve as a developer portal for any resource referral platform. 
 
 ## History
 
