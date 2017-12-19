@@ -7,7 +7,7 @@ The HSDA bulk protocol is defined by [openapi-hsda-bulk.yaml](../static/openapi-
 
 This is a service for handling bulk loading of data into any HSDA service, allowing each POST and PUT to be queued up as a job, and be run on schedule, or based upon other events.
 
-You can also [explore this using our OpenAPI viewer](../../../_static/swagger/?url=../openapi-hsda-bulk.yaml). 
+You can also [explore this using our OpenAPI viewer](../../_static/swagger/?url=../openapi-hsda-bulk.yaml). 
 
 ```eval_rst
 .. warning::
