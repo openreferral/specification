@@ -1,3 +1,3 @@
 $(function() {
-    $("tr:contains('Deprecated)')").css("background","lightGrey").css("color","grey")
+    $("tr:contains('Deprecated)') td").css("background","lightGrey").css("color","grey")
 });
