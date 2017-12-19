@@ -450,3 +450,8 @@ def setup(app):
         'enable_eval_rst': True
         }, True)
     app.add_transform(AutoStructify)
+
+    import glob
+    global html_static_path
+    for file in glob.glob("../api-specification/_data/api-commons/*.yaml"):
+        html_static_path = html_static_path + [file]

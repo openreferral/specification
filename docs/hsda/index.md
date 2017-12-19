@@ -42,16 +42,16 @@ HSDA v1.2 also includes complementary sets of “microservice” protocols that 
 
 ##### Content Protocols
 
-These secondary HSDA specifications facilitate the flow of resource directory data.
+These secondary HSDA specifications facilitate the flow of resource directory data. 
 
 * [HSDA Search](hsda-search): the Search protocol is specifically designed for third-party software developers to enable their tools to query a resource database for specific sets of information.
 
-* [HSDA Bulk](hsda-bulk): the Bulk protocol is specifically designed for database administrators to enable mass transfer of data between systems — with changelogs, scheduling, and other key features.
-
 * [HSDA Taxonomy](hsda-taxonomy): the Taxonomy protocol specifies the use of taxonomic schema for core resources. It can accommodate multiple classification formats.
 
+* [HSDA Bulk](hsda-bulk): the Bulk protocol is specifically designed for database administrators to enable mass transfer of data between systems — with changelogs, scheduling, and other key features.
+
 #### Administration Protocols: 
-These secondary specifications facilitate the monitoring, permissioning and associated management of a resource directory API platform.
+These secondary specifications facilitate the monitoring, permissioning and associated management of a resource directory API platform. These are **experimental features**, and are subject to ongoing development.
 
 * [HSDA Meta](hsda-meta): the Meta protocol logs all activity across the above protocols. This data about API usage is sometimes known as ‘exhaust,’ or ‘paradata’ — valuable for both technical monitoring as well as research and analysis of community needs.
 
@@ -81,8 +81,8 @@ Prior to HSDA, the Ohana API acted as a reference implementation of an early ver
 
    hsda
    hsda-search
-   hsda-bulk
    hsda-taxonomy
+   hsda-bulk
    hsda-orchestration
    hsda-meta
    hsda-management
