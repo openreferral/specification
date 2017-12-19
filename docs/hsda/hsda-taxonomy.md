@@ -1,3 +1,6 @@
+```eval_rst
+.. _hsda-taxonomy:
+```
 # Human Services Data API (HSDA) - Taxonomy v1.2
 
 ```eval_rst

@@ -9,7 +9,7 @@ The Open Referral Initiative is a network of people and organizations working to
 
 Our **Human Service Data Specification** (AKA ‘the Open Referral format’) is a data exchange format that enables resource directory data to be shared among heterogeneous information systems.
 
-Open Referral’s ecosystem includes a range of open source tools and web applications that facilitate the flow of resource directory information. The **[the Ohana API](https://github.com/codeforamerica/ohana-api)** is an open source ‘reference implementation’ for the Open Referral format, and **[Ohana Web Search](https://github.com/codeforamerica/ohana-web-search)** (for example) is a resource locator website that works with the Ohana API (or compatible APIs). 
+Open Referral’s ecosystem includes a range of open source tools and web applications that facilitate the flow of resource directory information. The [the Ohana API](https://github.com/codeforamerica/ohana-api) is an open source ‘reference implementation’ for the Open Referral format, and [Ohana Web Search](https://github.com/codeforamerica/ohana-web-search) (for example) is a resource locator website that works with the Ohana API (or compatible APIs). 
 
 More tools are in development by members of Open Referral’s network, members of which are primarily assembled in [our Google Group](https://groups.google.com/forum/#!forum/openreferral).
 

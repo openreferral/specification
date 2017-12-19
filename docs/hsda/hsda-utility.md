@@ -1,3 +1,7 @@
+```eval_rst
+.. _hsda-utility:
+```
+
 # Human Services Data API (HSDA) - Utility v1.0
 
 ```eval_rst

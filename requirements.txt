@@ -1,28 +1,31 @@
-Sphinx==1.4.8
+Sphinx==1.6.2
 sphinx-intl==0.9.9
-transifex-client==0.12.2
-# recommonmark commit pinned from master branch
--e git+https://github.com/rtfd/recommonmark.git@81d7c6f7b37981ac22571dd91a7cc9d24c3e66a1#egg=recommonmark
--e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@964e709dcdde1b3a2d145a81a03f1c30b698d0b7#egg=sphinxcontrib_jsonschema
--e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@c0637fc35509fd93fa3c6f6cd6583154c60616df#egg=sphinxcontrib_openapi
--e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@23ce17656feaa237584af8822bd57ac39b498f93#egg=sphinxcontrib-opendataservices
+transifex-client==0.12.4
 sphinx-rtd-theme==0.2.4
+# recommonmark commit pinned from master branch
+-e git+https://github.com/rtfd/recommonmark.git@c410abb565a3c4ad4de0ce204ab2fa2db8031cf1#egg=recommonmark
+# sphinxcontrib jsonschema
+-e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@a1e21704186b8e46f161a5b29c3f7bfeace5ca09#egg=sphinxcontrib-jsonschema
+# sphinxcontrib ODSC
+-e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@23ce17656feaa237584af8822bd57ac39b498f93#egg=sphinxcontrib-opendataservices
+-e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@c0637fc35509fd93fa3c6f6cd6583154c60616df#egg=sphinxcontrib_openapi
 ## The following requirements were added by pip freeze:
-alabaster==0.7.9
-Babel==2.3.4
-click==6.6
-CommonMark==0.5.4
-docutils==0.12
+alabaster==0.7.10
+Babel==2.4.0
+certifi==2017.4.17
+chardet==3.0.4
+click==6.7
+CommonMark==0.7.3
+docutils==0.13.1
+future==0.16.0
+idna==2.5
 imagesize==0.7.1
-Jinja2==2.8
-jsonpointer==1.14
-jsonref==0.1
-jsonschema==2.6.0
-MarkupSafe==0.23
-Pygments==2.1.3
-pytz==2016.7
-PyYAML==3.12
+Jinja2==2.9.6
+MarkupSafe==1.0
+Pygments==2.2.0
+pytz==2017.2
+requests==2.18.1
 six==1.10.0
 snowballstemmer==1.2.1
-sphinxcontrib-httpdomain==1.5.0
-urllib3==1.18.1
+sphinxcontrib-websupport==1.0.1
+urllib3==1.22

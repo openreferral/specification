@@ -23,6 +23,6 @@ Publishers should also be aware that some applications may wish to extract a 'sh
 
 
 ```eval_rst
-.. jsontableschemainclude:: ../datapackage.json
+# .. jsontableschemainclude:: ../datapackage.json
 ```
  

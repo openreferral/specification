@@ -1,3 +1,6 @@
+```eval_rst
+.. _hsda-meta:
+```
 # Human Services Data API (HSDA) - Meta v1.0
 
 ```eval_rst
