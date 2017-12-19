@@ -335,7 +335,7 @@
                         {
                             "name": "id",
                             "type": "string",
-                            "description":"Each service must have a unique identifier.",
+                            "description":"Each service_taxonomy entry should have a unique identifier.",
                             "constraints": {
                                 "required":true,
                                 "unique":true
@@ -343,7 +343,7 @@
                         },
                         {
                             "name": "service_id",
-                            "description": "The identifier of the service at a given location.",
+                            "description": "The identifier of the service to which this taxonomy term applies.",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -351,7 +351,7 @@
                         },
                         {
                             "name":"taxonomy_id",
-                            "description":"The identifier of this classification from the taxonomy table.",
+                            "description":"The identifier of this taxonomy term from the taxonomy table.",
                             "type":"string",
                             "constraints": {
                                 "required":true
