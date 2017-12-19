@@ -4,9 +4,9 @@
 
 # HSDA
 
-The core HSDA protocol is defined by [openapi-hsda.yaml](../_static/openapi-hsda.yaml). The details below show the available methods and responses. 
+The core HSDA protocol is defined by [openapi-hsda.yaml](../../_static/openapi-hsda.yaml). The details below show the available methods and responses. 
 
-You can also [explore this using our OpenAPI viewer](../_static/swagger/?url=../openapi-hsda.yaml). 
+You can also [explore this using our OpenAPI viewer](../../../_static/swagger/?url=../openapi-hsda.yaml). 
 
 ```eval_rst
 .. admonition:: General principles

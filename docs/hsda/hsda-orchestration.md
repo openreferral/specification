@@ -7,7 +7,7 @@ The HSDA orchestration protocol is defined by [openapi-hsda-orchestration.yaml](
 
 This is a HSDA sevice specifically intended to manage orchestration around HSDA operations, enabling the system to become a two-way street, pushing data outside individual implementations. The system uses webhooks, and events to understand changes made to the HSDA system, and the data stored within.
 
-You can also [explore this using our OpenAPI viewer](../_static/swagger/?url=../openapi-hsda-orchestration.yaml). 
+You can also [explore this using our OpenAPI viewer](../../../_static/swagger/?url=../openapi-hsda-orchestration.yaml). 
 
 ```eval_rst
 .. warning::

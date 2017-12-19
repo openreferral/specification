@@ -9,7 +9,7 @@ This is a HSDA service specifically intended to assist in managing HSDA access, 
 
 Note: services in this context refers to 'web services', not to 'human services'.
 
-You can also [explore this using our OpenAPI viewer](../_static/swagger/?url=../openapi-hsda-management.yaml). 
+You can also [explore this using our OpenAPI viewer](../../../_static/swagger/?url=../openapi-hsda-management.yaml). 
 
 ```eval_rst
 .. warning::
