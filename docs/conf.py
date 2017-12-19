@@ -413,6 +413,7 @@ class JSONTableSchemaInclude(Directive):
                 self=None,
                 table_data=table_data,
                 col_widths=[1, 1],
+                widths='given',
                 header_rows=0,
                 stub_columns=0)
 
@@ -434,6 +435,7 @@ class JSONTableSchemaInclude(Directive):
                 self=None,
                 table_data=table_data,
                 col_widths=[0.2,0.2,0.6,0.1,0.1],
+                widths='given',
                 header_rows=1,
                 stub_columns=0)
         return out
