@@ -450,6 +450,7 @@ def setup(app):
         'enable_eval_rst': True
         }, True)
     app.add_transform(AutoStructify)
+    app.add_javascript("custom.js")
 
     import glob
     global html_static_path
