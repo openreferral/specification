@@ -739,17 +739,17 @@
                         },
                         {
                             "name": "address_2",
-                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
@@ -841,17 +841,17 @@
                         },
                         {
                             "name": "address_2",
-                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
