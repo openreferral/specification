@@ -1,3 +1,7 @@
+```eval_rst
+.. _hsds-spec:
+```
+
 HSDS Reference
 ==============
 

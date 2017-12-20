@@ -1,4 +1,8 @@
-About the Human Services Data Spec
+```eval_rst
+.. _hsds-about:
+```
+
+About HSDS
 =====
 
 The Human Services Data Specification (HSDS; aka, the Open Referral format) is an exchange format for publishing machine readable data about health, human, and social services, their locations, and the organizations that provide them. We define "human services" broadly, to include any organizational resource that is made available for a person in need – such as food assistance, job training, child care, etc. 
