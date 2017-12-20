@@ -33,7 +33,7 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['sphinxcontrib.openapi', 'sphinxcontrib.opendataservices']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -56,8 +56,8 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'Open Referral'
-copyright = '2017, Open Referral. CC 4.0 BY SA'
+project = 'Open Referral Data Specifications'
+copyright = '2016, Open Referral'
 author = 'Open Referral'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -131,7 +131,6 @@ todo_include_todos = False
 # html_theme = 'alabaster'
 html_static_path = ['_static']
 
-import os
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:  # only import and set the theme if we're building docs locally
@@ -139,14 +138,14 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
   html_theme = 'sphinx_rtd_theme'
   html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
   html_style = 'css/custom.css'
-else:
-  html_context = { 
+
+html_context = { 
     'css_files': [
         'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
         'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
         '_static/theme_overrides.css',
     ],
-  }
+}
 
 
 
@@ -289,7 +288,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OpenReferral.tex', 'Open Referral Documentation',
+    (master_doc, 'OpenReferral.tex', 'Open Referral Data Specifications',
      'Open Referral', 'manual'),
 ]
 
@@ -331,7 +330,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'openreferral', 'Open Referral Documentation',
+    (master_doc, 'openreferral', 'Open Referral Data Specifications',
      [author], 1)
 ]
 
@@ -346,8 +345,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'OpenReferral', 'Open Referral Documentation',
-     author, 'OpenReferral', 'One line description of project.',
+    (master_doc, 'OpenReferral', 'Open Referral Data Specifications',
+     author, 'OpenReferral', 'Making it easy to share and find information about community resources',
      'Miscellaneous'),
 ]
 
@@ -414,6 +413,7 @@ class JSONTableSchemaInclude(Directive):
                 self=None,
                 table_data=table_data,
                 col_widths=[1, 1],
+                widths='given',
                 header_rows=0,
                 stub_columns=0)
 
@@ -435,13 +435,12 @@ class JSONTableSchemaInclude(Directive):
                 self=None,
                 table_data=table_data,
                 col_widths=[0.2,0.2,0.6,0.1,0.1],
+                widths='given',
                 header_rows=1,
                 stub_columns=0)
         return out
 
 directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)
-
-
 
 
 def setup(app):
@@ -451,3 +450,9 @@ def setup(app):
         'enable_eval_rst': True
         }, True)
     app.add_transform(AutoStructify)
+    app.add_javascript("custom.js")
+
+    import glob
+    global html_static_path
+    for file in glob.glob("../api-specification/_data/api-commons/*.yaml"):
+        html_static_path = html_static_path + [file]

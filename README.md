@@ -4,6 +4,8 @@ Human Services Data Specification defines a minimal set of data for publishing m
 
 A detailed FAQ about the project is [found here](http://docs.openreferral.org/en/latest/faq), and additional information about the Open Referral Initiative is available at [https://openreferral.org](https://openreferral.org)
 
+This project also integrates documentation for the [Human Services Data API specification](https://github.com/openreferral/api-specification) which builds upon HSDS.
+
 ## License
 
 The Human Services Data Specification and its documentation are [licensed](LICENSE) under the Creative Commons Attribution-ShareAlike (CC BY-SA) license.
@@ -22,14 +24,36 @@ Other branches are not built automatically, but can be configured by admin's of 
 
 ### Building locally
 
-Assuming a unix based system with Python 3 installed:
+Assuming a unix based system with Python 3 installed, set up an environment:
 
 ```
 python3 -m venv .ve    
 source .ve/bin/activate
 pip install -r requirements.txt
+```
+
+Then pull in the submodule for the api-documentation. 
+
+```
+git submodule init
+git submodule update
+```
+
+The update command should be re-run whenever there are updates to the api-specification repository. 
+
+To build the docs:
+
+```
 cd docs
 make dirhtml
+```
+
+You can also use sphinx-autobuild to have an auto-refreshing local build.
+
+```
+pip install sphinx-autobuild
+cd docs
+sphinx-autobuild . _build
 ```
 
 ### Translations
