@@ -68,9 +68,14 @@ HSDA has been through a number of iterations during development:
 
 * [HSDA v1.1](https://openreferral.github.io/api-specification/hsda-v1.1/) is accessible for reference.
 
-The initial cycle of HSDA's development was [made possible by support](https://openreferral.org/the-open-referral-api-project/) from the [Digital Impact](https://digitalimpact.org/about/) program at [Stanford's Center for Philanthropy and Civil Society](https://pacscenter.stanford.edu/).
-
 Prior to HSDA, the Ohana API acted as a reference implementation of an early version the Human Services Data Spec, and it was used as one of the inputs to the recent API development process. Systems based on Ohana will need to be updated to follow the new HSDA specifications. 
+
+## Acknowledgments 
+
+The HSDA has been designed by @kinlane, the [API Evangelist](https://apievangelist.com), with guidance from a range of contributors in the Open Referral network. 
+
+The first cycle of HSDA's development was [made possible by support](https://openreferral.org/the-open-referral-api-project/) from the [Digital Impact](https://digitalimpact.org/about/) program at [Stanford's Center for Philanthropy and Civil Society](https://pacscenter.stanford.edu/).
+
 
 ## Components
 
