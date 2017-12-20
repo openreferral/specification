@@ -1,4 +1,4 @@
-1      {
+{
         "name": "human_services_data",
         "title": "Human Services Data Specification Template",
         "description":"This is a template datapackage.json file for producing a Tabular Data Package of data according to the Human Services Data Specification. You should provide an edited version of this file as part of any datapackage you provide, updating the title, description, license and homepage information to reflect the data you are publishing.", 
