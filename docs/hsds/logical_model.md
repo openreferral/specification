@@ -12,124 +12,43 @@ Additional information about organisations, locations and services is held in se
 
 The table below indicates the foreign keys that exist. 
 
-<table class="docutils">
-    <thead>
-        <tr>
-            <th class="head">Table</th>
-            <th class="head">organization</th>
-            <th class="head">service</th>
-            <th class="head">location</th>
-            <th class="head">service_at_location</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>programs</td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>funding</td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>service_taxonomy</td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>phone*</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>contact</td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>regular_schedule</td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>holiday_schedule</td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>eligibility</td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>service_area</td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>required_document</td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>payment_accepted</td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>language</td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>physical_address</td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>postal_address</td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>accessibility_for_disabilities</td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+```eval_rst
+
++--------------------------------+--------------+---------+----------+---------------------+
+| Table                          | organization | service | location | service_at_location |
++================================+==============+=========+==========+=====================+
+| programs                       | X            |         |          |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| funding                        | X            | X       |          |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| service_taxonomy               |              | X       |          |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| phone*                         | X            | X       | X        | X                   |
++--------------------------------+--------------+---------+----------+---------------------+
+| contact                        | X            | X       |          | X                   |
++--------------------------------+--------------+---------+----------+---------------------+
+| regular_schedule               |              | X       | X        | X                   |
++--------------------------------+--------------+---------+----------+---------------------+
+| holiday_schedule               |              | X       | X        | X                   |
++--------------------------------+--------------+---------+----------+---------------------+
+| eligibility                    |              | X       |          |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| service_area                   |              | X       |          |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| required_document              |              | X       |          |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| payment_accepted               |              | X       |          |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| language                       |              | X       | X        |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| physical_address               |              |         | X        |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| postal_address                 |              |         | X        |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| accessibility_for_disabilities |              |         | X        |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+
+```
 
 *Phone can also be linked to **contact**. 
 
@@ -138,4 +57,4 @@ When a single row contains multiple foreign keys, these will be interpreted as '
 E.g. a phone number applies to the service OR the organisation OR the service_at_location. 
 
 ## ER Diagram for HSDS v 1.1 
-![ER Diagram HSDS v1.1](assets/hsds_er_diagram_v1.1.png)
+![ER Diagram HSDS v1.1](/assets/hsds_er_diagram_v1.1.png)
