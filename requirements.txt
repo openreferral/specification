@@ -7,7 +7,7 @@ sphinx-rtd-theme==0.2.4
 # sphinxcontrib jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@a1e21704186b8e46f161a5b29c3f7bfeace5ca09#egg=sphinxcontrib-jsonschema
 # sphinxcontrib ODSC
--e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@23ce17656feaa237584af8822bd57ac39b498f93#egg=sphinxcontrib-opendataservices
+-e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@bc2f9a83a2562a50aa9386fb9c1d30161ed5120e#egg=sphinxcontrib-opendataservices
 -e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@c0637fc35509fd93fa3c6f6cd6583154c60616df#egg=sphinxcontrib_openapi
 ## The following requirements were added by pip freeze:
 alabaster==0.7.10
