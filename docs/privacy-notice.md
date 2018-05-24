@@ -1,6 +1,8 @@
 Privacy Notice
 --------------
 
+ReadTheDocs provide the platform these docs are hosted on, for information about how they collect and process personal data, [see their Privacy Policy](https://docs.readthedocs.io/en/latest/privacy-policy.html).
+
 Open Referral is committed to ensuring that your privacy is protected. This privacy notice sets out how we collect and process any personal data when you use this website.
 
 We may change this notice from time to time by updating this page. This notice is effective from 24th May 2018.
