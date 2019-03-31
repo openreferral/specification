@@ -1,11 +1,10 @@
 # ************************************************************
-# Sequel Pro SQL dump
-# Version 4541
+# Human Servers Data Specification API (HSDA)
+# Version 1.2
 #
-# http://www.sequelpro.com/
-# https://github.com/sequelpro/sequelpro
+# http://www.openreferral.com/
 #
-# Host: open-referral.cc2fhv18kp05.us-east-1.rds.amazonaws.com (MySQL 5.6.37-log)
+# Host: {your host}
 # Database: hsda
 # Generation Time: 2019-03-31 20:33:01 +0000
 # ************************************************************
