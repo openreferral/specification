@@ -1556,10 +1556,17 @@
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "address",
+                                "resource": "postal_address",
                                 "fields": "id"
                             }
                         },
+                        {
+                            "fields": "resource_id",
+                            "reference": {
+                                "resource": "physical_address",
+                                "fields": "id"
+                            }
+                        },                          
                         {
                             "fields": "resource_id",
                             "reference": {
@@ -1570,14 +1577,14 @@
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "holiday_schedules",
+                                "resource": "holiday_schedule",
                                 "fields": "id"
                             }
                         },
                         {
                             "fields": "resource_id",
                             "reference": {
-                                "resource": "regular_schedules",
+                                "resource": "regular_schedule",
                                 "fields": "id"
                             }
                         },
