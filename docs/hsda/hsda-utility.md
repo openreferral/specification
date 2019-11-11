@@ -4,7 +4,7 @@
 
 # HSDA Utility
 
-The HSDA utility protocol is defined by [openapi-hsda-utility.yaml](../static/openapi-hsda-utility.yaml). The details below show the available methods and responses. 
+The HSDA utility protocol is defined by [openapi-hsda-utility.yaml](../../api-specification/_data/api-commons/openapi-hsda-utility.yaml). The details below show the available methods and responses. 
 
 You can also [explore this using our OpenAPI viewer](../../_static/swagger/?url=../openapi-hsda-utility.yaml). 
 

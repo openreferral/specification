@@ -3,7 +3,7 @@
 ```
 # HSDA Meta 
 
-The HSDA meta protocol is defined by [openapi-hsda-meta.yaml](../static/openapi-hsda-meta.yaml). The details below show the available methods and responses. 
+The HSDA meta protocol is defined by [openapi-hsda-meta.yaml](../../api-specification/_data/api-commons/openapi-hsda-meta.yaml). The details below show the available methods and responses. 
 
 This is a HSDA service specifically intended to manage the meta data around human services data API operations. Essentially this is a logging system, providing access to data about what API calls are made, managing individual resources, as well as any other service in use association with HSDA operations.
 

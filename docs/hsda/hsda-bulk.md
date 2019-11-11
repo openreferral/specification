@@ -3,7 +3,7 @@
 ```
 # HSDA Bulk
 
-The HSDA bulk protocol is defined by [openapi-hsda-bulk.yaml](../static/openapi-hsda-bulk.yaml). The details below show the available methods and responses. 
+The HSDA bulk protocol is defined by [openapi-hsda-bulk.yaml](https://github.com/openreferral/api-specification/blob/master/_data/api-commons/openapi-hsda-bulk.yaml). The details below show the available methods and responses. 
 
 This is a service for handling bulk loading of data into any HSDA service, allowing each POST and PUT to be queued up as a job, and be run on schedule, or based upon other events.
 

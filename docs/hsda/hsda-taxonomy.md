@@ -3,7 +3,7 @@
 ```
 # HSDA Taxonomy 
 
-The HSDA taxonomy protocol is defined by [openapi-hsda-taxonomy.yaml](../static/openapi-hsda-taxonomy.yaml). The details below show the available methods and responses. 
+The HSDA taxonomy protocol is defined by [openapi-hsda-taxonomy.yaml](../../api-specification/_data/api-commons/openapi-hsda-taxonomy.yaml). The details below show the available methods and responses. 
 
 This is a separate HSDA service for working with taxonomy across all the core human services resources, support any categorization or taxonomy, and allowing for filtering of services by taxonomy.
 
