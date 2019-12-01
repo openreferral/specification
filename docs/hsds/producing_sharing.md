@@ -1,9 +1,11 @@
 Producing and Sharing Compliant Data
 ====================================
 
-HSDS builds on the Frictionless Data project's [data package specification. ](http://specs.frictionlessdata.io/data-packages/)
+HSDS recommends packaging HSDS-compliant data as a datapackage for sharing, using the Frictionless Data project's [data package specification.](http://specs.frictionlessdata.io/data-packages/)
 
-A data package contains a number of CSV files with defined column headings, and a JSON file (datapackage.json) that describes their contents.
+A data package contains a number of CSV files with defined column headings, and a JSON file (datapackage.json) that describes their contents. An HSDS-compliant datapackage should contain only valid CSVs of HSDS data (see the documentation below and the HSDS specification for acceptable file names and headers). A datapackage is typically a directory or folder of files, but can be compressed into a single zip file.
+
+You can find an example HSDS datapackage here: <TODO>
 
 ### CSV Formatting
 
