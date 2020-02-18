@@ -1,4 +1,4 @@
-      {
+{
         "name": "human_services_data",
         "title": "Human Services Data Specification Template",
         "description":"This is a template datapackage.json file for producing a Tabular Data Package of data according to the Human Services Data Specification. You should provide an edited version of this file as part of any datapackage you provide, updating the title, description, license and homepage information to reflect the data you are publishing.", 
@@ -7,7 +7,7 @@
                 "type": "CC-BY-SA-4.0",
                 "name": "Creative Commons Attribution-ShareAlike 4.0"
         },
-        "version":"1.0",
+        "version":"1.1.1",
         "homepage":"http://docs.openreferral.org",
         "resources": [
             {
@@ -335,7 +335,7 @@
                         {
                             "name": "id",
                             "type": "string",
-                            "description":"Each service must have a unique identifier.",
+                            "description":"Each service_taxonomy entry should have a unique identifier.",
                             "constraints": {
                                 "required":true,
                                 "unique":true
@@ -343,7 +343,7 @@
                         },
                         {
                             "name": "service_id",
-                            "description": "The identifier of the service at a given location.",
+                            "description": "The identifier of the service to which this taxonomy term applies.",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -351,7 +351,7 @@
                         },
                         {
                             "name":"taxonomy_id",
-                            "description":"The identifier of this classification from the taxonomy table.",
+                            "description":"The identifier of this taxonomy term from the taxonomy table.",
                             "type":"string",
                             "constraints": {
                                 "required":true
@@ -739,17 +739,17 @@
                         },
                         {
                             "name": "address_2",
-                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
@@ -841,17 +841,17 @@
                         },
                         {
                             "name": "address_2",
-                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A second (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_3",
-                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) A third (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
                             "name": "address_4",
-                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma separated list in address_1. There is no guarantee that systems will read this line of address information.)",
+                            "description": "(Deprecated) The fourth (additional) line of address information. (This field is deprecated: we recommend including all address information before 'city' as a comma or newline separated list in address_1. There is no guarantee that systems will read this line of address information.)",
                             "type": "string"
                         },
                         {
@@ -941,7 +941,7 @@
                         },
                         {
                             "name": "weekday",
-                            "description": "The day of the week that this entry relates to",
+                            "description": "The day of the week that this entry relates to: 1 = Monday; 7 = Sunday.",
                             "type": "integer",
                             "constraints": {
                                 "required":true
@@ -1298,7 +1298,7 @@
             {
                 "name": "language",
                 "path": "languages.csv",
-                "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with intepretation.",
+                "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
