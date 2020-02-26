@@ -9,6 +9,7 @@
         },
         "version":"1.1.1",
         "homepage":"http://docs.openreferral.org",
+        "profile": "tabular-data-package",
         "resources": [
             {
                 "name": "organization",
@@ -16,6 +17,7 @@
                 "description":"The organization record is used to provide basic description and details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -113,6 +115,7 @@
                 "description":"Some organizations organise their services into programs. A program brings together a number of related services.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -168,6 +171,7 @@
                 "path": "services.csv",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -330,6 +334,7 @@
                 "description":"The service taxonomy creates a link between a service and one or more classifications that describe the nature of the service provided.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [   
                         {
@@ -388,6 +393,7 @@
                 "description":"The services at location table creates a link between a service and a specific location.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -446,6 +452,7 @@
                 "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -513,6 +520,7 @@
                 "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -630,6 +638,7 @@
                 "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -709,6 +718,7 @@
                 "description": "The addresses table contains the physical addresses for locations",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -811,6 +821,7 @@
                 "description": "The postal_address table contains the postal addresses for mail to a certain location. This may differ from the physical location.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -914,6 +925,7 @@
                 "description": "The regular_schedule table contains details of when a service or location is open under normal circumstances. Each entry in the table can relate to one and only one day of the week.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -990,6 +1002,7 @@
                 "description": "The holiday_schedule table contains details of when a service or location is open during holidays. Each entry in the table describes a period of one or more days, and the operating times on those days.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1082,6 +1095,7 @@
                 "description": "The funding table describes the sources of funding for a service or organisation",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1133,6 +1147,7 @@
                 "description": "The eligibility tables contains details of the eligibility criteria for particular services",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1176,6 +1191,7 @@
                 "description": "The service_area table contains details of the geographic area for which a service is available.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1220,6 +1236,7 @@
                 "description": "The required_document table contains details of any documents that are required in order to access or use services.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1259,6 +1276,7 @@
                 "description": "The payment_accepted table contains details of the methods of payment that can be used in order to pay for services",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1301,6 +1319,7 @@
                 "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1352,6 +1371,7 @@
                 "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1403,6 +1423,7 @@
                 "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy table contains a list of taxonomy identifiers, their names, and, for hierarchical taxonomies, their structure.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1456,6 +1477,7 @@
                 "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1604,6 +1626,7 @@
                 "description": "The meta_table_description table contains metadata about individual tables.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
