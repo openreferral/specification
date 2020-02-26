@@ -64,7 +64,7 @@
                         {
                             "name": "url",
                             "type": "string",
-                            "format":"url",
+                            "format":"uri",
                             "description":"The URL (website address) of the organization.",
                             "constraints": {
                                 "required":false
@@ -225,7 +225,7 @@
                             "name": "url",
                             "description": "URL of the service",
                             "type": "string",
-                            "format":"url",
+                            "format":"uri",
                             "constraints": {
                                 "required":false
                             }
