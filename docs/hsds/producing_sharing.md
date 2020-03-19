@@ -1,7 +1,7 @@
 Producing and Sharing Compliant Data
 ====================================
 
-HSDS builds on the Frictionless Data project's [data package specification. ](http://specs.frictionlessdata.io/data-packages/)
+HSDS builds on the Frictionless Data project's [data package specification. ](https://specs.frictionlessdata.io/)
 
 A data package contains a number of CSV files with defined column headings, and a JSON file (datapackage.json) that describes their contents.
 
