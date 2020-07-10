@@ -1,8 +1,11 @@
 Sphinx
 sphinx-intl
 transifex-client
-# recommonmark commit pinned from master branch
--e git+https://github.com/rtfd/recommonmark.git@81d7c6f7b37981ac22571dd91a7cc9d24c3e66a1#egg=recommonmark
--e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@964e709dcdde1b3a2d145a81a03f1c30b698d0b7#egg=sphinxcontrib_jsonschema
--e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@d8a1045ba3b7d985ea52c9c632017afb9dc70574#egg=sphinxcontrib_openapi
 sphinx-rtd-theme==0.2.4
+# recommonmark commit pinned from master branch
+-e git+https://github.com/rtfd/recommonmark.git@c410abb565a3c4ad4de0ce204ab2fa2db8031cf1#egg=recommonmark
+# sphinxcontrib jsonschema
+-e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@a1e21704186b8e46f161a5b29c3f7bfeace5ca09#egg=sphinxcontrib-jsonschema
+# sphinxcontrib ODSC
+-e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@bc2f9a83a2562a50aa9386fb9c1d30161ed5120e#egg=sphinxcontrib-opendataservices
+-e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@c0637fc35509fd93fa3c6f6cd6583154c60616df#egg=sphinxcontrib_openapi
