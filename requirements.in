@@ -1,9 +1,9 @@
 Sphinx
+docutils<0.14
 sphinx-intl
 transifex-client
 sphinx-rtd-theme==0.2.4
-# recommonmark commit pinned from master branch
--e git+https://github.com/rtfd/recommonmark.git@c410abb565a3c4ad4de0ce204ab2fa2db8031cf1#egg=recommonmark
+recommonmark
 # sphinxcontrib jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@a1e21704186b8e46f161a5b29c3f7bfeace5ca09#egg=sphinxcontrib-jsonschema
 # sphinxcontrib ODSC

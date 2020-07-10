@@ -92,7 +92,7 @@ The first cycle of HSDA's development was [made possible by support](https://ope
    hsda-orchestration
    hsda-meta
    hsda-management
-   hsda-utility   
+   hsda-utility
 
 ```
 

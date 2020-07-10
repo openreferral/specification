@@ -4,40 +4,51 @@
 #
 #    pip-compile
 #
--e git+https://github.com/rtfd/recommonmark.git@c410abb565a3c4ad4de0ce204ab2fa2db8031cf1#egg=recommonmark  # via -r requirements.in, sphinxcontrib-opendataservices
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@a1e21704186b8e46f161a5b29c3f7bfeace5ca09#egg=sphinxcontrib-jsonschema  # via -r requirements.in
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@bc2f9a83a2562a50aa9386fb9c1d30161ed5120e#egg=sphinxcontrib-opendataservices  # via -r requirements.in
 -e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@c0637fc35509fd93fa3c6f6cd6583154c60616df#egg=sphinxcontrib_openapi  # via -r requirements.in
-alabaster==0.7.10         # via sphinx
+alabaster==0.7.12         # via sphinx
 attrs==19.3.0             # via jsonschema
-babel==2.4.0              # via sphinx, sphinx-intl
-certifi==2017.4.17        # via requests
+babel==2.8.0              # via sphinx, sphinx-intl
+certifi==2020.6.20        # via requests
 chardet==3.0.4            # via requests
 click==7.1.2              # via sphinx-intl
-commonmark==0.7.3         # via recommonmark
-docutils==0.13.1          # via recommonmark, sphinx
-future==0.16.0            # via commonmark
-idna==2.5                 # via requests
-imagesize==0.7.1          # via sphinx
-jinja2==2.9.6             # via sphinx
+commonmark==0.9.1         # via recommonmark
+docutils==0.13.1          # via -r requirements.in, recommonmark, sphinx
+gitdb==4.0.5              # via gitpython
+gitpython==3.1.3          # via transifex-client
+idna==2.10                # via requests
+imagesize==1.2.0          # via sphinx
+jinja2==2.11.2            # via sphinx
 jsonpointer==2.0          # via sphinxcontrib-jsonschema, sphinxcontrib-opendataservices
 jsonref==0.2              # via sphinxcontrib-jsonschema
 jsonschema==3.2.0         # via sphinxcontrib-openapi
-markupsafe==1.0           # via jinja2
-pygments==2.2.0           # via sphinx
+markupsafe==1.1.1         # via jinja2
+packaging==20.4           # via sphinx
+pygments==2.6.1           # via sphinx
+pyparsing==2.4.7          # via packaging
 pyrsistent==0.16.0        # via jsonschema
-pytz==2017.2              # via babel
+python-slugify==4.0.1     # via transifex-client
+pytz==2020.1              # via babel
 pyyaml==5.3.1             # via sphinxcontrib-openapi
-requests==2.18.1          # via sphinx
-six==1.15.0               # via jsonschema, sphinx, sphinx-intl, sphinxcontrib-httpdomain, transifex-client
-snowballstemmer==1.2.1    # via sphinx
-sphinx-intl==0.9.9        # via -r requirements.in
+recommonmark==0.6.0       # via -r requirements.in, sphinxcontrib-opendataservices
+requests==2.24.0          # via sphinx, transifex-client
+six==1.15.0               # via jsonschema, packaging, pyrsistent, sphinxcontrib-httpdomain, transifex-client
+smmap==3.0.4              # via gitdb
+snowballstemmer==2.0.0    # via sphinx
+sphinx-intl==2.0.1        # via -r requirements.in
 sphinx-rtd-theme==0.2.4   # via -r requirements.in
-sphinx==1.6.2             # via -r requirements.in, recommonmark, sphinx-intl, sphinxcontrib-httpdomain, sphinxcontrib-jsonschema, sphinxcontrib-opendataservices
+sphinx==3.1.2             # via -r requirements.in, recommonmark, sphinx-intl, sphinxcontrib-httpdomain, sphinxcontrib-jsonschema, sphinxcontrib-opendataservices
+sphinxcontrib-applehelp==1.0.2  # via sphinx
+sphinxcontrib-devhelp==1.0.2  # via sphinx
+sphinxcontrib-htmlhelp==1.0.3  # via sphinx
 sphinxcontrib-httpdomain==1.7.0  # via sphinxcontrib-openapi
-sphinxcontrib-websupport==1.0.1  # via sphinx
-transifex-client==0.12.4  # via -r requirements.in
-urllib3==1.21.1           # via requests, transifex-client
+sphinxcontrib-jsmath==1.0.1  # via sphinx
+sphinxcontrib-qthelp==1.0.3  # via sphinx
+sphinxcontrib-serializinghtml==1.1.4  # via sphinx
+text-unidecode==1.3       # via python-slugify
+transifex-client==0.13.11  # via -r requirements.in
+urllib3==1.25.9           # via requests, transifex-client
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
