@@ -13,7 +13,7 @@ attrs==19.3.0             # via jsonschema
 babel==2.4.0              # via sphinx, sphinx-intl
 certifi==2017.4.17        # via requests
 chardet==3.0.4            # via requests
-click==6.7                # via sphinx-intl
+click==7.1.2              # via sphinx-intl
 commonmark==0.7.3         # via recommonmark
 docutils==0.13.1          # via recommonmark, sphinx
 future==0.16.0            # via commonmark
