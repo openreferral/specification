@@ -1174,11 +1174,7 @@
                         {
                             "name": "eligibility",
                             "description": "The rules or guidelines that determine who can receive the service.",
-                            "type": "string",
-                            "constraints": {
-                                "enum": ["adult","child","teen","family","female","male",
-                                    "Transgender", "Transgender - M to F", "Transgender - F to M" ]
-                            }
+                            "type": "string"
                         }
                     ],
                     "primaryKey": "id",
@@ -1306,10 +1302,7 @@
                         {
                             "name": "payment",
                             "description": "The methods of payment accepted for the service",
-                            "type": "string",
-                            "constraints": {
-                                "enum": ["cash","check","money order","credit card","medicare","SNAP","WIC","EBT"]
-                            }
+                            "type": "string"
                         }
                     ],
                     "primaryKey": "id",
@@ -1403,11 +1396,7 @@
                         {
                             "name": "accessibility",
                             "description": "Description of assistance or infrastructure that facilitate access to clients with disabilities.",
-                            "type": "string",
-                            "constraints": {
-                                "enum": ["cd","deaf_interpreter","disabled_parking","elevator",
-                                    "ramp","restroom","tape_braille","tty","wheelchair","wheelchair_van"]
-                            }
+                            "type": "string"
                         },
                         {
                             "name":"details",
