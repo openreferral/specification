@@ -74,3 +74,6 @@ No changes.
 * Adding a missing primary key to the taxonomy table;
 * Fixing the foreign key on accessibility_for_disabilities;
 * Adding format validation for URIs and e-mail addresses to the schema;
+
+[v2.0]
+

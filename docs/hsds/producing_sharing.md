@@ -1,13 +1,13 @@
 Producing and Sharing Compliant Data
 ====================================
 
-HSDS builds on the Frictionless Data project's [data package specification. ](https://specs.frictionlessdata.io/)
+HSDS uses the Frictionless Data project's [data package specification. ](https://specs.frictionlessdata.io/)
 
-A data package contains a number of CSV files with defined column headings, and a JSON file (datapackage.json) that describes their contents.
+A data package contains a number of CSV files with defined column headings, and a JSON Table Schema file (datapackage.json) that describes their contents.
 
 ### CSV Formatting
 
-For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv). 
+For ease of data production, Human Services Data Specification specifies that all files are provided in a simple comma-separated value format (.csv).
 
 CSV files should conforms to [RFC4180](http://tools.ietf.org/html/rfc4180). and use the UTF-8 character set.
 
@@ -32,7 +32,7 @@ Because of the variety of addressing systems, every field is composed of alphanu
 
 ### Description Field Formatting
 
-The description field may include HTML or MarkDown tags.
+The description field may include HTML or Markdown tags.
 
 ### Guidance on Mapping Fields and Values
 

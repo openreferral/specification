@@ -1,13 +1,13 @@
 {
         "name": "human_services_data",
         "title": "Human Services Data Specification Template",
-        "description":"This is a template datapackage.json file for producing a Tabular Data Package of data according to the Human Services Data Specification. You should provide an edited version of this file as part of any datapackage you provide, updating the title, description, license and homepage information to reflect the data you are publishing.", 
+        "description":"This is a template datapackage.json file for producing a Tabular Data Package of data according to the Human Services Data Specification. You should provide an edited version of this file as part of any datapackage you provide, updating the title, description, license and homepage information to reflect the data you are publishing.",
         "license": {
                 "url": "https://creativecommons.org/licenses/by-sa/4.0/",
                 "type": "CC-BY-SA-4.0",
                 "name": "Creative Commons Attribution-ShareAlike 4.0"
         },
-        "version":"1.1.1",
+        "version":"2.0.0",
         "homepage":"http://docs.openreferral.org",
         "resources": [
             {
@@ -295,14 +295,6 @@
                             "constraints":{
                                 "required":false
                             }
-                        },
-                        {
-                            "name":"taxonomy_ids",
-                            "description":"(Deprecated) A comma separated list of identifiers from the taxonomy table. This field is deprecated in favour of using the service_taxonomy table.",
-                            "type":"string",
-                            "constraints": {
-                                "required":false
-                            }
                         }
                     ],
                     "primaryKey": "id",
@@ -325,17 +317,17 @@
                 }
             },
             {
-                "name": "service_taxonomy",
-                "path": "services_taxonomy.csv",
-                "description":"The service taxonomy creates a link between a service and one or more classifications that describe the nature of the service provided.",
+                "name": "service_attribute",
+                "path": "service_attributes.csv",
+                "description":"The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
-                    "fields": [   
+                    "fields": [
                         {
                             "name": "id",
                             "type": "string",
-                            "description":"Each service_taxonomy entry should have a unique identifier.",
+                            "description":"Each service_attribute entry should have a unique identifier.",
                             "constraints": {
                                 "required":true,
                                 "unique":true
@@ -350,17 +342,12 @@
                             }
                         },
                         {
-                            "name":"taxonomy_id",
+                            "name":"taxonomy_term_id",
                             "description":"The identifier of this taxonomy term from the taxonomy table.",
                             "type":"string",
                             "constraints": {
-                                "required":true
+                                "required":false
                             }
-                        },
-                        {
-                            "name":"taxonomy_detail",
-                            "description":"For advanced uses, this field can indicate a constraint on this classification, using * to combine two taxonomy terms. For example: 'Food Pantry*Homeless' (where 'Food Pantry' and 'Homeless' are identifiers in the taxonomy table) to indicate a food pantry service for homeless clients, but not available to other client groups. In this example, there would be two entries in service_taxonomy, one with 'Food Pantry' and one for 'Homeless' in the taxonomy_id field, but both with the same 'Food Pantry*Homeless' value in the taxonomy_detail field.",
-                            "type":"string"
                         }
                     ],
                     "primaryKey": "id",
@@ -373,9 +360,64 @@
                             }
                         },
                         {
-                            "fields": "taxonomy_id",
+                            "fields": "taxonomy_term_id",
                             "reference": {
-                                "resource": "taxonomy",
+                                "resource": "taxonomy_term",
+                                "fields": "id"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "other_attribute",
+                "path": "other_attributes.csv",
+                "description":"The other_attributes table creates a link between entities other than service and one or more classifications that describe the entity.",
+                "format": "csv",
+                "mediatype": "text/csv",
+                "schema": {
+                    "fields": [
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "description":"Each other_attribute entry should have a unique identifier.",
+                            "constraints": {
+                                "required":true,
+                                "unique":true
+                            }
+                        },
+                        {
+                            "name": "link_id",
+                            "description": "The identifier of the entity to which this taxonomy term applies.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
+                        },
+                        {
+                            "name": "link_type",
+                            "description": "The identifier of the entity to which this taxonomy term applies.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true,
+                                "enum":["organization", "service_area", "service_at_location", "location", "eligibility"]
+                            }
+                        },
+                        {
+                            "name":"taxonomy_term_id",
+                            "description":"The identifier of this taxonomy term from the taxonomy table.",
+                            "type":"string",
+                            "constraints": {
+                                "required":false
+                            }
+                        }
+                    ],
+                    "primaryKey": "id",
+                    "foreignKeys": [
+                        {
+                            "fields": "taxonomy_term_id",
+                            "reference": {
+                                "resource": "taxonomy_term",
                                 "fields": "id"
                             }
                         }
@@ -909,9 +951,9 @@
                 }
             },
             {
-                "name": "regular_schedule",
-                "path": "regular_schedules.csv",
-                "description": "The regular_schedule table contains details of when a service or location is open under normal circumstances. Each entry in the table can relate to one and only one day of the week.",
+                "name": "schedule",
+                "path": "schedules.csv",
+                "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
@@ -940,114 +982,72 @@
                             "type": "string"
                         },
                         {
-                            "name": "weekday",
-                            "description": "The day of the week that this entry relates to: 1 = Monday; 7 = Sunday.",
-                            "type": "integer",
-                            "constraints": {
-                                "required":true
-                            }
+                            "name": "valid_from",
+                            "description": "The date from which the schedule information is valid.",
+                            "type": "date"
                         },
                         {
-                            "name": "opens_at",
-                            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time. ",
-                            "type": "time"
+                            "name": "valid_to",
+                            "description": "The last date on which the schedule information is valid.",
+                            "type": "date"
                         },
                         {
-                            "name": "closes_at",
-                            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
-                            "type": "time"
-                        }
-                    ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "location_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
+                            "name": "dtstart",
+                            "description": "iCal - The date of the first event is the schedule. Necessary when using the 'interval' feature",
+                            "type": "date"
                         },
                         {
-                            "fields": "service_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
+                            "name": "until",
+                            "description": "The date of the last occurence of the recurring event.",
+                            "type": "date"
                         },
                         {
-                            "fields": "service_at_location_id",
-                            "reference": {
-                                "resource": "service_at_location",
-                                "fields": "id"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "holiday_schedule",
-                "path": "holiday_schedules.csv",
-                "description": "The holiday_schedule table contains details of when a service or location is open during holidays. Each entry in the table describes a period of one or more days, and the operating times on those days.",
-                "format": "csv",
-                "mediatype": "text/csv",
-                "schema": {
-                    "fields": [
+                            "name": "wkst",
+                            "description": "iCal - The day on which the week starts, eg MO.",
+                            "type": "date"
+                        },
                         {
-                            "name": "id",
-                            "description": "Each entry must have a unique identifier",
+                            "name": "freq",
+                            "description": "iCal - How often the frequency repeats. E.g. Frequency use one of WEEKLY or MONTHLY.",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                              "enum": [
+                                "DAILY",
+                                "WEEKLY",
+                                "MONTHLY",
+                                "YEARLY"
+                              ]
                             }
                         },
                         {
-                            "name": "service_id",
-                            "description": "The identifier of the service for which this is the holiday schedule",
+                            "name": "interval",
+                            "description": "iCal - How often the frequency repeats. E.g. Interval 2 for Frequency WEEKLY gives Fortnightly",
+                            "type": "number"
+                        },
+                        {
+                            "name": "byday",
+                            "description": "iCal - Comma seperated days of the week. E.g. SU,MO,TU,WE,TH,FR,SA. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
                             "type": "string"
                         },
                         {
-                            "name": "location_id",
-                            "description": "The identifier of the location for which this is the holiday schedule",
+                            "name": "byweekno",
+                            "description": "iCal - Comma seperated numeric weeks of the year if freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
                             "type": "string"
                         },
                         {
-                            "name": "service_at_location_id",
-                            "description": "The identifier of the 'service at location' table entry, when this schedule is specific to a service in a particular location.",
+                            "name": "bymonthday",
+                            "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
+                            "type": "number"
+                        },
+                        {
+                            "name": "byyearday",
+                            "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
+                            "type": "number"
+                        },
+                        {
+                            "name": "description",
+                            "description": "Human readable description of the availability of the service.",
                             "type": "string"
-                        },
-                        {
-                            "name": "closed",
-                            "description": "Indicates if a service or location is closed during a public holiday",
-                            "type": "boolean",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "opens_at",
-                            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
-                            "type": "time"
-                        },
-                        {
-                            "name": "closes_at",
-                            "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am East Coast Time.",
-                            "type": "time"
-                        },
-                        {
-                            "name": "start_date",
-                            "description": "The first day that a service or location is closed during a public or private holiday",
-                            "type": "date",
-                            "constraints": {
-                                "required":true
-                            }
-                        },
-                        {
-                            "name": "end_date",
-                            "description": "The last day that a service or location is closed during a public or private holiday",
-                            "type": "date",
-                            "constraints": {
-                                "required":true
-                            }
                         }
                     ],
                     "primaryKey": "id",
@@ -1398,16 +1398,16 @@
                 }
             },
             {
-                "name": "taxonomy",
-                "path": "taxonomy.csv",
-                "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy table contains a list of taxonomy identifiers, their names, and, for hierarchical taxonomies, their structure.",
+                "name": "taxonomy_term",
+                "path": "taxonomy_terms.csv",
+                "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "schema": {
                     "fields": [
                         {
                             "name": "id",
-                            "description": "Each taxonomy entry must have a unique identifier. If combining multiple taxonomies with overlapping identifiers, use a prefix to distinguish them.",
+                            "description": "Each taxonomy term must have a unique identifier, within the scope of the dataset",
                             "type": "string",
                             "constraints": {
                                 "required":true,
@@ -1415,8 +1415,16 @@
                             }
                         },
                         {
-                            "name": "name",
-                            "description": "The name of this taxonomy term or category.",
+                            "name": "term",
+                            "description": "The taxonomy term itself.",
+                            "type": "string",
+                            "constraints": {
+                                "required":true
+                            }
+                        },
+                        {
+                            "name": "description",
+                            "description": "What the term means",
                             "type": "string",
                             "constraints": {
                                 "required":true
@@ -1424,23 +1432,23 @@
                         },
                         {
                             "name":"parent_id",
-                            "description":"If this is a child category in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
+                            "description":"If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
                             "type":"string",
                             "constraints": {
                                 "required":false
                             }
                         },
                         {
-                            "name":"parent_name",
-                            "description":"If this is a child category in a hierarchical taxonomy, give the name of the parent category. For top-level categories, this should be left blank.",
+                            "name":"taxonomy",
+                            "description":"If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility. If possible, provide a URI.",
                             "type":"string",
-                            "constraints": {
+                            "constraints":{
                                 "required":false
                             }
                         },
                         {
-                            "name":"vocabulary",
-                            "description":"If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility.",
+                            "name":"language",
+                            "description":"An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                             "type":"string",
                             "constraints":{
                                 "required":false
@@ -1566,7 +1574,7 @@
                                 "resource": "physical_address",
                                 "fields": "id"
                             }
-                        },                          
+                        },
                         {
                             "fields": "resource_id",
                             "reference": {
