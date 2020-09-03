@@ -1509,6 +1509,36 @@
                             }
                         },
                         {
+                            "name": "resource_type",
+                            "description": "The type of entity being referenced",
+                            "type": "string",
+                            "constraints": {
+                                "required":true,
+                                "unique":true,
+                                "enum": ["organization",
+                                    "program",
+                                    "service",
+                                    "service_attribute",
+                                    "other_attribute",
+                                    "service_at_location",
+                                    "location",
+                                    "phone",
+                                    "contact",
+                                    "physical_address",
+                                    "postal_address",
+                                    "schedule",
+                                    "funding",
+                                    "eligibility",
+                                    "service_area",
+                                    "required_document",
+                                    "payment_accepted",
+                                    "language",
+                                    "accessibility_for_disabilities",
+                                    "taxonomy_term"
+                                ]
+                            }
+                        },
+                        {
                             "name": "last_action_date",
                             "description": "The date when data was changed.",
                             "type": "datetime",
@@ -1557,79 +1587,7 @@
                             }
                         }
                     ],
-                    "primaryKey": "id",
-                    "foreignKeys": [
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "location",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "service",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "organization",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "program",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "postal_address",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "physical_address",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "contact",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "holiday_schedule",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "regular_schedule",
-                                "fields": "id"
-                            }
-                        },
-                        {
-                            "fields": "resource_id",
-                            "reference": {
-                                "resource": "phone",
-                                "fields": "id"
-                            }
-                        }
-                    ]
+                    "primaryKey": "id"
                 }
             },
            {
