@@ -9,7 +9,7 @@ The Human Services Data Specification (HSDS; aka, the Open Referral format) is a
 
 **The primary use case served by HSDS is the provision of human service directory information as "open data," to be consumed by any third-party information system.**
 
-HSDS's design metaphor is based on the curated service book published by a local authority, or the stack of flyers at the doctors' office; it is designed to answer the question of "where should I look for help?" or "which services are available around my schedule?" It is not intended to support real-time systems. Therefore, it supports asking the question "Which services are usually open on Thursday lunchtimes?", but not "It's Thursday lunchtime, which services are definitely open right now?"
+HSDS's design metaphor is based on the curated service book published by a local authority, or the stack of flyers at the doctors' office; it is designed to answer the question of "where should I look for help?" or "which services are available around my schedule?". It can be used as the basis of a real-time system, but developers of such systems should ensure that the data that they're using contains enough detail and is updated regularly enough to support that use, particularly around times that there may be variations (such as holidays).  
 
 Government entities, community organizations, and people often face difficulty obtaining timely and correct data about human services. The Human Services Data Specification facilitates the open exchange and use of human service data (often known as "community resource data") among these stakeholders. To that end, this is an interchange format designed to complement – _not replace_ – existing storage formats currently in use.
 
