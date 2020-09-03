@@ -8,7 +8,6 @@ Our specifications evolve through iterative cycles of proposals, requests for co
 Open Referral's governance model is [described in greater detail in our Project Documentation](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit#heading=h.4ndyvjr4bk73). 
 
 
-
 ### Get Involved
 
 You can contribute to the development of these protocols in several ways:
@@ -20,7 +19,6 @@ You can contribute to the development of these protocols in several ways:
 * Join our [community forum](https://groups.google.com/forum/#!forum/openreferral) where discussions around the specification are encouraged. 
 
 * Attend our weekly office hours. At noon EST each week (more or less!) the Open Referral leadership convenes to discuss any issues that participants bring up. We coordinate this in Slack; email [info@openreferral.org](mailto:info@openreferral.org) to request an invite.
-
 
 
 ### Roadmap

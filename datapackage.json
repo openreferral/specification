@@ -1501,7 +1501,7 @@
                         },
                         {
                             "name": "resource_id",
-                            "description": "Each service, program. location, address, or contact will have a unique identifier. Unique ids are UUIDs.",
+                            "description": "Each service, program. location, address, or contact will have a unique identifier.",
                             "type": "string",
                             "constraints": {
                                 "required":true,
