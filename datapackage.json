@@ -130,7 +130,8 @@
                             "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
                             "format":"uuid",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -495,7 +496,8 @@
                             "description": "Each location must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -562,7 +564,8 @@
                             "description": "Each entry must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },{
                             "name": "location_id",
@@ -679,7 +682,8 @@
                             "description": "Each contact must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -758,7 +762,8 @@
                             "description": "Each physical address must have a unique identifier.",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -860,7 +865,8 @@
                             "description": "Each postal address must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -963,7 +969,8 @@
                             "description": "Each entry must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1089,7 +1096,8 @@
                             "description": "Each entry must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1140,7 +1148,8 @@
                             "description": "Each entry must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1183,7 +1192,8 @@
                             "description": "Each service area must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1227,7 +1237,8 @@
                             "description": "Each document must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1266,7 +1277,8 @@
                             "description": "Each entry must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1308,7 +1320,8 @@
                             "description": "Each language must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1359,7 +1372,8 @@
                             "description": "Each entry must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1411,7 +1425,7 @@
                             "type": "string",
                             "constraints": {
                                 "required":true,
-                                "unique":true
+                                "unique":true,
                             }
                         },
                         {
@@ -1471,7 +1485,8 @@
                             "description": "Each entry must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1479,7 +1494,8 @@
                             "description": "Each service, program. location, address, or contact will have a unique identifier. Unique ids are UUIDs.",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
@@ -1619,7 +1635,8 @@
                             "description": "Each entry must have a unique identifier",
                             "type": "string",
                             "constraints": {
-                                "required":true
+                                "required":true,
+                                "unique":true
                             }
                         },
                         {
