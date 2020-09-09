@@ -1,7 +1,7 @@
-Classifications, Descriptions & Taxonomies
-==========================================
+Classifications, Attributes & Taxonomies
+========================================
 
-HSDS allows any entity to have attributes attached.
+HSDS allows any major entity to have attributes attached. These attributes can be either properties of the entity, or classifications of the entity. 
 
 For _services_, the _service_taxonomy_ table is used for this.
 
@@ -9,7 +9,7 @@ For all other entities, the _link_taxonomy_ table is used.
 
 ## Scope of HSDS
 
-HSDS is focussed on providing information about services; it is not designed to be a taxonomy interchange format. Therefore, the features provided by HSDS are intended to be sufficient for users to transfer enough information about a taxonomy to make the data about services be useful, but no more.
+HSDS is focussed on providing information about services; it is not designed to be a taxonomy interchange format. Therefore, the features provided by HSDS are intended to be sufficient for users to transfer enough information about a taxonomy to make the data about services be useful, but no more. 
 
 If, in a particular context, it's helpful to transfer more information than HSDS has in scope, then HSDS is extensible, and you're welcome to add additional information beyond the schema.
 
@@ -62,5 +62,101 @@ For example, a particular piece of machinery might have some attributes:
 * Has a government-issued plate declaring it to be ID “JG36QAK” and allowed to be driven on public roads
 * Is of type “crane”, from the taxonomy “construction machinery”
 
+Attributes in HSDS are asserted by applying a taxonomy term to an object. 
 
+## Applying a taxonomy term to an object
+
+To apply a taxonomy term to an object, three things are required:
+
+* An entry in the taxonomy term table, containing the term
+* An entry in the relevant table, containing the entity
+* An entry in the relevant link table, linking the two
+
+## Example
+
+(Note: only fields required for the example are shown)
+
+### services
+
+First of all, some services.
+
+```eval_rst
+
++-------+-------------+-------------------+
+| id    | name        | description       |
++-------+-------------+-------------------+
+| 89652 | Kitten Time | Time with kittens |
++-------+-------------+-------------------+
+| 89654 | Puppy Time  | Time with puppies |
++-------+-------------+-------------------+
+
+```
+
+### taxonomy_terms
+
+Then, some taxonomy terms. 
+
+```eval_rst
+
++------+-------------+-------------------------------------+--------------------------+
+| id   | term        | description                         | taxonomy                 |
++------+-------------+-------------------------------------+--------------------------+
+| 918  | stress      | A service that helps with stress    | http://taxonomy.example/ |
++------+-------------+-------------------------------------+--------------------------+
+| 1045 | WORKPLACE   | Services that help in the workplace | My Local Taxonomy        |
++------+-------------+-------------------------------------+--------------------------+
+
+```
+
+### programs
+
+And finally, a program. 
+
+```eval_rst
+
++---------------------+--------------------------+
+| id                  | name                     |
++---------------------+--------------------------+
+| 2767-ANIMAL-THERAPY | Animal Therapy Programme |
++---------------------+--------------------------+
+
+```
+
+### service_attributes
+
+We then use the service_attributes table to link the services with the appropriate taxonomy terms.
+
+```eval_rst
++----+------------+------------------+
+| id | service_id | taxonomy_term_id |
++----+------------+------------------+
+| 1  | 89652      | 918              |
+|    |            |                  |
++----+------------+------------------+
+| 2  | 89652      | 1045             |
+|    |            |                  |
++----+------------+------------------+
+| 3  | 89654      | 918              |
++----+------------+------------------+
+| 4  | 89654      | 1045             |
++----+------------+------------------+
+
+```
+
+### other_attributes
+
+And finally, we use the other_attributes table to link the program with the appropriate taxonomy term. 
+
+```eval_rst
+
++----+---------+-----------+------------------+
+| id | link_id | link_type | taxonomy_term_id |
++----+---------+-----------+------------------+
+| 1  | 89652   | program   | 918              |
+|    |         |           |                  |
++----+---------+-----------+------------------+
+| 2  | 89654   | program   | 918              |
+|    |         |           |                  |
++----+---------+-----------+------------------+
+```
 

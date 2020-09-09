@@ -406,8 +406,24 @@
                             "type": "string",
                             "constraints": {
                                 "required":true,
-                                "enum":["organization", "service_area", "service_at_location", "location", "eligibility"]
-                            }
+                                "enum": ["organization",
+                                    "program",
+                                    "service",
+                                    "service_at_location",
+                                    "location",
+                                    "phone",
+                                    "contact",
+                                    "physical_address",
+                                    "postal_address",
+                                    "schedule",
+                                    "funding",
+                                    "eligibility",
+                                    "service_area",
+                                    "required_document",
+                                    "payment_accepted",
+                                    "language",
+                                    "accessibility_for_disabilities",
+                                ]                            }
                         },
                         {
                             "name":"taxonomy_term_id",
@@ -1170,11 +1186,6 @@
                             "name": "service_id",
                             "description": "The identifier of the service for which this entry describes the eligibility criteria",
                             "type": "string"
-                        },
-                        {
-                            "name": "eligibility",
-                            "description": "The rules or guidelines that determine who can receive the service.",
-                            "type": "string"
                         }
                     ],
                     "primaryKey": "id",
@@ -1524,15 +1535,10 @@
                                     "location",
                                     "phone",
                                     "contact",
-                                    "physical_address",
-                                    "postal_address",
                                     "schedule",
                                     "funding",
                                     "eligibility",
                                     "service_area",
-                                    "required_document",
-                                    "payment_accepted",
-                                    "language",
                                     "accessibility_for_disabilities",
                                     "taxonomy_term"
                                 ]

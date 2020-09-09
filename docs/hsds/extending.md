@@ -28,3 +28,5 @@ The "constrain & extend" pattern combines the two previous patterns.
 ## Principles
 
 When extending, implementations should try to follow the design of HSDS as closely as possible.
+
+If a field exists that's close to one that you need, then it's better to use it and describe how it's used in your documentation.
