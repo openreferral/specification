@@ -45,7 +45,7 @@ Read more in our Contributors Guide. Reach out to [info@openreferral.org](mailto
 
 ### If I maintain a community resource directory — or if I partner with an organization that does — how would I get started?
 
-You can start by testing the viability of our format for your context. That may entail [mapping your database's schema to the Human Services Data Specification](http://docs.openreferral.org/en/latest/producing_sharing/#guidance-on-mapping-fields-and-values).
+You can start by testing the viability of our format for your context. That may entail [mapping your database's schema to the Human Services Data Specification](http://docs.openreferral.org/en/latest/hsds/producing_sharing/?highlight=mapping#guidance-on-mapping-fields-and-values).
 
 Once you've mapped your schema to ours, analyze the gaps. (You can ask questions or submit suggestions for improvements to our schema in [our Issues Queue]([https://github.com/openreferral/specification/issues](https://github.com/openreferral/specification/issues)).) 
 
