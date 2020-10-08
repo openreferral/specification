@@ -1447,7 +1447,7 @@
                             "type": "string",
                             "constraints": {
                                 "required":true,
-                                "unique":true,
+                                "unique":true
                             }
                         },
                         {
