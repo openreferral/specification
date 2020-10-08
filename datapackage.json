@@ -423,7 +423,8 @@
                                     "payment_accepted",
                                     "language",
                                     "accessibility_for_disabilities",
-                                ]                            }
+                                ]                            
+                            }
                         },
                         {
                             "name":"taxonomy_term_id",
