@@ -406,7 +406,8 @@
                             "type": "string",
                             "constraints": {
                                 "required":true,
-                                "enum": ["organization",
+                                "enum": [
+                                    "organization",
                                     "program",
                                     "service",
                                     "service_at_location",
