@@ -1,7 +1,7 @@
 Identifiers
 ===========
 
-The HSDS specification contains a lot of identifiers; this guide explains what they're all for and what good practice looks like around using them. 
+The HSDS specification contains a lot of identifiers; this guide explains what they're for and what good practice looks like around using them. 
 
 ## id fields
 

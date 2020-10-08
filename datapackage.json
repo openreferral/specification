@@ -1,7 +1,7 @@
 {
         "name": "human_services_data",
-        "title": "Human Services Data Specification Template",
-        "description":"This is a template datapackage.json file for producing a Tabular Data Package of data according to the Human Services Data Specification. You should provide an edited version of this file as part of any datapackage you provide, updating the title, description, license and homepage information to reflect the data you are publishing.",
+        "title": "Human Services Data Specification",
+        "description":"HSDS describes data about organizations, the services they provide, the locations at which these services can be accessed, and associated details.",
         "license": {
                 "url": "https://creativecommons.org/licenses/by-sa/4.0/",
                 "type": "CC-BY-SA-4.0",
@@ -381,6 +381,7 @@
                 "description":"The other_attributes table creates a link between entities other than service and one or more classifications that describe the entity.",
                 "format": "csv",
                 "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
                 "schema": {
                     "fields": [
                         {
@@ -1637,3 +1638,4 @@
             }
         ]
     }
+

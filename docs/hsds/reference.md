@@ -9,7 +9,7 @@ The Human Services Data Specification defines a set of objects and the relations
 
 This page provides the canonical definition of each object and its required or optional fields.
 
-A collection of HSDS data can be serialised as a [Tabular Data Package](http://specs.frictionlessdata.io/tabular-data-package/) consisting of csv files for each of the objects required, and a [package descriptor (datapackage.json)](http://specs.frictionlessdata.io/tabular-data-package/#specification) file adapted from the current [HSDS specification](https://github.com/openreferral/specification/blob/master/datapackage.json) to include any additional fields and meta-data from the data publisher.
+A collection of HSDS data can be serialized as a [Tabular Data Package](http://specs.frictionlessdata.io/tabular-data-package/) consisting of CSV files for each of the objects required, and a [package descriptor (datapackage.json)](http://specs.frictionlessdata.io/tabular-data-package/#specification) file adapted from the current [HSDS specification](https://github.com/openreferral/specification/blob/master/datapackage.json) to include any additional fields and metadata from the data publisher.
 
 ## Names and descriptions
 
@@ -21,7 +21,7 @@ A ```description``` field may include HTML elements or [Markdown](https://en.wik
 
 Consuming applications that expect plain-text only should strip HTML tags  from these fields. 
 
-Publishers should also be aware that some applications may wish to extract a 'short description' from the ```description``` field, and may do so by looking for the first full sentance, or first line-break. 
+Publishers should also be aware that some applications may wish to extract a 'short description' from the ```description``` field, and may do so by looking for the first full sentence, or first line-break. 
 
 ## Objects and fields
 

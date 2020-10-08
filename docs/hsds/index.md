@@ -1,7 +1,7 @@
 Human Services Data Specification (HSDS)
-=============
+========================================
 
-**The Human Services Data Specification (HSDS)** is the technical name for Open Referral's core data exchange format. HSDS is designed to support the publication of open, interoperable community resource directory data.
+**The Human Services Data Specification (HSDS)** is Open Referral's core data exchange format. HSDS is designed to support the publication of open, interoperable community resource directory data.
 
 The [reference documentation](hsds-spec) describes the structure of HSDS data, and provides the authoritative definition of the fields using in HSDS and [HSDA](hsda).
 
@@ -31,17 +31,23 @@ The [reference documentation](hsds-spec) describes the structure of HSDS data, a
 .. toctree::
    :maxdepth: 2
 
+   :caption: Standard
    about
    reference
-   use_cases
    logical_model
-   producing_sharing
-   sample_data
-   changelog
-   detail_dates
    variations_interoperability
+   formatting
+   changelog
+   
+   :caption: Guidance
+
+   use_cases
+   producing_sharing
+   sample_data 
+   detail_dates 
    classifications
    identifiers
+   extending
 
 
    ```

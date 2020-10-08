@@ -4,6 +4,8 @@ sphinx-intl
 transifex-client
 sphinx-rtd-theme==0.2.4
 recommonmark
+# erd-from-json-table-schema
+git+https://github.com/OpenDataServices/erd-from-json-table-schema.git
 # sphinxcontrib jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@a1e21704186b8e46f161a5b29c3f7bfeace5ca09#egg=sphinxcontrib-jsonschema
 # sphinxcontrib ODSC
