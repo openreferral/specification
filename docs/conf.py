@@ -439,6 +439,21 @@ class JSONTableSchemaInclude(Directive):
 directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)
 
 
+# Generate an ERD
+
+import jts_erd
+with open('../datapackage.json', 'r') as f:
+        j = json.load(f)
+
+jts_erd.save_svg(
+        j,
+        'entity_relationship_diagram.svg',
+        display_columns=True,
+        display_indexes=True,
+        rankdir='RL',
+    )
+
+
 def setup(app):
     app.add_config_value('recommonmark_config', {
         #'url_resolver': lambda url: github_doc_root + url,
