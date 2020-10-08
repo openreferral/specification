@@ -57,4 +57,4 @@ When a single row contains multiple foreign keys, these will be interpreted as '
 E.g. a phone number applies to the service OR the organisation OR the service_at_location. 
 
 ## ER Diagram for HSDS v2.0 
-![ER Diagram HSDS v2.0](/assets/entity-relationship-diagram.svg)
+![ER Diagram HSDS v2.0](/assets/entity_relationship_diagram.svg)
