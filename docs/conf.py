@@ -447,7 +447,7 @@ with open('../datapackage.json', 'r') as f:
 
 jts_erd.save_svg(
         j,
-        'entity_relationship_diagram.svg',
+        'assets/entity_relationship_diagram.svg',
         display_columns=True,
         display_indexes=True,
         rankdir='RL',
