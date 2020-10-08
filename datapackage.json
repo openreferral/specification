@@ -423,7 +423,7 @@
                                     "required_document",
                                     "payment_accepted",
                                     "language",
-                                    "accessibility_for_disabilities",
+                                    "accessibility_for_disabilities"
                                 ]                            
                             }
                         },
