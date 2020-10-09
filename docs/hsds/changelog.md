@@ -7,14 +7,14 @@ No changes.
 
 [v0.1](https://docs.google.com/document/d/18vdB0DUvBfp6UcYQ78KaMmN3Ei2riThJL48V7TTOHHQ/edit?usp=sharing)
 
-* Changes from comment period, workshop comments, and a running [summary of comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing).
+* Changes from comment period, workshop comments, and a running [summary of comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing)
 * Directly references [RFC4180](http://tools.ietf.org/html/rfc4180) for CSV formatting
 
 [v0.2](https://docs.google.com/document/d/1z4jSLCoDIqvkKnazZVH_7qP_5HkcgKhnPJLu1mUZBgA/edit?usp=sharing)
 
 * Added related standards
 * Aded use cases based on persona
-* Reformatted the controlled vocabulary.
+* Reformatted the controlled vocabulary
 * Added a logical model
 * Made changes from [comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing) collected during the second RFC period
 * Added Appendix C: Tabular  Data Package description
@@ -25,7 +25,7 @@ No changes.
 * Updated datapackage.json to match logical model
 * Included enumerations for  entities in datapackage.json
 * Added section on NIEM and relation to specification
-* Made changes based on reviewer comments.
+* Made changes based on reviewer comments
 
 [v0.4 - v0.7](https://docs.google.com/document/d/1xTqNm3ShgL6vQtknMmkCNJeWapekrLxd1qpEa8WiEIk/edit?usp=sharing)
 
