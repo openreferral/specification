@@ -4,7 +4,7 @@
 
 # Human Service Data API Suite (HSDA)
 
-The **Human Service Data API Suite (HSDA)** consist of a set of protocols for accessing, updating, exchanging and synchronising community resource directory data.
+The **Human Service Data API Suite (HSDA)** consist of a set of protocols for accessing, updating, exchanging and synchronizing community resource directory data.
 
 HSDA is one of the Open Referral specifications, and builds on [HSDS](hsds). Open Referral's goal is to enable interoperability among diverse technologies that might use resource directory information to help meet people’s needs.
 
@@ -18,7 +18,7 @@ HSDA is one of the Open Referral specifications, and builds on [HSDS](hsds). Ope
 
     The core API protocol can be used by mobile apps, websites and other services to access individual resources, or listings. Providers can also support updates via API if they choose. In conjuction with the search protocol, this provides most of the functionality needed for simple access and exchange of data.
 
-    More complex data synchronisation between distributed systems is supported through the additional protocols. 
+    More complex data synchronization between distributed systems is supported through the additional protocols. 
 
 ```
 
