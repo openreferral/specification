@@ -21,7 +21,7 @@ A ```description``` field may include HTML elements or [Markdown](https://en.wik
 
 Consuming applications that expect plain-text only should strip HTML tags  from these fields. 
 
-Publishers should also be aware that some applications may wish to extract a 'short description' from the ```description``` field, and may do so by looking for the first full sentance, or first line-break. 
+Publishers should also be aware that some applications may wish to extract a 'short description' from the ```description``` field, and may do so by looking for the first full sentence, or first line-break. 
 
 ## Objects and fields
 
