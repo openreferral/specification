@@ -43,7 +43,7 @@ Source data may or may not map directly to the HSDS. Guidelines are listed below
 * A data source may have a field that can map to an HSDS field but in many cases are not populated. A null value is acceptable.
 * In some cases, such as name, using the organization name for either or both location or service is acceptable. This is up to the discretion of the data producer.
 * Mapping a field is at the data producer’s discretion, but it is acceptable for some entities to map to multiple entities, for example an organization, service, or location can have a contact.
-* The HSDS is a baseline of data, if the the data producer’s has additional fields or entities that they wish to add, the specification can be extended to incorporate them. The data producer should provide documentation of how the specification has been extended.
+* The HSDS is a baseline of data, if the data producers have additional fields or entities that they wish to add, the specification can be extended to incorporate them. The data producer should provide documentation of how the specification has been extended.
 
 ### Files & Attributes Summary
 
