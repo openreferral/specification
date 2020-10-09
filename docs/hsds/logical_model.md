@@ -8,7 +8,7 @@ There are four core tables in HSDS:
 3. **location** - where services are delivered - either physically, or virtually (over the phone or Internet);
 4. **service_at_location** - a link table used to record where particular services are available, and to over-ride any default service or location information, with information specific to the service at a specific location.
 
-Additional information about organisations, locations and services is held in separate tables and linked by a foreign key. Some tables only have a single foreign key for a single core table. Others can be linked to different core tables. 
+Additional information about organizations, locations and services is held in separate tables and linked by a foreign key. Some tables only have a single foreign key for a single core table. Others can be linked to different core tables. 
 
 The table below indicates the foreign keys that exist. 
 
