@@ -74,3 +74,20 @@ No changes.
 * Adding a missing primary key to the taxonomy table;
 * Fixing the foreign key on accessibility_for_disabilities;
 * Adding format validation for URIs and e-mail addresses to the schema;
+
+[v2.0](https://docs.google.com/document/d/1N3Vg_ZOXGkWuF8L2rVpLInXpKtfHgRIcIMA-y_7qPqg/edit)
+
+* Renamed service_taxonomy table to service_attribute to apply terms to services;
+* Renamed taxonomy table to taxonomy_term;
+* Added taxonomy table to describe taxonomies;
+* Added other_attribute table to apply terms to non-service objects;
+* Renamed regular_schedule table to schedule;
+* Changed fields in schedule table to support RRULE-based entries;
+* Added non-normative guidance to documentation; 
+* Clarified normative pages;
+* Added ways for standard to be adapted to particular use-cases;
+* Added guidance for extending the standard;
+* Improved consistency of constraints in schema;
+* Fixed various bugs relating to inconsistencies;
+* Added documentation to illustrate classifications and scheduling;
+* Added auto-building ERD

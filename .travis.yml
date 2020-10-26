@@ -1,9 +1,12 @@
 language: python
 python:
-  - "3.5"
-#install:
-#  - pip install -r requirements.txt
+  - "3.8"
+install:
+  - pip install -r requirements.txt
+  - wget 'https://specs.frictionlessdata.io/schemas/tabular-data-package.json'
 script:
   # Check that datapackage.json is well formed JSON
   - python -c 'import json; json.load(open("datapackage.json"))'
+  # Check that datapackage.json validates against the tabular data package json schema
+  - jsonschema -i datapackage.json tabular-data-package.json
 sudo: false
