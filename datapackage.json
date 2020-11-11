@@ -1087,7 +1087,6 @@
                             "description": "Human readable description of the availability of the service.",
                             "type": "string"
                         },
-,
                         {
                             "name": "opens_at",
                             "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix 'Z' when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.)",
