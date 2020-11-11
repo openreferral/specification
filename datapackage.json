@@ -1031,12 +1031,21 @@
                         },
                         {
                             "name": "dtstart",
-                            "description": "iCal - The date of the first event is the schedule. Necessary when using the 'interval' feature",
+                            "description": "iCal - The date of the first event is the schedule. Necessary when using the 'interval' feature, optional otherwise.",
                             "type": "date"
                         },
                         {
+                            "name": "timezone",
+                            "description": "The timezone that all dates are expressed as, expressed as a UTC offset. Dates are assumed to be UTC otherwise.",
+                            "type": "number"
+                        },
+                        {
                             "name": "until",
-                            "description": "The date of the last occurence of the recurring event.",
+                            "description": "iCal - The date of the last occurence of the recurring event.",
+                            "type": "date"
+                        },
+                        {   "name": "interval",
+                            "description": "iCal - The number of times that the event occurs. Use this instead of 'until', if appropriate.",
                             "type": "date"
                         },
                         {
