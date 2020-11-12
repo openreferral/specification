@@ -971,7 +971,6 @@
                             "constraints": {
                                 "required":true
                             }
-
                         }
                     ],
                     "primaryKey": "id",
@@ -1044,7 +1043,7 @@
                             "description": "iCal - The date of the last occurence of the recurring event.",
                             "type": "date"
                         },
-                        {   "name": "interval",
+                        {   "name": "count",
                             "description": "iCal - The number of times that the event occurs. Use this instead of 'until', if appropriate.",
                             "type": "date"
                         },
