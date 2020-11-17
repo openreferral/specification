@@ -42,6 +42,7 @@ The [reference documentation](hsds-spec) describes the structure of HSDS data, a
    :caption: Guidance
 
    use_cases
+   schedules
    producing_sharing
    sample_data 
    detail_dates 

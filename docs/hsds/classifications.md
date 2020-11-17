@@ -9,7 +9,7 @@ For all other entities, the _link_taxonomy_ table is used.
 
 ## Scope of HSDS
 
-HSDS is focussed on providing information about services; it is not designed to be a taxonomy interchange format. Therefore, the features provided by HSDS are intended to be sufficient for users to transfer enough information about a taxonomy to make the data about services be useful, but no more. 
+HSDS is focused on providing information about services; it is not designed to be a taxonomy interchange format. Therefore, the features provided by HSDS are intended to be sufficient for users to transfer enough information about a taxonomy to make the data about services be useful, but no more. 
 
 If, in a particular context, it's helpful to transfer more information than HSDS has in scope, then HSDS is extensible, and you're welcome to add additional information beyond the schema.
 

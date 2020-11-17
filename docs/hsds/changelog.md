@@ -13,8 +13,8 @@ No changes.
 [v0.2](https://docs.google.com/document/d/1z4jSLCoDIqvkKnazZVH_7qP_5HkcgKhnPJLu1mUZBgA/edit?usp=sharing)
 
 * Added related standards
-* Aded use cases based on persona
-* Reformatted the controlled vocabulary
+* Added use cases based on persona
+* Reformatted the controlled vocabulary.
 * Added a logical model
 * Made changes from [comments](https://docs.google.com/spreadsheets/d/19Sf7DPMooO6edEm8FcIjSv6VeC1Ar55YDBvLTl-S4dE/edit?usp=sharing) collected during the second RFC period
 * Added Appendix C: Tabular  Data Package description
@@ -91,3 +91,9 @@ No changes.
 * Fixed various bugs relating to inconsistencies;
 * Added documentation to illustrate classifications and scheduling;
 * Added auto-building ERD
+
+[v2.0.1]
+
+* Re-added erroneously removed opens_at and closes_at fields to schedule table;
+* Added further guidance on schedules in response to community feedback;
+* Added timezone and count RRULE fields to schedule table
