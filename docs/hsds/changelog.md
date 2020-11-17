@@ -91,3 +91,9 @@ No changes.
 * Fixed various bugs relating to inconsistencies;
 * Added documentation to illustrate classifications and scheduling;
 * Added auto-building ERD
+
+[v2.0.1]
+
+* Re-added erroneously removed opens_at and closes_at fields to schedule table;
+* Added further guidance on schedules in response to community feedback;
+* Added timezone and count RRULE fields to schedule table
