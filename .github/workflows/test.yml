@@ -1,0 +1,24 @@
+name: Test
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+        architecture: x64
+    - run: sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config
+    - uses: actions/cache@v1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+    - run: pip install -r requirements.txt
+    - run: wget 'https://specs.frictionlessdata.io/schemas/tabular-data-package.json'
+    - name: Check that datapackage.json is well formed JSON
+      run: python -c 'import json; json.load(open("datapackage.json"))'
+    - name: Check that datapackage.json validates against the tabular data package json schema
+      run: jsonschema -i datapackage.json tabular-data-package.json
