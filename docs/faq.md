@@ -21,7 +21,7 @@ Greg Bloom is the instigator and lead organizer of Open Referral, which emerged 
 Our work was initially co-sponsored by [Code for America](https://www.codeforamerica.org/blog/2014/08/05/open-referral-initiative-a-standard-for-the-safety-net/) and the Ohana Project, with funding from the Knight Foundation.
 
 
-### Who is the audience for Open Referral? Who benefits? {#who-is-the-audience-for-open-referral-who-benefits}
+### Who is the audience for Open Referral? Who benefits?
 
 There are three types of _ultimate_ stakeholders for Open Referral: 1) people in need of help of some kind (_‘help-seekers’_); 2) people who are in some kind of position to assist such help-seekers (_‘service providers’_); and 3) _‘analysts’_ — i.e. researchers, policymakers, funders and anyone seeking to understand the patterns of resource allocation in their community.
 
@@ -70,7 +70,7 @@ Of all the feedback received from many different contributors, we assign priorit
 AKA 'the Open Referral format,' the HSDS is a data interchange format that enables resource directory data to be published in bulk for use by many systems. HSDS provides a common vocabulary for information about services, the organizations that provide them, and the locations where they can be accessed. HSDS is essentially an _interlingua_ — in other words, it’s a common language that can be used by anyone to enable community resource directories to ’talk’ to each other. [[See the data specification in Github](https://github.com/OpenReferral/specification) or on [our Documentation Site](https://openreferral.readthedocs.io/).]
 
 
-### What is in the Human Services Data Specification (HSDS)? {#what-is-in-the-human-services-data-specification-hsds}
+### What is in the Human Services Data Specification (HSDS)?
 
 First, HSDS identifies a vocabulary of terms that describe what a service is, the institution that provides it, where the service can be accessed, and how to access it. These terms are designated as ‘required,’ ‘recommended,’ and ‘optional.’ The spec provides instructions for formatting these terms, with examples.
 
