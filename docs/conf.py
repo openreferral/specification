@@ -53,7 +53,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Open Referral Data Specifications'
-copyright = '2016, Open Referral'
+copyright = '2021, Open Referral. Open Referral specifications and documentation is licensed under the Creative Commons Attribution-ShareAlike 4.0 license; you can share and adapt this material but must give credit and share your work under the same terms.'
 author = 'Open Referral'
 
 # The version info for the project you're documenting, acts as replacement for
