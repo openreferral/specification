@@ -95,12 +95,3 @@ The first cycle of HSDA's development was [made possible by support](https://ope
    hsda-utility
 
 ```
-
-## Reference Implementation
-
-![](/assets/hsda-miami.png)
-
-[The Open Referral Developer Portal](http://developer.open.referral.adopta.agency/) serves as both fully-functional documentation of the HSDA suite and [re-deployable code](https://github.com/human-services/portal) that can serve as a developer portal for any resource referral platform. 
-
-You can use the portal to explore how a fully implemented API should respond to various requests. As the [Miami implementation of this portal shows](http://miami.open.211.developer.adopta.agency/) you can fork the code and use it provide developers with clear information on your own API implementation. 
-
