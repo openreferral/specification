@@ -20,8 +20,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-from recommonmark.transform import AutoStructify
-import os 
+import os
 
 # -- General configuration ------------------------------------------------
 
@@ -32,7 +31,7 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark', 'sphinxcontrib.openapi', 'sphinxcontrib.opendataservices']
+extensions = ['myst_parser', 'sphinxcontrib.openapi', 'sphinxcontrib.opendataservices']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -388,6 +387,10 @@ class JSONTableSchemaInclude(Directive):
                 return para
             return [[_wrap(cell) for cell in row] for row in rows]
 
+        class MockListTable():
+            def __init__(self,widths):
+                self.widths = widths
+
         out = []
         for resource in json_obj['resources']:
             section = nodes.section(ids=[resource['name']], names=[resource['name']])
@@ -406,10 +409,9 @@ class JSONTableSchemaInclude(Directive):
                 ['mediatype', resource['mediatype']],
             ])
             section += ListTable.build_table_from_list(
-                self=None,
+                self=MockListTable('given'),
                 table_data=table_data,
                 col_widths=[1, 1],
-                widths='given',
                 header_rows=0,
                 stub_columns=0)
 
@@ -428,10 +430,9 @@ class JSONTableSchemaInclude(Directive):
             table_data = [columns.keys()] + [[f(field) for f in columns.values()] for field in resource['schema']['fields']]
             table_data = wrap_table_text(table_data)
             section += ListTable.build_table_from_list(
-                self=None,
+                self=MockListTable('given'),
                 table_data=table_data,
                 col_widths=[0.2,0.2,0.6,0.1,0.1],
-                widths='given',
                 header_rows=1,
                 stub_columns=0)
         return out
@@ -455,12 +456,6 @@ jts_erd.save_svg(
 
 
 def setup(app):
-    app.add_config_value('recommonmark_config', {
-        #'url_resolver': lambda url: github_doc_root + url,
-        'auto_toc_tree_section': 'Contents',
-        'enable_eval_rst': True
-        }, True)
-    app.add_transform(AutoStructify)
     app.add_javascript("custom.js")
 
     import glob

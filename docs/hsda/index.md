@@ -1,4 +1,4 @@
-```eval_rst
+```{eval-rst}
 .. _hsda:
 ```
 
@@ -8,7 +8,7 @@ The **Human Service Data API Suite (HSDA)** consist of a set of protocols for ac
 
 HSDA is one of the Open Referral specifications, and builds on [HSDS](hsds). Open Referral's goal is to enable interoperability among diverse technologies that might use resource directory information to help meet people’s needs.
 
-```eval_rst
+```{eval-rst}
 .. admonition:: When to use HSDA?
     :class: hint
     
@@ -81,7 +81,7 @@ The first cycle of HSDA's development was [made possible by support](https://ope
 
 ## Components
 
-```eval_rst
+```{eval-rst}
 .. toctree::
    :maxdepth: 2
 

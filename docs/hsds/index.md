@@ -1,3 +1,7 @@
+```{eval-rst}
+.. _hsds:
+```
+
 Human Services Data Specification (HSDS)
 ========================================
 
@@ -5,7 +9,7 @@ Human Services Data Specification (HSDS)
 
 The [reference documentation](hsds-spec) describes the structure of HSDS data, and provides the authoritative definition of the fields using in HSDS and [HSDA](hsda).
 
-```eval_rst
+```{eval-rst}
 .. admonition:: When to use HSDS?
     :class: hint
 
@@ -27,7 +31,7 @@ The [reference documentation](hsds-spec) describes the structure of HSDS data, a
 
 **HSDS pages**
 
-```eval_rst
+```{eval-rst}
 .. toctree::
    :maxdepth: 2
 
@@ -44,8 +48,6 @@ The [reference documentation](hsds-spec) describes the structure of HSDS data, a
    use_cases
    schedules
    producing_sharing
-   sample_data 
-   detail_dates 
    classifications
    identifiers
    extending

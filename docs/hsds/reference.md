@@ -1,4 +1,4 @@
-```eval_rst
+```{eval-rst}
 .. _hsds-spec:
 ```
 
@@ -26,7 +26,7 @@ Publishers should also be aware that some applications may wish to extract a 'sh
 ## Objects and fields
 
 
-```eval_rst
+```{eval-rst}
 .. jsontableschemainclude:: ../datapackage.json
 ```
  

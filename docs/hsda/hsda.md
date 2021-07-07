@@ -1,14 +1,15 @@
-```eval_rst
+```{eval-rst}
 .. _hsda-spec:
 ```
 
 # HSDA
 
-The core HSDA protocol is defined by [openapi-hsda.yaml](../../_static/openapi-hsda.yaml). The details below show the available methods and responses. 
+```{eval-rst}
 
-You can also [explore this using our OpenAPI viewer](../../_static/swagger/?url=../openapi-hsda.yaml). 
+The core HSDA protocol is defined by `openapi-hsda.yaml <../../_static/openapi-hsda.yaml>`_. The details below show the available methods and responses. 
 
-```eval_rst
+You can also `explore this using our OpenAPI viewer <../../_static/swagger/?url=../openapi-hsda.yaml>`_. 
+
 .. admonition:: General principles
     :class: hint
 
@@ -20,7 +21,7 @@ You can also [explore this using our OpenAPI viewer](../../_static/swagger/?url=
 
 ```
 
-```eval_rst
+```{eval-rst}
 .. openapi:: ../../api-specification/_data/api-commons/openapi-hsda.yaml
 
 ```
