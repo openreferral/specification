@@ -12,7 +12,7 @@ Additional information about organizations, locations and services is held in se
 
 The table below indicates the foreign keys that exist. 
 
-```eval_rst
+```{eval-rst}
 
 +--------------------------------+--------------+---------+----------+---------------------+
 | Table                          | organization | service | location | service_at_location |
@@ -63,5 +63,10 @@ When a single row contains multiple foreign keys, these must be interpreted as '
 E.g. a phone number applies to the service OR the organisation OR the service_at_location. 
 
 ## ER Diagram
+
 *Click to enlarge*
-[![ER Diagram HSDS v2.0](/assets/entity_relationship_diagram.svg)](../../_images/entity_relationship_diagram.svg)
+
+```{eval-rst}
+.. image:: ../assets/entity_relationship_diagram.svg
+   :target: ../../_images/entity_relationship_diagram.svg
+```

@@ -28,7 +28,7 @@ In this example, we'll describe a service with ID ```35``` that's available from
 
 Note: Only relevant fields are shown, for clarity. 
 
-```eval_rst
+```{eval-rst}
 
 +------+------------+------------+------------+----------+---------------+-------------------------------+----------+-----------+
 | id   | service_id | valid_from | valid_to   | freq     | byday         | description                   | opens_at | closes_at |
@@ -43,7 +43,7 @@ Note that in this case, the non-iCal fields valid_from and valid_to have been pr
 
 During the year, they decide to open on the first Saturday of each month from July until November. So, they add another row:
 
-```eval_rst
+```{eval-rst}
 
 +------+------------+------------+------------+------------+------------+-----------+---------------+------------------------------------------------------+----------+-----------+
 | id   | service_id | valid_from | valid_to   | dtstart    | until      | freq      | byday         | description                                          | opens_at | closes_at |

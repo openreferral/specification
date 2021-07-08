@@ -1,4 +1,4 @@
-```eval_rst
+```{eval-rst}
 .. _hsda-management:
 ```
 # HSDA Management
@@ -9,15 +9,15 @@ This is a HSDA service specifically intended to assist in managing HSDA access, 
 
 Note: services in this context refers to 'web services', not to 'human services'.
 
-You can also [explore this using our OpenAPI viewer](../../_static/swagger/?url=../openapi-hsda-management.yaml). 
+```{eval-rst}
+You can also `explore this using our OpenAPI viewer <../../_static/swagger/?url=../openapi-hsda-management.yaml>`_. 
 
-```eval_rst
 .. warning::
     
     This is an experimental feature. Feedback is welcome to shape its further development.
 
 ```
 
-```eval_rst
+```{eval-rst}
 .. openapi:: ../../api-specification/_data/api-commons/openapi-hsda-management.yaml
 ```

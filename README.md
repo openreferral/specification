@@ -30,7 +30,15 @@ Other branches are not built automatically, but can be configured by admins of t
 
 ### Building locally
 
-Assuming a UNIX-based system with Python 3 installed, set up an environment:
+This assumes a UNIX-based system with Python 3 installed.
+
+You will need graphviz installed. For Ubuntu:
+
+```
+apt-get install graphviz libgraphviz-dev
+```
+
+Set up an environment and install Python dependencies into it:
 
 ```
 python3 -m venv .ve    

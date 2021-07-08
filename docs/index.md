@@ -33,7 +33,7 @@ Questions not answered here? Suggestions for us?
 
 Contents:
 
-```eval_rst
+```{eval-rst}
 .. toctree::
    :maxdepth: 1
 

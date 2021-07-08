@@ -80,7 +80,7 @@ To apply a taxonomy term to an object, three things are required:
 
 First of all, some services.
 
-```eval_rst
+```{eval-rst}
 
 +-------+-------------+-------------------+
 | id    | name        | description       |
@@ -96,7 +96,7 @@ First of all, some services.
 
 Then, some taxonomy terms. 
 
-```eval_rst
+```{eval-rst}
 
 +------+-------------+-------------------------------------+--------------------------+
 | id   | term        | description                         | taxonomy                 |
@@ -112,7 +112,7 @@ Then, some taxonomy terms.
 
 And finally, a program. 
 
-```eval_rst
+```{eval-rst}
 
 +---------------------+--------------------------+
 | id                  | name                     |
@@ -126,7 +126,7 @@ And finally, a program.
 
 We then use the service_attributes table to link the services with the appropriate taxonomy terms.
 
-```eval_rst
+```{eval-rst}
 +----+------------+------------------+
 | id | service_id | taxonomy_term_id |
 +----+------------+------------------+
@@ -147,7 +147,7 @@ We then use the service_attributes table to link the services with the appropria
 
 And finally, we use the other_attributes table to link the program with the appropriate taxonomy term. 
 
-```eval_rst
+```{eval-rst}
 
 +----+---------+-----------+------------------+
 | id | link_id | link_type | taxonomy_term_id |

@@ -1,4 +1,4 @@
-```eval_rst
+```{eval-rst}
 .. _hsda-taxonomy:
 ```
 # HSDA Taxonomy 
@@ -7,17 +7,17 @@ The HSDA taxonomy protocol is defined by [openapi-hsda-taxonomy.yaml](../../api-
 
 This is a separate HSDA service for working with taxonomy across all the core human services resources, support any categorization or taxonomy, and allowing for filtering of services by taxonomy.
 
-You can also [explore this using our OpenAPI viewer](../../_static/swagger/?url=../openapi-hsda-taxonomy.yaml). 
 
 
+```{eval-rst}
+You can also `explore this using our OpenAPI viewer <../../_static/swagger/?url=../openapi-hsda-taxonomy.yaml>`_. 
 
-```eval_rst
 .. warning::
     
     This is an experimental feature. Feedback is welcome to shape its further development.
 
 ```
 
-```eval_rst
+```{eval-rst}
 .. openapi:: ../../api-specification/_data/api-commons/openapi-hsda-taxonomy.yaml
 ```
