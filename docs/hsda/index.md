@@ -40,7 +40,7 @@ Find the core HSDA protocol [in a YAML file here](https://github.com/openreferra
 
 ### Secondary Protocols
 
-HSDA v1.2 also includes complementary sets of “microservice” protocols that address specific user needs (as [documented in user personas and use cases](https://docs.google.com/document/d/1XqueBVbRVgR0BVGjDbUdN4suUYfMKm7yJm1f3nRsGtY/edit#heading=h.ukhvby684u5x) generated through our community’s participatory research process). This modular microservice approach enables specific protocols to be developed independently, while working complementarily in concert with each other.
+HSDA v1.2 also includes complementary sets of “microservice” protocols that address specific user needs (as [documented in user personas and use cases](https://docs.google.com/document/d/1aodu4BUDVbUwVD02zlFs0WkCMn3UQEX1VHyI8ej6BCU/edit) generated through our community’s participatory research process). This modular microservice approach enables specific protocols to be developed independently, while working complementarily in concert with each other.
 
 ##### Content Protocols
 
