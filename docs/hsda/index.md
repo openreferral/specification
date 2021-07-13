@@ -36,7 +36,9 @@ The Human Service Data API specifications consist of a core protocol and associa
 
 [The core HSDA protocol](hsda-spec) (HSDA) describes read/write functionality for the Open Referral’s Human Services Data Specification (HSDS), including resources for organizations, their locations, and their services. Through the HSDA Full protocol, third-parties can access entire contents of a database with a single call. 
 
-Find the core HSDA protocol [in a YAML file here](https://github.com/openreferral/api-specification/blob/master/_data/api-commons/openapi-hsda.yaml).
+```{eval-rst}
+Find the core HSDA protocol `in a YAML file here <../_static/openapi-hsda.yaml>`_.
+```
 
 ### Secondary Protocols
 
