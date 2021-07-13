@@ -4,7 +4,9 @@
 
 # HSDA Utility
 
-The HSDA utility protocol is defined by [openapi-hsda-utility.yaml](../../api-specification/_data/api-commons/openapi-hsda-utility.yaml). The details below show the available methods and responses.
+```{eval-rst}
+The HSDA utility protocol is defined by `openapi-hsda-utility.yaml <../../_static/openapi-hsda-utility.yaml>`_. The details below show the available methods and responses. 
+```
 
 ```{eval-rst}
 
