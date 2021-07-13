@@ -68,7 +68,7 @@ These secondary specifications facilitate the monitoring, permissioning and asso
 
 HSDA has been through a number of iterations during development:
 
-* [HSDA v1.1](https://openreferral.github.io/api-specification/hsda-v1.1/) is accessible for reference.
+* [HSDA v1.1](https://openreferral.github.io/api-specification/v1.1/openapi.yaml) is accessible for reference.
 
 Prior to HSDA, the Ohana API acted as a reference implementation of an early version the Human Services Data Spec, and it was used as one of the inputs to the recent API development process. Systems based on Ohana will need to be updated to follow the new HSDA specifications. 
 
