@@ -3,7 +3,9 @@
 ```
 # HSDA Management
 
-The HSDA management protocol is defined by [openapi-hsda-management.yaml](../../api-specification/_data/api-commons/openapi-hsda-management.yaml). The details below show the available methods and responses. 
+```{eval-rst}
+The HSDA management protocol is defined by `openapi-hsda-management.yaml <../../_static/openapi-hsda-management.yaml>`_. The details below show the available methods and responses. 
+```
 
 This is a HSDA service specifically intended to assist in managing HSDA access, allowing users to get at resources made available any HSDA implementation. Providing the ability to manage users, and the HSDA services they have access to. 
 
