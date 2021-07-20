@@ -443,11 +443,14 @@ directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)
 # Generate an ERD
 
 import jts_erd
+import copy
+import csv
 with open('../datapackage.json', 'r') as f:
-        j = json.load(f)
+        datapackage = json.load(f)
 
+#---- Full ERD
 jts_erd.save_svg(
-        j,
+        datapackage,
         'assets/entity_relationship_diagram.svg',
         display_columns=True,
         display_indexes=True,
@@ -455,6 +458,36 @@ jts_erd.save_svg(
         rankdir='RL',
     )
 
+#---- Core Tables ERD
+# Load core tables
+core_tables = []
+with open('../core_tables.csv', 'r') as f:
+    core_tables_reader = csv.reader(f)
+    next(core_tables_reader) # lose header row
+    for row in core_tables_reader:
+        core_tables.append(row[0])
+
+# Make datapackge with core tables only
+datapackage_core_tables_only = copy.deepcopy(datapackage)
+new_resources = []
+for resource in datapackage_core_tables_only['resources']:
+    if resource['name'] in core_tables:
+        # Make sure we only have foreign keys to tables that also exist in this limited list.
+        # Otherwise jts_erd will crash as it can't find the other half of a foreign key
+        resource['schema']['foreignKeys'] = \
+            [i for i in resource['schema'].get('foreignKeys',[]) if i['reference']['resource'] in core_tables]
+        new_resources.append(resource)
+datapackage_core_tables_only['resources'] = new_resources
+
+# Write ERD
+jts_erd.save_svg(
+    datapackage_core_tables_only,
+    'assets/entity_relationship_diagram_core_tables.svg',
+    display_columns=True,
+    display_indexes=True,
+    default_namespace_name='human_services_data',
+    rankdir='RL',
+)
 
 def setup(app):
     app.add_javascript("custom.js")
@@ -463,3 +496,4 @@ def setup(app):
     global html_static_path
     for file in glob.glob("../api-specification/_data/api-commons/*.yaml"):
         html_static_path = html_static_path + [file]
+

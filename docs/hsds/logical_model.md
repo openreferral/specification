@@ -70,3 +70,12 @@ E.g. a phone number applies to the service OR the organisation OR the service_at
 .. image:: ../assets/entity_relationship_diagram.svg
    :target: ../../_images/entity_relationship_diagram.svg
 ```
+
+## ER Diagram (Core tables only)
+
+*Click to enlarge*
+
+```{eval-rst}
+.. image:: ../assets/entity_relationship_diagram_core_tables.svg
+   :target: ../../_images/entity_relationship_diagram_core_tables.svg
+```
