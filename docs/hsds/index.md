@@ -34,15 +34,17 @@ The [reference documentation](hsds-spec) describes the structure of HSDS data, a
 ```{eval-rst}
 .. toctree::
    :maxdepth: 2
-
    :caption: Standard
+   
    about
    reference
    logical_model
    variations_interoperability
    formatting
    changelog
-   
+
+.. toctree::
+   :maxdepth: 2
    :caption: Guidance
 
    use_cases
