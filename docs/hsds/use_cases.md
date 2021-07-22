@@ -7,7 +7,7 @@ Open Referral's agenda is set by the prerogatives of a set of four types of user
 * researchers/analysts;
 * database administrators. 
 
- Read more about each of these personas in [our User Personas documentation](https://docs.google.com/document/d/1XqueBVbRVgR0BVGjDbUdN4suUYfMKm7yJm1f3nRsGtY/edit#). 
+ Read more about each of these personas in [our User Personas documentation](https://docs.google.com/document/d/1aodu4BUDVbUwVD02zlFs0WkCMn3UQEX1VHyI8ej6BCU/edit). 
 
 
 **Current Human Services Data Specification Capabilities**

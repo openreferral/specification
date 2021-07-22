@@ -36,11 +36,13 @@ The Human Service Data API specifications consist of a core protocol and associa
 
 [The core HSDA protocol](hsda-spec) (HSDA) describes read/write functionality for the Open Referral’s Human Services Data Specification (HSDS), including resources for organizations, their locations, and their services. Through the HSDA Full protocol, third-parties can access entire contents of a database with a single call. 
 
-Find the core HSDA protocol [in a YAML file here](https://github.com/openreferral/api-specification/blob/master/_data/api-commons/openapi-hsda.yaml).
+```{eval-rst}
+Find the core HSDA protocol `in a YAML file here <../_static/openapi-hsda.yaml>`_.
+```
 
 ### Secondary Protocols
 
-HSDA v1.2 also includes complementary sets of “microservice” protocols that address specific user needs (as [documented in user personas and use cases](https://docs.google.com/document/d/1XqueBVbRVgR0BVGjDbUdN4suUYfMKm7yJm1f3nRsGtY/edit#heading=h.ukhvby684u5x) generated through our community’s participatory research process). This modular microservice approach enables specific protocols to be developed independently, while working complementarily in concert with each other.
+HSDA v1.2 also includes complementary sets of “microservice” protocols that address specific user needs (as [documented in user personas and use cases](https://docs.google.com/document/d/1aodu4BUDVbUwVD02zlFs0WkCMn3UQEX1VHyI8ej6BCU/edit) generated through our community’s participatory research process). This modular microservice approach enables specific protocols to be developed independently, while working complementarily in concert with each other.
 
 ##### Content Protocols
 
@@ -68,7 +70,7 @@ These secondary specifications facilitate the monitoring, permissioning and asso
 
 HSDA has been through a number of iterations during development:
 
-* [HSDA v1.1](https://openreferral.github.io/api-specification/hsda-v1.1/) is accessible for reference.
+* [HSDA v1.1](https://openreferral.github.io/api-specification/v1.1/openapi.yaml) is accessible for reference.
 
 Prior to HSDA, the Ohana API acted as a reference implementation of an early version the Human Services Data Spec, and it was used as one of the inputs to the recent API development process. Systems based on Ohana will need to be updated to follow the new HSDA specifications. 
 
