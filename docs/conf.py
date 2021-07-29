@@ -451,6 +451,7 @@ jts_erd.save_svg(
         'assets/entity_relationship_diagram.svg',
         display_columns=True,
         display_indexes=True,
+        default_namespace_name='human_services_data',
         rankdir='RL',
     )
 
