@@ -1,0 +1,140 @@
+id,resource_id,last_action_date,last_action_type,field_name,previous_value,replacement_value,updated_by
+ede4c196-45d9-4339-8944-bad0e4ff3cee,1899600a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Sanctuary Example City,Edafe Onerhime
+916d18e4-d083-4b48-837a-06db0408a915,18996320-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Youth in Focus Example City,Edafe Onerhime
+33d71a6f-a8c7-46f9-983b-1bffdff85672,1899673a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example City Food for Charities,Edafe Onerhime
+a657aa1c-ce47-49ea-aa96-4907bd539841,1899683e-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example City Family Project,Edafe Onerhime
+3f9b85cb-393a-4d9e-8928-d377c4023228,1899691a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example City Silvers,Edafe Onerhime
+45d80461-205a-4e4d-8811-c247beca403e,189969f6-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example City Carnival Bay,Edafe Onerhime
+c05565fd-7527-49d4-9616-5c5f1566792a,18996ac8-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Roz Bernstein Sample Org,Edafe Onerhime
+3b7f80a9-a317-4bd7-91d4-42f8068111c9,18996b9a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,AP Example City,Edafe Onerhime
+2381585d-a4ce-4e35-b1af-8f3ef044962c,18996c62-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example House League of Friends,Edafe Onerhime
+5fa799bb-00f8-4aa4-896a-93350f287a8a,18997068-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example Cross Trust,Edafe Onerhime
+8543f624-4d22-4570-bc34-899a38259ad9,18996ac8-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,alternate_name,,Roz Bernstein's,Edafe Onerhime
+094bb32f-cc19-4465-a272-584d30060407,18997068-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,alternate_name,,The Cross Trust,Edafe Onerhime
+05e88e0a-1765-4117-ada7-c4a26aaeaed4,1899600a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Sanctuary assists homeless individuals find housing and employment.,Edafe Onerhime
+861e8622-5785-4452-b051-daa968bef3b8,18996320-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Youth in Focus programs provide pathways for low-income young people to rebuild their lives and community through work and education.,Edafe Onerhime
+4d15616f-f494-4cd3-901f-0cd8fe3db255,1899673a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Example City Food for Charities acquires in-date food that would otherwise be wasted and works with local organisations to redistribute food to vulnerable communities.,Edafe Onerhime
+3373bef1-0ee4-4db9-a03b-6e3fe750c8b3,1899683e-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,The Example City Famly Project provides inclusive community based family therapy for the citizens of Example City.,Edafe Onerhime
+47f7bd23-ebc1-4cb5-b521-c25d918d7a48,1899691a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"Provision of services for older people in their homes to allow them to continue living in their communities with dignity. Serivices include: <ul>
+  <li>Personal Care</li>
+  <li>Cleaning</li>
+  <li>Shopping</li>
+</ul>",Edafe Onerhime
+32de2f37-0681-4965-8685-718471bdce31,189969f6-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Example City Carnival Bay provides free and low-cost spaces for art therapy projects designed to help those with mental health needs.,Edafe Onerhime
+e1d00f9b-6d0c-48bd-b334-6a1087d0dfd2,18996ac8-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"The charity's provides support for students and teachers in Example City on matters that interfere with education by providing meals, laundry, legal advice and other facilities to keep students learning and support teaching staff.",Edafe Onerhime
+cf23bb9f-70f4-449c-9df5-46b26961744d,18996b9a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"Associated Parks is part of the Example City Town Hall, providing access to green spaces within the city for therapeutic and heallthy living programs.",Edafe Onerhime
+8ca8d974-5aba-48c4-b38f-32d32d0ecd22,18996c62-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Example House League of Friends provides hot meals at soup kitchens throughout Example City for anyone in need.,Edafe Onerhime
+d13fb2d0-fd36-436a-8c16-b6559f31a8c3,18997068-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,The Example Cross Trust distributes care packages to the most vulnerable in Example City and provides safe spaces for personal care such as laundry and bathing.,Edafe Onerhime
+6b3fe984-7407-4dfe-ab87-1549af051d68,1899600a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,email,,sanctuary@example.com,Edafe Onerhime
+a9ad51f3-bfe9-4eb1-8710-dfcc0113bd30,18996320-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,email,,YIF@example.com,Edafe Onerhime
+2c1770b2-4e0c-4d32-a1a9-b9e01287cf9e,1899673a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,email,,city-food@example.com,Edafe Onerhime
+27ef6d81-f7c0-47ba-9302-937f0177edf1,1899691a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,email,,silvers@example.com,Edafe Onerhime
+891b55ae-84d7-45c0-820d-0539b5618ec8,18996b9a-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,email,,ap@example.gov,Edafe Onerhime
+8a0cdd5c-a274-4956-b6fb-bb7a4952ab33,18997068-649c-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,email,,thecross@example.com,Edafe Onerhime
+f1457ed3-c8a6-4ba3-a649-8ed054e337be,14a49a8e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899600a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+df52a92a-dc14-4424-9305-67c7f57fe9d1,14a49e94-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18996320-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+f2cb1f1d-9608-47b6-b4a1-fc8d672e0825,14a4a056-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899673a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+1675224c-19f5-4bce-ace8-64443dc64d42,14a4aa42-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899673a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+5337349b-a3ba-4310-a57f-9176abf15173,14a4ac22-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899683e-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+94eff64e-ba55-4893-a434-8bf32af94056,14a4ad9e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899691a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+fc9e419a-9cd4-446e-9553-528f6fbf1439,14a4af10-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,189969f6-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+d69f20b2-81ed-4b1d-b85d-362e1408385f,14a4b0b4-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18996ac8-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+752125f6-93ac-4a65-89ff-3300dbaf3ba7,14a4b212-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18996b9a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+415ca2bb-2f07-4cf3-a8ba-3b0ba0714e15,14a4b37a-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18996c62-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+a3474cbf-e260-42cb-9006-2d2187d93358,14a4ba00-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18997068-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+3c296cd9-d1f5-4c48-839b-2200f7594e32,14a4bb90-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18997068-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+81540517-2549-449f-b481-ac9bc5a2dcdb,14a4bcee-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18997068-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+adbfb539-929a-4aa5-96a0-69295c4548a1,14a49a8e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b83c60-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+4bd2e6ad-9099-45d7-a679-1d589c175c5b,14a49e94-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b83ee0-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+6f1df199-4d8f-4443-a5d7-51e65d2fc6f9,14a4a056-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b83fee-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+cda03b09-e4ba-425a-acce-cb43d22afa4a,14a4aa42-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b83fee-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+ebc5e9bc-0349-4ebd-8ee1-2b3b150aa9dd,14a4ac22-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b841d8-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+cf438e9c-0a52-4b28-b1a0-4d82344c39b9,14a4ad9e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b842c8-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+f2bafcfc-b60f-4035-b820-1e14bb09c1e1,14a4af10-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b843a4-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+0f6ceee1-cd04-4643-b542-551c0d9646be,14a4b0b4-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b84570-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+03ea867b-b9b4-407e-8c71-7efe3b12a870,14a4b212-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b8475a-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+be09a5e8-859b-4d38-9fd4-6ac5ca11d2e3,14a4b37a-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b8482c-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+cccb4e22-a690-4327-93da-a1f7d5a00528,14a4ba00-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b84a0c-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+bfd4112a-b2ce-4e0a-84aa-0ef23e681ae7,14a4bb90-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b84a0c-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+61501b2d-b250-497d-bbb6-87eb09575cb8,14a4bcee-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,location_id,,30b84a0c-64a1-11e6-8b77-86f30ca893d3,Edafe Onerhime
+9f34013a-ac4c-4241-ab3e-c262761acc3f,14a49a8e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Never Homeless Helpline,Edafe Onerhime
+ac752a34-2c4e-48f3-9fc2-921e3cd794e2,14a49e94-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Yound Minds,Edafe Onerhime
+c4279361-d77e-4f29-968c-60a4b1192d62,14a4a056-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Grocery Tax Break Donation,Edafe Onerhime
+12d1c537-96fd-4dfa-a07c-bd6dc29bc13d,14a4aa42-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Food Safety Program,Edafe Onerhime
+82877dbc-81be-46d6-b1ba-4bb4bd4b9d76,14a4ac22-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Al-Anon Family Group,Edafe Onerhime
+8c96c0e8-0067-4757-b5f0-01c6b4aed676,14a4ad9e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Shop Assist,Edafe Onerhime
+1cd64ead-c21b-48af-bc09-d62d533c69e5,14a4af10-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example City Summer Camp,Edafe Onerhime
+9b26eded-6f38-4476-81f5-3dd2d6ae611c,14a4b0b4-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Dear Teacher Skills Refresh,Edafe Onerhime
+6d36a8c5-7502-406d-b80f-a4244618c598,14a4b212-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Parks Disability Services,Edafe Onerhime
+d92fdbb9-5d6a-4bf6-8b14-436936ae02be,14a4b37a-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,The City's Kitchen,Edafe Onerhime
+65bd31e9-5540-41df-9e7d-0682de873331,14a4ba00-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Meals To-Go at The Cross,Edafe Onerhime
+979848ad-80b4-4a85-b532-9daf0718921f,14a4bb90-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Wash & Go at The Cross,Edafe Onerhime
+6c740578-e9c4-4ff2-9c68-8ba3bbd7ab19,14a4bcee-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Bubbles at The Cross,Edafe Onerhime
+b02c42c8-519f-4ff2-a1aa-e5e158cf088c,14a49a8e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"The Never Homeless Helpline refers any persons without access to housing to services within Example City. Services are first come, first serve. Due to demand, there may be a waiting list.",Edafe Onerhime
+aaed48fc-aa1a-4500-b7f5-12606c6b11c7,14a49e94-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"Young Minds program helps young people complete their high school education, preparing them for lifelong success with mentorship, funding and community support. Our engagement with the students begins with an evaluation to provide each young person with a personalised program for success.",Edafe Onerhime
+dc8bb2fc-844c-4611-96b7-3172248016f3,14a4a056-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"A service to collect and report on in-date food from grocery stores within Example City limits, allowing stores to benefit from city-funded tax breaks as well as helping to feed those in need.",Edafe Onerhime
+7c273be5-a88a-4da8-ae72-054469d4fe8b,14a4aa42-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,A pay-as-you-feel training program for nonprofit organisations perparing or seeking to prepare food within Example City.,Edafe Onerhime
+43889a52-e1c6-4190-aa10-416d3de285ca,14a4ac22-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Provides support for family and friends of people with a drinking problem.,Edafe Onerhime
+1eb321eb-3e25-4091-95e1-710d0d7fc437,14a4ad9e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Provides assisted social shopping for the elderly with twice weekly bus services and assistance provided by volunteers. This service is heavily subscribed and waiting period may apply.,Edafe Onerhime
+c1b24c9b-e5f4-40f5-97f3-199e1d75ee1b,14a4af10-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"Carnival Bay provides summer camp sessions for residents of Example City. Summer camp activities include: arts & crafts, field trips, indoor activities, outdoor games, free swim lessons, and swimming.",Edafe Onerhime
+3aba0efa-19d2-4fdf-93f3-d321ce5168a2,14a4b0b4-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"The skills refresh offers teaching staff in Example City free refresher courses in <ul>
+  <li>Digital Skills</li>
+  <li>Childhood Development</li>
+  <li>Languages: Spanish</li>
+</ul>",Edafe Onerhime
+ac740b96-ecfa-4261-97fb-a64d4d6cb31d,14a4b212-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"Parks Disability Service works to make Example City parks and their recreation programs accessible to persons with disabilities, removing architectural barriers and creating special programs for the disabled, such as wheelchair tennis, quad rugby, and beep baseball.",Edafe Onerhime
+57707071-353c-42c9-8ed6-f30f67a05541,14a4b37a-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"The Soup Kitchen operates seven days a week, 365 days a year. It serves two hot meals per day.",Edafe Onerhime
+3696a5a0-f89c-44f1-bbf3-25cca65555f9,14a4ba00-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"Meals To-Go at The Cross provides a bag lunch on a pay-as-you-can basis. Donors can buy a healthy bag lunch and donate a bag lunch to anyone in need of a meal. For a pre-paid meal, please take a prepaid slip from our ""Feed the City"" wall.",Edafe Onerhime
+b6d6e20f-5203-473e-b954-53df69902789,14a4bb90-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,"Provides dignity for our homeless citizens with a free, clean place to shower and take care of personal needs. Stalls are lockable for privacy and safety. A caretaker is available at all times.This service is supported by matched donations from City Hall.",Edafe Onerhime
+dd9df59e-134f-40fb-9a8f-3bd2396544a3,14a4bcee-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Bubbles At The Cross provides low-cost and pay-as-you-can services to anyone needing laundry services in Example City. ,Edafe Onerhime
+95305bb7-96de-4863-a95b-b064250a415e,14a49a8e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,email,,neverhomeless@example.com,Edafe Onerhime
+fd310d4a-da8f-4178-be8c-7f9f5429e17d,14a49a8e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+206691ed-c4dd-44c9-9f3f-79e78d7ac0f6,14a49e94-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+9653baba-ffe5-4ff3-9f28-ad704a797483,14a4a056-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+98e5d0b1-f170-4a52-ae01-2491632a3d85,14a4aa42-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Inactive,Edafe Onerhime
+a4d5ac2e-eae8-4325-997f-7f4783cfb613,14a4ac22-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+8c281832-70e1-446b-8a19-4ea74b674edf,14a4ad9e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+073de689-19aa-4b90-b619-66dfc022a9c2,14a4af10-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+fdeebdb2-7c6e-4eae-87f1-f8fae485c1cd,14a4b0b4-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Inactive,Edafe Onerhime
+2edd2039-c07e-4048-abe7-67f66c6c4964,14a4b212-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+7c171132-a2b9-4534-aaf8-78708a44561b,14a4b37a-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+43cbffbe-76ed-445f-9483-b8678dd8073f,14a4ba00-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+138b7d2b-39f1-4745-91d5-5509ad41f057,14a4bb90-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Inactive,Edafe Onerhime
+a6141501-7681-41ef-b59f-7c3d73dd7fe2,14a4bcee-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,status,,Active,Edafe Onerhime
+f72ee778-0734-48dd-bb1c-e613f57ccbc8,14a49a8e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,application_process,,Call for further information,Edafe Onerhime
+39e96ed0-b755-407c-8fc3-4df635bb9aaf,14a4ad9e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,application_process,,Call our offices to apply or for more information,Edafe Onerhime
+f237a2fa-150f-4d23-a818-b7626b434da0,14a4ad9e-64a4-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,wait_time,,28 days,Edafe Onerhime
+d382223b-a8f8-479a-be94-d4501b656d26,30b83c60-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899600a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+643a9a80-6138-4170-88b7-5460281494b8,30b83ee0-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18996320-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+6bfa9bb2-b319-4317-9cd7-91a1239c9faa,30b83fee-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899673a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+c3be1665-3a43-4ea6-8ce2-c79067aaf6ff,30b841d8-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899683e-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+a3fa8c48-d8a6-4344-8036-f3206ccfff76,30b842c8-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,1899691a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+206bbdd5-8dc4-46ad-ad3d-414b9874aaaa,30b843a4-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,189969f6-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+2831af6d-abdb-44bd-a8e5-9f51fc361a1f,30b84570-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18996ac8-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+d8fe332c-bfff-4f38-ba8e-4259aa1c5ced,30b8475a-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18996b9a-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+8ea768e6-af3b-4240-8157-0ef65e050e43,30b8482c-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18996c62-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+20f95f48-3731-401b-89e1-a327d76428c4,30b84a0c-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,organization_id,,18997068-649c-11e6-8b77-86f30ca893d3,Edafe Onerhime
+318a115c-783e-4386-a022-12383d801058,30b83c60-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Sanctuary on 5th Street,Edafe Onerhime
+a5770caa-b2ac-4624-8193-fedc3465ae93,30b83ee0-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,4830 Highland Drive,Edafe Onerhime
+b7e94980-8d06-488f-932e-3f7195f79272,30b83fee-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Beachside Example City Warehouses,Edafe Onerhime
+ea3c0369-c57e-4437-8cc6-e1b94d184bcb,30b841d8-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,The Example Center,Edafe Onerhime
+0f527753-69b1-4d88-b6d2-07642731e0c7,30b842c8-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example City Silvers Building,Edafe Onerhime
+83b523ee-0bec-4b5c-b78f-eccd4096303f,30b843a4-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,The Example Center,Edafe Onerhime
+3ea08061-b50f-4b7a-949b-3e76c2f0b905,30b84570-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,The Roz Bernstein Building,Edafe Onerhime
+1e4316ae-ce44-47e7-9d22-2c0f0bba9967,30b8475a-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example City Hall,Edafe Onerhime
+756bfa8a-02b8-44fc-b2db-29cd4d63670e,30b8482c-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,Example City Hall,Edafe Onerhime
+3d14a920-d597-48a1-8eef-e9e4b5c0e1f5,30b84a0c-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,name,,St Cross Universal Church,Edafe Onerhime
+b5abe3f9-1a54-4e17-a733-630130ec5223,30b842c8-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,alternate_name,,The Shires,Edafe Onerhime
+bf2fe493-b437-4084-9e76-93f17c2aeaee,30b8482c-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,alternate_name,,The City's Kitchen,Edafe Onerhime
+40d6de40-dfcd-47a3-8c31-0e63ab65a463,30b83ee0-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,transportation,,39.428192,Edafe Onerhime
+8eb15a48-9a70-4b8e-a377-c525955d7d9c,30b83ee0-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,latitude,,-119.897426,Edafe Onerhime
+c57d8de3-57c9-41a2-be21-5883eeedf1ba,30b83c60-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,This is the main office and is open to the public during office hours.,Edafe Onerhime
+6f74aaa9-adf9-4309-a109-4adbd1b0aed3,30b83ee0-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,This call center is not open to the public.,Edafe Onerhime
+37a6a769-b4fe-4dc0-b95f-573402c10aa4,30b83fee-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Access is restricted to authorised distributors and suppliers.,Edafe Onerhime
+9601674b-9005-48a2-88dd-a8e68b13ec42,30b841d8-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Therapy is provided on the 5th floor which is open to visitors with appointments only.,Edafe Onerhime
+3b2e0853-44ee-49a6-993d-4d7243b2d1a7,30b842c8-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,The Shires is open to the public everyday.,Edafe Onerhime
+b2756294-3bdb-434f-9ce3-9503d82ec629,30b843a4-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,The spaces are open to the public.,Edafe Onerhime
+d9119f9a-6889-44c8-85e1-30d6ee110920,30b84570-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,Private offices that are not open to the public.,Edafe Onerhime
+18363128-96fb-46d2-8f06-23b9e581883a,30b8475a-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,This is the location of the offices - parks are located throughout Example City.,Edafe Onerhime
+885f87e6-1601-4603-9ae1-f9b0b3481281,30b8482c-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,This soup kitchen provides hot meals only.,Edafe Onerhime
+f593c433-0e21-47a4-b96f-e5072d619706,30b84a0c-64a1-11e6-8b77-86f30ca893d3,2016-08-25T08:31:03.916082+00:00,create,description,,The venue is open to the public for church services - personal care is provided on-site.,Edafe Onerhime
