@@ -142,8 +142,7 @@ html_context = {
     ],
 }
 
-
-
+html_js_files = ["custom.js"]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -490,8 +489,6 @@ jts_erd.save_svg(
 )
 
 def setup(app):
-    app.add_javascript("custom.js")
-
     import glob
     global html_static_path
     for file in glob.glob("../api-specification/_data/api-commons/*.yaml"):
