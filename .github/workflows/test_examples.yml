@@ -1,0 +1,26 @@
+name: Test Examples
+on: [push, pull_request]
+
+jobs:
+  test_examples:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+        architecture: x64
+    - uses: actions/cache@v1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-test_examples
+    - name: Install Python libs
+      run: pip install --upgrade frictionless
+    - name: Make datapackages for each example
+      run: python examples/make_datapackages.py
+    - name: Validate simple example
+      run: frictionless validate examples/simple/datapackage.json
+    - name: Validate all_resources example
+      run: frictionless validate examples/all_resources/datapackage.json
+      if: success() || failure()

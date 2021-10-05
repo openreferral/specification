@@ -1,3 +1,4 @@
 .ve
 /docs/assets/entity_relationship_diagram.svg
 /docs/assets/entity_relationship_diagram_core_tables.svg
+/examples/*/datapackage.json

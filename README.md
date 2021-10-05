@@ -69,3 +69,18 @@ pip install sphinx-autobuild
 cd docs
 sphinx-autobuild . _build
 ```
+
+## Examples
+
+Examples are included with the documentation and these should match the current datapackage.json. To test:
+
+    pip install frictionless
+    python examples/make_datapackages.py
+    frictionless validate examples/all_resources/datapackage.json
+    frictionless validate examples/simple/datapackage.json
+
+Everytime a new example csv is added or datapackage.json is changed, rerun:
+
+    python examples/make_datapackages.py
+
+Everytime a new example directory is added, please add a line above and in `.github/workflows/test_examples.yml`.

@@ -1,0 +1,6 @@
+id,location_id,service_id,organization_id,contact_id,service_at_location_id,number,extension,type,language,description,department
+3733e828-58e5-4ff5-9dc6-ae24f92a0f56,30b84570-64a1-11e6-8b77-86f30ca893d3,,,,,(0123) 4567 8900,42,voice,"en, es",Roz Bernstein Main Office,
+7ed24899-52fb-4e7b-9e25-8d665bec23ea,,,18997068-649c-11e6-8b77-86f30ca893d3,,,(223) 346 12361,,voice,en,Example Cross Trust Support Line,
+83c0ec7b-7d81-4371-b25a-037c006d33a0,,,18997068-649c-11e6-8b77-86f30ca893d3,,,(223) 346 12361,,textphone,en,Example Cross Trust Support Line,
+3d257b44-eff1-4a22-9465-7f96710848bf,,21a1192b-abb9-45e8-bc52-c81ca4087240,,,,(223) 4567 12534,,voice,"en, es",Laundry Line: General information,
+e9c19752-c8d4-494f-b527-b65c9c86c8ce,,,,,c54183ce-b165-4e4a-9ace-57221ccc13da,(773) 2351 2461,,cell,,Managers number at Bubbles at the Cross,
