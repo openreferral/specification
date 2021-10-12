@@ -84,3 +84,20 @@ Everytime a new example csv is added or datapackage.json is changed, rerun:
     python examples/make_datapackages.py
 
 Everytime a new example directory is added, please add a line above and in `.github/workflows/test_examples.yml`.
+
+## Database Schemas
+
+These are built automatically from the schema. You will need to be on Linux and have Docker installed.
+
+Everytime the schema is changed, run:
+
+    ./build_database_clean.sh
+    ./build_database_mysql.sh
+
+This will produce changes in the `database` directory that should be checked in alongside your schema changes.
+
+When finished, you can run:
+
+    ./build_database_clean.sh
+
+While running the clean command, there may be errors if your machine was already in a clean state. These can be ignored.
