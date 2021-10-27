@@ -17,10 +17,12 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
 import os
+import sys
+BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+sys.path.insert(0, os.path.join(BASE_DIR, 'python'))
+
+import openreferral.svg_utils
 
 # -- General configuration ------------------------------------------------
 
@@ -447,15 +449,22 @@ import csv
 with open('../datapackage.json', 'r') as f:
         datapackage = json.load(f)
 
+svg_style_rule = '@font-face{font-family:"Lato";font-style:normal;font-weight:400;src:local("Lato Regular"),local("Lato-Regular"),url(../_static/fonts/Lato-Regular.ttf) format("truetype")}'
+
 #---- Full ERD
 jts_erd.save_svg(
         datapackage,
         'assets/entity_relationship_diagram.svg',
         display_columns=True,
         display_indexes=True,
+        fontname="Lato",
+        html_color_header='#AEC6CF',
+        html_color_default='#DDDDDD',
+        html_color_highlight='#DDDDDD',
         default_namespace_name='human_services_data',
         rankdir='RL',
     )
+openreferral.svg_utils.insert_style_rule_to_svg('assets/entity_relationship_diagram.svg', svg_style_rule)
 
 #---- Core Tables ERD
 # Load core tables
@@ -484,9 +493,14 @@ jts_erd.save_svg(
     'assets/entity_relationship_diagram_core_tables.svg',
     display_columns=True,
     display_indexes=True,
+    fontname="Lato",
+    html_color_header='#77DD77',
+    html_color_default='#DDDDDD',
+    html_color_highlight='#DDDDDD',
     default_namespace_name='human_services_data',
     rankdir='RL',
 )
+openreferral.svg_utils.insert_style_rule_to_svg('assets/entity_relationship_diagram_core_tables.svg', svg_style_rule)
 
 def setup(app):
     import glob
