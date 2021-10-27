@@ -453,6 +453,9 @@ jts_erd.save_svg(
         'assets/entity_relationship_diagram.svg',
         display_columns=True,
         display_indexes=True,
+        html_color_header='#AEC6CF',
+        html_color_default='#DDDDDD',
+        html_color_highlight='#DDDDDD',
         default_namespace_name='human_services_data',
         rankdir='RL',
     )
@@ -484,6 +487,9 @@ jts_erd.save_svg(
     'assets/entity_relationship_diagram_core_tables.svg',
     display_columns=True,
     display_indexes=True,
+    html_color_header='#77DD77',
+    html_color_default='#DDDDDD',
+    html_color_highlight='#DDDDDD',
     default_namespace_name='human_services_data',
     rankdir='RL',
 )
