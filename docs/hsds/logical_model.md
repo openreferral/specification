@@ -67,15 +67,16 @@ E.g. a phone number applies to the service OR the organisation OR the service_at
 *Click to enlarge*
 
 ```{eval-rst}
-.. image:: ../assets/entity_relationship_diagram.svg
-   :target: ../../_images/entity_relationship_diagram.svg
+.. image:: ../assets/entity_relationship_diagram_core_tables.svg
+   :target: ../../_images/entity_relationship_diagram_core_tables.svg
 ```
 
-## ER Diagram (Core tables only)
+## ER Diagram (Full version)
 
 *Click to enlarge*
 
 ```{eval-rst}
-.. image:: ../assets/entity_relationship_diagram_core_tables.svg
-   :target: ../../_images/entity_relationship_diagram_core_tables.svg
+.. image:: ../assets/entity_relationship_diagram.svg
+   :target: ../../_images/entity_relationship_diagram.svg
 ```
+
