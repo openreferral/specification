@@ -84,3 +84,12 @@ Everytime a new example csv is added or datapackage.json is changed, rerun:
     python examples/make_datapackages.py
 
 Everytime a new example directory is added, please add a line above and in `.github/workflows/test_examples.yml`.
+
+## Database Schemas
+
+These are built automatically from the schema by a GitHub action and checked in for you.
+
+If you want to run the build process locally for any reason, look in the following shell files for help:
+
+    build_database_mysql.sh
+
