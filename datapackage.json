@@ -528,7 +528,7 @@
                         },
                         {
                             "name": "organization_id",
-                            "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organisation delivers at this location should be provided in the services_at_location table.",
+                            "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
                             "type": "string"
                         },
                         {
@@ -606,7 +606,7 @@
                         },
                         {
                             "name": "organization_id",
-                            "description": "The identifier of the organisation for which this is the phone number",
+                            "description": "The identifier of the organization for which this is the phone number",
                             "type": "string"
                         },
                         {
@@ -1136,7 +1136,7 @@
             {
                 "name": "funding",
                 "path": "funding.csv",
-                "description": "The funding table describes the sources of funding for a service or organisation",
+                "description": "The funding table describes the sources of funding for a service or organization",
                 "format": "csv",
                 "mediatype": "text/csv",
                 "profile": "tabular-data-resource",
