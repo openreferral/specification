@@ -441,8 +441,7 @@ class JSONTableSchemaInclude(Directive):
 directives.register_directive('jsontableschemainclude', JSONTableSchemaInclude)
 
 
-# Generate an ERD
-
+#------------------------------------------- Generate ERDs
 import jts_erd
 import copy
 import csv
@@ -451,7 +450,18 @@ with open('../datapackage.json', 'r') as f:
 
 svg_style_rule = '@font-face{font-family:"Lato";font-style:normal;font-weight:400;src:local("Lato Regular"),local("Lato-Regular"),url(../_static/fonts/Lato-Regular.ttf) format("truetype")}'
 
+# Load core tables
+core_tables = []
+with open('../core_tables.csv', 'r') as f:
+    core_tables_reader = csv.reader(f)
+    next(core_tables_reader) # lose header row
+    for row in core_tables_reader:
+        core_tables.append(row[0])
+
 #---- Full ERD
+html_color_header_for_table = {}
+for core_table in core_tables:
+    html_color_header_for_table[core_table] = '#77DD77'
 jts_erd.save_svg(
         datapackage,
         'assets/entity_relationship_diagram.svg',
@@ -459,6 +469,7 @@ jts_erd.save_svg(
         display_indexes=True,
         fontname="Lato",
         html_color_header='#AEC6CF',
+        html_color_header_for_table=html_color_header_for_table,
         html_color_default='#DDDDDD',
         html_color_highlight='#DDDDDD',
         default_namespace_name='human_services_data',
@@ -467,13 +478,6 @@ jts_erd.save_svg(
 openreferral.svg_utils.insert_style_rule_to_svg('assets/entity_relationship_diagram.svg', svg_style_rule)
 
 #---- Core Tables ERD
-# Load core tables
-core_tables = []
-with open('../core_tables.csv', 'r') as f:
-    core_tables_reader = csv.reader(f)
-    next(core_tables_reader) # lose header row
-    for row in core_tables_reader:
-        core_tables.append(row[0])
 
 # Make datapackge with core tables only
 datapackage_core_tables_only = copy.deepcopy(datapackage)
