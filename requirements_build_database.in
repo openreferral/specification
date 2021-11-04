@@ -1,2 +1,3 @@
 frictionless[sql]
 mysqlclient
+psycopg2
