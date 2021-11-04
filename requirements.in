@@ -9,8 +9,7 @@ transifex-client
 # Keep to version 0.5 at the moment because the next version (1.0) has some breaking changes to the navigation menu
 sphinx-rtd-theme>=0.5,<0.6
 myst-parser
-# erd-from-json-table-schema
-git+https://github.com/OpenDataServices/erd-from-json-table-schema.git
+erd-from-json-table-schema
 # sphinxcontrib jsonschema
 sphinxcontrib-opendataservices-jsonschema<0.4.0
 # sphinxcontrib ODSC

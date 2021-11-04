@@ -75,6 +75,18 @@ E.g. a phone number applies to the service OR the organisation OR the service_at
 
 *Click to enlarge*
 
+<div style="background-color: #77DD77;">
+
+Core tables are shown in green.
+
+</div>
+
+<div style="background-color: #AEC6CF;">
+
+Other tables are shown in blue.
+
+</div>
+
 ```{eval-rst}
 .. image:: ../assets/entity_relationship_diagram.svg
    :target: ../../_images/entity_relationship_diagram.svg
