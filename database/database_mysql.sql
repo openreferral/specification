@@ -135,7 +135,7 @@ DROP TABLE IF EXISTS `location`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `location` (
   `id` varchar(250) NOT NULL COMMENT 'Each location must have a unique identifier',
-  `organization_id` varchar(250) DEFAULT NULL COMMENT 'Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organisation delivers at this location should be provided in the services_at_location table.',
+  `organization_id` varchar(250) DEFAULT NULL COMMENT 'Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.',
   `name` text COMMENT 'The name of the location',
   `alternate_name` text COMMENT 'An alternative name for the location',
   `description` text COMMENT 'A description of this location.',
@@ -262,7 +262,7 @@ CREATE TABLE `phone` (
   `id` varchar(250) NOT NULL COMMENT 'Each entry must have a unique identifier',
   `location_id` varchar(250) DEFAULT NULL COMMENT 'The identifier of the location where this phone number is located',
   `service_id` varchar(250) DEFAULT NULL COMMENT 'The identifier of the service for which this is the phone number',
-  `organization_id` varchar(250) DEFAULT NULL COMMENT 'The identifier of the organisation for which this is the phone number',
+  `organization_id` varchar(250) DEFAULT NULL COMMENT 'The identifier of the organization for which this is the phone number',
   `contact_id` varchar(250) DEFAULT NULL COMMENT 'The identifier of the contact for which this is the phone number',
   `service_at_location_id` varchar(250) DEFAULT NULL COMMENT 'The identifier of the ''service at location'' table entry, when this phone number is specific to a service in a particular location.',
   `number` text NOT NULL COMMENT 'The phone number',
