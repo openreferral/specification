@@ -92,4 +92,5 @@ These are built automatically from the schema by a GitHub action and checked in 
 If you want to run the build process locally for any reason, look in the following shell files for help:
 
     build_database_mysql.sh
+    build_database_postgresql.sh
 
