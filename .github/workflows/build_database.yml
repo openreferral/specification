@@ -73,6 +73,8 @@ jobs:
       with:
         python-version: 3.9
         architecture: x64
+    # If the MySQL stage above made changes, we need to pull first
+    - run: git pull
     - name: Install Ubuntu libs
       run: sudo apt-get install -y graphviz graphviz-dev postgresql-client-12 libpq-dev
     - name: Install Python libs
