@@ -30,7 +30,7 @@ docutils==0.16
     #   sphinx-rtd-theme
     #   sphinxcontrib-opendataservices
     #   sphinxcontrib-opendataservices-jsonschema
-erd-from-json-table-schema==0.1.0
+erd-from-json-table-schema==0.2.0
     # via -r requirements.in
 gitdb==4.0.7
     # via gitpython
