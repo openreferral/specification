@@ -23,24 +23,20 @@ During the development of HSDS, we have charted our course in conscious relation
 
 The [Alliance of Information and Referral Systems](http://airs.org) is an international professional association that provides standards, accreditations and certifications for the information and referral sector. 
 
-AIRS and Open Referral engaged in active dialogue during the development of HSDS, to ensure interoperability across the emerging HSDS and [the AIRS XML schema](https://github.com/airsalliance/airs-xml/blob/v3.1.0/trunk/airs.xsd).
+AIRS and Open Referral engaged in active dialogue during the development of HSDS, to ensure interoperability between HSDS and [the AIRS XML schema](https://github.com/airsalliance/airs-xml/blob/v3.1.0/trunk/airs.xsd). In 2018, AIRS [formally endorsed the use of HSDS/A as industry standards for resource data exchange](https://openreferral.org/airs-recommends-open-referral-for-resource-database-interoperability/).
 
 AIRS standards' define expected practices within an information and referral (I&R) program, and promotes best practices to meet the needs of an I&R program's community. According to [AIRS Standards and Quality Indicators for Professional Information and Referral](http://www.airs.org/files/public/AIRS_Standards_7_Final.pdf):
 
 > The Standards address all aspects of an I&R operation. They define the information and referral process in concrete terms; establish criteria for database development; mandate support for community planning activities; incorporate a broad view of collaboration at the local, state or provincial, regional and national levels; include provisions for the socially responsible use of technology; and describe the role of information and referral services in times of disaster.
 
-As described in the AIRS Standards and Quality Indicators publication, the Resource Database Standard:
-
-> The Resource Database standards require that the I&R service develop, maintain, use and disseminate an accurate, up-to-date resource database that contains information about available community resources including details about the services they provide and the conditions under which services are available. The database includes resources that support the inquirer’s right to accurate, consistent, comprehensive and unbiased information and the ability of the I&R service to be a non-partisan, non-ideological and impartial information source for available nonprofit, government and for-profit services that meet the organization’s inclusion/exclusion criteria. The database is maintained by trained resource specialists.
-
-In part through engagement with Open Referral, [AIRS recently adopted an open source license (CC 4.0 BY-SA) for their Style Guide](https://openreferral.org/the-2016-airs-style-guide-newly-open-sourced/).
+Through engagement with Open Referral, [AIRS recently adopted an open source license (CC 4.0 BY-SA) for their Style Guide](https://openreferral.org/the-2016-airs-style-guide-newly-open-sourced/).
 
 
 #### schema.org for Civic Services (W3C)
 
-The [Civic Services schema](https://www.w3.org/wiki/WebSchemas/CivicServices) is a W3C-approved vocabulary, originally proposed by the Google.org Social Impact team in 2013, to extend the Schema.org schemas to better support the description of public civic services.
+The [Civic Services schema](https://www.w3.org/wiki/WebSchemas/CivicServices) is a W3C-approved vocabulary, originally proposed by the Google.org Social Impact team in 2013, to extend the Schema.org schemas to better support the description of public civic services. Its purpose is to improve search engines’ understanding of these services. The schema provides "*enough information to determine the service, the area covered by the service, and relevant information for using the service*."
 
-It is a new vocabulary, similar to the European Commission ISA Core Public Service vocabulary. Its purpose is to improve search engines’ understanding of these services. The schema will provide "*enough information to determine the service, the area covered by the service, and relevant information for using the service*."
+Open Referral's first implementation (the Ohana API) used the schema.org markup for its web pages. We are currently developing translation tools to facilitate conversion of HSDS data to schema.org markup and vice versa. 
 
 
 #### National Information Exchange Model (NIEM)
