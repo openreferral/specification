@@ -27,8 +27,10 @@ jobs:
       with:
         python-version: 3.9
         architecture: x64
+    # We also need mysql-client-8.0 BUT it is installed my default
+    #    and if we explicitly ask for it to be safe we sometimes get package errors
     - name: Install Ubuntu libs
-      run: sudo apt-get install -y graphviz graphviz-dev mysql-client-8.0
+      run: sudo apt-get install -y graphviz graphviz-dev
     - name: Install Python libs
       run: pip install -r requirements.txt
     - name: Install Python Libs for DB work
