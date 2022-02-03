@@ -34,12 +34,17 @@ Questions not answered here? Suggestions for us?
 Contents:
 
 ```{eval-rst}
+
 .. toctree::
    :maxdepth: 1
 
    self
-   hsds/index
-   hsda/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Open Referral Initiative
+
+   initiative/index
    
    governance
    vocabulary  
@@ -48,6 +53,22 @@ Contents:
    faq
 
    credits
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Human Services Data Spec
+
+   hsds/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Human Services Data API
+
+   hsda/index
+
+
+   
+
 
 ```
 
