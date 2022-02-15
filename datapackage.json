@@ -1045,12 +1045,12 @@
                         },
                         {   "name": "count",
                             "description": "iCal - The number of times that the event occurs. Use this instead of 'until', if appropriate.",
-                            "type": "date"
+                            "type": "number"
                         },
                         {
                             "name": "wkst",
                             "description": "iCal - The day on which the week starts, eg MO.",
-                            "type": "date"
+                            "type": "string"
                         },
                         {
                             "name": "freq",
