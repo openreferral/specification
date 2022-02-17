@@ -134,7 +134,7 @@
                             "format":"uuid",
                             "constraints": {
                                 "required":true,
-                                "unique":true
+                                "unique":true // I don't think this field should be unique since an organization can have multiple programs.
                             }
                         },
                         {
@@ -403,7 +403,7 @@
                         },
                         {
                             "name": "link_type",
-                            "description": "The identifier of the entity to which this taxonomy term applies.",
+                            "description": "The identifier of the entity to which this taxonomy term applies.", // Copy-paste error.
                             "type": "string",
                             "constraints": {
                                 "required":true,
@@ -704,7 +704,7 @@
                 "mediatype": "text/csv",
                 "profile": "tabular-data-resource",
                 "schema": {
-                    "fields": [
+                    "fields": [ // Shouldn't at least one field be required?
                         {
                             "name": "id",
                             "description": "Each contact must have a unique identifier",
@@ -1045,12 +1045,12 @@
                         },
                         {   "name": "count",
                             "description": "iCal - The number of times that the event occurs. Use this instead of 'until', if appropriate.",
-                            "type": "date"
+                            "type": "date" // Number.
                         },
                         {
                             "name": "wkst",
                             "description": "iCal - The day on which the week starts, eg MO.",
-                            "type": "date"
+                            "type": "date" // String.
                         },
                         {
                             "name": "freq",
@@ -1083,12 +1083,12 @@
                         {
                             "name": "bymonthday",
                             "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
-                            "type": "number"
+                            "type": "number" // String.
                         },
                         {
                             "name": "byyearday",
                             "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
-                            "type": "number"
+                            "type": "number" // String.
                         },
                         {
                             "name": "description",
@@ -1538,7 +1538,7 @@
                             "type": "string",
                             "constraints": {
                                 "required":true,
-                                "unique":true
+                                "unique":true // I don't think this field should be unique since it may refer to the same resource multiple times.
                             }
                         },
                         {
@@ -1547,7 +1547,7 @@
                             "type": "string",
                             "constraints": {
                                 "required":true,
-                                "unique":true,
+                                "unique":true, // I don't think this field should be unique since the same resource type may be modified.
                                 "enum": ["organization",
                                     "program",
                                     "service",
