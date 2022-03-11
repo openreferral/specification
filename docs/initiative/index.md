@@ -1,6 +1,6 @@
 # Project Documentation
 
-**The Open Referral Initiative** is developing common formats and open platforms for the sharing of community resource directory data — i.e., information about the health, human and social services that are available to people in need.
+**The Open Referral Initiative** is developing common formats and open platforms for the sharing of community resource directory data — i.e., information about the health, human and social services that are available to people seeking help.
 
 This documentation describes the Open Referral Initiative’s strategic framework. It is a living document! **Please ask questions and offer suggestions by leaving a comment.**
 
@@ -13,7 +13,7 @@ This documentation describes the Open Referral Initiative’s strategic framewor
 **The mission of Open Referral** is to establish capacities to produce and share resource directory information as a public good. We pursue this mission in three ways:
 
 * **Develop data exchange standards** that enable interoperability across various technologies and institutional contexts. 
-* Support the development of resource data sharing systems – **including platform technologies, data sharing partnerships, and open data business models** – that improve the accessibility, reliability, and sustainability of resource data in pilot projects.
+* **Support the sharing of resource data among diverse systems** – including interoperable platform technologies, data partnerships, and open data business models – that improve the accessibility, reliability, and sustainability of resource data in pilot projects.
 * **Foster a community of practice** dedicated to the provision of community resource data as a public good.
 
 ## Values and Principles
@@ -67,7 +67,7 @@ These are a set of stated assumptions that gird this initiative. We will test th
 * We can develop a web-based exchange format that is **broadly applicable** (covers most of the critical information in most of the cases), **usable** by various stakeholders in various contexts (reasonable to adopt), and **interoperable** with other standards (such as the AIRS XSD, W3C civic services schema, HL7’s FHIR, etc). _We have validated this hypothesis :)_
 * If we adopt a standard format for describing a common core set of directory data, the **cost of developing and re-deploying new tools and websites will decrease**, while **the number and quality of such tools and sites will increase**. _We have validated this hypothesis :)_
 * “Open data systems” can **increase distributed usage**, which will yield an **increase in user-submitted feedback on data quality**, which will then yield **a decrease in the cost of maintaining data quality**. _Our pilot projects are working to validate this hypothesis._
-* If an I&R system becomes the ‘open hub’ of a referral ecosystem, **it can exponentially increase the distributed use of its resource data**, while increasing its business opportunities to generate revenue for _guaranteed levels of service and value-adding features _associated with this data. For instance, metadata about the distributed use of resource data can be collected, analyzed and made available as business intelligence in exchange for revenue from funders, researchers, and governments. _Our pilot projects are working to validate this hypothesis._
+* When an information system evolves into the ‘open data hub’ of a referral ecosystem, **it can exponentially increase the distributed use of its resource data**, while increasing its business opportunities to generate revenue for _guaranteed levels of service and value-adding features_ associated with this data. For instance, metadata about the distributed use of resource data can be collected, analyzed and made available as business intelligence in exchange for revenue from funders, researchers, and governments. _Our pilot projects are working to validate this hypothesis._
 * **Organizations that maintain information about overlapping sets of services can cooperate by exchanging data and coordinating activities in mutually-beneficial ways**, decreasing the costs of data maintenance and increasing the quality of available data. _Our pilot projects are working to validate this hypothesis._
 
 
@@ -88,38 +88,38 @@ Open Referral recognizes a small set of ways that resource directory data is use
 
 **Seeking Help**
 
-_i.e. help-seeker, clients, patients, end-users, consumers  _
+_e.g., help-seeker, clients, patients, end-users, consumers_
 
 **Providing help**
 
-_i.e. referrers, service providers, case managers, social workers, librarians, call operators, etc_
+_e.g., referrers, service providers, case managers, social workers, librarians, call operators, etc_
 
 **Administering data**
 
-_i.e. resource specialist, database manager, IT staff, the intern who produces a directory, etc_
+_e.g., resource specialist, database manager, IT staff, the intern who updates an Excel spreadsheet, etc_
 
 **Research and Analysis**
 
-_i.e. researcher, analyst, wonk, community planner, community leader, decision-maker, etc_
+_e.g., researcher, analyst, wonk, community planner, community leader, decision-maker, etc_
 
 
 _The following sections include our User Personas for each of these types of use. A user persona describes a broad category that encompasses many possible ‘subtypes’ of users. The persona articulates general attributes shared by all, including: relevant personal context, what information is needed and why, points of pain in the current system, and description of their behavior. A user story describes a desired action and its resulting benefit._
 
 
-### Seeking Help (i.e. help seeker, clients, patients, end-users, consumers)
+### Seeking Help (i.e. help-seeker, clients, patients, end-users, consumers)
 
-**Help seekers** (i.e. patients, clients, consumers, victims, survivors, etc.) have some pressing need (or more likely, multiple needs) which might be addressed by services in their community. To realize this possibility, help seekers must receive accurate, relevant, and easily understandable information about services which they can access and for which they are eligible. Heightened emotional reactions, illness or injury may diminish their capacity for uncertainty and decision-making. 
+**Help-seekers** (i.e. patients, clients, consumers, victims, survivors, etc.) have some pressing need (or more likely, multiple needs) which might be addressed by services in their community. To realize this possibility, help-seekers must receive accurate, relevant, and easily understandable information about services which they can access and for which they are eligible. Heightened emotional reactions, illness or injury may diminish their capacity for uncertainty and decision-making. 
 
-Help seekers may not be fully capable of articulating the addressable aspect of their needs. They may have limited media literacy, and limited access to technology. They may not know about the existence of relevant services, let alone the ‘correct’ language to describe those services. They may have difficulty processing and/or trusting information. They may not be able to articulate their needs and may not feel safe. They may struggle with anticipated or actual stigmatization for seeking help. Incorrect information can cost help-seekers time, money, or even conceivably lives. 
+Help-seekers may not be fully capable of articulating the addressable aspect of their needs. They may have limited media literacy, and limited access to technology. They may not know about the existence of relevant services, let alone the ‘correct’ language to describe those services. They may have difficulty processing and/or trusting information. They may not be able to articulate their needs and may not feel safe. They may struggle with anticipated or actual stigmatization for seeking help. Incorrect information can cost help-seekers time, money, or even conceivably lives. 
 
-Help seekers might currently look for help by searching the web, or turning to a trusted community anchor like a library, school, or religious institution. They might interface with a service provider (“referrer”) who might help identify addressable needs (through some screening process) and provide them with actionable information about services.
+Help-seekers might currently look for help by searching the web, or turning to a trusted community anchor like a library, school, or religious institution. They might interface with a service provider (“referrer”) who might help identify addressable needs (through some screening process) and provide them with actionable information about services.
 
 _As a help-seeker, I want to..._
 
 * know that technology is supporting humans who are providing help, rather than replacing them, so that I can still talk to a person in this process.
 * have fewer places to contact and so that the experience of seeking help is not traumatic.
 * have privacy so that friends and relatives don’t find out about my problems.
-* receive simple, step by step instructions because when I’m stressed out I give up more readily.
+* receive simple, step-by-step instructions because when I’m stressed out I give up more readily.
 * quickly find reliable and easy-to-understand information about services through Google and other search engines
 * get consistent information among agencies so that I can trust it (or I won’t use it).
 
@@ -128,52 +128,52 @@ _As a help-seeker, I want to..._
 
 The key point in a referral process is often a person who engages directly with a help-seeker (often in person) and helps them find information about relevant and accessible services. A ‘referrer’ is usually (but not always) a professional or a volunteer who is working for some organization that itself provides a service to its community. They are likely to be poorly paid and poorly trained. Referrers are typically the primary users of resource directory information systems. 
 
-Referrers want to trust the information they provide to help-seekers — trust regarding a) the information’s accuracy, b) the service’s relevance (is the client eligible), and c) the quality of the service. They may rely as much if not more on ‘tacit’ knowledge about services, drawn in their own experience, rather than an information system. They may use printed resources. Or they may use Google or other web searches. They may need to be able to deliver information in multiple languages. 
+Referrers want to trust the information they provide to help-seekers — trust regarding a) the information’s accuracy, b) the service’s relevance (is the client eligible), and c) the quality of the service. They may rely as much if not more on ‘tacit’ knowledge about services, drawn from their own experience, rather than an information system. They may use printed resources. Or they may use Google or other web searches. They may need to be able to deliver information in multiple languages. 
 
-Referrers often interact with help seekers in the course of some kind of structured workflow. They likely conduct a screening process which identifies important attributes of the help-seeker’s situation. Referrers then match what information they have about a help-seeker to information about accessible and relevant services. Referrers are not necessarily the penultimate stop in the referrals process. A thorough referrer will call the organization before handing off the referral, and may also call to follow up.
+Referrers often interact with help-seekers in the course of some kind of structured workflow. They likely conduct a screening process which identifies important attributes of the help-seeker’s situation. Referrers then match what information they have about a help-seeker to information about accessible and relevant services. Referrers are not necessarily the penultimate stop in the referrals process. A thorough referrer will call the organization before handing off the referral, and may also call to follow up.
 
 _As a referrer (aka service provider, etc), I want to..._
 
-* Specify the type of help needed in a detailed way so that help seekers receive the specific type of help they need.
+* Specify the type of help needed in a detailed way so that help-seekers receive the specific type of help they need.
 * To describe client’s needs just once, so that I don’t waste time.
-* Track success so that over time our clients’ life will improve.
+* Track success so that over time our clients’ lives will improve.
 * Track my cases along with where they received service so that I can respond quickly to funding researchers from the city.
-* To know a change in my process will help me deliver service better than I currently do. 
+* To know that a change in my process will help me deliver service better than I currently do. 
 
 
 ### Data Administration (i.e. resource data specialist, IT staff)
 
 **Data administration** is typically an “internally facing” role, involving someone who has responsibility of some kind for an information system. This refers to the work done by system administrators, data producers, vendors, volunteer civic technologists, people who compile directories of all kinds. 
 
-Data admin are responsible for information production and maintenance — such as updating records, maintaining naming conventions, running reports, designing mechanisms for retrieval and delivery, etc. They may be responsible for reporting directly to funders and government agencies. These responsibilities are sometimes shared among several roles in an organization. 
+Data admins are responsible for information production and maintenance — such as updating records, maintaining naming conventions, running reports, designing mechanisms for retrieval and delivery, etc. They may be responsible for reporting directly to funders and government agencies. These responsibilities are sometimes shared among several roles in an organization. 
 
 Updating data may entail email updates, verbal updates (often over the phone), screen scrape, unvalidated free-form notes, vetting user-submitted input.
 
-Administering data entails some level of technical skill, though these skills may have been gained in an ad hoc way, as a data administrator’s job may not technically be in “IT.” Thus, the Data Admin’s ability to use a system may depend to a great extent on the available documentation and training. They may be working with ambiguous instructions, with important context that might not be explicitly conveyed. 
+Administering data entails some level of technical skill, though these skills may have been gained in an ad hoc way, as a data administrator’s job may not technically be in “IT.” Thus, the data admin’s ability to use a system may depend to a great extent on the available documentation and training. They may be working with ambiguous instructions, with important context that might not be explicitly conveyed. 
 
-Data admin may be trying to share the burden of data maintenance with low-level, high-turnover human resources, which means they need simple instructions that are easy to convey to newcomers and yield predictable output.
+Data admin may be trying to share the burden of data maintenance with low-level, high-turnover human resources – which means they need simple instructions that are easy to convey to newcomers and yield predictable output.
 
 Generally, they want more people to be able to make better use of the data that they are administering.
 
-_As a data administrator, I want to:_
+_As a data administrator, I want:_
 
-* clear repeatable process flow, so that I can help people help me
-* simple and easy to use interface, so that I can update data quickly and efficiently
-* automatic and continuous data feed, so that I can speed data updates and validation
-* receive feedback from users, so we can constantly improve the quality of information
-* track who did what updates so that we can quickly assess the freshness and accuracy of the data
+* a clear repeatable process flow, so that I can help people help me
+* a simple and easy to use interface, so that I can update data quickly and efficiently
+* an automatic and continuous data feed, so that I can speed data updates and validation
+* to receive feedback from users, so we can constantly improve the quality of information
+* to track who did what updates so that we can quickly assess the freshness and accuracy of the data
 
 ### Research (i.e. analyst or researcher)
 
-**Researcher:** This type of use includes anyone who wants to use service directory data, in synthesis with other kinds of data, for the purpose of understanding community health, predicting future needs, identifying funding gaps, and other kinds of analysis. Such a role is often played by funders, policymakers, planners, or community leaders.
+**Researcher:** This type of user includes anyone who wants to use service directory data in synthesis with other kinds of data for the purpose of understanding community health, predicting future needs, identifying funding gaps, and other kinds of analysis. Such a role is often played by funders, policymakers, planners, or community leaders.
 
 Researchers are seeking accountability for the performance of the health, human, and social service system overall. They want their work to make this data useful for system-level decision-making.
 
-They currently get data “wherever they can find it,” often having to extract from excel spreadsheets or other formats that aren’t designed to be used in this way.
+They currently get data “wherever they can find it,” often having to extract from Excel spreadsheets or other formats that aren’t designed to be used in this way.
 
 Researchers are often looking to understand the effectiveness of _programs_, which aren’t necessarily specific services but rather may include a set of services that are bundled through a particular funding stream and around a common mission. 
 
-Researchers need reliably structured data, from across institutional and jurisdictional boundaries, that can be readily ‘mashed up’ with other kinds of data (census, funding, etc). 
+Researchers need reliably-structured data from across institutional and jurisdictional boundaries that can be readily ‘mashed up’ with other kinds of data (census, funding, etc). 
 
 _As a researcher, I want to…_
 
@@ -189,9 +189,15 @@ Open Referral is a **_federated_** initiative – operating across multiple over
 
 To promote these qualities, and hold ourselves accountable to them, we aim to build **_core coordination capacity_** that can support both the initiative as a whole as well as **_pilot projects_** with their own leadership structures. We also convene **_assemblies_** and **_workshops_** in which participants across our network come together to share learnings and set agendas for future development.
 
-**Stakeholders** include any intended beneficiary of Open Referral’s work, _as described by our [User Personas documentation](#types-of-use-and-user-personas)_. _(These types of beneficiary user groups consist of: help-seekers, help providers, database administrators, and data analysts.)_ _Practically, most stakeholder groups are represented in Open Referral by the organizations that serve them (service/referral providers, technology vendors)_. **Lead stakeholders** _are voluntary representatives of specific stakeholder groups who commit to the design, implementation, and/or evaluation of Open Referral’s protocols and products through resource data exchanges and associated projects – typically in the context of pilot projects_. _Lead stakeholders’ input is prioritized through all phases of Open Referral’s activities; in instances when Open Referral needs more insight to make a decision, we engage with lead stakeholders to solicit relevant feedback from their stakeholder communities._
+**Stakeholders** include any intended beneficiary of Open Referral’s work, as described by our [User Personas documentation](#types-of-use-and-user-personas). (These types of beneficiary user groups consist of: help-seekers, help providers, database administrators, and data analysts.) 
 
-**Global community of practice**: practitioners, experts, vendors, community leaders, etc.
+Practically, most stakeholder groups are represented in Open Referral by the organizations that serve them (service/referral providers, technology vendors). 
+
+**Lead stakeholders** are voluntary representatives of specific stakeholder groups who commit to the design, implementation, and/or evaluation of Open Referral’s protocols and products through resource data exchanges and associated projects – typically in the context of pilot projects. 
+
+Lead stakeholders’ input is prioritized through all phases of Open Referral’s activities; in instances when Open Referral needs more insight to make a decision, we engage with lead stakeholders to solicit relevant feedback from their stakeholder communities.
+
+**Global community of practice**: practitioners, experts, vendors, community leaders, etc. 
 
 Open to all participants who share our vision and values, our network is primarily assembled in our [Google group](https://groups.google.com/g/openreferral/), [Slack team](https://openreferral.org/get-involved/join-our-slack-team/), [Github repo](https://github.com/openreferral), and other channels (blog, email list, etc).
 
@@ -201,11 +207,13 @@ At a bare minimum, the Open Referral initiative requires two dedicated people in
 
 **Local pilots** implementing data exchanges, evaluating specs, planning for the future.
 
-Open Referral primarily works through local pilot projects. In pilots, project stakeholders collaborate to promote access to up-to-date resource directory data in their communities, by using Open Referral’s data exchange specifications to share resource directory data among existing and/or emerging systems. In return, stakeholders can receive facilitation, technical support, and other kinds of capacity-building when possible, helpful, and appropriate. Feedback from such stakeholders shapes the ongoing evolution of Open Referral. Pilot projects’ objectives include short-term demonstrations of the value of open + interoperable resource directory systems, and strategic plans for long-term sustainability of such systems. Local pilot projects should consist of **_teams_**, anchored around **_lead_ _stakeholders_** (as above) who will be represented by some **_leadership structure_** (a ‘table’ or ‘committee,’ etc) – and ideally supported by some core-coordinating capacity of their own (sometimes called [a ‘backbone’](https://www.collectiveimpactforum.org/resources/value-backbone-organizations-collective-impact) as in the Collective Impact coalition model). Pilot projects might also be supported by **_partners_**, i.e. organizations that provide material support, technical assistance and/or other in-kind resources – such as philanthropic funders, contracting agencies, civic technology networks, vendors, etc — who can help with implementation, if not decision-making. 
+Open Referral focuses much of our work in local pilot projects. In pilots, project stakeholders collaborate to promote access to up-to-date resource directory data in their communities, by using Open Referral’s data exchange specifications to share resource directory data among existing and/or emerging systems. In return, stakeholders can receive facilitation, technical support, and other kinds of capacity-building when possible, helpful, and appropriate. Feedback from such stakeholders shapes the ongoing evolution of Open Referral.
+
+Pilot projects’ objectives include short-term demonstrations of the value of open + interoperable resource directory systems, and strategic plans for long-term sustainability of such systems. Local pilot projects should consist of **_teams_**, anchored around **_lead_ _stakeholders_** (as above) who will be represented by some **_leadership structure_** (a ‘table’ or ‘committee,’ etc) – and ideally supported by some core-coordinating capacity of their own (sometimes called [a ‘backbone’](https://www.collectiveimpactforum.org/resources/value-backbone-organizations-collective-impact) as in the Collective Impact coalition model). Pilot projects might also be supported by **_partners_**, i.e., organizations that provide material support, technical assistance and/or other in-kind resources – such as philanthropic funders, contracting agencies, civic technology networks, vendors, etc., who can help with implementation, if not decision-making. 
 
 **Workgroups** of designated leads who advise on design, implementation and governance.
 
-Workgroups may be formed by any set of members to operate in accordance with the Initiative’s values and principles, and are empowered to make proposals subject to [rough consensus](https://en.wikipedia.org/wiki/Rough_consensus) of the Initiative’s community. Workgroups can consist of at least two community members who agree to collaborate on a stated objective – such as the development of Open Referral’s data specifications, implementation guidance, tooling, the governance model for Open Referral itself, etc. Workgroups should include at least one **Subject Matter Expert** to represent users’ needs, and at least one **Lead Facilitator** to be accountable for coordinating activities, including setting agendas and taking detailed notes – all of which is to be shared in Open Referral’s public forum with appropriate notice. Additional Workgroup members can be nominated by the community (including self-nominations by community members) and/or invited by core team members. 
+Workgroups may be formed by any set of members to operate in accordance with the Initiative’s values and principles, and are empowered to make proposals subject to [rough consensus](https://en.wikipedia.org/wiki/Rough_consensus) of the Initiative’s community. Workgroups can consist of at least two community members who agree to collaborate on a stated objective such as the development of Open Referral’s data specifications, implementation guidance, tooling, the governance model for Open Referral itself, etc. Workgroups should include at least one **Subject Matter Expert** to represent users’ needs, and at least one **Lead Facilitator** to be accountable for coordinating activities including setting agendas and taking detailed notes – all of which is to be shared in Open Referral’s public forum with appropriate notice. Additional Workgroup members can be nominated by the community (including self-nominations by community members) and/or invited by core team members. 
 
 Workgroups should demonstrate that aspects of any proposal put forth are directly informed by perspectives and interests expressed by representatives of Open Referral’s [primary beneficiary groups](#types-of-use-and-user-personas) – and are expected to field and respond accordingly to any such feedback received externally. In instances where rough consensus cannot be attained, even after parties have put forth and evaluated alternative proposals and feedback from lead stakeholders of pilot projects has been solicited, Core Team leads reserve the right to make decisions (and will appropriately document the rationale for decisions and ensure the result of those decisions are subject to subsequent evaluation and possible revision). 
 
@@ -220,7 +228,7 @@ You can contribute to the development of these protocols in several ways:
 
 * **Add annotations to this documentation site using hypothes.is** - hypothes.is is an annotation service that is embedded in this site. (See the buttons in the top-right of this page.) Just highlight any text, and then use the pop-up box to add your comments. You will need to sign-up for a free account with [hypothes.is](https://hypothes.is/).
 
-* Add a new issue or [engage with an existing issue on GitHub](https://github.com/openreferral/specification/issues/). We use this issue tracker to schedule all formal updates to the specification. Anyone can view and search the issues already raised. You will need to sign-up for a free GitHub account to comment or create issues.
+* Add a new issue or [engage with an existing issue on GitHub](https://github.com/openreferral/specification/issues/). We use this issue tracker to schedule all formal updates to the specification. Anyone can view and search the issues already raised. You will need to sign up for a free GitHub account to comment or create issues.
 
 * Join our [community forum](https://groups.google.com/forum/#!forum/openreferral) where discussions around the specification are encouraged. 
 
