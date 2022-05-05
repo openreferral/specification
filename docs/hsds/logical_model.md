@@ -64,16 +64,16 @@ E.g. a phone number applies to the service OR the organisation OR the service_at
 
 ## ER Diagram
 
-*Click to enlarge*
-
 ```{eval-rst}
-.. image:: ../assets/entity_relationship_diagram_core_tables.svg
-   :target: ../../_images/entity_relationship_diagram_core_tables.svg
+
+`[enlarge] <../../_images/entity_relationship_diagram_core_tables.svg>`_
+
+.. raw:: html
+    :file: ../extras/_images/entity_relationship_diagram_core_tables.svg
+    
 ```
 
 ## ER Diagram (Full version)
-
-*Click to enlarge*
 
 <div style="background-color: #77DD77;">
 
@@ -88,7 +88,10 @@ Other tables are shown in blue.
 </div>
 
 ```{eval-rst}
-.. image:: ../assets/entity_relationship_diagram.svg
-   :target: ../../_images/entity_relationship_diagram.svg
-```
 
+`[enlarge] <../../_images/entity_relationship_diagram.svg>`_
+
+.. raw:: html
+    :file: ../extras/_images/entity_relationship_diagram.svg
+    
+```
