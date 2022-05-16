@@ -42,20 +42,6 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Open Referral Initiative
-
-   initiative/index
-   
-   governance
-   vocabulary  
-   design_principles
-   
-   faq
-
-   credits
-
-.. toctree::
-   :maxdepth: 1
    :caption: Human Services Data Spec
 
    hsds/index
@@ -66,9 +52,18 @@ Contents:
 
    hsda/index
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Open Referral Initiative
 
-   
+   initiative/index
 
+   governance
+   vocabulary
+   design_principles
 
+   faq
+
+   credits
 ```
 
