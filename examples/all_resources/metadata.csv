@@ -1,2 +1,2 @@
-id,resource_id,last_action_date,last_action_type,field_name,previous_value,replacement_value,updated_by
-ede4c196-45d9-4339-8944-bad0e4ff3cee,c89eb05c-62dd-4b64-b494-0cc347b6ea7f,2008-09-15T15:53:00Z,create,name,test,Sanctuary Example City,Sample user
+id,resource_id,resource_type,last_action_date,last_action_type,field_name,previous_value,replacement_value,updated_by
+ede4c196-45d9-4339-8944-bad0e4ff3cee,c89eb05c-62dd-4b64-b494-0cc347b6ea7f,contact,2018-09-15T15:53:00Z,create,name,test,Sanctuary Example City,Sample user
