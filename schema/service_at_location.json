@@ -1,0 +1,97 @@
+{
+    "name": "service_at_location",
+    "path": "service_at_location.csv",
+    "description": "The services at location table creates a link between a service and a specific location.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 5,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier.",
+            "constraints": {
+                "unique": true
+            },
+            "example": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
+            "core": "Y"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the service at a given location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "ab231982-2106-4a55-80fc-b305560c5556",
+            "core": "Y"
+        },
+        "location_id": {
+            "name": "location_id",
+            "type": "string",
+            "description": "The identifier of the location where this service operates.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2528e812-ccbb-43a7-b761-a90f27ea9ac4",
+            "core": "Y"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "Any additional information that should be displayed to users about the service at this specific location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description"
+        },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
+            }
+        },
+        "location": {
+            "name": "location",
+            "$ref": "location.json"
+        },
+        "contacts": {
+            "name": "contacts",
+            "type": "array",
+            "items": {
+                "$ref": "contact.json"
+            }
+        },
+        "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+                "$ref": "schedule.json"
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ],
+    "tabular_required": [
+        "service_id",
+        "location_id"
+    ]
+}

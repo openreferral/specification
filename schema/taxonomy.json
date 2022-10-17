@@ -1,0 +1,61 @@
+{
+    "name": "taxonomy",
+    "path": "taxonomies.csv",
+    "description": "Taxonomies from which taxonomy terms are taken",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 21,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "5c4d79d7-cc55-470e-9f1f-8cad074e4892"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The name of the taxonomy from which terms are sourced.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "Description of the taxonomy.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description"
+        },
+        "uri": {
+            "name": "uri",
+            "type": "string",
+            "description": "The URI of the taxonomy.",
+            "format": "uri",
+            "constraints": {
+                "unique": false
+            },
+            "example": "http://example.com"
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description"
+    ]
+}

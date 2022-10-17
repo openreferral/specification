@@ -1,0 +1,106 @@
+{
+    "name": "cost_option",
+    "path": "cost_options.csv",
+    "description": "The cost option table contains the costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 19,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "1fdf4d39-3d80-484d-9f92-a8ffa08621e7"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the services for which the entry describes the cost",
+            "constraints": {
+                "unique": false
+            },
+            "example": "a67ed14f-696d-45f1-8eaf-46b7f972425e"
+        },
+        "valid_from": {
+            "name": "valid_from",
+            "type": "string",
+            "description": "When this price is valid from",
+            "constraints": {
+                "unique": false
+            },
+            "example": "valid_from",
+            "datapackage_type": "date"
+        },
+        "valid_to": {
+            "name": "valid_to",
+            "type": "string",
+            "description": "When this price is valid to",
+            "constraints": {
+                "unique": false
+            },
+            "example": "valid_to",
+            "datapackage_type": "date"
+        },
+        "option": {
+            "name": "option",
+            "type": "string",
+            "description": "Conditions associated with the cost option.\n\nApplication Profile Notes: e.g.For the over 60's\n1st session",
+            "constraints": {
+                "unique": false
+            },
+            "example": "option"
+        },
+        "currency": {
+            "name": "currency",
+            "type": "string",
+            "description": "3 letter currency code",
+            "constraints": {
+                "unique": false
+            },
+            "example": "currency"
+        },
+        "amount": {
+            "name": "amount",
+            "type": "number",
+            "description": "The cost of the option, expresssed as an amount in a currency (expected to be GBP by Open Referral UK).",
+            "constraints": {
+                "unique": false
+            },
+            "example": "100"
+        },
+        "amount_description": {
+            "name": "amount_description",
+            "type": "string",
+            "description": "Specific details qualifying the cost amount, e.g. 'per session'",
+            "constraints": {
+                "unique": false
+            },
+            "example": "amount_description"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ],
+    "tabular_required": [
+        "service_id"
+    ]
+}

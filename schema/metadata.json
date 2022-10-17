@@ -1,0 +1,107 @@
+{
+    "name": "metadata",
+    "path": "metadata.csv",
+    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 17,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+        },
+        "resource_id": {
+            "name": "resource_id",
+            "type": "string",
+            "description": "Each service, program. location, address, or contact will have a unique identifier.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+        },
+        "resource_type": {
+            "name": "resource_type",
+            "type": "string",
+            "description": "The type of entity being referenced",
+            "constraints": {
+                "unique": false
+            },
+            "example": "resource_type"
+        },
+        "last_action_date": {
+            "name": "last_action_date",
+            "type": "string",
+            "description": "The date when data was changed.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2011-01-01",
+            "datapackage_type": "datetime"
+        },
+        "last_action_type": {
+            "name": "last_action_type",
+            "type": "string",
+            "description": "The kind of change made to the data; eg create, update, delete",
+            "constraints": {
+                "unique": false
+            },
+            "example": "last_action_type"
+        },
+        "field_name": {
+            "name": "field_name",
+            "type": "string",
+            "description": "The name of field that has been modified",
+            "constraints": {
+                "unique": false
+            },
+            "example": "field_name"
+        },
+        "previous_value": {
+            "name": "previous_value",
+            "type": "string",
+            "description": "The previous value of a field that has been updated",
+            "constraints": {
+                "unique": false
+            },
+            "example": "previous_value"
+        },
+        "replacement_value": {
+            "name": "replacement_value",
+            "type": "string",
+            "description": "The new value of a field that has been updated",
+            "constraints": {
+                "unique": false
+            },
+            "example": "replacement_value"
+        },
+        "updated_by": {
+            "name": "updated_by",
+            "type": "string",
+            "description": "The name of the person who updated a value",
+            "constraints": {
+                "unique": false
+            },
+            "example": "updated_by"
+        }
+    },
+    "required": [
+        "id",
+        "last_action_date",
+        "last_action_type",
+        "field_name",
+        "previous_value",
+        "replacement_value",
+        "updated_by"
+    ],
+    "tabular_required": [
+        "resource_id",
+        "resource_type"
+    ]
+}

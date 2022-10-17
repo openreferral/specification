@@ -1,0 +1,65 @@
+{
+    "name": "funding",
+    "path": "funding.csv",
+    "description": "The funding table describes the sources of funding for a service or organization",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 11,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "1f2df32c-bf08-4b8e-bd6f-e834014b19bc"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "The identifier of the organization in receipt of this funding.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "545c684b-4a24-4923-b7c9-6e10fcf8a5a3"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the service in receipt of this funding",
+            "constraints": {
+                "unique": false
+            },
+            "example": "d20cedb8-b597-41cb-86b0-7034fb50c7a9"
+        },
+        "source": {
+            "name": "source",
+            "type": "string",
+            "description": "A free text description of the source of funds for this organization or service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "source"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

@@ -1,0 +1,270 @@
+{
+    "name": "schedule",
+    "path": "schedules.csv",
+    "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 10,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "48102e86-bb50-41c4-8f1e-e269368c41d1",
+            "core": "Y"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the service for which this is the regular schedule",
+            "constraints": {
+                "unique": false
+            },
+            "example": "ae8b7eaf-7e7d-4128-a403-ae097f146356",
+            "core": "Y"
+        },
+        "location_id": {
+            "name": "location_id",
+            "type": "string",
+            "description": "The identifier of the location for which this is the regular schedule",
+            "constraints": {
+                "unique": false
+            },
+            "example": "dd9e501b-4df9-4e71-85ac-29748e7e2d5a"
+        },
+        "service_at_location_id": {
+            "name": "service_at_location_id",
+            "type": "string",
+            "description": "The identifier of the \u2018service at location\u2019 table entry, when this schedule is specific to a service in a particular location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "0a41a90a-b5a5-4541-87e2-5cc2fd72536b",
+            "core": "Y"
+        },
+        "valid_from": {
+            "name": "valid_from",
+            "type": "string",
+            "description": "The date from which the schedule information is valid.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2005-01-01",
+            "core": "Y",
+            "datapackage_type": "date"
+        },
+        "valid_to": {
+            "name": "valid_to",
+            "type": "string",
+            "description": "The last date on which the schedule information is valid.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2005-01-01",
+            "core": "Y",
+            "datapackage_type": "date"
+        },
+        "dtstart": {
+            "name": "dtstart",
+            "type": "string",
+            "description": "iCal - The date of the first event is the schedule. Necessary when using the \u2018interval\u2019 feature, optional otherwise.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2005-01-01",
+            "core": "Y",
+            "datapackage_type": "date"
+        },
+        "timezone": {
+            "name": "timezone",
+            "type": "number",
+            "description": "The timezone that all dates are expressed as, expressed as a UTC offset. Dates are assumed to be UTC otherwise.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "3"
+        },
+        "until": {
+            "name": "until",
+            "type": "string",
+            "description": "iCal - The date of the last occurence of the recurring event.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2005-01-01",
+            "datapackage_type": "date"
+        },
+        "count": {
+            "name": "count",
+            "type": "string",
+            "description": "iCal - The number of times that the event occurs. Use this instead of \u2018until\u2019, if appropriate.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2005-01-01",
+            "datapackage_type": "date"
+        },
+        "wkst": {
+            "name": "wkst",
+            "type": "string",
+            "description": "iCal - The day on which the week starts, eg MO.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "TUE",
+            "enum": [
+                "MON",
+                "TUE",
+                "WED",
+                "THU",
+                "FRI",
+                "SAT",
+                "SUN"
+            ]
+        },
+        "freq": {
+            "name": "freq",
+            "type": "string",
+            "description": "iCal - How often the frequency repeats. E.g. Frequency use one of WEEKLY or MONTHLY.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "WEEKLY",
+            "core": "Y",
+            "enum": [
+                "WEEKLY",
+                "MONTHLY"
+            ]
+        },
+        "interval": {
+            "name": "interval",
+            "type": "number",
+            "description": "iCal - How often the frequency repeats. E.g. Interval 2 for Frequency WEEKLY gives Fortnightly",
+            "constraints": {
+                "unique": false
+            },
+            "example": "1",
+            "core": "Y"
+        },
+        "byday": {
+            "name": "byday",
+            "type": "string",
+            "description": "iCal - Comma seperated days of the week. E.g. SU,MO,TU,WE,TH,FR,SA. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
+            "constraints": {
+                "unique": false
+            },
+            "example": "byday",
+            "core": "Y"
+        },
+        "byweekno": {
+            "name": "byweekno",
+            "type": "string",
+            "description": "iCal - Comma seperated numeric weeks of the year if freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "byweekno"
+        },
+        "bymonthday": {
+            "name": "bymonthday",
+            "type": "number",
+            "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2",
+            "core": "Y"
+        },
+        "byyearday": {
+            "name": "byyearday",
+            "type": "number",
+            "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "Human readable description of the availability of the service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description",
+            "core": "Y"
+        },
+        "opens_at": {
+            "name": "opens_at",
+            "type": "string",
+            "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix \u2018Z\u2019 when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.)",
+            "constraints": {
+                "unique": false
+            },
+            "example": "20:20",
+            "core": "Y",
+            "datapackage_type": "time"
+        },
+        "closes_at": {
+            "name": "closes_at",
+            "type": "string",
+            "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix \u2018Z\u2019 when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.)",
+            "constraints": {
+                "unique": false
+            },
+            "example": "20:20",
+            "core": "Y",
+            "datapackage_type": "time"
+        },
+        "schedule_link": {
+            "name": "schedule_link",
+            "type": "string",
+            "description": "URL of a link for the scheule which may show each individual session and may provide a booking facility",
+            "format": "uri",
+            "constraints": {
+                "unique": false
+            },
+            "example": "http://example.com"
+        },
+        "attending_type": {
+            "name": "attending_type",
+            "type": "string",
+            "description": "How to attend this service.\n\nApplication Profile Notes: Expected to reference a taxonomy ratehr than an enumeration in future versions",
+            "constraints": {
+                "unique": false
+            },
+            "example": "attending_type"
+        },
+        "notes": {
+            "name": "notes",
+            "type": "string",
+            "description": "Human readable notes on the schedule",
+            "constraints": {
+                "unique": false
+            },
+            "example": "notes"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

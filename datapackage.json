@@ -28,7 +28,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610",
+                        "core": "Y"
                     },
                     {
                         "name": "name",
@@ -37,7 +39,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "name",
+                        "core": "Y"
                     },
                     {
                         "name": "alternate_name",
@@ -46,7 +50,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "alternate_name",
+                        "core": "Y"
                     },
                     {
                         "name": "description",
@@ -55,7 +61,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "description",
+                        "core": "Y"
                     },
                     {
                         "name": "email",
@@ -65,7 +73,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "email@example.com",
+                        "core": "Y"
                     },
                     {
                         "name": "website",
@@ -75,17 +85,20 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "http://example.com",
+                        "core": "Y"
                     },
                     {
                         "name": "year_incorporated",
-                        "type": "date",
+                        "type": "number",
                         "description": "The year in which the organization was legally formed.",
                         "format": "%Y",
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2011"
                     },
                     {
                         "name": "legal_status",
@@ -94,7 +107,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "legal_status"
                     },
                     {
                         "name": "logo",
@@ -103,17 +117,19 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "logo"
                     },
                     {
-                        "name": "website",
+                        "name": "uri",
                         "type": "string",
                         "description": "A persistent identifier to uniquely identify the organization.",
                         "format": "uri",
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "http://example.com"
                     },
                     {
                         "name": "parent_organization_id",
@@ -122,7 +138,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "cd09a387-91f4-4555-94ec-e799c35344cd"
                     }
                 ]
             }
@@ -144,7 +161,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "e7ec2e57-4540-43fa-b2c7-6be5a0ef7f42"
                     },
                     {
                         "name": "organization_id",
@@ -153,7 +171,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "5978833f-21aa-4235-a56b-7d2f94ce8f35"
                     },
                     {
                         "name": "name",
@@ -162,7 +181,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "name"
                     },
                     {
                         "name": "alternate_name",
@@ -171,7 +191,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "alternate_name"
                     },
                     {
                         "name": "description",
@@ -180,7 +201,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "description"
                     }
                 ],
                 "foreignKeys": [
@@ -211,7 +233,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "ac148810-d857-441c-9679-408f346de14b",
+                        "core": "Y"
                     },
                     {
                         "name": "organization_id",
@@ -220,7 +244,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "0fdfb57f-c147-4cfb-864c-44788a335d8c",
+                        "core": "Y"
                     },
                     {
                         "name": "program_id",
@@ -229,7 +255,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "24682fa0-3eda-4afc-a026-84a21c7a882e"
                     },
                     {
                         "name": "name",
@@ -238,7 +265,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "name",
+                        "core": "Y"
                     },
                     {
                         "name": "alternate_name",
@@ -247,7 +276,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "alternate_name"
                     },
                     {
                         "name": "description",
@@ -256,7 +286,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "description",
+                        "core": "Y"
                     },
                     {
                         "name": "url",
@@ -266,7 +298,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "http://example.com",
+                        "core": "Y"
                     },
                     {
                         "name": "email",
@@ -276,7 +310,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "email@example.com",
+                        "core": "Y"
                     },
                     {
                         "name": "status",
@@ -291,7 +327,9 @@
                                 "defunct",
                                 "temporarily closed"
                             ]
-                        }
+                        },
+                        "example": "active",
+                        "core": "Y"
                     },
                     {
                         "name": "interpretation_services",
@@ -300,7 +338,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "interpretation_services"
                     },
                     {
                         "name": "application_process",
@@ -309,7 +348,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "application_process"
                     },
                     {
                         "name": "fees_description",
@@ -318,7 +358,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "fees_description"
                     },
                     {
                         "name": "accreditations",
@@ -327,7 +368,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "accreditations"
                     },
                     {
                         "name": "eligibility_description",
@@ -336,7 +378,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "eligibility_description",
+                        "core": "Y"
                     },
                     {
                         "name": "minimum_age",
@@ -345,7 +389,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "0"
                     },
                     {
                         "name": "maximum_age",
@@ -354,7 +399,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "100"
                     },
                     {
                         "name": "assured_date",
@@ -363,7 +409,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2005-01-01"
                     },
                     {
                         "name": "assurer_email",
@@ -373,7 +420,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "email@example.com"
                     },
                     {
                         "name": "alert",
@@ -382,7 +430,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "alert"
                     }
                 ],
                 "foreignKeys": [
@@ -420,7 +469,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "ae58cc39-8b70-4ab1-8aea-786882e5ac8e",
+                        "core": "Y"
                     },
                     {
                         "name": "link_id",
@@ -429,7 +480,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "f28dd44b-0c4d-479f-8e90-4c52219a8b3c",
+                        "core": "Y"
                     },
                     {
                         "name": "taxonomy_term_id",
@@ -438,7 +491,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "6bd624ce-8512-497a-bcb2-7ce1a5dc1680",
+                        "core": "Y"
                     },
                     {
                         "name": "link_type",
@@ -447,7 +502,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "link_type",
+                        "core": "Y"
                     },
                     {
                         "name": "link_entity",
@@ -456,7 +513,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "link_entity",
+                        "core": "Y"
                     },
                     {
                         "name": "value",
@@ -465,14 +524,16 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "value",
+                        "core": "Y"
                     }
                 ],
                 "foreignKeys": [
                     {
                         "fields": "taxonomy_term_id",
                         "reference": {
-                            "resource": "taxonomy",
+                            "resource": "taxonomy_term",
                             "fields": "id"
                         }
                     }
@@ -496,7 +557,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
+                        "core": "Y"
                     },
                     {
                         "name": "service_id",
@@ -505,7 +568,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "ab231982-2106-4a55-80fc-b305560c5556",
+                        "core": "Y"
                     },
                     {
                         "name": "location_id",
@@ -514,7 +579,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "2528e812-ccbb-43a7-b761-a90f27ea9ac4",
+                        "core": "Y"
                     },
                     {
                         "name": "description",
@@ -523,7 +590,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "description"
                     }
                 ],
                 "foreignKeys": [
@@ -561,7 +629,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "3a19ff88-4620-4d17-9830-ac1d859eb5d5",
+                        "core": "Y"
                     },
                     {
                         "name": "location_type",
@@ -575,7 +645,9 @@
                                 "postal",
                                 "virtual"
                             ]
-                        }
+                        },
+                        "example": "physical",
+                        "core": "Y"
                     },
                     {
                         "name": "url",
@@ -585,7 +657,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "http://example.com",
+                        "core": "Y"
                     },
                     {
                         "name": "organization_id",
@@ -594,7 +668,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "985e4a42-bd9f-4edc-911d-0243a4640aca"
                     },
                     {
                         "name": "name",
@@ -603,7 +678,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "name",
+                        "core": "Y"
                     },
                     {
                         "name": "alternate_name",
@@ -612,7 +689,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "alternate_name"
                     },
                     {
                         "name": "description",
@@ -621,7 +699,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "description",
+                        "core": "Y"
                     },
                     {
                         "name": "transportation",
@@ -630,7 +710,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "transportation"
                     },
                     {
                         "name": "latitude",
@@ -639,7 +720,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "100",
+                        "core": "Y"
                     },
                     {
                         "name": "longitude",
@@ -648,7 +731,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "101",
+                        "core": "Y"
                     },
                     {
                         "name": "external_identifier",
@@ -657,7 +742,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "external_identifier"
                     },
                     {
                         "name": "external_identifier_type",
@@ -666,7 +752,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "external_identifier_type"
                     }
                 ],
                 "foreignKeys": [
@@ -697,7 +784,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "1554f2e2-a373-45db-a3fa-9fc48a61c15e",
+                        "core": "Y"
                     },
                     {
                         "name": "location_id",
@@ -706,7 +795,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "3133fbc3-469a-4ab7-9158-421acfe66229"
                     },
                     {
                         "name": "service_id",
@@ -715,7 +805,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "9d2104f3-b9b2-4719-a85d-743fc62714a6"
                     },
                     {
                         "name": "organization_id",
@@ -724,7 +815,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "c1066581-4d59-45c7-9072-40e745e3c98c"
                     },
                     {
                         "name": "contact_id",
@@ -733,7 +825,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "52fd7852-8f0e-4b5e-9d93-ff96386096c4",
+                        "core": "Y"
                     },
                     {
                         "name": "service_at_location_id",
@@ -742,7 +836,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "a4edb74e-c262-4379-bf87-2bf90f6f4803"
                     },
                     {
                         "name": "number",
@@ -751,7 +846,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "number",
+                        "core": "Y"
                     },
                     {
                         "name": "extension",
@@ -760,7 +857,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "100"
                     },
                     {
                         "name": "type",
@@ -769,7 +867,18 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "type"
+                    },
+                    {
+                        "name": "description",
+                        "type": "string",
+                        "description": "A description providing extra information about the phone service (e.g. any special arrangements for accessing, or details of availability at particular times.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        },
+                        "example": "description"
                     }
                 ],
                 "foreignKeys": [
@@ -804,7 +913,7 @@
                     {
                         "fields": "service_at_location_id",
                         "reference": {
-                            "resource": "service",
+                            "resource": "service_at_location",
                             "fields": "id"
                         }
                     }
@@ -828,7 +937,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "1e7efce3-639b-4880-940c-b95cd30cdb50",
+                        "core": "Y"
                     },
                     {
                         "name": "organization_id",
@@ -837,7 +948,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "ae67a707-5893-4225-b0b1-320ab9cb596b"
                     },
                     {
                         "name": "service_id",
@@ -846,7 +958,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "46f31178-dbb7-45e4-be37-c69320e08c36",
+                        "core": "Y"
                     },
                     {
                         "name": "service_at_location_id",
@@ -855,7 +969,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "93eaf18d-1cd2-4ec7-bffb-3c9172ee5070"
                     },
                     {
                         "name": "location_id",
@@ -863,7 +978,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2226a1e5-7ff1-4c46-a5fb-955304b05917"
                     },
                     {
                         "name": "name",
@@ -872,7 +988,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "name",
+                        "core": "Y"
                     },
                     {
                         "name": "title",
@@ -881,7 +999,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "title",
+                        "core": "Y"
                     },
                     {
                         "name": "department",
@@ -890,7 +1010,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "department"
                     },
                     {
                         "name": "email",
@@ -900,7 +1021,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "email@example.com"
                     }
                 ],
                 "foreignKeys": [
@@ -921,7 +1043,7 @@
                     {
                         "fields": "service_at_location_id",
                         "reference": {
-                            "resource": "service",
+                            "resource": "service_at_location",
                             "fields": "id"
                         }
                     },
@@ -951,7 +1073,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "74706e55-df26-4b84-80fe-ecc30b5befb4",
+                        "core": "Y"
                     },
                     {
                         "name": "location_id",
@@ -960,7 +1084,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "d57b7ee4-9bcf-4351-858b-c42860beb869",
+                        "core": "Y"
                     },
                     {
                         "name": "attention",
@@ -969,7 +1095,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "attention",
+                        "core": "Y"
                     },
                     {
                         "name": "address_1",
@@ -978,7 +1106,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "address_1",
+                        "core": "Y"
                     },
                     {
                         "name": "address_2",
@@ -987,7 +1117,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "address_2"
                     },
                     {
                         "name": "city",
@@ -996,7 +1127,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "city",
+                        "core": "Y"
                     },
                     {
                         "name": "region",
@@ -1005,7 +1138,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "region",
+                        "core": "Y"
                     },
                     {
                         "name": "state_province",
@@ -1014,7 +1149,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "state_province",
+                        "core": "Y"
                     },
                     {
                         "name": "postal_code",
@@ -1023,7 +1160,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "postal_code",
+                        "core": "Y"
                     },
                     {
                         "name": "country",
@@ -1032,7 +1171,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "country",
+                        "core": "Y"
                     },
                     {
                         "name": "address_type",
@@ -1046,7 +1187,9 @@
                                 "postal",
                                 "virtual"
                             ]
-                        }
+                        },
+                        "example": "postal",
+                        "core": "Y"
                     }
                 ],
                 "foreignKeys": [
@@ -1077,7 +1220,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "48102e86-bb50-41c4-8f1e-e269368c41d1",
+                        "core": "Y"
                     },
                     {
                         "name": "service_id",
@@ -1086,7 +1231,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "ae8b7eaf-7e7d-4128-a403-ae097f146356",
+                        "core": "Y"
                     },
                     {
                         "name": "location_id",
@@ -1095,7 +1242,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "dd9e501b-4df9-4e71-85ac-29748e7e2d5a"
                     },
                     {
                         "name": "service_at_location_id",
@@ -1104,7 +1252,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "0a41a90a-b5a5-4541-87e2-5cc2fd72536b",
+                        "core": "Y"
                     },
                     {
                         "name": "valid_from",
@@ -1113,7 +1263,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2005-01-01",
+                        "core": "Y"
                     },
                     {
                         "name": "valid_to",
@@ -1122,7 +1274,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2005-01-01",
+                        "core": "Y"
                     },
                     {
                         "name": "dtstart",
@@ -1131,7 +1285,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2005-01-01",
+                        "core": "Y"
                     },
                     {
                         "name": "timezone",
@@ -1140,7 +1296,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "3"
                     },
                     {
                         "name": "until",
@@ -1149,7 +1306,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2005-01-01"
                     },
                     {
                         "name": "count",
@@ -1158,11 +1316,12 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2005-01-01"
                     },
                     {
                         "name": "wkst",
-                        "type": "date",
+                        "type": "string",
                         "description": "iCal - The day on which the week starts, eg MO.",
                         "constraints": {
                             "required": false,
@@ -1176,7 +1335,8 @@
                                 "SAT",
                                 "SUN"
                             ]
-                        }
+                        },
+                        "example": "TUE"
                     },
                     {
                         "name": "freq",
@@ -1189,7 +1349,9 @@
                                 "WEEKLY",
                                 "MONTHLY"
                             ]
-                        }
+                        },
+                        "example": "WEEKLY",
+                        "core": "Y"
                     },
                     {
                         "name": "interval",
@@ -1198,7 +1360,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "1",
+                        "core": "Y"
                     },
                     {
                         "name": "byday",
@@ -1207,7 +1371,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "byday",
+                        "core": "Y"
                     },
                     {
                         "name": "byweekno",
@@ -1216,7 +1382,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "byweekno"
                     },
                     {
                         "name": "bymonthday",
@@ -1225,7 +1392,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2",
+                        "core": "Y"
                     },
                     {
                         "name": "byyearday",
@@ -1234,7 +1403,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2"
                     },
                     {
                         "name": "description",
@@ -1243,7 +1413,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "description",
+                        "core": "Y"
                     },
                     {
                         "name": "opens_at",
@@ -1252,7 +1424,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "20:20",
+                        "core": "Y"
                     },
                     {
                         "name": "closes_at",
@@ -1261,7 +1435,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "20:20",
+                        "core": "Y"
                     },
                     {
                         "name": "schedule_link",
@@ -1271,7 +1447,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "http://example.com"
                     },
                     {
                         "name": "attending_type",
@@ -1280,7 +1457,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "attending_type"
                     },
                     {
                         "name": "notes",
@@ -1289,7 +1467,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "notes"
                     }
                 ],
                 "foreignKeys": [
@@ -1310,7 +1489,7 @@
                     {
                         "fields": "service_at_location_id",
                         "reference": {
-                            "resource": "service",
+                            "resource": "service_at_location",
                             "fields": "id"
                         }
                     }
@@ -1334,7 +1513,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "1f2df32c-bf08-4b8e-bd6f-e834014b19bc"
                     },
                     {
                         "name": "organization_id",
@@ -1343,7 +1523,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "545c684b-4a24-4923-b7c9-6e10fcf8a5a3"
                     },
                     {
                         "name": "service_id",
@@ -1352,7 +1533,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "d20cedb8-b597-41cb-86b0-7034fb50c7a9"
                     },
                     {
                         "name": "source",
@@ -1361,7 +1543,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "source"
                     }
                 ],
                 "foreignKeys": [
@@ -1399,7 +1582,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "381c64f1-a724-4884-9c21-ac96c21cca3e",
+                        "core": "Y"
                     },
                     {
                         "name": "service_id",
@@ -1408,7 +1593,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "146fbf18-d4a3-4bee-a8b0-2d4476478eea",
+                        "core": "Y"
                     },
                     {
                         "name": "name",
@@ -1417,7 +1604,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "name",
+                        "core": "Y"
                     },
                     {
                         "name": "description",
@@ -1426,7 +1615,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "description",
+                        "core": "Y"
                     },
                     {
                         "name": "extent",
@@ -1435,7 +1626,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "extent"
                     },
                     {
                         "name": "extent_type",
@@ -1444,7 +1636,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "extent_type"
                     },
                     {
                         "name": "uri",
@@ -1453,7 +1646,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "uri"
                     }
                 ],
                 "foreignKeys": [
@@ -1484,7 +1678,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "f6ad7e69-b9c8-42ce-92db-92cedb4c05c0"
                     },
                     {
                         "name": "service_id",
@@ -1493,7 +1688,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "bb0128fb-eeec-4179-a606-a8fb06648994"
                     },
                     {
                         "name": "document",
@@ -1502,7 +1698,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "document"
                     }
                 ],
                 "foreignKeys": [
@@ -1533,7 +1730,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "2989d3ed-c547-48f8-8f9d-432d81c7892e",
+                        "core": "Y"
                     },
                     {
                         "name": "service_id",
@@ -1542,7 +1741,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "500ff16a-71c4-4e0e-9263-0bb8bbc9f4e5",
+                        "core": "Y"
                     },
                     {
                         "name": "location_id",
@@ -1551,7 +1752,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "2fcda859-99ad-4a9e-b912-7baf5e064df1"
                     },
                     {
                         "name": "phone_id",
@@ -1560,16 +1762,19 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "df2d6c2f-89e7-4cae-aace-a23a0264d7e5"
                     },
                     {
-                        "name": "language",
+                        "name": "name",
                         "type": "string",
                         "description": "Languages, other than English, in which the service is delivered. Languages are listed as ISO639-1 codes.",
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "name",
+                        "core": "Y"
                     },
                     {
                         "name": "code",
@@ -1578,7 +1783,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "code"
                     },
                     {
                         "name": "note",
@@ -1587,7 +1793,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "note"
                     }
                 ],
                 "foreignKeys": [
@@ -1632,7 +1839,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "afcf296e-1cb2-4139-9c88-33d587d1a50b",
+                        "core": "Y"
                     },
                     {
                         "name": "location_id",
@@ -1641,7 +1850,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "7587f72e-11ff-4e02-95c2-f13f8f48f830",
+                        "core": "Y"
                     },
                     {
                         "name": "description",
@@ -1650,7 +1861,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "description",
+                        "core": "Y"
                     },
                     {
                         "name": "details",
@@ -1659,7 +1872,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "details"
                     },
                     {
                         "name": "url",
@@ -1669,7 +1883,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "http://example.com"
                     }
                 ],
                 "foreignKeys": [
@@ -1700,7 +1915,9 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "3f7b145d-84af-42d7-8fae-eaca714b02b2",
+                        "core": "Y"
                     },
                     {
                         "name": "code",
@@ -1709,7 +1926,8 @@
                         "constraints": {
                             "required": false,
                             "unique": true
-                        }
+                        },
+                        "example": "code"
                     },
                     {
                         "name": "name",
@@ -1718,7 +1936,9 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "name",
+                        "core": "Y"
                     },
                     {
                         "name": "description",
@@ -1727,7 +1947,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "description"
                     },
                     {
                         "name": "parent_id",
@@ -1736,7 +1957,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "0bc248fa-dc27-4650-9ba4-8f1a24ef16a2",
+                        "core": "Y"
                     },
                     {
                         "name": "taxonomy",
@@ -1745,7 +1968,9 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "taxonomy",
+                        "core": "Y"
                     },
                     {
                         "name": "language",
@@ -1754,7 +1979,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "language"
                     },
                     {
                         "name": "taxonomy_id",
@@ -1763,7 +1989,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "07ff6aee-a219-438c-b694-d2fcb6c5373b"
                     },
                     {
                         "name": "term_uri",
@@ -1773,7 +2000,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "http://example.com"
                     }
                 ],
                 "foreignKeys": [
@@ -1804,7 +2032,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
                     },
                     {
                         "name": "resource_id",
@@ -1813,7 +2042,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
                     },
                     {
                         "name": "resource_type",
@@ -1822,7 +2052,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "resource_type"
                     },
                     {
                         "name": "last_action_date",
@@ -1831,7 +2062,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "2011-01-01"
                     },
                     {
                         "name": "last_action_type",
@@ -1840,7 +2072,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "last_action_type"
                     },
                     {
                         "name": "field_name",
@@ -1849,7 +2082,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "field_name"
                     },
                     {
                         "name": "previous_value",
@@ -1858,7 +2092,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "previous_value"
                     },
                     {
                         "name": "replacement_value",
@@ -1867,7 +2102,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "replacement_value"
                     },
                     {
                         "name": "updated_by",
@@ -1876,7 +2112,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "updated_by"
                     }
                 ]
             }
@@ -1898,7 +2135,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "c11af60b-a394-4e53-9943-324dda2d17a1"
                     },
                     {
                         "name": "name",
@@ -1906,7 +2144,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "name"
                     },
                     {
                         "name": "language",
@@ -1914,7 +2153,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "language"
                     },
                     {
                         "name": "character_set",
@@ -1922,7 +2162,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "character_set"
                     }
                 ]
             }
@@ -1944,7 +2185,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "1fdf4d39-3d80-484d-9f92-a8ffa08621e7"
                     },
                     {
                         "name": "service_id",
@@ -1953,7 +2195,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "a67ed14f-696d-45f1-8eaf-46b7f972425e"
                     },
                     {
                         "name": "valid_from",
@@ -1962,7 +2205,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "valid_from"
                     },
                     {
                         "name": "valid_to",
@@ -1971,7 +2215,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "valid_to"
                     },
                     {
                         "name": "option",
@@ -1980,7 +2225,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "option"
                     },
                     {
                         "name": "currency",
@@ -1989,7 +2235,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "currency"
                     },
                     {
                         "name": "amount",
@@ -1998,7 +2245,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "100"
                     },
                     {
                         "name": "amount_description",
@@ -2007,7 +2255,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "amount_description"
                     }
                 ],
                 "foreignKeys": [
@@ -2038,7 +2287,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "d4dbcebc-0802-47cb-8651-b937ac4f2f3e"
                     },
                     {
                         "name": "organization_id",
@@ -2047,7 +2297,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "58341b4f-4f21-47f0-affb-1a2f9162472b"
                     },
                     {
                         "name": "identifier_scheme",
@@ -2056,7 +2307,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
+                        },
+                        "example": "identifier_scheme"
                     },
                     {
                         "name": "identifier_type",
@@ -2065,7 +2317,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "identifier_type"
                     },
                     {
                         "name": "identifier",
@@ -2074,7 +2327,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "identifier"
                     }
                 ],
                 "foreignKeys": [
@@ -2105,7 +2359,8 @@
                         "constraints": {
                             "required": true,
                             "unique": true
-                        }
+                        },
+                        "example": "5c4d79d7-cc55-470e-9f1f-8cad074e4892"
                     },
                     {
                         "name": "name",
@@ -2114,7 +2369,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "name"
                     },
                     {
                         "name": "description",
@@ -2123,7 +2379,8 @@
                         "constraints": {
                             "required": true,
                             "unique": false
-                        }
+                        },
+                        "example": "description"
                     },
                     {
                         "name": "uri",
@@ -2133,16 +2390,8 @@
                         "constraints": {
                             "required": false,
                             "unique": false
-                        }
-                    },
-                    {
-                        "name": "version",
-                        "type": "string",
-                        "description": "The taxonomy's version.",
-                        "constraints": {
-                            "required": false,
-                            "unique": false
-                        }
+                        },
+                        "example": "http://example.com"
                     }
                 ]
             }

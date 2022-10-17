@@ -1,0 +1,104 @@
+{
+    "name": "taxonomy_term",
+    "path": "taxonomy_terms.csv",
+    "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 16,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each taxonomy term must have a unique identifier, within the scope of the dataset",
+            "constraints": {
+                "unique": true
+            },
+            "example": "3f7b145d-84af-42d7-8fae-eaca714b02b2",
+            "core": "Y"
+        },
+        "code": {
+            "name": "code",
+            "type": "string",
+            "description": "The term identfier as used in the taxonomy. This and the taxonomy_id combined define the term",
+            "constraints": {
+                "unique": true
+            },
+            "example": "code"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The taxonomy term itself. ",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name",
+            "core": "Y"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "What the term means",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description"
+        },
+        "parent_id": {
+            "name": "parent_id",
+            "type": "string",
+            "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "0bc248fa-dc27-4650-9ba4-8f1a24ef16a2",
+            "core": "Y"
+        },
+        "taxonomy": {
+            "name": "taxonomy",
+            "$ref": "taxonomy.json"
+        },
+        "language": {
+            "name": "language",
+            "type": "string",
+            "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "language"
+        },
+        "taxonomy_id": {
+            "name": "taxonomy_id",
+            "type": "string",
+            "description": "The identifier of the taxonomy containing the term",
+            "constraints": {
+                "unique": false
+            },
+            "example": "07ff6aee-a219-438c-b694-d2fcb6c5373b"
+        },
+        "term_uri": {
+            "name": "term_uri",
+            "type": "string",
+            "description": "URI of the term",
+            "format": "uri",
+            "constraints": {
+                "unique": false
+            },
+            "example": "http://example.com"
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description"
+    ]
+}

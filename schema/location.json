@@ -1,0 +1,193 @@
+{
+    "name": "location",
+    "path": "locations.csv",
+    "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 6,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each location must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "3a19ff88-4620-4d17-9830-ac1d859eb5d5",
+            "core": "Y"
+        },
+        "location_type": {
+            "name": "location_type",
+            "type": "string",
+            "description": "Enumeration of physical, postal, virtual",
+            "constraints": {
+                "unique": false
+            },
+            "example": "physical",
+            "core": "Y",
+            "enum": [
+                "physical",
+                "postal",
+                "virtual"
+            ]
+        },
+        "url": {
+            "name": "url",
+            "type": "string",
+            "description": "The URL of a virtual location",
+            "format": "uri",
+            "constraints": {
+                "unique": false
+            },
+            "example": "http://example.com",
+            "core": "Y"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "985e4a42-bd9f-4edc-911d-0243a4640aca"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The name of the location",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name",
+            "core": "Y"
+        },
+        "alternate_name": {
+            "name": "alternate_name",
+            "type": "string",
+            "description": "An alternative name for the location",
+            "constraints": {
+                "unique": false
+            },
+            "example": "alternate_name"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "A description of this location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description",
+            "core": "Y"
+        },
+        "transportation": {
+            "name": "transportation",
+            "type": "string",
+            "description": "A description of the access to public or private transportation to and from the location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "transportation"
+        },
+        "latitude": {
+            "name": "latitude",
+            "type": "number",
+            "description": "Y coordinate of location expressed in decimal degrees in WGS84 datum.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "100",
+            "core": "Y"
+        },
+        "longitude": {
+            "name": "longitude",
+            "type": "number",
+            "description": "X coordinate of location expressed in decimal degrees in WGS84 datum.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "101",
+            "core": "Y"
+        },
+        "external_identifier": {
+            "name": "external_identifier",
+            "type": "string",
+            "description": "Third party identfier of a location e.g. UK UPRN or what3words",
+            "constraints": {
+                "unique": false
+            },
+            "example": "external_identifier"
+        },
+        "external_identifier_type": {
+            "name": "external_identifier_type",
+            "type": "string",
+            "description": "Enumeration including UPRN, what3words and others",
+            "constraints": {
+                "unique": false
+            },
+            "example": "external_identifier_type"
+        },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
+            }
+        },
+        "accessibilitys": {
+            "name": "accessibilitys",
+            "type": "array",
+            "items": {
+                "$ref": "accessibility.json"
+            }
+        },
+        "contacts": {
+            "name": "contacts",
+            "type": "array",
+            "items": {
+                "$ref": "contact.json"
+            }
+        },
+        "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+                "$ref": "schedule.json"
+            }
+        },
+        "languages": {
+            "name": "languages",
+            "type": "array",
+            "items": {
+                "$ref": "language.json"
+            }
+        },
+        "addresss": {
+            "name": "addresss",
+            "type": "array",
+            "items": {
+                "$ref": "address.json"
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "location_type"
+    ]
+}

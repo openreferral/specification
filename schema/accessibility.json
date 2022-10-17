@@ -1,0 +1,78 @@
+{
+    "name": "accessibility",
+    "path": "accessibility.csv",
+    "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 15,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "afcf296e-1cb2-4139-9c88-33d587d1a50b",
+            "core": "Y"
+        },
+        "location_id": {
+            "name": "location_id",
+            "type": "string",
+            "description": "The identifier of the location for which the entry describes the accessibility provision",
+            "constraints": {
+                "unique": false
+            },
+            "example": "7587f72e-11ff-4e02-95c2-f13f8f48f830",
+            "core": "Y"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "Description of assistance or infrastructure that facilitate access to clients with disabilities.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description",
+            "core": "Y"
+        },
+        "details": {
+            "name": "details",
+            "type": "string",
+            "description": "Any further details relating to the relevant accessibility arrangements at this location. E.g. whether advance notice is required to use an accessibility facility.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "details"
+        },
+        "url": {
+            "name": "url",
+            "type": "string",
+            "description": "URL of a page giving more information about the accessibility of the location",
+            "format": "uri",
+            "constraints": {
+                "unique": false
+            },
+            "example": "http://example.com"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

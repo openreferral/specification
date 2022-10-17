@@ -1,0 +1,62 @@
+{
+    "name": "meta_table_description",
+    "path": "meta_table_descriptions.csv",
+    "description": "The meta_table_description table contains metadata about individual tables.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 18,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "c11af60b-a394-4e53-9943-324dda2d17a1"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name"
+        },
+        "language": {
+            "name": "language",
+            "type": "string",
+            "constraints": {
+                "unique": false
+            },
+            "example": "language"
+        },
+        "character_set": {
+            "name": "character_set",
+            "type": "string",
+            "constraints": {
+                "unique": false
+            },
+            "example": "character_set"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

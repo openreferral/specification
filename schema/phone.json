@@ -1,0 +1,130 @@
+{
+    "name": "phone",
+    "path": "phones.csv",
+    "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 7,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "1554f2e2-a373-45db-a3fa-9fc48a61c15e",
+            "core": "Y"
+        },
+        "location_id": {
+            "name": "location_id",
+            "type": "string",
+            "description": "The identifier of the location where this phone number is located",
+            "constraints": {
+                "unique": false
+            },
+            "example": "3133fbc3-469a-4ab7-9158-421acfe66229"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the service for which this is the phone number",
+            "constraints": {
+                "unique": false
+            },
+            "example": "9d2104f3-b9b2-4719-a85d-743fc62714a6"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "The identifier of the organization for which this is the phone number",
+            "constraints": {
+                "unique": false
+            },
+            "example": "c1066581-4d59-45c7-9072-40e745e3c98c"
+        },
+        "contact_id": {
+            "name": "contact_id",
+            "type": "string",
+            "description": "The identifier of the contact for which this is the phone number",
+            "constraints": {
+                "unique": false
+            },
+            "example": "52fd7852-8f0e-4b5e-9d93-ff96386096c4",
+            "core": "Y"
+        },
+        "service_at_location_id": {
+            "name": "service_at_location_id",
+            "type": "string",
+            "description": "The identifier of the \u2018service at location\u2019 table entry, when this phone number is specific to a service in a particular location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "a4edb74e-c262-4379-bf87-2bf90f6f4803"
+        },
+        "number": {
+            "name": "number",
+            "type": "string",
+            "description": "The phone number",
+            "constraints": {
+                "unique": false
+            },
+            "example": "number",
+            "core": "Y"
+        },
+        "extension": {
+            "name": "extension",
+            "type": "number",
+            "description": "The extension of the phone number",
+            "constraints": {
+                "unique": false
+            },
+            "example": "100"
+        },
+        "type": {
+            "name": "type",
+            "type": "string",
+            "description": "Indicates the type of phone service, drawing from the RFC6350 list of types (text (for SMS), voice, fax, cell, video, pager, textphone).",
+            "constraints": {
+                "unique": false
+            },
+            "example": "type"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "A description providing extra information about the phone service (e.g. any special arrangements for accessing, or details of availability at particular times.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description"
+        },
+        "languages": {
+            "name": "languages",
+            "type": "array",
+            "items": {
+                "$ref": "language.json"
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "number"
+    ]
+}

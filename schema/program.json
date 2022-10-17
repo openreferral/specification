@@ -1,0 +1,79 @@
+{
+    "name": "program",
+    "path": "programs.csv",
+    "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 2,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each program must have a unique identifier.",
+            "constraints": {
+                "unique": true
+            },
+            "example": "e7ec2e57-4540-43fa-b2c7-6be5a0ef7f42"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
+            "constraints": {
+                "unique": true
+            },
+            "example": "5978833f-21aa-4235-a56b-7d2f94ce8f35"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The name of the program",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name"
+        },
+        "alternate_name": {
+            "name": "alternate_name",
+            "type": "string",
+            "description": "An alternative name for the program",
+            "constraints": {
+                "unique": false
+            },
+            "example": "alternate_name"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "A brief summary of the program",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description"
+    ],
+    "tabular_required": [
+        "organization_id"
+    ]
+}

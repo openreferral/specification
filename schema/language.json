@@ -1,0 +1,95 @@
+{
+    "name": "language",
+    "path": "languages.csv",
+    "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 14,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each language must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "2989d3ed-c547-48f8-8f9d-432d81c7892e",
+            "core": "Y"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the service for which the entry describes the languages in which services are delivered",
+            "constraints": {
+                "unique": false
+            },
+            "example": "500ff16a-71c4-4e0e-9263-0bb8bbc9f4e5",
+            "core": "Y"
+        },
+        "location_id": {
+            "name": "location_id",
+            "type": "string",
+            "description": "The identifier of the location for which the entry describes the languages in which services are delivered",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2fcda859-99ad-4a9e-b912-7baf5e064df1"
+        },
+        "phone_id": {
+            "name": "phone_id",
+            "type": "string",
+            "description": "The identifier of the phone for which the entry describes the languages in which phone is availible in.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "df2d6c2f-89e7-4cae-aace-a23a0264d7e5"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "Languages, other than English, in which the service is delivered. Languages are listed as ISO639-1 codes.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name",
+            "core": "Y"
+        },
+        "code": {
+            "name": "code",
+            "type": "string",
+            "description": "ISO 639 -1/3 code",
+            "constraints": {
+                "unique": false
+            },
+            "example": "code"
+        },
+        "note": {
+            "name": "note",
+            "type": "string",
+            "description": "Description of what applies to the language e.g. ocasional translation service",
+            "constraints": {
+                "unique": false
+            },
+            "example": "note"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

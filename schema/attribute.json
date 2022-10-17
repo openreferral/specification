@@ -1,0 +1,92 @@
+{
+    "name": "attribute",
+    "path": "attributes.csv",
+    "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 4,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each service_attribute entry should have a unique identifier.",
+            "constraints": {
+                "unique": true
+            },
+            "example": "ae58cc39-8b70-4ab1-8aea-786882e5ac8e",
+            "core": "Y"
+        },
+        "link_id": {
+            "name": "link_id",
+            "type": "string",
+            "description": "The identifier of the service to which this taxonomy term applies.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "f28dd44b-0c4d-479f-8e90-4c52219a8b3c",
+            "core": "Y"
+        },
+        "taxonomy_term_id": {
+            "name": "taxonomy_term_id",
+            "type": "string",
+            "description": "The identifier of this taxonomy term from the taxonomy table.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "6bd624ce-8512-497a-bcb2-7ce1a5dc1680",
+            "core": "Y"
+        },
+        "link_type": {
+            "name": "link_type",
+            "type": "string",
+            "description": "What the taxonomy term describes, e.g. the service eligibility or the sevice intended audience. Populate from an enumeration (an open codelist)",
+            "constraints": {
+                "unique": false
+            },
+            "example": "link_type",
+            "core": "Y"
+        },
+        "link_entity": {
+            "name": "link_entity",
+            "type": "string",
+            "description": "The table of the link_id",
+            "constraints": {
+                "unique": false
+            },
+            "example": "link_entity",
+            "core": "Y"
+        },
+        "value": {
+            "name": "value",
+            "type": "string",
+            "description": "The value (if any) of an attribute",
+            "constraints": {
+                "unique": false
+            },
+            "example": "value",
+            "core": "Y"
+        },
+        "taxonomy_term": {
+            "name": "taxonomy_term",
+            "$ref": "taxonomy_term.json"
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "link_type"
+    ],
+    "tabular_required": [
+        "link_id",
+        "taxonomy_term_id",
+        "link_entity"
+    ]
+}

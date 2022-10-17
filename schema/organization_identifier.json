@@ -1,0 +1,79 @@
+{
+    "name": "organization_identifier",
+    "path": "organization_identifiers.csv",
+    "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 20,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each entry must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "d4dbcebc-0802-47cb-8651-b937ac4f2f3e"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "58341b4f-4f21-47f0-affb-1a2f9162472b"
+        },
+        "identifier_scheme": {
+            "name": "identifier_scheme",
+            "type": "string",
+            "description": "Scheme according to http://org-id.guide/.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "identifier_scheme"
+        },
+        "identifier_type": {
+            "name": "identifier_type",
+            "type": "string",
+            "description": "The type of identifier (company, charity, tax number, etc)",
+            "constraints": {
+                "unique": false
+            },
+            "example": "identifier_type"
+        },
+        "identifier": {
+            "name": "identifier",
+            "type": "string",
+            "description": "The third-party identifier",
+            "constraints": {
+                "unique": false
+            },
+            "example": "identifier"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "identifier_type",
+        "identifier"
+    ],
+    "tabular_required": [
+        "organization_id"
+    ]
+}

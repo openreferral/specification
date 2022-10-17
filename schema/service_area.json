@@ -1,0 +1,96 @@
+{
+    "name": "service_area",
+    "path": "service_areas.csv",
+    "description": "The service_area table contains details of the geographic area for which a service is available.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 12,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each service area must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "381c64f1-a724-4884-9c21-ac96c21cca3e",
+            "core": "Y"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the service for which this entry describes the service area",
+            "constraints": {
+                "unique": false
+            },
+            "example": "146fbf18-d4a3-4bee-a8b0-2d4476478eea",
+            "core": "Y"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name",
+            "core": "Y"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "A more detailed description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description",
+            "core": "Y"
+        },
+        "extent": {
+            "name": "extent",
+            "type": "string",
+            "description": "A definition of the polygon defining the area, in geojson.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "extent"
+        },
+        "extent_type": {
+            "name": "extent_type",
+            "type": "string",
+            "description": "The format of the extent field  populated from an enum of  \"geojson\", \"topojson\",  \"kml\",and (for legacy systems or early state during transformation) \"text\"",
+            "constraints": {
+                "unique": false
+            },
+            "example": "extent_type"
+        },
+        "uri": {
+            "name": "uri",
+            "type": "string",
+            "description": "A persistent identifier to identify an area.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "uri"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

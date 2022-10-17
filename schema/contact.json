@@ -1,0 +1,121 @@
+{
+    "name": "contact",
+    "path": "contacts.csv",
+    "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 8,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each contact must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "1e7efce3-639b-4880-940c-b95cd30cdb50",
+            "core": "Y"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "The identifier of the organization for which this is a contact",
+            "constraints": {
+                "unique": false
+            },
+            "example": "ae67a707-5893-4225-b0b1-320ab9cb596b"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the service for which this is a contact",
+            "constraints": {
+                "unique": false
+            },
+            "example": "46f31178-dbb7-45e4-be37-c69320e08c36",
+            "core": "Y"
+        },
+        "service_at_location_id": {
+            "name": "service_at_location_id",
+            "type": "string",
+            "description": "The identifier of the \u2018service at location\u2019 table entry, when this contact is specific to a service in a particular location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "93eaf18d-1cd2-4ec7-bffb-3c9172ee5070"
+        },
+        "location_id": {
+            "name": "location_id",
+            "type": "string",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2226a1e5-7ff1-4c46-a5fb-955304b05917"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The name of the person",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name",
+            "core": "Y"
+        },
+        "title": {
+            "name": "title",
+            "type": "string",
+            "description": "The job title of the person",
+            "constraints": {
+                "unique": false
+            },
+            "example": "title",
+            "core": "Y"
+        },
+        "department": {
+            "name": "department",
+            "type": "string",
+            "description": "The department that the person is part of",
+            "constraints": {
+                "unique": false
+            },
+            "example": "department"
+        },
+        "email": {
+            "name": "email",
+            "type": "string",
+            "description": "The email address of the person",
+            "format": "email",
+            "constraints": {
+                "unique": false
+            },
+            "example": "email@example.com"
+        },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

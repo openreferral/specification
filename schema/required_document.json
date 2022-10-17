@@ -1,0 +1,56 @@
+{
+    "name": "required_document",
+    "path": "required_documents.csv",
+    "description": "The required_document table contains details of any documents that are required in order to access or use services.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 13,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each document must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "f6ad7e69-b9c8-42ce-92db-92cedb4c05c0"
+        },
+        "service_id": {
+            "name": "service_id",
+            "type": "string",
+            "description": "The identifier of the service for which this entry describes the required document",
+            "constraints": {
+                "unique": false
+            },
+            "example": "bb0128fb-eeec-4179-a606-a8fb06648994"
+        },
+        "document": {
+            "name": "document",
+            "type": "string",
+            "description": "The document required to apply for or receive the service. e.g. \u2018Government-issued ID\u2019, \u2018EU Passport\u2019",
+            "constraints": {
+                "unique": false
+            },
+            "example": "document"
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

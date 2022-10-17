@@ -1,0 +1,148 @@
+{
+    "name": "address",
+    "path": "addresss.csv",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 9,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each postal address must have a unique identifier",
+            "constraints": {
+                "unique": true
+            },
+            "example": "74706e55-df26-4b84-80fe-ecc30b5befb4",
+            "core": "Y"
+        },
+        "location_id": {
+            "name": "location_id",
+            "type": "string",
+            "description": "The identifier of the location for which this is the postal address.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "d57b7ee4-9bcf-4351-858b-c42860beb869",
+            "core": "Y"
+        },
+        "attention": {
+            "name": "attention",
+            "type": "string",
+            "description": "The person or entity whose attention should be sought at the location (Often included as \u2018care of\u2019 component of an address.)",
+            "constraints": {
+                "unique": false
+            },
+            "example": "attention",
+            "core": "Y"
+        },
+        "address_1": {
+            "name": "address_1",
+            "type": "string",
+            "description": "The first line(s) of the address, including office, building number and street.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "address_1",
+            "core": "Y"
+        },
+        "address_2": {
+            "name": "address_2",
+            "type": "string",
+            "description": "A second (additional) line of address information.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "address_2"
+        },
+        "city": {
+            "name": "city",
+            "type": "string",
+            "description": "The city in which the address is located.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "city",
+            "core": "Y"
+        },
+        "region": {
+            "name": "region",
+            "type": "string",
+            "description": "The region in which the address is located (optional).",
+            "constraints": {
+                "unique": false
+            },
+            "example": "region",
+            "core": "Y"
+        },
+        "state_province": {
+            "name": "state_province",
+            "type": "string",
+            "description": "The state or province in which the address is located.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "state_province",
+            "core": "Y"
+        },
+        "postal_code": {
+            "name": "postal_code",
+            "type": "string",
+            "description": "The postal code for the address.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "postal_code",
+            "core": "Y"
+        },
+        "country": {
+            "name": "country",
+            "type": "string",
+            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
+            "constraints": {
+                "unique": false
+            },
+            "example": "country",
+            "core": "Y"
+        },
+        "address_type": {
+            "name": "address_type",
+            "type": "string",
+            "description": "Enumeration of physical, postal, virtual",
+            "constraints": {
+                "unique": false
+            },
+            "example": "postal",
+            "core": "Y",
+            "enum": [
+                "physical",
+                "postal",
+                "virtual"
+            ]
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "address_1",
+        "city",
+        "state_province",
+        "postal_code",
+        "country",
+        "address_type"
+    ]
+}

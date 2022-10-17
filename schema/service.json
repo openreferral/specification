@@ -1,0 +1,294 @@
+{
+    "name": "service",
+    "path": "services.csv",
+    "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 3,
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "Each service must have a unique identifier.",
+            "constraints": {
+                "unique": true
+            },
+            "example": "ac148810-d857-441c-9679-408f346de14b",
+            "core": "Y"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "The identifier of the organization that provides this service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "0fdfb57f-c147-4cfb-864c-44788a335d8c",
+            "core": "Y"
+        },
+        "program_id": {
+            "name": "program_id",
+            "type": "string",
+            "description": "The identifier of the program this service is delivered under.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "24682fa0-3eda-4afc-a026-84a21c7a882e"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The official or public name of the service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "name",
+            "core": "Y"
+        },
+        "alternate_name": {
+            "name": "alternate_name",
+            "type": "string",
+            "description": "Alternative or commonly used name for a service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "alternate_name"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "A description of the service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "description",
+            "core": "Y"
+        },
+        "url": {
+            "name": "url",
+            "type": "string",
+            "description": "URL of the service",
+            "format": "uri",
+            "constraints": {
+                "unique": false
+            },
+            "example": "http://example.com",
+            "core": "Y"
+        },
+        "email": {
+            "name": "email",
+            "type": "string",
+            "description": "Email address for the service",
+            "format": "email",
+            "constraints": {
+                "unique": false
+            },
+            "example": "email@example.com",
+            "core": "Y"
+        },
+        "status": {
+            "name": "status",
+            "type": "string",
+            "description": "The current status of the service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "active",
+            "core": "Y",
+            "enum": [
+                "active",
+                "inactive",
+                "defunct",
+                "temporarily closed"
+            ]
+        },
+        "interpretation_services": {
+            "name": "interpretation_services",
+            "type": "string",
+            "description": "A description of any interpretation services available for accessing this service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "interpretation_services"
+        },
+        "application_process": {
+            "name": "application_process",
+            "type": "string",
+            "description": "The steps needed to access the service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "application_process"
+        },
+        "fees_description": {
+            "name": "fees_description",
+            "type": "string",
+            "description": "Details of any charges for service users to access this service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "fees_description"
+        },
+        "accreditations": {
+            "name": "accreditations",
+            "type": "string",
+            "description": "Details of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "accreditations"
+        },
+        "eligibility_description": {
+            "name": "eligibility_description",
+            "type": "string",
+            "description": "A description of the type of person for whom this service is intended.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "eligibility_description",
+            "core": "Y"
+        },
+        "minimum_age": {
+            "name": "minimum_age",
+            "type": "number",
+            "description": "The minimum age required to meet this eligibility requirement.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "0"
+        },
+        "maximum_age": {
+            "name": "maximum_age",
+            "type": "number",
+            "description": "The maximum age required to meet this eligibility requirement.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "100"
+        },
+        "assured_date": {
+            "name": "assured_date",
+            "type": "string",
+            "description": "The date that the information about the service was last checked",
+            "constraints": {
+                "unique": false
+            },
+            "example": "2005-01-01",
+            "datapackage_type": "date"
+        },
+        "assurer_email": {
+            "name": "assurer_email",
+            "type": "string",
+            "description": "The contact e-mail address for the person or organization which last assured the service.",
+            "format": "email",
+            "constraints": {
+                "unique": false
+            },
+            "example": "email@example.com"
+        },
+        "alert": {
+            "name": "alert",
+            "type": "string",
+            "description": "Notice of any short term alerts concerning the service.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "alert"
+        },
+        "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+                "$ref": "schedule.json"
+            }
+        },
+        "languages": {
+            "name": "languages",
+            "type": "array",
+            "items": {
+                "$ref": "language.json"
+            }
+        },
+        "program": {
+            "name": "program",
+            "$ref": "program.json"
+        },
+        "fundings": {
+            "name": "fundings",
+            "type": "array",
+            "items": {
+                "$ref": "funding.json"
+            }
+        },
+        "required_documents": {
+            "name": "required_documents",
+            "type": "array",
+            "items": {
+                "$ref": "required_document.json"
+            }
+        },
+        "service_at_locations": {
+            "name": "service_at_locations",
+            "type": "array",
+            "items": {
+                "$ref": "service_at_location.json"
+            }
+        },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
+            }
+        },
+        "organization": {
+            "name": "organization",
+            "$ref": "organization.json"
+        },
+        "contacts": {
+            "name": "contacts",
+            "type": "array",
+            "items": {
+                "$ref": "contact.json"
+            }
+        },
+        "cost_options": {
+            "name": "cost_options",
+            "type": "array",
+            "items": {
+                "$ref": "cost_option.json"
+            }
+        },
+        "service_areas": {
+            "name": "service_areas",
+            "type": "array",
+            "items": {
+                "$ref": "service_area.json"
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "status"
+    ],
+    "tabular_required": [
+        "organization_id"
+    ]
+}
