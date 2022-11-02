@@ -1,0 +1,38 @@
+{
+  "id": "ac148810-d857-441c-9679-408f346de14b",
+  "name": "name",
+  "alternate_name": "alternate_name",
+  "description": "description",
+  "url": "http://example.com",
+  "email": "email@example.com",
+  "status": "active",
+  "interpretation_services": "interpretation_services",
+  "application_process": "application_process",
+  "fees_description": "fees_description",
+  "accreditations": "accreditations",
+  "eligibility_description": "eligibility_description",
+  "minimum_age": 0,
+  "maximum_age": 100,
+  "assured_date": "2005-01-01",
+  "assurer_email": "email@example.com",
+  "alert": "alert",
+  "program": {
+    "id": "e7ec2e57-4540-43fa-b2c7-6be5a0ef7f42",
+    "name": "name",
+    "alternate_name": "alternate_name",
+    "description": "description"
+  },
+  "organization": {
+    "id": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610",
+    "name": "name",
+    "alternate_name": "alternate_name",
+    "description": "description",
+    "email": "email@example.com",
+    "website": "http://example.com",
+    "year_incorporated": 2011,
+    "legal_status": "legal_status",
+    "logo": "logo",
+    "uri": "http://example.com",
+    "parent_organization_id": "cd09a387-91f4-4555-94ec-e799c35344cd"
+  }
+}

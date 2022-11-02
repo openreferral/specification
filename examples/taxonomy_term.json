@@ -1,0 +1,15 @@
+{
+  "id": "3f7b145d-84af-42d7-8fae-eaca714b02b2",
+  "code": "code",
+  "name": "name",
+  "description": "description",
+  "parent_id": "0bc248fa-dc27-4650-9ba4-8f1a24ef16a2",
+  "taxonomy": {
+    "id": "5c4d79d7-cc55-470e-9f1f-8cad074e4892",
+    "name": "name",
+    "description": "description",
+    "uri": "http://example.com"
+  },
+  "language": "language",
+  "term_uri": "http://example.com"
+}

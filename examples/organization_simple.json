@@ -1,0 +1,13 @@
+{
+  "id": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610",
+  "name": "name",
+  "alternate_name": "alternate_name",
+  "description": "description",
+  "email": "email@example.com",
+  "website": "http://example.com",
+  "year_incorporated": 2011,
+  "legal_status": "legal_status",
+  "logo": "logo",
+  "uri": "http://example.com",
+  "parent_organization_id": "cd09a387-91f4-4555-94ec-e799c35344cd"
+}
