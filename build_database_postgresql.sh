@@ -41,7 +41,7 @@ echo -e "$code" | python
 
 # Dump
 echo "DUMP THE SCHEMA"
-PGPASSWORD=$POSTGRESQL_PASSWORD pg_dump -h 127.0.0.1 -p 5432 -U postgres --no-password -f database/database_postgresql.sql --schema-only test
+PGPASSWORD=$POSTGRESQL_PASSWORD pg_dump -O -x -h 127.0.0.1 -p 5432 -U postgres --no-password -f database/database_postgresql.sql --schema-only test
 
 # Remove dumped lines
 echo "EDIT THE SCHEMA"
