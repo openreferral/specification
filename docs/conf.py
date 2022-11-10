@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Open Referral Data Specifications'
-copyright = '2016, Open Referral'
+copyright = 'Open Referral'
 author = 'Open Referral'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -145,6 +145,10 @@ html_context = {
 }
 
 html_js_files = ["custom.js"]
+
+html_theme_options = {
+    'titles_only': True
+}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -363,7 +367,10 @@ texinfo_documents = [
 # texinfo_no_detailmenu = False
 
 
+# MyST configuration
 
+# Autogenerate anchors for Markdown headings (h1, h2)
+myst_heading_anchors = 2
 
 from docutils.parsers.rst import directives
 from docutils.parsers.rst import Directive
@@ -513,4 +520,6 @@ def setup(app):
     global html_static_path
     for file in glob.glob("../api-specification/_data/api-commons/*.yaml"):
         html_static_path = html_static_path + [file]
+
+
 

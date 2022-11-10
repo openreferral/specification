@@ -34,20 +34,47 @@ Questions not answered here? Suggestions for us?
 Contents:
 
 ```{eval-rst}
+
 .. toctree::
    :maxdepth: 1
+   :caption: Human Services Data Spec
 
-   self
-   hsds/index
+   hsds/about
+   hsds/reference
+   hsds/logical_model
+   hsds/variations_interoperability
+   hsds/formatting
+   hsds/changelog
+
+.. toctree::
+   :maxdepth: 1
+   :caption: HSDS Implementation Guidance
+
+   hsds/use_cases
+   hsds/schedules
+   hsds/classifications
+   hsds/identifiers
+   hsds/producing_sharing
+   hsds/extending
+   hsds/sample_data
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Human Services Data API
+
    hsda/index
-   
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Open Referral Initiative
+
+   initiative/index
+
    governance
-   vocabulary  
    design_principles
-   
+
    faq
 
    credits
-
 ```
 

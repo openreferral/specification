@@ -1,6 +1,10 @@
 Extending HSDS
 ==============
 
+```{note}
+This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
+```
+
 HSDS provides a common core for describing services, and includes a range of common fields, many of which are optional.
 
 However, service provision is usually local, and so in a particular context there's likely to be fields that aren't relevant, and information that's important but isn't included in HSDS.
@@ -44,4 +48,3 @@ It's good practice to create a schema to reflect your data when extending or con
 Extending the standard is a way to try out potential changes to the standard, so extensions play an important part in preparing for future releases. 
 
 
-#### This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
