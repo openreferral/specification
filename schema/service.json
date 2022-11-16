@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each service must have a unique identifier.",
+            "description": "The identifier for the service. Each service must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -50,7 +50,7 @@
         "alternate_name": {
             "name": "alternate_name",
             "type": "string",
-            "description": "Alternative or commonly used name for a service.",
+            "description": "If the service has an alternative or commonly used other name, it can be given here.",
             "constraints": {
                 "unique": false
             },
@@ -80,7 +80,7 @@
         "email": {
             "name": "email",
             "type": "string",
-            "description": "Email address for the service",
+            "description": "An email address which can be used by WHOM? to contact the service provider.",
             "format": "email",
             "constraints": {
                 "unique": false
@@ -91,7 +91,7 @@
         "status": {
             "name": "status",
             "type": "string",
-            "description": "The current status of the service.",
+            "description": "The current status of the service which can be active, inactive, defunct, or temporarily closed.",
             "constraints": {
                 "unique": false
             },
@@ -116,7 +116,7 @@
         "application_process": {
             "name": "application_process",
             "type": "string",
-            "description": "The steps needed to access the service.",
+            "description": "A description of the steps needed to access this service.",
             "constraints": {
                 "unique": false
             },
@@ -130,6 +130,22 @@
                 "unique": false
             },
             "example": "fees_description"
+        },
+        "wait_time": {
+            "name": "wait_time",
+            "type": "string",
+            "description": "DEPERECATED: Time a client may expect to wait before receiving a service.",
+            "constraints": {
+                "unique": false
+            }
+        },
+        "fees": {
+            "name": "fees",
+            "type": "string",
+            "description": "DEPERECATED: Details of any charges for service users to access this service.",
+            "constraints": {
+                "unique": false
+            }
         },
         "accreditations": {
             "name": "accreditations",
@@ -153,7 +169,7 @@
         "minimum_age": {
             "name": "minimum_age",
             "type": "number",
-            "description": "The minimum age required to meet this eligibility requirement.",
+            "description": "The minimum age of a person required to meet this eligibility requirement.",
             "constraints": {
                 "unique": false
             },
@@ -162,7 +178,7 @@
         "maximum_age": {
             "name": "maximum_age",
             "type": "number",
-            "description": "The maximum age required to meet this eligibility requirement.",
+            "description": "The maximum age of a person required to meet this eligibility requirement.",
             "constraints": {
                 "unique": false
             },
@@ -188,21 +204,26 @@
             },
             "example": "email@example.com"
         },
+        "licenses": {
+            "name": "licenses",
+            "type": "string",
+            "description": "An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
+            "constraints": {
+                "unique": false
+            }
+        },
         "alert": {
             "name": "alert",
             "type": "string",
-            "description": "Notice of any short term alerts concerning the service.",
+            "description": "Notice of any short term alerts concerning the service. e.g. ",
             "constraints": {
                 "unique": false
             },
             "example": "alert"
         },
-        "schedules": {
-            "name": "schedules",
-            "type": "array",
-            "items": {
-                "$ref": "schedule.json"
-            }
+        "organization": {
+            "name": "organization",
+            "$ref": "organization.json"
         },
         "languages": {
             "name": "languages",
@@ -211,9 +232,12 @@
                 "$ref": "language.json"
             }
         },
-        "program": {
-            "name": "program",
-            "$ref": "program.json"
+        "service_at_locations": {
+            "name": "service_at_locations",
+            "type": "array",
+            "items": {
+                "$ref": "service_at_location.json"
+            }
         },
         "fundings": {
             "name": "fundings",
@@ -229,29 +253,11 @@
                 "$ref": "required_document.json"
             }
         },
-        "service_at_locations": {
-            "name": "service_at_locations",
+        "schedules": {
+            "name": "schedules",
             "type": "array",
             "items": {
-                "$ref": "service_at_location.json"
-            }
-        },
-        "phones": {
-            "name": "phones",
-            "type": "array",
-            "items": {
-                "$ref": "phone.json"
-            }
-        },
-        "organization": {
-            "name": "organization",
-            "$ref": "organization.json"
-        },
-        "contacts": {
-            "name": "contacts",
-            "type": "array",
-            "items": {
-                "$ref": "contact.json"
+                "$ref": "schedule.json"
             }
         },
         "cost_options": {
@@ -266,6 +272,24 @@
             "type": "array",
             "items": {
                 "$ref": "service_area.json"
+            }
+        },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
+            }
+        },
+        "program": {
+            "name": "program",
+            "$ref": "program.json"
+        },
+        "contacts": {
+            "name": "contacts",
+            "type": "array",
+            "items": {
+                "$ref": "contact.json"
             }
         },
         "attributes": {

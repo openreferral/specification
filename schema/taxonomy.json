@@ -45,6 +45,15 @@
             },
             "example": "http://example.com"
         },
+        "version": {
+            "name": "version",
+            "type": "string",
+            "description": "The taxonomy's version.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "version"
+        },
         "metadata": {
             "name": "metadata",
             "type": "array",

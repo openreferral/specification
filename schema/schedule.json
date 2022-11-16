@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each entry must have a unique identifier",
+            "description": "The identifier for the schedule. Each entry must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -50,7 +50,7 @@
         "valid_from": {
             "name": "valid_from",
             "type": "string",
-            "description": "The date from which the schedule information is valid.",
+            "description": "The date from which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
             "constraints": {
                 "unique": false
             },
@@ -61,7 +61,7 @@
         "valid_to": {
             "name": "valid_to",
             "type": "string",
-            "description": "The last date on which the schedule information is valid.",
+            "description": "The last date on which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
             "constraints": {
                 "unique": false
             },
@@ -192,7 +192,7 @@
         "description": {
             "name": "description",
             "type": "string",
-            "description": "Human readable description of the availability of the service.",
+            "description": "A human readable description of the availability of the service.",
             "constraints": {
                 "unique": false
             },
@@ -234,7 +234,7 @@
         "attending_type": {
             "name": "attending_type",
             "type": "string",
-            "description": "How to attend this service.\n\nApplication Profile Notes: Expected to reference a taxonomy ratehr than an enumeration in future versions",
+            "description": "A clear description of how to attend this service",
             "constraints": {
                 "unique": false
             },

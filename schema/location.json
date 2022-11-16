@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each location must have a unique identifier",
+            "description": "The identifier of the location. Each location must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -21,7 +21,7 @@
         "location_type": {
             "name": "location_type",
             "type": "string",
-            "description": "Enumeration of physical, postal, virtual",
+            "description": "The type of location, which may be either physical, postal, or virtual.",
             "constraints": {
                 "unique": false
             },
@@ -29,14 +29,13 @@
             "core": "Y",
             "enum": [
                 "physical",
-                "postal",
                 "virtual"
             ]
         },
         "url": {
             "name": "url",
             "type": "string",
-            "description": "The URL of a virtual location",
+            "description": "If location_type is virtual, then this field represents the URL of a virtual location.",
             "format": "uri",
             "constraints": {
                 "unique": false
@@ -47,7 +46,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
+            "description": "The organization identifier for a location. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
             "constraints": {
                 "unique": false
             },
@@ -66,7 +65,7 @@
         "alternate_name": {
             "name": "alternate_name",
             "type": "string",
-            "description": "An alternative name for the location",
+            "description": "If the location has an alternative name then it may be given here.",
             "constraints": {
                 "unique": false
             },
@@ -114,7 +113,7 @@
         "external_identifier": {
             "name": "external_identifier",
             "type": "string",
-            "description": "Third party identfier of a location e.g. UK UPRN or what3words",
+            "description": "A third party identifier for a location which can be drawn from other services e.g. UK UPRN or what3words.",
             "constraints": {
                 "unique": false
             },
@@ -123,11 +122,32 @@
         "external_identifier_type": {
             "name": "external_identifier_type",
             "type": "string",
-            "description": "Enumeration including UPRN, what3words and others",
+            "description": "The scheme used for the location's external_identifier e.g. UK UPRN or what3words.",
             "constraints": {
                 "unique": false
             },
             "example": "external_identifier_type"
+        },
+        "languages": {
+            "name": "languages",
+            "type": "array",
+            "items": {
+                "$ref": "language.json"
+            }
+        },
+        "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+                "$ref": "schedule.json"
+            }
+        },
+        "addresss": {
+            "name": "addresss",
+            "type": "array",
+            "items": {
+                "$ref": "address.json"
+            }
         },
         "phones": {
             "name": "phones",
@@ -148,27 +168,6 @@
             "type": "array",
             "items": {
                 "$ref": "contact.json"
-            }
-        },
-        "schedules": {
-            "name": "schedules",
-            "type": "array",
-            "items": {
-                "$ref": "schedule.json"
-            }
-        },
-        "languages": {
-            "name": "languages",
-            "type": "array",
-            "items": {
-                "$ref": "language.json"
-            }
-        },
-        "addresss": {
-            "name": "addresss",
-            "type": "array",
-            "items": {
-                "$ref": "address.json"
             }
         },
         "attributes": {

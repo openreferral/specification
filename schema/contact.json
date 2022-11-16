@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each contact must have a unique identifier",
+            "description": "The identifier for the contact. Each contact must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -49,6 +49,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
+            "description": "The identifier for the location_id when the location of the contact is relevant.",
             "constraints": {
                 "unique": false
             },
@@ -57,7 +58,7 @@
         "name": {
             "name": "name",
             "type": "string",
-            "description": "The name of the person",
+            "description": "The name of the contact.",
             "constraints": {
                 "unique": false
             },
@@ -67,7 +68,7 @@
         "title": {
             "name": "title",
             "type": "string",
-            "description": "The job title of the person",
+            "description": "The job title of the contact.",
             "constraints": {
                 "unique": false
             },
@@ -77,7 +78,7 @@
         "department": {
             "name": "department",
             "type": "string",
-            "description": "The department that the person is part of",
+            "description": "The department that the contact is a part of.",
             "constraints": {
                 "unique": false
             },
@@ -86,7 +87,7 @@
         "email": {
             "name": "email",
             "type": "string",
-            "description": "The email address of the person",
+            "description": "The email address of the contact.",
             "format": "email",
             "constraints": {
                 "unique": false

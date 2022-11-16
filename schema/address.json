@@ -10,7 +10,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each postal address must have a unique identifier",
+            "description": "The id of the postal address. Each postal address must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -30,7 +30,7 @@
         "attention": {
             "name": "attention",
             "type": "string",
-            "description": "The person or entity whose attention should be sought at the location (Often included as \u2018care of\u2019 component of an address.)",
+            "description": "The name of the person or entity whose attention should be sought at the location. These are often included as a \"care of\" component of an address.",
             "constraints": {
                 "unique": false
             },
@@ -109,7 +109,7 @@
         "address_type": {
             "name": "address_type",
             "type": "string",
-            "description": "Enumeration of physical, postal, virtual",
+            "description": "The type of address which may be physical, postal, or virtual.",
             "constraints": {
                 "unique": false
             },
@@ -117,8 +117,7 @@
             "core": "Y",
             "enum": [
                 "physical",
-                "postal",
-                "virtual"
+                "postal"
             ]
         },
         "attributes": {

@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each taxonomy term must have a unique identifier, within the scope of the dataset",
+            "description": "The identifier for this taxonomy term. Each taxonomy term must have a unique identifier, within the scope of the dataset.",
             "constraints": {
                 "unique": true
             },

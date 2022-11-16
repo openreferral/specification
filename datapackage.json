@@ -90,6 +90,25 @@
                         "core": "Y"
                     },
                     {
+                        "name": "tax_status",
+                        "type": "string",
+                        "description": "DEPRECATED: Government assigned tax designation for tax-exempt organizations.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        },
+                        "example": "tax_status"
+                    },
+                    {
+                        "name": "tax_id",
+                        "type": "string",
+                        "description": "DEPRECATED: A government issued identifier used for the purpose of tax administration.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        }
+                    },
+                    {
                         "name": "year_incorporated",
                         "type": "number",
                         "description": "The year in which the organization was legally formed.",
@@ -123,7 +142,7 @@
                     {
                         "name": "uri",
                         "type": "string",
-                        "description": "A persistent identifier to uniquely identify the organization.",
+                        "description": "A persistent identifier to uniquely identify the organization such as those provided by Open Corporates or some other relevant URI provider. This is not for listing the website of the organization: that can be done through the website field of the Organization.",
                         "format": "uri",
                         "constraints": {
                             "required": false,
@@ -157,7 +176,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each program must have a unique identifier.",
+                        "description": "The identifier for the program. Each program must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -167,7 +186,7 @@
                     {
                         "name": "organization_id",
                         "type": "string",
-                        "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
+                        "description": "The identifier for the organization which the program belongs to. Each program must belong to a single organization, and the identifier for that organization should be given here.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -187,7 +206,7 @@
                     {
                         "name": "alternate_name",
                         "type": "string",
-                        "description": "An alternative name for the program",
+                        "description": "If the program has an alternative name it can be given here",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -197,7 +216,7 @@
                     {
                         "name": "description",
                         "type": "string",
-                        "description": "A brief summary of the program",
+                        "description": "A brief and clear summary of the program",
                         "constraints": {
                             "required": true,
                             "unique": false
@@ -229,7 +248,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each service must have a unique identifier.",
+                        "description": "The identifier for the service. Each service must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -272,7 +291,7 @@
                     {
                         "name": "alternate_name",
                         "type": "string",
-                        "description": "Alternative or commonly used name for a service.",
+                        "description": "If the service has an alternative or commonly used other name, it can be given here.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -305,7 +324,7 @@
                     {
                         "name": "email",
                         "type": "string",
-                        "description": "Email address for the service",
+                        "description": "An email address which can be used by WHOM? to contact the service provider.",
                         "format": "email",
                         "constraints": {
                             "required": false,
@@ -317,7 +336,7 @@
                     {
                         "name": "status",
                         "type": "string",
-                        "description": "The current status of the service.",
+                        "description": "The current status of the service which can be active, inactive, defunct, or temporarily closed.",
                         "constraints": {
                             "required": true,
                             "unique": false,
@@ -344,7 +363,7 @@
                     {
                         "name": "application_process",
                         "type": "string",
-                        "description": "The steps needed to access the service.",
+                        "description": "A description of the steps needed to access this service.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -360,6 +379,24 @@
                             "unique": false
                         },
                         "example": "fees_description"
+                    },
+                    {
+                        "name": "wait_time",
+                        "type": "string",
+                        "description": "DEPRECATED: Time a client may expect to wait before receiving a service.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        }
+                    },
+                    {
+                        "name": "fees",
+                        "type": "string",
+                        "description": "DEPRECATED: Details of any charges for service users to access this service.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        }
                     },
                     {
                         "name": "accreditations",
@@ -385,7 +422,7 @@
                     {
                         "name": "minimum_age",
                         "type": "number",
-                        "description": "The minimum age required to meet this eligibility requirement.",
+                        "description": "The minimum age of a person required to meet this eligibility requirement.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -395,7 +432,7 @@
                     {
                         "name": "maximum_age",
                         "type": "number",
-                        "description": "The maximum age required to meet this eligibility requirement.",
+                        "description": "The maximum age of a person required to meet this eligibility requirement.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -424,9 +461,18 @@
                         "example": "email@example.com"
                     },
                     {
+                        "name": "licenses",
+                        "type": "string",
+                        "description": "DEPRECATED: An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        }
+                    },
+                    {
                         "name": "alert",
                         "type": "string",
-                        "description": "Notice of any short term alerts concerning the service.",
+                        "description": "Notice of any short term alerts concerning the service. e.g. ",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -465,7 +511,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each service_attribute entry should have a unique identifier.",
+                        "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -476,7 +522,7 @@
                     {
                         "name": "link_id",
                         "type": "string",
-                        "description": "The identifier of the service to which this taxonomy term applies.",
+                        "description": "The identifier of the entity to which this taxonomy term applies.",
                         "constraints": {
                             "required": true,
                             "unique": false
@@ -498,9 +544,9 @@
                     {
                         "name": "link_type",
                         "type": "string",
-                        "description": "What the taxonomy term describes, e.g. the service eligibility or the sevice intended audience. Populate from an enumeration (an open codelist)",
+                        "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes e.g. the service eligibility or intended audience.",
                         "constraints": {
-                            "required": true,
+                            "required": false,
                             "unique": false
                         },
                         "example": "link_type",
@@ -553,7 +599,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each entry must have a unique identifier.",
+                        "description": "The identifier of the entry. Each entry must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -625,7 +671,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each location must have a unique identifier",
+                        "description": "The identifier of the location. Each location must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -636,13 +682,12 @@
                     {
                         "name": "location_type",
                         "type": "string",
-                        "description": "Enumeration of physical, postal, virtual",
+                        "description": "The type of location, which may be either physical, postal, or virtual.",
                         "constraints": {
                             "required": true,
                             "unique": false,
                             "enum": [
                                 "physical",
-                                "postal",
                                 "virtual"
                             ]
                         },
@@ -652,7 +697,7 @@
                     {
                         "name": "url",
                         "type": "string",
-                        "description": "The URL of a virtual location",
+                        "description": "If location_type is virtual, then this field represents the URL of a virtual location.",
                         "format": "uri",
                         "constraints": {
                             "required": false,
@@ -664,7 +709,7 @@
                     {
                         "name": "organization_id",
                         "type": "string",
-                        "description": "Each location entry should be linked to a single organization. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
+                        "description": "The organization identifier for a location. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -685,7 +730,7 @@
                     {
                         "name": "alternate_name",
                         "type": "string",
-                        "description": "An alternative name for the location",
+                        "description": "If the location has an alternative name then it may be given here.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -738,7 +783,7 @@
                     {
                         "name": "external_identifier",
                         "type": "string",
-                        "description": "Third party identfier of a location e.g. UK UPRN or what3words",
+                        "description": "A third party identifier for a location which can be drawn from other services e.g. UK UPRN or what3words.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -748,7 +793,7 @@
                     {
                         "name": "external_identifier_type",
                         "type": "string",
-                        "description": "Enumeration including UPRN, what3words and others",
+                        "description": "The scheme used for the location's external_identifier e.g. UK UPRN or what3words.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -780,7 +825,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each entry must have a unique identifier",
+                        "description": "The id for a phone number. Each entry must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -933,7 +978,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each contact must have a unique identifier",
+                        "description": "The identifier for the contact. Each contact must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -975,6 +1020,7 @@
                     {
                         "name": "location_id",
                         "type": "string",
+                        "description": "The identifier for the location_id when the location of the contact is relevant.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -984,7 +1030,7 @@
                     {
                         "name": "name",
                         "type": "string",
-                        "description": "The name of the person",
+                        "description": "The name of the contact.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -995,7 +1041,7 @@
                     {
                         "name": "title",
                         "type": "string",
-                        "description": "The job title of the person",
+                        "description": "The job title of the contact.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1006,7 +1052,7 @@
                     {
                         "name": "department",
                         "type": "string",
-                        "description": "The department that the person is part of",
+                        "description": "The department that the contact is a part of.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1016,7 +1062,7 @@
                     {
                         "name": "email",
                         "type": "string",
-                        "description": "The email address of the person",
+                        "description": "The email address of the contact.",
                         "format": "email",
                         "constraints": {
                             "required": false,
@@ -1069,7 +1115,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each postal address must have a unique identifier",
+                        "description": "The id of the postal address. Each postal address must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -1091,7 +1137,7 @@
                     {
                         "name": "attention",
                         "type": "string",
-                        "description": "The person or entity whose attention should be sought at the location (Often included as \u2018care of\u2019 component of an address.)",
+                        "description": "The name of the person or entity whose attention should be sought at the location. These are often included as a \"care of\" component of an address.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1178,14 +1224,13 @@
                     {
                         "name": "address_type",
                         "type": "string",
-                        "description": "Enumeration of physical, postal, virtual",
+                        "description": "The type of address which may be physical, postal, or virtual.",
                         "constraints": {
                             "required": true,
                             "unique": false,
                             "enum": [
                                 "physical",
-                                "postal",
-                                "virtual"
+                                "postal"
                             ]
                         },
                         "example": "postal",
@@ -1216,7 +1261,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each entry must have a unique identifier",
+                        "description": "The identifier for the schedule. Each entry must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -1259,7 +1304,7 @@
                     {
                         "name": "valid_from",
                         "type": "date",
-                        "description": "The date from which the schedule information is valid.",
+                        "description": "The date from which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1270,7 +1315,7 @@
                     {
                         "name": "valid_to",
                         "type": "date",
-                        "description": "The last date on which the schedule information is valid.",
+                        "description": "The last date on which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1409,7 +1454,7 @@
                     {
                         "name": "description",
                         "type": "string",
-                        "description": "Human readable description of the availability of the service.",
+                        "description": "A human readable description of the availability of the service.",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1453,7 +1498,7 @@
                     {
                         "name": "attending_type",
                         "type": "string",
-                        "description": "How to attend this service.\n\nApplication Profile Notes: Expected to reference a taxonomy ratehr than an enumeration in future versions",
+                        "description": "A clear description of how to attend this service",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1509,7 +1554,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each entry must have a unique identifier",
+                        "description": "The identifier for the funding. Each entry must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -1578,7 +1623,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each service area must have a unique identifier",
+                        "description": "The identifier for the service area. Each service area must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -1642,7 +1687,7 @@
                     {
                         "name": "uri",
                         "type": "string",
-                        "description": "A persistent identifier to identify an area.",
+                        "description": "A URI which acts as a persistent identifier to identifiy an area",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1674,7 +1719,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each document must have a unique identifier",
+                        "description": "The identifier for the document. Each document must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -1694,12 +1739,23 @@
                     {
                         "name": "document",
                         "type": "string",
-                        "description": "The document required to apply for or receive the service. e.g. \u2018Government-issued ID\u2019, \u2018EU Passport\u2019",
+                        "description": "A clear description of the document required to apply for or receive the service e.g. \"A Government-issued ID\" or \"EU Passport\".",
                         "constraints": {
                             "required": false,
                             "unique": false
                         },
                         "example": "document"
+                    },
+                    {
+                        "name": "link",
+                        "type": "string",
+                        "description": "Web link to document.",
+                        "format": "uri",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        },
+                        "example": "http://example.com"
                     }
                 ],
                 "foreignKeys": [
@@ -1726,7 +1782,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each language must have a unique identifier",
+                        "description": "The identifier for the language. Each langauge must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -1779,7 +1835,7 @@
                     {
                         "name": "code",
                         "type": "string",
-                        "description": "ISO 639 -1/3 code",
+                        "description": "The ISO 639-1 or ISO 639-3 code for the language e.g. en, es",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1789,7 +1845,7 @@
                     {
                         "name": "note",
                         "type": "string",
-                        "description": "Description of what applies to the language e.g. ocasional translation service",
+                        "description": "A clear description of any additional context or services provided for this language e.g. an occasional translation service",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -1835,7 +1891,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each entry must have a unique identifier",
+                        "description": "The identifier for this accessibility information. Each entry must have a unique identifier.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -1911,7 +1967,7 @@
                     {
                         "name": "id",
                         "type": "string",
-                        "description": "Each taxonomy term must have a unique identifier, within the scope of the dataset",
+                        "description": "The identifier for this taxonomy term. Each taxonomy term must have a unique identifier, within the scope of the dataset.",
                         "constraints": {
                             "required": true,
                             "unique": true
@@ -2392,6 +2448,16 @@
                             "unique": false
                         },
                         "example": "http://example.com"
+                    },
+                    {
+                        "name": "version",
+                        "type": "string",
+                        "description": "The taxonomy's version.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        },
+                        "example": "version"
                     }
                 ]
             }

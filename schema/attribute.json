@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each service_attribute entry should have a unique identifier.",
+            "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -21,7 +21,7 @@
         "link_id": {
             "name": "link_id",
             "type": "string",
-            "description": "The identifier of the service to which this taxonomy term applies.",
+            "description": "The identifier of the entity to which this taxonomy term applies.",
             "constraints": {
                 "unique": false
             },
@@ -41,7 +41,7 @@
         "link_type": {
             "name": "link_type",
             "type": "string",
-            "description": "What the taxonomy term describes, e.g. the service eligibility or the sevice intended audience. Populate from an enumeration (an open codelist)",
+            "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes e.g. the service eligibility or intended audience.",
             "constraints": {
                 "unique": false
             },
@@ -81,8 +81,7 @@
         }
     },
     "required": [
-        "id",
-        "link_type"
+        "id"
     ],
     "tabular_required": [
         "link_id",

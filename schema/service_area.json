@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each service area must have a unique identifier",
+            "description": "The identifier for the service area. Each service area must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -69,7 +69,7 @@
         "uri": {
             "name": "uri",
             "type": "string",
-            "description": "A persistent identifier to identify an area.",
+            "description": "A URI which acts as a persistent identifier to identifiy an area",
             "constraints": {
                 "unique": false
             },

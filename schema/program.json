@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each program must have a unique identifier.",
+            "description": "The identifier for the program. Each program must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -20,7 +20,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
+            "description": "The identifier for the organization which the program belongs to. Each program must belong to a single organization, and the identifier for that organization should be given here.",
             "constraints": {
                 "unique": true
             },
@@ -38,7 +38,7 @@
         "alternate_name": {
             "name": "alternate_name",
             "type": "string",
-            "description": "An alternative name for the program",
+            "description": "If the program has an alternative name it can be given here",
             "constraints": {
                 "unique": false
             },
@@ -47,7 +47,7 @@
         "description": {
             "name": "description",
             "type": "string",
-            "description": "A brief summary of the program",
+            "description": "A brief and clear summary of the program",
             "constraints": {
                 "unique": false
             },

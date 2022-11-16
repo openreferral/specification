@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each document must have a unique identifier",
+            "description": "The identifier for the document. Each document must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
@@ -29,11 +29,21 @@
         "document": {
             "name": "document",
             "type": "string",
-            "description": "The document required to apply for or receive the service. e.g. \u2018Government-issued ID\u2019, \u2018EU Passport\u2019",
+            "description": "A clear description of the document required to apply for or receive the service e.g. \"A Government-issued ID\" or \"EU Passport\".",
             "constraints": {
                 "unique": false
             },
             "example": "document"
+        },
+        "link": {
+            "name": "link",
+            "type": "string",
+            "description": "Web link to document.",
+            "format": "uri",
+            "constraints": {
+                "unique": false
+            },
+            "example": "http://example.com"
         },
         "attributes": {
             "name": "attributes",

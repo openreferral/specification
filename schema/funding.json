@@ -11,7 +11,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "description": "Each entry must have a unique identifier",
+            "description": "The identifier for the funding. Each entry must have a unique identifier.",
             "constraints": {
                 "unique": true
             },
