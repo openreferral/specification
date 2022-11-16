@@ -429,7 +429,7 @@ class JSONTableSchemaInclude(Directive):
                 ('Type (Format)',
                     lambda x: x['type'] + (' ({})'.format(x['format']) if 'format' in x else '')),
                 ('Description',
-                    lambda x: x['description']),
+                    lambda x: x.get('description', '')),
                 ('Required?',
                     lambda x: str(x.get('constraints', {}).get('required', False))),
                 ('Unique?',
