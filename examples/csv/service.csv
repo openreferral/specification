@@ -1,0 +1,2 @@
+id,organization_id,program_id,name,alternate_name,description,url,email,status,interpretation_services,application_process,fees_description,accreditations,eligibility_description,minimum_age,maximum_age,assured_date,assurer_email,alert
+ac148810-d857-441c-9679-408f346de14b,0fdfb57f-c147-4cfb-864c-44788a335d8c,24682fa0-3eda-4afc-a026-84a21c7a882e,name,alternate_name,description,http://example.com,email@example.com,active,interpretation_services,application_process,fees_description,accreditations,eligibility_description,0,100,2005-01-01,email@example.com,alert

@@ -5,6 +5,7 @@
   "description": "description",
   "email": "email@example.com",
   "website": "http://example.com",
+  "tax_status": "tax_status",
   "year_incorporated": 2011,
   "legal_status": "legal_status",
   "logo": "logo",

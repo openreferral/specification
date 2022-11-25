@@ -10,6 +10,52 @@
   "longitude": 101,
   "external_identifier": "external_identifier",
   "external_identifier_type": "external_identifier_type",
+  "languages": [
+    {
+      "id": "2989d3ed-c547-48f8-8f9d-432d81c7892e",
+      "name": "name",
+      "code": "code",
+      "note": "note"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "48102e86-bb50-41c4-8f1e-e269368c41d1",
+      "valid_from": "2005-01-01",
+      "valid_to": "2005-01-01",
+      "dtstart": "2005-01-01",
+      "timezone": 3,
+      "until": "2005-01-01",
+      "count": "2005-01-01",
+      "wkst": "TUE",
+      "freq": "WEEKLY",
+      "interval": 1,
+      "byday": "byday",
+      "byweekno": "byweekno",
+      "bymonthday": 2,
+      "byyearday": 2,
+      "description": "description",
+      "opens_at": "20:20",
+      "closes_at": "20:20",
+      "schedule_link": "http://example.com",
+      "attending_type": "attending_type",
+      "notes": "notes"
+    }
+  ],
+  "addresss": [
+    {
+      "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
+      "attention": "attention",
+      "address_1": "address_1",
+      "address_2": "address_2",
+      "city": "city",
+      "region": "region",
+      "state_province": "state_province",
+      "postal_code": "postal_code",
+      "country": "country",
+      "address_type": "postal"
+    }
+  ],
   "phones": [
     {
       "id": "1554f2e2-a373-45db-a3fa-9fc48a61c15e",
@@ -59,52 +105,6 @@
           ]
         }
       ]
-    }
-  ],
-  "schedules": [
-    {
-      "id": "48102e86-bb50-41c4-8f1e-e269368c41d1",
-      "valid_from": "2005-01-01",
-      "valid_to": "2005-01-01",
-      "dtstart": "2005-01-01",
-      "timezone": 3,
-      "until": "2005-01-01",
-      "count": "2005-01-01",
-      "wkst": "TUE",
-      "freq": "WEEKLY",
-      "interval": 1,
-      "byday": "byday",
-      "byweekno": "byweekno",
-      "bymonthday": 2,
-      "byyearday": 2,
-      "description": "description",
-      "opens_at": "20:20",
-      "closes_at": "20:20",
-      "schedule_link": "http://example.com",
-      "attending_type": "attending_type",
-      "notes": "notes"
-    }
-  ],
-  "languages": [
-    {
-      "id": "2989d3ed-c547-48f8-8f9d-432d81c7892e",
-      "name": "name",
-      "code": "code",
-      "note": "note"
-    }
-  ],
-  "addresss": [
-    {
-      "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
-      "attention": "attention",
-      "address_1": "address_1",
-      "address_2": "address_2",
-      "city": "city",
-      "region": "region",
-      "state_province": "state_province",
-      "postal_code": "postal_code",
-      "country": "country",
-      "address_type": "postal"
     }
   ]
 }
