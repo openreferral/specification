@@ -18,7 +18,7 @@ charset-normalizer==2.0.6
     # via requests
 click==8.0.1
     # via sphinx-intl
-docutils==0.16
+docutils==0.17.1
     # via
     #   -r requirements.in
     #   m2r
