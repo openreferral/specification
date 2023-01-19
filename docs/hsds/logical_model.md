@@ -66,7 +66,7 @@ The following tables do not have a foreign key for any of the core tables:
 
 ```{eval-rst}
 
-`[enlarge] <../../_images/entity_relationship_diagram_core_tables.svg>`_
+`[enlarge] <../_images/entity_relationship_diagram_core_tables.svg>`_
 
 .. raw:: html
     :file: ../extras/_images/entity_relationship_diagram_core_tables.svg
@@ -89,7 +89,7 @@ Other tables are shown in blue.
 
 ```{eval-rst}
 
-`[enlarge] <../../_images/entity_relationship_diagram.svg>`_
+`[enlarge] <../_images/entity_relationship_diagram.svg>`_
 
 .. raw:: html
     :file: ../extras/_images/entity_relationship_diagram.svg
