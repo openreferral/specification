@@ -66,7 +66,7 @@ E.g. a phone number applies to the service OR the organisation OR the service_at
 
 ```{eval-rst}
 
-`[enlarge] <../../_images/entity_relationship_diagram_core_tables.svg>`_
+`[enlarge] <../_images/entity_relationship_diagram_core_tables.svg>`_
 
 .. raw:: html
     :file: ../extras/_images/entity_relationship_diagram_core_tables.svg
@@ -89,7 +89,7 @@ Other tables are shown in blue.
 
 ```{eval-rst}
 
-`[enlarge] <../../_images/entity_relationship_diagram.svg>`_
+`[enlarge] <../_images/entity_relationship_diagram.svg>`_
 
 .. raw:: html
     :file: ../extras/_images/entity_relationship_diagram.svg
