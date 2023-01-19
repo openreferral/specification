@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -33,7 +34,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "identifier_scheme"
+            "example": "GB-COH"
         },
         "identifier_type": {
             "name": "identifier_type",
@@ -42,7 +43,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "identifier_type"
+            "example": "company"
         },
         "identifier": {
             "name": "identifier",
@@ -51,7 +52,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "identifier"
+            "example": "1234567"
         },
         "attributes": {
             "name": "attributes",

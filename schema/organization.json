@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "Each organization must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -25,7 +26,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name",
+            "example": "Example Organization Inc.",
             "core": "Y"
         },
         "alternate_name": {
@@ -35,7 +36,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "alternate_name",
+            "example": "Example Org",
             "core": "Y"
         },
         "description": {
@@ -45,7 +46,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description",
+            "example": "Example Org is a non-profit organization dedicated to providing services to qualified beneficiaries",
             "core": "Y"
         },
         "email": {
@@ -85,7 +86,8 @@
             "description": "DEPRECATED: A government issued identifier used for the purpose of tax administration.",
             "constraints": {
                 "unique": false
-            }
+            },
+            "example": "tax_id"
         },
         "year_incorporated": {
             "name": "year_incorporated",
@@ -113,7 +115,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "logo"
+            "example": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png"
         },
         "uri": {
             "name": "uri",
@@ -134,32 +136,11 @@
             },
             "example": "cd09a387-91f4-4555-94ec-e799c35344cd"
         },
-        "organization_identifiers": {
-            "name": "organization_identifiers",
-            "type": "array",
-            "items": {
-                "$ref": "organization_identifier.json"
-            }
-        },
-        "locations": {
-            "name": "locations",
-            "type": "array",
-            "items": {
-                "$ref": "location.json"
-            }
-        },
         "phones": {
             "name": "phones",
             "type": "array",
             "items": {
                 "$ref": "phone.json"
-            }
-        },
-        "programs": {
-            "name": "programs",
-            "type": "array",
-            "items": {
-                "$ref": "program.json"
             }
         },
         "contacts": {
@@ -169,11 +150,32 @@
                 "$ref": "contact.json"
             }
         },
+        "organization_identifiers": {
+            "name": "organization_identifiers",
+            "type": "array",
+            "items": {
+                "$ref": "organization_identifier.json"
+            }
+        },
         "fundings": {
             "name": "fundings",
             "type": "array",
             "items": {
                 "$ref": "funding.json"
+            }
+        },
+        "locations": {
+            "name": "locations",
+            "type": "array",
+            "items": {
+                "$ref": "location.json"
+            }
+        },
+        "programs": {
+            "name": "programs",
+            "type": "array",
+            "items": {
+                "$ref": "program.json"
             }
         },
         "attributes": {

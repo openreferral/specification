@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The identifier of the location. Each location must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -59,7 +60,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name",
+            "example": "MyCity Civic Center",
             "core": "Y"
         },
         "alternate_name": {
@@ -69,7 +70,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "alternate_name"
+            "example": "Civic Center"
         },
         "description": {
             "name": "description",
@@ -78,7 +79,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description",
+            "example": "MyCity Civic Center is located on Main Street and contains facilities for a number of civic and community services available.",
             "core": "Y"
         },
         "transportation": {
@@ -88,7 +89,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "transportation"
+            "example": "MyCity Civic Center is serviced by the number 1 Bus and is a short walk from the Main Street Metro Station"
         },
         "latitude": {
             "name": "latitude",
@@ -117,7 +118,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "external_identifier"
+            "example": "///cheer.parent.mole"
         },
         "external_identifier_type": {
             "name": "external_identifier_type",
@@ -126,13 +127,27 @@
             "constraints": {
                 "unique": false
             },
-            "example": "external_identifier_type"
+            "example": "what3words"
         },
-        "languages": {
-            "name": "languages",
+        "phones": {
+            "name": "phones",
             "type": "array",
             "items": {
-                "$ref": "language.json"
+                "$ref": "phone.json"
+            }
+        },
+        "contacts": {
+            "name": "contacts",
+            "type": "array",
+            "items": {
+                "$ref": "contact.json"
+            }
+        },
+        "accessibilitys": {
+            "name": "accessibilitys",
+            "type": "array",
+            "items": {
+                "$ref": "accessibility.json"
             }
         },
         "schedules": {
@@ -149,25 +164,11 @@
                 "$ref": "address.json"
             }
         },
-        "phones": {
-            "name": "phones",
+        "languages": {
+            "name": "languages",
             "type": "array",
             "items": {
-                "$ref": "phone.json"
-            }
-        },
-        "accessibilitys": {
-            "name": "accessibilitys",
-            "type": "array",
-            "items": {
-                "$ref": "accessibility.json"
-            }
-        },
-        "contacts": {
-            "name": "contacts",
-            "type": "array",
-            "items": {
-                "$ref": "contact.json"
+                "$ref": "language.json"
             }
         },
         "attributes": {

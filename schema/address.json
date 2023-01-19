@@ -11,6 +11,7 @@
             "name": "id",
             "type": "string",
             "description": "The id of the postal address. Each postal address must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -34,7 +35,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "attention",
+            "example": "A. Persona",
             "core": "Y"
         },
         "address_1": {
@@ -44,7 +45,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "address_1",
+            "example": "1-30 Main Street",
             "core": "Y"
         },
         "address_2": {
@@ -63,7 +64,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "city",
+            "example": "MyCity",
             "core": "Y"
         },
         "region": {
@@ -83,7 +84,6 @@
             "constraints": {
                 "unique": false
             },
-            "example": "state_province",
             "core": "Y"
         },
         "postal_code": {
@@ -103,7 +103,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "country",
+            "example": "US",
             "core": "Y"
         },
         "address_type": {

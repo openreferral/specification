@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },

@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },

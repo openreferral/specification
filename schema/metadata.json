@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -52,7 +53,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "last_action_type"
+            "example": "update"
         },
         "field_name": {
             "name": "field_name",

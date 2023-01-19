@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The identifier for the service area. Each service area must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -35,7 +36,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name",
+            "example": "The service is available to all residents of the MyCity area. We provide the service in our offices or via video conferencing to any who can provide evidence of their residency.",
             "core": "Y"
         },
         "description": {
@@ -45,7 +46,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description",
+            "example": "#REF!",
             "core": "Y"
         },
         "extent": {
@@ -73,7 +74,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "uri"
+            "example": "http://example.com"
         },
         "attributes": {
             "name": "attributes",

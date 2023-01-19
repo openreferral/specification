@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The identifier for the language. Each langauge must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -53,7 +54,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name",
+            "example": "Urdu",
             "core": "Y"
         },
         "code": {
@@ -63,7 +64,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "code"
+            "example": "ur"
         },
         "note": {
             "name": "note",
@@ -72,7 +73,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "note"
+            "example": "Translation services provided via bilingual staff when they are available"
         },
         "attributes": {
             "name": "attributes",

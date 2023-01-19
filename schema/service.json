@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The identifier for the service. Each service must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -44,7 +45,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name",
+            "example": "Community Counselling",
             "core": "Y"
         },
         "alternate_name": {
@@ -54,7 +55,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "alternate_name"
+            "example": "MyCity Counselling Servics"
         },
         "description": {
             "name": "description",
@@ -63,7 +64,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description",
+            "example": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
             "core": "Y"
         },
         "url": {
@@ -74,7 +75,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "http://example.com",
+            "example": "http://example.com/counselling",
             "core": "Y"
         },
         "email": {
@@ -111,7 +112,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "interpretation_services"
+            "example": "Interpretation services are available in Urdu, Polish, and Slovak"
         },
         "application_process": {
             "name": "application_process",
@@ -120,7 +121,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "application_process"
+            "example": "If you are an NHS patient please ask your GP for a referral letter, we will then be in touch with you directly. If you are not an NHS patient you should ring our reception to arrange an appointment"
         },
         "fees_description": {
             "name": "fees_description",
@@ -129,23 +130,25 @@
             "constraints": {
                 "unique": false
             },
-            "example": "fees_description"
+            "example": "Non-NHS patients are expected to pay for their counselling sessions. We charge a flat rate per hour of counselling. The current rate is \u00a350 per hour. Please see our website for up to date prices."
         },
         "wait_time": {
             "name": "wait_time",
             "type": "string",
-            "description": "DEPERECATED: Time a client may expect to wait before receiving a service.",
+            "description": "DEPRECATED: Time a client may expect to wait before receiving a service.",
             "constraints": {
                 "unique": false
-            }
+            },
+            "example": "wait_time"
         },
         "fees": {
             "name": "fees",
             "type": "string",
-            "description": "DEPERECATED: Details of any charges for service users to access this service.",
+            "description": "DEPRECATED: Details of any charges for service users to access this service.",
             "constraints": {
                 "unique": false
-            }
+            },
+            "example": "fees_description"
         },
         "accreditations": {
             "name": "accreditations",
@@ -154,7 +157,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "accreditations"
+            "example": "All of our practitioners are accredited by the BASC, UKCP, and the Professional Standards Body"
         },
         "eligibility_description": {
             "name": "eligibility_description",
@@ -163,7 +166,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "eligibility_description",
+            "example": "This service is intended for all people aged 12 and over who require counselling services in the MyCity area",
             "core": "Y"
         },
         "minimum_age": {
@@ -173,7 +176,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "0"
+            "example": "12"
         },
         "maximum_age": {
             "name": "maximum_age",
@@ -207,10 +210,11 @@
         "licenses": {
             "name": "licenses",
             "type": "string",
-            "description": "An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
+            "description": "DEPRECATED: An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
             "constraints": {
                 "unique": false
-            }
+            },
+            "example": "licences"
         },
         "alert": {
             "name": "alert",
@@ -219,11 +223,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "alert"
-        },
-        "organization": {
-            "name": "organization",
-            "$ref": "organization.json"
+            "example": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information."
         },
         "languages": {
             "name": "languages",
@@ -232,12 +232,9 @@
                 "$ref": "language.json"
             }
         },
-        "service_at_locations": {
-            "name": "service_at_locations",
-            "type": "array",
-            "items": {
-                "$ref": "service_at_location.json"
-            }
+        "organization": {
+            "name": "organization",
+            "$ref": "organization.json"
         },
         "fundings": {
             "name": "fundings",
@@ -253,11 +250,11 @@
                 "$ref": "required_document.json"
             }
         },
-        "schedules": {
-            "name": "schedules",
+        "phones": {
+            "name": "phones",
             "type": "array",
             "items": {
-                "$ref": "schedule.json"
+                "$ref": "phone.json"
             }
         },
         "cost_options": {
@@ -274,13 +271,6 @@
                 "$ref": "service_area.json"
             }
         },
-        "phones": {
-            "name": "phones",
-            "type": "array",
-            "items": {
-                "$ref": "phone.json"
-            }
-        },
         "program": {
             "name": "program",
             "$ref": "program.json"
@@ -290,6 +280,20 @@
             "type": "array",
             "items": {
                 "$ref": "contact.json"
+            }
+        },
+        "service_at_locations": {
+            "name": "service_at_locations",
+            "type": "array",
+            "items": {
+                "$ref": "service_at_location.json"
+            }
+        },
+        "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+                "$ref": "schedule.json"
             }
         },
         "attributes": {

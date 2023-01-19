@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The identifier for the document. Each document must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -33,10 +34,10 @@
             "constraints": {
                 "unique": false
             },
-            "example": "document"
+            "example": "Any official id document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as sole identity document."
         },
-        "link": {
-            "name": "link",
+        "uri": {
+            "name": "uri",
             "type": "string",
             "description": "Web link to document.",
             "format": "uri",

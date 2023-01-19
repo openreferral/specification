@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -33,7 +34,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "valid_from",
+            "example": "2020-01-01",
             "datapackage_type": "date"
         },
         "valid_to": {
@@ -43,7 +44,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "valid_to",
+            "example": "2022-12-31",
             "datapackage_type": "date"
         },
         "option": {
@@ -53,7 +54,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "option"
+            "example": "Under 18s and Over 60s"
         },
         "currency": {
             "name": "currency",
@@ -62,7 +63,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "currency"
+            "example": "gbp"
         },
         "amount": {
             "name": "amount",
@@ -71,7 +72,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "100"
+            "example": "35"
         },
         "amount_description": {
             "name": "amount_description",
@@ -80,7 +81,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "amount_description"
+            "example": "per 1 hour session"
         },
         "attributes": {
             "name": "attributes",

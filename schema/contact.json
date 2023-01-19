@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The identifier for the contact. Each contact must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -62,7 +63,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name",
+            "example": "Ann Persona",
             "core": "Y"
         },
         "title": {
@@ -72,7 +73,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "title",
+            "example": "Reception Manager",
             "core": "Y"
         },
         "department": {
@@ -82,7 +83,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "department"
+            "example": "Reception"
         },
         "email": {
             "name": "email",

@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The identifier for the funding. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -42,7 +43,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "source"
+            "example": "This service is funded partially by the MyCity local government and via grants made by charity funding bodies. We also operate a for-profit department which is used to partially cover the expense of the public service"
         },
         "attributes": {
             "name": "attributes",

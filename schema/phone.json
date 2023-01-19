@@ -12,6 +12,7 @@
             "name": "id",
             "type": "string",
             "description": "The id for a phone number. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -71,7 +72,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "number",
+            "example": "\"+44 1234 234567\"",
             "core": "Y"
         },
         "extension": {
@@ -90,7 +91,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "type"
+            "example": "voice"
         },
         "description": {
             "name": "description",
@@ -99,7 +100,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description"
+            "example": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy. "
         },
         "languages": {
             "name": "languages",
