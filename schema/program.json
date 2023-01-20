@@ -2,16 +2,19 @@
     "name": "program",
     "path": "programs.csv",
     "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 2,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 2
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the program. Each program must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -33,7 +36,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name"
+            "example": "Community Mental Health Support"
         },
         "alternate_name": {
             "name": "alternate_name",
@@ -42,7 +45,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "alternate_name"
+            "example": "MyCity Mental Health Group"
         },
         "description": {
             "name": "description",
@@ -51,7 +54,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description"
+            "example": "Comprehensive Mental Health Services available to residents of MyCity including CBT and Counselling. This is not an emergency service and should not be used as an alternative to hospital and GP services."
         },
         "attributes": {
             "name": "attributes",

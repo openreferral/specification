@@ -2,16 +2,19 @@
     "name": "location",
     "path": "locations.csv",
     "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 6,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 6
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier of the location. Each location must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -59,7 +62,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name",
+            "example": "MyCity Civic Center",
             "core": "Y"
         },
         "alternate_name": {
@@ -69,7 +72,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "alternate_name"
+            "example": "Civic Center"
         },
         "description": {
             "name": "description",
@@ -78,7 +81,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description",
+            "example": "MyCity Civic Center is located on Main Street and contains facilities for a number of civic and community services available.",
             "core": "Y"
         },
         "transportation": {
@@ -88,7 +91,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "transportation"
+            "example": "MyCity Civic Center is serviced by the number 1 Bus and is a short walk from the Main Street Metro Station"
         },
         "latitude": {
             "name": "latitude",
@@ -117,7 +120,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "external_identifier"
+            "example": "///cheer.parent.mole"
         },
         "external_identifier_type": {
             "name": "external_identifier_type",
@@ -126,20 +129,13 @@
             "constraints": {
                 "unique": false
             },
-            "example": "external_identifier_type"
+            "example": "what3words"
         },
         "languages": {
             "name": "languages",
             "type": "array",
             "items": {
                 "$ref": "language.json"
-            }
-        },
-        "schedules": {
-            "name": "schedules",
-            "type": "array",
-            "items": {
-                "$ref": "schedule.json"
             }
         },
         "addresss": {
@@ -149,11 +145,11 @@
                 "$ref": "address.json"
             }
         },
-        "phones": {
-            "name": "phones",
+        "contacts": {
+            "name": "contacts",
             "type": "array",
             "items": {
-                "$ref": "phone.json"
+                "$ref": "contact.json"
             }
         },
         "accessibilitys": {
@@ -163,11 +159,18 @@
                 "$ref": "accessibility.json"
             }
         },
-        "contacts": {
-            "name": "contacts",
+        "phones": {
+            "name": "phones",
             "type": "array",
             "items": {
-                "$ref": "contact.json"
+                "$ref": "phone.json"
+            }
+        },
+        "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+                "$ref": "schedule.json"
             }
         },
         "attributes": {

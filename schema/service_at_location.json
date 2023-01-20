@@ -2,16 +2,19 @@
     "name": "service_at_location",
     "path": "service_at_location.csv",
     "description": "The services at location table creates a link between a service and a specific location.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 5,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 5
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier of the entry. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -47,22 +50,18 @@
             },
             "example": "description"
         },
-        "phones": {
-            "name": "phones",
-            "type": "array",
-            "items": {
-                "$ref": "phone.json"
-            }
-        },
-        "location": {
-            "name": "location",
-            "$ref": "location.json"
-        },
         "contacts": {
             "name": "contacts",
             "type": "array",
             "items": {
                 "$ref": "contact.json"
+            }
+        },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
             }
         },
         "schedules": {
@@ -71,6 +70,10 @@
             "items": {
                 "$ref": "schedule.json"
             }
+        },
+        "location": {
+            "name": "location",
+            "$ref": "location.json"
         },
         "attributes": {
             "name": "attributes",

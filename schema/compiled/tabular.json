@@ -7,16 +7,19 @@
         "name": "organization",
         "path": "organizations.csv",
         "description": "The organization record is used to provide basic description and details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 1,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 1
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "Each organization must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -30,7 +33,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "name",
+            "example": "Example Organization Inc.",
             "core": "Y"
           },
           "alternate_name": {
@@ -40,7 +43,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "alternate_name",
+            "example": "Example Org",
             "core": "Y"
           },
           "description": {
@@ -50,7 +53,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "description",
+            "example": "Example Org is a non-profit organization dedicated to providing services to qualified beneficiaries",
             "core": "Y"
           },
           "email": {
@@ -90,7 +93,8 @@
             "description": "DEPRECATED: A government issued identifier used for the purpose of tax administration.",
             "constraints": {
               "unique": false
-            }
+            },
+            "example": "tax_id"
           },
           "year_incorporated": {
             "name": "year_incorporated",
@@ -118,7 +122,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "logo"
+            "example": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png"
           },
           "uri": {
             "name": "uri",
@@ -139,32 +143,11 @@
             },
             "example": "cd09a387-91f4-4555-94ec-e799c35344cd"
           },
-          "organization_identifiers": {
-            "name": "organization_identifiers",
+          "fundings": {
+            "name": "fundings",
             "type": "array",
             "items": {
-              "$ref": "organization_identifier.json"
-            }
-          },
-          "locations": {
-            "name": "locations",
-            "type": "array",
-            "items": {
-              "$ref": "location.json"
-            }
-          },
-          "phones": {
-            "name": "phones",
-            "type": "array",
-            "items": {
-              "$ref": "phone.json"
-            }
-          },
-          "programs": {
-            "name": "programs",
-            "type": "array",
-            "items": {
-              "$ref": "program.json"
+              "$ref": "funding.json"
             }
           },
           "contacts": {
@@ -174,11 +157,32 @@
               "$ref": "contact.json"
             }
           },
-          "fundings": {
-            "name": "fundings",
+          "phones": {
+            "name": "phones",
             "type": "array",
             "items": {
-              "$ref": "funding.json"
+              "$ref": "phone.json"
+            }
+          },
+          "locations": {
+            "name": "locations",
+            "type": "array",
+            "items": {
+              "$ref": "location.json"
+            }
+          },
+          "programs": {
+            "name": "programs",
+            "type": "array",
+            "items": {
+              "$ref": "program.json"
+            }
+          },
+          "organization_identifiers": {
+            "name": "organization_identifiers",
+            "type": "array",
+            "items": {
+              "$ref": "organization_identifier.json"
             }
           },
           "attributes": {
@@ -209,16 +213,19 @@
         "name": "program",
         "path": "programs.csv",
         "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 2,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 2
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the program. Each program must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -240,7 +247,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "name"
+            "example": "Community Mental Health Support"
           },
           "alternate_name": {
             "name": "alternate_name",
@@ -249,7 +256,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "alternate_name"
+            "example": "MyCity Mental Health Group"
           },
           "description": {
             "name": "description",
@@ -258,7 +265,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "description"
+            "example": "Comprehensive Mental Health Services available to residents of MyCity including CBT and Counselling. This is not an emergency service and should not be used as an alternative to hospital and GP services."
           },
           "attributes": {
             "name": "attributes",
@@ -291,16 +298,19 @@
         "name": "service",
         "path": "services.csv",
         "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 3,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 3
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the service. Each service must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -333,7 +343,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "name",
+            "example": "Community Counselling",
             "core": "Y"
           },
           "alternate_name": {
@@ -343,7 +353,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "alternate_name"
+            "example": "MyCity Counselling Servics"
           },
           "description": {
             "name": "description",
@@ -352,7 +362,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "description",
+            "example": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
             "core": "Y"
           },
           "url": {
@@ -363,7 +373,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "http://example.com",
+            "example": "http://example.com/counselling",
             "core": "Y"
           },
           "email": {
@@ -400,7 +410,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "interpretation_services"
+            "example": "Interpretation services are available in Urdu, Polish, and Slovak"
           },
           "application_process": {
             "name": "application_process",
@@ -409,7 +419,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "application_process"
+            "example": "If you are an NHS patient please ask your GP for a referral letter, we will then be in touch with you directly. If you are not an NHS patient you should ring our reception to arrange an appointment"
           },
           "fees_description": {
             "name": "fees_description",
@@ -418,23 +428,25 @@
             "constraints": {
               "unique": false
             },
-            "example": "fees_description"
+            "example": "Non-NHS patients are expected to pay for their counselling sessions. We charge a flat rate per hour of counselling. The current rate is \u00a350 per hour. Please see our website for up to date prices."
           },
           "wait_time": {
             "name": "wait_time",
             "type": "string",
-            "description": "DEPERECATED: Time a client may expect to wait before receiving a service.",
+            "description": "DEPRECATED: Time a client may expect to wait before receiving a service.",
             "constraints": {
               "unique": false
-            }
+            },
+            "example": "wait_time"
           },
           "fees": {
             "name": "fees",
             "type": "string",
-            "description": "DEPERECATED: Details of any charges for service users to access this service.",
+            "description": "DEPRECATED: Details of any charges for service users to access this service.",
             "constraints": {
               "unique": false
-            }
+            },
+            "example": "fees_description"
           },
           "accreditations": {
             "name": "accreditations",
@@ -443,7 +455,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "accreditations"
+            "example": "All of our practitioners are accredited by the BASC, UKCP, and the Professional Standards Body"
           },
           "eligibility_description": {
             "name": "eligibility_description",
@@ -452,7 +464,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "eligibility_description",
+            "example": "This service is intended for all people aged 12 and over who require counselling services in the MyCity area",
             "core": "Y"
           },
           "minimum_age": {
@@ -462,7 +474,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "0"
+            "example": "12"
           },
           "maximum_age": {
             "name": "maximum_age",
@@ -496,10 +508,11 @@
           "licenses": {
             "name": "licenses",
             "type": "string",
-            "description": "An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
+            "description": "DEPRECATED: An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
             "constraints": {
               "unique": false
-            }
+            },
+            "example": "licences"
           },
           "alert": {
             "name": "alert",
@@ -508,34 +521,13 @@
             "constraints": {
               "unique": false
             },
-            "example": "alert"
+            "example": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information."
           },
-          "languages": {
-            "name": "languages",
+          "phones": {
+            "name": "phones",
             "type": "array",
             "items": {
-              "$ref": "language.json"
-            }
-          },
-          "service_at_locations": {
-            "name": "service_at_locations",
-            "type": "array",
-            "items": {
-              "$ref": "service_at_location.json"
-            }
-          },
-          "fundings": {
-            "name": "fundings",
-            "type": "array",
-            "items": {
-              "$ref": "funding.json"
-            }
-          },
-          "required_documents": {
-            "name": "required_documents",
-            "type": "array",
-            "items": {
-              "$ref": "required_document.json"
+              "$ref": "phone.json"
             }
           },
           "schedules": {
@@ -545,13 +537,6 @@
               "$ref": "schedule.json"
             }
           },
-          "cost_options": {
-            "name": "cost_options",
-            "type": "array",
-            "items": {
-              "$ref": "cost_option.json"
-            }
-          },
           "service_areas": {
             "name": "service_areas",
             "type": "array",
@@ -559,11 +544,39 @@
               "$ref": "service_area.json"
             }
           },
-          "phones": {
-            "name": "phones",
+          "service_at_locations": {
+            "name": "service_at_locations",
             "type": "array",
             "items": {
-              "$ref": "phone.json"
+              "$ref": "service_at_location.json"
+            }
+          },
+          "languages": {
+            "name": "languages",
+            "type": "array",
+            "items": {
+              "$ref": "language.json"
+            }
+          },
+          "fundings": {
+            "name": "fundings",
+            "type": "array",
+            "items": {
+              "$ref": "funding.json"
+            }
+          },
+          "cost_options": {
+            "name": "cost_options",
+            "type": "array",
+            "items": {
+              "$ref": "cost_option.json"
+            }
+          },
+          "required_documents": {
+            "name": "required_documents",
+            "type": "array",
+            "items": {
+              "$ref": "required_document.json"
             }
           },
           "contacts": {
@@ -604,16 +617,19 @@
         "name": "attribute",
         "path": "attributes.csv",
         "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 4,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 4
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -694,16 +710,19 @@
         "name": "service_at_location",
         "path": "service_at_location.csv",
         "description": "The services at location table creates a link between a service and a specific location.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 5,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 5
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier of the entry. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -739,18 +758,18 @@
             },
             "example": "description"
           },
-          "phones": {
-            "name": "phones",
-            "type": "array",
-            "items": {
-              "$ref": "phone.json"
-            }
-          },
           "contacts": {
             "name": "contacts",
             "type": "array",
             "items": {
               "$ref": "contact.json"
+            }
+          },
+          "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+              "$ref": "phone.json"
             }
           },
           "schedules": {
@@ -790,16 +809,19 @@
         "name": "location",
         "path": "locations.csv",
         "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 6,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 6
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier of the location. Each location must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -847,7 +869,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "name",
+            "example": "MyCity Civic Center",
             "core": "Y"
           },
           "alternate_name": {
@@ -857,7 +879,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "alternate_name"
+            "example": "Civic Center"
           },
           "description": {
             "name": "description",
@@ -866,7 +888,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "description",
+            "example": "MyCity Civic Center is located on Main Street and contains facilities for a number of civic and community services available.",
             "core": "Y"
           },
           "transportation": {
@@ -876,7 +898,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "transportation"
+            "example": "MyCity Civic Center is serviced by the number 1 Bus and is a short walk from the Main Street Metro Station"
           },
           "latitude": {
             "name": "latitude",
@@ -905,7 +927,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "external_identifier"
+            "example": "///cheer.parent.mole"
           },
           "external_identifier_type": {
             "name": "external_identifier_type",
@@ -914,20 +936,13 @@
             "constraints": {
               "unique": false
             },
-            "example": "external_identifier_type"
+            "example": "what3words"
           },
           "languages": {
             "name": "languages",
             "type": "array",
             "items": {
               "$ref": "language.json"
-            }
-          },
-          "schedules": {
-            "name": "schedules",
-            "type": "array",
-            "items": {
-              "$ref": "schedule.json"
             }
           },
           "addresss": {
@@ -937,11 +952,11 @@
               "$ref": "address.json"
             }
           },
-          "phones": {
-            "name": "phones",
+          "contacts": {
+            "name": "contacts",
             "type": "array",
             "items": {
-              "$ref": "phone.json"
+              "$ref": "contact.json"
             }
           },
           "accessibilitys": {
@@ -951,11 +966,18 @@
               "$ref": "accessibility.json"
             }
           },
-          "contacts": {
-            "name": "contacts",
+          "phones": {
+            "name": "phones",
             "type": "array",
             "items": {
-              "$ref": "contact.json"
+              "$ref": "phone.json"
+            }
+          },
+          "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+              "$ref": "schedule.json"
             }
           },
           "attributes": {
@@ -985,16 +1007,19 @@
         "name": "phone",
         "path": "phones.csv",
         "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 7,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 7
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The id for a phone number. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -1054,7 +1079,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "number",
+            "example": "\"+44 1234 234567\"",
             "core": "Y"
           },
           "extension": {
@@ -1073,7 +1098,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "type"
+            "example": "voice"
           },
           "description": {
             "name": "description",
@@ -1082,7 +1107,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "description"
+            "example": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy. "
           },
           "languages": {
             "name": "languages",
@@ -1118,16 +1143,19 @@
         "name": "contact",
         "path": "contacts.csv",
         "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 8,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 8
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the contact. Each contact must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -1178,7 +1206,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "name",
+            "example": "Ann Persona",
             "core": "Y"
           },
           "title": {
@@ -1188,7 +1216,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "title",
+            "example": "Reception Manager",
             "core": "Y"
           },
           "department": {
@@ -1198,7 +1226,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "department"
+            "example": "Reception"
           },
           "email": {
             "name": "email",
@@ -1242,16 +1270,19 @@
       "items": {
         "name": "address",
         "path": "addresss.csv",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 9,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 9
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The id of the postal address. Each postal address must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -1275,7 +1306,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "attention",
+            "example": "A. Persona",
             "core": "Y"
           },
           "address_1": {
@@ -1285,7 +1316,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "address_1",
+            "example": "1-30 Main Street",
             "core": "Y"
           },
           "address_2": {
@@ -1304,7 +1335,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "city",
+            "example": "MyCity",
             "core": "Y"
           },
           "region": {
@@ -1324,7 +1355,6 @@
             "constraints": {
               "unique": false
             },
-            "example": "state_province",
             "core": "Y"
           },
           "postal_code": {
@@ -1344,7 +1374,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "country",
+            "example": "US",
             "core": "Y"
           },
           "address_type": {
@@ -1393,16 +1423,19 @@
         "name": "schedule",
         "path": "schedules.csv",
         "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 10,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 10
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the schedule. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -1549,7 +1582,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "byday",
+            "example": "THU",
             "core": "Y"
           },
           "byweekno": {
@@ -1559,7 +1592,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "byweekno"
+            "example": "42"
           },
           "bymonthday": {
             "name": "bymonthday",
@@ -1587,7 +1620,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "description",
+            "example": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
             "core": "Y"
           },
           "opens_at": {
@@ -1597,7 +1630,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "20:20",
+            "example": "10:00",
             "core": "Y",
             "datapackage_type": "time"
           },
@@ -1608,7 +1641,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "20:20",
+            "example": "18:00",
             "core": "Y",
             "datapackage_type": "time"
           },
@@ -1629,7 +1662,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "attending_type"
+            "example": "You can attend this service in-person or remotely via video conferencing"
           },
           "notes": {
             "name": "notes",
@@ -1638,7 +1671,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "notes"
+            "example": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
           },
           "attributes": {
             "name": "attributes",
@@ -1666,16 +1699,19 @@
         "name": "funding",
         "path": "funding.csv",
         "description": "The funding table describes the sources of funding for a service or organization",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 11,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 11
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the funding. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -1706,7 +1742,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "source"
+            "example": "This service is funded partially by the MyCity local government and via grants made by charity funding bodies. We also operate a for-profit department which is used to partially cover the expense of the public service"
           },
           "attributes": {
             "name": "attributes",
@@ -1734,16 +1770,19 @@
         "name": "service_area",
         "path": "service_areas.csv",
         "description": "The service_area table contains details of the geographic area for which a service is available.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 12,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 12
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the service area. Each service area must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -1767,7 +1806,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "name",
+            "example": "The service is available to all residents of the MyCity area. We provide the service in our offices or via video conferencing to any who can provide evidence of their residency.",
             "core": "Y"
           },
           "description": {
@@ -1777,7 +1816,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "description",
+            "example": "#REF!",
             "core": "Y"
           },
           "extent": {
@@ -1805,7 +1844,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "uri"
+            "example": "http://example.com"
           },
           "attributes": {
             "name": "attributes",
@@ -1833,16 +1872,19 @@
         "name": "required_document",
         "path": "required_documents.csv",
         "description": "The required_document table contains details of any documents that are required in order to access or use services.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 13,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 13
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the document. Each document must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -1864,10 +1906,10 @@
             "constraints": {
               "unique": false
             },
-            "example": "document"
+            "example": "Any official id document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as sole identity document."
           },
-          "link": {
-            "name": "link",
+          "uri": {
+            "name": "uri",
             "type": "string",
             "description": "Web link to document.",
             "format": "uri",
@@ -1902,16 +1944,19 @@
         "name": "language",
         "path": "languages.csv",
         "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 14,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 14
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the language. Each langauge must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -1953,7 +1998,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "name",
+            "example": "Urdu",
             "core": "Y"
           },
           "code": {
@@ -1963,7 +2008,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "code"
+            "example": "ur"
           },
           "note": {
             "name": "note",
@@ -1972,7 +2017,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "note"
+            "example": "Translation services provided via bilingual staff when they are available"
           },
           "attributes": {
             "name": "attributes",
@@ -2000,16 +2045,19 @@
         "name": "accessibility",
         "path": "accessibility.csv",
         "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 15,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 15
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for this accessibility information. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -2033,7 +2081,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "description",
+            "example": "The building is equipped with induction loops for hearing aids. Wheelchair access is possible on all levels.",
             "core": "Y"
           },
           "details": {
@@ -2043,7 +2091,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "details"
+            "example": "Switch hearing aid to T-coil to access the induction loop facility."
           },
           "url": {
             "name": "url",
@@ -2081,16 +2129,19 @@
         "name": "taxonomy_term",
         "path": "taxonomy_terms.csv",
         "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 16,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 16
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for this taxonomy term. Each taxonomy term must have a unique identifier, within the scope of the dataset.",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -2135,6 +2186,16 @@
             "example": "0bc248fa-dc27-4650-9ba4-8f1a24ef16a2",
             "core": "Y"
           },
+          "taxonomy": {
+            "name": "taxonomy",
+            "type": "string",
+            "description": "If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility. If possible, provide a URI.",
+            "constraints": {
+              "unique": false
+            },
+            "example": "taxonomy",
+            "core": "Y"
+          },
           "language": {
             "name": "language",
             "type": "string",
@@ -2142,7 +2203,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "language"
+            "example": "eng"
           },
           "taxonomy_id": {
             "name": "taxonomy_id",
@@ -2184,16 +2245,19 @@
         "name": "metadata",
         "path": "metadata.csv",
         "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 17,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 17
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -2234,7 +2298,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "last_action_type"
+            "example": "update"
           },
           "field_name": {
             "name": "field_name",
@@ -2294,16 +2358,19 @@
         "name": "meta_table_description",
         "path": "meta_table_descriptions.csv",
         "description": "The meta_table_description table contains metadata about individual tables.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 18,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 18
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -2359,16 +2426,19 @@
         "name": "cost_option",
         "path": "cost_options.csv",
         "description": "The cost option table contains the costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 19,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 19
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -2390,7 +2460,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "valid_from",
+            "example": "2020-01-01",
             "datapackage_type": "date"
           },
           "valid_to": {
@@ -2400,7 +2470,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "valid_to",
+            "example": "2022-12-31",
             "datapackage_type": "date"
           },
           "option": {
@@ -2410,7 +2480,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "option"
+            "example": "Under 18s and Over 60s"
           },
           "currency": {
             "name": "currency",
@@ -2419,7 +2489,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "currency"
+            "example": "gbp"
           },
           "amount": {
             "name": "amount",
@@ -2428,7 +2498,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "100"
+            "example": "35"
           },
           "amount_description": {
             "name": "amount_description",
@@ -2437,7 +2507,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "amount_description"
+            "example": "per 1 hour session"
           },
           "attributes": {
             "name": "attributes",
@@ -2468,16 +2538,19 @@
         "name": "organization_identifier",
         "path": "organization_identifiers.csv",
         "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 20,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 20
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
@@ -2499,7 +2572,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "identifier_scheme"
+            "example": "GB-COH"
           },
           "identifier_type": {
             "name": "identifier_type",
@@ -2508,7 +2581,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "identifier_type"
+            "example": "company"
           },
           "identifier": {
             "name": "identifier",
@@ -2517,7 +2590,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "identifier"
+            "example": "1234567"
           },
           "attributes": {
             "name": "attributes",
@@ -2550,16 +2623,19 @@
         "name": "taxonomy",
         "path": "taxonomies.csv",
         "description": "Taxonomies from which taxonomy terms are taken",
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 21,
+        "datapackage_metadata": {
+          "format": "csv",
+          "mediatype": "text/csv",
+          "profile": "tabular-data-resource",
+          "order": 21
+        },
         "type": "object",
         "properties": {
           "id": {
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
               "unique": true
             },
