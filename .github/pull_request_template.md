@@ -10,6 +10,7 @@
 
 <!-- Complete the checklist before requesting a review. -->
 
+- [ ] Check which branch the PR is merging into. For 3.0 update work this should be `3.0-dev'
 - [ ] Update the changelog
 
 If you have edited any schema files:
