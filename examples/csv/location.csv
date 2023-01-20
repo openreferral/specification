@@ -1,0 +1,2 @@
+id,location_type,url,organization_id,name,alternate_name,description,transportation,latitude,longitude,external_identifier,external_identifier_type
+3a19ff88-4620-4d17-9830-ac1d859eb5d5,physical,http://example.com,985e4a42-bd9f-4edc-911d-0243a4640aca,MyCity Civic Center,Civic Center,MyCity Civic Center is located on Main Street and contains facilities for a number of civic and community services available.,MyCity Civic Center is serviced by the number 1 Bus and is a short walk from the Main Street Metro Station,100,101,///cheer.parent.mole,what3words

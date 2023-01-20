@@ -1,0 +1,2 @@
+id,location_id,service_id,organization_id,contact_id,service_at_location_id,number,extension,type,description
+1554f2e2-a373-45db-a3fa-9fc48a61c15e,3133fbc3-469a-4ab7-9158-421acfe66229,9d2104f3-b9b2-4719-a85d-743fc62714a6,c1066581-4d59-45c7-9072-40e745e3c98c,52fd7852-8f0e-4b5e-9d93-ff96386096c4,a4edb74e-c262-4379-bf87-2bf90f6f4803,"""+44 1234 234567""",100,voice,Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy. 

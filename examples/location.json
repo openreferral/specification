@@ -1,0 +1,109 @@
+{
+  "id": "3a19ff88-4620-4d17-9830-ac1d859eb5d5",
+  "location_type": "physical",
+  "url": "http://example.com",
+  "name": "MyCity Civic Center",
+  "alternate_name": "Civic Center",
+  "description": "MyCity Civic Center is located on Main Street and contains facilities for a number of civic and community services available.",
+  "transportation": "MyCity Civic Center is serviced by the number 1 Bus and is a short walk from the Main Street Metro Station",
+  "latitude": 100,
+  "longitude": 101,
+  "external_identifier": "///cheer.parent.mole",
+  "external_identifier_type": "what3words",
+  "languages": [
+    {
+      "id": "2989d3ed-c547-48f8-8f9d-432d81c7892e",
+      "name": "Urdu",
+      "code": "ur",
+      "note": "Translation services provided via bilingual staff when they are available"
+    }
+  ],
+  "addresss": [
+    {
+      "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
+      "attention": "A. Persona",
+      "address_1": "1-30 Main Street",
+      "address_2": "address_2",
+      "city": "MyCity",
+      "region": "region",
+      "postal_code": "postal_code",
+      "country": "US",
+      "address_type": "postal"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "1e7efce3-639b-4880-940c-b95cd30cdb50",
+      "name": "Ann Persona",
+      "title": "Reception Manager",
+      "department": "Reception",
+      "email": "email@example.com",
+      "phones": [
+        {
+          "id": "1554f2e2-a373-45db-a3fa-9fc48a61c15e",
+          "number": "\"+44 1234 234567\"",
+          "extension": 100,
+          "type": "voice",
+          "description": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy. ",
+          "languages": [
+            {
+              "id": "2989d3ed-c547-48f8-8f9d-432d81c7892e",
+              "name": "Urdu",
+              "code": "ur",
+              "note": "Translation services provided via bilingual staff when they are available"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "accessibilitys": [
+    {
+      "id": "afcf296e-1cb2-4139-9c88-33d587d1a50b",
+      "description": "The building is equipped with induction loops for hearing aids. Wheelchair access is possible on all levels.",
+      "details": "Switch hearing aid to T-coil to access the induction loop facility.",
+      "url": "http://example.com"
+    }
+  ],
+  "phones": [
+    {
+      "id": "1554f2e2-a373-45db-a3fa-9fc48a61c15e",
+      "number": "\"+44 1234 234567\"",
+      "extension": 100,
+      "type": "voice",
+      "description": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy. ",
+      "languages": [
+        {
+          "id": "2989d3ed-c547-48f8-8f9d-432d81c7892e",
+          "name": "Urdu",
+          "code": "ur",
+          "note": "Translation services provided via bilingual staff when they are available"
+        }
+      ]
+    }
+  ],
+  "schedules": [
+    {
+      "id": "48102e86-bb50-41c4-8f1e-e269368c41d1",
+      "valid_from": "2005-01-01",
+      "valid_to": "2005-01-01",
+      "dtstart": "2005-01-01",
+      "timezone": 3,
+      "until": "2005-01-01",
+      "count": "2005-01-01",
+      "wkst": "TUE",
+      "freq": "WEEKLY",
+      "interval": 1,
+      "byday": "THU",
+      "byweekno": 42,
+      "bymonthday": 2,
+      "byyearday": 2,
+      "description": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
+      "opens_at": "10:00",
+      "closes_at": "18:00",
+      "schedule_link": "http://example.com",
+      "attending_type": "You can attend this service in-person or remotely via video conferencing",
+      "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
+    }
+  ]
+}

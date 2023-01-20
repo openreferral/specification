@@ -1,0 +1,195 @@
+{
+    "name": "location",
+    "path": "locations.csv",
+    "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 6
+    },
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "The identifier of the location. Each location must have a unique identifier.",
+            "format": "uuid",
+            "constraints": {
+                "unique": true
+            },
+            "example": "3a19ff88-4620-4d17-9830-ac1d859eb5d5",
+            "core": "Y"
+        },
+        "location_type": {
+            "name": "location_type",
+            "type": "string",
+            "description": "The type of location, which may be either physical, postal, or virtual.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "physical",
+            "core": "Y",
+            "enum": [
+                "physical",
+                "virtual"
+            ]
+        },
+        "url": {
+            "name": "url",
+            "type": "string",
+            "description": "If location_type is virtual, then this field represents the URL of a virtual location.",
+            "format": "uri",
+            "constraints": {
+                "unique": false
+            },
+            "example": "http://example.com",
+            "core": "Y"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "The organization identifier for a location. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "985e4a42-bd9f-4edc-911d-0243a4640aca"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The name of the location",
+            "constraints": {
+                "unique": false
+            },
+            "example": "MyCity Civic Center",
+            "core": "Y"
+        },
+        "alternate_name": {
+            "name": "alternate_name",
+            "type": "string",
+            "description": "If the location has an alternative name then it may be given here.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "Civic Center"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "A description of this location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "MyCity Civic Center is located on Main Street and contains facilities for a number of civic and community services available.",
+            "core": "Y"
+        },
+        "transportation": {
+            "name": "transportation",
+            "type": "string",
+            "description": "A description of the access to public or private transportation to and from the location.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "MyCity Civic Center is serviced by the number 1 Bus and is a short walk from the Main Street Metro Station"
+        },
+        "latitude": {
+            "name": "latitude",
+            "type": "number",
+            "description": "Y coordinate of location expressed in decimal degrees in WGS84 datum.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "100",
+            "core": "Y"
+        },
+        "longitude": {
+            "name": "longitude",
+            "type": "number",
+            "description": "X coordinate of location expressed in decimal degrees in WGS84 datum.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "101",
+            "core": "Y"
+        },
+        "external_identifier": {
+            "name": "external_identifier",
+            "type": "string",
+            "description": "A third party identifier for a location which can be drawn from other services e.g. UK UPRN or what3words.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "///cheer.parent.mole"
+        },
+        "external_identifier_type": {
+            "name": "external_identifier_type",
+            "type": "string",
+            "description": "The scheme used for the location's external_identifier e.g. UK UPRN or what3words.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "what3words"
+        },
+        "languages": {
+            "name": "languages",
+            "type": "array",
+            "items": {
+                "$ref": "language.json"
+            }
+        },
+        "addresss": {
+            "name": "addresss",
+            "type": "array",
+            "items": {
+                "$ref": "address.json"
+            }
+        },
+        "contacts": {
+            "name": "contacts",
+            "type": "array",
+            "items": {
+                "$ref": "contact.json"
+            }
+        },
+        "accessibilitys": {
+            "name": "accessibilitys",
+            "type": "array",
+            "items": {
+                "$ref": "accessibility.json"
+            }
+        },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
+            }
+        },
+        "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+                "$ref": "schedule.json"
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "location_type"
+    ]
+}

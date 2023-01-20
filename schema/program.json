@@ -1,0 +1,82 @@
+{
+    "name": "program",
+    "path": "programs.csv",
+    "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 2
+    },
+    "type": "object",
+    "properties": {
+        "id": {
+            "name": "id",
+            "type": "string",
+            "description": "The identifier for the program. Each program must have a unique identifier.",
+            "format": "uuid",
+            "constraints": {
+                "unique": true
+            },
+            "example": "e7ec2e57-4540-43fa-b2c7-6be5a0ef7f42"
+        },
+        "organization_id": {
+            "name": "organization_id",
+            "type": "string",
+            "description": "The identifier for the organization which the program belongs to. Each program must belong to a single organization, and the identifier for that organization should be given here.",
+            "constraints": {
+                "unique": true
+            },
+            "example": "5978833f-21aa-4235-a56b-7d2f94ce8f35"
+        },
+        "name": {
+            "name": "name",
+            "type": "string",
+            "description": "The name of the program",
+            "constraints": {
+                "unique": false
+            },
+            "example": "Community Mental Health Support"
+        },
+        "alternate_name": {
+            "name": "alternate_name",
+            "type": "string",
+            "description": "If the program has an alternative name it can be given here",
+            "constraints": {
+                "unique": false
+            },
+            "example": "MyCity Mental Health Group"
+        },
+        "description": {
+            "name": "description",
+            "type": "string",
+            "description": "A brief and clear summary of the program",
+            "constraints": {
+                "unique": false
+            },
+            "example": "Comprehensive Mental Health Services available to residents of MyCity including CBT and Counselling. This is not an emergency service and should not be used as an alternative to hospital and GP services."
+        },
+        "attributes": {
+            "name": "attributes",
+            "type": "array",
+            "items": {
+                "$ref": "attribute.json"
+            }
+        },
+        "metadata": {
+            "name": "metadata",
+            "type": "array",
+            "items": {
+                "$ref": "metadata.json"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description"
+    ],
+    "tabular_required": [
+        "organization_id"
+    ]
+}
