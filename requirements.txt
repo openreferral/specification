@@ -17,7 +17,12 @@ certifi==2022.12.7
 charset-normalizer==2.0.6
     # via requests
 click==8.0.1
-    # via sphinx-intl
+    # via
+    #   flatterer
+    #   hsds-schema-tools
+    #   sphinx-intl
+compiletojsonschema==0.4.0
+    # via hsds-schema-tools
 docutils==0.17.1
     # via
     #   -r requirements.in
@@ -29,15 +34,17 @@ docutils==0.17.1
     #   sphinxcontrib-opendataservices-jsonschema
 erd-from-json-table-schema==0.2.0
     # via -r requirements.in
-gitdb==4.0.10
-    # via gitpython
-gitpython==3.1.29
-    # via transifex-client
+flatterer==0.17.1
+    # via hsds-schema-tools
+hsds-schema-tools @ git+https://github.com/openreferral/hsds_schema_tools
+    # via -r requirements.in
 idna==3.4
     # via requests
+ijson==3.2.0.post0
+    # via flatterer
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==4.8.1
+importlib-metadata==6.0.0
     # via sphinx
 jinja2==3.1.2
     # via
@@ -48,9 +55,13 @@ jsonpointer==2.3
     #   sphinxcontrib-opendataservices
     #   sphinxcontrib-opendataservices-jsonschema
 jsonref==1.0.1
-    # via sphinxcontrib-opendataservices-jsonschema
+    # via
+    #   compiletojsonschema
+    #   sphinxcontrib-opendataservices-jsonschema
 jsonschema==4.17.3
-    # via sphinxcontrib-openapi
+    # via
+    #   compiletojsonschema
+    #   sphinxcontrib-openapi
 m2r==0.3.1
     # via sphinxcontrib-openapi
 markdown-it-py==2.1.0
@@ -70,32 +81,37 @@ myst-parser==0.17.2
     #   -r requirements.in
     #   sphinxcontrib-opendataservices
     #   sphinxcontrib-opendataservices-jsonschema
+numpy==1.24.1
+    # via pandas
+orjson==3.8.5
+    # via flatterer
 packaging==22.0
     # via sphinx
+pandas==1.5.3
+    # via flatterer
 pygments==2.13.0
     # via sphinx
 pygraphviz==1.10
     # via erd-from-json-table-schema
 pyrsistent==0.19.2
     # via jsonschema
-python-slugify==4.0.1
-    # via transifex-client
+python-dateutil==2.8.2
+    # via pandas
 pytz==2022.6
-    # via babel
+    # via
+    #   babel
+    #   pandas
 pyyaml==6.0
     # via
     #   myst-parser
     #   sphinxcontrib-openapi
 requests==2.28.1
-    # via
-    #   sphinx
-    #   transifex-client
+    # via sphinx
 six==1.16.0
     # via
+    #   python-dateutil
     #   sphinxcontrib-httpdomain
     #   transifex-client
-smmap==5.0.0
-    # via gitdb
 snowballstemmer==2.2.0
     # via sphinx
 sphinx==4.5.0
@@ -133,9 +149,7 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-text-unidecode==1.3
-    # via python-slugify
-transifex-client==0.14.4
+transifex-client==0.12.5
     # via -r requirements.in
 typing-extensions==3.10.0.2
     # via myst-parser
@@ -143,7 +157,7 @@ urllib3==1.26.13
     # via
     #   requests
     #   transifex-client
-zipp==3.6.0
+zipp==3.11.0
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
