@@ -55,7 +55,7 @@ This will update the `datapackage.json` file, the examples and the compiled sche
 
 Any change pushed to the master branch on GitHub will be built and pushed to http://docs.openreferral.org/en/latest/ automatically by ReadTheDocs. Build info is found at https://readthedocs.org/projects/openreferral/builds/
 
-Other branches are not built automatically, but can be configured by admins of the 'openreferral' project on ReadTheDocs, on this page - https://readthedocs.org/projects/openreferral/versions/
+Other branches are also built automatically, but are hidden from the flyout menu on ReadTheDocs and can only be viewed by typing the branch name into the ReadTheDocs url. Builds can be configured by admins of the 'openreferral' project on ReadTheDocs, on this page - https://readthedocs.org/projects/openreferral/versions/.
 
 ### Building locally
 
