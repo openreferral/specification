@@ -97,3 +97,6 @@ No changes.
 * Re-added erroneously removed opens_at and closes_at fields to schedule table;
 * Added further guidance on schedules in response to community feedback;
 * Added timezone and count RRULE fields to schedule table
+
+[v3.0](https://github.com/openreferral/specification/milestone/7)
+* Updated logical model to reflect schema changes;
