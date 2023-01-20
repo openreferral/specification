@@ -20,42 +20,13 @@ We encourage you to use an [open license](http://licenses.opendefinition.org/) f
 
 Earlier versions were licensed under CC0.
 
-## Setup environment for docs and schema tools
-
-Set up an environment and install Python dependencies into it:
-
-```
-python3 -m venv .ve    
-source .ve/bin/activate
-pip install -r requirements.txt
-```
-
-This will install everything needed to run the docs and the `hsds_schema.py` executable.
-
-If you run into any errors with the docs or schema building, make sure an existing environment is up-to-date by running:
-
-```
-pip install --upgrade -r requirements.txt
-```
-
-## Building datapackage.json, examples and compiled schemas
-
-After changing any schemas the following command needs to be run:
-
-```
-hsds_schema.py docs-all
-```
-
-This will update the `datapackage.json` file, the examples and the compiled schemas.
-
-
 ## Building the documentation
 
 ### ReadTheDocs
 
 Any change pushed to the master branch on GitHub will be built and pushed to http://docs.openreferral.org/en/latest/ automatically by ReadTheDocs. Build info is found at https://readthedocs.org/projects/openreferral/builds/
 
-Other branches are also built automatically and can be viewed by typing the branch name into the ReadTheDocs url. Branches other than the master branch are hidden from the ReadTheDocs flyout menu. ReadTheDocs settings can be configured by admins of the 'openreferral' project on ReadTheDocs, on this page - https://readthedocs.org/projects/openreferral/versions/
+Other branches are not built automatically, but can be configured by admins of the 'openreferral' project on ReadTheDocs, on this page - https://readthedocs.org/projects/openreferral/versions/
 
 ### Building locally
 
@@ -65,6 +36,14 @@ You will need graphviz installed. For Ubuntu:
 
 ```
 apt-get install graphviz libgraphviz-dev
+```
+
+Set up an environment and install Python dependencies into it:
+
+```
+python3 -m venv .ve    
+source .ve/bin/activate
+pip install -r requirements.txt
 ```
 
 Then pull in the submodule for the API documentation. 

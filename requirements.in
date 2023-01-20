@@ -2,17 +2,16 @@ Sphinx
 # Lock docutils because in docs/conf.py we do some messing around with docutils internals in a hacky way.
 # Upgrading docutils has in the past broken this, so let's keep on a locked version to avoid future breaks.
 # (Hacky way? See tables on /hsds/reference/ and how they are generated with ListTable.build_table_from_list)
-# sphinx-rtd-theme==1.1.1 requires docutils<0.18
-docutils>=0.17,<0.18
+# Picked 0.16 because sphinx-rtd-theme (0.5 at time of writing this comment) needs 0.16 or lower.
+docutils>=0.16,<0.17
 sphinx-intl
 transifex-client
-sphinx-rtd-theme
-# myst-parser-0.18 and above incompatible with sphinxcontrib-opendataservices
-myst-parser<0.18
+# Keep to version 0.5 at the moment because the next version (1.0) has some breaking changes to the navigation menu
+sphinx-rtd-theme>=0.5,<0.6
+myst-parser
 erd-from-json-table-schema
 # sphinxcontrib jsonschema
-sphinxcontrib-opendataservices-jsonschema
+sphinxcontrib-opendataservices-jsonschema<0.4.0
 # sphinxcontrib ODSC
-sphinxcontrib-opendataservices
-sphinxcontrib_openapi
-git+https://github.com/openreferral/hsds_schema_tools
+sphinxcontrib-opendataservices<0.3.0
+-e git+https://github.com/OpenDataServices/sphinxcontrib-openapi.git@c0637fc35509fd93fa3c6f6cd6583154c60616df#egg=sphinxcontrib_openapi
