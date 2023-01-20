@@ -2,16 +2,19 @@
     "name": "organization_identifier",
     "path": "organization_identifiers.csv",
     "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 20,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 20
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -33,7 +36,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "identifier_scheme"
+            "example": "GB-COH"
         },
         "identifier_type": {
             "name": "identifier_type",
@@ -42,7 +45,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "identifier_type"
+            "example": "company"
         },
         "identifier": {
             "name": "identifier",
@@ -51,7 +54,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "identifier"
+            "example": "1234567"
         },
         "attributes": {
             "name": "attributes",

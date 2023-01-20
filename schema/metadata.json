@@ -2,16 +2,19 @@
     "name": "metadata",
     "path": "metadata.csv",
     "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 17,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 17
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -52,7 +55,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "last_action_type"
+            "example": "update"
         },
         "field_name": {
             "name": "field_name",

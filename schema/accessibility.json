@@ -2,16 +2,19 @@
     "name": "accessibility",
     "path": "accessibility.csv",
     "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 15,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 15
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for this accessibility information. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -35,7 +38,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description",
+            "example": "The building is equipped with induction loops for hearing aids. Wheelchair access is possible on all levels.",
             "core": "Y"
         },
         "details": {
@@ -45,7 +48,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "details"
+            "example": "Switch hearing aid to T-coil to access the induction loop facility."
         },
         "url": {
             "name": "url",

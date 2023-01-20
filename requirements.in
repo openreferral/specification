@@ -15,3 +15,4 @@ sphinxcontrib-opendataservices-jsonschema
 # sphinxcontrib ODSC
 sphinxcontrib-opendataservices
 sphinxcontrib_openapi
+git+https://github.com/openreferral/hsds_schema_tools

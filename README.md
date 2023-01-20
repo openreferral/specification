@@ -20,6 +20,35 @@ We encourage you to use an [open license](http://licenses.opendefinition.org/) f
 
 Earlier versions were licensed under CC0.
 
+## Setup environment for docs and schema tools
+
+Set up an environment and install Python dependencies into it:
+
+```
+python3 -m venv .ve    
+source .ve/bin/activate
+pip install -r requirements.txt
+```
+
+This will install everything needed to run the docs and the `hsds_schema.py` executable.
+
+If you run into any errors with the docs or schema building, make sure an existing environment is up-to-date by running:
+
+```
+pip install --upgrade -r requirements.txt
+```
+
+## Building datapackage.json, examples and compiled schemas
+
+After changing any schemas the following command needs to be run:
+
+```
+hsds_schema.py docs-all
+```
+
+This will update the `datapackage.json` file, the examples and the compiled schemas.
+
+
 ## Building the documentation
 
 ### ReadTheDocs
@@ -36,14 +65,6 @@ You will need graphviz installed. For Ubuntu:
 
 ```
 apt-get install graphviz libgraphviz-dev
-```
-
-Set up an environment and install Python dependencies into it:
-
-```
-python3 -m venv .ve    
-source .ve/bin/activate
-pip install -r requirements.txt
 ```
 
 Then pull in the submodule for the API documentation. 

@@ -2,16 +2,19 @@
     "name": "schedule",
     "path": "schedules.csv",
     "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 10,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 10
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the schedule. Each entry must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -158,7 +161,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "byday",
+            "example": "THU",
             "core": "Y"
         },
         "byweekno": {
@@ -168,7 +171,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "byweekno"
+            "example": "42"
         },
         "bymonthday": {
             "name": "bymonthday",
@@ -196,7 +199,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description",
+            "example": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
             "core": "Y"
         },
         "opens_at": {
@@ -206,7 +209,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "20:20",
+            "example": "10:00",
             "core": "Y",
             "datapackage_type": "time"
         },
@@ -217,7 +220,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "20:20",
+            "example": "18:00",
             "core": "Y",
             "datapackage_type": "time"
         },
@@ -238,7 +241,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "attending_type"
+            "example": "You can attend this service in-person or remotely via video conferencing"
         },
         "notes": {
             "name": "notes",
@@ -247,7 +250,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "notes"
+            "example": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
         },
         "attributes": {
             "name": "attributes",

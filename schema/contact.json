@@ -2,16 +2,19 @@
     "name": "contact",
     "path": "contacts.csv",
     "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 8,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 8
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "The identifier for the contact. Each contact must have a unique identifier.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
@@ -62,7 +65,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "name",
+            "example": "Ann Persona",
             "core": "Y"
         },
         "title": {
@@ -72,7 +75,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "title",
+            "example": "Reception Manager",
             "core": "Y"
         },
         "department": {
@@ -82,7 +85,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "department"
+            "example": "Reception"
         },
         "email": {
             "name": "email",

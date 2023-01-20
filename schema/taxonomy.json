@@ -2,16 +2,19 @@
     "name": "taxonomy",
     "path": "taxonomies.csv",
     "description": "Taxonomies from which taxonomy terms are taken",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 21,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 21
+    },
     "type": "object",
     "properties": {
         "id": {
             "name": "id",
             "type": "string",
             "description": "Each entry must have a unique identifier",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },
