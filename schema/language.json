@@ -2,10 +2,12 @@
     "name": "language",
     "path": "languages.csv",
     "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 14,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 14
+    },
     "type": "object",
     "properties": {
         "id": {

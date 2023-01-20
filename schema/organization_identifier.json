@@ -2,10 +2,12 @@
     "name": "organization_identifier",
     "path": "organization_identifiers.csv",
     "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 20,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 20
+    },
     "type": "object",
     "properties": {
         "id": {

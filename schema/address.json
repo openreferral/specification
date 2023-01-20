@@ -1,10 +1,12 @@
 {
     "name": "address",
     "path": "addresss.csv",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 9,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 9
+    },
     "type": "object",
     "properties": {
         "id": {

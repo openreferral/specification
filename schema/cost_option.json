@@ -2,10 +2,12 @@
     "name": "cost_option",
     "path": "cost_options.csv",
     "description": "The cost option table contains the costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 19,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 19
+    },
     "type": "object",
     "properties": {
         "id": {

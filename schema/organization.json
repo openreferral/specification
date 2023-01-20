@@ -2,10 +2,12 @@
     "name": "organization",
     "path": "organizations.csv",
     "description": "The organization record is used to provide basic description and details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 1,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 1
+    },
     "type": "object",
     "properties": {
         "id": {
@@ -136,11 +138,11 @@
             },
             "example": "cd09a387-91f4-4555-94ec-e799c35344cd"
         },
-        "phones": {
-            "name": "phones",
+        "fundings": {
+            "name": "fundings",
             "type": "array",
             "items": {
-                "$ref": "phone.json"
+                "$ref": "funding.json"
             }
         },
         "contacts": {
@@ -150,18 +152,11 @@
                 "$ref": "contact.json"
             }
         },
-        "organization_identifiers": {
-            "name": "organization_identifiers",
+        "phones": {
+            "name": "phones",
             "type": "array",
             "items": {
-                "$ref": "organization_identifier.json"
-            }
-        },
-        "fundings": {
-            "name": "fundings",
-            "type": "array",
-            "items": {
-                "$ref": "funding.json"
+                "$ref": "phone.json"
             }
         },
         "locations": {
@@ -176,6 +171,13 @@
             "type": "array",
             "items": {
                 "$ref": "program.json"
+            }
+        },
+        "organization_identifiers": {
+            "name": "organization_identifiers",
+            "type": "array",
+            "items": {
+                "$ref": "organization_identifier.json"
             }
         },
         "attributes": {

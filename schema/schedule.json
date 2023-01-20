@@ -2,10 +2,12 @@
     "name": "schedule",
     "path": "schedules.csv",
     "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 10,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 10
+    },
     "type": "object",
     "properties": {
         "id": {

@@ -2,10 +2,12 @@
     "name": "program",
     "path": "programs.csv",
     "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 2,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 2
+    },
     "type": "object",
     "properties": {
         "id": {

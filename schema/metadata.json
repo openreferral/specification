@@ -2,10 +2,12 @@
     "name": "metadata",
     "path": "metadata.csv",
     "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 17,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 17
+    },
     "type": "object",
     "properties": {
         "id": {

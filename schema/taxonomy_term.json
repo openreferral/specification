@@ -2,10 +2,12 @@
     "name": "taxonomy_term",
     "path": "taxonomy_terms.csv",
     "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 16,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 16
+    },
     "type": "object",
     "properties": {
         "id": {
@@ -58,6 +60,16 @@
             "core": "Y"
         },
         "taxonomy": {
+            "name": "taxonomy",
+            "type": "string",
+            "description": "If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility. If possible, provide a URI.",
+            "constraints": {
+                "unique": false
+            },
+            "example": "taxonomy",
+            "core": "Y"
+        },
+        "taxonomy_detail": {
             "name": "taxonomy",
             "$ref": "taxonomy.json"
         },

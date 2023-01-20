@@ -2,10 +2,12 @@
     "name": "location",
     "path": "locations.csv",
     "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 6,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 6
+    },
     "type": "object",
     "properties": {
         "id": {
@@ -129,11 +131,18 @@
             },
             "example": "what3words"
         },
-        "phones": {
-            "name": "phones",
+        "languages": {
+            "name": "languages",
             "type": "array",
             "items": {
-                "$ref": "phone.json"
+                "$ref": "language.json"
+            }
+        },
+        "addresss": {
+            "name": "addresss",
+            "type": "array",
+            "items": {
+                "$ref": "address.json"
             }
         },
         "contacts": {
@@ -150,25 +159,18 @@
                 "$ref": "accessibility.json"
             }
         },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
+            }
+        },
         "schedules": {
             "name": "schedules",
             "type": "array",
             "items": {
                 "$ref": "schedule.json"
-            }
-        },
-        "addresss": {
-            "name": "addresss",
-            "type": "array",
-            "items": {
-                "$ref": "address.json"
-            }
-        },
-        "languages": {
-            "name": "languages",
-            "type": "array",
-            "items": {
-                "$ref": "language.json"
             }
         },
         "attributes": {

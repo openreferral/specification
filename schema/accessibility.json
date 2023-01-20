@@ -2,10 +2,12 @@
     "name": "accessibility",
     "path": "accessibility.csv",
     "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 15,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 15
+    },
     "type": "object",
     "properties": {
         "id": {

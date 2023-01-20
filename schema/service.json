@@ -2,10 +2,12 @@
     "name": "service",
     "path": "services.csv",
     "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 3,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 3
+    },
     "type": "object",
     "properties": {
         "id": {
@@ -225,6 +227,34 @@
             },
             "example": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information."
         },
+        "phones": {
+            "name": "phones",
+            "type": "array",
+            "items": {
+                "$ref": "phone.json"
+            }
+        },
+        "schedules": {
+            "name": "schedules",
+            "type": "array",
+            "items": {
+                "$ref": "schedule.json"
+            }
+        },
+        "service_areas": {
+            "name": "service_areas",
+            "type": "array",
+            "items": {
+                "$ref": "service_area.json"
+            }
+        },
+        "service_at_locations": {
+            "name": "service_at_locations",
+            "type": "array",
+            "items": {
+                "$ref": "service_at_location.json"
+            }
+        },
         "languages": {
             "name": "languages",
             "type": "array",
@@ -243,20 +273,6 @@
                 "$ref": "funding.json"
             }
         },
-        "required_documents": {
-            "name": "required_documents",
-            "type": "array",
-            "items": {
-                "$ref": "required_document.json"
-            }
-        },
-        "phones": {
-            "name": "phones",
-            "type": "array",
-            "items": {
-                "$ref": "phone.json"
-            }
-        },
         "cost_options": {
             "name": "cost_options",
             "type": "array",
@@ -264,36 +280,22 @@
                 "$ref": "cost_option.json"
             }
         },
-        "service_areas": {
-            "name": "service_areas",
-            "type": "array",
-            "items": {
-                "$ref": "service_area.json"
-            }
-        },
         "program": {
             "name": "program",
             "$ref": "program.json"
+        },
+        "required_documents": {
+            "name": "required_documents",
+            "type": "array",
+            "items": {
+                "$ref": "required_document.json"
+            }
         },
         "contacts": {
             "name": "contacts",
             "type": "array",
             "items": {
                 "$ref": "contact.json"
-            }
-        },
-        "service_at_locations": {
-            "name": "service_at_locations",
-            "type": "array",
-            "items": {
-                "$ref": "service_at_location.json"
-            }
-        },
-        "schedules": {
-            "name": "schedules",
-            "type": "array",
-            "items": {
-                "$ref": "schedule.json"
             }
         },
         "attributes": {

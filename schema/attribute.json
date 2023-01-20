@@ -2,10 +2,12 @@
     "name": "attribute",
     "path": "attributes.csv",
     "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 4,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 4
+    },
     "type": "object",
     "properties": {
         "id": {

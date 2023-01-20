@@ -2,10 +2,12 @@
     "name": "required_document",
     "path": "required_documents.csv",
     "description": "The required_document table contains details of any documents that are required in order to access or use services.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 13,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 13
+    },
     "type": "object",
     "properties": {
         "id": {

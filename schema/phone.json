@@ -2,10 +2,12 @@
     "name": "phone",
     "path": "phones.csv",
     "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "profile": "tabular-data-resource",
-    "order": 7,
+    "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 7
+    },
     "type": "object",
     "properties": {
         "id": {
