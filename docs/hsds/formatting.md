@@ -1,5 +1,5 @@
-Producing and Sharing Compliant Data
-====================================
+Formatting & Packaging
+======================
 
 HSDS uses the Frictionless Data project's [Data Package specification.](https://specs.frictionlessdata.io/)
 

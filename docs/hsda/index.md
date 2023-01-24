@@ -16,7 +16,7 @@ HSDA is one of the Open Referral specifications, and builds on [HSDS](hsds). Ope
 
     HSDA provides a family of OpenAPI specifications that can be used as a blueprint for the design or adaptation of API platforms to provide read or read/write access to information on organizations, services, locations and the details about them.
 
-    The core API protocol can be used by mobile apps, websites and other services to access individual resources, or listings. Providers can also support updates via API if they choose. In conjuction with the search protocol, this provides most of the functionality needed for simple access and exchange of data.
+    The core API protocol can be used by mobile apps, websites and other services to access individual resources, or listings. Providers can also support updates via API if they choose. In conjunction with the search protocol, this provides most of the functionality needed for simple access and exchange of data.
 
     More complex data synchronization between distributed systems is supported through the additional protocols. 
 

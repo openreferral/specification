@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Open Referral Data Specifications'
-copyright = '2016, Open Referral'
+copyright = 'Open Referral'
 author = 'Open Referral'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -85,7 +85,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_images/.gitkeep']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -146,6 +146,10 @@ html_context = {
 
 html_js_files = ["custom.js"]
 
+html_theme_options = {
+    'titles_only': True
+}
+
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -184,7 +188,7 @@ html_static_path = ['_static']
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
 #
-# html_extra_path = []
+html_extra_path = ['extras']
 
 # If not None, a 'Last updated on:' timestamp is inserted at every page
 # bottom, using the given strftime format.
@@ -363,7 +367,10 @@ texinfo_documents = [
 # texinfo_no_detailmenu = False
 
 
+# MyST configuration
 
+# Autogenerate anchors for Markdown headings (h1, h2)
+myst_heading_anchors = 2
 
 from docutils.parsers.rst import directives
 from docutils.parsers.rst import Directive
@@ -464,9 +471,10 @@ for core_table in core_tables:
     html_color_header_for_table[core_table] = '#77DD77'
 jts_erd.save_svg(
         datapackage,
-        'assets/entity_relationship_diagram.svg',
+        'extras/_images/entity_relationship_diagram.svg',
         display_columns=True,
         display_indexes=True,
+        display_tooltips=False,
         fontname="Lato",
         html_color_header='#AEC6CF',
         html_color_header_for_table=html_color_header_for_table,
@@ -475,7 +483,7 @@ jts_erd.save_svg(
         default_namespace_name='human_services_data',
         rankdir='RL',
     )
-openreferral.svg_utils.insert_style_rule_to_svg('assets/entity_relationship_diagram.svg', svg_style_rule)
+openreferral.svg_utils.insert_style_rule_to_svg('extras/_images/entity_relationship_diagram.svg', svg_style_rule)
 
 #---- Core Tables ERD
 
@@ -494,9 +502,10 @@ datapackage_core_tables_only['resources'] = new_resources
 # Write ERD
 jts_erd.save_svg(
     datapackage_core_tables_only,
-    'assets/entity_relationship_diagram_core_tables.svg',
+    'extras/_images/entity_relationship_diagram_core_tables.svg',
     display_columns=True,
     display_indexes=True,
+    display_tooltips=False,
     fontname="Lato",
     html_color_header='#77DD77',
     html_color_default='#DDDDDD',
@@ -504,11 +513,13 @@ jts_erd.save_svg(
     default_namespace_name='human_services_data',
     rankdir='RL',
 )
-openreferral.svg_utils.insert_style_rule_to_svg('assets/entity_relationship_diagram_core_tables.svg', svg_style_rule)
+openreferral.svg_utils.insert_style_rule_to_svg('extras/_images/entity_relationship_diagram_core_tables.svg', svg_style_rule)
 
 def setup(app):
     import glob
     global html_static_path
     for file in glob.glob("../api-specification/_data/api-commons/*.yaml"):
         html_static_path = html_static_path + [file]
+
+
 

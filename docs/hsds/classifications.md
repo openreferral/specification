@@ -1,6 +1,10 @@
 Classifications, Attributes & Taxonomies
 ========================================
 
+```{note}
+This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
+```
+
 HSDS allows any major entity to have attributes attached. These attributes can be either properties of the entity, or classifications of the entity. 
 
 For _services_, the _service_taxonomy_ table is used for this.
@@ -159,6 +163,4 @@ And finally, we use the other_attributes table to link the program with the appr
 |    |         |           |                  |
 +----+---------+-----------+------------------+
 ```
-
-#### This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
 

@@ -1,5 +1,9 @@
-Producing and Sharing Compliant Data
-====================================
+Publication Guidance
+====================
+
+```{note}
+This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
+```
 
 ### Guidance on Mapping Fields and Values
 
@@ -16,4 +20,6 @@ Source data may or may not map directly to the HSDS. Guidelines are listed below
 
 The files and their associated attributes are [listed on the reference page](reference.md).
 
-#### This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
+### Sharing Your Changes
+
+If the additional information that you're providing is of use to a wider community, then it may be helpful to share details with others. See the [Extending HSDS](extending.md) for information on how to do that. 

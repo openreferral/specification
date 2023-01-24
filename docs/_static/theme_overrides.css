@@ -9,4 +9,8 @@
     overflow: visible !important;
 }
 
-
+/* To fit the ERD's on HSDS/Logical Model page properly. It's the same content as the theme does for img's. */
+.rst-content svg {
+    max-width: 100%;
+    height: auto;
+}
