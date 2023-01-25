@@ -18,7 +18,7 @@
       "note": "Translation services provided via bilingual staff when they are available"
     }
   ],
-  "addresss": [
+  "addresses": [
     {
       "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
       "attention": "A. Persona",
@@ -57,7 +57,7 @@
       ]
     }
   ],
-  "accessibilitys": [
+  "accessibility": [
     {
       "id": "afcf296e-1cb2-4139-9c88-33d587d1a50b",
       "description": "The building is equipped with induction loops for hearing aids. Wheelchair access is possible on all levels.",

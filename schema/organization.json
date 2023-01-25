@@ -138,8 +138,8 @@
             },
             "example": "cd09a387-91f4-4555-94ec-e799c35344cd"
         },
-        "fundings": {
-            "name": "fundings",
+        "funding": {
+            "name": "funding",
             "type": "array",
             "items": {
                 "$ref": "funding.json"

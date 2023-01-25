@@ -1,6 +1,6 @@
 {
     "name": "address",
-    "path": "addresss.csv",
+    "path": "addresses.csv",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",

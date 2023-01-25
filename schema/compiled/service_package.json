@@ -3,7 +3,7 @@
   "items": {
     "name": "service",
     "path": "services.csv",
-    "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
+    "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the service_at_locations table.",
     "datapackage_metadata": {
       "format": "csv",
       "mediatype": "text/csv",
@@ -9705,12 +9705,12 @@
                     ]
                   }
                 },
-                "addresss": {
-                  "name": "addresss",
+                "addresses": {
+                  "name": "addresses",
                   "type": "array",
                   "items": {
                     "name": "address",
-                    "path": "addresss.csv",
+                    "path": "addresses.csv",
                     "datapackage_metadata": {
                       "format": "csv",
                       "mediatype": "text/csv",
@@ -13016,8 +13016,8 @@
                     ]
                   }
                 },
-                "accessibilitys": {
-                  "name": "accessibilitys",
+                "accessibility": {
+                  "name": "accessibility",
                   "type": "array",
                   "items": {
                     "name": "accessibility",
@@ -18803,8 +18803,8 @@
             },
             "example": "cd09a387-91f4-4555-94ec-e799c35344cd"
           },
-          "fundings": {
-            "name": "fundings",
+          "funding": {
+            "name": "funding",
             "type": "array",
             "items": {
               "name": "funding",
@@ -24606,12 +24606,12 @@
                     ]
                   }
                 },
-                "addresss": {
-                  "name": "addresss",
+                "addresses": {
+                  "name": "addresses",
                   "type": "array",
                   "items": {
                     "name": "address",
-                    "path": "addresss.csv",
+                    "path": "addresses.csv",
                     "datapackage_metadata": {
                       "format": "csv",
                       "mediatype": "text/csv",
@@ -27917,8 +27917,8 @@
                     ]
                   }
                 },
-                "accessibilitys": {
-                  "name": "accessibilitys",
+                "accessibility": {
+                  "name": "accessibility",
                   "type": "array",
                   "items": {
                     "name": "accessibility",
@@ -34333,8 +34333,8 @@
           "description"
         ]
       },
-      "fundings": {
-        "name": "fundings",
+      "funding": {
+        "name": "funding",
         "type": "array",
         "items": {
           "name": "funding",
