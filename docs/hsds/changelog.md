@@ -99,4 +99,5 @@ No changes.
 * Added timezone and count RRULE fields to schedule table
 
 [v3.0](https://github.com/openreferral/specification/milestone/7)
+* Updated reference page to reflect schema changes;
 * Updated logical model to reflect schema changes;
