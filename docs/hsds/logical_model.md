@@ -5,12 +5,12 @@ There are four core tables in HSDS:
 
 1. **organization** - that provide services;
 2. **service** - that have descriptions, classifications and other information to allow potential service users to identify those services that can meet their needs;
-3. **location** - where services are delivered - either physically, or virtually (over the phone or Internet);
-4. **service_at_location** - a link table used to record where particular services are available, and to over-ride any default service or location information, with information specific to the service at a specific location.
+3. **location** - where services are delivered - either physically, or virtually (over the phone or internet);
+4. **service_at_location** - a link table used to record where particular services are available, and to override any default service or location information, with information specific to the service at a specific location.
 
-Additional information about organizations, locations and services is held in separate tables and linked by a foreign key. Some tables only have a single foreign key for a single core table. Others can be linked to different core tables. 
+Additional information about organizations, locations and services is held in separate tables and linked by a foreign key. Some tables only have a single foreign key for a single core table. Others can be linked to multiple core tables. 
 
-The table below indicates the foreign keys that exist. 
+The table below indicates the foreign keys that link tables with the core tables in HSDS. Note that other links between non-core tables exist. See the [entity relationship diagram](#entity-relationship-diagram-full-version) below and [reference](reference.md) page for more detail.
 
 ```{eval-rst}
 
@@ -21,19 +21,15 @@ The table below indicates the foreign keys that exist.
 +--------------------------------+--------------+---------+----------+---------------------+
 | service                        | X            |         |          |                     |
 +--------------------------------+--------------+---------+----------+---------------------+
-| service_attribute              |              | X       |          |                     |
-+--------------------------------+--------------+---------+----------+---------------------+
 | service_at_location            |              | X       | X        |                     |
 +--------------------------------+--------------+---------+----------+---------------------+
 | location                       | X            |         |          |                     |
 +--------------------------------+--------------+---------+----------+---------------------+
-| phone*                         | X            | X       | X        | X                   |
+| phone                          | X            | X       | X        | X                   |
 +--------------------------------+--------------+---------+----------+---------------------+
 | contact                        | X            | X       |          | X                   |
 +--------------------------------+--------------+---------+----------+---------------------+
-| physical_address               |              |         | X        |                     |
-+--------------------------------+--------------+---------+----------+---------------------+
-| postal_address                 |              |         | X        |                     |
+| address                        |              |         | X        |                     |
 +--------------------------------+--------------+---------+----------+---------------------+
 | schedule                       |              | X       | X        | X                   |
 +--------------------------------+--------------+---------+----------+---------------------+
@@ -47,22 +43,26 @@ The table below indicates the foreign keys that exist.
 +--------------------------------+--------------+---------+----------+---------------------+
 | required_document              |              | X       |          |                     |
 +--------------------------------+--------------+---------+----------+---------------------+
-| payment_accepted               |              | X       |          |                     |
-+--------------------------------+--------------+---------+----------+---------------------+
 | language                       |              | X       | X        |                     |
 +--------------------------------+--------------+---------+----------+---------------------+
-| accessibility_for_disabilities |              |         | X        |                     |
+| accessibility                  |              |         | X        |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| cost_option                    |              | X       |          |                     |
++--------------------------------+--------------+---------+----------+---------------------+
+| organization_identifier        | X            |         |          |                     |
 +--------------------------------+--------------+---------+----------+---------------------+
 
 ```
 
-*Phone can also be linked to **contact**. 
+When a single row contains multiple foreign keys, these must be interpreted as 'or' relationships. For example, a phone number applies to the service OR the organization OR the service_at_location. 
 
-When a single row contains multiple foreign keys, these must be interpreted as 'OR' relationships. 
+The following tables do not have a foreign key for any of the core tables:
 
-E.g. a phone number applies to the service OR the organisation OR the service_at_location. 
+- **attribute** can be joined to any table other than itself or **metadata** using `_link_id`, and to **taxonomy_term** using `taxonomy_term_id`.
+- **taxonomy_term** can be joined to **taxonomy** using `taxonomy_id`.
+- **metadata** can be joined with any table other than itself or **attribute** using `resource_id`.
 
-## ER Diagram
+## Entity Relationship Diagram
 
 ```{eval-rst}
 
@@ -73,7 +73,7 @@ E.g. a phone number applies to the service OR the organisation OR the service_at
     
 ```
 
-## ER Diagram (Full version)
+## Entity Relationship Diagram (Full version)
 
 <div style="background-color: #77DD77;">
 
