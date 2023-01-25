@@ -1,0 +1,70 @@
+{
+  "openapi": "3.1.0",
+  "info":
+    {
+      "title": "REQUIRED -- TITLE HERE",
+      "version": "TODO: check version information, 1.0?",
+      "summary": "SUMMARY HERE",
+      "description": "DESCRIPTION HERE",
+      "contact":
+        {
+	  "name": "Open Referral",
+	  "url": "CONTACT URL HERE",
+	  "email": "CONTACT EMAIL HERE"
+	},
+      "license": 
+	{
+	  "name": "REQUIRED -- good practice to include?",
+	  "url": "Url to the license used; mutually exclusive to the identifier field if used"
+	}      
+    },
+  "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
+  "paths":
+    {
+      "/services/{id}":
+        {
+	  "description" : "Retrieve fully nested service with all related data with id.",
+	  "get":
+	    {
+	      "summary": "Retrieves a fully nested service with all related data with id",
+	      "operationId": "getFullyNestedServiceById",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	       {
+	         "200":
+		   {
+		     "description": "A Service matching the {id}, with all related data according to the HSDS Specification for Service",
+		     "content":
+		       {
+		         "application/json":
+			   {
+			     "schema": { "$ref": "./schema/compiled/service.json" }
+			   }
+		       }
+		   }
+	       } 
+	      
+	    }
+	},
+      "/services":
+        {
+	  "description" : "Retrieve paginated listings of services that only have ono-to-one fields in them"
+	},
+      "/taxonomies/{id}":
+        {
+	  "description" : "Full information on taxonomy"
+	},
+      "/taxonomies":
+        {
+	  "description" : "Paginated listing of taxonomies"
+	},
+      "/taxonomy_terms":
+        {
+	  "description" : "Full information on a taxonomy term"
+	},
+      "/taxonomy_terms/{id}":
+        {
+	  "description": "Paginated listing of taxonomy terms"
+	}
+    }
+}
