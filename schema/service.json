@@ -1,7 +1,7 @@
 {
     "name": "service",
     "path": "services.csv",
-    "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
+    "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the service_at_locations table.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -266,8 +266,8 @@
             "name": "organization",
             "$ref": "organization.json"
         },
-        "fundings": {
-            "name": "fundings",
+        "funding": {
+            "name": "funding",
             "type": "array",
             "items": {
                 "$ref": "funding.json"

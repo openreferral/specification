@@ -138,8 +138,8 @@
                 "$ref": "language.json"
             }
         },
-        "addresss": {
-            "name": "addresss",
+        "addresses": {
+            "name": "addresses",
             "type": "array",
             "items": {
                 "$ref": "address.json"
@@ -152,8 +152,8 @@
                 "$ref": "contact.json"
             }
         },
-        "accessibilitys": {
-            "name": "accessibilitys",
+        "accessibility": {
+            "name": "accessibility",
             "type": "array",
             "items": {
                 "$ref": "accessibility.json"
