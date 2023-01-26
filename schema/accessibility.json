@@ -62,6 +62,7 @@
         },
         "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
                 "$ref": "attribute.json"
@@ -69,6 +70,7 @@
         },
         "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
                 "$ref": "metadata.json"

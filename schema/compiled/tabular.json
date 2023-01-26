@@ -145,6 +145,7 @@
           },
           "funding": {
             "name": "funding",
+            "description": "The funding table describes the sources of funding for a service or organization",
             "type": "array",
             "items": {
               "$ref": "funding.json"
@@ -152,6 +153,7 @@
           },
           "contacts": {
             "name": "contacts",
+            "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
             "type": "array",
             "items": {
               "$ref": "contact.json"
@@ -159,6 +161,7 @@
           },
           "phones": {
             "name": "phones",
+            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
             "type": "array",
             "items": {
               "$ref": "phone.json"
@@ -166,6 +169,7 @@
           },
           "locations": {
             "name": "locations",
+            "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
             "type": "array",
             "items": {
               "$ref": "location.json"
@@ -173,6 +177,7 @@
           },
           "programs": {
             "name": "programs",
+            "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
             "type": "array",
             "items": {
               "$ref": "program.json"
@@ -180,6 +185,7 @@
           },
           "organization_identifiers": {
             "name": "organization_identifiers",
+            "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
             "type": "array",
             "items": {
               "$ref": "organization_identifier.json"
@@ -187,6 +193,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -194,6 +201,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -269,6 +277,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -276,6 +285,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -525,6 +535,7 @@
           },
           "phones": {
             "name": "phones",
+            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
             "type": "array",
             "items": {
               "$ref": "phone.json"
@@ -532,6 +543,7 @@
           },
           "schedules": {
             "name": "schedules",
+            "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
             "type": "array",
             "items": {
               "$ref": "schedule.json"
@@ -539,6 +551,7 @@
           },
           "service_areas": {
             "name": "service_areas",
+            "description": "The service_area table contains details of the geographic area for which a service is available.",
             "type": "array",
             "items": {
               "$ref": "service_area.json"
@@ -546,6 +559,7 @@
           },
           "service_at_locations": {
             "name": "service_at_locations",
+            "description": "The services at location table creates a link between a service and a specific location.",
             "type": "array",
             "items": {
               "$ref": "service_at_location.json"
@@ -553,6 +567,7 @@
           },
           "languages": {
             "name": "languages",
+            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "type": "array",
             "items": {
               "$ref": "language.json"
@@ -560,6 +575,7 @@
           },
           "funding": {
             "name": "funding",
+            "description": "The funding table describes the sources of funding for a service or organization",
             "type": "array",
             "items": {
               "$ref": "funding.json"
@@ -567,6 +583,7 @@
           },
           "cost_options": {
             "name": "cost_options",
+            "description": "The cost option table contains the costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
             "type": "array",
             "items": {
               "$ref": "cost_option.json"
@@ -574,6 +591,7 @@
           },
           "required_documents": {
             "name": "required_documents",
+            "description": "The required_document table contains details of any documents that are required in order to access or use services.",
             "type": "array",
             "items": {
               "$ref": "required_document.json"
@@ -581,6 +599,7 @@
           },
           "contacts": {
             "name": "contacts",
+            "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
             "type": "array",
             "items": {
               "$ref": "contact.json"
@@ -588,6 +607,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -595,6 +615,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -688,6 +709,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -760,6 +782,7 @@
           },
           "contacts": {
             "name": "contacts",
+            "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
             "type": "array",
             "items": {
               "$ref": "contact.json"
@@ -767,6 +790,7 @@
           },
           "phones": {
             "name": "phones",
+            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
             "type": "array",
             "items": {
               "$ref": "phone.json"
@@ -774,6 +798,7 @@
           },
           "schedules": {
             "name": "schedules",
+            "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
             "type": "array",
             "items": {
               "$ref": "schedule.json"
@@ -781,6 +806,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -788,6 +814,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -940,6 +967,7 @@
           },
           "languages": {
             "name": "languages",
+            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "type": "array",
             "items": {
               "$ref": "language.json"
@@ -947,6 +975,7 @@
           },
           "addresses": {
             "name": "addresses",
+            "description": "Physical or postal address",
             "type": "array",
             "items": {
               "$ref": "address.json"
@@ -954,6 +983,7 @@
           },
           "contacts": {
             "name": "contacts",
+            "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
             "type": "array",
             "items": {
               "$ref": "contact.json"
@@ -961,6 +991,7 @@
           },
           "accessibility": {
             "name": "accessibility",
+            "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
             "type": "array",
             "items": {
               "$ref": "accessibility.json"
@@ -968,6 +999,7 @@
           },
           "phones": {
             "name": "phones",
+            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
             "type": "array",
             "items": {
               "$ref": "phone.json"
@@ -975,6 +1007,7 @@
           },
           "schedules": {
             "name": "schedules",
+            "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
             "type": "array",
             "items": {
               "$ref": "schedule.json"
@@ -982,6 +1015,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -989,6 +1023,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -1111,6 +1146,7 @@
           },
           "languages": {
             "name": "languages",
+            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "type": "array",
             "items": {
               "$ref": "language.json"
@@ -1118,6 +1154,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -1125,6 +1162,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -1240,6 +1278,7 @@
           },
           "phones": {
             "name": "phones",
+            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
             "type": "array",
             "items": {
               "$ref": "phone.json"
@@ -1247,6 +1286,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -1254,6 +1294,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -1270,6 +1311,7 @@
       "items": {
         "name": "address",
         "path": "addresses.csv",
+        "description": "Physical or postal address",
         "datapackage_metadata": {
           "format": "csv",
           "mediatype": "text/csv",
@@ -1393,6 +1435,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -1400,6 +1443,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -1675,6 +1719,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -1682,6 +1727,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -1746,6 +1792,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -1753,6 +1800,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -1848,6 +1896,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -1855,6 +1904,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -1920,6 +1970,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -1927,6 +1978,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -2021,6 +2073,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -2028,6 +2081,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -2105,6 +2159,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -2112,6 +2167,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -2226,6 +2282,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -2402,6 +2459,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -2409,6 +2467,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -2511,6 +2570,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -2518,6 +2578,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -2594,6 +2655,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "$ref": "attribute.json"
@@ -2601,6 +2663,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"
@@ -2680,6 +2743,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "$ref": "metadata.json"

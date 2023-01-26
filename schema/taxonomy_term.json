@@ -71,6 +71,7 @@
         },
         "taxonomy_detail": {
             "name": "taxonomy",
+            "description": "Taxonomies from which taxonomy terms are taken",
             "$ref": "taxonomy.json"
         },
         "language": {
@@ -103,6 +104,7 @@
         },
         "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
                 "$ref": "metadata.json"

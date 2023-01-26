@@ -140,6 +140,7 @@
     },
     "funding": {
       "name": "funding",
+      "description": "The funding table describes the sources of funding for a service or organization",
       "type": "array",
       "items": {
         "name": "funding",
@@ -192,6 +193,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "name": "attribute",
@@ -398,6 +400,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -547,6 +550,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -668,6 +672,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -793,6 +798,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "name": "metadata",
@@ -913,6 +919,7 @@
     },
     "contacts": {
       "name": "contacts",
+      "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
       "type": "array",
       "items": {
         "name": "contact",
@@ -1015,6 +1022,7 @@
           },
           "phones": {
             "name": "phones",
+            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
             "type": "array",
             "items": {
               "name": "phone",
@@ -1124,6 +1132,7 @@
                 },
                 "languages": {
                   "name": "languages",
+                  "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                   "type": "array",
                   "items": {
                     "name": "language",
@@ -1206,6 +1215,7 @@
                       },
                       "attributes": {
                         "name": "attributes",
+                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                         "type": "array",
                         "items": {
                           "name": "attribute",
@@ -1412,6 +1422,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -1561,6 +1572,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -1682,6 +1694,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -1807,6 +1820,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -1927,6 +1941,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -2133,6 +2148,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -2282,6 +2298,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -2403,6 +2420,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -2528,6 +2546,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -2649,6 +2668,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "name": "attribute",
@@ -2855,6 +2875,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -3004,6 +3025,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -3125,6 +3147,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -3250,6 +3273,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "name": "metadata",
@@ -3370,6 +3394,7 @@
     },
     "phones": {
       "name": "phones",
+      "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
       "type": "array",
       "items": {
         "name": "phone",
@@ -3479,6 +3504,7 @@
           },
           "languages": {
             "name": "languages",
+            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "type": "array",
             "items": {
               "name": "language",
@@ -3561,6 +3587,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -3767,6 +3794,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -3916,6 +3944,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -4037,6 +4066,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -4162,6 +4192,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -4282,6 +4313,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "name": "attribute",
@@ -4488,6 +4520,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -4637,6 +4670,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -4758,6 +4792,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -4883,6 +4918,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "name": "metadata",
@@ -5004,6 +5040,7 @@
     },
     "locations": {
       "name": "locations",
+      "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
       "type": "array",
       "items": {
         "name": "location",
@@ -5140,6 +5177,7 @@
           },
           "languages": {
             "name": "languages",
+            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "type": "array",
             "items": {
               "name": "language",
@@ -5222,6 +5260,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -5428,6 +5467,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -5577,6 +5617,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -5698,6 +5739,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -5823,6 +5865,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -5943,10 +5986,12 @@
           },
           "addresses": {
             "name": "addresses",
+            "description": "Physical or postal address",
             "type": "array",
             "items": {
               "name": "address",
               "path": "addresses.csv",
+              "description": "Physical or postal address",
               "datapackage_metadata": {
                 "format": "csv",
                 "mediatype": "text/csv",
@@ -6070,6 +6115,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -6276,6 +6322,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -6425,6 +6472,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -6546,6 +6594,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -6671,6 +6720,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -6797,6 +6847,7 @@
           },
           "contacts": {
             "name": "contacts",
+            "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
             "type": "array",
             "items": {
               "name": "contact",
@@ -6899,6 +6950,7 @@
                 },
                 "phones": {
                   "name": "phones",
+                  "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                   "type": "array",
                   "items": {
                     "name": "phone",
@@ -7008,6 +7060,7 @@
                       },
                       "languages": {
                         "name": "languages",
+                        "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                         "type": "array",
                         "items": {
                           "name": "language",
@@ -7090,6 +7143,7 @@
                             },
                             "attributes": {
                               "name": "attributes",
+                              "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                               "type": "array",
                               "items": {
                                 "name": "attribute",
@@ -7296,6 +7350,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -7445,6 +7500,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -7566,6 +7622,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -7691,6 +7748,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -7811,6 +7869,7 @@
                       },
                       "attributes": {
                         "name": "attributes",
+                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                         "type": "array",
                         "items": {
                           "name": "attribute",
@@ -8017,6 +8076,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -8166,6 +8226,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -8287,6 +8348,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -8412,6 +8474,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -8533,6 +8596,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -8739,6 +8803,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -8888,6 +8953,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -9009,6 +9075,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -9134,6 +9201,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -9254,6 +9322,7 @@
           },
           "accessibility": {
             "name": "accessibility",
+            "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
             "type": "array",
             "items": {
               "name": "accessibility",
@@ -9319,6 +9388,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -9525,6 +9595,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -9674,6 +9745,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -9795,6 +9867,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -9920,6 +9993,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -10040,6 +10114,7 @@
           },
           "phones": {
             "name": "phones",
+            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
             "type": "array",
             "items": {
               "name": "phone",
@@ -10149,6 +10224,7 @@
                 },
                 "languages": {
                   "name": "languages",
+                  "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                   "type": "array",
                   "items": {
                     "name": "language",
@@ -10231,6 +10307,7 @@
                       },
                       "attributes": {
                         "name": "attributes",
+                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                         "type": "array",
                         "items": {
                           "name": "attribute",
@@ -10437,6 +10514,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -10586,6 +10664,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -10707,6 +10786,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -10832,6 +10912,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -10952,6 +11033,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -11158,6 +11240,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -11307,6 +11390,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -11428,6 +11512,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -11553,6 +11638,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -11674,6 +11760,7 @@
           },
           "schedules": {
             "name": "schedules",
+            "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
             "type": "array",
             "items": {
               "name": "schedule",
@@ -11931,6 +12018,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -12137,6 +12225,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -12286,6 +12375,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -12407,6 +12497,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -12532,6 +12623,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -12652,6 +12744,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "name": "attribute",
@@ -12858,6 +12951,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -13007,6 +13101,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -13128,6 +13223,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -13253,6 +13349,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "name": "metadata",
@@ -13374,6 +13471,7 @@
     },
     "programs": {
       "name": "programs",
+      "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
       "type": "array",
       "items": {
         "name": "program",
@@ -13435,6 +13533,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "name": "attribute",
@@ -13641,6 +13740,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -13790,6 +13890,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -13911,6 +14012,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -14036,6 +14138,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "name": "metadata",
@@ -14161,6 +14264,7 @@
     },
     "organization_identifiers": {
       "name": "organization_identifiers",
+      "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
       "type": "array",
       "items": {
         "name": "organization_identifier",
@@ -14222,6 +14326,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "name": "attribute",
@@ -14428,6 +14533,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -14577,6 +14683,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -14698,6 +14805,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -14823,6 +14931,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "name": "metadata",
@@ -14948,6 +15057,7 @@
     },
     "attributes": {
       "name": "attributes",
+      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
       "type": "array",
       "items": {
         "name": "attribute",
@@ -15154,6 +15264,7 @@
                   },
                   "metadata": {
                     "name": "metadata",
+                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                     "type": "array",
                     "items": {
                       "name": "metadata",
@@ -15303,6 +15414,7 @@
               },
               "metadata": {
                 "name": "metadata",
+                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                 "type": "array",
                 "items": {
                   "name": "metadata",
@@ -15424,6 +15536,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "name": "metadata",
@@ -15549,6 +15662,7 @@
     },
     "metadata": {
       "name": "metadata",
+      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
       "type": "array",
       "items": {
         "name": "metadata",
@@ -15894,6 +16008,7 @@
           },
           "phones": {
             "name": "phones",
+            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
             "type": "array",
             "items": {
               "name": "phone",
@@ -16003,6 +16118,7 @@
                 },
                 "languages": {
                   "name": "languages",
+                  "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                   "type": "array",
                   "items": {
                     "name": "language",
@@ -16085,6 +16201,7 @@
                       },
                       "attributes": {
                         "name": "attributes",
+                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                         "type": "array",
                         "items": {
                           "name": "attribute",
@@ -16291,6 +16408,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -16440,6 +16558,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -16561,6 +16680,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -16686,6 +16806,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -16806,6 +16927,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -17012,6 +17134,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -17161,6 +17284,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -17282,6 +17406,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -17407,6 +17532,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -17528,6 +17654,7 @@
           },
           "schedules": {
             "name": "schedules",
+            "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
             "type": "array",
             "items": {
               "name": "schedule",
@@ -17785,6 +17912,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -17991,6 +18119,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -18140,6 +18269,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -18261,6 +18391,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -18386,6 +18517,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -18506,6 +18638,7 @@
           },
           "service_areas": {
             "name": "service_areas",
+            "description": "The service_area table contains details of the geographic area for which a service is available.",
             "type": "array",
             "items": {
               "name": "service_area",
@@ -18589,6 +18722,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -18795,6 +18929,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -18944,6 +19079,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -19065,6 +19201,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -19190,6 +19327,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -19310,6 +19448,7 @@
           },
           "service_at_locations": {
             "name": "service_at_locations",
+            "description": "The services at location table creates a link between a service and a specific location.",
             "type": "array",
             "items": {
               "name": "service_at_location",
@@ -19365,6 +19504,7 @@
                 },
                 "contacts": {
                   "name": "contacts",
+                  "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
                   "type": "array",
                   "items": {
                     "name": "contact",
@@ -19467,6 +19607,7 @@
                       },
                       "phones": {
                         "name": "phones",
+                        "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                         "type": "array",
                         "items": {
                           "name": "phone",
@@ -19576,6 +19717,7 @@
                             },
                             "languages": {
                               "name": "languages",
+                              "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                               "type": "array",
                               "items": {
                                 "name": "language",
@@ -19658,6 +19800,7 @@
                                   },
                                   "attributes": {
                                     "name": "attributes",
+                                    "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                                     "type": "array",
                                     "items": {
                                       "name": "attribute",
@@ -19864,6 +20007,7 @@
                                                 },
                                                 "metadata": {
                                                   "name": "metadata",
+                                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                   "type": "array",
                                                   "items": {
                                                     "name": "metadata",
@@ -20013,6 +20157,7 @@
                                             },
                                             "metadata": {
                                               "name": "metadata",
+                                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                               "type": "array",
                                               "items": {
                                                 "name": "metadata",
@@ -20134,6 +20279,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -20259,6 +20405,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -20379,6 +20526,7 @@
                             },
                             "attributes": {
                               "name": "attributes",
+                              "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                               "type": "array",
                               "items": {
                                 "name": "attribute",
@@ -20585,6 +20733,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -20734,6 +20883,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -20855,6 +21005,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -20980,6 +21131,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -21101,6 +21253,7 @@
                       },
                       "attributes": {
                         "name": "attributes",
+                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                         "type": "array",
                         "items": {
                           "name": "attribute",
@@ -21307,6 +21460,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -21456,6 +21610,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -21577,6 +21732,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -21702,6 +21858,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -21822,6 +21979,7 @@
                 },
                 "phones": {
                   "name": "phones",
+                  "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                   "type": "array",
                   "items": {
                     "name": "phone",
@@ -21931,6 +22089,7 @@
                       },
                       "languages": {
                         "name": "languages",
+                        "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                         "type": "array",
                         "items": {
                           "name": "language",
@@ -22013,6 +22172,7 @@
                             },
                             "attributes": {
                               "name": "attributes",
+                              "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                               "type": "array",
                               "items": {
                                 "name": "attribute",
@@ -22219,6 +22379,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -22368,6 +22529,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -22489,6 +22651,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -22614,6 +22777,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -22734,6 +22898,7 @@
                       },
                       "attributes": {
                         "name": "attributes",
+                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                         "type": "array",
                         "items": {
                           "name": "attribute",
@@ -22940,6 +23105,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -23089,6 +23255,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -23210,6 +23377,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -23335,6 +23503,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -23456,6 +23625,7 @@
                 },
                 "schedules": {
                   "name": "schedules",
+                  "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
                   "type": "array",
                   "items": {
                     "name": "schedule",
@@ -23713,6 +23883,7 @@
                       },
                       "attributes": {
                         "name": "attributes",
+                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                         "type": "array",
                         "items": {
                           "name": "attribute",
@@ -23919,6 +24090,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -24068,6 +24240,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -24189,6 +24362,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -24314,6 +24488,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -24567,6 +24742,7 @@
                     },
                     "languages": {
                       "name": "languages",
+                      "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                       "type": "array",
                       "items": {
                         "name": "language",
@@ -24649,6 +24825,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -24855,6 +25032,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -25004,6 +25182,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -25125,6 +25304,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -25250,6 +25430,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -25370,10 +25551,12 @@
                     },
                     "addresses": {
                       "name": "addresses",
+                      "description": "Physical or postal address",
                       "type": "array",
                       "items": {
                         "name": "address",
                         "path": "addresses.csv",
+                        "description": "Physical or postal address",
                         "datapackage_metadata": {
                           "format": "csv",
                           "mediatype": "text/csv",
@@ -25497,6 +25680,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -25703,6 +25887,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -25852,6 +26037,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -25973,6 +26159,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -26098,6 +26285,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -26224,6 +26412,7 @@
                     },
                     "contacts": {
                       "name": "contacts",
+                      "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
                       "type": "array",
                       "items": {
                         "name": "contact",
@@ -26326,6 +26515,7 @@
                           },
                           "phones": {
                             "name": "phones",
+                            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                             "type": "array",
                             "items": {
                               "name": "phone",
@@ -26435,6 +26625,7 @@
                                 },
                                 "languages": {
                                   "name": "languages",
+                                  "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                                   "type": "array",
                                   "items": {
                                     "name": "language",
@@ -26517,6 +26708,7 @@
                                       },
                                       "attributes": {
                                         "name": "attributes",
+                                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                                         "type": "array",
                                         "items": {
                                           "name": "attribute",
@@ -26723,6 +26915,7 @@
                                                     },
                                                     "metadata": {
                                                       "name": "metadata",
+                                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                       "type": "array",
                                                       "items": {
                                                         "name": "metadata",
@@ -26872,6 +27065,7 @@
                                                 },
                                                 "metadata": {
                                                   "name": "metadata",
+                                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                   "type": "array",
                                                   "items": {
                                                     "name": "metadata",
@@ -26993,6 +27187,7 @@
                                             },
                                             "metadata": {
                                               "name": "metadata",
+                                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                               "type": "array",
                                               "items": {
                                                 "name": "metadata",
@@ -27118,6 +27313,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -27238,6 +27434,7 @@
                                 },
                                 "attributes": {
                                   "name": "attributes",
+                                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                                   "type": "array",
                                   "items": {
                                     "name": "attribute",
@@ -27444,6 +27641,7 @@
                                               },
                                               "metadata": {
                                                 "name": "metadata",
+                                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                 "type": "array",
                                                 "items": {
                                                   "name": "metadata",
@@ -27593,6 +27791,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -27714,6 +27913,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -27839,6 +28039,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -27960,6 +28161,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -28166,6 +28368,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -28315,6 +28518,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -28436,6 +28640,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -28561,6 +28766,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -28681,6 +28887,7 @@
                     },
                     "accessibility": {
                       "name": "accessibility",
+                      "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
                       "type": "array",
                       "items": {
                         "name": "accessibility",
@@ -28746,6 +28953,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -28952,6 +29160,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -29101,6 +29310,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -29222,6 +29432,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -29347,6 +29558,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -29467,6 +29679,7 @@
                     },
                     "phones": {
                       "name": "phones",
+                      "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                       "type": "array",
                       "items": {
                         "name": "phone",
@@ -29576,6 +29789,7 @@
                           },
                           "languages": {
                             "name": "languages",
+                            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                             "type": "array",
                             "items": {
                               "name": "language",
@@ -29658,6 +29872,7 @@
                                 },
                                 "attributes": {
                                   "name": "attributes",
+                                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                                   "type": "array",
                                   "items": {
                                     "name": "attribute",
@@ -29864,6 +30079,7 @@
                                               },
                                               "metadata": {
                                                 "name": "metadata",
+                                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                 "type": "array",
                                                 "items": {
                                                   "name": "metadata",
@@ -30013,6 +30229,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -30134,6 +30351,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -30259,6 +30477,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -30379,6 +30598,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -30585,6 +30805,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -30734,6 +30955,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -30855,6 +31077,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -30980,6 +31203,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -31101,6 +31325,7 @@
                     },
                     "schedules": {
                       "name": "schedules",
+                      "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
                       "type": "array",
                       "items": {
                         "name": "schedule",
@@ -31358,6 +31583,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -31564,6 +31790,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -31713,6 +31940,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -31834,6 +32062,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -31959,6 +32188,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -32079,6 +32309,7 @@
                     },
                     "attributes": {
                       "name": "attributes",
+                      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                       "type": "array",
                       "items": {
                         "name": "attribute",
@@ -32285,6 +32516,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -32434,6 +32666,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -32555,6 +32788,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -32680,6 +32914,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -32800,6 +33035,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -33006,6 +33242,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -33155,6 +33392,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -33276,6 +33514,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -33401,6 +33640,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -33525,6 +33765,7 @@
           },
           "languages": {
             "name": "languages",
+            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "type": "array",
             "items": {
               "name": "language",
@@ -33607,6 +33848,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -33813,6 +34055,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -33962,6 +34205,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -34083,6 +34327,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -34208,6 +34453,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -34468,6 +34714,7 @@
               },
               "funding": {
                 "name": "funding",
+                "description": "The funding table describes the sources of funding for a service or organization",
                 "type": "array",
                 "items": {
                   "name": "funding",
@@ -34520,6 +34767,7 @@
                     },
                     "attributes": {
                       "name": "attributes",
+                      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                       "type": "array",
                       "items": {
                         "name": "attribute",
@@ -34726,6 +34974,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -34875,6 +35124,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -34996,6 +35246,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -35121,6 +35372,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -35241,6 +35493,7 @@
               },
               "contacts": {
                 "name": "contacts",
+                "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
                 "type": "array",
                 "items": {
                   "name": "contact",
@@ -35343,6 +35596,7 @@
                     },
                     "phones": {
                       "name": "phones",
+                      "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                       "type": "array",
                       "items": {
                         "name": "phone",
@@ -35452,6 +35706,7 @@
                           },
                           "languages": {
                             "name": "languages",
+                            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                             "type": "array",
                             "items": {
                               "name": "language",
@@ -35534,6 +35789,7 @@
                                 },
                                 "attributes": {
                                   "name": "attributes",
+                                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                                   "type": "array",
                                   "items": {
                                     "name": "attribute",
@@ -35740,6 +35996,7 @@
                                               },
                                               "metadata": {
                                                 "name": "metadata",
+                                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                 "type": "array",
                                                 "items": {
                                                   "name": "metadata",
@@ -35889,6 +36146,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -36010,6 +36268,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -36135,6 +36394,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -36255,6 +36515,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -36461,6 +36722,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -36610,6 +36872,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -36731,6 +36994,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -36856,6 +37120,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -36977,6 +37242,7 @@
                     },
                     "attributes": {
                       "name": "attributes",
+                      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                       "type": "array",
                       "items": {
                         "name": "attribute",
@@ -37183,6 +37449,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -37332,6 +37599,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -37453,6 +37721,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -37578,6 +37847,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -37698,6 +37968,7 @@
               },
               "phones": {
                 "name": "phones",
+                "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                 "type": "array",
                 "items": {
                   "name": "phone",
@@ -37807,6 +38078,7 @@
                     },
                     "languages": {
                       "name": "languages",
+                      "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                       "type": "array",
                       "items": {
                         "name": "language",
@@ -37889,6 +38161,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -38095,6 +38368,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -38244,6 +38518,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -38365,6 +38640,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -38490,6 +38766,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -38610,6 +38887,7 @@
                     },
                     "attributes": {
                       "name": "attributes",
+                      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                       "type": "array",
                       "items": {
                         "name": "attribute",
@@ -38816,6 +39094,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -38965,6 +39244,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -39086,6 +39366,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -39211,6 +39492,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -39332,6 +39614,7 @@
               },
               "locations": {
                 "name": "locations",
+                "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
                 "type": "array",
                 "items": {
                   "name": "location",
@@ -39468,6 +39751,7 @@
                     },
                     "languages": {
                       "name": "languages",
+                      "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                       "type": "array",
                       "items": {
                         "name": "language",
@@ -39550,6 +39834,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -39756,6 +40041,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -39905,6 +40191,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -40026,6 +40313,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -40151,6 +40439,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -40271,10 +40560,12 @@
                     },
                     "addresses": {
                       "name": "addresses",
+                      "description": "Physical or postal address",
                       "type": "array",
                       "items": {
                         "name": "address",
                         "path": "addresses.csv",
+                        "description": "Physical or postal address",
                         "datapackage_metadata": {
                           "format": "csv",
                           "mediatype": "text/csv",
@@ -40398,6 +40689,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -40604,6 +40896,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -40753,6 +41046,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -40874,6 +41168,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -40999,6 +41294,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -41125,6 +41421,7 @@
                     },
                     "contacts": {
                       "name": "contacts",
+                      "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
                       "type": "array",
                       "items": {
                         "name": "contact",
@@ -41227,6 +41524,7 @@
                           },
                           "phones": {
                             "name": "phones",
+                            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                             "type": "array",
                             "items": {
                               "name": "phone",
@@ -41336,6 +41634,7 @@
                                 },
                                 "languages": {
                                   "name": "languages",
+                                  "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                                   "type": "array",
                                   "items": {
                                     "name": "language",
@@ -41418,6 +41717,7 @@
                                       },
                                       "attributes": {
                                         "name": "attributes",
+                                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                                         "type": "array",
                                         "items": {
                                           "name": "attribute",
@@ -41624,6 +41924,7 @@
                                                     },
                                                     "metadata": {
                                                       "name": "metadata",
+                                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                       "type": "array",
                                                       "items": {
                                                         "name": "metadata",
@@ -41773,6 +42074,7 @@
                                                 },
                                                 "metadata": {
                                                   "name": "metadata",
+                                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                   "type": "array",
                                                   "items": {
                                                     "name": "metadata",
@@ -41894,6 +42196,7 @@
                                             },
                                             "metadata": {
                                               "name": "metadata",
+                                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                               "type": "array",
                                               "items": {
                                                 "name": "metadata",
@@ -42019,6 +42322,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -42139,6 +42443,7 @@
                                 },
                                 "attributes": {
                                   "name": "attributes",
+                                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                                   "type": "array",
                                   "items": {
                                     "name": "attribute",
@@ -42345,6 +42650,7 @@
                                               },
                                               "metadata": {
                                                 "name": "metadata",
+                                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                 "type": "array",
                                                 "items": {
                                                   "name": "metadata",
@@ -42494,6 +42800,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -42615,6 +42922,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -42740,6 +43048,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -42861,6 +43170,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -43067,6 +43377,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -43216,6 +43527,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -43337,6 +43649,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -43462,6 +43775,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -43582,6 +43896,7 @@
                     },
                     "accessibility": {
                       "name": "accessibility",
+                      "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
                       "type": "array",
                       "items": {
                         "name": "accessibility",
@@ -43647,6 +43962,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -43853,6 +44169,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -44002,6 +44319,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -44123,6 +44441,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -44248,6 +44567,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -44368,6 +44688,7 @@
                     },
                     "phones": {
                       "name": "phones",
+                      "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                       "type": "array",
                       "items": {
                         "name": "phone",
@@ -44477,6 +44798,7 @@
                           },
                           "languages": {
                             "name": "languages",
+                            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                             "type": "array",
                             "items": {
                               "name": "language",
@@ -44559,6 +44881,7 @@
                                 },
                                 "attributes": {
                                   "name": "attributes",
+                                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                                   "type": "array",
                                   "items": {
                                     "name": "attribute",
@@ -44765,6 +45088,7 @@
                                               },
                                               "metadata": {
                                                 "name": "metadata",
+                                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                                 "type": "array",
                                                 "items": {
                                                   "name": "metadata",
@@ -44914,6 +45238,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -45035,6 +45360,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -45160,6 +45486,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -45280,6 +45607,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -45486,6 +45814,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -45635,6 +45964,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -45756,6 +46086,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -45881,6 +46212,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -46002,6 +46334,7 @@
                     },
                     "schedules": {
                       "name": "schedules",
+                      "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
                       "type": "array",
                       "items": {
                         "name": "schedule",
@@ -46259,6 +46592,7 @@
                           },
                           "attributes": {
                             "name": "attributes",
+                            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                             "type": "array",
                             "items": {
                               "name": "attribute",
@@ -46465,6 +46799,7 @@
                                         },
                                         "metadata": {
                                           "name": "metadata",
+                                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                           "type": "array",
                                           "items": {
                                             "name": "metadata",
@@ -46614,6 +46949,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -46735,6 +47071,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -46860,6 +47197,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -46980,6 +47318,7 @@
                     },
                     "attributes": {
                       "name": "attributes",
+                      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                       "type": "array",
                       "items": {
                         "name": "attribute",
@@ -47186,6 +47525,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -47335,6 +47675,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -47456,6 +47797,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -47581,6 +47923,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -47702,6 +48045,7 @@
               },
               "programs": {
                 "name": "programs",
+                "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
                 "type": "array",
                 "items": {
                   "name": "program",
@@ -47763,6 +48107,7 @@
                     },
                     "attributes": {
                       "name": "attributes",
+                      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                       "type": "array",
                       "items": {
                         "name": "attribute",
@@ -47969,6 +48314,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -48118,6 +48464,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -48239,6 +48586,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -48364,6 +48712,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -48489,6 +48838,7 @@
               },
               "organization_identifiers": {
                 "name": "organization_identifiers",
+                "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
                 "type": "array",
                 "items": {
                   "name": "organization_identifier",
@@ -48550,6 +48900,7 @@
                     },
                     "attributes": {
                       "name": "attributes",
+                      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                       "type": "array",
                       "items": {
                         "name": "attribute",
@@ -48756,6 +49107,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -48905,6 +49257,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -49026,6 +49379,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -49151,6 +49505,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -49276,6 +49631,7 @@
               },
               "attributes": {
                 "name": "attributes",
+                "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                 "type": "array",
                 "items": {
                   "name": "attribute",
@@ -49482,6 +49838,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -49631,6 +49988,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -49752,6 +50110,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -49877,6 +50236,7 @@
               },
               "metadata": {
                 "name": "metadata",
+                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                 "type": "array",
                 "items": {
                   "name": "metadata",
@@ -49998,6 +50358,7 @@
           },
           "funding": {
             "name": "funding",
+            "description": "The funding table describes the sources of funding for a service or organization",
             "type": "array",
             "items": {
               "name": "funding",
@@ -50050,6 +50411,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -50256,6 +50618,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -50405,6 +50768,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -50526,6 +50890,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -50651,6 +51016,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -50771,6 +51137,7 @@
           },
           "cost_options": {
             "name": "cost_options",
+            "description": "The cost option table contains the costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
             "type": "array",
             "items": {
               "name": "cost_option",
@@ -50861,6 +51228,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -51067,6 +51435,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -51216,6 +51585,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -51337,6 +51707,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -51462,6 +51833,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -51643,6 +52015,7 @@
               },
               "attributes": {
                 "name": "attributes",
+                "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                 "type": "array",
                 "items": {
                   "name": "attribute",
@@ -51849,6 +52222,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -51998,6 +52372,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -52119,6 +52494,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -52244,6 +52620,7 @@
               },
               "metadata": {
                 "name": "metadata",
+                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                 "type": "array",
                 "items": {
                   "name": "metadata",
@@ -52368,6 +52745,7 @@
           },
           "required_documents": {
             "name": "required_documents",
+            "description": "The required_document table contains details of any documents that are required in order to access or use services.",
             "type": "array",
             "items": {
               "name": "required_document",
@@ -52421,6 +52799,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -52627,6 +53006,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -52776,6 +53156,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -52897,6 +53278,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -53022,6 +53404,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -53142,6 +53525,7 @@
           },
           "contacts": {
             "name": "contacts",
+            "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
             "type": "array",
             "items": {
               "name": "contact",
@@ -53244,6 +53628,7 @@
                 },
                 "phones": {
                   "name": "phones",
+                  "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
                   "type": "array",
                   "items": {
                     "name": "phone",
@@ -53353,6 +53738,7 @@
                       },
                       "languages": {
                         "name": "languages",
+                        "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
                         "type": "array",
                         "items": {
                           "name": "language",
@@ -53435,6 +53821,7 @@
                             },
                             "attributes": {
                               "name": "attributes",
+                              "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                               "type": "array",
                               "items": {
                                 "name": "attribute",
@@ -53641,6 +54028,7 @@
                                           },
                                           "metadata": {
                                             "name": "metadata",
+                                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                             "type": "array",
                                             "items": {
                                               "name": "metadata",
@@ -53790,6 +54178,7 @@
                                       },
                                       "metadata": {
                                         "name": "metadata",
+                                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                         "type": "array",
                                         "items": {
                                           "name": "metadata",
@@ -53911,6 +54300,7 @@
                                   },
                                   "metadata": {
                                     "name": "metadata",
+                                    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                     "type": "array",
                                     "items": {
                                       "name": "metadata",
@@ -54036,6 +54426,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -54156,6 +54547,7 @@
                       },
                       "attributes": {
                         "name": "attributes",
+                        "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                         "type": "array",
                         "items": {
                           "name": "attribute",
@@ -54362,6 +54754,7 @@
                                     },
                                     "metadata": {
                                       "name": "metadata",
+                                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                       "type": "array",
                                       "items": {
                                         "name": "metadata",
@@ -54511,6 +54904,7 @@
                                 },
                                 "metadata": {
                                   "name": "metadata",
+                                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                   "type": "array",
                                   "items": {
                                     "name": "metadata",
@@ -54632,6 +55026,7 @@
                             },
                             "metadata": {
                               "name": "metadata",
+                              "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                               "type": "array",
                               "items": {
                                 "name": "metadata",
@@ -54757,6 +55152,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -54878,6 +55274,7 @@
                 },
                 "attributes": {
                   "name": "attributes",
+                  "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
                   "type": "array",
                   "items": {
                     "name": "attribute",
@@ -55084,6 +55481,7 @@
                               },
                               "metadata": {
                                 "name": "metadata",
+                                "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                                 "type": "array",
                                 "items": {
                                   "name": "metadata",
@@ -55233,6 +55631,7 @@
                           },
                           "metadata": {
                             "name": "metadata",
+                            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                             "type": "array",
                             "items": {
                               "name": "metadata",
@@ -55354,6 +55753,7 @@
                       },
                       "metadata": {
                         "name": "metadata",
+                        "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                         "type": "array",
                         "items": {
                           "name": "metadata",
@@ -55479,6 +55879,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -55599,6 +56000,7 @@
           },
           "attributes": {
             "name": "attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
             "items": {
               "name": "attribute",
@@ -55805,6 +56207,7 @@
                         },
                         "metadata": {
                           "name": "metadata",
+                          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                           "type": "array",
                           "items": {
                             "name": "metadata",
@@ -55954,6 +56357,7 @@
                     },
                     "metadata": {
                       "name": "metadata",
+                      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                       "type": "array",
                       "items": {
                         "name": "metadata",
@@ -56075,6 +56479,7 @@
                 },
                 "metadata": {
                   "name": "metadata",
+                  "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
                   "type": "array",
                   "items": {
                     "name": "metadata",
@@ -56200,6 +56605,7 @@
           },
           "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
               "name": "metadata",
