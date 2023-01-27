@@ -73,10 +73,12 @@
         },
         "taxonomy_term": {
             "name": "taxonomy_term",
+            "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
             "$ref": "taxonomy_term.json"
         },
         "metadata": {
             "name": "metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
             "items": {
                 "$ref": "metadata.json"
