@@ -25,8 +25,490 @@ Publishers should also be aware that some applications may wish to extract a 'sh
 
 ## Objects and fields
 
+#### service
+
+`service` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /description
+```
+
+Each `service` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:collapse: phones,schedules,service_areas,service_at_locations,languages,organization,funding,cost_options,program,required_documents,contacts,attributes,metadata
+```
+
+:::
+
+:::{tab-item} Example
 
 ```{eval-rst}
-.. jsontableschemainclude:: ../datapackage.json
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer:
+    :title: service
 ```
- 
+
+:::
+
+::::
+
+
+
+#### phone
+
+`phone` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/phone/description
+```
+
+Each `phone` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/phone
+:collapse: languages,attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /phones
+    :title: phone
+```
+
+:::
+
+::::
+
+
+#### schedule
+
+`schedule` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/schedule/description
+```
+
+Each `schedule` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/schedule
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /schedules
+    :title: schedule
+```
+
+:::
+
+::::
+
+
+#### service_area
+
+`service_area` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/service_area/description
+```
+
+Each `service_area` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/service_area
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /service_areas
+    :title: service_area
+```
+
+:::
+
+::::
+
+
+
+#### service_at_location
+
+`service_at_location` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/service_at_location/description
+```
+
+Each `service_at_location` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/service_at_location
+:collapse: contacts,phones,schedules,location,attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /service_at_locations
+    :title: service_at_location
+```
+
+:::
+
+::::
+
+
+#### language
+
+`language` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/language/description
+```
+
+Each `language` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/language
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /languages
+    :title: language
+```
+
+:::
+
+::::
+
+
+#### organization
+
+`organization` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/organization/description
+```
+
+Each `organization` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/organization
+:collapse: funding,contacts,phones,locations,programs,organization_identifiers,attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /organization
+    :title: organization
+```
+
+:::
+
+::::
+
+
+#### funding
+
+`funding` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/funding/description
+```
+
+Each `funding` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/funding
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /funding
+    :title: funding
+```
+
+:::
+
+::::
+
+
+#### cost_option
+
+`cost_option` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/cost_option/description
+```
+
+Each `cost_option` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/cost_option
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /cost_options
+    :title: cost_option
+```
+
+:::
+
+::::
+
+
+#### program
+
+`program` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/program/description
+```
+
+Each `program` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/program
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /program
+    :title: program
+```
+
+:::
+
+::::
+
+
+#### required_document
+
+`required_document` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/required_document/description
+```
+
+Each `required_document` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/required_document
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /required_documents
+    :title: required_document
+```
+
+:::
+
+::::
+
+
+#### contact
+
+`contact` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/contact/description
+```
+
+Each `contact` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/contact
+:collapse: phones,attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /contacts
+    :title: contact
+```
+
+:::
+
+::::
+
+
+#### attribute
+
+`attribute` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/attribute/description
+```
+
+Each `attribute` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/attribute
+:collapse: taxonomy_term,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /attributes
+    :title: attribute
+```
+
+:::
+
+::::
+
+
+#### metadata
+
+`metadata` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/metadata/description
+```
+
+Each `metadata` has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /metadata
+    :title: metadata
+```
+
+:::
+
+::::
