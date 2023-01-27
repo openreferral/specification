@@ -118,11 +118,14 @@ sphinx==4.5.0
     # via
     #   -r requirements.in
     #   myst-parser
+    #   sphinx-design
     #   sphinx-intl
     #   sphinx-rtd-theme
     #   sphinxcontrib-httpdomain
     #   sphinxcontrib-openapi
     #   sphinxcontrib-opendataservices
+sphinx-design==0.3.0
+    # via -r requirements.in
 sphinx-intl==2.0.1
     # via -r requirements.in
 sphinx-rtd-theme==1.1.1

@@ -1,5 +1,7 @@
 {% extends "!layout.html" %}
-
+{% set css_files = css_files + ["_static/jsonschema.css"] %}
+{% set css_files = css_files + ["_static/renderjson.css"] %}
+{% set script_files = script_files + ["_static/renderjson.js", "_static/json-example-format.js"] %}
 {% block footer %}
 <script async defer src="https://hypothes.is/embed.js"></script>
 
