@@ -33,7 +33,7 @@ Publishers should also be aware that some applications may wish to extract a 'sh
 :jsonpointer: /description
 ```
 
-Each `service` has the following fields:
+Each `service` object has the following fields:
 
 ::::{tab-set}
 
@@ -67,7 +67,7 @@ Each `service` has the following fields:
 :jsonpointer: /definitions/phone/description
 ```
 
-Each `phone` has the following fields:
+Each `phone` object has the following fields:
 
 ::::{tab-set}
 
@@ -102,7 +102,7 @@ Each `phone` has the following fields:
 :jsonpointer: /definitions/schedule/description
 ```
 
-Each `schedule` has the following fields:
+Each `schedule` object has the following fields:
 
 ::::{tab-set}
 
@@ -137,7 +137,7 @@ Each `schedule` has the following fields:
 :jsonpointer: /definitions/service_area/description
 ```
 
-Each `service_area` has the following fields:
+Each `service_area` object has the following fields:
 
 ::::{tab-set}
 
@@ -173,7 +173,7 @@ Each `service_area` has the following fields:
 :jsonpointer: /definitions/service_at_location/description
 ```
 
-Each `service_at_location` has the following fields:
+Each `service_at_location` object has the following fields:
 
 ::::{tab-set}
 
@@ -208,7 +208,7 @@ Each `service_at_location` has the following fields:
 :jsonpointer: /definitions/language/description
 ```
 
-Each `language` has the following fields:
+Each `language` object has the following fields:
 
 ::::{tab-set}
 
@@ -243,7 +243,7 @@ Each `language` has the following fields:
 :jsonpointer: /definitions/organization/description
 ```
 
-Each `organization` has the following fields:
+Each `organization` object has the following fields:
 
 ::::{tab-set}
 
@@ -278,7 +278,7 @@ Each `organization` has the following fields:
 :jsonpointer: /definitions/funding/description
 ```
 
-Each `funding` has the following fields:
+Each `funding` object has the following fields:
 
 ::::{tab-set}
 
@@ -313,7 +313,7 @@ Each `funding` has the following fields:
 :jsonpointer: /definitions/cost_option/description
 ```
 
-Each `cost_option` has the following fields:
+Each `cost_option` object has the following fields:
 
 ::::{tab-set}
 
@@ -348,7 +348,7 @@ Each `cost_option` has the following fields:
 :jsonpointer: /definitions/program/description
 ```
 
-Each `program` has the following fields:
+Each `program` object has the following fields:
 
 ::::{tab-set}
 
@@ -383,7 +383,7 @@ Each `program` has the following fields:
 :jsonpointer: /definitions/required_document/description
 ```
 
-Each `required_document` has the following fields:
+Each `required_document` object has the following fields:
 
 ::::{tab-set}
 
@@ -418,7 +418,7 @@ Each `required_document` has the following fields:
 :jsonpointer: /definitions/contact/description
 ```
 
-Each `contact` has the following fields:
+Each `contact` object has the following fields:
 
 ::::{tab-set}
 
@@ -453,7 +453,7 @@ Each `contact` has the following fields:
 :jsonpointer: /definitions/attribute/description
 ```
 
-Each `attribute` has the following fields:
+Each `attribute` object has the following fields:
 
 ::::{tab-set}
 
@@ -488,7 +488,7 @@ Each `attribute` has the following fields:
 :jsonpointer: /definitions/metadata/description
 ```
 
-Each `metadata` has the following fields:
+Each `metadata` object has the following fields:
 
 ::::{tab-set}
 
