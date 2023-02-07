@@ -241,7 +241,7 @@
         {
             "name": "service",
             "path": "services.csv",
-            "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the services_at_location table.",
+            "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the service_at_locations table.",
             "format": "csv",
             "mediatype": "text/csv",
             "profile": "tabular-data-resource",
@@ -1117,7 +1117,8 @@
         },
         {
             "name": "address",
-            "path": "addresss.csv",
+            "path": "addresses.csv",
+            "description": "Physical or postal address",
             "format": "csv",
             "mediatype": "text/csv",
             "profile": "tabular-data-resource",

@@ -11,7 +11,7 @@
   "logo": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png",
   "uri": "http://example.com",
   "parent_organization_id": "cd09a387-91f4-4555-94ec-e799c35344cd",
-  "fundings": [
+  "funding": [
     {
       "id": "1f2df32c-bf08-4b8e-bd6f-e834014b19bc",
       "source": "This service is funded partially by the MyCity local government and via grants made by charity funding bodies. We also operate a for-profit department which is used to partially cover the expense of the public service"
@@ -81,7 +81,7 @@
           "note": "Translation services provided via bilingual staff when they are available"
         }
       ],
-      "addresss": [
+      "addresses": [
         {
           "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
           "attention": "A. Persona",
@@ -120,7 +120,7 @@
           ]
         }
       ],
-      "accessibilitys": [
+      "accessibility": [
         {
           "id": "afcf296e-1cb2-4139-9c88-33d587d1a50b",
           "description": "The building is equipped with induction loops for hearing aids. Wheelchair access is possible on all levels.",
@@ -351,7 +351,7 @@
                 "note": "Translation services provided via bilingual staff when they are available"
               }
             ],
-            "addresss": [
+            "addresses": [
               {
                 "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
                 "attention": "A. Persona",
@@ -390,7 +390,7 @@
                 ]
               }
             ],
-            "accessibilitys": [
+            "accessibility": [
               {
                 "id": "afcf296e-1cb2-4139-9c88-33d587d1a50b",
                 "description": "The building is equipped with induction loops for hearing aids. Wheelchair access is possible on all levels.",
@@ -450,7 +450,7 @@
           "note": "Translation services provided via bilingual staff when they are available"
         }
       ],
-      "fundings": [
+      "funding": [
         {
           "id": "1f2df32c-bf08-4b8e-bd6f-e834014b19bc",
           "source": "This service is funded partially by the MyCity local government and via grants made by charity funding bodies. We also operate a for-profit department which is used to partially cover the expense of the public service"
