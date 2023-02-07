@@ -48,23 +48,219 @@
 	},
       "/services":
         {
-	  "description" : "Retrieve paginated listings of services that only have ono-to-one fields in them"
+	  "description" : "Retrieve paginated listings of services that only have one-to-one fields in them",
+	  "get":
+	    {
+	      "summary": "Retrieves paginated listings of services that only have one-to-one fields in them",
+	      "operationId": "getPaginatedListOfServices",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "A paginated list of services that only have one-to-one fields in them",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/service_simple.json"  }
+			    }
+			}
+		    }
+		}
+	    }
 	},
       "/taxonomies/{id}":
         {
-	  "description" : "Full information on taxonomy"
+	  "description" : "Full information on taxonomy",
+	  "get":
+	    {
+	      "summary": "Retrieves full information on a taxonomy by {id}",
+	      "operationId": "getTaxonomyById",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "Full information on taxonomy",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/taxonomy.json"  }
+			    }
+			}
+		    }
+		}
+	    }
 	},
       "/taxonomies":
         {
-	  "description" : "Paginated listing of taxonomies"
+	  "description" : "Paginated listing of taxonomies",
+	  "get":
+	    {
+	      "summary": "SUMMARY HERE",
+	      "operationId": "getPaginatedListOfTaxonomies",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "DESCRIPTION HERE",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/taxonomy.json"  }
+			    }
+			}
+		    }
+		}
+	    }
 	},
       "/taxonomy_terms":
         {
-	  "description" : "Full information on a taxonomy term"
+	  "description" : "Full information on a taxonomy term",
+	  "get":
+	    {
+	      "summary": "SUMMARY HERE",
+	      "operationId": "getTaxonomyTermById",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "DESCRIPTION HERE",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/taxonomy_term.json"  }
+			    }
+			}
+		    }
+		}
+	    }
 	},
       "/taxonomy_terms/{id}":
         {
-	  "description": "Paginated listing of taxonomy terms"
+	  "description": "Paginated listing of taxonomy terms",
+	  "get":
+	    {
+	      "summary": "SUMMARY HERE",
+	      "operationId": "getPaginatedListOfTaxonomyTerms",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "DESCRIPTION HERE",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/taxonomy_term.json"  }
+			    }
+			}
+		    }
+		}
+	    }
+	},
+      "/organizations/{id}":
+	{
+	  "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
+	  "get":
+	    {
+	      "summary": "SUMMARY HERE",
+	      "operationId": "getOrganizationById",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "DESCRIPTION HERE",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/organization_full.json"  }
+			    }
+			}
+		    }
+		}
+	    }
+	},
+      "/organizations":
+        {
+	  "description": "Paginated list of basic Organization information.",
+	  "get":
+	    {
+	      "summary": "SUMMARY HERE",
+	      "operationId": "getPaginatedListOfOrganizations",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "DESCRIPTION HERE",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/organization_simple.json"  }
+			    }
+			}
+		    }
+		}
+	    }
+	},
+      "/service_at_locations/{id}":
+        {
+	  "description": "Retrieve fully nested service_at_location with all related data with specified id.",
+	  "get":
+	    {
+	      "summary": "SUMMARY HERE",
+	      "operationId": "getServiceAtLocationWithNestedDataById",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "DESCRIPTION HERE",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/service_full.json"  }
+			    }
+			}
+		    }
+		}
+	    }
+	},
+      "/service_at_locations":
+        {
+	  "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
+	  "get":
+	    {
+	      "summary": "SUMMARY HERE",
+	      "operationId": "getPaginatedListOfServiceAtLocation",
+	      "description": "DESCRIPTION HERE",
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "DESCRIPTION HERE",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/service_at_location_simple.json"  }
+			    }
+			}
+		    }
+		}
+	    }
 	}
     }
 }
