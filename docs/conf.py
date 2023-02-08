@@ -33,8 +33,8 @@ import openreferral.svg_utils
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['myst_parser', 'sphinxcontrib.openapi', 'sphinxcontrib.opendataservices', 'sphinx_rtd_theme',]
-
+extensions = ['myst_parser', 'sphinxcontrib.openapi', 'sphinxcontrib.opendataservices', 'sphinx_rtd_theme','sphinxcontrib.jsonschema','sphinx_design']
+myst_enable_extensions = ["colon_fence"]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
