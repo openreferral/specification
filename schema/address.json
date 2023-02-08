@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The id of the postal address. Each postal address must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -25,7 +25,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location for which this is the postal address.",
             "constraints": {
                 "unique": false
@@ -47,7 +47,7 @@
         "address_1": {
             "name": "address_1",
             "type": "string",
-            "title": "Address 1",
+            "title": "Address line 1",
             "description": "The first line(s) of the address, including office, building number and street.",
             "constraints": {
                 "unique": false
@@ -58,7 +58,7 @@
         "address_2": {
             "name": "address_2",
             "type": "string",
-            "title": "Address 2",
+            "title": "Address line 2",
             "description": "A second (additional) line of address information.",
             "constraints": {
                 "unique": false
@@ -90,7 +90,7 @@
         "state_province": {
             "name": "state_province",
             "type": "string",
-            "title": "State Province",
+            "title": "State Or Province",
             "description": "The state or province in which the address is located.",
             "constraints": {
                 "unique": false

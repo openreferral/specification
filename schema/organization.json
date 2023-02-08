@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each organization must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -92,7 +92,7 @@
         "tax_id": {
             "name": "tax_id",
             "type": "string",
-            "title": "Tax Id",
+            "title": "Tax Identifier",
             "description": "DEPRECATED: A government issued identifier used for the purpose of tax administration.",
             "constraints": {
                 "unique": false
@@ -133,7 +133,7 @@
         "uri": {
             "name": "uri",
             "type": "string",
-            "title": "Uri",
+            "title": "URI",
             "description": "A persistent identifier to uniquely identify the organization such as those provided by Open Corporates or some other relevant URI provider. This is not for listing the website of the organization: that can be done through the website field of the Organization.",
             "format": "uri",
             "constraints": {
@@ -144,7 +144,7 @@
         "parent_organization_id": {
             "name": "parent_organization_id",
             "type": "string",
-            "title": "Parent Organization Id",
+            "title": "Parent Organization Identifier",
             "description": "The identifier of the organization's parent organization",
             "constraints": {
                 "unique": false

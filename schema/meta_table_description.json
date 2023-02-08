@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {

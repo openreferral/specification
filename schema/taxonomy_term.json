@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for this taxonomy term. Each taxonomy term must have a unique identifier, within the scope of the dataset.",
             "format": "uuid",
             "constraints": {
@@ -56,7 +56,7 @@
         "parent_id": {
             "name": "parent_id",
             "type": "string",
-            "title": "Parent Id",
+            "title": "Parent Identifier",
             "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
             "constraints": {
                 "unique": false
@@ -94,7 +94,7 @@
         "taxonomy_id": {
             "name": "taxonomy_id",
             "type": "string",
-            "title": "Taxonomy Id",
+            "title": "Taxonomy Identifier",
             "description": "The identifier of the taxonomy containing the term",
             "constraints": {
                 "unique": false
@@ -104,7 +104,7 @@
         "term_uri": {
             "name": "term_uri",
             "type": "string",
-            "title": "Term Uri",
+            "title": "Term URI",
             "description": "URI of the term",
             "format": "uri",
             "constraints": {

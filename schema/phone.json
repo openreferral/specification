@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The id for a phone number. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -25,7 +25,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location where this phone number is located",
             "constraints": {
                 "unique": false
@@ -35,7 +35,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this is the phone number",
             "constraints": {
                 "unique": false
@@ -45,7 +45,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The identifier of the organization for which this is the phone number",
             "constraints": {
                 "unique": false
@@ -55,7 +55,7 @@
         "contact_id": {
             "name": "contact_id",
             "type": "string",
-            "title": "Contact Id",
+            "title": "Contact Identifier",
             "description": "The identifier of the contact for which this is the phone number",
             "constraints": {
                 "unique": false
@@ -66,7 +66,7 @@
         "service_at_location_id": {
             "name": "service_at_location_id",
             "type": "string",
-            "title": "Service At Location Id",
+            "title": "Service At Location Identifier",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this phone number is specific to a service in a particular location.",
             "constraints": {
                 "unique": false

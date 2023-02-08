@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for this accessibility information. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -25,7 +25,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location for which the entry describes the accessibility provision",
             "constraints": {
                 "unique": false
@@ -57,7 +57,7 @@
         "url": {
             "name": "url",
             "type": "string",
-            "title": "Url",
+            "title": "URL",
             "description": "URL of a page giving more information about the accessibility of the location",
             "format": "uri",
             "constraints": {

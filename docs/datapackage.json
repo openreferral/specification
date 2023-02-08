@@ -1,0 +1,14 @@
+{
+    "name": "human_services_data",
+    "title": "Human Services Data Specification",
+    "description": "HSDS describes data about organizations, the services they provide, the locations at which these services can be accessed, and associated details.",
+    "profile": "tabular-data-package",
+    "version": "3.0.0",
+    "homepage": "http://docs.openreferral.org",
+    "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "type": "CC-BY-SA-4.0",
+        "name": "Creative Commons Attribution-ShareAlike 4.0"
+    },
+    "resources": []
+}

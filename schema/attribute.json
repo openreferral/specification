@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -25,7 +25,7 @@
         "link_id": {
             "name": "link_id",
             "type": "string",
-            "title": "Link Id",
+            "title": "Link Identifier",
             "description": "The identifier of the entity to which this taxonomy term applies.",
             "constraints": {
                 "unique": false
@@ -36,7 +36,7 @@
         "taxonomy_term_id": {
             "name": "taxonomy_term_id",
             "type": "string",
-            "title": "Taxonomy Term Id",
+            "title": "Taxonomy Term Identifier",
             "description": "The identifier of this taxonomy term from the taxonomy table.",
             "constraints": {
                 "unique": false
