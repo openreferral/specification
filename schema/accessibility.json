@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "The identifier for this accessibility information. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -24,6 +25,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
+            "title": "Location Id",
             "description": "The identifier of the location for which the entry describes the accessibility provision",
             "constraints": {
                 "unique": false
@@ -34,6 +36,7 @@
         "description": {
             "name": "description",
             "type": "string",
+            "title": "Description",
             "description": "Description of assistance or infrastructure that facilitate access to clients with disabilities.",
             "constraints": {
                 "unique": false
@@ -44,6 +47,7 @@
         "details": {
             "name": "details",
             "type": "string",
+            "title": "Details",
             "description": "Any further details relating to the relevant accessibility arrangements at this location. E.g. whether advance notice is required to use an accessibility facility.",
             "constraints": {
                 "unique": false
@@ -53,6 +57,7 @@
         "url": {
             "name": "url",
             "type": "string",
+            "title": "Url",
             "description": "URL of a page giving more information about the accessibility of the location",
             "format": "uri",
             "constraints": {
@@ -62,16 +67,18 @@
         },
         "attributes": {
             "name": "attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
+            "title": "Attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

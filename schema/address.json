@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "The id of the postal address. Each postal address must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -24,6 +25,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
+            "title": "Location Id",
             "description": "The identifier of the location for which this is the postal address.",
             "constraints": {
                 "unique": false
@@ -34,6 +36,7 @@
         "attention": {
             "name": "attention",
             "type": "string",
+            "title": "Attention",
             "description": "The name of the person or entity whose attention should be sought at the location. These are often included as a \"care of\" component of an address.",
             "constraints": {
                 "unique": false
@@ -44,6 +47,7 @@
         "address_1": {
             "name": "address_1",
             "type": "string",
+            "title": "Address 1",
             "description": "The first line(s) of the address, including office, building number and street.",
             "constraints": {
                 "unique": false
@@ -54,6 +58,7 @@
         "address_2": {
             "name": "address_2",
             "type": "string",
+            "title": "Address 2",
             "description": "A second (additional) line of address information.",
             "constraints": {
                 "unique": false
@@ -63,6 +68,7 @@
         "city": {
             "name": "city",
             "type": "string",
+            "title": "City",
             "description": "The city in which the address is located.",
             "constraints": {
                 "unique": false
@@ -73,6 +79,7 @@
         "region": {
             "name": "region",
             "type": "string",
+            "title": "Region",
             "description": "The region in which the address is located (optional).",
             "constraints": {
                 "unique": false
@@ -83,6 +90,7 @@
         "state_province": {
             "name": "state_province",
             "type": "string",
+            "title": "State Province",
             "description": "The state or province in which the address is located.",
             "constraints": {
                 "unique": false
@@ -92,6 +100,7 @@
         "postal_code": {
             "name": "postal_code",
             "type": "string",
+            "title": "Postal Code",
             "description": "The postal code for the address.",
             "constraints": {
                 "unique": false
@@ -102,6 +111,7 @@
         "country": {
             "name": "country",
             "type": "string",
+            "title": "Country",
             "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
             "constraints": {
                 "unique": false
@@ -112,6 +122,7 @@
         "address_type": {
             "name": "address_type",
             "type": "string",
+            "title": "Address Type",
             "description": "The type of address which may be physical, postal, or virtual.",
             "constraints": {
                 "unique": false
@@ -125,16 +136,18 @@
         },
         "attributes": {
             "name": "attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
+            "title": "Attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

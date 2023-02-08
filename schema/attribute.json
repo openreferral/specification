@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -24,6 +25,7 @@
         "link_id": {
             "name": "link_id",
             "type": "string",
+            "title": "Link Id",
             "description": "The identifier of the entity to which this taxonomy term applies.",
             "constraints": {
                 "unique": false
@@ -34,6 +36,7 @@
         "taxonomy_term_id": {
             "name": "taxonomy_term_id",
             "type": "string",
+            "title": "Taxonomy Term Id",
             "description": "The identifier of this taxonomy term from the taxonomy table.",
             "constraints": {
                 "unique": false
@@ -44,6 +47,7 @@
         "link_type": {
             "name": "link_type",
             "type": "string",
+            "title": "Link Type",
             "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes e.g. the service eligibility or intended audience.",
             "constraints": {
                 "unique": false
@@ -54,6 +58,7 @@
         "link_entity": {
             "name": "link_entity",
             "type": "string",
+            "title": "Link Entity",
             "description": "The table of the link_id",
             "constraints": {
                 "unique": false
@@ -64,6 +69,7 @@
         "value": {
             "name": "value",
             "type": "string",
+            "title": "Value",
             "description": "The value (if any) of an attribute",
             "constraints": {
                 "unique": false
@@ -73,13 +79,15 @@
         },
         "taxonomy_term": {
             "name": "taxonomy_term",
+            "title": "Taxonomy Term",
             "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
             "$ref": "taxonomy_term.json"
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }
