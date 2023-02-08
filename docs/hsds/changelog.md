@@ -104,3 +104,4 @@ No changes.
 * Updated datapackage.JSON and example data to reflect schema changes;
 * Updated reference page to reflect schema changes;
 * Updated logical model to reflect schema changes;
+* Updated formatting guidance to reflect schema changes;
