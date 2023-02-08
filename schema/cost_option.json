@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -24,7 +24,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the services for which the entry describes the cost",
             "constraints": {
                 "unique": false

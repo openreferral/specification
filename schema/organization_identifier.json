@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -24,7 +24,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
             "constraints": {
                 "unique": false
@@ -54,7 +54,7 @@
         "identifier": {
             "name": "identifier",
             "type": "string",
-            "title": "Identifier",
+            "title": "Third Party Identifier",
             "description": "The third-party identifier",
             "constraints": {
                 "unique": false

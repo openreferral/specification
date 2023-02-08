@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier of the location. Each location must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -40,7 +40,7 @@
         "url": {
             "name": "url",
             "type": "string",
-            "title": "Url",
+            "title": "URL",
             "description": "If location_type is virtual, then this field represents the URL of a virtual location.",
             "format": "uri",
             "constraints": {
@@ -52,7 +52,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The organization identifier for a location. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
             "constraints": {
                 "unique": false

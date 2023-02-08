@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the funding. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -24,7 +24,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The identifier of the organization in receipt of this funding.",
             "constraints": {
                 "unique": false
@@ -34,7 +34,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service in receipt of this funding",
             "constraints": {
                 "unique": false

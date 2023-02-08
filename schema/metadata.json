@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -24,7 +24,7 @@
         "resource_id": {
             "name": "resource_id",
             "type": "string",
-            "title": "Resource Id",
+            "title": "Resource Identifier",
             "description": "Each service, program. location, address, or contact will have a unique identifier.",
             "constraints": {
                 "unique": false

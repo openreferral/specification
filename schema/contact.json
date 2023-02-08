@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the contact. Each contact must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -25,7 +25,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The identifier of the organization for which this is a contact",
             "constraints": {
                 "unique": false
@@ -35,7 +35,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this is a contact",
             "constraints": {
                 "unique": false
@@ -46,7 +46,7 @@
         "service_at_location_id": {
             "name": "service_at_location_id",
             "type": "string",
-            "title": "Service At Location Id",
+            "title": "Service At Location Identifier",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this contact is specific to a service in a particular location.",
             "constraints": {
                 "unique": false
@@ -56,7 +56,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier for the location_id when the location of the contact is relevant.",
             "constraints": {
                 "unique": false

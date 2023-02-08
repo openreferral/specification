@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the service area. Each service area must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -25,7 +25,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this entry describes the service area",
             "constraints": {
                 "unique": false
@@ -78,7 +78,7 @@
         "uri": {
             "name": "uri",
             "type": "string",
-            "title": "Uri",
+            "title": "URI",
             "description": "A URI which acts as a persistent identifier to identifiy an area",
             "constraints": {
                 "unique": false

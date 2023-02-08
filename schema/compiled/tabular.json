@@ -18,7 +18,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each organization must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -97,7 +97,7 @@
           "tax_id": {
             "name": "tax_id",
             "type": "string",
-            "title": "Tax Id",
+            "title": "Tax Identifier",
             "description": "DEPRECATED: A government issued identifier used for the purpose of tax administration.",
             "constraints": {
               "unique": false
@@ -138,7 +138,7 @@
           "uri": {
             "name": "uri",
             "type": "string",
-            "title": "Uri",
+            "title": "URI",
             "description": "A persistent identifier to uniquely identify the organization such as those provided by Open Corporates or some other relevant URI provider. This is not for listing the website of the organization: that can be done through the website field of the Organization.",
             "format": "uri",
             "constraints": {
@@ -149,7 +149,7 @@
           "parent_organization_id": {
             "name": "parent_organization_id",
             "type": "string",
-            "title": "Parent Organization Id",
+            "title": "Parent Organization Identifier",
             "description": "The identifier of the organization's parent organization",
             "constraints": {
               "unique": false
@@ -253,7 +253,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the program. Each program must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -264,7 +264,7 @@
           "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The identifier for the organization which the program belongs to. Each program must belong to a single organization, and the identifier for that organization should be given here.",
             "constraints": {
               "unique": true
@@ -347,7 +347,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the service. Each service must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -359,7 +359,7 @@
           "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The identifier of the organization that provides this service.",
             "constraints": {
               "unique": false
@@ -370,7 +370,7 @@
           "program_id": {
             "name": "program_id",
             "type": "string",
-            "title": "Program Id",
+            "title": "Program Identifier",
             "description": "The identifier of the program this service is delivered under.",
             "constraints": {
               "unique": false
@@ -412,7 +412,7 @@
           "url": {
             "name": "url",
             "type": "string",
-            "title": "Url",
+            "title": "URL",
             "description": "URL of the service",
             "format": "uri",
             "constraints": {
@@ -710,7 +710,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -722,7 +722,7 @@
           "link_id": {
             "name": "link_id",
             "type": "string",
-            "title": "Link Id",
+            "title": "Link Identifier",
             "description": "The identifier of the entity to which this taxonomy term applies.",
             "constraints": {
               "unique": false
@@ -733,7 +733,7 @@
           "taxonomy_term_id": {
             "name": "taxonomy_term_id",
             "type": "string",
-            "title": "Taxonomy Term Id",
+            "title": "Taxonomy Term Identifier",
             "description": "The identifier of this taxonomy term from the taxonomy table.",
             "constraints": {
               "unique": false
@@ -811,7 +811,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier of the entry. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -823,7 +823,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service at a given location.",
             "constraints": {
               "unique": false
@@ -834,7 +834,7 @@
           "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location where this service operates.",
             "constraints": {
               "unique": false
@@ -924,7 +924,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier of the location. Each location must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -951,7 +951,7 @@
           "url": {
             "name": "url",
             "type": "string",
-            "title": "Url",
+            "title": "URL",
             "description": "If location_type is virtual, then this field represents the URL of a virtual location.",
             "format": "uri",
             "constraints": {
@@ -963,7 +963,7 @@
           "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The organization identifier for a location. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
             "constraints": {
               "unique": false
@@ -1150,7 +1150,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The id for a phone number. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -1162,7 +1162,7 @@
           "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location where this phone number is located",
             "constraints": {
               "unique": false
@@ -1172,7 +1172,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this is the phone number",
             "constraints": {
               "unique": false
@@ -1182,7 +1182,7 @@
           "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The identifier of the organization for which this is the phone number",
             "constraints": {
               "unique": false
@@ -1192,7 +1192,7 @@
           "contact_id": {
             "name": "contact_id",
             "type": "string",
-            "title": "Contact Id",
+            "title": "Contact Identifier",
             "description": "The identifier of the contact for which this is the phone number",
             "constraints": {
               "unique": false
@@ -1203,7 +1203,7 @@
           "service_at_location_id": {
             "name": "service_at_location_id",
             "type": "string",
-            "title": "Service At Location Id",
+            "title": "Service At Location Identifier",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this phone number is specific to a service in a particular location.",
             "constraints": {
               "unique": false
@@ -1302,7 +1302,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the contact. Each contact must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -1314,7 +1314,7 @@
           "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The identifier of the organization for which this is a contact",
             "constraints": {
               "unique": false
@@ -1324,7 +1324,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this is a contact",
             "constraints": {
               "unique": false
@@ -1335,7 +1335,7 @@
           "service_at_location_id": {
             "name": "service_at_location_id",
             "type": "string",
-            "title": "Service At Location Id",
+            "title": "Service At Location Identifier",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this contact is specific to a service in a particular location.",
             "constraints": {
               "unique": false
@@ -1345,7 +1345,7 @@
           "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier for the location_id when the location of the contact is relevant.",
             "constraints": {
               "unique": false
@@ -1445,7 +1445,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The id of the postal address. Each postal address must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -1457,7 +1457,7 @@
           "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location for which this is the postal address.",
             "constraints": {
               "unique": false
@@ -1479,7 +1479,7 @@
           "address_1": {
             "name": "address_1",
             "type": "string",
-            "title": "Address 1",
+            "title": "Address line 1",
             "description": "The first line(s) of the address, including office, building number and street.",
             "constraints": {
               "unique": false
@@ -1490,7 +1490,7 @@
           "address_2": {
             "name": "address_2",
             "type": "string",
-            "title": "Address 2",
+            "title": "Address line 2",
             "description": "A second (additional) line of address information.",
             "constraints": {
               "unique": false
@@ -1522,7 +1522,7 @@
           "state_province": {
             "name": "state_province",
             "type": "string",
-            "title": "State Province",
+            "title": "State Or Province",
             "description": "The state or province in which the address is located.",
             "constraints": {
               "unique": false
@@ -1613,7 +1613,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the schedule. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -1625,7 +1625,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this is the regular schedule",
             "constraints": {
               "unique": false
@@ -1636,7 +1636,7 @@
           "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location for which this is the regular schedule",
             "constraints": {
               "unique": false
@@ -1646,7 +1646,7 @@
           "service_at_location_id": {
             "name": "service_at_location_id",
             "type": "string",
-            "title": "Service At Location Id",
+            "title": "Service At Location Identifier",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this schedule is specific to a service in a particular location.",
             "constraints": {
               "unique": false
@@ -1681,7 +1681,7 @@
           "dtstart": {
             "name": "dtstart",
             "type": "string",
-            "title": "Dtstart",
+            "title": "Date Start",
             "description": "iCal - The date of the first event is the schedule. Necessary when using the \u2018interval\u2019 feature, optional otherwise.",
             "constraints": {
               "unique": false
@@ -1725,7 +1725,7 @@
           "wkst": {
             "name": "wkst",
             "type": "string",
-            "title": "Wkst",
+            "title": "Week Start",
             "description": "iCal - The day on which the week starts, eg MO.",
             "constraints": {
               "unique": false
@@ -1744,7 +1744,7 @@
           "freq": {
             "name": "freq",
             "type": "string",
-            "title": "Freq",
+            "title": "Frequency",
             "description": "iCal - How often the frequency repeats. E.g. Frequency use one of WEEKLY or MONTHLY.",
             "constraints": {
               "unique": false
@@ -1770,7 +1770,7 @@
           "byday": {
             "name": "byday",
             "type": "string",
-            "title": "Byday",
+            "title": "By Day",
             "description": "iCal - Comma seperated days of the week. E.g. SU,MO,TU,WE,TH,FR,SA. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
             "constraints": {
               "unique": false
@@ -1781,7 +1781,7 @@
           "byweekno": {
             "name": "byweekno",
             "type": "string",
-            "title": "Byweekno",
+            "title": "By Week Number",
             "description": "iCal - Comma seperated numeric weeks of the year if freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
             "constraints": {
               "unique": false
@@ -1791,7 +1791,7 @@
           "bymonthday": {
             "name": "bymonthday",
             "type": "number",
-            "title": "Bymonthday",
+            "title": "By Month Day",
             "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
             "constraints": {
               "unique": false
@@ -1802,7 +1802,7 @@
           "byyearday": {
             "name": "byyearday",
             "type": "number",
-            "title": "Byyearday",
+            "title": "By Year Day",
             "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
             "constraints": {
               "unique": false
@@ -1916,7 +1916,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the funding. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -1927,7 +1927,7 @@
           "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "The identifier of the organization in receipt of this funding.",
             "constraints": {
               "unique": false
@@ -1937,7 +1937,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service in receipt of this funding",
             "constraints": {
               "unique": false
@@ -1995,7 +1995,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the service area. Each service area must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -2007,7 +2007,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this entry describes the service area",
             "constraints": {
               "unique": false
@@ -2060,7 +2060,7 @@
           "uri": {
             "name": "uri",
             "type": "string",
-            "title": "Uri",
+            "title": "URI",
             "description": "A URI which acts as a persistent identifier to identifiy an area",
             "constraints": {
               "unique": false
@@ -2108,7 +2108,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the document. Each document must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -2119,7 +2119,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this entry describes the required document",
             "constraints": {
               "unique": false
@@ -2139,7 +2139,7 @@
           "uri": {
             "name": "uri",
             "type": "string",
-            "title": "Uri",
+            "title": "URI",
             "description": "Web link to document.",
             "format": "uri",
             "constraints": {
@@ -2188,7 +2188,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the language. Each langauge must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -2200,7 +2200,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which the entry describes the languages in which services are delivered",
             "constraints": {
               "unique": false
@@ -2211,7 +2211,7 @@
           "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location for which the entry describes the languages in which services are delivered",
             "constraints": {
               "unique": false
@@ -2221,7 +2221,7 @@
           "phone_id": {
             "name": "phone_id",
             "type": "string",
-            "title": "Phone Id",
+            "title": "Phone Identifier",
             "description": "The identifier of the phone for which the entry describes the languages in which phone is availible in.",
             "constraints": {
               "unique": false
@@ -2300,7 +2300,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for this accessibility information. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -2312,7 +2312,7 @@
           "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location for which the entry describes the accessibility provision",
             "constraints": {
               "unique": false
@@ -2344,7 +2344,7 @@
           "url": {
             "name": "url",
             "type": "string",
-            "title": "Url",
+            "title": "URL",
             "description": "URL of a page giving more information about the accessibility of the location",
             "format": "uri",
             "constraints": {
@@ -2393,7 +2393,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for this taxonomy term. Each taxonomy term must have a unique identifier, within the scope of the dataset.",
             "format": "uuid",
             "constraints": {
@@ -2436,7 +2436,7 @@
           "parent_id": {
             "name": "parent_id",
             "type": "string",
-            "title": "Parent Id",
+            "title": "Parent Identifier",
             "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
             "constraints": {
               "unique": false
@@ -2468,7 +2468,7 @@
           "taxonomy_id": {
             "name": "taxonomy_id",
             "type": "string",
-            "title": "Taxonomy Id",
+            "title": "Taxonomy Identifier",
             "description": "The identifier of the taxonomy containing the term",
             "constraints": {
               "unique": false
@@ -2478,7 +2478,7 @@
           "term_uri": {
             "name": "term_uri",
             "type": "string",
-            "title": "Term Uri",
+            "title": "Term URI",
             "description": "URI of the term",
             "format": "uri",
             "constraints": {
@@ -2520,7 +2520,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -2531,7 +2531,7 @@
           "resource_id": {
             "name": "resource_id",
             "type": "string",
-            "title": "Resource Id",
+            "title": "Resource Identifier",
             "description": "Each service, program. location, address, or contact will have a unique identifier.",
             "constraints": {
               "unique": false
@@ -2642,7 +2642,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -2718,7 +2718,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -2729,7 +2729,7 @@
           "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the services for which the entry describes the cost",
             "constraints": {
               "unique": false
@@ -2842,7 +2842,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -2853,7 +2853,7 @@
           "organization_id": {
             "name": "organization_id",
             "type": "string",
-            "title": "Organization Id",
+            "title": "Organization Identifier",
             "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
             "constraints": {
               "unique": false
@@ -2883,7 +2883,7 @@
           "identifier": {
             "name": "identifier",
             "type": "string",
-            "title": "Identifier",
+            "title": "Third Party Identifier",
             "description": "The third-party identifier",
             "constraints": {
               "unique": false
@@ -2936,7 +2936,7 @@
           "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -2967,7 +2967,7 @@
           "uri": {
             "name": "uri",
             "type": "string",
-            "title": "Uri",
+            "title": "URI",
             "description": "The URI of the taxonomy.",
             "format": "uri",
             "constraints": {

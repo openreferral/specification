@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the schedule. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -25,7 +25,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which this is the regular schedule",
             "constraints": {
                 "unique": false
@@ -36,7 +36,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location for which this is the regular schedule",
             "constraints": {
                 "unique": false
@@ -46,7 +46,7 @@
         "service_at_location_id": {
             "name": "service_at_location_id",
             "type": "string",
-            "title": "Service At Location Id",
+            "title": "Service At Location Identifier",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this schedule is specific to a service in a particular location.",
             "constraints": {
                 "unique": false
@@ -81,7 +81,7 @@
         "dtstart": {
             "name": "dtstart",
             "type": "string",
-            "title": "Dtstart",
+            "title": "Date Start",
             "description": "iCal - The date of the first event is the schedule. Necessary when using the \u2018interval\u2019 feature, optional otherwise.",
             "constraints": {
                 "unique": false
@@ -125,7 +125,7 @@
         "wkst": {
             "name": "wkst",
             "type": "string",
-            "title": "Wkst",
+            "title": "Week Start",
             "description": "iCal - The day on which the week starts, eg MO.",
             "constraints": {
                 "unique": false
@@ -144,7 +144,7 @@
         "freq": {
             "name": "freq",
             "type": "string",
-            "title": "Freq",
+            "title": "Frequency",
             "description": "iCal - How often the frequency repeats. E.g. Frequency use one of WEEKLY or MONTHLY.",
             "constraints": {
                 "unique": false
@@ -170,7 +170,7 @@
         "byday": {
             "name": "byday",
             "type": "string",
-            "title": "Byday",
+            "title": "By Day",
             "description": "iCal - Comma seperated days of the week. E.g. SU,MO,TU,WE,TH,FR,SA. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
             "constraints": {
                 "unique": false
@@ -181,7 +181,7 @@
         "byweekno": {
             "name": "byweekno",
             "type": "string",
-            "title": "Byweekno",
+            "title": "By Week Number",
             "description": "iCal - Comma seperated numeric weeks of the year if freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
             "constraints": {
                 "unique": false
@@ -191,7 +191,7 @@
         "bymonthday": {
             "name": "bymonthday",
             "type": "number",
-            "title": "Bymonthday",
+            "title": "By Month Day",
             "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
             "constraints": {
                 "unique": false
@@ -202,7 +202,7 @@
         "byyearday": {
             "name": "byyearday",
             "type": "number",
-            "title": "Byyearday",
+            "title": "By Year Day",
             "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
             "constraints": {
                 "unique": false

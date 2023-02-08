@@ -13,7 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
-            "title": "Id",
+            "title": "Identifier",
             "description": "The identifier for the language. Each langauge must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -25,7 +25,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
-            "title": "Service Id",
+            "title": "Service Identifier",
             "description": "The identifier of the service for which the entry describes the languages in which services are delivered",
             "constraints": {
                 "unique": false
@@ -36,7 +36,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
-            "title": "Location Id",
+            "title": "Location Identifier",
             "description": "The identifier of the location for which the entry describes the languages in which services are delivered",
             "constraints": {
                 "unique": false
@@ -46,7 +46,7 @@
         "phone_id": {
             "name": "phone_id",
             "type": "string",
-            "title": "Phone Id",
+            "title": "Phone Identifier",
             "description": "The identifier of the phone for which the entry describes the languages in which phone is availible in.",
             "constraints": {
                 "unique": false
