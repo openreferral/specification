@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -23,6 +24,7 @@
         "name": {
             "name": "name",
             "type": "string",
+            "title": "Name",
             "description": "The name of the taxonomy from which terms are sourced.",
             "constraints": {
                 "unique": false
@@ -32,6 +34,7 @@
         "description": {
             "name": "description",
             "type": "string",
+            "title": "Description",
             "description": "Description of the taxonomy.",
             "constraints": {
                 "unique": false
@@ -41,6 +44,7 @@
         "uri": {
             "name": "uri",
             "type": "string",
+            "title": "Uri",
             "description": "The URI of the taxonomy.",
             "format": "uri",
             "constraints": {
@@ -51,6 +55,7 @@
         "version": {
             "name": "version",
             "type": "string",
+            "title": "Version",
             "description": "The taxonomy's version.",
             "constraints": {
                 "unique": false
@@ -59,8 +64,9 @@
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

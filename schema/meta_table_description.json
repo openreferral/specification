@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -23,6 +24,7 @@
         "name": {
             "name": "name",
             "type": "string",
+            "title": "Name",
             "constraints": {
                 "unique": false
             },
@@ -31,6 +33,7 @@
         "language": {
             "name": "language",
             "type": "string",
+            "title": "Language",
             "constraints": {
                 "unique": false
             },
@@ -39,6 +42,7 @@
         "character_set": {
             "name": "character_set",
             "type": "string",
+            "title": "Character Set",
             "constraints": {
                 "unique": false
             },
@@ -46,16 +50,18 @@
         },
         "attributes": {
             "name": "attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
+            "title": "Attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

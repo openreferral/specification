@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -23,6 +24,7 @@
         "resource_id": {
             "name": "resource_id",
             "type": "string",
+            "title": "Resource Id",
             "description": "Each service, program. location, address, or contact will have a unique identifier.",
             "constraints": {
                 "unique": false
@@ -32,6 +34,7 @@
         "resource_type": {
             "name": "resource_type",
             "type": "string",
+            "title": "Resource Type",
             "description": "The type of entity being referenced",
             "constraints": {
                 "unique": false
@@ -41,6 +44,7 @@
         "last_action_date": {
             "name": "last_action_date",
             "type": "string",
+            "title": "Last Action Date",
             "description": "The date when data was changed.",
             "constraints": {
                 "unique": false
@@ -51,6 +55,7 @@
         "last_action_type": {
             "name": "last_action_type",
             "type": "string",
+            "title": "Last Action Type",
             "description": "The kind of change made to the data; eg create, update, delete",
             "constraints": {
                 "unique": false
@@ -60,6 +65,7 @@
         "field_name": {
             "name": "field_name",
             "type": "string",
+            "title": "Field Name",
             "description": "The name of field that has been modified",
             "constraints": {
                 "unique": false
@@ -69,6 +75,7 @@
         "previous_value": {
             "name": "previous_value",
             "type": "string",
+            "title": "Previous Value",
             "description": "The previous value of a field that has been updated",
             "constraints": {
                 "unique": false
@@ -78,6 +85,7 @@
         "replacement_value": {
             "name": "replacement_value",
             "type": "string",
+            "title": "Replacement Value",
             "description": "The new value of a field that has been updated",
             "constraints": {
                 "unique": false
@@ -87,6 +95,7 @@
         "updated_by": {
             "name": "updated_by",
             "type": "string",
+            "title": "Updated By",
             "description": "The name of the person who updated a value",
             "constraints": {
                 "unique": false

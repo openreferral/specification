@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "The identifier for this taxonomy term. Each taxonomy term must have a unique identifier, within the scope of the dataset.",
             "format": "uuid",
             "constraints": {
@@ -24,6 +25,7 @@
         "code": {
             "name": "code",
             "type": "string",
+            "title": "Code",
             "description": "The term identfier as used in the taxonomy. This and the taxonomy_id combined define the term",
             "constraints": {
                 "unique": true
@@ -33,6 +35,7 @@
         "name": {
             "name": "name",
             "type": "string",
+            "title": "Name",
             "description": "The taxonomy term itself. ",
             "constraints": {
                 "unique": false
@@ -43,6 +46,7 @@
         "description": {
             "name": "description",
             "type": "string",
+            "title": "Description",
             "description": "What the term means",
             "constraints": {
                 "unique": false
@@ -52,6 +56,7 @@
         "parent_id": {
             "name": "parent_id",
             "type": "string",
+            "title": "Parent Id",
             "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
             "constraints": {
                 "unique": false
@@ -62,6 +67,7 @@
         "taxonomy": {
             "name": "taxonomy",
             "type": "string",
+            "title": "Taxonomy",
             "description": "If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility. If possible, provide a URI.",
             "constraints": {
                 "unique": false
@@ -71,12 +77,14 @@
         },
         "taxonomy_detail": {
             "name": "taxonomy",
+            "title": "Taxonomy",
             "description": "Taxonomies from which taxonomy terms are taken",
             "$ref": "taxonomy.json"
         },
         "language": {
             "name": "language",
             "type": "string",
+            "title": "Language",
             "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
             "constraints": {
                 "unique": false
@@ -86,6 +94,7 @@
         "taxonomy_id": {
             "name": "taxonomy_id",
             "type": "string",
+            "title": "Taxonomy Id",
             "description": "The identifier of the taxonomy containing the term",
             "constraints": {
                 "unique": false
@@ -95,6 +104,7 @@
         "term_uri": {
             "name": "term_uri",
             "type": "string",
+            "title": "Term Uri",
             "description": "URI of the term",
             "format": "uri",
             "constraints": {
@@ -104,8 +114,9 @@
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
@@ -23,6 +24,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
+            "title": "Service Id",
             "description": "The identifier of the services for which the entry describes the cost",
             "constraints": {
                 "unique": false
@@ -32,6 +34,7 @@
         "valid_from": {
             "name": "valid_from",
             "type": "string",
+            "title": "Valid From",
             "description": "When this price is valid from",
             "constraints": {
                 "unique": false
@@ -42,6 +45,7 @@
         "valid_to": {
             "name": "valid_to",
             "type": "string",
+            "title": "Valid To",
             "description": "When this price is valid to",
             "constraints": {
                 "unique": false
@@ -52,6 +56,7 @@
         "option": {
             "name": "option",
             "type": "string",
+            "title": "Option",
             "description": "Conditions associated with the cost option.\n\nApplication Profile Notes: e.g.For the over 60's\n1st session",
             "constraints": {
                 "unique": false
@@ -61,6 +66,7 @@
         "currency": {
             "name": "currency",
             "type": "string",
+            "title": "Currency",
             "description": "3 letter currency code",
             "constraints": {
                 "unique": false
@@ -70,6 +76,7 @@
         "amount": {
             "name": "amount",
             "type": "number",
+            "title": "Amount",
             "description": "The cost of the option, expresssed as an amount in a currency (expected to be GBP by Open Referral UK).",
             "constraints": {
                 "unique": false
@@ -79,6 +86,7 @@
         "amount_description": {
             "name": "amount_description",
             "type": "string",
+            "title": "Amount Description",
             "description": "Specific details qualifying the cost amount, e.g. 'per session'",
             "constraints": {
                 "unique": false
@@ -87,16 +95,18 @@
         },
         "attributes": {
             "name": "attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
+            "title": "Attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "The identifier for the schedule. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -24,6 +25,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
+            "title": "Service Id",
             "description": "The identifier of the service for which this is the regular schedule",
             "constraints": {
                 "unique": false
@@ -34,6 +36,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
+            "title": "Location Id",
             "description": "The identifier of the location for which this is the regular schedule",
             "constraints": {
                 "unique": false
@@ -43,6 +46,7 @@
         "service_at_location_id": {
             "name": "service_at_location_id",
             "type": "string",
+            "title": "Service At Location Id",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this schedule is specific to a service in a particular location.",
             "constraints": {
                 "unique": false
@@ -53,6 +57,7 @@
         "valid_from": {
             "name": "valid_from",
             "type": "string",
+            "title": "Valid From",
             "description": "The date from which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
             "constraints": {
                 "unique": false
@@ -64,6 +69,7 @@
         "valid_to": {
             "name": "valid_to",
             "type": "string",
+            "title": "Valid To",
             "description": "The last date on which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
             "constraints": {
                 "unique": false
@@ -75,6 +81,7 @@
         "dtstart": {
             "name": "dtstart",
             "type": "string",
+            "title": "Dtstart",
             "description": "iCal - The date of the first event is the schedule. Necessary when using the \u2018interval\u2019 feature, optional otherwise.",
             "constraints": {
                 "unique": false
@@ -86,6 +93,7 @@
         "timezone": {
             "name": "timezone",
             "type": "number",
+            "title": "Timezone",
             "description": "The timezone that all dates are expressed as, expressed as a UTC offset. Dates are assumed to be UTC otherwise.",
             "constraints": {
                 "unique": false
@@ -95,6 +103,7 @@
         "until": {
             "name": "until",
             "type": "string",
+            "title": "Until",
             "description": "iCal - The date of the last occurence of the recurring event.",
             "constraints": {
                 "unique": false
@@ -105,6 +114,7 @@
         "count": {
             "name": "count",
             "type": "string",
+            "title": "Count",
             "description": "iCal - The number of times that the event occurs. Use this instead of \u2018until\u2019, if appropriate.",
             "constraints": {
                 "unique": false
@@ -115,6 +125,7 @@
         "wkst": {
             "name": "wkst",
             "type": "string",
+            "title": "Wkst",
             "description": "iCal - The day on which the week starts, eg MO.",
             "constraints": {
                 "unique": false
@@ -133,6 +144,7 @@
         "freq": {
             "name": "freq",
             "type": "string",
+            "title": "Freq",
             "description": "iCal - How often the frequency repeats. E.g. Frequency use one of WEEKLY or MONTHLY.",
             "constraints": {
                 "unique": false
@@ -147,6 +159,7 @@
         "interval": {
             "name": "interval",
             "type": "number",
+            "title": "Interval",
             "description": "iCal - How often the frequency repeats. E.g. Interval 2 for Frequency WEEKLY gives Fortnightly",
             "constraints": {
                 "unique": false
@@ -157,6 +170,7 @@
         "byday": {
             "name": "byday",
             "type": "string",
+            "title": "Byday",
             "description": "iCal - Comma seperated days of the week. E.g. SU,MO,TU,WE,TH,FR,SA. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
             "constraints": {
                 "unique": false
@@ -167,6 +181,7 @@
         "byweekno": {
             "name": "byweekno",
             "type": "string",
+            "title": "Byweekno",
             "description": "iCal - Comma seperated numeric weeks of the year if freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
             "constraints": {
                 "unique": false
@@ -176,6 +191,7 @@
         "bymonthday": {
             "name": "bymonthday",
             "type": "number",
+            "title": "Bymonthday",
             "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
             "constraints": {
                 "unique": false
@@ -186,6 +202,7 @@
         "byyearday": {
             "name": "byyearday",
             "type": "number",
+            "title": "Byyearday",
             "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
             "constraints": {
                 "unique": false
@@ -195,6 +212,7 @@
         "description": {
             "name": "description",
             "type": "string",
+            "title": "Description",
             "description": "A human readable description of the availability of the service.",
             "constraints": {
                 "unique": false
@@ -205,6 +223,7 @@
         "opens_at": {
             "name": "opens_at",
             "type": "string",
+            "title": "Opens At",
             "description": "The time when a service or location opens. This should use HH:MM format and should include timezone information, either adding the suffix \u2018Z\u2019 when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.)",
             "constraints": {
                 "unique": false
@@ -216,6 +235,7 @@
         "closes_at": {
             "name": "closes_at",
             "type": "string",
+            "title": "Closes At",
             "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix \u2018Z\u2019 when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.)",
             "constraints": {
                 "unique": false
@@ -227,6 +247,7 @@
         "schedule_link": {
             "name": "schedule_link",
             "type": "string",
+            "title": "Schedule Link",
             "description": "URL of a link for the scheule which may show each individual session and may provide a booking facility",
             "format": "uri",
             "constraints": {
@@ -237,6 +258,7 @@
         "attending_type": {
             "name": "attending_type",
             "type": "string",
+            "title": "Attending Type",
             "description": "A clear description of how to attend this service",
             "constraints": {
                 "unique": false
@@ -246,6 +268,7 @@
         "notes": {
             "name": "notes",
             "type": "string",
+            "title": "Notes",
             "description": "Human readable notes on the schedule",
             "constraints": {
                 "unique": false
@@ -254,16 +277,18 @@
         },
         "attributes": {
             "name": "attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
+            "title": "Attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

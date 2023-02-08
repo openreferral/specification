@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "The identifier for the service area. Each service area must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -24,6 +25,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
+            "title": "Service Id",
             "description": "The identifier of the service for which this entry describes the service area",
             "constraints": {
                 "unique": false
@@ -34,6 +36,7 @@
         "name": {
             "name": "name",
             "type": "string",
+            "title": "Name",
             "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
             "constraints": {
                 "unique": false
@@ -44,6 +47,7 @@
         "description": {
             "name": "description",
             "type": "string",
+            "title": "Description",
             "description": "A more detailed description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
             "constraints": {
                 "unique": false
@@ -54,6 +58,7 @@
         "extent": {
             "name": "extent",
             "type": "string",
+            "title": "Extent",
             "description": "A definition of the polygon defining the area, in geojson.",
             "constraints": {
                 "unique": false
@@ -63,6 +68,7 @@
         "extent_type": {
             "name": "extent_type",
             "type": "string",
+            "title": "Extent Type",
             "description": "The format of the extent field  populated from an enum of  \"geojson\", \"topojson\",  \"kml\",and (for legacy systems or early state during transformation) \"text\"",
             "constraints": {
                 "unique": false
@@ -72,6 +78,7 @@
         "uri": {
             "name": "uri",
             "type": "string",
+            "title": "Uri",
             "description": "A URI which acts as a persistent identifier to identifiy an area",
             "constraints": {
                 "unique": false
@@ -80,16 +87,18 @@
         },
         "attributes": {
             "name": "attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
+            "title": "Attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

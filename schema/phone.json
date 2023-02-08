@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "The id for a phone number. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -24,6 +25,7 @@
         "location_id": {
             "name": "location_id",
             "type": "string",
+            "title": "Location Id",
             "description": "The identifier of the location where this phone number is located",
             "constraints": {
                 "unique": false
@@ -33,6 +35,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
+            "title": "Service Id",
             "description": "The identifier of the service for which this is the phone number",
             "constraints": {
                 "unique": false
@@ -42,6 +45,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
+            "title": "Organization Id",
             "description": "The identifier of the organization for which this is the phone number",
             "constraints": {
                 "unique": false
@@ -51,6 +55,7 @@
         "contact_id": {
             "name": "contact_id",
             "type": "string",
+            "title": "Contact Id",
             "description": "The identifier of the contact for which this is the phone number",
             "constraints": {
                 "unique": false
@@ -61,6 +66,7 @@
         "service_at_location_id": {
             "name": "service_at_location_id",
             "type": "string",
+            "title": "Service At Location Id",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this phone number is specific to a service in a particular location.",
             "constraints": {
                 "unique": false
@@ -70,6 +76,7 @@
         "number": {
             "name": "number",
             "type": "string",
+            "title": "Number",
             "description": "The phone number",
             "constraints": {
                 "unique": false
@@ -80,6 +87,7 @@
         "extension": {
             "name": "extension",
             "type": "number",
+            "title": "Extension",
             "description": "The extension of the phone number",
             "constraints": {
                 "unique": false
@@ -89,6 +97,7 @@
         "type": {
             "name": "type",
             "type": "string",
+            "title": "Type",
             "description": "Indicates the type of phone service, drawing from the RFC6350 list of types (text (for SMS), voice, fax, cell, video, pager, textphone).",
             "constraints": {
                 "unique": false
@@ -98,6 +107,7 @@
         "description": {
             "name": "description",
             "type": "string",
+            "title": "Description",
             "description": "A description providing extra information about the phone service (e.g. any special arrangements for accessing, or details of availability at particular times.",
             "constraints": {
                 "unique": false
@@ -106,24 +116,27 @@
         },
         "languages": {
             "name": "languages",
-            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "type": "array",
+            "title": "Languages",
+            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "items": {
                 "$ref": "language.json"
             }
         },
         "attributes": {
             "name": "attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
+            "title": "Attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

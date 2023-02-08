@@ -13,6 +13,7 @@
         "id": {
             "name": "id",
             "type": "string",
+            "title": "Id",
             "description": "The identifier for the funding. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
@@ -23,6 +24,7 @@
         "organization_id": {
             "name": "organization_id",
             "type": "string",
+            "title": "Organization Id",
             "description": "The identifier of the organization in receipt of this funding.",
             "constraints": {
                 "unique": false
@@ -32,6 +34,7 @@
         "service_id": {
             "name": "service_id",
             "type": "string",
+            "title": "Service Id",
             "description": "The identifier of the service in receipt of this funding",
             "constraints": {
                 "unique": false
@@ -41,6 +44,7 @@
         "source": {
             "name": "source",
             "type": "string",
+            "title": "Source",
             "description": "A free text description of the source of funds for this organization or service.",
             "constraints": {
                 "unique": false
@@ -49,16 +53,18 @@
         },
         "attributes": {
             "name": "attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "type": "array",
+            "title": "Attributes",
+            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
         },
         "metadata": {
             "name": "metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "type": "array",
+            "title": "Metadata",
+            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }
