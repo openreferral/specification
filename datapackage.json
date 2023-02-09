@@ -1471,14 +1471,14 @@
                     },
                     {
                         "name": "count",
-                        "type": "date",
+                        "type": "number",
                         "title": "Count",
                         "description": "iCal - The number of times that the event occurs. Use this instead of \u2018until\u2019, if appropriate.",
                         "constraints": {
                             "required": false,
                             "unique": false
                         },
-                        "example": "2005-01-01"
+                        "example": "3"
                     },
                     {
                         "name": "wkst",
@@ -1489,16 +1489,16 @@
                             "required": false,
                             "unique": false,
                             "enum": [
-                                "MON",
-                                "TUE",
-                                "WED",
-                                "THU",
-                                "FRI",
-                                "SAT",
-                                "SUN"
+                                "MO",
+                                "TU",
+                                "WE",
+                                "TH",
+                                "FR",
+                                "SA",
+                                "SU"
                             ]
                         },
-                        "example": "TUE"
+                        "example": "TU"
                     },
                     {
                         "name": "freq",
@@ -1537,7 +1537,7 @@
                             "required": false,
                             "unique": false
                         },
-                        "example": "THU",
+                        "example": "TH,FR",
                         "core": "Y"
                     },
                     {
@@ -1549,30 +1549,30 @@
                             "required": false,
                             "unique": false
                         },
-                        "example": "42"
+                        "example": "41,42"
                     },
                     {
                         "name": "bymonthday",
-                        "type": "number",
+                        "type": "string",
                         "title": "By Month Day",
                         "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
                         "constraints": {
                             "required": false,
                             "unique": false
                         },
-                        "example": "2",
+                        "example": "2,3,4",
                         "core": "Y"
                     },
                     {
                         "name": "byyearday",
-                        "type": "number",
+                        "type": "string",
                         "title": "By Year Day",
                         "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
                         "constraints": {
                             "required": false,
                             "unique": false
                         },
-                        "example": "2"
+                        "example": "2,3,4"
                     },
                     {
                         "name": "description",
