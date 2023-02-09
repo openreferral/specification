@@ -1,7 +1,7 @@
 {
   "name": "service",
   "path": "services.csv",
-  "description": "Services are provided by organizations to a range of different groups. Details on where each service is delivered are contained in the service_at_locations table.",
+  "description": "The details of the services provided by organizations to a range of different groups.",
   "datapackage_metadata": {
     "format": "csv",
     "mediatype": "text/csv",
@@ -58,7 +58,7 @@
       "name": "alternate_name",
       "type": "string",
       "title": "Alternate Name",
-      "description": "If the service has an alternative or commonly used other name, it can be given here.",
+      "description": "An (optional) alternative name for this service.",
       "constraints": {
         "unique": false
       },
@@ -68,7 +68,7 @@
       "name": "description",
       "type": "string",
       "title": "Description",
-      "description": "A description of the service.",
+      "description": "A free text description of the service.",
       "constraints": {
         "unique": false
       },
@@ -91,7 +91,7 @@
       "name": "email",
       "type": "string",
       "title": "Email",
-      "description": "An email address which can be used by WHOM? to contact the service provider.",
+      "description": "An email address which can be used to contact the service provider.",
       "format": "email",
       "constraints": {
         "unique": false
@@ -130,7 +130,7 @@
       "name": "application_process",
       "type": "string",
       "title": "Application Process",
-      "description": "A description of the steps needed to access this service.",
+      "description": "A free text description of the steps needed to access this service.",
       "constraints": {
         "unique": false
       },
@@ -140,7 +140,7 @@
       "name": "fees_description",
       "type": "string",
       "title": "Fees Description",
-      "description": "Details of any charges for service users to access this service.",
+      "description": "A free text description of any charges for service users to access this service.",
       "constraints": {
         "unique": false
       },
@@ -150,7 +150,7 @@
       "name": "wait_time",
       "type": "string",
       "title": "Wait Time",
-      "description": "DEPRECATED: Time a client may expect to wait before receiving a service.",
+      "description": "DEPRECATED: The time a client may expect to wait before receiving a service.",
       "constraints": {
         "unique": false
       },
@@ -170,7 +170,7 @@
       "name": "accreditations",
       "type": "string",
       "title": "Accreditations",
-      "description": "Details of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
+      "description": "A free text description of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
       "constraints": {
         "unique": false
       },
@@ -180,7 +180,7 @@
       "name": "eligibility_description",
       "type": "string",
       "title": "Eligibility Description",
-      "description": "A description of the type of person for whom this service is intended.",
+      "description": "A free text description of the type of person for whom this service is intended.",
       "constraints": {
         "unique": false
       },
@@ -211,7 +211,7 @@
       "name": "assured_date",
       "type": "string",
       "title": "Assured Date",
-      "description": "The date that the information about the service was last checked",
+      "description": "The date that the information about the service was last checked.",
       "constraints": {
         "unique": false
       },
@@ -243,7 +243,7 @@
       "name": "alert",
       "type": "string",
       "title": "Alert",
-      "description": "Notice of any short term alerts concerning the service. e.g. ",
+      "description": "A description of any short term alerts concerning the service.",
       "constraints": {
         "unique": false
       },
@@ -253,7 +253,7 @@
       "name": "phones",
       "type": "array",
       "title": "Phones",
-      "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+      "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
       "items": {
         "$ref": "#/definitions/phone"
       }
@@ -262,7 +262,7 @@
       "name": "schedules",
       "type": "array",
       "title": "Schedules",
-      "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
+      "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
       "items": {
         "$ref": "#/definitions/schedule"
       }
@@ -271,7 +271,7 @@
       "name": "service_areas",
       "type": "array",
       "title": "Service Areas",
-      "description": "The service_area table contains details of the geographic area for which a service is available.",
+      "description": "The details of the geographic area for which a service is available.",
       "items": {
         "$ref": "#/definitions/service_area"
       }
@@ -280,7 +280,7 @@
       "name": "service_at_locations",
       "type": "array",
       "title": "Service At Locations",
-      "description": "The services at location table creates a link between a service and a specific location.",
+      "description": "A link between a service and a specific location.",
       "items": {
         "$ref": "#/definitions/service_at_location"
       }
@@ -289,7 +289,7 @@
       "name": "languages",
       "type": "array",
       "title": "Languages",
-      "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
+      "description": "The details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
       "items": {
         "$ref": "#/definitions/language"
       }
@@ -297,14 +297,14 @@
     "organization": {
       "name": "organization",
       "title": "Organization",
-      "description": "The organization record is used to provide basic description and details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
+      "description": "The details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
       "$ref": "#/definitions/organization"
     },
     "funding": {
       "name": "funding",
       "type": "array",
       "title": "Funding",
-      "description": "The funding table describes the sources of funding for a service or organization",
+      "description": "The sources of funding for a service or organization.",
       "items": {
         "$ref": "#/definitions/funding"
       }
@@ -313,7 +313,7 @@
       "name": "cost_options",
       "type": "array",
       "title": "Cost Options",
-      "description": "The cost option table contains the costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
+      "description": "The costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
       "items": {
         "$ref": "#/definitions/cost_option"
       }
@@ -321,14 +321,14 @@
     "program": {
       "name": "program",
       "title": "Program",
-      "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
+      "description": "The details of collections of related services.",
       "$ref": "#/definitions/program"
     },
     "required_documents": {
       "name": "required_documents",
       "type": "array",
       "title": "Required Documents",
-      "description": "The required_document table contains details of any documents that are required in order to access or use services.",
+      "description": "The details of any documents that are required in order to access or use services.",
       "items": {
         "$ref": "#/definitions/required_document"
       }
@@ -337,7 +337,7 @@
       "name": "contacts",
       "type": "array",
       "title": "Contacts",
-      "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+      "description": "The details of the named contacts for services and organizations.",
       "items": {
         "$ref": "#/definitions/contact"
       }
@@ -346,7 +346,7 @@
       "name": "attributes",
       "type": "array",
       "title": "Attributes",
-      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+      "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
       "items": {
         "$ref": "#/definitions/attribute"
       }
@@ -355,7 +355,7 @@
       "name": "metadata",
       "type": "array",
       "title": "Metadata",
-      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+      "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
       "items": {
         "$ref": "#/definitions/metadata"
       }
@@ -373,7 +373,7 @@
     "organization": {
       "name": "organization",
       "path": "organizations.csv",
-      "description": "The organization record is used to provide basic description and details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
+      "description": "The details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -386,7 +386,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "Each organization must have a unique identifier.",
+          "description": "The identifier for the organization. Each organization must have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -409,7 +409,7 @@
           "name": "alternate_name",
           "type": "string",
           "title": "Alternate Name",
-          "description": "Alternative or commonly used name for the organization.",
+          "description": "An (optional) alternative or commonly used name for the organization.",
           "constraints": {
             "unique": false
           },
@@ -420,7 +420,7 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "A brief summary about the organization. It can contain markup such as HTML or Markdown.",
+          "description": "A free text description containing a brief summary about the organization. It can contain markup such as HTML or Markdown.",
           "constraints": {
             "unique": false
           },
@@ -486,7 +486,7 @@
           "name": "legal_status",
           "type": "string",
           "title": "Legal Status",
-          "description": "The legal status defines the conditions that an organization is operating under; e.g. non-profit, private corporation or a government organization.",
+          "description": "The legal conditions that an organization is operating under.",
           "constraints": {
             "unique": false
           },
@@ -517,7 +517,7 @@
           "name": "parent_organization_id",
           "type": "string",
           "title": "Parent Organization Identifier",
-          "description": "The identifier of the organization's parent organization",
+          "description": "The identifier of the organization's parent organization.",
           "constraints": {
             "unique": false
           },
@@ -527,7 +527,7 @@
           "name": "funding",
           "type": "array",
           "title": "Funding",
-          "description": "The funding table describes the sources of funding for a service or organization",
+          "description": "The sources of funding for a service or organization.",
           "items": {
             "$ref": "#/definitions/funding"
           }
@@ -536,7 +536,7 @@
           "name": "contacts",
           "type": "array",
           "title": "Contacts",
-          "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+          "description": "The details of the named contacts for services and organizations.",
           "items": {
             "$ref": "#/definitions/contact"
           }
@@ -545,7 +545,7 @@
           "name": "phones",
           "type": "array",
           "title": "Phones",
-          "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+          "description": "The details of the telephone numbers are used to contact organizations, services, and locations.",
           "items": {
             "$ref": "#/definitions/phone"
           }
@@ -554,7 +554,7 @@
           "name": "locations",
           "type": "array",
           "title": "Locations",
-          "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
+          "description": "The details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
           "items": {
             "$ref": "#/definitions/location"
           }
@@ -563,7 +563,7 @@
           "name": "programs",
           "type": "array",
           "title": "Programs",
-          "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
+          "description": "The details of collection of related services.",
           "items": {
             "$ref": "#/definitions/program"
           }
@@ -572,7 +572,7 @@
           "name": "organization_identifiers",
           "type": "array",
           "title": "Organization Identifiers",
-          "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
+          "description": "The details of the third party identifiers for organizations, such as: company registration number, charity number, tax registration number.",
           "items": {
             "$ref": "#/definitions/organization_identifier"
           }
@@ -581,7 +581,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -590,7 +590,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -605,7 +605,7 @@
     "program": {
       "name": "program",
       "path": "programs.csv",
-      "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
+      "description": "The details of collections of related services.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -639,7 +639,7 @@
           "name": "name",
           "type": "string",
           "title": "Name",
-          "description": "The name of the program",
+          "description": "The name of the program.",
           "constraints": {
             "unique": false
           },
@@ -649,7 +649,7 @@
           "name": "alternate_name",
           "type": "string",
           "title": "Alternate Name",
-          "description": "If the program has an alternative name it can be given here",
+          "description": "The (optional) alternative name for the program.",
           "constraints": {
             "unique": false
           },
@@ -659,7 +659,7 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "A brief and clear summary of the program",
+          "description": "A free text description of the program",
           "constraints": {
             "unique": false
           },
@@ -669,7 +669,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -678,7 +678,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -696,7 +696,7 @@
     "attribute": {
       "name": "attribute",
       "path": "attributes.csv",
-      "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+      "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -709,7 +709,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
+          "description": "The identifier of the attribute entry. Each attribute entry should have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -743,7 +743,7 @@
           "name": "link_type",
           "type": "string",
           "title": "Link Type",
-          "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes e.g. the service eligibility or intended audience.",
+          "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes, e.g. the service eligibility or intended audience.",
           "constraints": {
             "unique": false
           },
@@ -754,7 +754,7 @@
           "name": "link_entity",
           "type": "string",
           "title": "Link Entity",
-          "description": "The table of the link_id",
+          "description": "The table of the Link Identifier.",
           "constraints": {
             "unique": false
           },
@@ -765,7 +765,7 @@
           "name": "value",
           "type": "string",
           "title": "Value",
-          "description": "The value (if any) of an attribute",
+          "description": "The value (if any) of an attribute.",
           "constraints": {
             "unique": false
           },
@@ -775,14 +775,14 @@
         "taxonomy_term": {
           "name": "taxonomy_term",
           "title": "Taxonomy Term",
-          "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
+          "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term object contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
           "$ref": "#/definitions/taxonomy_term"
         },
         "metadata": {
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -800,7 +800,7 @@
     "service_at_location": {
       "name": "service_at_location",
       "path": "service_at_location.csv",
-      "description": "The services at location table creates a link between a service and a specific location.",
+      "description": "A link between a service and a specific location.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -813,7 +813,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "The identifier of the entry. Each entry must have a unique identifier.",
+          "description": "The identifier of the service at location entry. Each entry must have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -847,7 +847,7 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "Any additional information that should be displayed to users about the service at this specific location.",
+          "description": "A free text description of the service at this specific location.",
           "constraints": {
             "unique": false
           },
@@ -857,7 +857,7 @@
           "name": "contacts",
           "type": "array",
           "title": "Contacts",
-          "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+          "description": "The details of the named contacts for services and organizations.",
           "items": {
             "$ref": "#/definitions/contact"
           }
@@ -866,7 +866,7 @@
           "name": "phones",
           "type": "array",
           "title": "Phones",
-          "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+          "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
           "items": {
             "$ref": "#/definitions/phone"
           }
@@ -875,7 +875,7 @@
           "name": "schedules",
           "type": "array",
           "title": "Schedules",
-          "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
+          "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
           "items": {
             "$ref": "#/definitions/schedule"
           }
@@ -883,14 +883,14 @@
         "location": {
           "name": "location",
           "title": "Location",
-          "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
+          "description": "The details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
           "$ref": "#/definitions/location"
         },
         "attributes": {
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -899,7 +899,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -916,7 +916,7 @@
     "location": {
       "name": "location",
       "path": "locations.csv",
-      "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
+      "description": "The locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -949,6 +949,7 @@
           "core": "Y",
           "enum": [
             "physical",
+            "postal",
             "virtual"
           ]
         },
@@ -978,7 +979,7 @@
           "name": "name",
           "type": "string",
           "title": "Name",
-          "description": "The name of the location",
+          "description": "The name of the location.",
           "constraints": {
             "unique": false
           },
@@ -989,7 +990,7 @@
           "name": "alternate_name",
           "type": "string",
           "title": "Alternate Name",
-          "description": "If the location has an alternative name then it may be given here.",
+          "description": "An (optional) alternative name of the location.",
           "constraints": {
             "unique": false
           },
@@ -999,7 +1000,7 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "A description of this location.",
+          "description": "A free text description of the location.",
           "constraints": {
             "unique": false
           },
@@ -1010,7 +1011,7 @@
           "name": "transportation",
           "type": "string",
           "title": "Transportation",
-          "description": "A description of the access to public or private transportation to and from the location.",
+          "description": "A free text description of the access to public or private transportation to and from the location.",
           "constraints": {
             "unique": false
           },
@@ -1020,7 +1021,7 @@
           "name": "latitude",
           "type": "number",
           "title": "Latitude",
-          "description": "Y coordinate of location expressed in decimal degrees in WGS84 datum.",
+          "description": "The latitude of the location expressed in decimal degrees in WGS84 datum.",
           "constraints": {
             "unique": false
           },
@@ -1031,7 +1032,7 @@
           "name": "longitude",
           "type": "number",
           "title": "Longitude",
-          "description": "X coordinate of location expressed in decimal degrees in WGS84 datum.",
+          "description": "The longitude of the location expressed in decimal degrees in WGS84 datum.",
           "constraints": {
             "unique": false
           },
@@ -1042,7 +1043,7 @@
           "name": "external_identifier",
           "type": "string",
           "title": "External Identifier",
-          "description": "A third party identifier for a location which can be drawn from other services e.g. UK UPRN or what3words.",
+          "description": "A third party identifier for the location, which can be drawn from other services e.g. UK UPRN or what3words.",
           "constraints": {
             "unique": false
           },
@@ -1062,7 +1063,7 @@
           "name": "languages",
           "type": "array",
           "title": "Languages",
-          "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
+          "description": "The languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
           "items": {
             "$ref": "#/definitions/language"
           }
@@ -1071,7 +1072,7 @@
           "name": "addresses",
           "type": "array",
           "title": "Addresses",
-          "description": "Physical or postal address",
+          "description": "The addresses of locations where organizations operate.",
           "items": {
             "$ref": "#/definitions/address"
           }
@@ -1080,7 +1081,7 @@
           "name": "contacts",
           "type": "array",
           "title": "Contacts",
-          "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+          "description": "The details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
           "items": {
             "$ref": "#/definitions/contact"
           }
@@ -1089,7 +1090,7 @@
           "name": "accessibility",
           "type": "array",
           "title": "Accessibility",
-          "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
+          "description": "The details of the arrangements for access to locations for people who have disabilities",
           "items": {
             "$ref": "#/definitions/accessibility"
           }
@@ -1098,7 +1099,7 @@
           "name": "phones",
           "type": "array",
           "title": "Phones",
-          "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+          "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
           "items": {
             "$ref": "#/definitions/phone"
           }
@@ -1107,7 +1108,7 @@
           "name": "schedules",
           "type": "array",
           "title": "Schedules",
-          "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
+          "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
           "items": {
             "$ref": "#/definitions/schedule"
           }
@@ -1116,7 +1117,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -1139,7 +1140,7 @@
     "phone": {
       "name": "phone",
       "path": "phones.csv",
-      "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+      "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -1152,7 +1153,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "The id for a phone number. Each entry must have a unique identifier.",
+          "description": "The identifier for the phone number. Each entry must have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -1164,7 +1165,7 @@
           "name": "location_id",
           "type": "string",
           "title": "Location Identifier",
-          "description": "The identifier of the location where this phone number is located",
+          "description": "The identifier of the location where this phone number is located.",
           "constraints": {
             "unique": false
           },
@@ -1174,7 +1175,7 @@
           "name": "service_id",
           "type": "string",
           "title": "Service Identifier",
-          "description": "The identifier of the service for which this is the phone number",
+          "description": "The identifier of the service for which this is the phone number.",
           "constraints": {
             "unique": false
           },
@@ -1184,7 +1185,7 @@
           "name": "organization_id",
           "type": "string",
           "title": "Organization Identifier",
-          "description": "The identifier of the organization for which this is the phone number",
+          "description": "The identifier of the organization for which this is the phone number.",
           "constraints": {
             "unique": false
           },
@@ -1194,7 +1195,7 @@
           "name": "contact_id",
           "type": "string",
           "title": "Contact Identifier",
-          "description": "The identifier of the contact for which this is the phone number",
+          "description": "The identifier of the contact for which this is the phone number.",
           "constraints": {
             "unique": false
           },
@@ -1215,7 +1216,7 @@
           "name": "number",
           "type": "string",
           "title": "Number",
-          "description": "The phone number",
+          "description": "The phone number.",
           "constraints": {
             "unique": false
           },
@@ -1226,7 +1227,7 @@
           "name": "extension",
           "type": "number",
           "title": "Extension",
-          "description": "The extension of the phone number",
+          "description": "The extension of the phone number.",
           "constraints": {
             "unique": false
           },
@@ -1246,17 +1247,17 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "A description providing extra information about the phone service (e.g. any special arrangements for accessing, or details of availability at particular times.",
+          "description": "A free text description providing extra information about the phone service",
           "constraints": {
             "unique": false
           },
-          "example": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy. "
+          "example": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy."
         },
         "languages": {
           "name": "languages",
           "type": "array",
           "title": "Languages",
-          "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
+          "description": "The details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
           "items": {
             "$ref": "#/definitions/language"
           }
@@ -1265,7 +1266,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -1274,7 +1275,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -1288,7 +1289,7 @@
     "contact": {
       "name": "contact",
       "path": "contacts.csv",
-      "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+      "description": "The details of the named contacts for services and organizations.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -1313,7 +1314,7 @@
           "name": "organization_id",
           "type": "string",
           "title": "Organization Identifier",
-          "description": "The identifier of the organization for which this is a contact",
+          "description": "The identifier of the organization for which this is a contact.",
           "constraints": {
             "unique": false
           },
@@ -1323,7 +1324,7 @@
           "name": "service_id",
           "type": "string",
           "title": "Service Identifier",
-          "description": "The identifier of the service for which this is a contact",
+          "description": "The identifier of the service for which this is a contact.",
           "constraints": {
             "unique": false
           },
@@ -1334,7 +1335,7 @@
           "name": "service_at_location_id",
           "type": "string",
           "title": "Service At Location Identifier",
-          "description": "The identifier of the \u2018service at location\u2019 table entry, when this contact is specific to a service in a particular location.",
+          "description": "The identifier of the \u2018service at location\u2019 entry, when this contact is specific to a service in a particular location.",
           "constraints": {
             "unique": false
           },
@@ -1344,7 +1345,7 @@
           "name": "location_id",
           "type": "string",
           "title": "Location Identifier",
-          "description": "The identifier for the location_id when the location of the contact is relevant.",
+          "description": "The identifier for the location of the contact.",
           "constraints": {
             "unique": false
           },
@@ -1397,7 +1398,7 @@
           "name": "phones",
           "type": "array",
           "title": "Phones",
-          "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+          "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
           "items": {
             "$ref": "#/definitions/phone"
           }
@@ -1406,7 +1407,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -1415,7 +1416,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -1428,7 +1429,7 @@
     "address": {
       "name": "address",
       "path": "addresses.csv",
-      "description": "Physical or postal address",
+      "description": "The addresses of locations where organizations operate.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -1441,7 +1442,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "The id of the postal address. Each postal address must have a unique identifier.",
+          "description": "The identifier of the postal address. Each postal address must have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -1453,7 +1454,7 @@
           "name": "location_id",
           "type": "string",
           "title": "Location Identifier",
-          "description": "The identifier of the location for which this is the postal address.",
+          "description": "The identifier of the location for this postal address.",
           "constraints": {
             "unique": false
           },
@@ -1539,7 +1540,7 @@
           "name": "country",
           "type": "string",
           "title": "Country",
-          "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
+          "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation).",
           "constraints": {
             "unique": false
           },
@@ -1558,14 +1559,15 @@
           "core": "Y",
           "enum": [
             "physical",
-            "postal"
+            "postal",
+            "virtual"
           ]
         },
         "attributes": {
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -1574,7 +1576,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -1593,7 +1595,7 @@
     "schedule": {
       "name": "schedule",
       "path": "schedules.csv",
-      "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
+      "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -1650,7 +1652,7 @@
           "name": "valid_from",
           "type": "string",
           "title": "Valid From",
-          "description": "The date from which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
+          "description": "The date from which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD,",
           "constraints": {
             "unique": false
           },
@@ -1662,7 +1664,7 @@
           "name": "valid_to",
           "type": "string",
           "title": "Valid To",
-          "description": "The last date on which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
+          "description": "The last date on which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD.",
           "constraints": {
             "unique": false
           },
@@ -1696,7 +1698,7 @@
           "name": "until",
           "type": "string",
           "title": "Until",
-          "description": "iCal - The date of the last occurence of the recurring event.",
+          "description": "iCal - The date of the last occurrence of the recurring event.",
           "constraints": {
             "unique": false
           },
@@ -1705,39 +1707,38 @@
         },
         "count": {
           "name": "count",
-          "type": "string",
+          "type": "number",
           "title": "Count",
           "description": "iCal - The number of times that the event occurs. Use this instead of \u2018until\u2019, if appropriate.",
           "constraints": {
             "unique": false
           },
-          "example": "2005-01-01",
-          "datapackage_type": "date"
+          "example": "3"
         },
         "wkst": {
           "name": "wkst",
           "type": "string",
           "title": "Week Start",
-          "description": "iCal - The day on which the week starts, eg MO.",
+          "description": "iCal - The two-letter code for the day on which the week starts.",
           "constraints": {
             "unique": false
           },
-          "example": "TUE",
+          "example": "TU",
           "enum": [
-            "MON",
-            "TUE",
-            "WED",
-            "THU",
-            "FRI",
-            "SAT",
-            "SUN"
+            "MO",
+            "TU",
+            "WE",
+            "TH",
+            "FR",
+            "SA",
+            "SU"
           ]
         },
         "freq": {
           "name": "freq",
           "type": "string",
           "title": "Frequency",
-          "description": "iCal - How often the frequency repeats. E.g. Frequency use one of WEEKLY or MONTHLY.",
+          "description": "iCal - How often the frequency repeats.",
           "constraints": {
             "unique": false
           },
@@ -1752,7 +1753,7 @@
           "name": "interval",
           "type": "number",
           "title": "Interval",
-          "description": "iCal - How often the frequency repeats. E.g. Interval 2 for Frequency WEEKLY gives Fortnightly",
+          "description": "iCal - How often the frequency repeats. For example, and Interval of 2 for a WEEKLY Frequency would represent fortnightly.",
           "constraints": {
             "unique": false
           },
@@ -1763,49 +1764,49 @@
           "name": "byday",
           "type": "string",
           "title": "By Day",
-          "description": "iCal - Comma seperated days of the week. E.g. SU,MO,TU,WE,TH,FR,SA. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
+          "description": "iCal - Comma separated days of the week. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
           "constraints": {
             "unique": false
           },
-          "example": "THU",
+          "example": "TH,FR",
           "core": "Y"
         },
         "byweekno": {
           "name": "byweekno",
           "type": "string",
           "title": "By Week Number",
-          "description": "iCal - Comma seperated numeric weeks of the year if freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
+          "description": "iCal - Comma separated numeric weeks of the year, where freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
           "constraints": {
             "unique": false
           },
-          "example": "42"
+          "example": "41,42"
         },
         "bymonthday": {
           "name": "bymonthday",
-          "type": "number",
+          "type": "string",
           "title": "By Month Day",
-          "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
+          "description": "iCal - Comma separated numeric days of the month, where frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
           "constraints": {
             "unique": false
           },
-          "example": "2",
+          "example": "2,3,4",
           "core": "Y"
         },
         "byyearday": {
           "name": "byyearday",
-          "type": "number",
+          "type": "string",
           "title": "By Year Day",
-          "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
+          "description": "iCal - Comma separated numeric days of the month, where frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
           "constraints": {
             "unique": false
           },
-          "example": "2"
+          "example": "2,3,4"
         },
         "description": {
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "A human readable description of the availability of the service.",
+          "description": "A free text description of the availability of the service.",
           "constraints": {
             "unique": false
           },
@@ -1828,7 +1829,7 @@
           "name": "closes_at",
           "type": "string",
           "title": "Closes At",
-          "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix \u2018Z\u2019 when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.)",
+          "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix \u2018Z\u2019 when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.).",
           "constraints": {
             "unique": false
           },
@@ -1840,7 +1841,7 @@
           "name": "schedule_link",
           "type": "string",
           "title": "Schedule Link",
-          "description": "URL of a link for the scheule which may show each individual session and may provide a booking facility",
+          "description": "URL of a link for the schedule which may show each individual session and may provide a booking facility.",
           "format": "uri",
           "constraints": {
             "unique": false
@@ -1851,7 +1852,7 @@
           "name": "attending_type",
           "type": "string",
           "title": "Attending Type",
-          "description": "A clear description of how to attend this service",
+          "description": "A free text description of how to attend this service.",
           "constraints": {
             "unique": false
           },
@@ -1861,7 +1862,7 @@
           "name": "notes",
           "type": "string",
           "title": "Notes",
-          "description": "Human readable notes on the schedule",
+          "description": "Free text notes on the schedule.",
           "constraints": {
             "unique": false
           },
@@ -1871,7 +1872,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -1880,7 +1881,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -1893,7 +1894,7 @@
     "funding": {
       "name": "funding",
       "path": "funding.csv",
-      "description": "The funding table describes the sources of funding for a service or organization",
+      "description": "The sources of funding for a service or organization.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -1927,7 +1928,7 @@
           "name": "service_id",
           "type": "string",
           "title": "Service Identifier",
-          "description": "The identifier of the service in receipt of this funding",
+          "description": "The identifier of the service in receipt of this funding.",
           "constraints": {
             "unique": false
           },
@@ -1947,7 +1948,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -1956,7 +1957,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -1969,7 +1970,7 @@
     "service_area": {
       "name": "service_area",
       "path": "service_areas.csv",
-      "description": "The service_area table contains details of the geographic area for which a service is available.",
+      "description": "The details of the geographic area for which a service is available.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2005,7 +2006,7 @@
           "name": "name",
           "type": "string",
           "title": "Name",
-          "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
+          "description": "A free text geographic area where a service is available.",
           "constraints": {
             "unique": false
           },
@@ -2016,7 +2017,7 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "A more detailed description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
+          "description": "A more detailed free text description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
           "constraints": {
             "unique": false
           },
@@ -2027,7 +2028,7 @@
           "name": "extent",
           "type": "string",
           "title": "Extent",
-          "description": "A definition of the polygon defining the area, in geojson.",
+          "description": "A definition of the polygon defining the area.",
           "constraints": {
             "unique": false
           },
@@ -2037,7 +2038,7 @@
           "name": "extent_type",
           "type": "string",
           "title": "Extent Type",
-          "description": "The format of the extent field  populated from an enum of  \"geojson\", \"topojson\",  \"kml\",and (for legacy systems or early state during transformation) \"text\"",
+          "description": "The format of the extent field  populated from an enum of  \"geojson\", \"topojson\",  \"kml\",and (for legacy systems or early state during transformation) \"text\".",
           "constraints": {
             "unique": false
           },
@@ -2047,7 +2048,7 @@
           "name": "uri",
           "type": "string",
           "title": "URI",
-          "description": "A URI which acts as a persistent identifier to identifiy an area",
+          "description": "A URI which acts as a persistent identifier to identify an area.",
           "constraints": {
             "unique": false
           },
@@ -2057,7 +2058,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -2066,7 +2067,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -2079,7 +2080,7 @@
     "required_document": {
       "name": "required_document",
       "path": "required_documents.csv",
-      "description": "The required_document table contains details of any documents that are required in order to access or use services.",
+      "description": "The details of any documents that are required in order to access or use services.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2103,7 +2104,7 @@
           "name": "service_id",
           "type": "string",
           "title": "Service Identifier",
-          "description": "The identifier of the service for which this entry describes the required document",
+          "description": "The identifier of the service for which this entry describes the required document.",
           "constraints": {
             "unique": false
           },
@@ -2113,7 +2114,7 @@
           "name": "document",
           "type": "string",
           "title": "Document",
-          "description": "A clear description of the document required to apply for or receive the service e.g. \"A Government-issued ID\" or \"EU Passport\".",
+          "description": "A free text description of the document required to apply for or receive the service.",
           "constraints": {
             "unique": false
           },
@@ -2123,7 +2124,7 @@
           "name": "uri",
           "type": "string",
           "title": "URI",
-          "description": "Web link to document.",
+          "description": "A web link to the document.",
           "format": "uri",
           "constraints": {
             "unique": false
@@ -2134,7 +2135,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -2143,7 +2144,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -2156,7 +2157,7 @@
     "language": {
       "name": "language",
       "path": "languages.csv",
-      "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
+      "description": "The languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2169,7 +2170,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "The identifier for the language. Each langauge must have a unique identifier.",
+          "description": "The identifier for the language. Each entry must have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -2181,7 +2182,7 @@
           "name": "service_id",
           "type": "string",
           "title": "Service Identifier",
-          "description": "The identifier of the service for which the entry describes the languages in which services are delivered",
+          "description": "The identifier of the service for which the entry describes the languages in which services are delivered.",
           "constraints": {
             "unique": false
           },
@@ -2192,7 +2193,7 @@
           "name": "location_id",
           "type": "string",
           "title": "Location Identifier",
-          "description": "The identifier of the location for which the entry describes the languages in which services are delivered",
+          "description": "The identifier of the location for which the entry describes the languages in which services are delivered.",
           "constraints": {
             "unique": false
           },
@@ -2202,7 +2203,7 @@
           "name": "phone_id",
           "type": "string",
           "title": "Phone Identifier",
-          "description": "The identifier of the phone for which the entry describes the languages in which phone is availible in.",
+          "description": "The identifier of the phone for which the entry describes the languages in which services delivered.",
           "constraints": {
             "unique": false
           },
@@ -2212,7 +2213,7 @@
           "name": "name",
           "type": "string",
           "title": "Name",
-          "description": "Languages, other than English, in which the service is delivered. Languages are listed as ISO639-1 codes.",
+          "description": "The name of the language in which the service is delivered.",
           "constraints": {
             "unique": false
           },
@@ -2223,7 +2224,7 @@
           "name": "code",
           "type": "string",
           "title": "Code",
-          "description": "The ISO 639-1 or ISO 639-3 code for the language e.g. en, es",
+          "description": "The ISO 639-1 or ISO 639-3 code for the language.",
           "constraints": {
             "unique": false
           },
@@ -2233,7 +2234,7 @@
           "name": "note",
           "type": "string",
           "title": "Note",
-          "description": "A clear description of any additional context or services provided for this language e.g. an occasional translation service",
+          "description": "A free text description of any additional context or services provided for this language.",
           "constraints": {
             "unique": false
           },
@@ -2243,7 +2244,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -2252,7 +2253,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -2265,7 +2266,7 @@
     "accessibility": {
       "name": "accessibility",
       "path": "accessibility.csv",
-      "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
+      "description": "The details of the arrangements for access to locations for people who have disabilities.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2290,7 +2291,7 @@
           "name": "location_id",
           "type": "string",
           "title": "Location Identifier",
-          "description": "The identifier of the location for which the entry describes the accessibility provision",
+          "description": "The identifier for the location of the accessibility provision.",
           "constraints": {
             "unique": false
           },
@@ -2301,7 +2302,7 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "Description of assistance or infrastructure that facilitate access to clients with disabilities.",
+          "description": "A free text description of the assistance or infrastructure that facilitates access to clients with disabilities.",
           "constraints": {
             "unique": false
           },
@@ -2312,7 +2313,7 @@
           "name": "details",
           "type": "string",
           "title": "Details",
-          "description": "Any further details relating to the relevant accessibility arrangements at this location. E.g. whether advance notice is required to use an accessibility facility.",
+          "description": "Any further details relating to the relevant accessibility arrangements at this location.",
           "constraints": {
             "unique": false
           },
@@ -2322,7 +2323,7 @@
           "name": "url",
           "type": "string",
           "title": "URL",
-          "description": "URL of a page giving more information about the accessibility of the location",
+          "description": "The URL of a page giving more information about the accessibility of the location.",
           "format": "uri",
           "constraints": {
             "unique": false
@@ -2333,7 +2334,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -2342,7 +2343,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -2355,7 +2356,7 @@
     "taxonomy_term": {
       "name": "taxonomy_term",
       "path": "taxonomy_terms.csv",
-      "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
+      "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term object contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2380,7 +2381,7 @@
           "name": "code",
           "type": "string",
           "title": "Code",
-          "description": "The term identfier as used in the taxonomy. This and the taxonomy_id combined define the term",
+          "description": "The term identfier as used in the taxonomy. This and the taxonomy_id combined define the term.",
           "constraints": {
             "unique": true
           },
@@ -2390,7 +2391,7 @@
           "name": "name",
           "type": "string",
           "title": "Name",
-          "description": "The taxonomy term itself. ",
+          "description": "The taxonomy term itself.",
           "constraints": {
             "unique": false
           },
@@ -2401,7 +2402,7 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "What the term means",
+          "description": "A free text description of the term.",
           "constraints": {
             "unique": false
           },
@@ -2411,7 +2412,7 @@
           "name": "parent_id",
           "type": "string",
           "title": "Parent Identifier",
-          "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
+          "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this is not required.",
           "constraints": {
             "unique": false
           },
@@ -2422,7 +2423,7 @@
           "name": "taxonomy",
           "type": "string",
           "title": "Taxonomy",
-          "description": "If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility. If possible, provide a URI.",
+          "description": "If this is an established taxonomy, a free text description of which taxonomy is in use. If possible, provide a URI.",
           "constraints": {
             "unique": false
           },
@@ -2449,7 +2450,7 @@
           "name": "taxonomy_id",
           "type": "string",
           "title": "Taxonomy Identifier",
-          "description": "The identifier of the taxonomy containing the term",
+          "description": "The identifier of the taxonomy containing the term.",
           "constraints": {
             "unique": false
           },
@@ -2459,7 +2460,7 @@
           "name": "term_uri",
           "type": "string",
           "title": "Term URI",
-          "description": "URI of the term",
+          "description": "URI of the term.",
           "format": "uri",
           "constraints": {
             "unique": false
@@ -2470,7 +2471,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -2485,7 +2486,7 @@
     "metadata": {
       "name": "metadata",
       "path": "metadata.csv",
-      "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+      "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2498,7 +2499,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "Each entry must have a unique identifier",
+          "description": "The identifier for this metadata. Each entry must have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -2509,7 +2510,7 @@
           "name": "resource_id",
           "type": "string",
           "title": "Resource Identifier",
-          "description": "Each service, program. location, address, or contact will have a unique identifier.",
+          "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
           "constraints": {
             "unique": false
           },
@@ -2519,7 +2520,7 @@
           "name": "resource_type",
           "type": "string",
           "title": "Resource Type",
-          "description": "The type of entity being referenced",
+          "description": "The type of entity being referenced.",
           "constraints": {
             "unique": false
           },
@@ -2540,7 +2541,7 @@
           "name": "last_action_type",
           "type": "string",
           "title": "Last Action Type",
-          "description": "The kind of change made to the data; eg create, update, delete",
+          "description": "The kind of change made to the data.",
           "constraints": {
             "unique": false
           },
@@ -2550,7 +2551,7 @@
           "name": "field_name",
           "type": "string",
           "title": "Field Name",
-          "description": "The name of field that has been modified",
+          "description": "The name of field that has been modified.",
           "constraints": {
             "unique": false
           },
@@ -2560,7 +2561,7 @@
           "name": "previous_value",
           "type": "string",
           "title": "Previous Value",
-          "description": "The previous value of a field that has been updated",
+          "description": "The previous value of the field that has been modified.",
           "constraints": {
             "unique": false
           },
@@ -2570,7 +2571,7 @@
           "name": "replacement_value",
           "type": "string",
           "title": "Replacement Value",
-          "description": "The new value of a field that has been updated",
+          "description": "The new value of the field that has been modified.",
           "constraints": {
             "unique": false
           },
@@ -2580,7 +2581,7 @@
           "name": "updated_by",
           "type": "string",
           "title": "Updated By",
-          "description": "The name of the person who updated a value",
+          "description": "The name of the person who modified the field.",
           "constraints": {
             "unique": false
           },
@@ -2604,7 +2605,7 @@
     "meta_table_description": {
       "name": "meta_table_description",
       "path": "meta_table_descriptions.csv",
-      "description": "The meta_table_description table contains metadata about individual tables.",
+      "description": "Metadata about individual tables.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2617,7 +2618,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "Each entry must have a unique identifier",
+          "description": "The identifier for the metadata description. Each entry must have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -2655,7 +2656,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -2664,7 +2665,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -2677,7 +2678,7 @@
     "cost_option": {
       "name": "cost_option",
       "path": "cost_options.csv",
-      "description": "The cost option table contains the costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
+      "description": "The costs of a service at certain points in time. This is an LGA Extension. This object provides a structured version of the text information contained in the 'fees' field of the 'service' object.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2690,7 +2691,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "Each entry must have a unique identifier",
+          "description": "The identifier for the cost option. Each entry must have a unique identifier",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -2701,7 +2702,7 @@
           "name": "service_id",
           "type": "string",
           "title": "Service Identifier",
-          "description": "The identifier of the services for which the entry describes the cost",
+          "description": "The identifier of the services for which the entry describes the cost.",
           "constraints": {
             "unique": false
           },
@@ -2711,7 +2712,7 @@
           "name": "valid_from",
           "type": "string",
           "title": "Valid From",
-          "description": "When this price is valid from",
+          "description": "The date when this price is valid from.",
           "constraints": {
             "unique": false
           },
@@ -2722,7 +2723,7 @@
           "name": "valid_to",
           "type": "string",
           "title": "Valid To",
-          "description": "When this price is valid to",
+          "description": "The date when this price is valid to.",
           "constraints": {
             "unique": false
           },
@@ -2733,7 +2734,7 @@
           "name": "option",
           "type": "string",
           "title": "Option",
-          "description": "Conditions associated with the cost option.\n\nApplication Profile Notes: e.g.For the over 60's\n1st session",
+          "description": "Conditions associated with the cost option.",
           "constraints": {
             "unique": false
           },
@@ -2743,7 +2744,7 @@
           "name": "currency",
           "type": "string",
           "title": "Currency",
-          "description": "3 letter currency code",
+          "description": "The 3 letter currency code of this cost option (expected to be gbp by Open Referral UK).",
           "constraints": {
             "unique": false
           },
@@ -2753,7 +2754,7 @@
           "name": "amount",
           "type": "number",
           "title": "Amount",
-          "description": "The cost of the option, expresssed as an amount in a currency (expected to be GBP by Open Referral UK).",
+          "description": "The cost of the option, expressed as an amount.",
           "constraints": {
             "unique": false
           },
@@ -2763,7 +2764,7 @@
           "name": "amount_description",
           "type": "string",
           "title": "Amount Description",
-          "description": "Specific details qualifying the cost amount, e.g. 'per session'",
+          "description": "Specific details qualifying the cost amount.",
           "constraints": {
             "unique": false
           },
@@ -2773,7 +2774,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -2782,7 +2783,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -2798,7 +2799,7 @@
     "organization_identifier": {
       "name": "organization_identifier",
       "path": "organization_identifiers.csv",
-      "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
+      "description": "The details of the third party identifiers for organizations, such as: company registration number, charity number, tax registration number.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2811,7 +2812,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "Each entry must have a unique identifier",
+          "description": "The identifier for this organization identifier entry. Each entry must have a unique identifier.",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -2822,7 +2823,7 @@
           "name": "organization_id",
           "type": "string",
           "title": "Organization Identifier",
-          "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
+          "description": "The identifier of the organization.",
           "constraints": {
             "unique": false
           },
@@ -2832,7 +2833,7 @@
           "name": "identifier_scheme",
           "type": "string",
           "title": "Identifier Scheme",
-          "description": "Scheme according to http://org-id.guide/.",
+          "description": "The scheme of the third party identifier, according to http://org-id.guide/.",
           "constraints": {
             "unique": false
           },
@@ -2842,7 +2843,7 @@
           "name": "identifier_type",
           "type": "string",
           "title": "Identifier Type",
-          "description": "The type of identifier (company, charity, tax number, etc)",
+          "description": "The type of the third party identifier.",
           "constraints": {
             "unique": false
           },
@@ -2852,7 +2853,7 @@
           "name": "identifier",
           "type": "string",
           "title": "Third Party Identifier",
-          "description": "The third-party identifier",
+          "description": "The third-party identifier value",
           "constraints": {
             "unique": false
           },
@@ -2862,7 +2863,7 @@
           "name": "attributes",
           "type": "array",
           "title": "Attributes",
-          "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
           "items": {
             "$ref": "#/definitions/attribute"
           }
@@ -2871,7 +2872,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
@@ -2889,7 +2890,7 @@
     "taxonomy": {
       "name": "taxonomy",
       "path": "taxonomies.csv",
-      "description": "Taxonomies from which taxonomy terms are taken",
+      "description": "The taxonomies from which taxonomy terms are taken.",
       "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -2902,7 +2903,7 @@
           "name": "id",
           "type": "string",
           "title": "Identifier",
-          "description": "Each entry must have a unique identifier",
+          "description": "The identifier of the taxonomy. Each entry must have a unique identifier",
           "format": "uuid",
           "constraints": {
             "unique": true
@@ -2923,7 +2924,7 @@
           "name": "description",
           "type": "string",
           "title": "Description",
-          "description": "Description of the taxonomy.",
+          "description": "A free text description of the taxonomy.",
           "constraints": {
             "unique": false
           },
@@ -2944,7 +2945,7 @@
           "name": "version",
           "type": "string",
           "title": "Version",
-          "description": "The taxonomy's version.",
+          "description": "The version of the taxonomy.",
           "constraints": {
             "unique": false
           },
@@ -2954,7 +2955,7 @@
           "name": "metadata",
           "type": "array",
           "title": "Metadata",
-          "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
           "items": {
             "$ref": "#/definitions/metadata"
           }
