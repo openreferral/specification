@@ -1,7 +1,7 @@
 {
     "name": "attribute",
     "path": "attributes.csv",
-    "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+    "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -14,7 +14,7 @@
             "name": "id",
             "type": "string",
             "title": "Identifier",
-            "description": "The identifier of the service_attribute entry. Each service_attribute entry should have a unique identifier.",
+            "description": "The identifier of the attribute entry. Each attribute entry should have a unique identifier.",
             "format": "uuid",
             "constraints": {
                 "unique": true
@@ -48,7 +48,7 @@
             "name": "link_type",
             "type": "string",
             "title": "Link Type",
-            "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes e.g. the service eligibility or intended audience.",
+            "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes, e.g. the service eligibility or intended audience.",
             "constraints": {
                 "unique": false
             },
@@ -59,7 +59,7 @@
             "name": "link_entity",
             "type": "string",
             "title": "Link Entity",
-            "description": "The table of the link_id",
+            "description": "The table of the Link Identifier.",
             "constraints": {
                 "unique": false
             },
@@ -70,7 +70,7 @@
             "name": "value",
             "type": "string",
             "title": "Value",
-            "description": "The value (if any) of an attribute",
+            "description": "The value (if any) of an attribute.",
             "constraints": {
                 "unique": false
             },
@@ -80,14 +80,14 @@
         "taxonomy_term": {
             "name": "taxonomy_term",
             "title": "Taxonomy Term",
-            "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
+            "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term object contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
             "$ref": "taxonomy_term.json"
         },
         "metadata": {
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

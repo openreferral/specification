@@ -1,7 +1,7 @@
 {
     "name": "schedule",
     "path": "schedules.csv",
-    "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
+    "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -58,7 +58,7 @@
             "name": "valid_from",
             "type": "string",
             "title": "Valid From",
-            "description": "The date from which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
+            "description": "The date from which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD,",
             "constraints": {
                 "unique": false
             },
@@ -70,7 +70,7 @@
             "name": "valid_to",
             "type": "string",
             "title": "Valid To",
-            "description": "The last date on which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD",
+            "description": "The last date on which the schedule information is valid. It must be in the ISO 8601 format of YYYY-MM-DD.",
             "constraints": {
                 "unique": false
             },
@@ -104,7 +104,7 @@
             "name": "until",
             "type": "string",
             "title": "Until",
-            "description": "iCal - The date of the last occurence of the recurring event.",
+            "description": "iCal - The date of the last occurrence of the recurring event.",
             "constraints": {
                 "unique": false
             },
@@ -125,7 +125,7 @@
             "name": "wkst",
             "type": "string",
             "title": "Week Start",
-            "description": "iCal - The day on which the week starts, eg MO.",
+            "description": "iCal - The two-letter code for the day on which the week starts.",
             "constraints": {
                 "unique": false
             },
@@ -144,7 +144,7 @@
             "name": "freq",
             "type": "string",
             "title": "Frequency",
-            "description": "iCal - How often the frequency repeats. E.g. Frequency use one of WEEKLY or MONTHLY.",
+            "description": "iCal - How often the frequency repeats.",
             "constraints": {
                 "unique": false
             },
@@ -159,7 +159,7 @@
             "name": "interval",
             "type": "number",
             "title": "Interval",
-            "description": "iCal - How often the frequency repeats. E.g. Interval 2 for Frequency WEEKLY gives Fortnightly",
+            "description": "iCal - How often the frequency repeats. For example, and Interval of 2 for a WEEKLY Frequency would represent fortnightly.",
             "constraints": {
                 "unique": false
             },
@@ -170,7 +170,7 @@
             "name": "byday",
             "type": "string",
             "title": "By Day",
-            "description": "iCal - Comma seperated days of the week. E.g. SU,MO,TU,WE,TH,FR,SA. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
+            "description": "iCal - Comma separated days of the week. Where freq is MONTHLY each part can be preceded by a positive or negative integer to represent which occurrence in a month; e.g. 2MO is the second Monday in a month. -1FR is the last Friday",
             "constraints": {
                 "unique": false
             },
@@ -181,7 +181,7 @@
             "name": "byweekno",
             "type": "string",
             "title": "By Week Number",
-            "description": "iCal - Comma seperated numeric weeks of the year if freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
+            "description": "iCal - Comma separated numeric weeks of the year, where freq is WEEKLY. Can be negative to represent weeks before the end of the year; e.g. -5 is the 5th to last week in a year.",
             "constraints": {
                 "unique": false
             },
@@ -191,7 +191,7 @@
             "name": "bymonthday",
             "type": "string",
             "title": "By Month Day",
-            "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
+            "description": "iCal - Comma separated numeric days of the month, where frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
             "constraints": {
                 "unique": false
             },
@@ -202,7 +202,7 @@
             "name": "byyearday",
             "type": "string",
             "title": "By Year Day",
-            "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
+            "description": "iCal - Comma separated numeric days of the month, where frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
             "constraints": {
                 "unique": false
             },
@@ -212,7 +212,7 @@
             "name": "description",
             "type": "string",
             "title": "Description",
-            "description": "A human readable description of the availability of the service.",
+            "description": "A free text description of the availability of the service.",
             "constraints": {
                 "unique": false
             },
@@ -235,7 +235,7 @@
             "name": "closes_at",
             "type": "string",
             "title": "Closes At",
-            "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix \u2018Z\u2019 when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.)",
+            "description": "The time when a service or location closes. This should use HH:MM format and should include timezone information, either adding the suffix \u2018Z\u2019 when the date is in UTC, or including an offset from UTC (e.g. 09:00-05:00 for 9am EST.).",
             "constraints": {
                 "unique": false
             },
@@ -247,7 +247,7 @@
             "name": "schedule_link",
             "type": "string",
             "title": "Schedule Link",
-            "description": "URL of a link for the scheule which may show each individual session and may provide a booking facility",
+            "description": "URL of a link for the schedule which may show each individual session and may provide a booking facility.",
             "format": "uri",
             "constraints": {
                 "unique": false
@@ -258,7 +258,7 @@
             "name": "attending_type",
             "type": "string",
             "title": "Attending Type",
-            "description": "A clear description of how to attend this service",
+            "description": "A free text description of how to attend this service.",
             "constraints": {
                 "unique": false
             },
@@ -268,7 +268,7 @@
             "name": "notes",
             "type": "string",
             "title": "Notes",
-            "description": "Human readable notes on the schedule",
+            "description": "Free text notes on the schedule.",
             "constraints": {
                 "unique": false
             },
@@ -278,7 +278,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -287,7 +287,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

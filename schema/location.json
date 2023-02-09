@@ -1,7 +1,7 @@
 {
     "name": "location",
     "path": "locations.csv",
-    "description": "The location tables provides details of the locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
+    "description": "The locations where organizations operate. Locations may be virtual, and one organization may have many locations.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -34,6 +34,7 @@
             "core": "Y",
             "enum": [
                 "physical",
+                "postal",
                 "virtual"
             ]
         },
@@ -63,7 +64,7 @@
             "name": "name",
             "type": "string",
             "title": "Name",
-            "description": "The name of the location",
+            "description": "The name of the location.",
             "constraints": {
                 "unique": false
             },
@@ -74,7 +75,7 @@
             "name": "alternate_name",
             "type": "string",
             "title": "Alternate Name",
-            "description": "If the location has an alternative name then it may be given here.",
+            "description": "An (optional) alternative name of the location.",
             "constraints": {
                 "unique": false
             },
@@ -84,7 +85,7 @@
             "name": "description",
             "type": "string",
             "title": "Description",
-            "description": "A description of this location.",
+            "description": "A free text description of the location.",
             "constraints": {
                 "unique": false
             },
@@ -95,7 +96,7 @@
             "name": "transportation",
             "type": "string",
             "title": "Transportation",
-            "description": "A description of the access to public or private transportation to and from the location.",
+            "description": "A free text description of the access to public or private transportation to and from the location.",
             "constraints": {
                 "unique": false
             },
@@ -105,7 +106,7 @@
             "name": "latitude",
             "type": "number",
             "title": "Latitude",
-            "description": "Y coordinate of location expressed in decimal degrees in WGS84 datum.",
+            "description": "The latitude of the location expressed in decimal degrees in WGS84 datum.",
             "constraints": {
                 "unique": false
             },
@@ -116,7 +117,7 @@
             "name": "longitude",
             "type": "number",
             "title": "Longitude",
-            "description": "X coordinate of location expressed in decimal degrees in WGS84 datum.",
+            "description": "The longitude of the location expressed in decimal degrees in WGS84 datum.",
             "constraints": {
                 "unique": false
             },
@@ -127,7 +128,7 @@
             "name": "external_identifier",
             "type": "string",
             "title": "External Identifier",
-            "description": "A third party identifier for a location which can be drawn from other services e.g. UK UPRN or what3words.",
+            "description": "A third party identifier for the location, which can be drawn from other services e.g. UK UPRN or what3words.",
             "constraints": {
                 "unique": false
             },
@@ -147,7 +148,7 @@
             "name": "languages",
             "type": "array",
             "title": "Languages",
-            "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
+            "description": "The languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
             "items": {
                 "$ref": "language.json"
             }
@@ -156,7 +157,7 @@
             "name": "addresses",
             "type": "array",
             "title": "Addresses",
-            "description": "Physical or postal address",
+            "description": "The addresses of locations where organizations operate.",
             "items": {
                 "$ref": "address.json"
             }
@@ -165,7 +166,7 @@
             "name": "contacts",
             "type": "array",
             "title": "Contacts",
-            "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+            "description": "The details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
             "items": {
                 "$ref": "contact.json"
             }
@@ -174,7 +175,7 @@
             "name": "accessibility",
             "type": "array",
             "title": "Accessibility",
-            "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
+            "description": "The details of the arrangements for access to locations for people who have disabilities",
             "items": {
                 "$ref": "accessibility.json"
             }
@@ -183,7 +184,7 @@
             "name": "phones",
             "type": "array",
             "title": "Phones",
-            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+            "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
             "items": {
                 "$ref": "phone.json"
             }
@@ -192,7 +193,7 @@
             "name": "schedules",
             "type": "array",
             "title": "Schedules",
-            "description": "The schedule table contains details of when a service or location is open. Entries are RFC 5545 RRULES.",
+            "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
             "items": {
                 "$ref": "schedule.json"
             }
@@ -201,7 +202,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }

@@ -1,7 +1,7 @@
 {
     "name": "service_area",
     "path": "service_areas.csv",
-    "description": "The service_area table contains details of the geographic area for which a service is available.",
+    "description": "The details of the geographic area for which a service is available.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -37,7 +37,7 @@
             "name": "name",
             "type": "string",
             "title": "Name",
-            "description": "The geographic area where a service is available. This is a free-text description, and so may be precise or indefinite as necessary.",
+            "description": "A free text geographic area where a service is available.",
             "constraints": {
                 "unique": false
             },
@@ -48,7 +48,7 @@
             "name": "description",
             "type": "string",
             "title": "Description",
-            "description": "A more detailed description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
+            "description": "A more detailed free text description of this service area. Used to provide any additional information that cannot be communicated using the structured area and geometry fields.",
             "constraints": {
                 "unique": false
             },
@@ -59,7 +59,7 @@
             "name": "extent",
             "type": "string",
             "title": "Extent",
-            "description": "A definition of the polygon defining the area, in geojson.",
+            "description": "A definition of the polygon defining the area.",
             "constraints": {
                 "unique": false
             },
@@ -69,7 +69,7 @@
             "name": "extent_type",
             "type": "string",
             "title": "Extent Type",
-            "description": "The format of the extent field  populated from an enum of  \"geojson\", \"topojson\",  \"kml\",and (for legacy systems or early state during transformation) \"text\"",
+            "description": "The format of the extent field  populated from an enum of  \"geojson\", \"topojson\",  \"kml\",and (for legacy systems or early state during transformation) \"text\".",
             "constraints": {
                 "unique": false
             },
@@ -79,7 +79,7 @@
             "name": "uri",
             "type": "string",
             "title": "URI",
-            "description": "A URI which acts as a persistent identifier to identifiy an area",
+            "description": "A URI which acts as a persistent identifier to identify an area.",
             "constraints": {
                 "unique": false
             },
@@ -89,7 +89,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -98,7 +98,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

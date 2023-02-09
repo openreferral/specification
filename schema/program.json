@@ -1,7 +1,7 @@
 {
     "name": "program",
     "path": "programs.csv",
-    "description": "Some organizations organise their services into programs. A program brings together a number of related services.",
+    "description": "The details of collections of related services.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -35,7 +35,7 @@
             "name": "name",
             "type": "string",
             "title": "Name",
-            "description": "The name of the program",
+            "description": "The name of the program.",
             "constraints": {
                 "unique": false
             },
@@ -45,7 +45,7 @@
             "name": "alternate_name",
             "type": "string",
             "title": "Alternate Name",
-            "description": "If the program has an alternative name it can be given here",
+            "description": "The (optional) alternative name for the program.",
             "constraints": {
                 "unique": false
             },
@@ -55,7 +55,7 @@
             "name": "description",
             "type": "string",
             "title": "Description",
-            "description": "A brief and clear summary of the program",
+            "description": "A free text description of the program",
             "constraints": {
                 "unique": false
             },
@@ -65,7 +65,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -74,7 +74,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

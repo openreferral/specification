@@ -1,7 +1,7 @@
 {
     "name": "taxonomy_term",
     "path": "taxonomy_terms.csv",
-    "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term table contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
+    "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term object contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -26,7 +26,7 @@
             "name": "code",
             "type": "string",
             "title": "Code",
-            "description": "The term identfier as used in the taxonomy. This and the taxonomy_id combined define the term",
+            "description": "The term identfier as used in the taxonomy. This and the taxonomy_id combined define the term.",
             "constraints": {
                 "unique": true
             },
@@ -36,7 +36,7 @@
             "name": "name",
             "type": "string",
             "title": "Name",
-            "description": "The taxonomy term itself. ",
+            "description": "The taxonomy term itself.",
             "constraints": {
                 "unique": false
             },
@@ -47,7 +47,7 @@
             "name": "description",
             "type": "string",
             "title": "Description",
-            "description": "What the term means",
+            "description": "A free text description of the term.",
             "constraints": {
                 "unique": false
             },
@@ -57,7 +57,7 @@
             "name": "parent_id",
             "type": "string",
             "title": "Parent Identifier",
-            "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this should be left blank.",
+            "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this is not required.",
             "constraints": {
                 "unique": false
             },
@@ -68,7 +68,7 @@
             "name": "taxonomy",
             "type": "string",
             "title": "Taxonomy",
-            "description": "If this is an established taxonomy, detail which taxonomy is in use. For example, AIRS or Open Eligibility. If possible, provide a URI.",
+            "description": "If this is an established taxonomy, a free text description of which taxonomy is in use. If possible, provide a URI.",
             "constraints": {
                 "unique": false
             },
@@ -95,7 +95,7 @@
             "name": "taxonomy_id",
             "type": "string",
             "title": "Taxonomy Identifier",
-            "description": "The identifier of the taxonomy containing the term",
+            "description": "The identifier of the taxonomy containing the term.",
             "constraints": {
                 "unique": false
             },
@@ -105,7 +105,7 @@
             "name": "term_uri",
             "type": "string",
             "title": "Term URI",
-            "description": "URI of the term",
+            "description": "URI of the term.",
             "format": "uri",
             "constraints": {
                 "unique": false
@@ -116,7 +116,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

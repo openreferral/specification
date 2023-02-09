@@ -1,7 +1,7 @@
 {
     "name": "taxonomy",
     "path": "taxonomies.csv",
-    "description": "Taxonomies from which taxonomy terms are taken",
+    "description": "The taxonomies from which taxonomy terms are taken.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -14,7 +14,7 @@
             "name": "id",
             "type": "string",
             "title": "Identifier",
-            "description": "Each entry must have a unique identifier",
+            "description": "The identifier of the taxonomy. Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
                 "unique": true
@@ -35,7 +35,7 @@
             "name": "description",
             "type": "string",
             "title": "Description",
-            "description": "Description of the taxonomy.",
+            "description": "A free text description of the taxonomy.",
             "constraints": {
                 "unique": false
             },
@@ -56,7 +56,7 @@
             "name": "version",
             "type": "string",
             "title": "Version",
-            "description": "The taxonomy's version.",
+            "description": "The version of the taxonomy.",
             "constraints": {
                 "unique": false
             },
@@ -66,7 +66,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

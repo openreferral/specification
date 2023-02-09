@@ -1,7 +1,7 @@
 {
     "name": "language",
     "path": "languages.csv",
-    "description": "The language table contains details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
+    "description": "The languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -14,7 +14,7 @@
             "name": "id",
             "type": "string",
             "title": "Identifier",
-            "description": "The identifier for the language. Each langauge must have a unique identifier.",
+            "description": "The identifier for the language. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
                 "unique": true
@@ -26,7 +26,7 @@
             "name": "service_id",
             "type": "string",
             "title": "Service Identifier",
-            "description": "The identifier of the service for which the entry describes the languages in which services are delivered",
+            "description": "The identifier of the service for which the entry describes the languages in which services are delivered.",
             "constraints": {
                 "unique": false
             },
@@ -37,7 +37,7 @@
             "name": "location_id",
             "type": "string",
             "title": "Location Identifier",
-            "description": "The identifier of the location for which the entry describes the languages in which services are delivered",
+            "description": "The identifier of the location for which the entry describes the languages in which services are delivered.",
             "constraints": {
                 "unique": false
             },
@@ -47,7 +47,7 @@
             "name": "phone_id",
             "type": "string",
             "title": "Phone Identifier",
-            "description": "The identifier of the phone for which the entry describes the languages in which phone is availible in.",
+            "description": "The identifier of the phone for which the entry describes the languages in which services delivered.",
             "constraints": {
                 "unique": false
             },
@@ -57,7 +57,7 @@
             "name": "name",
             "type": "string",
             "title": "Name",
-            "description": "Languages, other than English, in which the service is delivered. Languages are listed as ISO639-1 codes.",
+            "description": "The name of the language in which the service is delivered.",
             "constraints": {
                 "unique": false
             },
@@ -68,7 +68,7 @@
             "name": "code",
             "type": "string",
             "title": "Code",
-            "description": "The ISO 639-1 or ISO 639-3 code for the language e.g. en, es",
+            "description": "The ISO 639-1 or ISO 639-3 code for the language.",
             "constraints": {
                 "unique": false
             },
@@ -78,7 +78,7 @@
             "name": "note",
             "type": "string",
             "title": "Note",
-            "description": "A clear description of any additional context or services provided for this language e.g. an occasional translation service",
+            "description": "A free text description of any additional context or services provided for this language.",
             "constraints": {
                 "unique": false
             },
@@ -88,7 +88,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -97,7 +97,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

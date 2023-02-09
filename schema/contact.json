@@ -1,7 +1,7 @@
 {
     "name": "contact",
     "path": "contacts.csv",
-    "description": "The contact table contains details of the named contacts for services and organizations. Note that in the HSDS data package format, if an individual is the contact for multiple services, their details may be duplicated multiple times in this table, each time with a new identifier, and with the rows containing different service ids.",
+    "description": "The details of the named contacts for services and organizations.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -26,7 +26,7 @@
             "name": "organization_id",
             "type": "string",
             "title": "Organization Identifier",
-            "description": "The identifier of the organization for which this is a contact",
+            "description": "The identifier of the organization for which this is a contact.",
             "constraints": {
                 "unique": false
             },
@@ -36,7 +36,7 @@
             "name": "service_id",
             "type": "string",
             "title": "Service Identifier",
-            "description": "The identifier of the service for which this is a contact",
+            "description": "The identifier of the service for which this is a contact.",
             "constraints": {
                 "unique": false
             },
@@ -47,7 +47,7 @@
             "name": "service_at_location_id",
             "type": "string",
             "title": "Service At Location Identifier",
-            "description": "The identifier of the \u2018service at location\u2019 table entry, when this contact is specific to a service in a particular location.",
+            "description": "The identifier of the \u2018service at location\u2019 entry, when this contact is specific to a service in a particular location.",
             "constraints": {
                 "unique": false
             },
@@ -57,7 +57,7 @@
             "name": "location_id",
             "type": "string",
             "title": "Location Identifier",
-            "description": "The identifier for the location_id when the location of the contact is relevant.",
+            "description": "The identifier for the location of the contact.",
             "constraints": {
                 "unique": false
             },
@@ -110,7 +110,7 @@
             "name": "phones",
             "type": "array",
             "title": "Phones",
-            "description": "The phone table contains details of the telephone numbers are used to contact organizations, services, and locations.",
+            "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
             "items": {
                 "$ref": "phone.json"
             }
@@ -119,7 +119,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -128,7 +128,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }
