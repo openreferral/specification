@@ -113,14 +113,13 @@
         },
         "count": {
             "name": "count",
-            "type": "string",
+            "type": "number",
             "title": "Count",
             "description": "iCal - The number of times that the event occurs. Use this instead of \u2018until\u2019, if appropriate.",
             "constraints": {
                 "unique": false
             },
-            "example": "2005-01-01",
-            "datapackage_type": "date"
+            "example": "3"
         },
         "wkst": {
             "name": "wkst",
@@ -130,15 +129,15 @@
             "constraints": {
                 "unique": false
             },
-            "example": "TUE",
+            "example": "TU",
             "enum": [
-                "MON",
-                "TUE",
-                "WED",
-                "THU",
-                "FRI",
-                "SAT",
-                "SUN"
+                "MO",
+                "TU",
+                "WE",
+                "TH",
+                "FR",
+                "SA",
+                "SU"
             ]
         },
         "freq": {
@@ -175,7 +174,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "THU",
+            "example": "TH,FR",
             "core": "Y"
         },
         "byweekno": {
@@ -186,28 +185,28 @@
             "constraints": {
                 "unique": false
             },
-            "example": "42"
+            "example": "41,42"
         },
         "bymonthday": {
             "name": "bymonthday",
-            "type": "number",
+            "type": "string",
             "title": "By Month Day",
             "description": "iCal - Comma separated numeric days of the month if frequency is MONTHLY. Can be negative to represent days before the end of the month; e.g. -5 is the 5th to last day in a month.",
             "constraints": {
                 "unique": false
             },
-            "example": "2",
+            "example": "2,3,4",
             "core": "Y"
         },
         "byyearday": {
             "name": "byyearday",
-            "type": "number",
+            "type": "string",
             "title": "By Year Day",
             "description": "iCal - Comma separated numeric days of the month if frequency is YEARLY. Can be negative to represent days before the end of the year; e.g. -1 is the last day in a year.",
             "constraints": {
                 "unique": false
             },
-            "example": "2"
+            "example": "2,3,4"
         },
         "description": {
             "name": "description",
