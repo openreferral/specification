@@ -100,6 +100,7 @@ No changes.
 
 [v3.0](https://github.com/openreferral/specification/milestone/7)
 
+* Copy edit of all table and field descriptions;
 * Added JSON schema files;
 * Updated datapackage.JSON and example data to reflect schema changes;
 * Updated reference page to reflect schema changes;
