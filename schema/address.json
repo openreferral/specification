@@ -1,7 +1,7 @@
 {
     "name": "address",
     "path": "addresses.csv",
-    "description": "Physical or postal address",
+    "description": "The addresses of locations where organizations operate.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -14,7 +14,7 @@
             "name": "id",
             "type": "string",
             "title": "Identifier",
-            "description": "The id of the postal address. Each postal address must have a unique identifier.",
+            "description": "The identifier of the postal address. Each postal address must have a unique identifier.",
             "format": "uuid",
             "constraints": {
                 "unique": true
@@ -26,7 +26,7 @@
             "name": "location_id",
             "type": "string",
             "title": "Location Identifier",
-            "description": "The identifier of the location for which this is the postal address.",
+            "description": "The identifier of the location for this postal address.",
             "constraints": {
                 "unique": false
             },
@@ -112,7 +112,7 @@
             "name": "country",
             "type": "string",
             "title": "Country",
-            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation)",
+            "description": "The country in which the address is located. This should be given as an ISO 3361-1 country code (two letter abbreviation).",
             "constraints": {
                 "unique": false
             },
@@ -131,14 +131,15 @@
             "core": "Y",
             "enum": [
                 "physical",
-                "postal"
+                "postal",
+                "virtual"
             ]
         },
         "attributes": {
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -147,7 +148,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

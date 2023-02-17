@@ -1,7 +1,7 @@
 {
     "name": "cost_option",
     "path": "cost_options.csv",
-    "description": "The cost option table contains the costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
+    "description": "The costs of a service at certain points in time. This is an LGA Extension. This object provides a structured version of the text information contained in the 'fees' field of the 'service' object.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -14,7 +14,7 @@
             "name": "id",
             "type": "string",
             "title": "Identifier",
-            "description": "Each entry must have a unique identifier",
+            "description": "The identifier for the cost option. Each entry must have a unique identifier",
             "format": "uuid",
             "constraints": {
                 "unique": true
@@ -25,7 +25,7 @@
             "name": "service_id",
             "type": "string",
             "title": "Service Identifier",
-            "description": "The identifier of the services for which the entry describes the cost",
+            "description": "The identifier of the services for which the entry describes the cost.",
             "constraints": {
                 "unique": false
             },
@@ -35,7 +35,7 @@
             "name": "valid_from",
             "type": "string",
             "title": "Valid From",
-            "description": "When this price is valid from",
+            "description": "The date when this price is valid from.",
             "constraints": {
                 "unique": false
             },
@@ -46,7 +46,7 @@
             "name": "valid_to",
             "type": "string",
             "title": "Valid To",
-            "description": "When this price is valid to",
+            "description": "The date when this price is valid to.",
             "constraints": {
                 "unique": false
             },
@@ -57,7 +57,7 @@
             "name": "option",
             "type": "string",
             "title": "Option",
-            "description": "Conditions associated with the cost option.\n\nApplication Profile Notes: e.g.For the over 60's\n1st session",
+            "description": "Conditions associated with the cost option.",
             "constraints": {
                 "unique": false
             },
@@ -67,7 +67,7 @@
             "name": "currency",
             "type": "string",
             "title": "Currency",
-            "description": "3 letter currency code",
+            "description": "The 3 letter currency code of this cost option (expected to be gbp by Open Referral UK).",
             "constraints": {
                 "unique": false
             },
@@ -77,7 +77,7 @@
             "name": "amount",
             "type": "number",
             "title": "Amount",
-            "description": "The cost of the option, expresssed as an amount in a currency (expected to be GBP by Open Referral UK).",
+            "description": "The cost of the option, expressed as an amount.",
             "constraints": {
                 "unique": false
             },
@@ -87,7 +87,7 @@
             "name": "amount_description",
             "type": "string",
             "title": "Amount Description",
-            "description": "Specific details qualifying the cost amount, e.g. 'per session'",
+            "description": "Specific details qualifying the cost amount.",
             "constraints": {
                 "unique": false
             },
@@ -97,7 +97,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -106,7 +106,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

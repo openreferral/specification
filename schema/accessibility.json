@@ -1,7 +1,7 @@
 {
     "name": "accessibility",
     "path": "accessibility.csv",
-    "description": "The accessibility_for_disabilities table contains details of the arrangements for access to locations for people who have disabilities",
+    "description": "The details of the arrangements for access to locations for people who have disabilities.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -26,7 +26,7 @@
             "name": "location_id",
             "type": "string",
             "title": "Location Identifier",
-            "description": "The identifier of the location for which the entry describes the accessibility provision",
+            "description": "The identifier for the location of the accessibility provision.",
             "constraints": {
                 "unique": false
             },
@@ -37,7 +37,7 @@
             "name": "description",
             "type": "string",
             "title": "Description",
-            "description": "Description of assistance or infrastructure that facilitate access to clients with disabilities.",
+            "description": "A free text description of the assistance or infrastructure that facilitates access to clients with disabilities.",
             "constraints": {
                 "unique": false
             },
@@ -48,7 +48,7 @@
             "name": "details",
             "type": "string",
             "title": "Details",
-            "description": "Any further details relating to the relevant accessibility arrangements at this location. E.g. whether advance notice is required to use an accessibility facility.",
+            "description": "Any further details relating to the relevant accessibility arrangements at this location.",
             "constraints": {
                 "unique": false
             },
@@ -58,7 +58,7 @@
             "name": "url",
             "type": "string",
             "title": "URL",
-            "description": "URL of a page giving more information about the accessibility of the location",
+            "description": "The URL of a page giving more information about the accessibility of the location.",
             "format": "uri",
             "constraints": {
                 "unique": false
@@ -69,7 +69,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -78,7 +78,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

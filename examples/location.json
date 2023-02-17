@@ -44,7 +44,7 @@
           "number": "\"+44 1234 234567\"",
           "extension": 100,
           "type": "voice",
-          "description": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy. ",
+          "description": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy.",
           "languages": [
             {
               "id": "2989d3ed-c547-48f8-8f9d-432d81c7892e",
@@ -71,7 +71,7 @@
       "number": "\"+44 1234 234567\"",
       "extension": 100,
       "type": "voice",
-      "description": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy. ",
+      "description": "Our main reception phone number. The phones will be available from 0800 (8am) until 1800 (6pm) local time. There may be some slight delays in answering your call if we are busy.",
       "languages": [
         {
           "id": "2989d3ed-c547-48f8-8f9d-432d81c7892e",

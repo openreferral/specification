@@ -1,7 +1,7 @@
 {
     "name": "required_document",
     "path": "required_documents.csv",
-    "description": "The required_document table contains details of any documents that are required in order to access or use services.",
+    "description": "The details of any documents that are required in order to access or use services.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -25,7 +25,7 @@
             "name": "service_id",
             "type": "string",
             "title": "Service Identifier",
-            "description": "The identifier of the service for which this entry describes the required document",
+            "description": "The identifier of the service for which this entry describes the required document.",
             "constraints": {
                 "unique": false
             },
@@ -35,7 +35,7 @@
             "name": "document",
             "type": "string",
             "title": "Document",
-            "description": "A clear description of the document required to apply for or receive the service e.g. \"A Government-issued ID\" or \"EU Passport\".",
+            "description": "A free text description of the document required to apply for or receive the service.",
             "constraints": {
                 "unique": false
             },
@@ -45,7 +45,7 @@
             "name": "uri",
             "type": "string",
             "title": "URI",
-            "description": "Web link to document.",
+            "description": "A web link to the document.",
             "format": "uri",
             "constraints": {
                 "unique": false
@@ -56,7 +56,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -65,7 +65,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

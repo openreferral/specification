@@ -1,7 +1,7 @@
 {
     "name": "organization_identifier",
     "path": "organization_identifiers.csv",
-    "description": "Identifiers for an organization such as: company registration number, charity number, tax registration number. This helps uniquely identify and de-duplicate data",
+    "description": "The details of the third party identifiers for organizations, such as: company registration number, charity number, tax registration number.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -14,7 +14,7 @@
             "name": "id",
             "type": "string",
             "title": "Identifier",
-            "description": "Each entry must have a unique identifier",
+            "description": "The identifier for this organization identifier entry. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
                 "unique": true
@@ -25,7 +25,7 @@
             "name": "organization_id",
             "type": "string",
             "title": "Organization Identifier",
-            "description": "Each program must belong to a single organization. The identifier of the organization should be given here.",
+            "description": "The identifier of the organization.",
             "constraints": {
                 "unique": false
             },
@@ -35,7 +35,7 @@
             "name": "identifier_scheme",
             "type": "string",
             "title": "Identifier Scheme",
-            "description": "Scheme according to http://org-id.guide/.",
+            "description": "The scheme of the third party identifier, according to http://org-id.guide/.",
             "constraints": {
                 "unique": false
             },
@@ -45,7 +45,7 @@
             "name": "identifier_type",
             "type": "string",
             "title": "Identifier Type",
-            "description": "The type of identifier (company, charity, tax number, etc)",
+            "description": "The type of the third party identifier.",
             "constraints": {
                 "unique": false
             },
@@ -55,7 +55,7 @@
             "name": "identifier",
             "type": "string",
             "title": "Third Party Identifier",
-            "description": "The third-party identifier",
+            "description": "The third-party identifier value",
             "constraints": {
                 "unique": false
             },
@@ -65,7 +65,7 @@
             "name": "attributes",
             "type": "array",
             "title": "Attributes",
-            "description": "The services attributes table creates a link between a service and one or more classifications that describe the nature of the service provided.",
+            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
             "items": {
                 "$ref": "attribute.json"
             }
@@ -74,7 +74,7 @@
             "name": "metadata",
             "type": "array",
             "title": "Metadata",
-            "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
             "items": {
                 "$ref": "metadata.json"
             }

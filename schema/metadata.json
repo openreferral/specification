@@ -1,7 +1,7 @@
 {
     "name": "metadata",
     "path": "metadata.csv",
-    "description": "The metadata table contains a record of the changes that have been made to the data in order to maintain provenance information.",
+    "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
     "datapackage_metadata": {
         "format": "csv",
         "mediatype": "text/csv",
@@ -14,7 +14,7 @@
             "name": "id",
             "type": "string",
             "title": "Identifier",
-            "description": "Each entry must have a unique identifier",
+            "description": "The identifier for this metadata. Each entry must have a unique identifier.",
             "format": "uuid",
             "constraints": {
                 "unique": true
@@ -25,7 +25,7 @@
             "name": "resource_id",
             "type": "string",
             "title": "Resource Identifier",
-            "description": "Each service, program. location, address, or contact will have a unique identifier.",
+            "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
             "constraints": {
                 "unique": false
             },
@@ -35,7 +35,7 @@
             "name": "resource_type",
             "type": "string",
             "title": "Resource Type",
-            "description": "The type of entity being referenced",
+            "description": "The type of entity being referenced.",
             "constraints": {
                 "unique": false
             },
@@ -56,7 +56,7 @@
             "name": "last_action_type",
             "type": "string",
             "title": "Last Action Type",
-            "description": "The kind of change made to the data; eg create, update, delete",
+            "description": "The kind of change made to the data.",
             "constraints": {
                 "unique": false
             },
@@ -66,7 +66,7 @@
             "name": "field_name",
             "type": "string",
             "title": "Field Name",
-            "description": "The name of field that has been modified",
+            "description": "The name of field that has been modified.",
             "constraints": {
                 "unique": false
             },
@@ -76,7 +76,7 @@
             "name": "previous_value",
             "type": "string",
             "title": "Previous Value",
-            "description": "The previous value of a field that has been updated",
+            "description": "The previous value of the field that has been modified.",
             "constraints": {
                 "unique": false
             },
@@ -86,7 +86,7 @@
             "name": "replacement_value",
             "type": "string",
             "title": "Replacement Value",
-            "description": "The new value of a field that has been updated",
+            "description": "The new value of the field that has been modified.",
             "constraints": {
                 "unique": false
             },
@@ -96,7 +96,7 @@
             "name": "updated_by",
             "type": "string",
             "title": "Updated By",
-            "description": "The name of the person who updated a value",
+            "description": "The name of the person who modified the field.",
             "constraints": {
                 "unique": false
             },
