@@ -2,20 +2,20 @@
   "openapi": "3.1.0",
   "info":
     {
-      "title": "REQUIRED -- TITLE HERE",
-      "version": "TODO: check version information, 1.0?",
+      "title": "REQUIRED -- TITLE OF YOUR API HERE",
+      "version": "REQUIRED -- The version of your API. This is distinct from the OpenAPI Schema version.",
       "summary": "SUMMARY HERE",
       "description": "DESCRIPTION HERE",
       "contact":
         {
-	  "name": "Open Referral",
-	  "url": "CONTACT URL HERE",
-	  "email": "CONTACT EMAIL HERE"
+	  "name": "YOUR CONTACT NAME HERE",
+	  "url": "YOUR CONTACT URL HERE",
+	  "email": "YOUR CONTACT EMAIL HERE"
 	},
       "license": 
 	{
-	  "name": "REQUIRED -- good practice to include?",
-	  "url": "Url to the license used; mutually exclusive to the identifier field if used"
+	  "name": "REQUIRED -- THE LICENSE OF YOUR API",
+	  "url": "Url to the license used; mutually exclusive to the identifier field if used."
 	}      
     },
   "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
@@ -23,12 +23,20 @@
     {
       "/services/{id}":
         {
-	  "description" : "Retrieve fully nested service with all related data with id.",
+	  "description": "Retrieve fully nested service with all related data with id.",
+	  "parameters":
+	    [
+	      {
+	        "in": "path",
+		"name": "id",
+		"required": true,
+		"description": "The id of the service that the request is intended to retrieve."
+	      }
+	    ],
 	  "get":
 	    {
 	      "summary": "Retrieves a fully nested service with all related data with id",
 	      "operationId": "getFullyNestedServiceById",
-	      "description": "DESCRIPTION HERE",
 	      "responses":
 	       {
 	         "200":
@@ -53,7 +61,58 @@
 	    {
 	      "summary": "Retrieves paginated listings of services that only have one-to-one fields in them",
 	      "operationId": "getPaginatedListOfServices",
-	      "description": "DESCRIPTION HERE",
+	      "parameters":
+	        [
+		  {
+		    "name": "search",
+		    "in": "query",
+		    "required": false,
+		    "description": "Full text search"
+		  },
+		  {
+		    "name": "page",
+		    "in": "query",
+		    "required": false,
+		    "description": "Page number of paginated result"
+		  },
+		  {
+		    "name": "taxonomy_term_id",
+		    "in": "query",
+		    "required": false,
+		    "description": "Search for services with a particular taxonomy term"
+		  },
+		  {
+		    "name": "taxonomy_id",
+		    "in": "query",
+		    "required": false,
+		    "description": "Search for services which contain any term with this taxonomy"
+		  },
+		  {
+		    "name": "organization_id",
+		    "in": "query",
+		    "required": false,
+		    "description": "Search for services which contain services that that this organization provides."
+		  },
+		  {
+		    "name": "modified_after",
+		    "in": "query",
+		    "required": false,
+		    "description": "Return all services modified on or after this datetime"
+		  },
+		  {
+		    "name": "minimal",
+		    "in": "query",
+		    "required": false,
+		    "description": "Return array of just service \"id\" and \"modified_date\".  When using this parameter aim to return all services within one call."
+		  },
+		  {
+		    "name": "full",
+		    "in": "query",
+		    "required": false,
+		    "description": "true, false return fully nested service."
+		  }
+
+		],
 	      "responses":
 	        {
 		  "200":
@@ -70,14 +129,90 @@
 		}
 	    }
 	},
+      "/services.ndjson":
+        {
+	  "description": "Retrieve new line delimited JSON feed that streams all the results",
+	  "get":
+	    {
+	     "summary": "Retrieve new line delimited JSON feed that streams all the results",
+	     "operationId": "getLineDelimitedJSONForServices",
+	     "parameters":
+	       [
+		 {
+		   "name": "text",
+		   "in": "query",
+		   "required": false,
+		   "description": "Full text search"
+		 },
+		 {
+		   "name": "taxonomy_term_id",
+		   "in": "query",
+		   "required": false,
+		   "description": "Search for services with particular taxonomy_term"
+		 },
+		 {
+		   "name": "taxonomy_id",
+		   "in": "query",
+		   "required": false,
+		   "description": "Search for services which contain any term with this taxonomy"
+		 },
+		 {
+		   "name": "organization_id",
+		   "in": "query",
+		   "required": false,
+		   "description": "Search for services which contain services that that this organization provides."
+		 },
+		 {
+		   "name": "modified_after",
+		   "in": "query",
+		   "required": false,
+		   "description": "Return all services modified on or after this datetime"
+		 },
+		 {
+		   "name": "minimal",
+		   "in": "query",
+		   "required": false,
+		   "description": "Return array of just service \"id\" and \"modified_date\".  When using this parameter aim to return all services within one call."
+		 },
+		 {
+		   "name": "full",
+		   "in": "query",
+		   "required": false,
+		   "description": "true, false return fully nested service."
+		 }
+	       ],
+	     "responses":
+	       {
+	         "200":
+		   {
+		     "description": "A Paginated list of services",
+		     "content":
+		       {
+		         "application/json":
+			   {
+			     "schema": { "$ref": "./schema/compiled/service_simple.json" }
+			   }
+		       }
+		   }
+	       }
+	    }
+	},
       "/taxonomies/{id}":
         {
 	  "description" : "Full information on taxonomy",
+	  "parameters":
+	    [
+	      {
+	        "in": "path",
+		"name": "id",
+		"required": true,
+		"description": "The id of the taxonomy that the request is intended to retrieve."
+	      }
+	    ],
 	  "get":
 	    {
 	      "summary": "Retrieves full information on a taxonomy by {id}",
 	      "operationId": "getTaxonomyById",
-	      "description": "DESCRIPTION HERE",
 	      "responses":
 	        {
 		  "200":
@@ -99,14 +234,28 @@
 	  "description" : "Paginated listing of taxonomies",
 	  "get":
 	    {
-	      "summary": "SUMMARY HERE",
+	      "summary": "Paginated listing of taxonomies",
 	      "operationId": "getPaginatedListOfTaxonomies",
-	      "description": "DESCRIPTION HERE",
+	      "parameters":
+	        [
+		   {
+		     "name": "search",
+		     "in": "query",
+		     "required": false,
+		     "description": "Full text search of taxonomies"
+		   },
+		   {
+		     "name": "page",
+		     "in": "query",
+		     "required": false,
+		     "description": "Page number of paginated result."
+		   }
+		],
 	      "responses":
 	        {
 		  "200":
 		    {
-		      "description": "DESCRIPTION HERE",
+		      "description": "Paginated listing of taxonomies",
 		      "content":
 		        {
 			  "application/json":
@@ -118,33 +267,19 @@
 		}
 	    }
 	},
-      "/taxonomy_terms":
-        {
-	  "description" : "Full information on a taxonomy term",
-	  "get":
-	    {
-	      "summary": "SUMMARY HERE",
-	      "operationId": "getTaxonomyTermById",
-	      "description": "DESCRIPTION HERE",
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "DESCRIPTION HERE",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema": { "$ref": "./schema/compiled/taxonomy_term.json"  }
-			    }
-			}
-		    }
-		}
-	    }
-	},
+      
       "/taxonomy_terms/{id}":
         {
 	  "description": "Paginated listing of taxonomy terms",
+	  "parameters":
+	    [
+	      {
+	        "in": "path",
+		"name": "id",
+		"required": true,
+		"description": "The id of the taxonomy terms that the request is intended to retrieve."
+	      }
+	    ],
 	  "get":
 	    {
 	      "summary": "SUMMARY HERE",
@@ -166,14 +301,88 @@
 		}
 	    }
 	},
+	"/taxonomy_terms":
+        {
+	  "description" : "Full information on a taxonomy term",
+	  "get":
+	    {
+	      "summary": "Paginated listing of taxonomy terms",
+	      "operationId": "getTaxonomyTermById",
+	      "parameters":
+	        [
+		   {
+		     "name": "search",
+		     "in": "query",
+		     "required": false,
+		     "description": "Text search over taxonomy terms"
+		   },
+		   {
+		     "name": "taxonomy_id",
+		     "in": "query",
+		     "required": false,
+		     "description": "Retrieve only taxonomy terms with particular taxonomy"
+		   },
+		   {
+		     "name": "top_only",
+		     "in": "query",
+		     "required": false,
+		     "description": "Only retrieve taxonomy terms that have not child terms."
+		   },
+		   {
+		     "name": "parent_id",
+		     "in": "query",
+		     "required": false,
+		     "description": "Recieve taxonomy terms that have a parent with this id."
+		   },
+		   {
+		     "name": "page",
+		     "in": "query",
+		     "required": false,
+		     "description": "Page number of paginated result."
+		   }
+		],
+	      "responses":
+	        {
+		  "200":
+		    {
+		      "description": "DESCRIPTION HERE",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema": { "$ref": "./schema/compiled/taxonomy_term.json"  }
+			    }
+			}
+		    }
+		}
+	    }
+	},
       "/organizations/{id}":
 	{
 	  "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
+	  "parameters":
+	    [
+	      {
+	        "in": "path",
+		"name": "id",
+		"required": true,
+		"description": "The id of the organization that the request is intended to retrieve."
+	      }
+	    ],
 	  "get":
 	    {
 	      "summary": "SUMMARY HERE",
 	      "operationId": "getOrganizationById",
 	      "description": "DESCRIPTION HERE",
+	      "parameters":
+	        [
+		  {
+		    "name": "full_service",
+		    "in": "query",
+		    "required": false,
+		    "description": "Fully nested organization with service array that contains full information."
+		  }
+		],
 	      "responses":
 	        {
 		  "200":
@@ -195,9 +404,35 @@
 	  "description": "Paginated list of basic Organization information.",
 	  "get":
 	    {
-	      "summary": "SUMMARY HERE",
+	      "summary": "Paginated list of basic Organization information",
 	      "operationId": "getPaginatedListOfOrganizations",
-	      "description": "DESCRIPTION HERE",
+	      "parameters":
+	        [
+		  {
+		    "name": "text",
+		    "in": "query",
+		    "required": false,
+		    "description": "Text search over organization name and description."
+		  },
+		  {
+		    "name": "full_service",
+		    "in": "query",
+		    "required": false,
+		    "description": "Fully nested organization with service array that contains full service information."
+		  },
+		  {
+		    "name": "full",
+		    "in": "query",
+		    "required": false,
+		    "description": "Contains full nested organization information"
+		  },
+		  {
+		    "name": "page",
+		    "in": "query",
+		    "required": false,
+		    "description": "Page number of paginated result."
+		  }
+		],
 	      "responses":
 	        {
 		  "200":
@@ -217,6 +452,15 @@
       "/service_at_locations/{id}":
         {
 	  "description": "Retrieve fully nested service_at_location with all related data with specified id.",
+	  "parameters":
+	    [
+	      {
+	        "in": "path",
+		"name": "id",
+		"required": true,
+		"description": "The id of the service that the request is intended to retrieve."
+	      }
+	    ],
 	  "get":
 	    {
 	      "summary": "SUMMARY HERE",
@@ -243,14 +487,58 @@
 	  "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
 	  "get":
 	    {
-	      "summary": "SUMMARY HERE",
+	      "summary": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
 	      "operationId": "getPaginatedListOfServiceAtLocation",
-	      "description": "DESCRIPTION HERE",
+	      "parameters":
+	        [
+		   {
+		     "name": "text",
+		     "in": "query",
+		     "required": false,
+		     "description": "Full text search"
+		   },
+		   {
+		     "name": "taxonomy_term_id",
+		     "in": "query",
+		     "required": false,
+		     "description": "Search for services with particular taxonomy_term"
+		   },
+		   {
+		     "name": "taxonomy_id",
+		     "in": "query",
+		     "required": false,
+		     "description": "Search for services which contain any term with this taxonomy"
+		   },
+		   {
+		     "name": "organization_id",
+		     "in": "query",
+		     "required": false,
+		     "description": "Search for services which contain services that that this organization provides."
+		   },
+		   {
+		     "name": "modified_after",
+		     "in": "query",
+		     "required": false,
+		     "description": "Return all service_at_locations where the associated service modified on or after this datetime"
+		   },
+		   {
+		     "name": "full",
+		     "in": "query",
+		     "required": false,
+		     "description": "true, false return fully nested service_at_location."
+		   },
+		   {
+		     "name": "page",
+		     "in": "query",
+		     "required": false,
+		     "description": "Page number of paginated result."
+		   }
+		],
 	      "responses":
 	        {
 		  "200":
 		    {
-		      "description": "DESCRIPTION HERE",
+		      "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
 		      "content":
 		        {
 			  "application/json":
