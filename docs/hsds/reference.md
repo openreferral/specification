@@ -529,6 +529,7 @@ Each `meta_table_description` object has the following fields:
 
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/meta_table_description
+:collapse: attributes,metadata
 
 ```
 
@@ -536,11 +537,7 @@ Each `meta_table_description` object has the following fields:
 
 :::{tab-item} Example
 
-```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
-    :jsonpointer: /meta_table_description
-    :title: meta_table_description
-```
+In development
 
 :::
 
