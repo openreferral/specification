@@ -46,7 +46,7 @@
 		       {
 		         "application/json":
 			   {
-			     "schema": { "$ref": "./schema/compiled/service.json" }
+			     "schema": { "$ref": "#/components/schemas/Page_ServiceFull" }
 			   }
 		       }
 		   }
@@ -547,5 +547,63 @@
 		}
 	    }
 	}
-    }
+    },
+    "components":
+      {
+        "schemas":
+	  {
+	   "Page_ServiceFull":
+	     {
+	       "type": "object",
+	       "properties":
+	         {
+		   "totalElements":
+		     {
+		       "type": "integer",
+		       "format": "int64"
+		     },
+		   "totalPages":
+		     {
+		       "type": "integer",
+		       "format": "int32"
+		     },
+		   "number": 
+		     {
+		       "type": "integer",
+		       "format": "int32"
+		     },
+		   "size":
+		     {
+		       "type": "integer",
+		       "format": "int32"
+		     },
+		   "numberOfElements":
+		     {
+		       "type": "integer",
+		       "format": "int32"
+		     },
+		   "first":
+		     {
+		       "type": "boolean"
+		     },
+		   "last":
+		     {
+		       "type": "boolean"
+		     },
+		   "empty":
+		     {
+		       "type": "boolean"
+		     },
+		   "contents":
+		     {
+		       "type": "array",
+		       "items":
+		         {
+			   "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/examples/service_full.json"
+			 }
+		     }
+		 }
+	     }  
+	  }
+      }
 }
