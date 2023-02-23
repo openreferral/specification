@@ -2383,31 +2383,34 @@
                         "name": "name",
                         "type": "string",
                         "title": "Name",
+                        "description": "The name for the metadata description.",
                         "constraints": {
                             "required": false,
                             "unique": false
                         },
-                        "example": "name"
+                        "example": "Example name"
                     },
                     {
                         "name": "language",
                         "type": "string",
                         "title": "Language",
+                        "description": "The ISO 639-1 or ISO 639-3 code for the language of the metadata description.",
                         "constraints": {
                             "required": false,
                             "unique": false
                         },
-                        "example": "language"
+                        "example": "ur"
                     },
                     {
                         "name": "character_set",
                         "type": "string",
                         "title": "Character Set",
+                        "description": "The character set of the metadata description.",
                         "constraints": {
                             "required": false,
                             "unique": false
                         },
-                        "example": "character_set"
+                        "example": "ASCII"
                     }
                 ]
             }
