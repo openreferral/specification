@@ -3,7 +3,7 @@
   "info":
     {
       "title": "REQUIRED -- TITLE OF YOUR API HERE",
-      "version": "REQUIRED -- The version of your API. This is distinct from the OpenAPI Schema version.",
+      "version": "REQUIRED -- The version of this document. This is distinct from the OpenAPI Schema version and the version of your API.",
       "summary": "SUMMARY HERE",
       "description": "DESCRIPTION HERE",
       "contact":
@@ -282,14 +282,13 @@
 	    ],
 	  "get":
 	    {
-	      "summary": "SUMMARY HERE",
+	      "summary": "Paginated listing of taxonomy terms",
 	      "operationId": "getPaginatedListOfTaxonomyTerms",
-	      "description": "DESCRIPTION HERE",
 	      "responses":
 	        {
 		  "200":
 		    {
-		      "description": "DESCRIPTION HERE",
+		      "description": "Paginated listing of taxonomy terms",
 		      "content":
 		        {
 			  "application/json":
@@ -345,7 +344,7 @@
 	        {
 		  "200":
 		    {
-		      "description": "DESCRIPTION HERE",
+		      "description": "Paginated listing of taxonomy terms",
 		      "content":
 		        {
 			  "application/json":
@@ -371,9 +370,8 @@
 	    ],
 	  "get":
 	    {
-	      "summary": "SUMMARY HERE",
+	      "summary": "Fully nested organization with service array that contains simple information which could only contain the service.id",
 	      "operationId": "getOrganizationById",
-	      "description": "DESCRIPTION HERE",
 	      "parameters":
 	        [
 		  {
@@ -387,7 +385,7 @@
 	        {
 		  "200":
 		    {
-		      "description": "DESCRIPTION HERE",
+		      "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
 		      "content":
 		        {
 			  "application/json":
@@ -437,7 +435,7 @@
 	        {
 		  "200":
 		    {
-		      "description": "DESCRIPTION HERE",
+		      "description": "Paginated list of basic Organization information.",
 		      "content":
 		        {
 			  "application/json":
@@ -463,14 +461,13 @@
 	    ],
 	  "get":
 	    {
-	      "summary": "SUMMARY HERE",
+	      "summary": "Retrieve fully nested service_at_location with all related data with specified id.",
 	      "operationId": "getServiceAtLocationWithNestedDataById",
-	      "description": "DESCRIPTION HERE",
 	      "responses":
 	        {
 		  "200":
 		    {
-		      "description": "DESCRIPTION HERE",
+		      "description": "Retrieve fully nested service_at_location with all related data with specified id.",
 		      "content":
 		        {
 			  "application/json":
