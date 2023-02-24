@@ -21,6 +21,52 @@
   "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
   "paths":
     {
+      "/":
+        {
+	  "description": "Retrieve information about this API and its relationship with HSDS",
+	  "get":
+	    {
+	      "summary": "Retrieve information about this API and its relationship with HSDS",
+	      "operationId": "getAPIMetaInformation",
+	      "responses": 
+	        {
+		  "200":
+		    {
+		      "description": "A JSON response providing information about this API",
+		      "content":
+		        {
+			  "application/json":
+			    {
+			      "schema":
+			        {
+				  "type": "object",
+				  "properties":
+				    {
+				      "version":
+				        {
+					  "type": "string",
+					  "description": "HSDS version of this API"
+					},
+				      "profile":
+				        {
+					  "type": "string",
+					  "format": "uri",
+					  "description": "URL of where the information on the HSDS profile of this API"
+					},
+				      "openapi_url":
+				        {
+					  "type": "string",
+					  "format": "uri",
+					  "description": "URL of the openapi JSON file which defines this API"
+					}
+				    }
+				}
+			    }
+			}
+		    }
+		}
+	    }
+	},
       "/services/{id}":
         {
 	  "description": "Retrieve fully nested service with all related data with id.",
@@ -576,37 +622,40 @@
 	       "type": "object",
 	       "properties":
 	         {
-		   "totalElements":
+		   "total_items":
 		     {
 		       "type": "integer",
-		       "format": "int64"
+		       "description": "Count of total results"
 		     },
-		   "totalPages":
+		   "total_pages":
 		     {
 		       "type": "integer",
-		       "format": "int32"
+		       "description": "Count of total pages"
 		     },
-		   "number": 
+		   "page_number":
 		     {
 		       "type": "integer",
-		       "format": "int32"
+		       "description": "Current Page number"
 		     },
 		   "size":
 		     {
 		       "type": "integer",
-		       "format": "int32"
+		       "description": "Size of current page"
 		     },
-		    "first":
+		   "first_page":
 		     {
-		       "type": "boolean"
+		       "type": "boolean",
+		       "description": "Is this page the first page"
 		     },
-		   "last":
+		   "last_page":
 		     {
-		       "type": "boolean"
+		       "type": "boolean",
+		       "description": "Is this page the last page"
 		     },
 		   "empty":
 		     {
-		       "type": "boolean"
+		       "type": "boolean",
+		       "description": "Is this page empty"
 		     }
 		 }
 	     }  
