@@ -110,54 +110,31 @@
 	      "parameters":
 	        [
 		  {
-		    "name": "search",
-		    "in": "query",
-		    "required": false,
-		    "description": "Full text search"
+		    "$ref": "#/components/parameters/search"
 		  },
 		  {
-		    "name": "page",
-		    "in": "query",
-		    "required": false,
-		    "description": "Page number of paginated result"
+		    "$ref": "#/components/parameters/page"
 		  },
 		  {
-		    "name": "taxonomy_term_id",
-		    "in": "query",
-		    "required": false,
-		    "description": "Search for services with a particular taxonomy term"
+		    "$ref": "#/components/parameters/taxonomy_term_id"
 		  },
 		  {
-		    "name": "taxonomy_id",
-		    "in": "query",
-		    "required": false,
-		    "description": "Search for services which contain any term with this taxonomy"
+		    "$ref": "#/components/parameters/taxonomy_id"
 		  },
 		  {
-		    "name": "organization_id",
-		    "in": "query",
-		    "required": false,
-		    "description": "Search for services which contain services that that this organization provides."
+		    "$ref": "#/components/parameters/organization_id"
 		  },
 		  {
-		    "name": "modified_after",
-		    "in": "query",
-		    "required": false,
-		    "description": "Return all services modified on or after this datetime"
+	            "$ref": "#/components/parameters/modified_after"
 		  },
 		  {
-		    "name": "minimal",
-		    "in": "query",
-		    "required": false,
-		    "description": "Return array of just service \"id\" and \"modified_date\".  When using this parameter aim to return all services within one call."
+		    "description": "Return array of just services with just 'id' and 'modified_date'.  When using this parameter aim to return all services within one page.",
+	            "$ref": "#/components/parameters/minimal"
 		  },
 		  {
-		    "name": "full",
-		    "in": "query",
-		    "required": false,
-		    "description": "true, false return fully nested service."
+		    "description": "true, false return fully nested service.",
+	            "$ref": "#/components/parameters/full"
 		  }
-
 		],
 	      "responses":
 	        {
@@ -202,50 +179,30 @@
 	     "summary": "Retrieve new line delimited JSON feed that streams all the results",
 	     "operationId": "getLineDelimitedJSONForServices",
 	     "parameters":
-	       [
-		 {
-		   "name": "text",
-		   "in": "query",
-		   "required": false,
-		   "description": "Full text search"
-		 },
-		 {
-		   "name": "taxonomy_term_id",
-		   "in": "query",
-		   "required": false,
-		   "description": "Search for services with particular taxonomy_term"
-		 },
-		 {
-		   "name": "taxonomy_id",
-		   "in": "query",
-		   "required": false,
-		   "description": "Search for services which contain any term with this taxonomy"
-		 },
-		 {
-		   "name": "organization_id",
-		   "in": "query",
-		   "required": false,
-		   "description": "Search for services which contain services that that this organization provides."
-		 },
-		 {
-		   "name": "modified_after",
-		   "in": "query",
-		   "required": false,
-		   "description": "Return all services modified on or after this datetime"
-		 },
-		 {
-		   "name": "minimal",
-		   "in": "query",
-		   "required": false,
-		   "description": "Return array of just service \"id\" and \"modified_date\".  When using this parameter aim to return all services within one call."
-		 },
-		 {
-		   "name": "full",
-		   "in": "query",
-		   "required": false,
-		   "description": "true, false return fully nested service."
-		 }
-	       ],
+	        [
+		  {
+		    "$ref": "#/components/parameters/search"
+		  },
+		  {
+		    "$ref": "#/components/parameters/taxonomy_term_id"
+		  },
+		  {
+		    "$ref": "#/components/parameters/taxonomy_id"
+		  },
+		  {
+		    "$ref": "#/components/parameters/organization_id"
+		  },
+		  {
+	            "$ref": "#/components/parameters/modified_after"
+		  },
+		  {
+	            "$ref": "#/components/parameters/minimal"
+		  },
+		  {
+		    "description": "true, false return fully nested service.",
+	            "$ref": "#/components/parameters/full"
+		  }
+		],
 	     "responses":
 	       {
 	         "200":
@@ -304,16 +261,10 @@
 	      "parameters":
 	        [
 		   {
-		     "name": "search",
-		     "in": "query",
-		     "required": false,
-		     "description": "Full text search of taxonomies"
+		     "$ref": "#/components/parameters/search"
 		   },
 		   {
-		     "name": "page",
-		     "in": "query",
-		     "required": false,
-		     "description": "Page number of paginated result."
+		     "$ref": "#/components/parameters/page"
 		   }
 		],
 	      "responses":
@@ -375,34 +326,33 @@
 	      "parameters":
 	        [
 		   {
-		     "name": "search",
-		     "in": "query",
-		     "required": false,
-		     "description": "Text search over taxonomy terms"
+		     "$ref": "#/components/parameters/search"
 		   },
 		   {
-		     "name": "taxonomy_id",
-		     "in": "query",
-		     "required": false,
-		     "description": "Retrieve only taxonomy terms with particular taxonomy"
+		     "$ref": "#/components/parameters/page"
+		   },
+		   {
+		     "$ref": "#/components/parameters/taxonomy_id"
 		   },
 		   {
 		     "name": "top_only",
 		     "in": "query",
 		     "required": false,
-		     "description": "Only retrieve taxonomy terms that have not child terms."
+		     "description": "Only retrieve taxonomy terms that have not child terms.",
+		     "schema":
+		       {
+		         "type": "boolean"
+		       }
 		   },
 		   {
 		     "name": "parent_id",
 		     "in": "query",
 		     "required": false,
-		     "description": "Recieve taxonomy terms that have a parent with this id."
-		   },
-		   {
-		     "name": "page",
-		     "in": "query",
-		     "required": false,
-		     "description": "Page number of paginated result."
+		     "description": "Recieve taxonomy terms that have a parent with this id.",
+		     "schema":
+		       {
+		         "type": "string"
+		       }
 		   }
 		],
 	      "responses":
@@ -440,10 +390,7 @@
 	      "parameters":
 	        [
 		  {
-		    "name": "full_service",
-		    "in": "query",
-		    "required": false,
-		    "description": "Fully nested organization with service array that contains full information."
+	            "$ref": "#/components/parameters/full_service"
 		  }
 		],
 	      "responses":
@@ -472,28 +419,17 @@
 	      "parameters":
 	        [
 		  {
-		    "name": "text",
-		    "in": "query",
-		    "required": false,
-		    "description": "Text search over organization name and description."
+		    "$ref": "#/components/parameters/search"
 		  },
 		  {
-		    "name": "full_service",
-		    "in": "query",
-		    "required": false,
-		    "description": "Fully nested organization with service array that contains full service information."
+		    "$ref": "#components/parameters/full_service"
 		  },
 		  {
-		    "name": "full",
-		    "in": "query",
-		    "required": false,
-		    "description": "Contains full nested organization information"
+		    "description": "Contains full nested organization information",
+		    "$ref": "#/components/parameters/full"
 		  },
 		  {
-		    "name": "page",
-		    "in": "query",
-		    "required": false,
-		    "description": "Page number of paginated result."
+		    "$ref": "#/components/parameters/page"
 		  }
 		],
 	      "responses":
@@ -554,46 +490,26 @@
 	      "parameters":
 	        [
 		   {
-		     "name": "text",
-		     "in": "query",
-		     "required": false,
-		     "description": "Full text search"
+		     "$ref": "#/components/parameters/search"
 		   },
 		   {
-		     "name": "taxonomy_term_id",
-		     "in": "query",
-		     "required": false,
-		     "description": "Search for services with particular taxonomy_term"
+		     "$ref": "#/components/parameters/taxonomy_term_id"
 		   },
 		   {
-		     "name": "taxonomy_id",
-		     "in": "query",
-		     "required": false,
-		     "description": "Search for services which contain any term with this taxonomy"
+		     "$ref": "#/components/parameters/taxonomy_id"
 		   },
 		   {
-		     "name": "organization_id",
-		     "in": "query",
-		     "required": false,
-		     "description": "Search for services which contain services that that this organization provides."
+		     "$ref": "#/components/parameters/organization_id"
 		   },
 		   {
-		     "name": "modified_after",
-		     "in": "query",
-		     "required": false,
-		     "description": "Return all service_at_locations where the associated service modified on or after this datetime"
+		     "$ref": "#/components/parameters/modified_after"
 		   },
 		   {
-		     "name": "full",
-		     "in": "query",
-		     "required": false,
-		     "description": "true, false return fully nested service_at_location."
+		     "description": "true, false return fully nested service_at_location.",
+		     "$ref": "#/components/parameters/full"
 		   },
 		   {
-		     "name": "page",
-		     "in": "query",
-		     "required": false,
-		     "description": "Page number of paginated result."
+		     "$ref": "#/components/parameters/page"
 		   }
 		],
 	      "responses":
@@ -661,6 +577,108 @@
 	     }  
 	  },
 	 "parameters":
+	   {
+	     "search":
+	       {
+		 "name": "search",
+		 "in": "query",
+		 "required": false,
+		 "description": "Full text search",
+		 "schema":
+		   {
+		     "type": "string"
+		   }
+	       },
+	     "page":
+	       {
+	         "name": "page",
+		 "in": "query",
+		 "required": false,
+		 "description": "Page number of paginated result.",
+		 "schema":
+		   {
+		     "type": "integer"
+		   }
+	       },
+	     "minimal":
+	       {
+	         "name": "minimal",
+		 "in": "query",
+		 "required": false,
+		 "description": "Return array of just service 'id' and 'modified_date'.  When using this parameter aim to return all services within one call.",
+		 "schema":
+		   {
+		     "type": "boolean"
+		   }
+	       },
+	     "full":
+	       {
+	         "name": "full",
+		 "in": "query",
+		 "required": false,
+		 "description": "Return a fully nested service, service_at_location, or organization based on the request.",
+		 "schema":
+		   {
+		     "type": "boolean"
+		   }
+	       },
+	     "modified_after":
+	       {
+	         "name": "modified_after",
+		 "in": "query",
+		 "required": false,
+		 "description": "Return all results modified on or after this datetime",
+		 "schema":
+		   {
+		     "type": "string",
+		     "format": "datetime"
+		   }
+	       },
+	     "taxonomy_term_id":
+	       {
+	         "name": "taxonomy_term_id",
+		 "in": "query",
+		 "required": false,
+		 "description": "Search for services with particular taxonomy_term",
+		 "schema":
+		   {
+		     "type": "string"
+		   }
+	       },
+	     "taxonomy_id":
+	       {
+	         "name": "taxonomy_id",
+		 "in": "query",
+		 "required": false,
+		 "description": "Search for services which contain any term with this taxonomy",
+		 "schema":
+		   {
+		     "type": "string"
+		   }
+	       },
+	     "organization_id":
+	       {
+	         "name": "organization_id",
+		 "in": "query",
+		 "required": false,
+		 "description": "Search for services which contain services that that this organization provides.",
+		 "schema":
+		   {
+		     "type": "string"
+		   }
+	       },
+	     "full_service":
+	       {
+	         "name": "full_service",
+		 "in": "query",
+		 "required": false,
+		 "description": "Fully nested organization with service array that contains full service information.",
+		 "schema":
+		   {
+		     "type": "boolean"
+		   }
+	       }
+	   }
 	   
       }
 }
