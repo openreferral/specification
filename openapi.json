@@ -154,7 +154,7 @@
 					  "type": "array",
 					  "items":
 					  {
-					    "$ref": "URL TO SERVICE SCHEMA"
+					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_simple.json"
 					  }
 					}
 				    },
@@ -207,12 +207,12 @@
 	       {
 	         "200":
 		   {
-		     "description": "A Paginated list of services",
+		     "description": "Retrieve new line delimited JSON feed that streams all the resultsd",
 		     "content":
 		       {
 		         "application/json":
 			   {
-			     "schema": { "$ref": "./schema/compiled/service_simple.json" }
+			     "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_simple.json" }
 			   }
 		       }
 		   }
@@ -244,7 +244,7 @@
 		        {
 			  "application/json":
 			    {
-			      "schema": { "$ref": "./schema/compiled/taxonomy.json"  }
+			      "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy.json"  }
 			    }
 			}
 		    }
@@ -276,7 +276,26 @@
 		        {
 			  "application/json":
 			    {
-			      "schema": { "$ref": "./schema/compiled/taxonomy.json"  }
+			      "schema":
+			        {
+				  "properties":
+				    {
+				      "contents":
+				        {
+					  "type": "array",
+					  "items":
+					  {
+					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy.json"
+					  }
+					}
+				    },
+				  "allOf":
+				    [
+				      {
+				        "$ref": "#/components/schemas/Page"
+				      }
+				    ]
+				}
 			    }
 			}
 		    }
@@ -286,7 +305,7 @@
       
       "/taxonomy_terms/{id}":
         {
-	  "description": "Paginated listing of taxonomy terms",
+	  "description": "Full information on a taxonomy term",
 	  "parameters":
 	    [
 	      {
@@ -298,18 +317,18 @@
 	    ],
 	  "get":
 	    {
-	      "summary": "Paginated listing of taxonomy terms",
+	      "summary": "Full information on a taxonomy term",
 	      "operationId": "getPaginatedListOfTaxonomyTerms",
 	      "responses":
 	        {
 		  "200":
 		    {
-		      "description": "Paginated listing of taxonomy terms",
+		      "description": "Full information on a taxonomy term",
 		      "content":
 		        {
 			  "application/json":
 			    {
-			      "schema": { "$ref": "./schema/compiled/taxonomy_term.json"  }
+			      "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy_term.json"  }
 			    }
 			}
 		    }
@@ -364,7 +383,26 @@
 		        {
 			  "application/json":
 			    {
-			      "schema": { "$ref": "./schema/compiled/taxonomy_term.json"  }
+			      "schema":
+			        {
+				  "properties":
+				    {
+				      "contents":
+				        {
+					  "type": "array",
+					  "items":
+					  {
+					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy_term.json"
+					  }
+					}
+				    },
+				  "allOf":
+				    [
+				      {
+				        "$ref": "#/components/schemas/Page"
+				      }
+				    ]
+				}
 			    }
 			}
 		    }
@@ -402,7 +440,7 @@
 		        {
 			  "application/json":
 			    {
-			      "schema": { "$ref": "./schema/compiled/organization_full.json"  }
+			      "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization.json"  }
 			    }
 			}
 		    }
@@ -441,7 +479,26 @@
 		        {
 			  "application/json":
 			    {
-			      "schema": { "$ref": "./schema/compiled/organization_simple.json"  }
+			      "schema":
+			        {
+				  "properties":
+				    {
+				      "contents":
+				        {
+					  "type": "array",
+					  "items":
+					  {
+					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization_simple.json"
+					  }
+					}
+				    },
+				  "allOf":
+				    [
+				      {
+				        "$ref": "#/components/schemas/Page"
+				      }
+				    ]
+				}
 			    }
 			}
 		    }
@@ -473,7 +530,7 @@
 		        {
 			  "application/json":
 			    {
-			      "schema": { "$ref": "./schema/compiled/service_full.json"  }
+			      "schema": { "$ref": "./schema/compiled/service.json"  }
 			    }
 			}
 		    }
@@ -521,7 +578,26 @@
 		        {
 			  "application/json":
 			    {
-			      "schema": { "$ref": "./schema/compiled/service_at_location_simple.json"  }
+			      "schema":
+			        {
+				  "properties":
+				    {
+				      "contents":
+				        {
+					  "type": "array",
+					  "items":
+					  {
+					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_at_location_simple.json"
+					  }
+					}
+				    },
+				  "allOf":
+				    [
+				      {
+				        "$ref": "#/components/schemas/Page"
+				      }
+				    ]
+				}
 			    }
 			}
 		    }
