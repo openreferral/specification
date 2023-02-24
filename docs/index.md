@@ -9,7 +9,7 @@ The Open Referral Initiative develops data standards and open platforms that mak
 
 This site contains documentation for the [Human Services Data Specification (HSDS)](hsds) and the [associated Human Services Data API Suite (HSDA)](hsda). 
 
-These can be used to structure and exchange information about the accessibility of health, human, and social services. Specifically, the HSDS describes data about organizations, the services they provide, the locations at which these services can be accessed, and associated details. The HSDA describes protocols for accessing and managing this data. 
+These can be used to structure and exchange information about the accessibility of health, human, and social services. Specifically, the HSDS describes data about organizations, the services they provide, the locations at which these services can be accessed, and associated details. It also describes protocols for accessing and managing this data. 
 
 ## Our ecosystem
 
@@ -40,7 +40,8 @@ Contents:
    :caption: Human Services Data Spec
 
    hsds/about
-   hsds/reference
+   hsds/schema_reference
+   hsds/api_reference
    hsds/logical_model
    hsds/variations_interoperability
    hsds/formatting
@@ -57,12 +58,6 @@ Contents:
    hsds/producing_sharing
    hsds/extending
    hsds/sample_data
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Human Services Data API
-
-   hsda/index
 
 .. toctree::
    :maxdepth: 1
