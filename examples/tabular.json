@@ -229,9 +229,9 @@
   "meta_table_description": [
     {
       "id": "c11af60b-a394-4e53-9943-324dda2d17a1",
-      "name": "name",
-      "language": "language",
-      "character_set": "character_set"
+      "name": "Example name",
+      "language": "ur",
+      "character_set": "ASCII"
     }
   ],
   "cost_option": [

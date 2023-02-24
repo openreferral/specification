@@ -512,3 +512,33 @@ Each `metadata` object has the following fields:
 :::
 
 ::::
+
+#### meta_table_description
+
+`meta_table_description` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/meta_table_description/description
+```
+
+Each `meta_table_description` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/meta_table_description
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+In development
+
+:::
+
+::::
