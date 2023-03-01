@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Link Identifier",
             "description": "The identifier of the entity to which this taxonomy term applies.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -38,6 +39,7 @@
             "type": "string",
             "title": "Taxonomy Term Identifier",
             "description": "The identifier of this taxonomy term from the taxonomy table.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

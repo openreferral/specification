@@ -26,6 +26,7 @@
             "type": "string",
             "title": "Resource Identifier",
             "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

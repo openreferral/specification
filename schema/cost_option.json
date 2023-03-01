@@ -26,6 +26,7 @@
             "type": "string",
             "title": "Service Identifier",
             "description": "The identifier of the services for which the entry describes the cost.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

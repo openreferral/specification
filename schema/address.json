@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Location Identifier",
             "description": "The identifier of the location for this postal address.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Organization Identifier",
             "description": "The identifier of the organization for which this is a contact.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -37,6 +38,7 @@
             "type": "string",
             "title": "Service Identifier",
             "description": "The identifier of the service for which this is a contact.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -47,6 +49,7 @@
             "name": "service_at_location_id",
             "type": "string",
             "title": "Service At Location Identifier",
+            "format": "uuid",
             "description": "The identifier of the \u2018service at location\u2019 entry, when this contact is specific to a service in a particular location.",
             "constraints": {
                 "unique": false
@@ -57,6 +60,7 @@
             "name": "location_id",
             "type": "string",
             "title": "Location Identifier",
+            "format": "uuid",
             "description": "The identifier for the location of the contact.",
             "constraints": {
                 "unique": false

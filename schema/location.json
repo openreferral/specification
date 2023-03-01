@@ -55,6 +55,7 @@
             "type": "string",
             "title": "Organization Identifier",
             "description": "The organization identifier for a location. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

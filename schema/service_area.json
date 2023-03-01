@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Service Identifier",
             "description": "The identifier of the service for which this entry describes the service area",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

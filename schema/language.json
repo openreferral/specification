@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Service Identifier",
             "description": "The identifier of the service for which the entry describes the languages in which services are delivered.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -38,6 +39,7 @@
             "type": "string",
             "title": "Location Identifier",
             "description": "The identifier of the location for which the entry describes the languages in which services are delivered.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -47,6 +49,7 @@
             "name": "phone_id",
             "type": "string",
             "title": "Phone Identifier",
+            "format": "uuid",
             "description": "The identifier of the phone for which the entry describes the languages in which services delivered.",
             "constraints": {
                 "unique": false

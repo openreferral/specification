@@ -58,6 +58,7 @@
             "type": "string",
             "title": "Parent Identifier",
             "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this is not required.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -96,6 +97,7 @@
             "type": "string",
             "title": "Taxonomy Identifier",
             "description": "The identifier of the taxonomy containing the term.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

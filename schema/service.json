@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Organization Identifier",
             "description": "The identifier of the organization that provides this service.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -38,6 +39,7 @@
             "type": "string",
             "title": "Program Identifier",
             "description": "The identifier of the program this service is delivered under.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

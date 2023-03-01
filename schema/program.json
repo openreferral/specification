@@ -26,6 +26,7 @@
             "type": "string",
             "title": "Organization Identifier",
             "description": "The identifier for the organization which the program belongs to. Each program must belong to a single organization, and the identifier for that organization should be given here.",
+            "format": "uuid",
             "constraints": {
                 "unique": true
             },

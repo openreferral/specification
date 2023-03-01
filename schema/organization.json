@@ -146,6 +146,7 @@
             "type": "string",
             "title": "Parent Organization Identifier",
             "description": "The identifier of the organization's parent organization.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

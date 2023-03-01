@@ -26,6 +26,7 @@
             "type": "string",
             "title": "Organization Identifier",
             "description": "The identifier of the organization in receipt of this funding.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -35,6 +36,7 @@
             "name": "service_id",
             "type": "string",
             "title": "Service Identifier",
+            "format": "uuid",
             "description": "The identifier of the service in receipt of this funding.",
             "constraints": {
                 "unique": false
