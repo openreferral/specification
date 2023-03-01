@@ -2290,7 +2290,7 @@
                     },
                     {
                         "name": "last_action_date",
-                        "type": "datetime",
+                        "type": "date",
                         "title": "Last Action Date",
                         "description": "The date when data was changed.",
                         "constraints": {

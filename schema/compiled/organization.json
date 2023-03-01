@@ -491,7 +491,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -655,7 +655,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -788,7 +788,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -924,7 +924,7 @@
                     "unique": false
                   },
                   "example": "2011-01-01",
-                  "datapackage_type": "datetime"
+                  "datapackage_type": "date"
                 },
                 "last_action_type": {
                   "name": "last_action_type",
@@ -1605,7 +1605,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -1769,7 +1769,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -1902,7 +1902,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -2038,7 +2038,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -2394,7 +2394,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -2558,7 +2558,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -2691,7 +2691,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -2827,7 +2827,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -3184,7 +3184,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -3348,7 +3348,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -3481,7 +3481,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -3617,7 +3617,7 @@
                     "unique": false
                   },
                   "example": "2011-01-01",
-                  "datapackage_type": "datetime"
+                  "datapackage_type": "date"
                 },
                 "last_action_type": {
                   "name": "last_action_type",
@@ -4185,7 +4185,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -4349,7 +4349,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -4482,7 +4482,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -4618,7 +4618,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -4974,7 +4974,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -5138,7 +5138,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -5271,7 +5271,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -5407,7 +5407,7 @@
                     "unique": false
                   },
                   "example": "2011-01-01",
-                  "datapackage_type": "datetime"
+                  "datapackage_type": "date"
                 },
                 "last_action_type": {
                   "name": "last_action_type",
@@ -6006,7 +6006,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -6170,7 +6170,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -6303,7 +6303,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -6439,7 +6439,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -6937,7 +6937,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -7101,7 +7101,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -7234,7 +7234,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -7370,7 +7370,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -8057,7 +8057,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -8221,7 +8221,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -8354,7 +8354,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -8490,7 +8490,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -8846,7 +8846,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -9010,7 +9010,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -9143,7 +9143,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -9279,7 +9279,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -9636,7 +9636,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -9800,7 +9800,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -9933,7 +9933,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -10069,7 +10069,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -10497,7 +10497,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -10661,7 +10661,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -10794,7 +10794,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -10930,7 +10930,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -11498,7 +11498,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -11662,7 +11662,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -11795,7 +11795,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -11931,7 +11931,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -12287,7 +12287,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -12451,7 +12451,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -12584,7 +12584,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -12720,7 +12720,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -13358,7 +13358,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -13522,7 +13522,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -13655,7 +13655,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -13791,7 +13791,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -14147,7 +14147,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -14311,7 +14311,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -14444,7 +14444,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -14580,7 +14580,7 @@
                     "unique": false
                   },
                   "example": "2011-01-01",
-                  "datapackage_type": "datetime"
+                  "datapackage_type": "date"
                 },
                 "last_action_type": {
                   "name": "last_action_type",
@@ -15005,7 +15005,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -15169,7 +15169,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -15302,7 +15302,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -15438,7 +15438,7 @@
                     "unique": false
                   },
                   "example": "2011-01-01",
-                  "datapackage_type": "datetime"
+                  "datapackage_type": "date"
                 },
                 "last_action_type": {
                   "name": "last_action_type",
@@ -15867,7 +15867,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -16031,7 +16031,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -16164,7 +16164,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -16300,7 +16300,7 @@
                     "unique": false
                   },
                   "example": "2011-01-01",
-                  "datapackage_type": "datetime"
+                  "datapackage_type": "date"
                 },
                 "last_action_type": {
                   "name": "last_action_type",
@@ -16661,7 +16661,7 @@
                             "unique": false
                           },
                           "example": "2011-01-01",
-                          "datapackage_type": "datetime"
+                          "datapackage_type": "date"
                         },
                         "last_action_type": {
                           "name": "last_action_type",
@@ -16825,7 +16825,7 @@
                         "unique": false
                       },
                       "example": "2011-01-01",
-                      "datapackage_type": "datetime"
+                      "datapackage_type": "date"
                     },
                     "last_action_type": {
                       "name": "last_action_type",
@@ -16958,7 +16958,7 @@
                     "unique": false
                   },
                   "example": "2011-01-01",
-                  "datapackage_type": "datetime"
+                  "datapackage_type": "date"
                 },
                 "last_action_type": {
                   "name": "last_action_type",
@@ -17094,7 +17094,7 @@
               "unique": false
             },
             "example": "2011-01-01",
-            "datapackage_type": "datetime"
+            "datapackage_type": "date"
           },
           "last_action_type": {
             "name": "last_action_type",
@@ -17909,7 +17909,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -18073,7 +18073,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -18206,7 +18206,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -18342,7 +18342,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -18698,7 +18698,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -18862,7 +18862,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -18995,7 +18995,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -19131,7 +19131,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -19769,7 +19769,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -19933,7 +19933,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -20066,7 +20066,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -20202,7 +20202,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -20650,7 +20650,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -20814,7 +20814,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -20947,7 +20947,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -21083,7 +21083,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -21825,7 +21825,7 @@
                                                           "unique": false
                                                         },
                                                         "example": "2011-01-01",
-                                                        "datapackage_type": "datetime"
+                                                        "datapackage_type": "date"
                                                       },
                                                       "last_action_type": {
                                                         "name": "last_action_type",
@@ -21989,7 +21989,7 @@
                                                       "unique": false
                                                     },
                                                     "example": "2011-01-01",
-                                                    "datapackage_type": "datetime"
+                                                    "datapackage_type": "date"
                                                   },
                                                   "last_action_type": {
                                                     "name": "last_action_type",
@@ -22122,7 +22122,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -22258,7 +22258,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -22614,7 +22614,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -22778,7 +22778,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -22911,7 +22911,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -23047,7 +23047,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -23404,7 +23404,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -23568,7 +23568,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -23701,7 +23701,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -23837,7 +23837,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -24405,7 +24405,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -24569,7 +24569,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -24702,7 +24702,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -24838,7 +24838,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -25194,7 +25194,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -25358,7 +25358,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -25491,7 +25491,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -25627,7 +25627,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -26265,7 +26265,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -26429,7 +26429,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -26562,7 +26562,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -26698,7 +26698,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -27291,7 +27291,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -27455,7 +27455,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -27588,7 +27588,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -27724,7 +27724,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -28222,7 +28222,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -28386,7 +28386,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -28519,7 +28519,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -28655,7 +28655,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -29342,7 +29342,7 @@
                                                               "unique": false
                                                             },
                                                             "example": "2011-01-01",
-                                                            "datapackage_type": "datetime"
+                                                            "datapackage_type": "date"
                                                           },
                                                           "last_action_type": {
                                                             "name": "last_action_type",
@@ -29506,7 +29506,7 @@
                                                           "unique": false
                                                         },
                                                         "example": "2011-01-01",
-                                                        "datapackage_type": "datetime"
+                                                        "datapackage_type": "date"
                                                       },
                                                       "last_action_type": {
                                                         "name": "last_action_type",
@@ -29639,7 +29639,7 @@
                                                       "unique": false
                                                     },
                                                     "example": "2011-01-01",
-                                                    "datapackage_type": "datetime"
+                                                    "datapackage_type": "date"
                                                   },
                                                   "last_action_type": {
                                                     "name": "last_action_type",
@@ -29775,7 +29775,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -30131,7 +30131,7 @@
                                                         "unique": false
                                                       },
                                                       "example": "2011-01-01",
-                                                      "datapackage_type": "datetime"
+                                                      "datapackage_type": "date"
                                                     },
                                                     "last_action_type": {
                                                       "name": "last_action_type",
@@ -30295,7 +30295,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -30428,7 +30428,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -30564,7 +30564,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -30921,7 +30921,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -31085,7 +31085,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -31218,7 +31218,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -31354,7 +31354,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -31782,7 +31782,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -31946,7 +31946,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -32079,7 +32079,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -32215,7 +32215,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -32783,7 +32783,7 @@
                                                         "unique": false
                                                       },
                                                       "example": "2011-01-01",
-                                                      "datapackage_type": "datetime"
+                                                      "datapackage_type": "date"
                                                     },
                                                     "last_action_type": {
                                                       "name": "last_action_type",
@@ -32947,7 +32947,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -33080,7 +33080,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -33216,7 +33216,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -33572,7 +33572,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -33736,7 +33736,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -33869,7 +33869,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -34005,7 +34005,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -34643,7 +34643,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -34807,7 +34807,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -34940,7 +34940,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -35076,7 +35076,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -35432,7 +35432,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -35596,7 +35596,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -35729,7 +35729,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -35865,7 +35865,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -36222,7 +36222,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -36386,7 +36386,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -36519,7 +36519,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -36655,7 +36655,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -37106,7 +37106,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -37270,7 +37270,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -37403,7 +37403,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -37539,7 +37539,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -38106,7 +38106,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -38270,7 +38270,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -38403,7 +38403,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -38539,7 +38539,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -39220,7 +39220,7 @@
                                                         "unique": false
                                                       },
                                                       "example": "2011-01-01",
-                                                      "datapackage_type": "datetime"
+                                                      "datapackage_type": "date"
                                                     },
                                                     "last_action_type": {
                                                       "name": "last_action_type",
@@ -39384,7 +39384,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -39517,7 +39517,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -39653,7 +39653,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -40009,7 +40009,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -40173,7 +40173,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -40306,7 +40306,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -40442,7 +40442,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -40799,7 +40799,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -40963,7 +40963,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -41096,7 +41096,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -41232,7 +41232,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -41800,7 +41800,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -41964,7 +41964,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -42097,7 +42097,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -42233,7 +42233,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -42589,7 +42589,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -42753,7 +42753,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -42886,7 +42886,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -43022,7 +43022,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -43621,7 +43621,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -43785,7 +43785,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -43918,7 +43918,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -44054,7 +44054,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -44552,7 +44552,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -44716,7 +44716,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -44849,7 +44849,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -44985,7 +44985,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -45672,7 +45672,7 @@
                                                               "unique": false
                                                             },
                                                             "example": "2011-01-01",
-                                                            "datapackage_type": "datetime"
+                                                            "datapackage_type": "date"
                                                           },
                                                           "last_action_type": {
                                                             "name": "last_action_type",
@@ -45836,7 +45836,7 @@
                                                           "unique": false
                                                         },
                                                         "example": "2011-01-01",
-                                                        "datapackage_type": "datetime"
+                                                        "datapackage_type": "date"
                                                       },
                                                       "last_action_type": {
                                                         "name": "last_action_type",
@@ -45969,7 +45969,7 @@
                                                       "unique": false
                                                     },
                                                     "example": "2011-01-01",
-                                                    "datapackage_type": "datetime"
+                                                    "datapackage_type": "date"
                                                   },
                                                   "last_action_type": {
                                                     "name": "last_action_type",
@@ -46105,7 +46105,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -46461,7 +46461,7 @@
                                                         "unique": false
                                                       },
                                                       "example": "2011-01-01",
-                                                      "datapackage_type": "datetime"
+                                                      "datapackage_type": "date"
                                                     },
                                                     "last_action_type": {
                                                       "name": "last_action_type",
@@ -46625,7 +46625,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -46758,7 +46758,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -46894,7 +46894,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -47251,7 +47251,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -47415,7 +47415,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -47548,7 +47548,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -47684,7 +47684,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -48112,7 +48112,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -48276,7 +48276,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -48409,7 +48409,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -48545,7 +48545,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -49113,7 +49113,7 @@
                                                         "unique": false
                                                       },
                                                       "example": "2011-01-01",
-                                                      "datapackage_type": "datetime"
+                                                      "datapackage_type": "date"
                                                     },
                                                     "last_action_type": {
                                                       "name": "last_action_type",
@@ -49277,7 +49277,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -49410,7 +49410,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -49546,7 +49546,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -49902,7 +49902,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -50066,7 +50066,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -50199,7 +50199,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -50335,7 +50335,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -50973,7 +50973,7 @@
                                                   "unique": false
                                                 },
                                                 "example": "2011-01-01",
-                                                "datapackage_type": "datetime"
+                                                "datapackage_type": "date"
                                               },
                                               "last_action_type": {
                                                 "name": "last_action_type",
@@ -51137,7 +51137,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -51270,7 +51270,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -51406,7 +51406,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -51762,7 +51762,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -51926,7 +51926,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -52059,7 +52059,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -52195,7 +52195,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -52620,7 +52620,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -52784,7 +52784,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -52917,7 +52917,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -53053,7 +53053,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -53482,7 +53482,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -53646,7 +53646,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -53779,7 +53779,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -53915,7 +53915,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -54276,7 +54276,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -54440,7 +54440,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -54573,7 +54573,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -54709,7 +54709,7 @@
                         "unique": false
                       },
                       "example": "2011-01-01",
-                      "datapackage_type": "datetime"
+                      "datapackage_type": "date"
                     },
                     "last_action_type": {
                       "name": "last_action_type",
@@ -55125,7 +55125,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -55289,7 +55289,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -55422,7 +55422,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -55558,7 +55558,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -56014,7 +56014,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -56178,7 +56178,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -56311,7 +56311,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -56447,7 +56447,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -56869,7 +56869,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -57033,7 +57033,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -57166,7 +57166,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -57302,7 +57302,7 @@
                         "unique": false
                       },
                       "example": "2011-01-01",
-                      "datapackage_type": "datetime"
+                      "datapackage_type": "date"
                     },
                     "last_action_type": {
                       "name": "last_action_type",
@@ -57722,7 +57722,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -57886,7 +57886,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -58019,7 +58019,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -58155,7 +58155,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -58836,7 +58836,7 @@
                                                     "unique": false
                                                   },
                                                   "example": "2011-01-01",
-                                                  "datapackage_type": "datetime"
+                                                  "datapackage_type": "date"
                                                 },
                                                 "last_action_type": {
                                                   "name": "last_action_type",
@@ -59000,7 +59000,7 @@
                                                 "unique": false
                                               },
                                               "example": "2011-01-01",
-                                              "datapackage_type": "datetime"
+                                              "datapackage_type": "date"
                                             },
                                             "last_action_type": {
                                               "name": "last_action_type",
@@ -59133,7 +59133,7 @@
                                             "unique": false
                                           },
                                           "example": "2011-01-01",
-                                          "datapackage_type": "datetime"
+                                          "datapackage_type": "date"
                                         },
                                         "last_action_type": {
                                           "name": "last_action_type",
@@ -59269,7 +59269,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -59625,7 +59625,7 @@
                                               "unique": false
                                             },
                                             "example": "2011-01-01",
-                                            "datapackage_type": "datetime"
+                                            "datapackage_type": "date"
                                           },
                                           "last_action_type": {
                                             "name": "last_action_type",
@@ -59789,7 +59789,7 @@
                                           "unique": false
                                         },
                                         "example": "2011-01-01",
-                                        "datapackage_type": "datetime"
+                                        "datapackage_type": "date"
                                       },
                                       "last_action_type": {
                                         "name": "last_action_type",
@@ -59922,7 +59922,7 @@
                                       "unique": false
                                     },
                                     "example": "2011-01-01",
-                                    "datapackage_type": "datetime"
+                                    "datapackage_type": "date"
                                   },
                                   "last_action_type": {
                                     "name": "last_action_type",
@@ -60058,7 +60058,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -60415,7 +60415,7 @@
                                         "unique": false
                                       },
                                       "example": "2011-01-01",
-                                      "datapackage_type": "datetime"
+                                      "datapackage_type": "date"
                                     },
                                     "last_action_type": {
                                       "name": "last_action_type",
@@ -60579,7 +60579,7 @@
                                     "unique": false
                                   },
                                   "example": "2011-01-01",
-                                  "datapackage_type": "datetime"
+                                  "datapackage_type": "date"
                                 },
                                 "last_action_type": {
                                   "name": "last_action_type",
@@ -60712,7 +60712,7 @@
                                 "unique": false
                               },
                               "example": "2011-01-01",
-                              "datapackage_type": "datetime"
+                              "datapackage_type": "date"
                             },
                             "last_action_type": {
                               "name": "last_action_type",
@@ -60848,7 +60848,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -61204,7 +61204,7 @@
                                   "unique": false
                                 },
                                 "example": "2011-01-01",
-                                "datapackage_type": "datetime"
+                                "datapackage_type": "date"
                               },
                               "last_action_type": {
                                 "name": "last_action_type",
@@ -61368,7 +61368,7 @@
                               "unique": false
                             },
                             "example": "2011-01-01",
-                            "datapackage_type": "datetime"
+                            "datapackage_type": "date"
                           },
                           "last_action_type": {
                             "name": "last_action_type",
@@ -61501,7 +61501,7 @@
                           "unique": false
                         },
                         "example": "2011-01-01",
-                        "datapackage_type": "datetime"
+                        "datapackage_type": "date"
                       },
                       "last_action_type": {
                         "name": "last_action_type",
@@ -61637,7 +61637,7 @@
                     "unique": false
                   },
                   "example": "2011-01-01",
-                  "datapackage_type": "datetime"
+                  "datapackage_type": "date"
                 },
                 "last_action_type": {
                   "name": "last_action_type",
