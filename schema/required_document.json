@@ -26,6 +26,7 @@
             "type": "string",
             "title": "Service Identifier",
             "description": "The identifier of the service for which this entry describes the required document.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -39,7 +40,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "Any official id document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as sole identity document."
+            "example": "Any official identification document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as a sole identification document."
         },
         "uri": {
             "name": "uri",

@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Organization Identifier",
             "description": "The identifier of the organization that provides this service.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -38,6 +39,7 @@
             "type": "string",
             "title": "Program Identifier",
             "description": "The identifier of the program this service is delivered under.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -62,7 +64,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "MyCity Counselling Servics"
+            "example": "MyCity Counselling Services"
         },
         "description": {
             "name": "description",
@@ -120,7 +122,7 @@
             "name": "interpretation_services",
             "type": "string",
             "title": "Interpretation Services",
-            "description": "A description of any interpretation services available for accessing this service.",
+            "description": "A free text description of any interpretation services available for accessing this service.",
             "constraints": {
                 "unique": false
             },

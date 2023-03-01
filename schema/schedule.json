@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Service Identifier",
             "description": "The identifier of the service for which this is the regular schedule",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -38,6 +39,7 @@
             "type": "string",
             "title": "Location Identifier",
             "description": "The identifier of the location for which this is the regular schedule",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -48,6 +50,7 @@
             "type": "string",
             "title": "Service At Location Identifier",
             "description": "The identifier of the \u2018service at location\u2019 table entry, when this schedule is specific to a service in a particular location.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

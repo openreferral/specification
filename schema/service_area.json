@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Service Identifier",
             "description": "The identifier of the service for which this entry describes the service area",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -52,7 +53,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "#REF!",
+            "example": "The service is available to all residents of the MyCity area, including all postcodes starting with AB1, AB2, and AB3",
             "core": "Y"
         },
         "extent": {
@@ -73,7 +74,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "extent_type"
+            "example": "geojson"
         },
         "uri": {
             "name": "uri",

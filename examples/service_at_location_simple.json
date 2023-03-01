@@ -1,6 +1,6 @@
 {
   "id": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
-  "description": "description",
+  "description": "Counselling Services provided by trained professionals in the MyCity area.",
   "location": {
     "id": "3a19ff88-4620-4d17-9830-ac1d859eb5d5",
     "location_type": "physical",
@@ -17,7 +17,7 @@
   "service": {
     "id": "ac148810-d857-441c-9679-408f346de14b",
     "name": "Community Counselling",
-    "alternate_name": "MyCity Counselling Servics",
+    "alternate_name": "MyCity Counselling Services",
     "description": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
     "url": "http://example.com/counselling",
     "email": "email@example.com",
@@ -44,7 +44,7 @@
       "website": "http://example.com",
       "tax_status": "tax_status",
       "year_incorporated": 2011,
-      "legal_status": "legal_status",
+      "legal_status": "Limited Company",
       "logo": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png",
       "uri": "http://example.com",
       "parent_organization_id": "cd09a387-91f4-4555-94ec-e799c35344cd"

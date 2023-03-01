@@ -10,7 +10,7 @@
       "tax_status": "tax_status",
       "tax_id": "tax_id",
       "year_incorporated": 2011,
-      "legal_status": "legal_status",
+      "legal_status": "Limited Company",
       "logo": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png",
       "uri": "http://example.com",
       "parent_organization_id": "cd09a387-91f4-4555-94ec-e799c35344cd"
@@ -31,7 +31,7 @@
       "organization_id": "0fdfb57f-c147-4cfb-864c-44788a335d8c",
       "program_id": "24682fa0-3eda-4afc-a026-84a21c7a882e",
       "name": "Community Counselling",
-      "alternate_name": "MyCity Counselling Servics",
+      "alternate_name": "MyCity Counselling Services",
       "description": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
       "url": "http://example.com/counselling",
       "email": "email@example.com",
@@ -66,7 +66,7 @@
       "id": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
       "service_id": "ab231982-2106-4a55-80fc-b305560c5556",
       "location_id": "2528e812-ccbb-43a7-b761-a90f27ea9ac4",
-      "description": "description"
+      "description": "Counselling Services provided by trained professionals in the MyCity area."
     }
   ],
   "location": [
@@ -118,10 +118,11 @@
       "location_id": "d57b7ee4-9bcf-4351-858b-c42860beb869",
       "attention": "A. Persona",
       "address_1": "1-30 Main Street",
-      "address_2": "address_2",
+      "address_2": "MyVillage",
       "city": "MyCity",
-      "region": "region",
-      "postal_code": "postal_code",
+      "region": "MyRegion",
+      "state_province": "MyState",
+      "postal_code": "ABC 1234",
       "country": "US",
       "address_type": "postal"
     }
@@ -166,9 +167,9 @@
       "id": "381c64f1-a724-4884-9c21-ac96c21cca3e",
       "service_id": "146fbf18-d4a3-4bee-a8b0-2d4476478eea",
       "name": "The service is available to all residents of the MyCity area. We provide the service in our offices or via video conferencing to any who can provide evidence of their residency.",
-      "description": "#REF!",
+      "description": "The service is available to all residents of the MyCity area, including all postcodes starting with AB1, AB2, and AB3",
       "extent": "extent",
-      "extent_type": "extent_type",
+      "extent_type": "geojson",
       "uri": "http://example.com"
     }
   ],
@@ -176,7 +177,7 @@
     {
       "id": "f6ad7e69-b9c8-42ce-92db-92cedb4c05c0",
       "service_id": "bb0128fb-eeec-4179-a606-a8fb06648994",
-      "document": "Any official id document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as sole identity document.",
+      "document": "Any official identification document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as a sole identification document.",
       "uri": "http://example.com"
     }
   ],
@@ -217,13 +218,13 @@
     {
       "id": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a",
       "resource_id": "38960354-e7d2-4cfa-a368-820f729d6ccf",
-      "resource_type": "resource_type",
+      "resource_type": "location",
       "last_action_date": "2011-01-01",
       "last_action_type": "update",
-      "field_name": "field_name",
-      "previous_value": "previous_value",
-      "replacement_value": "replacement_value",
-      "updated_by": "updated_by"
+      "field_name": "name",
+      "previous_value": "MyCity Civic Center",
+      "replacement_value": "MyCity New Civic Center",
+      "updated_by": "Ann Persona"
     }
   ],
   "meta_table_description": [
@@ -251,7 +252,7 @@
       "id": "d4dbcebc-0802-47cb-8651-b937ac4f2f3e",
       "organization_id": "58341b4f-4f21-47f0-affb-1a2f9162472b",
       "identifier_scheme": "GB-COH",
-      "identifier_type": "company",
+      "identifier_type": "Company number",
       "identifier": 1234567
     }
   ],

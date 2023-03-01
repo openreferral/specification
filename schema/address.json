@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Location Identifier",
             "description": "The identifier of the location for this postal address.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -63,7 +64,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "address_2"
+            "example": "MyVillage"
         },
         "city": {
             "name": "city",
@@ -84,7 +85,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "region",
+            "example": "MyRegion",
             "core": "Y"
         },
         "state_province": {
@@ -95,6 +96,7 @@
             "constraints": {
                 "unique": false
             },
+            "example": "MyState",
             "core": "Y"
         },
         "postal_code": {
@@ -105,7 +107,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "postal_code",
+            "example": "ABC 1234",
             "core": "Y"
         },
         "country": {

@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Location Identifier",
             "description": "The identifier for the location of the accessibility provision.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },

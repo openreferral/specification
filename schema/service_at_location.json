@@ -27,6 +27,7 @@
             "type": "string",
             "title": "Service Identifier",
             "description": "The identifier of the service at a given location.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -38,6 +39,7 @@
             "type": "string",
             "title": "Location Identifier",
             "description": "The identifier of the location where this service operates.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -52,7 +54,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description"
+            "example": "Counselling Services provided by trained professionals in the MyCity area."
         },
         "contacts": {
             "name": "contacts",

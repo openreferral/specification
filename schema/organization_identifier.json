@@ -26,6 +26,7 @@
             "type": "string",
             "title": "Organization Identifier",
             "description": "The identifier of the organization.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -49,7 +50,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "company"
+            "example": "Company number"
         },
         "identifier": {
             "name": "identifier",

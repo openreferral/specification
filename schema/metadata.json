@@ -26,6 +26,7 @@
             "type": "string",
             "title": "Resource Identifier",
             "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+            "format": "uuid",
             "constraints": {
                 "unique": false
             },
@@ -39,7 +40,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "resource_type"
+            "example": "location"
         },
         "last_action_date": {
             "name": "last_action_date",
@@ -50,7 +51,7 @@
                 "unique": false
             },
             "example": "2011-01-01",
-            "datapackage_type": "datetime"
+            "datapackage_type": "date"
         },
         "last_action_type": {
             "name": "last_action_type",
@@ -70,7 +71,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "field_name"
+            "example": "name"
         },
         "previous_value": {
             "name": "previous_value",
@@ -80,7 +81,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "previous_value"
+            "example": "MyCity Civic Center"
         },
         "replacement_value": {
             "name": "replacement_value",
@@ -90,7 +91,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "replacement_value"
+            "example": "MyCity New Civic Center"
         },
         "updated_by": {
             "name": "updated_by",
@@ -100,7 +101,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "updated_by"
+            "example": "Ann Persona"
         }
     },
     "required": [

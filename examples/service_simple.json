@@ -1,7 +1,7 @@
 {
   "id": "ac148810-d857-441c-9679-408f346de14b",
   "name": "Community Counselling",
-  "alternate_name": "MyCity Counselling Servics",
+  "alternate_name": "MyCity Counselling Services",
   "description": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
   "url": "http://example.com/counselling",
   "email": "email@example.com",
@@ -28,7 +28,7 @@
     "website": "http://example.com",
     "tax_status": "tax_status",
     "year_incorporated": 2011,
-    "legal_status": "legal_status",
+    "legal_status": "Limited Company",
     "logo": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png",
     "uri": "http://example.com",
     "parent_organization_id": "cd09a387-91f4-4555-94ec-e799c35344cd"

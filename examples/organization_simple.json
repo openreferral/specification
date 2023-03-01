@@ -7,7 +7,7 @@
   "website": "http://example.com",
   "tax_status": "tax_status",
   "year_incorporated": 2011,
-  "legal_status": "legal_status",
+  "legal_status": "Limited Company",
   "logo": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png",
   "uri": "http://example.com",
   "parent_organization_id": "cd09a387-91f4-4555-94ec-e799c35344cd"

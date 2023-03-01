@@ -27,6 +27,7 @@
       "type": "string",
       "title": "Organization Identifier",
       "description": "The identifier of the organization that provides this service.",
+      "format": "uuid",
       "constraints": {
         "unique": false
       },
@@ -38,6 +39,7 @@
       "type": "string",
       "title": "Program Identifier",
       "description": "The identifier of the program this service is delivered under.",
+      "format": "uuid",
       "constraints": {
         "unique": false
       },
@@ -62,7 +64,7 @@
       "constraints": {
         "unique": false
       },
-      "example": "MyCity Counselling Servics"
+      "example": "MyCity Counselling Services"
     },
     "description": {
       "name": "description",
@@ -120,7 +122,7 @@
       "name": "interpretation_services",
       "type": "string",
       "title": "Interpretation Services",
-      "description": "A description of any interpretation services available for accessing this service.",
+      "description": "A free text description of any interpretation services available for accessing this service.",
       "constraints": {
         "unique": false
       },
@@ -490,7 +492,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "legal_status"
+          "example": "Limited Company"
         },
         "logo": {
           "name": "logo",
@@ -518,6 +520,7 @@
           "type": "string",
           "title": "Parent Organization Identifier",
           "description": "The identifier of the organization's parent organization.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -630,6 +633,7 @@
           "type": "string",
           "title": "Organization Identifier",
           "description": "The identifier for the organization which the program belongs to. Each program must belong to a single organization, and the identifier for that organization should be given here.",
+          "format": "uuid",
           "constraints": {
             "unique": true
           },
@@ -722,6 +726,7 @@
           "type": "string",
           "title": "Link Identifier",
           "description": "The identifier of the entity to which this taxonomy term applies.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -733,6 +738,7 @@
           "type": "string",
           "title": "Taxonomy Term Identifier",
           "description": "The identifier of this taxonomy term from the taxonomy table.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -826,6 +832,7 @@
           "type": "string",
           "title": "Service Identifier",
           "description": "The identifier of the service at a given location.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -837,6 +844,7 @@
           "type": "string",
           "title": "Location Identifier",
           "description": "The identifier of the location where this service operates.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -851,7 +859,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "description"
+          "example": "Counselling Services provided by trained professionals in the MyCity area."
         },
         "contacts": {
           "name": "contacts",
@@ -970,6 +978,7 @@
           "type": "string",
           "title": "Organization Identifier",
           "description": "The organization identifier for a location. This is the organization that is responsible for maintaining information about this location. The identifier of the organization should be given here. Details of the services the organization delivers at this location should be provided in the services_at_location table.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1166,6 +1175,7 @@
           "type": "string",
           "title": "Location Identifier",
           "description": "The identifier of the location where this phone number is located.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1176,6 +1186,7 @@
           "type": "string",
           "title": "Service Identifier",
           "description": "The identifier of the service for which this is the phone number.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1186,6 +1197,7 @@
           "type": "string",
           "title": "Organization Identifier",
           "description": "The identifier of the organization for which this is the phone number.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1196,6 +1208,7 @@
           "type": "string",
           "title": "Contact Identifier",
           "description": "The identifier of the contact for which this is the phone number.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1207,6 +1220,7 @@
           "type": "string",
           "title": "Service At Location Identifier",
           "description": "The identifier of the \u2018service at location\u2019 table entry, when this phone number is specific to a service in a particular location.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1315,6 +1329,7 @@
           "type": "string",
           "title": "Organization Identifier",
           "description": "The identifier of the organization for which this is a contact.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1325,6 +1340,7 @@
           "type": "string",
           "title": "Service Identifier",
           "description": "The identifier of the service for which this is a contact.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1335,6 +1351,7 @@
           "name": "service_at_location_id",
           "type": "string",
           "title": "Service At Location Identifier",
+          "format": "uuid",
           "description": "The identifier of the \u2018service at location\u2019 entry, when this contact is specific to a service in a particular location.",
           "constraints": {
             "unique": false
@@ -1345,6 +1362,7 @@
           "name": "location_id",
           "type": "string",
           "title": "Location Identifier",
+          "format": "uuid",
           "description": "The identifier for the location of the contact.",
           "constraints": {
             "unique": false
@@ -1455,6 +1473,7 @@
           "type": "string",
           "title": "Location Identifier",
           "description": "The identifier of the location for this postal address.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1491,7 +1510,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "address_2"
+          "example": "MyVillage"
         },
         "city": {
           "name": "city",
@@ -1512,7 +1531,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "region",
+          "example": "MyRegion",
           "core": "Y"
         },
         "state_province": {
@@ -1523,6 +1542,7 @@
           "constraints": {
             "unique": false
           },
+          "example": "MyState",
           "core": "Y"
         },
         "postal_code": {
@@ -1533,7 +1553,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "postal_code",
+          "example": "ABC 1234",
           "core": "Y"
         },
         "country": {
@@ -1621,6 +1641,7 @@
           "type": "string",
           "title": "Service Identifier",
           "description": "The identifier of the service for which this is the regular schedule",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1632,6 +1653,7 @@
           "type": "string",
           "title": "Location Identifier",
           "description": "The identifier of the location for which this is the regular schedule",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1642,6 +1664,7 @@
           "type": "string",
           "title": "Service At Location Identifier",
           "description": "The identifier of the \u2018service at location\u2019 table entry, when this schedule is specific to a service in a particular location.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1919,6 +1942,7 @@
           "type": "string",
           "title": "Organization Identifier",
           "description": "The identifier of the organization in receipt of this funding.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -1928,6 +1952,7 @@
           "name": "service_id",
           "type": "string",
           "title": "Service Identifier",
+          "format": "uuid",
           "description": "The identifier of the service in receipt of this funding.",
           "constraints": {
             "unique": false
@@ -1996,6 +2021,7 @@
           "type": "string",
           "title": "Service Identifier",
           "description": "The identifier of the service for which this entry describes the service area",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2021,7 +2047,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "#REF!",
+          "example": "The service is available to all residents of the MyCity area, including all postcodes starting with AB1, AB2, and AB3",
           "core": "Y"
         },
         "extent": {
@@ -2042,7 +2068,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "extent_type"
+          "example": "geojson"
         },
         "uri": {
           "name": "uri",
@@ -2105,6 +2131,7 @@
           "type": "string",
           "title": "Service Identifier",
           "description": "The identifier of the service for which this entry describes the required document.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2118,7 +2145,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "Any official id document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as sole identity document."
+          "example": "Any official identification document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as a sole identification document."
         },
         "uri": {
           "name": "uri",
@@ -2183,6 +2210,7 @@
           "type": "string",
           "title": "Service Identifier",
           "description": "The identifier of the service for which the entry describes the languages in which services are delivered.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2194,6 +2222,7 @@
           "type": "string",
           "title": "Location Identifier",
           "description": "The identifier of the location for which the entry describes the languages in which services are delivered.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2203,6 +2232,7 @@
           "name": "phone_id",
           "type": "string",
           "title": "Phone Identifier",
+          "format": "uuid",
           "description": "The identifier of the phone for which the entry describes the languages in which services delivered.",
           "constraints": {
             "unique": false
@@ -2292,6 +2322,7 @@
           "type": "string",
           "title": "Location Identifier",
           "description": "The identifier for the location of the accessibility provision.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2413,6 +2444,7 @@
           "type": "string",
           "title": "Parent Identifier",
           "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this is not required.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2451,6 +2483,7 @@
           "type": "string",
           "title": "Taxonomy Identifier",
           "description": "The identifier of the taxonomy containing the term.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2511,6 +2544,7 @@
           "type": "string",
           "title": "Resource Identifier",
           "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2524,7 +2558,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "resource_type"
+          "example": "location"
         },
         "last_action_date": {
           "name": "last_action_date",
@@ -2535,7 +2569,7 @@
             "unique": false
           },
           "example": "2011-01-01",
-          "datapackage_type": "datetime"
+          "datapackage_type": "date"
         },
         "last_action_type": {
           "name": "last_action_type",
@@ -2555,7 +2589,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "field_name"
+          "example": "name"
         },
         "previous_value": {
           "name": "previous_value",
@@ -2565,7 +2599,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "previous_value"
+          "example": "MyCity Civic Center"
         },
         "replacement_value": {
           "name": "replacement_value",
@@ -2575,7 +2609,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "replacement_value"
+          "example": "MyCity New Civic Center"
         },
         "updated_by": {
           "name": "updated_by",
@@ -2585,7 +2619,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "updated_by"
+          "example": "Ann Persona"
         }
       },
       "required": [
@@ -2706,6 +2740,7 @@
           "type": "string",
           "title": "Service Identifier",
           "description": "The identifier of the services for which the entry describes the cost.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2827,6 +2862,7 @@
           "type": "string",
           "title": "Organization Identifier",
           "description": "The identifier of the organization.",
+          "format": "uuid",
           "constraints": {
             "unique": false
           },
@@ -2850,7 +2886,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "company"
+          "example": "Company number"
         },
         "identifier": {
           "name": "identifier",
