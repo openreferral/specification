@@ -199,6 +199,40 @@ Each `service_at_location` object has the following fields:
 
 ::::
 
+#### location
+
+`location` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/location/description
+```
+
+Each `location` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/location
+:collapse: languages,addresses,contacts,accessibility,phones,schedules,attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/organization_full.json
+    :jsonpointer: /locations
+    :title: location
+```
+
+:::
+
+::::
+
 
 #### language
 
