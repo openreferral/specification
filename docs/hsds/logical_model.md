@@ -10,7 +10,7 @@ There are four core tables in HSDS:
 
 Additional information about organizations, locations and services is held in separate tables and linked by a foreign key. Some tables only have a single foreign key for a single core table. Others can be linked to multiple core tables. 
 
-The table below indicates the foreign keys that link tables with the core tables in HSDS. Note that other links between non-core tables exist. See the [entity relationship diagram](#entity-relationship-diagram-full-version) below and [reference](reference.md) page for more detail.
+The table below indicates the foreign keys that link tables with the core tables in HSDS. Note that other links between non-core tables exist. See the [entity relationship diagram](#entity-relationship-diagram-full-version) below and [schema reference](schema_reference.md) page for more detail.
 
 ```{eval-rst}
 

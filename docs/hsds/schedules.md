@@ -87,11 +87,3 @@ During the year, they decide to open on the first Saturday of each month from Ju
 ```
 
 Note that in this case the valid_from and valid_to dates aren't supplied, because the RRULE is limited by its nature; it specifies when the series of events starts and ends.
-
-
-```{eval-rst}
-
-.. toctree::
-
-   detail_dates
-```
