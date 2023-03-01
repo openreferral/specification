@@ -7,13 +7,13 @@ The Open Referral Initiative develops data standards and open platforms that mak
 
 ## Data Specifications
 
-This site contains documentation for the [Human Services Data Specification (HSDS)](hsds) and the [associated Human Services Data API Suite (HSDA)](hsda). 
+This site contains documentation for the Human Services Data Specification (HSDS) and the API specification. 
 
 These can be used to structure and exchange information about the accessibility of health, human, and social services. Specifically, the HSDS describes data about organizations, the services they provide, the locations at which these services can be accessed, and associated details. It also describes protocols for accessing and managing this data. 
 
 ## Our ecosystem
 
-**Open Referral’s ecosystem** includes a range of working open source software applications that can be freely redeployed to work with HSDS-compatible data and/or HSDA-compatible APIs. Many of these tools can be found in [our Github organization](http://github.com/openreferral).
+**Open Referral’s ecosystem** includes a range of working open source software applications that can be freely redeployed to work with HSDS-compatible data and/or APIs. Many of these tools can be found in [our Github organization](http://github.com/openreferral).
 
 Learn more about the why's, how's, and who's of the Open Referral Initiative in [our Public Documentation](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit?usp=drive_web), and browse all of our Project Documents on [Google Drive](https://drive.google.com/folderview?id=0B-5CZ4ZLjTHqfk12WTFUbVk1NjBYMjRaZTlZRlN1UjhWMS1MN0tLV3Q4ejY3TWpOYWwwVDg&usp=sharing)
 
@@ -44,7 +44,6 @@ Contents:
    hsds/api_reference
    hsds/logical_model
    hsds/variations_interoperability
-   hsds/formatting
    hsds/changelog
 
 .. toctree::
@@ -64,12 +63,10 @@ Contents:
    :caption: Open Referral Initiative
 
    initiative/index
-
    governance
    design_principles
-
    faq
-
    credits
+   privacy-notice
 ```
 
