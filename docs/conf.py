@@ -146,7 +146,7 @@ html_css_files = ['https://media.readthedocs.org/css/sphinx_rtd_theme.css',
 html_js_files = ["custom.js"]
 
 html_theme_options = {
-    'titles_only': True
+    'titles_only': False
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme
