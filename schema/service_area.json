@@ -53,7 +53,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "#REF!",
+            "example": "The service is available to all residents of the MyCity area, including all postcodes starting with AB1, AB2, and AB3",
             "core": "Y"
         },
         "extent": {
@@ -74,7 +74,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "extent_type"
+            "example": "geojson"
         },
         "uri": {
             "name": "uri",

@@ -50,7 +50,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "company"
+            "example": "Company number"
         },
         "identifier": {
             "name": "identifier",

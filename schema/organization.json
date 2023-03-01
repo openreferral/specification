@@ -118,7 +118,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "legal_status"
+            "example": "Limited Company"
         },
         "logo": {
             "name": "logo",

@@ -1,6 +1,6 @@
 {
   "id": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
-  "description": "description",
+  "description": "Counselling Services provided by trained professionals in the MyCity area.",
   "contacts": [
     {
       "id": "1e7efce3-639b-4880-940c-b95cd30cdb50",
@@ -93,10 +93,11 @@
         "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
         "attention": "A. Persona",
         "address_1": "1-30 Main Street",
-        "address_2": "address_2",
+        "address_2": "MyVillage",
         "city": "MyCity",
-        "region": "region",
-        "postal_code": "postal_code",
+        "region": "MyRegion",
+        "state_province": "MyState",
+        "postal_code": "ABC 1234",
         "country": "US",
         "address_type": "postal"
       }
@@ -180,7 +181,7 @@
   "service": {
     "id": "ac148810-d857-441c-9679-408f346de14b",
     "name": "Community Counselling",
-    "alternate_name": "MyCity Counselling Servics",
+    "alternate_name": "MyCity Counselling Services",
     "description": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
     "url": "http://example.com/counselling",
     "email": "email@example.com",
@@ -243,9 +244,9 @@
       {
         "id": "381c64f1-a724-4884-9c21-ac96c21cca3e",
         "name": "The service is available to all residents of the MyCity area. We provide the service in our offices or via video conferencing to any who can provide evidence of their residency.",
-        "description": "#REF!",
+        "description": "The service is available to all residents of the MyCity area, including all postcodes starting with AB1, AB2, and AB3",
         "extent": "extent",
-        "extent_type": "extent_type",
+        "extent_type": "geojson",
         "uri": "http://example.com"
       }
     ],
@@ -266,7 +267,7 @@
       "website": "http://example.com",
       "tax_status": "tax_status",
       "year_incorporated": 2011,
-      "legal_status": "legal_status",
+      "legal_status": "Limited Company",
       "logo": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png",
       "uri": "http://example.com",
       "parent_organization_id": "cd09a387-91f4-4555-94ec-e799c35344cd",
@@ -345,10 +346,11 @@
               "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
               "attention": "A. Persona",
               "address_1": "1-30 Main Street",
-              "address_2": "address_2",
+              "address_2": "MyVillage",
               "city": "MyCity",
-              "region": "region",
-              "postal_code": "postal_code",
+              "region": "MyRegion",
+              "state_province": "MyState",
+              "postal_code": "ABC 1234",
               "country": "US",
               "address_type": "postal"
             }
@@ -442,7 +444,7 @@
         {
           "id": "d4dbcebc-0802-47cb-8651-b937ac4f2f3e",
           "identifier_scheme": "GB-COH",
-          "identifier_type": "company",
+          "identifier_type": "Company number",
           "identifier": 1234567
         }
       ]
@@ -473,7 +475,7 @@
     "required_documents": [
       {
         "id": "f6ad7e69-b9c8-42ce-92db-92cedb4c05c0",
-        "document": "Any official id document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as sole identity document.",
+        "document": "Any official identification document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as a sole identification document.",
         "uri": "http://example.com"
       }
     ],
@@ -531,13 +533,13 @@
     "metadata": [
       {
         "id": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a",
-        "resource_type": "resource_type",
+        "resource_type": "location",
         "last_action_date": "2011-01-01",
         "last_action_type": "update",
-        "field_name": "field_name",
-        "previous_value": "previous_value",
-        "replacement_value": "replacement_value",
-        "updated_by": "updated_by"
+        "field_name": "name",
+        "previous_value": "MyCity Civic Center",
+        "replacement_value": "MyCity New Civic Center",
+        "updated_by": "Ann Persona"
       }
     ]
   }

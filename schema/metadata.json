@@ -40,7 +40,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "resource_type"
+            "example": "location"
         },
         "last_action_date": {
             "name": "last_action_date",
@@ -71,7 +71,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "field_name"
+            "example": "name"
         },
         "previous_value": {
             "name": "previous_value",
@@ -81,7 +81,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "previous_value"
+            "example": "MyCity Civic Center"
         },
         "replacement_value": {
             "name": "replacement_value",
@@ -91,7 +91,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "replacement_value"
+            "example": "MyCity New Civic Center"
         },
         "updated_by": {
             "name": "updated_by",
@@ -101,7 +101,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "updated_by"
+            "example": "Ann Persona"
         }
     },
     "required": [

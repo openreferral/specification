@@ -54,7 +54,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "description"
+            "example": "Counselling Services provided by trained professionals in the MyCity area."
         },
         "contacts": {
             "name": "contacts",

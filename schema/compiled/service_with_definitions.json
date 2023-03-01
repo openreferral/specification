@@ -64,7 +64,7 @@
       "constraints": {
         "unique": false
       },
-      "example": "MyCity Counselling Servics"
+      "example": "MyCity Counselling Services"
     },
     "description": {
       "name": "description",
@@ -122,7 +122,7 @@
       "name": "interpretation_services",
       "type": "string",
       "title": "Interpretation Services",
-      "description": "A description of any interpretation services available for accessing this service.",
+      "description": "A free text description of any interpretation services available for accessing this service.",
       "constraints": {
         "unique": false
       },
@@ -492,7 +492,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "legal_status"
+          "example": "Limited Company"
         },
         "logo": {
           "name": "logo",
@@ -859,7 +859,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "description"
+          "example": "Counselling Services provided by trained professionals in the MyCity area."
         },
         "contacts": {
           "name": "contacts",
@@ -1510,7 +1510,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "address_2"
+          "example": "MyVillage"
         },
         "city": {
           "name": "city",
@@ -1531,7 +1531,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "region",
+          "example": "MyRegion",
           "core": "Y"
         },
         "state_province": {
@@ -1542,6 +1542,7 @@
           "constraints": {
             "unique": false
           },
+          "example": "MyState",
           "core": "Y"
         },
         "postal_code": {
@@ -1552,7 +1553,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "postal_code",
+          "example": "ABC 1234",
           "core": "Y"
         },
         "country": {
@@ -2046,7 +2047,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "#REF!",
+          "example": "The service is available to all residents of the MyCity area, including all postcodes starting with AB1, AB2, and AB3",
           "core": "Y"
         },
         "extent": {
@@ -2067,7 +2068,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "extent_type"
+          "example": "geojson"
         },
         "uri": {
           "name": "uri",
@@ -2144,7 +2145,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "Any official id document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as sole identity document."
+          "example": "Any official identification document (Passport, Driver's Licence, identity card) and evidence of address such as an official letter from local or national government. A driver's license which shows your name, photograph, and address can be used as a sole identification document."
         },
         "uri": {
           "name": "uri",
@@ -2557,7 +2558,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "resource_type"
+          "example": "location"
         },
         "last_action_date": {
           "name": "last_action_date",
@@ -2588,7 +2589,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "field_name"
+          "example": "name"
         },
         "previous_value": {
           "name": "previous_value",
@@ -2598,7 +2599,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "previous_value"
+          "example": "MyCity Civic Center"
         },
         "replacement_value": {
           "name": "replacement_value",
@@ -2608,7 +2609,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "replacement_value"
+          "example": "MyCity New Civic Center"
         },
         "updated_by": {
           "name": "updated_by",
@@ -2618,7 +2619,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "updated_by"
+          "example": "Ann Persona"
         }
       },
       "required": [
@@ -2885,7 +2886,7 @@
           "constraints": {
             "unique": false
           },
-          "example": "company"
+          "example": "Company number"
         },
         "identifier": {
           "name": "identifier",

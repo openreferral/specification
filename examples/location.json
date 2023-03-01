@@ -23,10 +23,11 @@
       "id": "74706e55-df26-4b84-80fe-ecc30b5befb4",
       "attention": "A. Persona",
       "address_1": "1-30 Main Street",
-      "address_2": "address_2",
+      "address_2": "MyVillage",
       "city": "MyCity",
-      "region": "region",
-      "postal_code": "postal_code",
+      "region": "MyRegion",
+      "state_province": "MyState",
+      "postal_code": "ABC 1234",
       "country": "US",
       "address_type": "postal"
     }
