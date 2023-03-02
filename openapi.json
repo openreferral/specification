@@ -1,760 +1,619 @@
 {
   "openapi": "3.1.0",
-  "info":
-    {
-      "title": "REQUIRED -- TITLE OF YOUR API HERE",
-      "version": "REQUIRED -- The version of this document. This is distinct from the OpenAPI Schema version and the version of your API.",
-      "summary": "SUMMARY HERE",
-      "description": "DESCRIPTION HERE",
-      "contact":
-        {
-	  "name": "YOUR CONTACT NAME HERE",
-	  "url": "YOUR CONTACT URL HERE",
-	  "email": "YOUR CONTACT EMAIL HERE"
-	},
-      "license": 
-	{
-	  "name": "REQUIRED -- THE LICENSE OF YOUR API",
-	  "url": "Url to the license used; mutually exclusive to the identifier field if used."
-	}      
+  "info": {
+    "title": "REQUIRED -- TITLE OF YOUR API HERE",
+    "version": "REQUIRED -- The version of this document. This is distinct from the OpenAPI Schema version and the version of your API.",
+    "summary": "SUMMARY HERE",
+    "description": "DESCRIPTION HERE",
+    "contact": {
+      "name": "YOUR CONTACT NAME HERE",
+      "url": "YOUR CONTACT URL HERE",
+      "email": "YOUR CONTACT EMAIL HERE"
     },
+    "license": {
+      "name": "REQUIRED -- THE LICENSE OF YOUR API",
+      "url": "Url to the license used; mutually exclusive to the identifier field if used."
+    }
+  },
   "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
-  "paths":
-    {
-      "/":
-        {
-	  "description": "Retrieve information about this API and its relationship with HSDS",
-	  "get":
-	    {
-	      "summary": "Retrieve information about this API and its relationship with HSDS",
-	      "operationId": "getAPIMetaInformation",
-	      "responses": 
-	        {
-		  "200":
-		    {
-		      "description": "A JSON response providing information about this API",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema":
-			        {
-				  "type": "object",
-				  "properties":
-				    {
-				      "version":
-				        {
-					  "type": "string",
-					  "description": "HSDS version of this API"
-					},
-				      "profile":
-				        {
-					  "type": "string",
-					  "format": "uri",
-					  "description": "URL of where the information on the HSDS profile of this API"
-					},
-				      "openapi_url":
-				        {
-					  "type": "string",
-					  "format": "uri",
-					  "description": "URL of the openapi JSON file which defines this API"
-					}
-				    }
-				}
-			    }
-			}
-		    }
-		}
-	    }
-	},
-      "/services/{id}":
-        {
-	  "description": "Retrieve fully nested service with all related data with id.",
-	  "parameters":
-	    [
-	      {
-	        "in": "path",
-		"name": "id",
-		"required": true,
-		"description": "The id of the service that the request is intended to retrieve."
-	      }
-	    ],
-	  "get":
-	    {
-	      "summary": "Retrieves a fully nested service with all related data with id",
-	      "operationId": "getFullyNestedServiceById",
-	      "responses":
-	       {
-	         "200":
-		   {
-		     "description": "A Service matching the {id}, with all related data according to the HSDS Specification for Service",
-		     "content":
-		       {
-		         "application/json":
-			   {
-			     "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/examples/service_full.json" }
-			   }
-		       }
-		   }
-	       } 
-	      
-	    }
-	},
-      "/services":
-        {
-	  "description" : "Retrieve paginated listings of services that only have one-to-one fields in them",
-	  "get":
-	    {
-	      "summary": "Retrieves paginated listings of services that only have one-to-one fields in them",
-	      "operationId": "getPaginatedListOfServices",
-	      "parameters":
-	        [
-		  {
-		    "$ref": "#/components/parameters/search"
-		  },
-		  {
-		    "$ref": "#/components/parameters/page"
-		  },
-		  {
-		    "$ref": "#/components/parameters/taxonomy_term_id"
-		  },
-		  {
-		    "$ref": "#/components/parameters/taxonomy_id"
-		  },
-		  {
-		    "$ref": "#/components/parameters/organization_id"
-		  },
-		  {
-	            "$ref": "#/components/parameters/modified_after"
-		  },
-		  {
-		    "description": "Return array of just services with just 'id' and 'modified_date'.  When using this parameter aim to return all services within one page.",
-	            "$ref": "#/components/parameters/minimal"
-		  },
-		  {
-		    "description": "true, false return fully nested service.",
-	            "$ref": "#/components/parameters/full"
-		  }
-		],
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "A paginated list of services that only have one-to-one fields in them",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema":
-			        {
-				  "properties":
-				    {
-				      "contents":
-				        {
-					  "type": "array",
-					  "items":
-					  {
-					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_simple.json"
-					  }
-					}
-				    },
-				  "allOf":
-				    [
-				      {
-				        "$ref": "#/components/schemas/Page"
-				      }
-				    ]
-				}
-			    }
-			}
-		    }
-		}
-	    }
-	},
-      "/services.ndjson":
-        {
-	  "description": "Retrieve new line delimited JSON feed that streams all the results",
-	  "get":
-	    {
-	     "summary": "Retrieve new line delimited JSON feed that streams all the results",
-	     "operationId": "getLineDelimitedJSONForServices",
-	     "parameters":
-	        [
-		  {
-		    "$ref": "#/components/parameters/search"
-		  },
-		  {
-		    "$ref": "#/components/parameters/taxonomy_term_id"
-		  },
-		  {
-		    "$ref": "#/components/parameters/taxonomy_id"
-		  },
-		  {
-		    "$ref": "#/components/parameters/organization_id"
-		  },
-		  {
-	            "$ref": "#/components/parameters/modified_after"
-		  },
-		  {
-	            "$ref": "#/components/parameters/minimal"
-		  },
-		  {
-		    "description": "true, false return fully nested service.",
-	            "$ref": "#/components/parameters/full"
-		  }
-		],
-	     "responses":
-	       {
-	         "200":
-		   {
-		     "description": "Retrieve new line delimited JSON feed that streams all the resultsd",
-		     "content":
-		       {
-		         "application/json":
-			   {
-			     "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_simple.json" }
-			   }
-		       }
-		   }
-	       }
-	    }
-	},
-      "/taxonomies/{id}":
-        {
-	  "description" : "Full information on taxonomy",
-	  "parameters":
-	    [
-	      {
-	        "in": "path",
-		"name": "id",
-		"required": true,
-		"description": "The id of the taxonomy that the request is intended to retrieve."
-	      }
-	    ],
-	  "get":
-	    {
-	      "summary": "Retrieves full information on a taxonomy by {id}",
-	      "operationId": "getTaxonomyById",
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "Full information on taxonomy",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy.json"  }
-			    }
-			}
-		    }
-		}
-	    }
-	},
-      "/taxonomies":
-        {
-	  "description" : "Paginated listing of taxonomies",
-	  "get":
-	    {
-	      "summary": "Paginated listing of taxonomies",
-	      "operationId": "getPaginatedListOfTaxonomies",
-	      "parameters":
-	        [
-		   {
-		     "$ref": "#/components/parameters/search"
-		   },
-		   {
-		     "$ref": "#/components/parameters/page"
-		   }
-		],
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "Paginated listing of taxonomies",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema":
-			        {
-				  "properties":
-				    {
-				      "contents":
-				        {
-					  "type": "array",
-					  "items":
-					  {
-					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy.json"
-					  }
-					}
-				    },
-				  "allOf":
-				    [
-				      {
-				        "$ref": "#/components/schemas/Page"
-				      }
-				    ]
-				}
-			    }
-			}
-		    }
-		}
-	    }
-	},
-      
-      "/taxonomy_terms/{id}":
-        {
-	  "description": "Full information on a taxonomy term",
-	  "parameters":
-	    [
-	      {
-	        "in": "path",
-		"name": "id",
-		"required": true,
-		"description": "The id of the taxonomy terms that the request is intended to retrieve."
-	      }
-	    ],
-	  "get":
-	    {
-	      "summary": "Full information on a taxonomy term",
-	      "operationId": "getPaginatedListOfTaxonomyTerms",
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "Full information on a taxonomy term",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy_term.json"  }
-			    }
-			}
-		    }
-		}
-	    }
-	},
-	"/taxonomy_terms":
-        {
-	  "description" : "Full information on a taxonomy term",
-	  "get":
-	    {
-	      "summary": "Paginated listing of taxonomy terms",
-	      "operationId": "getTaxonomyTermById",
-	      "parameters":
-	        [
-		   {
-		     "$ref": "#/components/parameters/search"
-		   },
-		   {
-		     "$ref": "#/components/parameters/page"
-		   },
-		   {
-		     "$ref": "#/components/parameters/taxonomy_id"
-		   },
-		   {
-		     "name": "top_only",
-		     "in": "query",
-		     "required": false,
-		     "description": "Only retrieve taxonomy terms that have not child terms.",
-		     "schema":
-		       {
-		         "type": "boolean"
-		       }
-		   },
-		   {
-		     "name": "parent_id",
-		     "in": "query",
-		     "required": false,
-		     "description": "Recieve taxonomy terms that have a parent with this id.",
-		     "schema":
-		       {
-		         "type": "string"
-		       }
-		   }
-		],
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "Paginated listing of taxonomy terms",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema":
-			        {
-				  "properties":
-				    {
-				      "contents":
-				        {
-					  "type": "array",
-					  "items":
-					  {
-					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy_term.json"
-					  }
-					}
-				    },
-				  "allOf":
-				    [
-				      {
-				        "$ref": "#/components/schemas/Page"
-				      }
-				    ]
-				}
-			    }
-			}
-		    }
-		}
-	    }
-	},
-      "/organizations/{id}":
-	{
-	  "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
-	  "parameters":
-	    [
-	      {
-	        "in": "path",
-		"name": "id",
-		"required": true,
-		"description": "The id of the organization that the request is intended to retrieve."
-	      }
-	    ],
-	  "get":
-	    {
-	      "summary": "Fully nested organization with service array that contains simple information which could only contain the service.id",
-	      "operationId": "getOrganizationById",
-	      "parameters":
-	        [
-		  {
-	            "$ref": "#/components/parameters/full_service"
-		  }
-		],
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema": { "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization.json"  }
-			    }
-			}
-		    }
-		}
-	    }
-	},
-      "/organizations":
-        {
-	  "description": "Paginated list of basic Organization information.",
-	  "get":
-	    {
-	      "summary": "Paginated list of basic Organization information",
-	      "operationId": "getPaginatedListOfOrganizations",
-	      "parameters":
-	        [
-		  {
-		    "$ref": "#/components/parameters/search"
-		  },
-		  {
-		    "$ref": "#components/parameters/full_service"
-		  },
-		  {
-		    "description": "Contains full nested organization information",
-		    "$ref": "#/components/parameters/full"
-		  },
-		  {
-		    "$ref": "#/components/parameters/page"
-		  }
-		],
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "Paginated list of basic Organization information.",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema":
-			        {
-				  "properties":
-				    {
-				      "contents":
-				        {
-					  "type": "array",
-					  "items":
-					  {
-					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization_simple.json"
-					  }
-					}
-				    },
-				  "allOf":
-				    [
-				      {
-				        "$ref": "#/components/schemas/Page"
-				      }
-				    ]
-				}
-			    }
-			}
-		    }
-		}
-	    }
-	},
-      "/service_at_locations/{id}":
-        {
-	  "description": "Retrieve fully nested service_at_location with all related data with specified id.",
-	  "parameters":
-	    [
-	      {
-	        "in": "path",
-		"name": "id",
-		"required": true,
-		"description": "The id of the service that the request is intended to retrieve."
-	      }
-	    ],
-	  "get":
-	    {
-	      "summary": "Retrieve fully nested service_at_location with all related data with specified id.",
-	      "operationId": "getServiceAtLocationWithNestedDataById",
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "Retrieve fully nested service_at_location with all related data with specified id.",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema": { "$ref": "./schema/compiled/service.json"  }
-			    }
-			}
-		    }
-		}
-	    }
-	},
-      "/service_at_locations":
-        {
-	  "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
-	  "get":
-	    {
-	      "summary": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
-	      "operationId": "getPaginatedListOfServiceAtLocation",
-	      "parameters":
-	        [
-		   {
-		     "$ref": "#/components/parameters/search"
-		   },
-		   {
-		     "$ref": "#/components/parameters/taxonomy_term_id"
-		   },
-		   {
-		     "$ref": "#/components/parameters/taxonomy_id"
-		   },
-		   {
-		     "$ref": "#/components/parameters/organization_id"
-		   },
-		   {
-		     "$ref": "#/components/parameters/modified_after"
-		   },
-		   {
-		     "description": "true, false return fully nested service_at_location.",
-		     "$ref": "#/components/parameters/full"
-		   },
-		   {
-		     "$ref": "#/components/parameters/page"
-		   }
-		],
-	      "responses":
-	        {
-		  "200":
-		    {
-		      "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
-		      "content":
-		        {
-			  "application/json":
-			    {
-			      "schema":
-			        {
-				  "properties":
-				    {
-				      "contents":
-				        {
-					  "type": "array",
-					  "items":
-					  {
-					    "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_at_location_simple.json"
-					  }
-					}
-				    },
-				  "allOf":
-				    [
-				      {
-				        "$ref": "#/components/schemas/Page"
-				      }
-				    ]
-				}
-			    }
-			}
-		    }
-		}
-	    }
-	}
-    },
-    "components":
-      {
-        "schemas":
-	  {
-	   "Page":
-	     {
-	       "type": "object",
-	       "properties":
-	         {
-		   "total_items":
-		     {
-		       "type": "integer",
-		       "description": "Count of total results"
-		     },
-		   "total_pages":
-		     {
-		       "type": "integer",
-		       "description": "Count of total pages"
-		     },
-		   "page_number":
-		     {
-		       "type": "integer",
-		       "description": "Current Page number"
-		     },
-		   "size":
-		     {
-		       "type": "integer",
-		       "description": "Size of current page"
-		     },
-		   "first_page":
-		     {
-		       "type": "boolean",
-		       "description": "Is this page the first page"
-		     },
-		   "last_page":
-		     {
-		       "type": "boolean",
-		       "description": "Is this page the last page"
-		     },
-		   "empty":
-		     {
-		       "type": "boolean",
-		       "description": "Is this page empty"
-		     }
-		 }
-	     }  
-	  },
-	 "parameters":
-	   {
-	     "search":
-	       {
-		 "name": "search",
-		 "in": "query",
-		 "required": false,
-		 "description": "Full text search",
-		 "schema":
-		   {
-		     "type": "string"
-		   }
-	       },
-	     "page":
-	       {
-	         "name": "page",
-		 "in": "query",
-		 "required": false,
-		 "description": "Page number of paginated result.",
-		 "schema":
-		   {
-		     "type": "integer"
-		   }
-	       },
-	     "minimal":
-	       {
-	         "name": "minimal",
-		 "in": "query",
-		 "required": false,
-		 "description": "Return array of just service 'id' and 'modified_date'.  When using this parameter aim to return all services within one call.",
-		 "schema":
-		   {
-		     "type": "boolean"
-		   }
-	       },
-	     "full":
-	       {
-	         "name": "full",
-		 "in": "query",
-		 "required": false,
-		 "description": "Return a fully nested service, service_at_location, or organization based on the request.",
-		 "schema":
-		   {
-		     "type": "boolean"
-		   }
-	       },
-	     "modified_after":
-	       {
-	         "name": "modified_after",
-		 "in": "query",
-		 "required": false,
-		 "description": "Return all results modified on or after this datetime",
-		 "schema":
-		   {
-		     "type": "string",
-		     "format": "datetime"
-		   }
-	       },
-	     "taxonomy_term_id":
-	       {
-	         "name": "taxonomy_term_id",
-		 "in": "query",
-		 "required": false,
-		 "description": "Search for services with particular taxonomy_term",
-		 "schema":
-		   {
-		     "type": "string"
-		   }
-	       },
-	     "taxonomy_id":
-	       {
-	         "name": "taxonomy_id",
-		 "in": "query",
-		 "required": false,
-		 "description": "Search for services which contain any term with this taxonomy",
-		 "schema":
-		   {
-		     "type": "string"
-		   }
-	       },
-	     "organization_id":
-	       {
-	         "name": "organization_id",
-		 "in": "query",
-		 "required": false,
-		 "description": "Search for services which contain services that that this organization provides.",
-		 "schema":
-		   {
-		     "type": "string"
-		   }
-	       },
-	     "full_service":
-	       {
-	         "name": "full_service",
-		 "in": "query",
-		 "required": false,
-		 "description": "Fully nested organization with service array that contains full service information.",
-		 "schema":
-		   {
-		     "type": "boolean"
-		   }
-	       }
-	   }
-	   
+  "paths": {
+    "/": {
+      "description": "Retrieve information about this API and its relationship with HSDS",
+      "get": {
+        "summary": "Retrieve information about this API and its relationship with HSDS",
+        "operationId": "getAPIMetaInformation",
+        "responses": {
+          "200": {
+            "description": "A JSON response providing information about this API",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "version": {
+                      "type": "string",
+                      "description": "HSDS version of this API"
+                    },
+                    "profile": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL of where the information on the HSDS profile of this API"
+                    },
+                    "openapi_url": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "URL of the openapi JSON file which defines this API"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
+    },
+    "/services/{id}": {
+      "description": "Retrieve fully nested service with all related data with id.",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "description": "The id of the service that the request is intended to retrieve."
+        }
+      ],
+      "get": {
+        "summary": "Retrieves a fully nested service with all related data with id",
+        "operationId": "getFullyNestedServiceById",
+        "responses": {
+          "200": {
+            "description": "A Service matching the {id}, with all related data according to the HSDS Specification for Service",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/examples/service_full.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services": {
+      "description": "Retrieve paginated listings of services that only have one-to-one fields in them",
+      "get": {
+        "summary": "Retrieves paginated listings of services that only have one-to-one fields in them",
+        "operationId": "getPaginatedListOfServices",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/search"
+          },
+          {
+            "$ref": "#/components/parameters/page"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_term_id"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_id"
+          },
+          {
+            "$ref": "#/components/parameters/organization_id"
+          },
+          {
+            "$ref": "#/components/parameters/modified_after"
+          },
+          {
+            "description": "Return array of just services with just 'id' and 'modified_date'.  When using this parameter aim to return all services within one page.",
+            "$ref": "#/components/parameters/minimal"
+          },
+          {
+            "description": "true, false return fully nested service.",
+            "$ref": "#/components/parameters/full"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paginated list of services that only have one-to-one fields in them",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "contents": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_simple.json"
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Page"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services.ndjson": {
+      "description": "Retrieve new line delimited JSON feed that streams all the results",
+      "get": {
+        "summary": "Retrieve new line delimited JSON feed that streams all the results",
+        "operationId": "getLineDelimitedJSONForServices",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/search"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_term_id"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_id"
+          },
+          {
+            "$ref": "#/components/parameters/organization_id"
+          },
+          {
+            "$ref": "#/components/parameters/modified_after"
+          },
+          {
+            "$ref": "#/components/parameters/minimal"
+          },
+          {
+            "description": "true, false return fully nested service.",
+            "$ref": "#/components/parameters/full"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieve new line delimited JSON feed that streams all the resultsd",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_simple.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/taxonomies/{id}": {
+      "description": "Full information on taxonomy",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "description": "The id of the taxonomy that the request is intended to retrieve."
+        }
+      ],
+      "get": {
+        "summary": "Retrieves full information on a taxonomy by {id}",
+        "operationId": "getTaxonomyById",
+        "responses": {
+          "200": {
+            "description": "Full information on taxonomy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/taxonomies": {
+      "description": "Paginated listing of taxonomies",
+      "get": {
+        "summary": "Paginated listing of taxonomies",
+        "operationId": "getPaginatedListOfTaxonomies",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/search"
+          },
+          {
+            "$ref": "#/components/parameters/page"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Paginated listing of taxonomies",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "contents": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy.json"
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Page"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/taxonomy_terms/{id}": {
+      "description": "Full information on a taxonomy term",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "description": "The id of the taxonomy terms that the request is intended to retrieve."
+        }
+      ],
+      "get": {
+        "summary": "Full information on a taxonomy term",
+        "operationId": "getPaginatedListOfTaxonomyTerms",
+        "responses": {
+          "200": {
+            "description": "Full information on a taxonomy term",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy_term.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/taxonomy_terms": {
+      "description": "Full information on a taxonomy term",
+      "get": {
+        "summary": "Paginated listing of taxonomy terms",
+        "operationId": "getTaxonomyTermById",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/search"
+          },
+          {
+            "$ref": "#/components/parameters/page"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_id"
+          },
+          {
+            "name": "top_only",
+            "in": "query",
+            "required": false,
+            "description": "Only retrieve taxonomy terms that have not child terms.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "parent_id",
+            "in": "query",
+            "required": false,
+            "description": "Recieve taxonomy terms that have a parent with this id.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Paginated listing of taxonomy terms",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "contents": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy_term.json"
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Page"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/organizations/{id}": {
+      "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "description": "The id of the organization that the request is intended to retrieve."
+        }
+      ],
+      "get": {
+        "summary": "Fully nested organization with service array that contains simple information which could only contain the service.id",
+        "operationId": "getOrganizationById",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/full_service"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/organizations": {
+      "description": "Paginated list of basic Organization information.",
+      "get": {
+        "summary": "Paginated list of basic Organization information",
+        "operationId": "getPaginatedListOfOrganizations",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/search"
+          },
+          {
+            "$ref": "#components/parameters/full_service"
+          },
+          {
+            "description": "Contains full nested organization information",
+            "$ref": "#/components/parameters/full"
+          },
+          {
+            "$ref": "#/components/parameters/page"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Paginated list of basic Organization information.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "contents": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization_simple.json"
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Page"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service_at_locations/{id}": {
+      "description": "Retrieve fully nested service_at_location with all related data with specified id.",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "description": "The id of the service that the request is intended to retrieve."
+        }
+      ],
+      "get": {
+        "summary": "Retrieve fully nested service_at_location with all related data with specified id.",
+        "operationId": "getServiceAtLocationWithNestedDataById",
+        "responses": {
+          "200": {
+            "description": "Retrieve fully nested service_at_location with all related data with specified id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema/compiled/service.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service_at_locations": {
+      "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
+      "get": {
+        "summary": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
+        "operationId": "getPaginatedListOfServiceAtLocation",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/search"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_term_id"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_id"
+          },
+          {
+            "$ref": "#/components/parameters/organization_id"
+          },
+          {
+            "$ref": "#/components/parameters/modified_after"
+          },
+          {
+            "description": "true, false return fully nested service_at_location.",
+            "$ref": "#/components/parameters/full"
+          },
+          {
+            "$ref": "#/components/parameters/page"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "contents": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_at_location_simple.json"
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/Page"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Page": {
+        "type": "object",
+        "properties": {
+          "total_items": {
+            "type": "integer",
+            "description": "Count of total results"
+          },
+          "total_pages": {
+            "type": "integer",
+            "description": "Count of total pages"
+          },
+          "page_number": {
+            "type": "integer",
+            "description": "Current Page number"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Size of current page"
+          },
+          "first_page": {
+            "type": "boolean",
+            "description": "Is this page the first page"
+          },
+          "last_page": {
+            "type": "boolean",
+            "description": "Is this page the last page"
+          },
+          "empty": {
+            "type": "boolean",
+            "description": "Is this page empty"
+          }
+        }
+      }
+    },
+    "parameters": {
+      "search": {
+        "name": "search",
+        "in": "query",
+        "required": false,
+        "description": "Full text search",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "page": {
+        "name": "page",
+        "in": "query",
+        "required": false,
+        "description": "Page number of paginated result.",
+        "schema": {
+          "type": "integer"
+        }
+      },
+      "minimal": {
+        "name": "minimal",
+        "in": "query",
+        "required": false,
+        "description": "Return array of just service 'id' and 'modified_date'.  When using this parameter aim to return all services within one call.",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "full": {
+        "name": "full",
+        "in": "query",
+        "required": false,
+        "description": "Return a fully nested service, service_at_location, or organization based on the request.",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "modified_after": {
+        "name": "modified_after",
+        "in": "query",
+        "required": false,
+        "description": "Return all results modified on or after this datetime",
+        "schema": {
+          "type": "string",
+          "format": "datetime"
+        }
+      },
+      "taxonomy_term_id": {
+        "name": "taxonomy_term_id",
+        "in": "query",
+        "required": false,
+        "description": "Search for services with particular taxonomy_term",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "taxonomy_id": {
+        "name": "taxonomy_id",
+        "in": "query",
+        "required": false,
+        "description": "Search for services which contain any term with this taxonomy",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "organization_id": {
+        "name": "organization_id",
+        "in": "query",
+        "required": false,
+        "description": "Search for services which contain services that that this organization provides.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "full_service": {
+        "name": "full_service",
+        "in": "query",
+        "required": false,
+        "description": "Fully nested organization with service array that contains full service information.",
+        "schema": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
 }
