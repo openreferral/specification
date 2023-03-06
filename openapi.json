@@ -200,7 +200,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/taxonomy.json"
                 }
               }
             }
@@ -231,7 +231,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/taxonomy.json"
                       }
                     }
                   },
@@ -266,7 +266,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy_term.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/taxonomy_term.json"
                 }
               }
             }
@@ -318,7 +318,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/taxonomy_term.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/taxonomy_term.json"
                       }
                     }
                   },
