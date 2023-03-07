@@ -18,8 +18,8 @@
   "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
   "paths": {
     "/": {
-      "description": "Retrieve information about this API and its relationship with HSDS",
       "get": {
+        "description": "Retrieve information about this API and its relationship with HSDS",
         "summary": "Retrieve information about this API and its relationship with HSDS",
         "operationId": "getAPIMetaInformation",
         "responses": {
@@ -53,16 +53,19 @@
       }
     },
     "/services/{id}": {
-      "description": "Retrieve fully nested service with all related data with id.",
       "parameters": [
         {
           "in": "path",
           "name": "id",
           "required": true,
-          "description": "The id of the service that the request is intended to retrieve."
+          "description": "The id of the service that the request is intended to retrieve.",
+          "schema": {
+            "type": "string"
+          }
         }
       ],
       "get": {
+        "description": "Retrieve fully nested service with all related data with id.",
         "summary": "Retrieves a fully nested service with all related data with id",
         "operationId": "getFullyNestedServiceById",
         "responses": {
@@ -80,8 +83,8 @@
       }
     },
     "/services": {
-      "description": "Retrieve paginated listings of services that only have one-to-one fields in them",
       "get": {
+        "description": "Retrieve fully nested service with all related data with id.",
         "summary": "Retrieves paginated listings of services that only have one-to-one fields in them",
         "operationId": "getPaginatedListOfServices",
         "parameters": [
@@ -139,8 +142,8 @@
       }
     },
     "/services.ndjson": {
-      "description": "Retrieve new line delimited JSON feed that streams all the results",
       "get": {
+        "description": "Retrieve new line delimited JSON feed that streams all the results",
         "summary": "Retrieve new line delimited JSON feed that streams all the results",
         "operationId": "getLineDelimitedJSONForServices",
         "parameters": [
@@ -182,16 +185,19 @@
       }
     },
     "/taxonomies/{id}": {
-      "description": "Full information on taxonomy",
       "parameters": [
         {
           "in": "path",
           "name": "id",
           "required": true,
-          "description": "The id of the taxonomy that the request is intended to retrieve."
+          "description": "The id of the taxonomy that the request is intended to retrieve.",
+          "schema": {
+            "type": "string"
+          }
         }
       ],
       "get": {
+        "description": "Full information on taxonomy",
         "summary": "Retrieves full information on a taxonomy by {id}",
         "operationId": "getTaxonomyById",
         "responses": {
@@ -209,8 +215,8 @@
       }
     },
     "/taxonomies": {
-      "description": "Paginated listing of taxonomies",
       "get": {
+        "description": "Paginated listing of taxonomies",
         "summary": "Paginated listing of taxonomies",
         "operationId": "getPaginatedListOfTaxonomies",
         "parameters": [
@@ -248,16 +254,19 @@
       }
     },
     "/taxonomy_terms/{id}": {
-      "description": "Full information on a taxonomy term",
       "parameters": [
         {
           "in": "path",
           "name": "id",
           "required": true,
-          "description": "The id of the taxonomy terms that the request is intended to retrieve."
+          "description": "The id of the taxonomy terms that the request is intended to retrieve.",
+          "schema": {
+            "type": "string"
+          }
         }
       ],
       "get": {
+        "description": "Full information on a taxonomy term",
         "summary": "Full information on a taxonomy term",
         "operationId": "getPaginatedListOfTaxonomyTerms",
         "responses": {
@@ -275,8 +284,8 @@
       }
     },
     "/taxonomy_terms": {
-      "description": "Full information on a taxonomy term",
       "get": {
+        "description": "Full information on a taxonomy term",
         "summary": "Paginated listing of taxonomy terms",
         "operationId": "getTaxonomyTermById",
         "parameters": [
@@ -335,16 +344,19 @@
       }
     },
     "/organizations/{id}": {
-      "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
       "parameters": [
         {
           "in": "path",
           "name": "id",
           "required": true,
-          "description": "The id of the organization that the request is intended to retrieve."
+          "description": "The id of the organization that the request is intended to retrieve.",
+          "schema": {
+            "type": "string"
+          }
         }
       ],
       "get": {
+        "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
         "summary": "Fully nested organization with service array that contains simple information which could only contain the service.id",
         "operationId": "getOrganizationById",
         "parameters": [
@@ -367,8 +379,8 @@
       }
     },
     "/organizations": {
-      "description": "Paginated list of basic Organization information.",
       "get": {
+        "description": "Paginated list of basic Organization information.",
         "summary": "Paginated list of basic Organization information",
         "operationId": "getPaginatedListOfOrganizations",
         "parameters": [
@@ -413,16 +425,19 @@
       }
     },
     "/service_at_locations/{id}": {
-      "description": "Retrieve fully nested service_at_location with all related data with specified id.",
       "parameters": [
         {
           "in": "path",
           "name": "id",
           "required": true,
-          "description": "The id of the service that the request is intended to retrieve."
+          "description": "The id of the service that the request is intended to retrieve.",
+          "schema": {
+            "type": "string"
+          }
         }
       ],
       "get": {
+        "description": "Retrieve fully nested service_at_location with all related data with specified id.",
         "summary": "Retrieve fully nested service_at_location with all related data with specified id.",
         "operationId": "getServiceAtLocationWithNestedDataById",
         "responses": {
@@ -440,8 +455,8 @@
       }
     },
     "/service_at_locations": {
-      "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
       "get": {
+        "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
         "summary": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
         "operationId": "getPaginatedListOfServiceAtLocation",
         "parameters": [

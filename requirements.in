@@ -14,6 +14,6 @@ erd-from-json-table-schema
 sphinxcontrib-opendataservices-jsonschema
 # sphinxcontrib ODSC
 sphinxcontrib-opendataservices
-sphinxcontrib_openapi
+sphinxcontrib_openapi==0.8.1
 sphinx-design
 git+https://github.com/openreferral/hsds_schema_tools
