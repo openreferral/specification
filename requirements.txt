@@ -46,8 +46,6 @@ ijson==3.2.0.post0
     # via flatterer
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==6.0.0
-    # via sphinx
 jinja2==3.1.2
     # via
     #   myst-parser
@@ -64,7 +62,7 @@ jsonschema==4.17.3
     # via
     #   compiletojsonschema
     #   sphinxcontrib-openapi
-markdown-it-py==2.1.0
+markdown-it-py==2.2.0
     # via
     #   mdit-py-plugins
     #   myst-parser
@@ -166,8 +164,6 @@ urllib3==1.26.13
     # via
     #   requests
     #   transifex-client
-zipp==3.11.0
-    # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
