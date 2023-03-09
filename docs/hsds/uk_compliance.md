@@ -10,7 +10,7 @@ Rules apply to the Open Referral Human Services Data Specification (HSDS) with t
 
 Compliance rules apply purely to Application Programming Interfaces (APIs) because Open Referral is a standard for interchanging data. It does not concern itself with how data is stored.
 
-These compliance rules apply to Open Referral versions 3.0 and above. For compliance with the prior Open ReferraL UK standard, see [Open Referral UK API Validation Rules](https://developers.openreferraluk.org/ApiValidation/).
+These compliance rules apply to Open Referral versions 3.0 and above. For compliance with the prior Open Referral UK standard, see the [Open Referral UK API Validation Rules](https://developers.openreferraluk.org/ApiValidation/).
 
 All required and recommended API endpoints (also called “web methods”) are RESTful API GET queries to work over HTTPS.  POST and PUT endpoints are not required but may be provided in some implementations.
 
