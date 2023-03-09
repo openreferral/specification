@@ -108,3 +108,4 @@ No changes.
 * Updated formatting guidance to reflect schema changes;
 * Updated identifier guidance to differentiate between internal and third-party identifiers
 * Added reference page on UK compliance
+* Created new API reference and reference page, removed HSDA pages
