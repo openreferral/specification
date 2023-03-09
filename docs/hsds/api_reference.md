@@ -5,6 +5,23 @@ The API reference provides an [OpenAPI](https://www.openapis.org/) specification
 
 The source of the specification is found on [GitHub](https://github.com/openreferral/specification/tree/3.0-dev/schema/openapi.json) and [issues can be raised in the issue tracker](https://github.com/openreferral/specification/issues).
 
+## Lists
+
+Web endpoints that return lists of entities, such as services returned by a `/services` endpoint must be paginated.
+
+The header returned must include these properties:
+
+- `"total_items"`: the total number of entities (e.g. services) returned
+- `"total_pages"`: the total number of pages
+- `"page_number"`: the number of the current page
+- `"size"`: the number of entities in aq page
+- `"first_page"`: a Boolean value indicating if this is the first page
+- `"last_page"`: a Boolean value indicating if this is the last page
+- `"empty"`: a Boolean value indicating if there is an empty result set
+
+After the header, a lists endpoint will contain an array of its main entities (e.g. services). The array will normally contain all direct properties of each item but need not contain arrays of child entities (e.g. service contacts).
+
+
 ## Endpoint details
 
 This section contains details of each API endpoint. Each section presents an endpoint defined by the API and presents a technical reference for that endpoint including query parameters, status codes, and compliance rules for HSDS and Open Referral UK.
