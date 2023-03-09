@@ -57,6 +57,6 @@ The header returned must include these properties:
 After the header, a lists endpoint will contain an array of its main entities (e.g. services). The array will normally contain all direct properties of each item but need not contain arrays of child entities (e.g. service contacts).
 
 
-## 3. Other properties and endpoints
+## Other properties and endpoints
 
-Instances of Open Referral compliant directories may provide further endpoints and query response properties so long as they don’t conflict with those in the Open Referral specification. We recommend using a convention to denote local (supplier-specific) properties.
+Instances of Open Referral compliant directories may provide further endpoints and query response properties so long as they do not conflict with those in the Open Referral specification. We recommend using a convention to denote local (supplier-specific) properties.
