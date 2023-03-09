@@ -1,217 +1,256 @@
 API Reference
 =============
 
-In developmenti - introduction text.
+The API reference provides an [OpenAPI](https://www.openapis.org/) specification that can be used as a blueprint for the design or adaptation of API platforms to provide read or read/write access to information on organizations, services, locations and the details about them. The API protocol  provides most of the functionality needed for simple access and exchange of data.
 
+The source of the specification is found on [GitHub](https://github.com/openreferral/specification/tree/3.0-dev/schema/openapi.json) and [issues can be raised in the issue tracker](https://github.com/openreferral/specification/issues).
 
 ## Endpoint details
 
-This section contains details of each API endpoint. Each section presents an endpoint defined by the API and presents a technical reference for that endpoint including HTTP method, response type, available parameters etc.
-
-In addition to this, each endpoint and parameter is clearly labelled as being required or optional in the OpenReferral and OpenReferral UK specifications.
+This section contains details of each API endpoint. Each section presents an endpoint defined by the API and presents a technical reference for that endpoint including query parameters, status codes, and compliance rules for HSDS and Open Referral UK.
 
 ### The `/` endpoint
 
-* **Required by Open Referral?** Yes
-* **Required by Open Referral UK?** Yes
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
       /
    :encoding: utf-8
 ```
-#### Parameters
 
-There are no parameters for this endpoint which are required by either Open Referral or Open Referral UK.
+```{eval-rst}
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** Yes
+   * **Required by Open Referral UK?** Yes
+   * **Required parameters for Open Referral UK** page
 
-#### Response type
-
-This API response will return the [link here](test) response schema.
+```
 
 ### The `/services/{id}` endpoint
 
-* **Required by Open Referral?** Yes
-* **Required by Open Referral UK?** Yes
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
       /services/{id}
    :encoding: utf-8
 ```
 
-#### Response type
+```{eval-rst}
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** Yes
+   * **Required by Open Referral UK?** Yes
 
-This API response will return the [link here]() response schema.
+```
+
+#### Response details
+
+This API response will return [service](schema_reference.md#service) data.
 
 ### The `/services` endpoint
 
-
-* **Required by Open Referral?** Yes
-* **Required by Open Referral UK?** Yes
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
       /services
    :encoding: utf-8
 ```
 
 ```{eval-rst}
-.. attention::
-   Supporting the following parameters is required by APIs which wish to conform to the HSDS 3.0 UK profile:
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** Yes
+   * **Required by Open Referral UK?** Yes
+   * **Required parameters for Open Referral UK** page
 
-   * page
 ```
+#### Response details
 
-
-#### Response type
-
-This API response will return the [link here]() response schema.
+This API response will return [service](schema_reference.md#service) data.
 
 ### The `/taxonomies/{id}` endpoint
 
-* **Required by Open Referral?** No
-* **Required by Open Referral UK?** Yes
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
       /taxonomies/{id}
    :encoding: utf-8
 ```
 
-#### Response type
+```{eval-rst}
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** No
+   * **Required by Open Referral UK?** Yes
 
-This API response will return the [link here](test) response schema.
+```
+
+#### Response details
+
+This API response will return [taxonomy](schema_reference.md#taxonomy) data.
 
 ### The `/taxonomies` endpoint
 
-* **Required by Open Referral?** No
-* **Required by Open Referral UK?** Yes
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
      /taxonomies
    :encoding: utf-8
 ```
 
 ```{eval-rst}
-.. attention::
-   Supporting the following parameters is required by APIs which wish to conform to the HSDS 3.0 UK profile:
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** No
+   * **Required by Open Referral UK?** Yes
+   * **Required parameters for Open Referral UK** page
 
-   * page
 ```
-#### Response type
+#### Response details
 
-This API response will return the [link here](test) response schema
+This API response will return [taxonomy](schema_reference.md#taxonomy) data.
 
 ### The `/taxonomy_terms/{id}` endpoint
 
-* **Required by Open Referral?** No
-* **Required by Open Referral UK?** No
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
      /taxonomy_terms/{id}
    :encoding: utf-8
 ```
 
-#### Response type
+```{eval-rst}
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** No
+   * **Required by Open Referral UK?** No
 
-This API response will return the [link here](test) response schema.
+```
+
+#### Response details
+
+#### Response details
+
+This API response will return [taxonomy terms](schema_reference.md#taxonomy_term) data.
 
 ### The `/taxonomy_terms` endpoint
 
-* **Required by Open Referral?** No
-* **Required by Open Referral UK?** No
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
      /taxonomy_terms
    :encoding: utf-8
 ```
-```{eval-rst}
-.. attention::
-   Supporting the following parameters is required by APIs which wish to conform to the HSDS 3.0 UK profile:
 
-   * page
+```{eval-rst}
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** No
+   * **Required by Open Referral UK?** No
+   * **Required parameters for Open Referral UK** page
+
 ```
 
-#### Response type
+#### Response details
 
-This API response will return the [link here](test) response schema.
+This API response will return [taxonomy terms](schema_reference.md#taxonomy_term) data.
 
 ### The `/organizations/{id}` endpoint
 
-* **Required by Open Referral?** No
-* **Required by Open Referral UK?** No
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
      /organizations/{id}
    :encoding: utf-8
 ```
 
-#### Response type
+```{eval-rst}
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** No
+   * **Required by Open Referral UK?** No
 
-This API response will return the [link here](test) response schema.
+```
+
+#### Response details
+
+This API response will return [organization](schema_reference.md#organization) data.
 
 ### The `/organizations` endpoint
 
-* **Required by Open Referral?** No
+* **Required by HSDS?** No
 * **Required by Open Referral UK?** No
 
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
      /organizations
    :encoding: utf-8
 ```
 
-#### Response type
+```{eval-rst}
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** No
+   * **Required by Open Referral UK?** No
+   * **Required parameters for Open Referral UK** page
 
-This API response will return the [link here](test) response schema.
+```
+
+#### Response details
+
+This API response will return [organization](schema_reference.md#organization) data.
 
 ### The `/service_at_locations/{id}` endpoint
 
-* **Required by Open Referral?** No
-* **Required by Open Referral UK?** Yes
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
      /service_at_locations/{id}
    :encoding: utf-8
 ```
 
-#### Response type
+```{eval-rst}
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** No
+   * **Required by Open Referral UK?** Yes
 
-This API response will return the [link here](test) response schema.
+```
+
+#### Response details
+
+This API response will return [service at location](schema_reference.md#service_at_location) data.
 
 ### The `/service_at_locations` endpoint
 
-* **Required by Open Referral?** No
-* **Required by Open Referral UK?** Yes
-
 ```{eval-rst}
-.. openapi:: ../../openapi.json
+.. openapi:: ../../schema/openapi.json
    :paths:
      /service_at_locations
    :encoding: utf-8
 ```
 ```{eval-rst}
-.. attention::
-   Supporting the following parameters is required by APIs which wish to conform to the HSDS 3.0 UK profile:
+.. admonition::
+   The following compliance rules apply to this endpoint:
+   
+   * **Required by HSDS?** No
+   * **Required by Open Referral UK?** Yes
+   * **Required parameters for Open Referral UK** page
 
-   * page
 ```
 
-#### Response type
+#### Response details
 
-This API response will return the [link here](test) response schema.
+This API response will return [service at location](schema_reference.md#service_at_location) data.
