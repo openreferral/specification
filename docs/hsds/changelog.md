@@ -106,3 +106,5 @@ No changes.
 * Updated reference page to reflect schema changes;
 * Updated logical model to reflect schema changes;
 * Updated formatting guidance to reflect schema changes;
+* Updated identifier guidance to differentiate between internal and third-party identifiers
+* Added reference page on UK compliance

@@ -44,6 +44,7 @@ Contents:
    hsds/api_reference
    hsds/logical_model
    hsds/variations_interoperability
+   hsds/uk_compliance
    hsds/changelog
 
 .. toctree::
