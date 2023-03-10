@@ -7,9 +7,9 @@ Schema Reference
 
 The Human Services Data Specification defines a set of objects and the relationships between them.
 
-This page provides the canonical definition of each object and its required or optional fields. It is used to validate the structure and format of HSDS data. Schema files for each object in HSDS are also available as [JSON schema](https://json-schema.org/) from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/3.0-dev/examples).
+This page provides the canonical definition of each object and its required or optional fields. It is used to validate the structure and format of HSDS data. Schema files for each object in HSDS are also available as [JSON schema](https://json-schema.org/) from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/3.0-dev/schema).
 
-Example data is provided in the 'Example' tab for each object. In addition, you can download sample data in JSON format directly from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/3.0-dev/schema).
+Example data is provided in the 'Example' tab for each object. In addition, you can download sample data in JSON format directly from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/3.0-dev/examples).
 
 HSDS data can also be serialized as a [Tabular Data Package](http://specs.frictionlessdata.io/tabular-data-package/) consisting of CSV files for each of the objects required, and a [package descriptor (datapackage.json)](http://specs.frictionlessdata.io/tabular-data-package/#specification) file adapted from the current [HSDS specification](../../datapackage.json) to include any additional fields and metadata from the data publisher.
 
@@ -27,7 +27,7 @@ Publishers should also be aware that some applications may wish to extract a 'sh
 
 ## Objects and fields
 
-#### service
+### service
 
 `service` is defined as:
 
@@ -61,7 +61,7 @@ Each `service` object has the following fields:
 
 
 
-#### phone
+### phone
 
 `phone` is defined as:
 
@@ -96,7 +96,7 @@ Each `phone` object has the following fields:
 ::::
 
 
-#### schedule
+### schedule
 
 `schedule` is defined as:
 
@@ -131,7 +131,7 @@ Each `schedule` object has the following fields:
 ::::
 
 
-#### service_area
+### service_area
 
 `service_area` is defined as:
 
@@ -167,7 +167,7 @@ Each `service_area` object has the following fields:
 
 
 
-#### service_at_location
+### service_at_location
 
 `service_at_location` is defined as:
 
@@ -201,7 +201,7 @@ Each `service_at_location` object has the following fields:
 
 ::::
 
-#### location
+### location
 
 `location` is defined as:
 
@@ -236,7 +236,7 @@ Each `location` object has the following fields:
 ::::
 
 
-#### language
+### language
 
 `language` is defined as:
 
@@ -271,7 +271,7 @@ Each `language` object has the following fields:
 ::::
 
 
-#### organization
+### organization
 
 `organization` is defined as:
 
@@ -306,7 +306,7 @@ Each `organization` object has the following fields:
 ::::
 
 
-#### funding
+### funding
 
 `funding` is defined as:
 
@@ -341,7 +341,7 @@ Each `funding` object has the following fields:
 ::::
 
 
-#### cost_option
+### cost_option
 
 `cost_option` is defined as:
 
@@ -376,7 +376,7 @@ Each `cost_option` object has the following fields:
 ::::
 
 
-#### program
+### program
 
 `program` is defined as:
 
@@ -411,7 +411,7 @@ Each `program` object has the following fields:
 ::::
 
 
-#### required_document
+### required_document
 
 `required_document` is defined as:
 
@@ -446,7 +446,7 @@ Each `required_document` object has the following fields:
 ::::
 
 
-#### contact
+### contact
 
 `contact` is defined as:
 
@@ -481,7 +481,7 @@ Each `contact` object has the following fields:
 ::::
 
 
-#### attribute
+### attribute
 
 `attribute` is defined as:
 
@@ -516,7 +516,7 @@ Each `attribute` object has the following fields:
 ::::
 
 
-#### metadata
+### metadata
 
 `metadata` is defined as:
 
@@ -549,7 +549,7 @@ Each `metadata` object has the following fields:
 
 ::::
 
-#### meta_table_description
+### meta_table_description
 
 `meta_table_description` is defined as:
 
@@ -566,6 +566,66 @@ Each `meta_table_description` object has the following fields:
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/meta_table_description
 :collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+In development
+
+:::
+
+::::
+
+### taxonomy
+
+`taxonomy` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/taxonomy/description
+```
+
+Each `taxonomy` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/taxonomy
+:collapse: metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+In development
+
+:::
+
+::::
+
+### taxonomy_term
+
+`taxonomy_term` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/taxonomy_term/description
+```
+
+Each `taxonomy_term` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/taxonomy_term
+:collapse: metadata
 
 ```
 

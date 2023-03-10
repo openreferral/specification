@@ -369,7 +369,7 @@ texinfo_documents = [
 # MyST configuration
 
 # Autogenerate anchors for Markdown headings (h1, h2)
-myst_heading_anchors = 2
+myst_heading_anchors = 3
 
 from docutils.parsers.rst import directives
 from docutils.parsers.rst import Directive

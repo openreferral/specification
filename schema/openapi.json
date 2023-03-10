@@ -19,12 +19,12 @@
   "paths": {
     "/": {
       "get": {
-        "description": "Retrieve information about this API and its relationship with HSDS",
-        "summary": "Retrieve information about this API and its relationship with HSDS",
+        "description": "Retrieve information about this API and its relationship with HSDS.",
+        "summary": "Retrieve information about this API and its relationship with HSDS.",
         "operationId": "getAPIMetaInformation",
         "responses": {
           "200": {
-            "description": "A JSON response providing information about this API",
+            "description": "A JSON response providing information about this API.",
             "content": {
               "application/json": {
                 "schema": {
@@ -32,17 +32,17 @@
                   "properties": {
                     "version": {
                       "type": "string",
-                      "description": "HSDS version of this API"
+                      "description": "HSDS version of this API."
                     },
                     "profile": {
                       "type": "string",
                       "format": "uri",
-                      "description": "URL of where the information on the HSDS profile of this API"
+                      "description": "URL of the information on the HSDS profile of this API."
                     },
                     "openapi_url": {
                       "type": "string",
                       "format": "uri",
-                      "description": "URL of the openapi JSON file which defines this API"
+                      "description": "URL of the openapi JSON file which defines this API."
                     }
                   }
                 }
@@ -66,11 +66,11 @@
       ],
       "get": {
         "description": "Retrieve fully nested service with all related data with id.",
-        "summary": "Retrieves a fully nested service with all related data with id",
+        "summary": "Retrieves a fully nested service with all related data with id.",
         "operationId": "getFullyNestedServiceById",
         "responses": {
           "200": {
-            "description": "A Service matching the {id}, with all related data according to the HSDS Specification for Service",
+            "description": "A Service matching the {id}, with all related data according to the HSDS Specification for Service.",
             "content": {
               "application/json": {
                 "schema": {
@@ -85,7 +85,7 @@
     "/services": {
       "get": {
         "description": "Retrieve fully nested service with all related data with id.",
-        "summary": "Retrieves paginated listings of services that only have one-to-one fields in them",
+        "summary": "Retrieves paginated listings of services that only have one-to-one fields in them.",
         "operationId": "getPaginatedListOfServices",
         "parameters": [
           {
@@ -117,7 +117,7 @@
         ],
         "responses": {
           "200": {
-            "description": "A paginated list of services that only have one-to-one fields in them",
+            "description": "A paginated list of services that only have one-to-one fields in them.",
             "content": {
               "application/json": {
                 "schema": {
@@ -143,8 +143,8 @@
     },
     "/services.ndjson": {
       "get": {
-        "description": "Retrieve new line delimited JSON feed that streams all the results",
-        "summary": "Retrieve new line delimited JSON feed that streams all the results",
+        "description": "Retrieve new line delimited JSON feed that streams all the results.",
+        "summary": "Retrieve new line delimited JSON feed that streams all the results.",
         "operationId": "getLineDelimitedJSONForServices",
         "parameters": [
           {
@@ -172,7 +172,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Retrieve new line delimited JSON feed that streams all the resultsd",
+            "description": "Retrieve new line delimited JSON feed that streams all the results.",
             "content": {
               "application/json": {
                 "schema": {
@@ -197,12 +197,12 @@
         }
       ],
       "get": {
-        "description": "Full information on taxonomy",
-        "summary": "Retrieves full information on a taxonomy by {id}",
+        "description": "Full information on taxonomy.",
+        "summary": "Retrieves full information on a taxonomy by {id}.",
         "operationId": "getTaxonomyById",
         "responses": {
           "200": {
-            "description": "Full information on taxonomy",
+            "description": "Full information on taxonomy.",
             "content": {
               "application/json": {
                 "schema": {
@@ -216,8 +216,8 @@
     },
     "/taxonomies": {
       "get": {
-        "description": "Paginated listing of taxonomies",
-        "summary": "Paginated listing of taxonomies",
+        "description": "Paginated listing of taxonomies.",
+        "summary": "Paginated listing of taxonomies.",
         "operationId": "getPaginatedListOfTaxonomies",
         "parameters": [
           {
@@ -229,7 +229,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Paginated listing of taxonomies",
+            "description": "Paginated listing of taxonomies.",
             "content": {
               "application/json": {
                 "schema": {
@@ -266,12 +266,12 @@
         }
       ],
       "get": {
-        "description": "Full information on a taxonomy term",
-        "summary": "Full information on a taxonomy term",
+        "description": "Full information on a taxonomy term.",
+        "summary": "Full information on a taxonomy term.",
         "operationId": "getPaginatedListOfTaxonomyTerms",
         "responses": {
           "200": {
-            "description": "Full information on a taxonomy term",
+            "description": "Full information on a taxonomy term.",
             "content": {
               "application/json": {
                 "schema": {
@@ -356,8 +356,8 @@
         }
       ],
       "get": {
-        "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
-        "summary": "Fully nested organization with service array that contains simple information which could only contain the service.id",
+        "description": "Fully nested organization with service array that contains simple information which could only contain the service.id.",
+        "summary": "Fully nested organization with service array that contains simple information which could only contain the service.id.",
         "operationId": "getOrganizationById",
         "parameters": [
           {
@@ -366,7 +366,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Fully nested organization with service array that contains simple information which could only contain the service.id",
+            "description": "Fully nested organization with service array that contains simple information which could only contain the service.id.",
             "content": {
               "application/json": {
                 "schema": {
@@ -446,7 +446,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schema/compiled/service.json"
+                  "$ref": "./compiled/service.json"
                 }
               }
             }
@@ -456,8 +456,8 @@
     },
     "/service_at_locations": {
       "get": {
-        "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
-        "summary": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
+        "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them.",
+        "summary": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them.",
         "operationId": "getPaginatedListOfServiceAtLocation",
         "parameters": [
           {
@@ -485,7 +485,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them",
+            "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them.",
             "content": {
               "application/json": {
                 "schema": {
@@ -517,31 +517,31 @@
         "properties": {
           "total_items": {
             "type": "integer",
-            "description": "Count of total results"
+            "description": "Count of total results."
           },
           "total_pages": {
             "type": "integer",
-            "description": "Count of total pages"
+            "description": "Count of total pages."
           },
           "page_number": {
             "type": "integer",
-            "description": "Current Page number"
+            "description": "Current page number."
           },
           "size": {
             "type": "integer",
-            "description": "Size of current page"
+            "description": "Size of current page."
           },
           "first_page": {
             "type": "boolean",
-            "description": "Is this page the first page"
+            "description": "Is this page the first page."
           },
           "last_page": {
             "type": "boolean",
-            "description": "Is this page the last page"
+            "description": "Is this page the last page."
           },
           "empty": {
             "type": "boolean",
-            "description": "Is this page empty"
+            "description": "Is this page empty."
           }
         }
       }
@@ -551,7 +551,7 @@
         "name": "search",
         "in": "query",
         "required": false,
-        "description": "Full text search",
+        "description": "Full text search.",
         "schema": {
           "type": "string"
         }
@@ -587,7 +587,7 @@
         "name": "modified_after",
         "in": "query",
         "required": false,
-        "description": "Return all results modified on or after this datetime",
+        "description": "Return all results modified on or after this datetime.",
         "schema": {
           "type": "string",
           "format": "datetime"
@@ -597,7 +597,7 @@
         "name": "taxonomy_term_id",
         "in": "query",
         "required": false,
-        "description": "Search for services with particular taxonomy_term",
+        "description": "Search for services with particular taxonomy_term.",
         "schema": {
           "type": "string"
         }
@@ -606,7 +606,7 @@
         "name": "taxonomy_id",
         "in": "query",
         "required": false,
-        "description": "Search for services which contain any term with this taxonomy",
+        "description": "Search for services which contain any term with this taxonomy.",
         "schema": {
           "type": "string"
         }

@@ -1,10 +1,9 @@
 UK Compliance
 =========
 
-
 ## Applicability
 
-This page describes the rules for achieving compliance with the UK profile of LG Inform Plus, as required by most UK organisations that require compliance.
+This page describes the rules for achieving compliance with the UK profile of LG Inform Plus, as required by most UK organizations that require compliance. The rules described here are in addition to the required endpoints and parameters for UK compliance, which are given in the [API reference](api_reference) page.
 
 Rules apply to the Open Referral Human Services Data Specification (HSDS) with the UK profile applied. This profile defines which fields are needed by a standard UK implementation.
 
@@ -14,7 +13,7 @@ These compliance rules apply to Open Referral versions 3.0 and above. For compli
 
 All required and recommended API endpoints (also called “web methods”) are RESTful API GET queries to work over HTTPS.  POST and PUT endpoints are not required but may be provided in some implementations.
 
-The full syntax of API endpoints and responses, and information on required endpoints and parameters for UK compliance, are given in the [API reference](api_reference) page.
+The full syntax of API endpoints and responses are given in the [API reference](api_reference) page.
 
 
 ## Compliance rules
@@ -37,24 +36,6 @@ To enable widespread use of APIs, especially by simple HTML/JavaScript applicati
 ### Open Referral version and profile
 
 A HSDS 3.0 UK application profile is forthcoming. Required endpoints and parameters for UK compliance are provided in the [API reference](api_reference) page.
-
-
-
-### Lists
-
-Web endpoints that return lists of entities, such as services returned by a `/services` endpoint must be paginated.
-
-The header returned must include these properties:
-
-- `"total_items"`: the total number of entities (e.g. services) returned
-- `"total_pages"`: the total number of pages
-- `"page_number"`: the number of the current page
-- `"size"`: the number of entities in aq page
-- `"first_page"`: a Boolean value indicating if this is the first page
-- `"last_page"`: a Boolean value indicating if this is the last page
-- `"empty"`: a Boolean value indicating if there is an empty result set
-
-After the header, a lists endpoint will contain an array of its main entities (e.g. services). The array will normally contain all direct properties of each item but need not contain arrays of child entities (e.g. service contacts).
 
 
 ## Other properties and endpoints
