@@ -21,7 +21,6 @@ The header returned must include these properties:
 
 After the header, a lists endpoint will contain an array of its main entities (e.g. services). The array will normally contain all direct properties of each item but need not contain arrays of child entities (e.g. service contacts).
 
-
 ## Endpoint details
 
 This section contains details of each API endpoint. Each section presents an endpoint defined by the API and presents a technical reference for that endpoint including query parameters, status codes, and compliance rules for HSDS and Open Referral UK.
@@ -35,14 +34,10 @@ This section contains details of each API endpoint. Each section presents an end
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** Yes
-   * **Required by Open Referral UK?** Yes
-   * **Required parameters for Open Referral UK** page
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** Yes
+- **Required by Open Referral UK?** Yes
+- **Required parameters for Open Referral UK** page
 ```
 
 ### The `/services/{id}` endpoint
@@ -54,13 +49,9 @@ This section contains details of each API endpoint. Each section presents an end
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** Yes
-   * **Required by Open Referral UK?** Yes
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** Yes
+- **Required by Open Referral UK?** Yes
 ```
 
 #### Response details
@@ -76,14 +67,10 @@ This API response will return [service](schema_reference.md#service) data.
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** Yes
-   * **Required by Open Referral UK?** Yes
-   * **Required parameters for Open Referral UK** page
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** Yes
+- **Required by Open Referral UK?** Yes
+- **Required parameters for Open Referral UK** page
 ```
 #### Response details
 
@@ -98,13 +85,9 @@ This API response will return [service](schema_reference.md#service) data.
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** No
-   * **Required by Open Referral UK?** Yes
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** No
+- **Required by Open Referral UK?** Yes
 ```
 
 #### Response details
@@ -120,14 +103,10 @@ This API response will return [taxonomy](schema_reference.md#taxonomy) data.
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** No
-   * **Required by Open Referral UK?** Yes
-   * **Required parameters for Open Referral UK** page
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** No
+- **Required by Open Referral UK?** Yes
+- **Required parameters for Open Referral UK** page
 ```
 #### Response details
 
@@ -142,16 +121,10 @@ This API response will return [taxonomy](schema_reference.md#taxonomy) data.
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** No
-   * **Required by Open Referral UK?** No
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** No
+- **Required by Open Referral UK?** No
 ```
-
-#### Response details
 
 #### Response details
 
@@ -166,14 +139,10 @@ This API response will return [taxonomy terms](schema_reference.md#taxonomy_term
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** No
-   * **Required by Open Referral UK?** No
-   * **Required parameters for Open Referral UK** page
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** No
+- **Required by Open Referral UK?** No
+- **Required parameters for Open Referral UK** page
 ```
 
 #### Response details
@@ -189,13 +158,9 @@ This API response will return [taxonomy terms](schema_reference.md#taxonomy_term
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** No
-   * **Required by Open Referral UK?** No
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** No
+- **Required by Open Referral UK?** No
 ```
 
 #### Response details
@@ -214,14 +179,10 @@ This API response will return [organization](schema_reference.md#organization) d
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** No
-   * **Required by Open Referral UK?** No
-   * **Required parameters for Open Referral UK** page
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** No
+- **Required by Open Referral UK?** No
+- **Required parameters for Open Referral UK** page
 ```
 
 #### Response details
@@ -237,13 +198,9 @@ This API response will return [organization](schema_reference.md#organization) d
    :encoding: utf-8
 ```
 
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** No
-   * **Required by Open Referral UK?** Yes
-
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** No
+- **Required by Open Referral UK?** Yes
 ```
 
 #### Response details
@@ -258,13 +215,11 @@ This API response will return [service at location](schema_reference.md#service_
      /service_at_locations
    :encoding: utf-8
 ```
-```{eval-rst}
-.. admonition::
-   The following compliance rules apply to this endpoint:
-   
-   * **Required by HSDS?** No
-   * **Required by Open Referral UK?** Yes
-   * **Required parameters for Open Referral UK** page
+
+```{admonition} The following compliance rules apply to this endpoint
+- **Required by HSDS?** No
+- **Required by Open Referral UK?** Yes
+- **Required parameters for Open Referral UK** page
 
 ```
 
