@@ -1,10 +1,9 @@
 UK Compliance
 =========
 
-
 ## Applicability
 
-This page describes the rules for achieving compliance with the UK profile of LG Inform Plus, as required by most UK organisations that require compliance.
+This page describes the rules for achieving compliance with the UK profile of LG Inform Plus, as required by most UK organizations that require compliance. The rules described here are in addition to the required endpoints and parameters for UK compliance, which are given in the [API reference](api_reference) page.
 
 Rules apply to the Open Referral Human Services Data Specification (HSDS) with the UK profile applied. This profile defines which fields are needed by a standard UK implementation.
 
@@ -14,7 +13,7 @@ These compliance rules apply to Open Referral versions 3.0 and above. For compli
 
 All required and recommended API endpoints (also called “web methods”) are RESTful API GET queries to work over HTTPS.  POST and PUT endpoints are not required but may be provided in some implementations.
 
-The full syntax of API endpoints and responses, and information on required endpoints and parameters for UK compliance, are given in the [API reference](api_reference) page.
+The full syntax of API endpoints and responses are given in the [API reference](api_reference) page.
 
 
 ## Compliance rules
