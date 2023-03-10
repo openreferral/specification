@@ -2,7 +2,7 @@
 {% set css_files = css_files + ["_static/jsonschema.css"] %}
 {% set css_files = css_files + ["_static/renderjson.css"] %}
 {% set script_files = script_files + ["_static/renderjson.js", "_static/json-example-format.js"] %}
-{% block footer %}
+{% block footer %}{{ super() }}
 <script async defer src="https://hypothes.is/embed.js"></script>
 
 <!-- Piwik -->
@@ -20,4 +20,26 @@
   })();
 </script>
 <!-- End Piwik Code -->
+<style>
+  /* Sidebar header (and topbar for mobile) */
+  .wy-side-nav-search, .wy-nav-top {
+    background: #58c19f;
+  }
+  /* Sidebar */
+  .wy-nav-side {
+    background: #f2f2f2;
+  }
+
+  /* unvisited link */
+a:link {
+  color: #1C926D;
+}
+
+/* visited link */
+a:visited {
+  color: #1C926D;
+}
+
+  
+</style>
 {% endblock %}
