@@ -529,6 +529,18 @@
                             "unique": false
                         },
                         "example": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information."
+                    },
+                    {
+                        "name": "last_modified",
+                        "type": "string",
+                        "format": "datetime",
+                        "title": "Last Modified",
+                        "description": "The datetime when the service, or any related information about the service, has changed. Should have millisecond accuracy.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        },
+                        "example": "2023-03-15T10:30:45.123Z"
                     }
                 ],
                 "foreignKeys": [
@@ -709,16 +721,16 @@
                 ],
                 "foreignKeys": [
                     {
-                        "fields": "location_id",
+                        "fields": "service_id",
                         "reference": {
-                            "resource": "location",
+                            "resource": "service",
                             "fields": "id"
                         }
                     },
                     {
-                        "fields": "service_id",
+                        "fields": "location_id",
                         "reference": {
-                            "resource": "service",
+                            "resource": "location",
                             "fields": "id"
                         }
                     }
@@ -1026,6 +1038,20 @@
                 ],
                 "foreignKeys": [
                     {
+                        "fields": "service_id",
+                        "reference": {
+                            "resource": "service",
+                            "fields": "id"
+                        }
+                    },
+                    {
+                        "fields": "contact_id",
+                        "reference": {
+                            "resource": "contact",
+                            "fields": "id"
+                        }
+                    },
+                    {
                         "fields": "service_at_location_id",
                         "reference": {
                             "resource": "service_at_location",
@@ -1040,23 +1066,9 @@
                         }
                     },
                     {
-                        "fields": "service_id",
-                        "reference": {
-                            "resource": "service",
-                            "fields": "id"
-                        }
-                    },
-                    {
                         "fields": "organization_id",
                         "reference": {
                             "resource": "organization",
-                            "fields": "id"
-                        }
-                    },
-                    {
-                        "fields": "contact_id",
-                        "reference": {
-                            "resource": "contact",
                             "fields": "id"
                         }
                     }
@@ -1185,6 +1197,13 @@
                 ],
                 "foreignKeys": [
                     {
+                        "fields": "service_id",
+                        "reference": {
+                            "resource": "service",
+                            "fields": "id"
+                        }
+                    },
+                    {
                         "fields": "service_at_location_id",
                         "reference": {
                             "resource": "service_at_location",
@@ -1195,13 +1214,6 @@
                         "fields": "location_id",
                         "reference": {
                             "resource": "location",
-                            "fields": "id"
-                        }
-                    },
-                    {
-                        "fields": "service_id",
-                        "reference": {
-                            "resource": "service",
                             "fields": "id"
                         }
                     },
@@ -1672,6 +1684,13 @@
                 ],
                 "foreignKeys": [
                     {
+                        "fields": "service_id",
+                        "reference": {
+                            "resource": "service",
+                            "fields": "id"
+                        }
+                    },
+                    {
                         "fields": "service_at_location_id",
                         "reference": {
                             "resource": "service_at_location",
@@ -1682,13 +1701,6 @@
                         "fields": "location_id",
                         "reference": {
                             "resource": "location",
-                            "fields": "id"
-                        }
-                    },
-                    {
-                        "fields": "service_id",
-                        "reference": {
-                            "resource": "service",
                             "fields": "id"
                         }
                     }
@@ -2042,9 +2054,9 @@
                 ],
                 "foreignKeys": [
                     {
-                        "fields": "location_id",
+                        "fields": "phone_id",
                         "reference": {
-                            "resource": "location",
+                            "resource": "phone",
                             "fields": "id"
                         }
                     },
@@ -2056,9 +2068,9 @@
                         }
                     },
                     {
-                        "fields": "phone_id",
+                        "fields": "location_id",
                         "reference": {
-                            "resource": "phone",
+                            "resource": "location",
                             "fields": "id"
                         }
                     }

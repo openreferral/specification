@@ -16003,6 +16003,17 @@
           },
           "example": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information."
         },
+        "last_modified": {
+          "name": "last_modified",
+          "type": "string",
+          "format": "datetime",
+          "title": "Last Modified",
+          "description": "The datetime when the service, or any related information about the service, has changed. Should have millisecond accuracy.",
+          "constraints": {
+            "unique": false
+          },
+          "example": "2023-03-15T10:30:45.123Z"
+        },
         "phones": {
           "name": "phones",
           "type": "array",
