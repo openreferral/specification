@@ -629,7 +629,7 @@
         "name": "postcode",
         "in": "query",
         "required": false,
-        "description": "The postcode or zip code of a point used to check service coverage. If `service_area` is availible, only return results where the postcode exist within the `service_area`.  If `proximity` is provided only show results within the proximity from the centroid of the postcode.",
+        "description": "The postcode or zip code of a point used to check service coverage. If `service_area` is available, only return results where the postcode exists within the `service_area`.  If `proximity` is provided, only show results within the proximity from the centroid of the postcode.",
         "schema": {
           "type": "string"
         }
