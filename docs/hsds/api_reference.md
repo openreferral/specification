@@ -27,12 +27,28 @@ This section contains details of each API endpoint. Each section presents an end
 
 ### The `/` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
       /
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/base.json
+    :jsonpointer:
+    :title: base
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** Yes
@@ -49,12 +65,28 @@ This API response will return a JSON object containing the following key/value p
 
 ### The `/services/{id}` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
       /services/{id}
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer:
+    :title: service
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** Yes
@@ -67,12 +99,28 @@ This API response will return [service](schema_reference.md#service) data.
 
 ### The `/services` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
       /services
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_list.json
+    :jsonpointer:
+    :title: service_list
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** Yes
@@ -85,12 +133,28 @@ This API response will return [service](schema_reference.md#service) data.
 
 ### The `/taxonomies/{id}` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
       /taxonomies/{id}
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/taxonomy.json
+    :jsonpointer:
+    :title: taxonomy
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
@@ -103,12 +167,28 @@ This API response will return [taxonomy](schema_reference.md#taxonomy) data.
 
 ### The `/taxonomies` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
      /taxonomies
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/taxonomy_list.json
+    :jsonpointer:
+    :title: taxonomy_list
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
@@ -121,12 +201,28 @@ This API response will return [taxonomy](schema_reference.md#taxonomy) data.
 
 ### The `/taxonomy_terms/{id}` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
      /taxonomy_terms/{id}
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/taxonomy_term.json
+    :jsonpointer:
+    :title: taxonomy_term
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
@@ -139,12 +235,28 @@ This API response will return [taxonomy terms](schema_reference.md#taxonomy_term
 
 ### The `/taxonomy_terms` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
      /taxonomy_terms
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/taxonomy_term_list.json
+    :jsonpointer:
+    :title: taxonomy_term_list
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
@@ -158,12 +270,28 @@ This API response will return [taxonomy terms](schema_reference.md#taxonomy_term
 
 ### The `/organizations/{id}` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
      /organizations/{id}
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/organization_full.json
+    :jsonpointer:
+    :title: organization
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
@@ -176,12 +304,28 @@ This API response will return [organization](schema_reference.md#organization) d
 
 ### The `/organizations` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
      /organizations
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/organization_list.json
+    :jsonpointer:
+    :title: organization_list
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
@@ -195,12 +339,28 @@ This API response will return [organization](schema_reference.md#organization) d
 
 ### The `/service_at_locations/{id}` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
      /service_at_locations/{id}
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_at_location_full.json
+    :jsonpointer:
+    :title: service_at_location
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
@@ -213,12 +373,28 @@ This API response will return [service at location](schema_reference.md#service_
 
 ### The `/service_at_locations` endpoint
 
+::::{tab-set}
+
+:::{tab-item} Details
+
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
      /service_at_locations
    :encoding: utf-8
 ```
+:::
+
+:::{tab-item} Example Response
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_at_location_list.json
+    :jsonpointer:
+    :title: service_at_location_list
+```
+:::
+
+::::
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
