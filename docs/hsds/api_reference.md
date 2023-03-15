@@ -37,8 +37,15 @@ This section contains details of each API endpoint. Each section presents an end
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** Yes
 - **Required by Open Referral UK?** Yes
-- **Required parameters for Open Referral UK** page
 ```
+
+#### Response details
+
+This API response will return a JSON object containing the following key/value pairs:
+
+* `version` (String) &ndash; HSDS version of this API
+* `profile` (URI) &ndash; URL of where the information on the HSDS profile of this API
+* `openapi_url` (URI) &ndash; URL of the openapi JSON file which defines this API
 
 ### The `/services/{id}` endpoint
 
