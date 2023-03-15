@@ -210,6 +210,7 @@
       "assurer_email": "email@example.com",
       "licenses": "licences",
       "alert": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information.",
+      "last_modified": "2023-03-15T10:30:45.123Z",
       "phones": [
         {
           "id": "1554f2e2-a373-45db-a3fa-9fc48a61c15e",

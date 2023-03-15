@@ -48,7 +48,8 @@
       "assured_date": "2005-01-01",
       "assurer_email": "email@example.com",
       "licenses": "licences",
-      "alert": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information."
+      "alert": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information.",
+      "last_modified": "2023-03-15T10:30:45.123Z"
     }
   ],
   "attribute": [
