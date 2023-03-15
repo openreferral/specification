@@ -57,7 +57,6 @@ Contents:
    hsds/identifiers
    hsds/producing_sharing
    hsds/extending
-   hsds/sample_data
 
 .. toctree::
    :maxdepth: 1
