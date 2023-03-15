@@ -41,7 +41,7 @@ This section contains details of each API endpoint. Each section presents an end
 
 #### Response details
 
-This API response will return the following JSON object:
+This API response will return a JSON object containing the following key/value pairs:
 
 * `version` (String) &ndash; HSDS version of this API
 * `profile` (URI) &ndash; URL of where the information on the HSDS profile of this API
