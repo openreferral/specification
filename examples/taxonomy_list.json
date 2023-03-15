@@ -1,0 +1,18 @@
+{
+  "total_items": 10,
+  "total_pages": 10,
+  "page_number": 1,
+  "size": 1,
+  "first_page": true,
+  "last_page": false,
+  "empty": false,
+  "contents": [
+    {
+      "id": "5c4d79d7-cc55-470e-9f1f-8cad074e4892",
+      "name": "name",
+      "description": "description",
+      "uri": "http://example.com",
+      "version": "version"
+    }
+  ]
+}

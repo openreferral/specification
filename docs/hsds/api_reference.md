@@ -39,12 +39,12 @@ This section contains details of each API endpoint. Each section presents an end
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/base.json
     :jsonpointer:
-    :title: service
+    :title: base
 ```
 :::
 
@@ -77,7 +77,7 @@ This API response will return a JSON object containing the following key/value p
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
@@ -111,12 +111,12 @@ This API response will return [service](schema_reference.md#service) data.
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/service_list.json
     :jsonpointer:
-    :title: service
+    :title: service_list
 ```
 :::
 
@@ -145,12 +145,12 @@ This API response will return [service](schema_reference.md#service) data.
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/taxonomy.json
     :jsonpointer:
-    :title: service
+    :title: taxonomy
 ```
 :::
 
@@ -179,12 +179,12 @@ This API response will return [taxonomy](schema_reference.md#taxonomy) data.
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/taxonomy_list.json
     :jsonpointer:
-    :title: service
+    :title: taxonomy_list
 ```
 :::
 
@@ -213,12 +213,12 @@ This API response will return [taxonomy](schema_reference.md#taxonomy) data.
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/taxonomy_term.json
     :jsonpointer:
-    :title: service
+    :title: taxonomy_term
 ```
 :::
 
@@ -247,12 +247,12 @@ This API response will return [taxonomy terms](schema_reference.md#taxonomy_term
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/taxonomy_term_list.json
     :jsonpointer:
-    :title: service
+    :title: taxonomy_term_list
 ```
 :::
 
@@ -282,12 +282,12 @@ This API response will return [taxonomy terms](schema_reference.md#taxonomy_term
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/organization_full.json
     :jsonpointer:
-    :title: service
+    :title: organization
 ```
 :::
 
@@ -316,12 +316,12 @@ This API response will return [organization](schema_reference.md#organization) d
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/organization_list.json
     :jsonpointer:
-    :title: service
+    :title: organization_list
 ```
 :::
 
@@ -351,12 +351,12 @@ This API response will return [organization](schema_reference.md#organization) d
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/service_at_location_full.json
     :jsonpointer:
-    :title: service
+    :title: service_at_location
 ```
 :::
 
@@ -385,12 +385,12 @@ This API response will return [service at location](schema_reference.md#service_
 ```
 :::
 
-:::{tab-item} Example
+:::{tab-item} Example Response
 
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_full.json
+.. jsoninclude:: ../../examples/service_at_location_list.json
     :jsonpointer:
-    :title: service
+    :title: service_at_location_list
 ```
 :::
 
