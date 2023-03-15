@@ -169,9 +169,6 @@ This API response will return [organization](schema_reference.md#organization) d
 
 ### The `/organizations` endpoint
 
-* **Required by HSDS?** No
-* **Required by Open Referral UK?** No
-
 ```{eval-rst}
 .. openapi:: ../../schema/openapi.json
    :paths:
