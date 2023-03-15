@@ -95,6 +95,12 @@
             "$ref": "#/components/parameters/page"
           },
           {
+            "$ref": "#/components/parameters/per_page"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
             "$ref": "#/components/parameters/taxonomy_term_id"
           },
           {
@@ -134,49 +140,6 @@
                       "$ref": "#/components/schemas/Page"
                     }
                   ]
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/services.ndjson": {
-      "get": {
-        "description": "Retrieve new line delimited JSON feed that streams all the results.",
-        "summary": "Retrieve new line delimited JSON feed that streams all the results.",
-        "operationId": "getLineDelimitedJSONForServices",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/search"
-          },
-          {
-            "$ref": "#/components/parameters/taxonomy_term_id"
-          },
-          {
-            "$ref": "#/components/parameters/taxonomy_id"
-          },
-          {
-            "$ref": "#/components/parameters/organization_id"
-          },
-          {
-            "$ref": "#/components/parameters/modified_after"
-          },
-          {
-            "$ref": "#/components/parameters/minimal"
-          },
-          {
-            "description": "true, false return fully nested service.",
-            "$ref": "#/components/parameters/full"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Retrieve new line delimited JSON feed that streams all the results.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service.json"
                 }
               }
             }
@@ -225,6 +188,12 @@
           },
           {
             "$ref": "#/components/parameters/page"
+          },
+          {
+            "$ref": "#/components/parameters/per_page"
+          },
+          {
+            "$ref": "#/components/parameters/format"
           }
         ],
         "responses": {
@@ -294,6 +263,12 @@
           },
           {
             "$ref": "#/components/parameters/page"
+          },
+          {
+            "$ref": "#/components/parameters/per_page"
+          },
+          {
+            "$ref": "#/components/parameters/format"
           },
           {
             "$ref": "#/components/parameters/taxonomy_id"
@@ -396,6 +371,12 @@
           },
           {
             "$ref": "#/components/parameters/page"
+          },
+          {
+            "$ref": "#components/parameters/per_page"
+          },
+          {
+            "$ref": "#/components/parameters/format"
           }
         ],
         "responses": {
@@ -481,6 +462,12 @@
           },
           {
             "$ref": "#/components/parameters/page"
+          },
+          {
+            "$ref": "#/components/parameters/per_page"
+          },
+          {
+            "$ref": "#/components/parameters/format"
           }
         ],
         "responses": {
@@ -565,6 +552,15 @@
           "type": "integer"
         }
       },
+      "per_page": {
+        "name": "per_page",
+        "in": "query",
+        "required": false,
+        "description": "Number of results requested in a single page.",
+        "schema": {
+          "type": "integer"
+        }
+      },
       "minimal": {
         "name": "minimal",
         "in": "query",
@@ -627,6 +623,33 @@
         "description": "Fully nested organization with service array that contains full service information.",
         "schema": {
           "type": "boolean"
+        }
+      },
+      "postcode": {
+        "name": "postcode",
+        "in": "query",
+        "required": false,
+        "description": "The postcode or zip code of a point used to check service coverage. If `service_area` is available, only return results where the postcode exists within the `service_area`.  If `proximity` is provided, only show results within the proximity from the centroid of the postcode.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "proximity": {
+        "name": "proximity",
+        "in": "query",
+        "required": false,
+        "description": "Return services that exist within meters from the centroid of the provided postcode",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "format": {
+        "name": "format",
+        "in": "query",
+        "required": false,
+        "description": "Return results in the specified format. Default is `json`. Could be `ndjson` which should stream all the results without pagination.",
+        "schema": {
+          "type": "string"
         }
       }
     }
