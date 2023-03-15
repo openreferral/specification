@@ -625,7 +625,7 @@ Each `taxonomy_term` object has the following fields:
 
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/taxonomy_term
-:collapse: metadata, taxonomy_detail
+:collapse: metadata,taxonomy_detail
 
 ```
 
