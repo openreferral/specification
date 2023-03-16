@@ -9,7 +9,7 @@ jobs:
     - name: Setup python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.9
         architecture: x64
     - run: sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config
     - uses: actions/cache@v1
