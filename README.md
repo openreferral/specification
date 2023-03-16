@@ -6,9 +6,7 @@ The Open Referral Initiative develops data standards and open platforms that mak
 
 The Open Referral initiative defines two standards - the Human Services Data Specification and the Human Services Data API. 
 
-Human Services Data Specification defines a minimal set of data for publishing machine-readable directory information about health, human, and social services; their locations and accessibility details; and the organizations that provide them. Read the [spec here](https://docs.openreferral.org).
-
-The [Human Services Data API specification](https://github.com/openreferral/api-specification) builds upon HSDS. 
+Human Services Data Specification defines a minimal set of data for publishing machine-readable directory information about health, human, and social services; their locations and accessibility details; and the organizations that provide them. Read the [schema and API specifications here](https://docs.openreferral.org).
 
 A detailed FAQ about the project is [found here](http://docs.openreferral.org/en/latest/faq), and additional information about the Open Referral Initiative is available at [https://openreferral.org](https://openreferral.org)
 

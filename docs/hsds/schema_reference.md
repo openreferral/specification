@@ -480,6 +480,40 @@ Each `contact` object has the following fields:
 
 ::::
 
+### organization_identifier
+
+`organization_identifier` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/organization_identifier/description
+```
+
+Each `organization_identifier` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Schema
+
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/organization_identifier
+:collapse: attributes,metadata
+
+```
+
+:::
+
+:::{tab-item} Example
+
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /organization/organization_identifiers
+    :title: organization_identifier
+```
+
+:::
+
+::::
+
 
 ### attribute
 

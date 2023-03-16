@@ -17,6 +17,6 @@ Government entities, community organizations, and people often face difficulty o
 
 All organizations that provide services or referrals to services, as well as entities that distribute digital human service directory information, are invited to publish their data in this format, whether they be governments at the local, regional, or national level; civic organizations; software developers; etc.
 
-See [Reference Documentation for HSDS here](reference). Find [HSDS on Github here](https://github.com/openreferral/specification).
+See [Reference Documentation for HSDS here](schema_reference). Find [HSDS on Github here](https://github.com/openreferral/specification).
 
 Learn more about Open Referral at [openreferral.org](https://openreferral.org).
