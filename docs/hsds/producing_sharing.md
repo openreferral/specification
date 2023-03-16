@@ -5,7 +5,7 @@ Publication Guidance
 This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
 ```
 
-### Guidance on Mapping Fields and Values
+## Guidance on Mapping Fields and Values
 
 Source data may or may not map directly to the HSDS. Guidelines are listed below to reduce ambiguity.
 
@@ -16,10 +16,10 @@ Source data may or may not map directly to the HSDS. Guidelines are listed below
 * Mapping a field is at the data producer’s discretion, but it is acceptable for some entities to map to multiple entities, for example an organization, service, or location can have a contact.
 * The HSDS is a baseline of data elements; if the data producer has additional fields or entities that they wish to add, the specification can be extended to incorporate them. The data producer should provide documentation that explains how the specification has been extended.
 
-### Files & Attributes Summary
+## Files & Attributes Summary
 
-The files and their associated attributes are [listed on the reference page](reference.md).
+The files and their associated attributes are [listed on the schema reference page](schema_reference.md).
 
-### Sharing Your Changes
+## Sharing Your Changes
 
 If the additional information that you're providing is of use to a wider community, then it may be helpful to share details with others. See the [Extending HSDS](extending.md) for information on how to do that. 
