@@ -21,4 +21,4 @@ jobs:
     - name: Check that datapackage.json is well formed JSON
       run: python -c 'import json; json.load(open("datapackage.json"))'
     - name: Check that datapackage.json validates against the tabular data package json schema
-      run: jsonschema -i datapackage.json tabular-data-package.json
+      run: check-jsonschema datapackage.json --schemafile tabular-data-package.json
