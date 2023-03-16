@@ -8,8 +8,8 @@ Changelog
  * `accessibility_for_disabilities` table renamed to `accessibility`
  * `physical_address` and `postal_address` renamed to `address`
  * `service_attribute` and `other_attribute` renamed to `attribute`
- * All `id` fields no have format `uuid`
- * `eligibility` entity removed.
+ * All `id` fields now have format `uuid`
+ * `eligibility` entity removed
  * `payment_accepted` entity removed
 
 ### Other schema changes
