@@ -113,12 +113,12 @@ Changelog
 * Bug fixes to schema and documentation
 * Removed redundant documentation pages
 
-[v1.0](https://docs.google.com/document/d/1dkipRm_YL3K28oTSG-NFZRMHYiv10ZZJzJlakZglOyc/edit?usp=sharing)
+## [v1.0](https://docs.google.com/document/d/1dkipRm_YL3K28oTSG-NFZRMHYiv10ZZJzJlakZglOyc/edit?usp=sharing)
 
 * Final version
 * Changed relationship between location and service from 1:n to n:m
 
-[v0.9](https://docs.google.com/document/d/1jbgO92cPAUygQI-0_DtLXrdPQKbPNNIkxDr-3WvdFNE/edit?usp=sharing)
+## [v0.9](https://docs.google.com/document/d/1jbgO92cPAUygQI-0_DtLXrdPQKbPNNIkxDr-3WvdFNE/edit?usp=sharing)
 
 * Changes based on public comments in v0.8 include:
     - revising revising schedule entities and attributes  as recommended,
