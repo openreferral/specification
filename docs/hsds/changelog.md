@@ -3,6 +3,63 @@ Changelog
 
 [v3.0](https://github.com/openreferral/specification/milestone/7)
 
+### Backwards incompatable schema changes
+
+ * `accessibility_for_disabilities` table renamed to `accessibility`
+ * `physical_address` and `postal_address` renamed to `address`
+ * `service_attribute` and `other_attribute` renamed to `attribute`
+ * All `id` fields no have format `uuid`
+ * `eligibility` entity removed.
+ * `payment_accepted` entity removed
+
+### Other schema changes
+
+* For `service`
+    * added `alert`
+    * added `assured_date` and `assurer_email`
+    * added `eligibility_description`
+    * added `fees_description`
+    * added `last_modified`
+    * added `minimum_age` and `maximum_age`
+* For `organization`
+    * added `logo`
+    * added `parent_oranization_id`
+    * added `uri`
+    * added `website`
+* `organization_identifier` entity added
+* For `location`
+    * added `external_identifier` and `external_identifier_type` fields
+    * added `location_type` to express if `physical` or `virtual`
+    * added `url` for external source for location information
+* `taxonomy` entity added
+* `contact` can now have a `location`
+* `cost_option` entity added
+* For `schedule`
+    * added `attending_type`
+    * added `notes`
+    * added `schedule_link`
+* For `service_area`
+    * added `extent` and `extent_type`
+    * added `uri`
+* For `taxonomy_term`
+    * added `taxonomy_id` and `taxonomy_detail`
+    * added `name`
+    * added `code`
+    * added `term_uri`
+* `phone` can now have a language.
+* For `language`
+    * added `code` field for ISO language code
+    * added `name` and `note` fields
+* `description` added to `program`
+* `uri` added to `required_document`
+
+### Deprecated fields
+
+* `organization` fields `tax_id` and `tax_status`
+* `service` fields `licenses`, `fees` and `wait_time`
+
+### Other changes
+
 * Copy edit of all table and field descriptions;
 * Added JSON schemas;
 * Updated datapackage.JSON and example data to reflect schema changes;
