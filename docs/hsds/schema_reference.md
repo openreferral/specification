@@ -1,29 +1,23 @@
-```{eval-rst}
-.. _hsds-spec:
-```
-
 Schema Reference
-==============
+================
 
-The Human Services Data Specification defines a set of objects and the relationships between them.
+The Human Services Data Specification defines a set of objects and the relationships between them. The HSDS Schema provides the authoritative definition of these objects and their required and optional fields. It is used to validate the structure and format of HSDS data. 
 
-This page provides the canonical definition of each object and its required or optional fields. It is used to validate the structure and format of HSDS data. Schema files for each object in HSDS are also available as [JSON schema](https://json-schema.org/) from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/3.0-dev/schema).
+This page provides, for each object in HSDS:
 
-Example data is provided in the 'Example' tab for each object. In addition, you can download sample data in JSON format directly from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/3.0-dev/examples).
+- A reference table of required and optional field names, field descriptions and field formats
+- A JSON schema
+- Some example data.
 
-HSDS data can also be serialized as a [Tabular Data Package](http://specs.frictionlessdata.io/tabular-data-package/) consisting of CSV files for each of the objects required, and a [package descriptor (datapackage.json)](http://specs.frictionlessdata.io/tabular-data-package/#specification) file adapted from the current [HSDS specification](../../datapackage.json) to include any additional fields and metadata from the data publisher.
+For information on how to design API platforms to provide access to HSDS data, see the [API Reference](api_reference).
 
-## Names and descriptions
+For information on how to format HSDS data, including how to publish a tabular Data Package of HSDS data, see the [Publication Formats Reference](publication_formats_reference).
 
-Locations, Services and Organizations all have ```name``` and ```description``` field that can contain free text. 
+## Schema structure
 
-A ```name``` and ```alternate_name``` field should only ever include plain text, without formatting.
+HSDS data is not hierarchichal in the sense that it does not have a single top-level object. Rather, HSDS consists of a set of core objects or tables, with additional information held in separate objects or tables (see [Logical Model](logical_model) for more details). For this reason, there is no single HSDS schema, but rather a separate schema for each object. In addition to being provided below, schema files for each object in HSDS are available as [JSON schema](https://json-schema.org/) from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/3.0-dev/schema).
 
-A ```description``` field may include HTML elements or [Markdown](https://en.wikipedia.org/wiki/Markdown), with special characters escaped or encoded. 
-
-Consuming applications that expect plain-text only should strip HTML tags  from these fields. 
-
-Publishers should also be aware that some applications may wish to extract a 'short description' from the ```description``` field, and may do so by looking for the first full sentence, or first line-break. 
+Compiled schemas and example data, containing all HSDS objects, may be useful to publishers for a number of reasons. A number of compiled schema and example files are available from the [schema](https://github.com/openreferral/specification/tree/3.0-dev/schema) and [examples](https://github.com/openreferral/specification/tree/3.0-dev/amples) directories on the HSDS Github repository.
 
 ## Objects and fields
 
@@ -39,12 +33,18 @@ Each `service` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :collapse: phones,schedules,service_areas,service_at_locations,languages,organization,funding,cost_options,program,required_documents,contacts,attributes,metadata
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/service.json
+    :jsonpointer:
+    :title: service
+```
 :::
 
 :::{tab-item} Example
@@ -54,7 +54,6 @@ Each `service` object has the following fields:
     :jsonpointer:
     :title: service
 ```
-
 :::
 
 ::::
@@ -73,14 +72,21 @@ Each `phone` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
+:::{tab-item} Fields
 
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/phone
 :collapse: languages,attributes,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/phone.json
+    :jsonpointer:
+    :title: phone:
+```
 :::
 
 :::{tab-item} Example
@@ -90,7 +96,6 @@ Each `phone` object has the following fields:
     :jsonpointer: /phones
     :title: phone
 ```
-
 :::
 
 ::::
@@ -108,24 +113,28 @@ Each `schedule` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/schedule
 :collapse: attributes,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/schedule.json
+    :jsonpointer:
+    :title: schedule
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /schedules
     :title: schedule
 ```
-
 :::
 
 ::::
@@ -143,24 +152,28 @@ Each `service_area` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/service_area
 :collapse: attributes,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/service_area.json
+    :jsonpointer:
+    :title: service_area
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /service_areas
     :title: service_area
 ```
-
 :::
 
 ::::
@@ -179,14 +192,20 @@ Each `service_at_location` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/service_at_location
 :collapse: contacts,phones,schedules,location,attributes,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/service_at_location.json
+    :jsonpointer:
+    :title: service_at_location
+```
 :::
 
 :::{tab-item} Example
@@ -213,24 +232,28 @@ Each `location` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/location
 :collapse: languages,addresses,contacts,accessibility,phones,schedules,attributes,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/location.json
+    :jsonpointer:
+    :title: location
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/organization_full.json
     :jsonpointer: /locations
     :title: location
 ```
-
 :::
 
 ::::
@@ -248,24 +271,28 @@ Each `language` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/language
 :collapse: attributes,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/language.json
+    :jsonpointer:
+    :title: language
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /languages
     :title: language
 ```
-
 :::
 
 ::::
@@ -283,24 +310,27 @@ Each `organization` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/organization
 :collapse: funding,contacts,phones,locations,programs,organization_identifiers,attributes,metadata
-
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/organization.json
+    :jsonpointer:
+    :title: organization
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /organization
     :title: organization
 ```
-
 :::
 
 ::::
@@ -318,24 +348,27 @@ Each `funding` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/funding
 :collapse: attributes,metadata
-
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/funding.json
+    :jsonpointer:
+    :title: funding
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /funding
     :title: funding
 ```
-
 :::
 
 ::::
@@ -353,24 +386,27 @@ Each `cost_option` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/cost_option
 :collapse: attributes,metadata
-
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/cost_option.json
+    :jsonpointer:
+    :title: cost_option
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /cost_options
     :title: cost_option
 ```
-
 :::
 
 ::::
@@ -388,24 +424,28 @@ Each `program` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/program
 :collapse: attributes,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/program.json
+    :jsonpointer:
+    :title: program
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /program
     :title: program
 ```
-
 :::
 
 ::::
@@ -423,24 +463,27 @@ Each `required_document` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/required_document
 :collapse: attributes,metadata
-
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/required_document.json
+    :jsonpointer:
+    :title: required_document
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /required_documents
     :title: required_document
 ```
-
 :::
 
 ::::
@@ -458,24 +501,28 @@ Each `contact` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/contact
 :collapse: phones,attributes,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/contact.json
+    :jsonpointer:
+    :title: contact
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /contacts
     :title: contact
 ```
-
 :::
 
 ::::
@@ -492,24 +539,27 @@ Each `organization_identifier` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/organization_identifier
 :collapse: attributes,metadata
-
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/organization_identifier.json
+    :jsonpointer:
+    :title: organization_identifier
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /organization/organization_identifiers
     :title: organization_identifier
 ```
-
 :::
 
 ::::
@@ -527,18 +577,23 @@ Each `attribute` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/attribute
 :collapse: taxonomy_term,metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/attribute.json
+    :jsonpointer:
+    :title: attribute
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /attributes
@@ -562,23 +617,27 @@ Each `metadata` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/metadata.json
+    :jsonpointer:
+    :title: metadata
+```
 :::
 
 :::{tab-item} Example
-
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
     :jsonpointer: /metadata
     :title: metadata
 ```
-
 :::
 
 ::::
@@ -595,20 +654,23 @@ Each `meta_table_description` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/meta_table_description
 :collapse: attributes,metadata
-
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/meta_table_description.json
+    :jsonpointer:
+    :title: meta_table_description
+```
 :::
 
 :::{tab-item} Example
-
 In development
-
 :::
 
 ::::
@@ -625,20 +687,24 @@ Each `taxonomy` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/taxonomy
 :collapse: metadata
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/taxonomy.json
+    :jsonpointer:
+    :title: taxonomy
+```
 :::
 
 :::{tab-item} Example
-
 In development
-
 :::
 
 ::::
@@ -655,20 +721,24 @@ Each `taxonomy_term` object has the following fields:
 
 ::::{tab-set}
 
-:::{tab-item} Schema
-
+:::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/taxonomy_term
 :collapse: metadata,taxonomy_detail
 
 ```
+:::
 
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/taxonomy_term.json
+    :jsonpointer:
+    :title: taxonomy_term
+```
 :::
 
 :::{tab-item} Example
-
 In development
-
 :::
 
 ::::
