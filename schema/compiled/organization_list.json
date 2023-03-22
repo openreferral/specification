@@ -1,0 +1,161 @@
+{
+  "name": "organization",
+  "path": "organizations.csv",
+  "description": "The details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
+  "datapackage_metadata": {
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 1
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "name": "id",
+      "type": "string",
+      "title": "Identifier",
+      "description": "The identifier for the organization. Each organization must have a unique identifier.",
+      "format": "uuid",
+      "constraints": {
+        "unique": true
+      },
+      "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610",
+      "core": "Y"
+    },
+    "name": {
+      "name": "name",
+      "type": "string",
+      "title": "Name",
+      "description": "The official or public name of the organization.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Example Organization Inc.",
+      "core": "Y"
+    },
+    "alternate_name": {
+      "name": "alternate_name",
+      "type": "string",
+      "title": "Alternate Name",
+      "description": "An (optional) alternative or commonly used name for the organization.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Example Org",
+      "core": "Y"
+    },
+    "description": {
+      "name": "description",
+      "type": "string",
+      "title": "Description",
+      "description": "A free text description containing a brief summary about the organization. It can contain markup such as HTML or Markdown.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Example Org is a non-profit organization dedicated to providing services to qualified beneficiaries",
+      "core": "Y"
+    },
+    "email": {
+      "name": "email",
+      "type": "string",
+      "title": "Email",
+      "description": "The contact e-mail address for the organization.",
+      "format": "email",
+      "constraints": {
+        "unique": false
+      },
+      "example": "email@example.com",
+      "core": "Y"
+    },
+    "website": {
+      "name": "website",
+      "type": "string",
+      "title": "Website",
+      "description": "The URL (website address) of the organization.",
+      "format": "uri",
+      "constraints": {
+        "unique": false
+      },
+      "example": "http://example.com",
+      "core": "Y"
+    },
+    "tax_status": {
+      "name": "tax_status",
+      "type": "string",
+      "title": "Tax Status",
+      "description": "DEPRECATED: Government assigned tax designation for tax-exempt organizations.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "tax_status"
+    },
+    "tax_id": {
+      "name": "tax_id",
+      "type": "string",
+      "title": "Tax Identifier",
+      "description": "DEPRECATED: A government issued identifier used for the purpose of tax administration.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "tax_id"
+    },
+    "year_incorporated": {
+      "name": "year_incorporated",
+      "type": "number",
+      "title": "Year Incorporated",
+      "description": "The year in which the organization was legally formed.",
+      "format": "%Y",
+      "constraints": {
+        "unique": false
+      },
+      "example": "2011"
+    },
+    "legal_status": {
+      "name": "legal_status",
+      "type": "string",
+      "title": "Legal Status",
+      "description": "The legal conditions that an organization is operating under.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Limited Company"
+    },
+    "logo": {
+      "name": "logo",
+      "type": "string",
+      "title": "Logo",
+      "description": "A URL to an image associated with the organization which can be presented alongside its name.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "https://openreferral.org/wp-content/uploads/2018/02/OpenReferral_Logo_Green-4-1.png"
+    },
+    "uri": {
+      "name": "uri",
+      "type": "string",
+      "title": "URI",
+      "description": "A persistent identifier to uniquely identify the organization such as those provided by Open Corporates or some other relevant URI provider. This is not for listing the website of the organization: that can be done through the website field of the Organization.",
+      "format": "uri",
+      "constraints": {
+        "unique": false
+      },
+      "example": "http://example.com"
+    },
+    "parent_organization_id": {
+      "name": "parent_organization_id",
+      "type": "string",
+      "title": "Parent Organization Identifier",
+      "description": "The identifier of the organization's parent organization.",
+      "format": "uuid",
+      "constraints": {
+        "unique": false
+      },
+      "example": "cd09a387-91f4-4555-94ec-e799c35344cd"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description"
+  ]
+}
