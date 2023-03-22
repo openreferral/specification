@@ -74,7 +74,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/examples/service_full.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_list.json"
                 }
               }
             }
@@ -389,7 +389,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization_list.json"
                       }
                     }
                   },
@@ -480,7 +480,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_at_location.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_at_location_list.json"
                       }
                     }
                   },
