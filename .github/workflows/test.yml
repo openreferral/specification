@@ -17,8 +17,8 @@ jobs:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
     - run: pip install -r requirements.txt
+    - name: Check the json schemas validate against the metaschema
+      run: check-jsonschema schema/*.json --check-metaschema
     - run: wget 'https://specs.frictionlessdata.io/schemas/tabular-data-package.json'
-    - name: Check that datapackage.json is well formed JSON
-      run: python -c 'import json; json.load(open("datapackage.json"))'
     - name: Check that datapackage.json validates against the tabular data package json schema
       run: check-jsonschema datapackage.json --schemafile tabular-data-package.json
