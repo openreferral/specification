@@ -104,7 +104,6 @@
       "type": "number",
       "title": "Year Incorporated",
       "description": "The year in which the organization was legally formed.",
-      "format": "%Y",
       "constraints": {
         "unique": false
       },

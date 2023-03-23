@@ -123,7 +123,6 @@
                         "type": "number",
                         "title": "Year Incorporated",
                         "description": "The year in which the organization was legally formed.",
-                        "format": "%Y",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -532,8 +531,7 @@
                     },
                     {
                         "name": "last_modified",
-                        "type": "string",
-                        "format": "datetime",
+                        "type": "datetime",
                         "title": "Last Modified",
                         "description": "The datetime when the service, or any related information about the service, has changed. Should have millisecond accuracy.",
                         "constraints": {
@@ -1038,23 +1036,9 @@
                 ],
                 "foreignKeys": [
                     {
-                        "fields": "service_id",
-                        "reference": {
-                            "resource": "service",
-                            "fields": "id"
-                        }
-                    },
-                    {
                         "fields": "contact_id",
                         "reference": {
                             "resource": "contact",
-                            "fields": "id"
-                        }
-                    },
-                    {
-                        "fields": "service_at_location_id",
-                        "reference": {
-                            "resource": "service_at_location",
                             "fields": "id"
                         }
                     },
@@ -1069,6 +1053,20 @@
                         "fields": "organization_id",
                         "reference": {
                             "resource": "organization",
+                            "fields": "id"
+                        }
+                    },
+                    {
+                        "fields": "service_id",
+                        "reference": {
+                            "resource": "service",
+                            "fields": "id"
+                        }
+                    },
+                    {
+                        "fields": "service_at_location_id",
+                        "reference": {
+                            "resource": "service_at_location",
                             "fields": "id"
                         }
                     }
@@ -1197,20 +1195,6 @@
                 ],
                 "foreignKeys": [
                     {
-                        "fields": "service_id",
-                        "reference": {
-                            "resource": "service",
-                            "fields": "id"
-                        }
-                    },
-                    {
-                        "fields": "service_at_location_id",
-                        "reference": {
-                            "resource": "service_at_location",
-                            "fields": "id"
-                        }
-                    },
-                    {
                         "fields": "location_id",
                         "reference": {
                             "resource": "location",
@@ -1221,6 +1205,20 @@
                         "fields": "organization_id",
                         "reference": {
                             "resource": "organization",
+                            "fields": "id"
+                        }
+                    },
+                    {
+                        "fields": "service_id",
+                        "reference": {
+                            "resource": "service",
+                            "fields": "id"
+                        }
+                    },
+                    {
+                        "fields": "service_at_location_id",
+                        "reference": {
+                            "resource": "service_at_location",
                             "fields": "id"
                         }
                     }
@@ -1684,6 +1682,13 @@
                 ],
                 "foreignKeys": [
                     {
+                        "fields": "location_id",
+                        "reference": {
+                            "resource": "location",
+                            "fields": "id"
+                        }
+                    },
+                    {
                         "fields": "service_id",
                         "reference": {
                             "resource": "service",
@@ -1694,13 +1699,6 @@
                         "fields": "service_at_location_id",
                         "reference": {
                             "resource": "service_at_location",
-                            "fields": "id"
-                        }
-                    },
-                    {
-                        "fields": "location_id",
-                        "reference": {
-                            "resource": "location",
                             "fields": "id"
                         }
                     }
@@ -1767,16 +1765,16 @@
                 ],
                 "foreignKeys": [
                     {
-                        "fields": "service_id",
+                        "fields": "organization_id",
                         "reference": {
-                            "resource": "service",
+                            "resource": "organization",
                             "fields": "id"
                         }
                     },
                     {
-                        "fields": "organization_id",
+                        "fields": "service_id",
                         "reference": {
-                            "resource": "organization",
+                            "resource": "service",
                             "fields": "id"
                         }
                     }
@@ -2054,6 +2052,13 @@
                 ],
                 "foreignKeys": [
                     {
+                        "fields": "location_id",
+                        "reference": {
+                            "resource": "location",
+                            "fields": "id"
+                        }
+                    },
+                    {
                         "fields": "phone_id",
                         "reference": {
                             "resource": "phone",
@@ -2064,13 +2069,6 @@
                         "fields": "service_id",
                         "reference": {
                             "resource": "service",
-                            "fields": "id"
-                        }
-                    },
-                    {
-                        "fields": "location_id",
-                        "reference": {
-                            "resource": "location",
                             "fields": "id"
                         }
                     }

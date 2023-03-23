@@ -17,3 +17,4 @@ sphinxcontrib-opendataservices
 sphinxcontrib_openapi==0.8.1
 sphinx-design
 git+https://github.com/openreferral/hsds_schema_tools
+check-jsonschema
