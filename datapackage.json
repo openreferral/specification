@@ -123,7 +123,6 @@
                         "type": "number",
                         "title": "Year Incorporated",
                         "description": "The year in which the organization was legally formed.",
-                        "format": "%Y",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -532,8 +531,7 @@
                     },
                     {
                         "name": "last_modified",
-                        "type": "string",
-                        "format": "datetime",
+                        "type": "datetime",
                         "title": "Last Modified",
                         "description": "The datetime when the service, or any related information about the service, has changed. Should have millisecond accuracy.",
                         "constraints": {
