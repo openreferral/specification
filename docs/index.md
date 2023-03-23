@@ -42,6 +42,7 @@ Contents:
    hsds/about
    hsds/schema_reference
    hsds/api_reference
+   hsds/publication_formats_reference
    hsds/logical_model
    hsds/variations_interoperability
    hsds/uk_compliance
@@ -52,6 +53,7 @@ Contents:
    :caption: HSDS Implementation Guidance
 
    hsds/use_cases
+   hsds/names_and_descriptions
    hsds/schedules
    hsds/classifications
    hsds/identifiers
