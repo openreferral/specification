@@ -15,4 +15,4 @@ HSDS data should be published in JSON format. JSON is the de facto standard for 
 
 HSDS data may also be serialized as a [Tabular Data Package](http://specs.frictionlessdata.io/tabular-data-package/) consisting of CSV files for each of the objects required. These CSV files are accompanied by  a [package descriptor (datapackage.json)](http://specs.frictionlessdata.io/tabular-data-package/#specification) to include any additional fields and metadata from the data publisher. To produce a package descriptor in HSDS format you can use the  [HSDS datapackage specification](../../datapackage.json) which is compiled from the canonical JSON schema files. 
 
-For versions of HSDS < 0.3, the tabular data package was the primary publication format for HSDS data.
+For versions of HSDS < 3.0, the tabular data package was the primary publication format for HSDS data.
