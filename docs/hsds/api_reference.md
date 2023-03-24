@@ -3,6 +3,11 @@ API Reference
 
 The API reference provides an [OpenAPI](https://www.openapis.org/) specification that can be used as a blueprint for the design or adaptation of API platforms to provide read or read/write access to information on organizations, services, locations and the details about them. The API protocol  provides most of the functionality needed for simple access and exchange of data.
 
+ 
+```{eval-rst}
+Along with this reference, there is `a swagger ui version of the API <../openapi.html>`_
+```
+
 The source of the specification is found on [GitHub](https://github.com/openreferral/specification/tree/3.0-dev/schema/openapi.json) and [issues can be raised in the issue tracker](https://github.com/openreferral/specification/issues).
 
 ## Lists
