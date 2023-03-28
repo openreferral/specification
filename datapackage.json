@@ -1630,7 +1630,7 @@
                             "required": false,
                             "unique": false
                         },
-                        "example": "10:00",
+                        "example": "10:00:00",
                         "core": "Y"
                     },
                     {
@@ -1642,7 +1642,7 @@
                             "required": false,
                             "unique": false
                         },
-                        "example": "18:00",
+                        "example": "18:00:00",
                         "core": "Y"
                     },
                     {
