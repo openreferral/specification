@@ -1,4 +1,4 @@
-name: Test Examples
+name: Test Examples (datapackage)
 on: [push, pull_request]
 
 jobs:
