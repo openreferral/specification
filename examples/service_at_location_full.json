@@ -61,8 +61,8 @@
       "bymonthday": "2,3,4",
       "byyearday": "2,3,4",
       "description": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
-      "opens_at": "10:00",
-      "closes_at": "18:00",
+      "opens_at": "10:00:00",
+      "closes_at": "18:00:00",
       "schedule_link": "http://example.com",
       "attending_type": "You can attend this service in-person or remotely via video conferencing",
       "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
@@ -170,8 +170,8 @@
         "bymonthday": "2,3,4",
         "byyearday": "2,3,4",
         "description": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
-        "opens_at": "10:00",
-        "closes_at": "18:00",
+        "opens_at": "10:00:00",
+        "closes_at": "18:00:00",
         "schedule_link": "http://example.com",
         "attending_type": "You can attend this service in-person or remotely via video conferencing",
         "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
@@ -234,8 +234,8 @@
         "bymonthday": "2,3,4",
         "byyearday": "2,3,4",
         "description": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
-        "opens_at": "10:00",
-        "closes_at": "18:00",
+        "opens_at": "10:00:00",
+        "closes_at": "18:00:00",
         "schedule_link": "http://example.com",
         "attending_type": "You can attend this service in-person or remotely via video conferencing",
         "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
@@ -424,8 +424,8 @@
               "bymonthday": "2,3,4",
               "byyearday": "2,3,4",
               "description": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
-              "opens_at": "10:00",
-              "closes_at": "18:00",
+              "opens_at": "10:00:00",
+              "closes_at": "18:00:00",
               "schedule_link": "http://example.com",
               "attending_type": "You can attend this service in-person or remotely via video conferencing",
               "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"

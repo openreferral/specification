@@ -2317,7 +2317,7 @@
               "constraints": {
                 "unique": false
               },
-              "example": "10:00",
+              "example": "10:00:00",
               "core": "Y",
               "datapackage_type": "time"
             },
@@ -2329,7 +2329,7 @@
               "constraints": {
                 "unique": false
               },
-              "example": "18:00",
+              "example": "18:00:00",
               "core": "Y",
               "datapackage_type": "time"
             },
@@ -8895,7 +8895,7 @@
                     "constraints": {
                       "unique": false
                     },
-                    "example": "10:00",
+                    "example": "10:00:00",
                     "core": "Y",
                     "datapackage_type": "time"
                   },
@@ -8907,7 +8907,7 @@
                     "constraints": {
                       "unique": false
                     },
-                    "example": "18:00",
+                    "example": "18:00:00",
                     "core": "Y",
                     "datapackage_type": "time"
                   },
@@ -17375,7 +17375,7 @@
                         "constraints": {
                           "unique": false
                         },
-                        "example": "10:00",
+                        "example": "10:00:00",
                         "core": "Y",
                         "datapackage_type": "time"
                       },
@@ -17387,7 +17387,7 @@
                         "constraints": {
                           "unique": false
                         },
-                        "example": "18:00",
+                        "example": "18:00:00",
                         "core": "Y",
                         "datapackage_type": "time"
                       },
@@ -33904,7 +33904,7 @@
                         "constraints": {
                           "unique": false
                         },
-                        "example": "10:00",
+                        "example": "10:00:00",
                         "core": "Y",
                         "datapackage_type": "time"
                       },
@@ -33916,7 +33916,7 @@
                         "constraints": {
                           "unique": false
                         },
-                        "example": "18:00",
+                        "example": "18:00:00",
                         "core": "Y",
                         "datapackage_type": "time"
                       },
