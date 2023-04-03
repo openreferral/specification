@@ -472,7 +472,7 @@
           {
             "$ref": "#/components/parameters/postcode"
           },
-	  {
+          {
             "$ref": "#/components/parameters/proximity"
           }
         ],
