@@ -461,6 +461,12 @@
           },
           {
             "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/postcode"
+          },
+          {
+            "$ref": "#/components/parameters/proximity"
           }
         ],
         "responses": {
