@@ -1,6 +1,5 @@
 .ve
 /docs/extras/_images/entity_relationship_diagram.svg
 /docs/extras/_images/entity_relationship_diagram_core_tables.svg
-/examples/*/datapackage.json
 /tmp_datapackage_for_database_schemas/*.json
 /tmp_datapackage_for_database_schemas/*.csv

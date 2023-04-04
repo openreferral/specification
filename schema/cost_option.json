@@ -30,7 +30,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "a67ed14f-696d-45f1-8eaf-46b7f972425e"
+            "example": "ac148810-d857-441c-9679-408f346de14b"
         },
         "valid_from": {
             "name": "valid_from",

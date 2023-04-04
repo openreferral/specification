@@ -31,7 +31,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "ae8b7eaf-7e7d-4128-a403-ae097f146356",
+            "example": "ac148810-d857-441c-9679-408f346de14b",
             "core": "Y"
         },
         "location_id": {
@@ -43,7 +43,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "dd9e501b-4df9-4e71-85ac-29748e7e2d5a"
+            "example": "3a19ff88-4620-4d17-9830-ac1d859eb5d5"
         },
         "service_at_location_id": {
             "name": "service_at_location_id",
@@ -54,7 +54,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "0a41a90a-b5a5-4541-87e2-5cc2fd72536b",
+            "example": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
             "core": "Y"
         },
         "valid_from": {

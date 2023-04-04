@@ -31,7 +31,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "0fdfb57f-c147-4cfb-864c-44788a335d8c",
+            "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610",
             "core": "Y"
         },
         "program_id": {
@@ -43,7 +43,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "24682fa0-3eda-4afc-a026-84a21c7a882e"
+            "example": "e7ec2e57-4540-43fa-b2c7-6be5a0ef7f42"
         },
         "name": {
             "name": "name",

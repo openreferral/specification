@@ -17,10 +17,5 @@ jobs:
         key: ${{ runner.os }}-pip-test_examples
     - name: Install Python libs
       run: pip install --upgrade frictionless
-    - name: Make datapackages for each example
-      run: python examples/make_datapackages.py
-    - name: Validate simple example
-      run: frictionless validate examples/simple/datapackage.json
-    - name: Validate all_resources example
-      run: frictionless validate examples/all_resources/datapackage.json
-      if: success() || failure()
+    - name: Validate example
+      run: frictionless validate examples/csv/datapackage.json
