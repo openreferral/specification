@@ -35,7 +35,7 @@ mysql -h 127.0.0.1 -P 3306 -u root -p$MYSQL_ROOT_PASSWORD -e "CREATE DATABASE te
 echo "CREATE THE SCHEMA"
 code="from frictionless import Package
 package = Package('tmp_datapackage_for_database_schemas/datapackage.json')
-package.to_sql('mysql://root:$MYSQL_ROOT_PASSWORD@127.0.0.1:3306/test')"
+package.publish('mysql://root:$MYSQL_ROOT_PASSWORD@127.0.0.1:3306/test')"
 echo -e "$code" | python
 
 # Dump

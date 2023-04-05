@@ -1,0 +1,20 @@
+name: Test Examples (JSON Schema)
+on: [push, pull_request]
+
+jobs:
+  test_examples:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+        architecture: x64
+    - run: sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config
+    - uses: actions/cache@v1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+    - run: pip install -r requirements.txt
+    - run: ./validate_examples_json_schema.sh

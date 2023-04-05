@@ -36,7 +36,7 @@ PGPASSWORD=$POSTGRESQL_PASSWORD psql -h 127.0.0.1 -p 5432 -U postgres -w -c "CRE
 echo "CREATE THE SCHEMA"
 code="from frictionless import Package
 package = Package('tmp_datapackage_for_database_schemas/datapackage.json')
-package.to_sql('postgresql://postgres:$POSTGRESQL_PASSWORD@127.0.0.1:5432/test')"
+package.publish('postgresql://postgres:$POSTGRESQL_PASSWORD@127.0.0.1:5432/test')"
 echo -e "$code" | python
 
 # Dump

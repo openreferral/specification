@@ -1,0 +1,2 @@
+id,service_id,valid_from,valid_to,option,currency,amount,amount_description
+1fdf4d39-3d80-484d-9f92-a8ffa08621e7,ac148810-d857-441c-9679-408f346de14b,2020-01-01,2022-12-31,Under 18s and Over 60s,gbp,35,per 1 hour session

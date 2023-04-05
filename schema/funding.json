@@ -30,7 +30,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "545c684b-4a24-4923-b7c9-6e10fcf8a5a3"
+            "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610"
         },
         "service_id": {
             "name": "service_id",
@@ -41,7 +41,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "d20cedb8-b597-41cb-86b0-7034fb50c7a9"
+            "example": "ac148810-d857-441c-9679-408f346de14b"
         },
         "source": {
             "name": "source",

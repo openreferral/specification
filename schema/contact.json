@@ -42,7 +42,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "46f31178-dbb7-45e4-be37-c69320e08c36",
+            "example": "ac148810-d857-441c-9679-408f346de14b",
             "core": "Y"
         },
         "service_at_location_id": {
@@ -65,7 +65,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "2226a1e5-7ff1-4c46-a5fb-955304b05917"
+            "example": "3a19ff88-4620-4d17-9830-ac1d859eb5d5"
         },
         "name": {
             "name": "name",

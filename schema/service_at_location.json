@@ -31,7 +31,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "ab231982-2106-4a55-80fc-b305560c5556",
+            "example": "ac148810-d857-441c-9679-408f346de14b",
             "core": "Y"
         },
         "location_id": {
@@ -43,7 +43,7 @@
             "constraints": {
                 "unique": false
             },
-            "example": "2528e812-ccbb-43a7-b761-a90f27ea9ac4",
+            "example": "3a19ff88-4620-4d17-9830-ac1d859eb5d5",
             "core": "Y"
         },
         "description": {
