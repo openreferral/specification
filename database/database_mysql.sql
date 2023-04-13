@@ -170,11 +170,11 @@ CREATE TABLE `language` (
   `note` text COMMENT 'A free text description of any additional context or services provided for this language.',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
-  KEY `location_id` (`location_id`),
   KEY `phone_id` (`phone_id`),
+  KEY `location_id` (`location_id`),
   KEY `service_id` (`service_id`),
-  CONSTRAINT `language_ibfk_1` FOREIGN KEY (`location_id`) REFERENCES `location` (`id`),
-  CONSTRAINT `language_ibfk_2` FOREIGN KEY (`phone_id`) REFERENCES `phone` (`id`),
+  CONSTRAINT `language_ibfk_1` FOREIGN KEY (`phone_id`) REFERENCES `phone` (`id`),
+  CONSTRAINT `language_ibfk_2` FOREIGN KEY (`location_id`) REFERENCES `location` (`id`),
   CONSTRAINT `language_ibfk_3` FOREIGN KEY (`service_id`) REFERENCES `service` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -438,10 +438,10 @@ CREATE TABLE `service` (
   `last_modified` datetime DEFAULT NULL COMMENT 'The datetime when the service, or any related information about the service, has changed. Should have millisecond accuracy.',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
-  KEY `organization_id` (`organization_id`),
   KEY `program_id` (`program_id`),
-  CONSTRAINT `service_ibfk_1` FOREIGN KEY (`organization_id`) REFERENCES `organization` (`id`),
-  CONSTRAINT `service_ibfk_2` FOREIGN KEY (`program_id`) REFERENCES `program` (`id`)
+  KEY `organization_id` (`organization_id`),
+  CONSTRAINT `service_ibfk_1` FOREIGN KEY (`program_id`) REFERENCES `program` (`id`),
+  CONSTRAINT `service_ibfk_2` FOREIGN KEY (`organization_id`) REFERENCES `organization` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
