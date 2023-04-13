@@ -71,6 +71,7 @@ The following tables do not have a foreign key for any of the core tables:
 .. raw:: html
     :file: ../extras/_images/entity_relationship_diagram_core_tables.svg
     
+:download:`[download] <../extras/_images/entity_relationship_diagram_core_tables.svg>`
 ```
 
 ## Entity Relationship Diagram (Full version)
@@ -94,4 +95,6 @@ Other tables are shown in blue.
 .. raw:: html
     :file: ../extras/_images/entity_relationship_diagram.svg
     
+:download:`[download] <../extras/_images/entity_relationship_diagram.svg>`
+
 ```
