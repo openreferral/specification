@@ -1,2 +1,2 @@
-id,code,name,description,parent_id,taxonomy,language,taxonomy_id,term_uri
+id,code,name,description,parent_id,taxonomy,language,taxonomy_id,term_uri,taxonomy_detail,metadata
 3f7b145d-84af-42d7-8fae-eaca714b02b2,code,name,description,0bc248fa-dc27-4650-9ba4-8f1a24ef16a2,taxonomy,eng,07ff6aee-a219-438c-b694-d2fcb6c5373b,http://example.com
