@@ -65,7 +65,7 @@ This section contains details of each API endpoint. Each section presents an end
 This API response will return a JSON object containing the following key/value pairs:
 
 * `version` (String) &ndash; HSDS version of this API.
-* `profile` (URI) &ndash; The identifier for the HSDS profile used by this API. This should be URL which resolves to a location where the information on the HSDS profile of this API may be found.
+* `profile` (URI) &ndash; The identifier for the HSDS profile used by this API. This should be a URL which resolves to a location where the information on the HSDS profile of this API may be found.
 * `openapi_url` (URI) &ndash; URL of the openapi JSON file which defines this API.
 
 ### The `/services/{id}` endpoint
