@@ -1,0 +1,12 @@
+name: Test Examples (OpenAPI)
+on: [push, pull_request]
+
+jobs:
+  test_examples:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+    - run: npm install -g openapi-examples-validator
+    - run: openapi-examples-validator -m openapi-examples-map.json schema/openapi.json

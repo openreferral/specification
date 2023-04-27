@@ -15,14 +15,8 @@ function validate {
 # example=base schema= validate
 example=location schema=location validate
 example=organization_full schema=compiled/organization validate
-#example=organization_list schema=compiled/organization_list validate
 example=service_at_location_full schema=compiled/service_at_location validate
-# service_at_location_list
 example=service_full schema=compiled/service validate
-# service_list
 # tabular
 example=taxonomy schema=taxonomy validate
-# taxonomy_list
 example=taxonomy_term schema=taxonomy_term validate
-# taxonomy_term_list
-
