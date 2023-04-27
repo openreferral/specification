@@ -2,7 +2,7 @@ name: Has hsds_schema.py been run
 on: [push, pull_request]
 
 jobs:
-  build:
+  has_hsds_schema_py_been_run:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

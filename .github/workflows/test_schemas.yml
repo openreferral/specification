@@ -1,8 +1,8 @@
-name: Test
+name: Test Schemas (against meta schemas)
 on: [push, pull_request]
 
 jobs:
-  build:
+  test_schemas:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

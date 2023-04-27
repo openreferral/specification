@@ -1,0 +1,7 @@
+{
+    "$.paths./organizations.get.responses.200.content.application/json.schema": "examples/organization_list.json",
+    "$.paths./service_at_locations.get.responses.200.content.application/json.schema": "examples/service_at_location_list.json",
+    "$.paths./services.get.responses.200.content.application/json.schema": "examples/service_list.json",
+    "$.paths./taxonomies.get.responses.200.content.application/json.schema": "examples/taxonomy_list.json",
+    "$.paths./taxonomy_terms.get.responses.200.content.application/json.schema": "examples/taxonomy_term_list.json"
+}

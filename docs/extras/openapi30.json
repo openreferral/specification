@@ -366,7 +366,7 @@
             "$ref": "#/components/parameters/page"
           },
           {
-            "$ref": "#components/parameters/per_page"
+            "$ref": "#/components/parameters/per_page"
           },
           {
             "$ref": "#/components/parameters/format"

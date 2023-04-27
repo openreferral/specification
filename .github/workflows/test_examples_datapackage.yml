@@ -2,7 +2,7 @@ name: Test Examples (datapackage)
 on: [push, pull_request]
 
 jobs:
-  test_examples:
+  test_examples_datapackage:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
