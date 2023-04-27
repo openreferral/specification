@@ -5,55 +5,55 @@ on:
       - 'master'
 
 jobs:
-  mysql:
-    runs-on: ubuntu-20.04
-    services:
-      mysql:
-        # 8 is chosen because that matches the version of the client utils we will install
-        image: mysql:8.0
-        env:
-          MYSQL_ROOT_PASSWORD: 1234
-        ports:
-          - 3306:3306/tcp
-        options: >-
-          --health-cmd "/usr/bin/mysql -h 127.0.0.1 --user=root --password=1234 --execute \"SHOW DATABASES;\""
-          --health-interval 5s
-          --health-timeout 5s
-          --health-retries 20
-    steps:
-    - uses: actions/checkout@v2
-    - name: Setup python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
-        architecture: x64
-    # We also need mysql-client-8.0 BUT it is installed my default
-    #    and if we explicitly ask for it to be safe we sometimes get package errors
-    - name: Install Ubuntu libs
-      run: sudo apt-get install -y graphviz graphviz-dev
-    - name: Install Python libs
-      run: pip install -r requirements.txt
-    - name: Install Python Libs for DB work
-      run: pip install -r requirements_build_database.in
-    - run: MYSQL_ROOT_PASSWORD=1234 ./build_database_mysql.sh
-    - run: cat database/database_mysql.sql
-    - name: Check for changes
-      run: |
-        if git diff --exit-code; then
-          echo "CHANGED=false" >>${GITHUB_ENV}
-        else
-          echo "CHANGED=true" >>${GITHUB_ENV}
-        fi
-    - name: Commit database back (if changes)
-      if: env.CHANGED == 'true'
-      run: |
-         git config --global user.name 'Database Schema Generator'
-         git config --global user.email 'hello@openreferral.org'
-         git add database/database_mysql.sql
-         git commit -m "Mysql Database Schema changed by automatic generation" database/database_mysql.sql
-         git push
+#  mysql:
+#    runs-on: ubuntu-20.04
+#    services:
+#      mysql:
+#        # 8 is chosen because that matches the version of the client utils we will install
+#        image: mysql:8.0
+#        env:
+#          MYSQL_ROOT_PASSWORD: 1234
+#        ports:
+#          - 3306:3306/tcp
+#        options: >-
+#          --health-cmd "/usr/bin/mysql -h 127.0.0.1 --user=root --password=1234 --execute \"SHOW DATABASES;\""
+#          --health-interval 5s
+#          --health-timeout 5s
+#          --health-retries 20
+#    steps:
+#    - uses: actions/checkout@v2
+#    - name: Setup python
+#      uses: actions/setup-python@v2
+#      with:
+#        python-version: 3.9
+#        architecture: x64
+#    # we also need mysql-client-8.0 BUT it is installed my default
+#    #    and if we explicitly ask for it to be safe we sometimes get package errors
+#    - name: Install Ubuntu libs
+#      run: sudo apt-get install -y graphviz graphviz-dev
+#    - name: Install Python libs
+#      run: pip install -r requirements.txt
+#    - name: Install Python Libs for DB work
+#      run: pip install -r requirements_build_database.in
+#    - run: MYSQL_ROOT_PASSWORD=1234 ./build_database_mysql.sh
+#    - run: cat database/database_mysql.sql
+#    - name: Check for changes
+#      run: |
+#        if git diff --exit-code; then
+#          echo "CHANGED=false" >>${GITHUB_ENV}
+#        else
+#          echo "CHANGED=true" >>${GITHUB_ENV}
+#        fi
+#    - name: Commit database back (if changes)
+#      if: env.CHANGED == 'true'
+#      run: |
+#         git config --global user.name 'Database Schema Generator'
+#         git config --global user.email 'hello@openreferral.org'
+#         git add database/database_mysql.sql
+#         git commit -m "Mysql Database Schema changed by automatic generation" database/database_mysql.sql
+#         git push
   postgresql:
-    needs: mysql
+    #needs: mysql
     runs-on: ubuntu-20.04
     services:
       postgresql:
