@@ -2,7 +2,7 @@ name: Test Examples (OpenAPI)
 on: [push, pull_request]
 
 jobs:
-  test_examples:
+  test_examples_openapi:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

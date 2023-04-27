@@ -5,7 +5,7 @@ on:
       - 'master'
 
 jobs:
-#  mysql:
+#  build_database_mysql:
 #    runs-on: ubuntu-20.04
 #    services:
 #      mysql:
@@ -52,8 +52,8 @@ jobs:
 #         git add database/database_mysql.sql
 #         git commit -m "Mysql Database Schema changed by automatic generation" database/database_mysql.sql
 #         git push
-  postgresql:
-    #needs: mysql
+  build_database_postgresql:
+    #needs: build_database_mysql
     runs-on: ubuntu-20.04
     services:
       postgresql:

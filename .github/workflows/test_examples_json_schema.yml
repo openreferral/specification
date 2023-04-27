@@ -2,7 +2,7 @@ name: Test Examples (JSON Schema)
 on: [push, pull_request]
 
 jobs:
-  test_examples:
+  test_examples_json_schema:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
