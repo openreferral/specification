@@ -373,6 +373,43 @@ Each `funding` object has the following fields:
 
 ::::
 
+### accessibility
+
+`accessibility` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/accessibility/description
+```
+
+Each `accessibility` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Fields
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/accessibility
+:collapse: attributes,metadata
+```
+:::
+
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/accessibility.json
+    :jsonpointer:
+    :title: accessibility
+```
+:::
+
+:::{tab-item} Example
+```{eval-rst}
+.. jsoninclude:: ../../examples/location.json
+    :jsonpointer: /accessibility
+    :title: accessibility
+```
+:::
+
+::::
+
 
 ### cost_option
 
@@ -669,10 +706,6 @@ Each `meta_table_description` object has the following fields:
 ```
 :::
 
-:::{tab-item} Example
-In development
-:::
-
 ::::
 
 ### taxonomy
@@ -704,7 +737,11 @@ Each `taxonomy` object has the following fields:
 :::
 
 :::{tab-item} Example
-In development
+```{eval-rst}
+.. jsoninclude:: ../../examples/taxonomy.json
+    :jsonpointer:
+    :title: taxonomy
+```
 :::
 
 ::::
@@ -738,7 +775,11 @@ Each `taxonomy_term` object has the following fields:
 :::
 
 :::{tab-item} Example
-In development
+```{eval-rst}
+.. jsoninclude:: ../../examples/taxonomy_term.json
+    :jsonpointer:
+    :title: taxonomy_term
+```
 :::
 
 ::::
