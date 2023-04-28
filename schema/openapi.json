@@ -427,7 +427,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./compiled/service.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service.json"
                 }
               }
             }

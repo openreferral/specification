@@ -9,4 +9,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
     - run: npm install -g openapi-examples-validator
-    - run: openapi-examples-validator -m openapi-examples-map.json schema/openapi.json
+    - name: Validate the OpenAPI Schema
+      run: openapi-examples-validator -m openapi-examples-map.json schema/openapi.json
+    - name: Validate the OpenAPI 3.0 compatible compiled schema
+      run: openapi-examples-validator -m openapi-examples-map.json docs/extras/openapi30.json
