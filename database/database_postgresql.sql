@@ -653,14 +653,14 @@ COMMENT ON COLUMN public.location.longitude IS 'The longitude of the location ex
 -- Name: COLUMN location.external_identifier; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.location.external_identifier IS 'A third party identifier for the location, which can be drawn from other services e.g. UK UPRN or what3words.';
+COMMENT ON COLUMN public.location.external_identifier IS 'A third party identifier for the location, which can be drawn from other services e.g. UK UPRN.';
 
 
 --
 -- Name: COLUMN location.external_identifier_type; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.location.external_identifier_type IS 'The scheme used for the location''s external_identifier e.g. UK UPRN or what3words.';
+COMMENT ON COLUMN public.location.external_identifier_type IS 'The scheme used for the location''s external_identifier e.g. UK UPRN.';
 
 
 --
@@ -927,7 +927,7 @@ COMMENT ON COLUMN public.organization_identifier.id IS 'The identifier for this 
 -- Name: COLUMN organization_identifier.organization_id; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.organization_identifier.organization_id IS 'The identifier of the organization.';
+COMMENT ON COLUMN public.organization_identifier.organization_id IS 'The identifier of the organization. This should match the uuid of an organization object.';
 
 
 --
@@ -941,14 +941,14 @@ COMMENT ON COLUMN public.organization_identifier.identifier_scheme IS 'The schem
 -- Name: COLUMN organization_identifier.identifier_type; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.organization_identifier.identifier_type IS 'The type of the third party identifier.';
+COMMENT ON COLUMN public.organization_identifier.identifier_type IS 'A human-readable equivalent of the identifier_scheme. This may be used in cases where org-id.guide does not list an appropriate identifier scheme.';
 
 
 --
 -- Name: COLUMN organization_identifier.identifier; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.organization_identifier.identifier IS 'The third-party identifier value';
+COMMENT ON COLUMN public.organization_identifier.identifier IS 'The third-party identifier value.';
 
 
 --
