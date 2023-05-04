@@ -187,21 +187,21 @@
           "name": "external_identifier",
           "type": "string",
           "title": "External Identifier",
-          "description": "A third party identifier for the location, which can be drawn from other services e.g. UK UPRN or what3words.",
+          "description": "A third party identifier for the location, which can be drawn from other services e.g. UK UPRN.",
           "constraints": {
             "unique": false
           },
-          "example": "///cheer.parent.mole"
+          "example": "10092008082"
         },
         "external_identifier_type": {
           "name": "external_identifier_type",
           "type": "string",
           "title": "External Identifier Type",
-          "description": "The scheme used for the location's external_identifier e.g. UK UPRN or what3words.",
+          "description": "The scheme used for the location's external_identifier e.g. UK UPRN.",
           "constraints": {
             "unique": false
           },
-          "example": "what3words"
+          "example": "UPRN"
         }
       },
       "required": [
