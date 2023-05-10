@@ -70,15 +70,6 @@ Of all the feedback received from many different contributors, we assign priorit
 AKA 'the Open Referral format,' the HSDS is a data interchange format that enables resource directory data to be published in bulk for use by many systems. HSDS provides a common vocabulary for information about services, the organizations that provide them, and the locations where they can be accessed. HSDS is essentially an _interlingua_ — in other words, it’s a common language that can be used by anyone to enable community resource directories to ’talk’ to each other. [[See the data specification in Github](https://github.com/OpenReferral/specification) or on [our Documentation Site](https://openreferral.readthedocs.io/).]
 
 
-## What is in the Human Services Data Specification (HSDS)?
-
-First, HSDS identifies a vocabulary of terms that describe what a service is, the institution that provides it, where the service can be accessed, and how to access it. These terms are designated as ‘required,’ ‘recommended,’ and ‘optional.’ The spec provides instructions for formatting these terms, with examples.
-
-On a more technical level, HSDS also includes a [logical model](http://docs.openreferral.org/en/latest/hsds/logical_model/) that diagrams the relationships between these terms.
-
-Finally, HSDS provides guidance for structuring and packaging data so that it can be published on the web and/or exchanged between systems. [See: [Github](https://github.com/codeforamerica/openreferral/specification) or [our documentation site](https://openreferral.readthedocs.io/).]
-
-
 ## What is not in the Human Services Data Specification (HSDS)? 
 
 HSDS does not attempt to describe every type of information that might be relevant to people working with resource directory data. We have attempted to maintain a strict focus on specifying only relevant factual attributes that are shared by _most_ services. That means we excluded many kinds of information that are unique to specific kinds of services (such as the accreditation of child care providers, or the availability of beds in a shelter).
@@ -90,14 +81,36 @@ Finally, HSDS does not specify any information regarding how referrals actually 
 That said, this model can and should be extended! Users can expand HSDS to meet their own needs, in their own systems. Groups of stakeholders from particular subdomains can develop extended ‘profiles’ that are tailored to their situation. ([A group of civil legal service providers](https://groups.google.com/forum/#!forum/legalaid-openreferral) have already begun working on precisely that.) In future iterations of the Open Referral process, these expansions will then be considered for inclusion as part of the primary model.
 
 
-## What is the format of the HSDS? Why CSV?
+## What is the format of the HSDS? Why JSON?
 
-With the goal of broad accessibility in mind, the initial HSDS developer Sophia Parafina chose Comma-Separated Values (CSV) as the building blocks for HSDS. CSV serves as a ‘lowest common denominator’ that is simplest to use and most accessible to users with a modicum of technical abilities, as it can be edited in a simple text editor, and ingested by almost any information system. (For more reasoning behind this decision, consider Waldo Jaquith’s recent post, [‘In Praise of CSV.’](https://usopendata.org/2015/03/10/csv/))
+Version 3.0 of HSDS has established JSON as the primary standard format. (The initial versions of HSDS used the CSV format, with multiple tables wrapped by a JSON datapackage.) This change brings many benefits to the standard, which are detailed [here](https://docs.google.com/document/d/1oUSI4NLvdKG3Eb1TyFq_VOaAuhSoMg9zRUnmgltTMAg/edit#) alongside a discussion of risks and mitigations of those risks.
 
-For version 1.0, Parafina chose to accompany a more-complex set of CSV files with a JSON datapackage (using [the Open Knowledge Foundation's frictionless data specification](http://frictionlessdata.io/)) to describe the CSVs' contents. In version 1.2, with support from Open Knowledge Foundation’s Frictionless Data Fund, [Shelby Switzer upgraded the handling of JSON datapackages. ](https://openreferral.org/introducing-open-referrals-data-transformation-toolkit/)
+The decision to change the primary format to JSON was the result of an involved, participatory, and collaborative decision making process which took place over several months and involved a working group made up of key stakeholders across the Open Referral community.
 
-Members of the Open Referral community have observed that they may need more structured data formats for use cases that involve complex, sensitive, and/or large-scale uses. We recognize the validity of these perspectives, and in fact we expect the HSDS model to evolve over time. Pilot projects and community members are already discussing plans to develop complementary formats (such as XML and JSON-LD) — and as these formats are field-tested and validated, they may become formal components of HSDS in future iterations.
+As outlined in the document linked above, a range of reasons motivated this change. First and most generally, JSON Schema is a vastly more common format than datapackages &mdash; familiar for both interchange and validation &mdash; so we can benefit from a much greater range of tooling and expertise to make HSDS better to use in almost all aspects.
 
+More specifically, JSON schema also improves our ability to:
+
+Enable users to query an HSDS data source to find a service and act on the information:
+
+* We can standardise the output of APIs to the new JSON format and we can develop API specifications around them; meaning they will be kept in sync with the core HSDS specification.
+* It is not really possible to do these queries in just the Tabular Datapackage format.
+
+Align multiple datasets: to enable resource data federation, matching/synthesizing/syncing multiple sources of HSDS:
+
+* Having JSON output formats that align across publishers can make data federation/syncing feasible.
+* Easier to write extension/profiling tooling for JSON Schema as some already exist.
+* The JSON outputs could not just be through APIs, but also with bulk JSON versions, making federation/syncing feasible outside API use.
+* This is tricky to do if only the Tabular Datapackage format was allowed, as federation/syncing relational database structures, with different schemas, has no feasible automated solutions.
+* JSON Schema can provide clear validation results.
+* JSON has readily available tooling for building validators and offering additional checks beyond basic validation rules.
+* Reliable tooling available for generating documentation.
+
+Edit individual records:
+
+* When updated using JSON representations a single API endpoint can be used to update a service and all related fields; not just a table at a time.
+
+The outdated HSDS representation format of JSON Tables bundling CSV files is an important artefact for many HSDS users, and so will be maintained: we automatically generate a JSON Table Schema from a JSON Schema, so we expect that the shift will not cause any issues for any implementations that expect the datapackage from deprecated HSDS versions.
 
 ## How do you address the matter of taxonomy (of types of services and situations)? 
 
@@ -121,8 +134,11 @@ The Open Referral format has been developed to require a pretty minimal set of i
 
 ## What if I need help collecting this data in the first place?
 
-Open Referral is working to build tools to help produce and verify accurate resource directory data. If you’re interested in developing such tools — and/or if you already have experience with such tools — we want to hear from you! Please reach out to info@openreferral.org to discuss.
+Open Referral is working to build tools that can help people produce and verify accurate resource directory data. For the most part, we don’t host these tools ourselves &ndash; but we can help you deploy, customize, and leverage them to achieve your goals.
 
+For instance, you might be able to quickly get set up with a free resource database by [deploying the Open Referral Airtable template](https://openreferral.org/delivering-open-referral-solutions-with-airtable/). You might also deploy one of the open source content management systems in our ecosystem (like [ORServices](https://sarapis.org/human-services/orservices/)). We also have helped communities develop open source policies and procedures (like the DC Community Resource Information Exchange’s [style guide](https://docs.google.com/document/d/1fGz4etL3mN7lEqqgE57XBWM1C6JRoywR/edit?usp=share_link&ouid=104531125124834239733&rtpof=true&sd=true) and [verification process](https://docs.google.com/document/d/1xMWIPtcfmNDkuYLztT5xdSKzZteZW8CV5M7qiYcyeYI/edit#heading=h.pfttcs9har0v) documents) which you are free to copy and adapt. 
+
+If you’re interested in deploying or helping to develop such tools, we want to hear from you! Please reach out to our network via our [Community Forum](https://forum.openreferral.org/) or [Slack channel](https://openreferral.org/get-involved/join-our-slack-team/) to discuss.
 
 ## Who has adapted this project and can I see examples? 
 
@@ -133,29 +149,19 @@ Some domain-specific groups have adapted our data specification to their context
 
 ## Who do I contact if I need help with this project? 
 
-You can contact Greg Bloom ([@greggish](https://github.com/greggish) | bloom@openreferral.org), the chief organizing officer for Open Referral.
-
+You can contact Greg Bloom ([@greggish](https://github.com/greggish) | [bloom@openreferral.org](mailto:bloom@openreferral.org)), the founder and lead organizer of Open Referral. Alternatively, you can reach out to our network via our [Community Forum](https://forum.openreferral.org/) or [Slack channel](https://openreferral.org/get-involved/join-our-slack-team/).
 
 ## What languages is this project in? 
 
-Currently Open Referral is in English, though we have at least one Spanish deployment [in Madrid](https://openreferral.org/huertas-de-datos-open-referral-in-madrid/) :)
+Currently Open Referral is in English, though we would welcome opportunities to support language localisation.
 
-Oh, do you mean machine language? Our data specification calls for CSV files with a JSON datapackage. Our primary reference implementation, [ORServices](https://github.com/sarapis/orservices), is in Laravel.
-
-
-## If I wanted to help with this project, what is the best way to do that?
-
-Get in touch with Greg at bloom@openreferral.org. You can also start by finding other people in your community who work with information systems that keep track of the health, human, and social services available to people in need.
-
-You could also look through [our Issues queue](https://github.com/openreferral/specification/issues), comment away, and even offer Pull Requests to our documentation with your own documentation of why. It might be a while before we are able to address your issue directly, but your feedback is very welcome as it helps us set our agenda!
-
+Oh, do you mean machine language? Our data specification calls is expressed in JSON schema, though we also support a datapackage of CSV files. Our primary reference implementation, [ORServices](https://github.com/sarapis/orservices), is in Laravel.
 
 ## Is the project in active development?
 
-The Human Services Data Specification is entering an upgrade phase of development, under the interim leadership of the [Open Data Services Cooperative](http://opendataservices.coop/). [Check out our issues queue](https://github.com/openreferral/specification/issues).
+The Human Services Data Specification under the interim leadership of the [Open Data Services Co-operative](http://opendataservices.coop/). We conducted a major upgrade cycle in 2022-23; minor upgrades may be in progress. [Check out our issues queue](https://github.com/openreferral/specification/issues).
 
-We are seeking sponsorship to support long-term institutional development of Open Referral and our data specification. Please reach out to info@openreferral.org for more information.
-
+We are seeking sponsorship to support long-term institutional development of Open Referral and our data specification. Please reach out to [info@openreferral.org](mailto:info@openreferral.org) for more information.
 
 ## What is the licensing on this project?
 
