@@ -1,6 +1,10 @@
 Changelog
 =========
 
+This page provides the list of changes that have been made to the HSDS schema.
+
+Additional changes made to requirements of UK compliance are provided on a separate Changelog section of the [UK Compliance](uk_compliance.md#changelog) page.
+
 ## [v3.0](https://github.com/openreferral/specification/milestone/7)
 
 ### Backwards incompatible schema changes

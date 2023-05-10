@@ -29,6 +29,8 @@ Questions not answered here? Suggestions for us?
 
 [Email us!](mailto:info@openreferral.org) We can discuss directly, and/or invite you to [join us in Slack](https://openreferral.org/get-involved/join-our-slack-team/), where we conduct weekly office hours on Fridays at 12p EST.
 
+We also have an active [forum](https://forum.openreferral.org) which you can join to engage in the various topics and ongoing discussions surrounding Open Referral and HSDS.
+
 ## Site contents
 
 Contents:
