@@ -1063,21 +1063,21 @@
           "name": "external_identifier",
           "type": "string",
           "title": "External Identifier",
-          "description": "A third party identifier for the location, which can be drawn from other services e.g. UK UPRN or what3words.",
+          "description": "A third party identifier for the location, which can be drawn from other services e.g. UK UPRN.",
           "constraints": {
             "unique": false
           },
-          "example": "///cheer.parent.mole"
+          "example": "10092008082"
         },
         "external_identifier_type": {
           "name": "external_identifier_type",
           "type": "string",
           "title": "External Identifier Type",
-          "description": "The scheme used for the location's external_identifier e.g. UK UPRN or what3words.",
+          "description": "The scheme used for the location's external_identifier e.g. UK UPRN.",
           "constraints": {
             "unique": false
           },
-          "example": "what3words"
+          "example": "UPRN"
         },
         "languages": {
           "name": "languages",
@@ -2872,7 +2872,7 @@
           "name": "organization_id",
           "type": "string",
           "title": "Organization Identifier",
-          "description": "The identifier of the organization.",
+          "description": "The identifier of the organization. This should match the uuid of an organization object.",
           "format": "uuid",
           "constraints": {
             "unique": false
@@ -2893,7 +2893,7 @@
           "name": "identifier_type",
           "type": "string",
           "title": "Identifier Type",
-          "description": "The type of the third party identifier.",
+          "description": "A human-readable equivalent of the identifier_scheme. This may be used in cases where org-id.guide does not list an appropriate identifier scheme.",
           "constraints": {
             "unique": false
           },
@@ -2903,7 +2903,7 @@
           "name": "identifier",
           "type": "string",
           "title": "Third Party Identifier",
-          "description": "The third-party identifier value",
+          "description": "The third-party identifier value.",
           "constraints": {
             "unique": false
           },

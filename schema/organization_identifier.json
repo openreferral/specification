@@ -25,7 +25,7 @@
             "name": "organization_id",
             "type": "string",
             "title": "Organization Identifier",
-            "description": "The identifier of the organization.",
+            "description": "The identifier of the organization. This should match the uuid of an organization object.",
             "format": "uuid",
             "constraints": {
                 "unique": false
@@ -46,7 +46,7 @@
             "name": "identifier_type",
             "type": "string",
             "title": "Identifier Type",
-            "description": "The type of the third party identifier.",
+            "description": "A human-readable equivalent of the identifier_scheme. This may be used in cases where org-id.guide does not list an appropriate identifier scheme.",
             "constraints": {
                 "unique": false
             },
@@ -56,7 +56,7 @@
             "name": "identifier",
             "type": "string",
             "title": "Third Party Identifier",
-            "description": "The third-party identifier value",
+            "description": "The third-party identifier value.",
             "constraints": {
                 "unique": false
             },

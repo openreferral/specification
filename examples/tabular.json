@@ -82,8 +82,8 @@
       "transportation": "MyCity Civic Center is serviced by the number 1 Bus and is a short walk from the Main Street Metro Station",
       "latitude": 100,
       "longitude": 101,
-      "external_identifier": "///cheer.parent.mole",
-      "external_identifier_type": "what3words"
+      "external_identifier": 10092008082,
+      "external_identifier_type": "UPRN"
     }
   ],
   "phones.csv": [

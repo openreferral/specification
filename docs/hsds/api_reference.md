@@ -26,6 +26,12 @@ The header returned must include these properties:
 
 After the header, a lists endpoint will contain an array of its main entities (e.g. services). The array will normally contain all direct properties of each item but need not contain arrays of child entities (e.g. service contacts).
 
+## Metadata
+
+In HSDS each object has an optional `metadata` field containing a [metadata object](/schema_reference.md#metadata). Since an API response may contain a list of many objects &mdash; each with their own nested objects &mdash; this could result in a large quantity of metadata in the response.
+
+It should be noted that the `metadata` field in each object is optional, and API implementors should consider what is an appropriate level of metadata to include in each response based on their use-case.
+
 ## Endpoint details
 
 This section contains details of each API endpoint. Each section presents an endpoint defined by the API and presents a technical reference for that endpoint including query parameters, status codes, and compliance rules for HSDS and Open Referral UK.
