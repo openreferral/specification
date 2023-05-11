@@ -8,7 +8,7 @@ The API reference provides an [OpenAPI](https://www.openapis.org/) specification
 Along with this reference, there is `a swagger ui version of the API <../openapi.html>`_
 ```
 
-The source of the specification is found on [GitHub](https://github.com/openreferral/specification/tree/3.0-dev/schema/openapi.json) and [issues can be raised in the issue tracker](https://github.com/openreferral/specification/issues).
+The source of the specification is found on [GitHub](https://github.com/openreferral/specification/tree/3.0/schema/openapi.json) and [issues can be raised in the issue tracker](https://github.com/openreferral/specification/issues).
 
 ## Lists
 
