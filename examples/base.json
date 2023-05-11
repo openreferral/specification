@@ -1,5 +1,5 @@
 {
   "version": "3.0",
   "profile": "https://path/to/profile",
-  "openapi_url": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/openapi.json"
+  "openapi_url": "https://raw.githubusercontent.com/openreferral/specification/latest/schema/openapi.json"
 }

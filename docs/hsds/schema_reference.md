@@ -15,9 +15,9 @@ For information on how to format HSDS data, including how to publish a tabular D
 
 ## Schema structure
 
-HSDS data is not hierarchichal in the sense that it does not have a single top-level object. Rather, HSDS consists of a set of core objects or tables, with additional information held in separate objects or tables (see [Logical Model](logical_model) for more details). For this reason, there is no single HSDS schema, but rather a separate schema for each object. In addition to being provided below, schema files for each object in HSDS are available as [JSON schema](https://json-schema.org/) from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/3.0-dev/schema).
+HSDS data is not hierarchichal in the sense that it does not have a single top-level object. Rather, HSDS consists of a set of core objects or tables, with additional information held in separate objects or tables (see [Logical Model](logical_model) for more details). For this reason, there is no single HSDS schema, but rather a separate schema for each object. In addition to being provided below, schema files for each object in HSDS are available as [JSON schema](https://json-schema.org/) from the [HSDS GitHub repository](https://github.com/openreferral/specification/tree/latest/schema).
 
-Compiled schemas and example data, containing all HSDS objects, may be useful to publishers for a number of reasons. A number of compiled schema and example files are available from the [schema](https://github.com/openreferral/specification/tree/3.0-dev/schema) and [examples](https://github.com/openreferral/specification/tree/3.0-dev/examples) directories on the HSDS Github repository.
+Compiled schemas and example data, containing all HSDS objects, may be useful to publishers for a number of reasons. A number of compiled schema and example files are available from the [schema](https://github.com/openreferral/specification/tree/latest/schema) and [examples](https://github.com/openreferral/specification/tree/latest/examples) directories on the HSDS Github repository.
 
 ## Objects and fields
 
