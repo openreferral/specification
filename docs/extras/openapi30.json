@@ -3,7 +3,7 @@
   "info": {
     "title": "HSDS OpenAPI",
     "version": "3.0",
-    "description": "Open API for the Human Services Data Specification. See [HSDS documentation](http://docs.openreferral.org/en/3.0-dev/) for more details on the specification.",
+    "description": "Open API for the Human Services Data Specification. See [HSDS documentation](http://docs.openreferral.org/en/3.0/) for more details on the specification.",
     "license": {
       "name": "Creative Commons Attribution Share-Alike 4.0 license",
       "url": "https://creativecommons.org/licenses/by/4.0/"
@@ -67,7 +67,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/compiled/service.json"
                 }
               }
             }
@@ -124,7 +124,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_list.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/compiled/service_list.json"
                       }
                     }
                   },
@@ -162,7 +162,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/taxonomy.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/taxonomy.json"
                 }
               }
             }
@@ -199,7 +199,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/taxonomy.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/taxonomy.json"
                       }
                     }
                   },
@@ -237,7 +237,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/taxonomy_term.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/taxonomy_term.json"
                 }
               }
             }
@@ -295,7 +295,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/taxonomy_term.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/taxonomy_term.json"
                       }
                     }
                   },
@@ -338,7 +338,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/compiled/organization.json"
                 }
               }
             }
@@ -382,7 +382,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/organization_list.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/compiled/organization_list.json"
                       }
                     }
                   },
@@ -420,7 +420,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/compiled/service.json"
                 }
               }
             }
@@ -479,7 +479,7 @@
                     "contents": {
                       "type": "array",
                       "items": {
-                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0-dev/schema/compiled/service_at_location_list.json"
+                        "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/compiled/service_at_location_list.json"
                       }
                     }
                   },
