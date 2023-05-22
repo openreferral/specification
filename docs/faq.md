@@ -27,7 +27,7 @@ There are three types of _ultimate_ stakeholders for Open Referral: 1) people in
 
 The _primary_ users of Open Referral are _database administrators –_ anyone involved in aggregating, maintaining, and/or developing systems that produce or consume community resource directory data. Our objective is to help such database administrators share higher quality resource directory data at lower cost, with the goal of making it easier for people to find such information across a wide array of channels.
 
-Read more about each of these types of users [here in our User Personas documentation](https://docs.google.com/document/d/1XqueBVbRVgR0BVGjDbUdN4suUYfMKm7yJm1f3nRsGtY/edit?usp=drive_web).
+Read more about each of these types of users [here in our User Personas documentation](./initiative/index.md#types-of-use-and-user-personas).
 
 
 ## How is this project relevant to me? 
@@ -45,7 +45,7 @@ Read more in our Contributors Guide. Reach out to info@openreferral.org to get d
 
 ## If I maintain a community resource directory — or if I partner with an organization that does — how would I get started? 
 
-You can start by testing the viability of our format for your context. That may entail [mapping your database's schema to the Human Services Data Specification](http://docs.openreferral.org/en/latest/hsds/formatting/).
+You can start by testing the viability of our format for your context. That may entail [mapping your database's schema to the Human Services Data Specification](./hsds/publication_formats_reference.md).
 
 Once you've mapped your schema to ours, analyze the gaps. (You can ask questions or submit suggestions for improvements to our schema in [our Issues Queue](https://github.com/openreferral/specification/issues). Read more in [our Contributors Guide](https://github.com/openreferral/specification/blob/master/CONTRIBUTING.md).)
 
@@ -73,7 +73,7 @@ AKA 'the Open Referral format,' the HSDS is a data interchange format that enabl
 ## What is in the Human Services Data Specification (HSDS)?
 First, HSDS identifies a vocabulary of terms that describe what a service is, the institution that provides it, where the service can be accessed, and how to access it. These terms are designated as ‘required’ (meaning they must be included for data to be compliant) or ‘optional.’ The spec provides instructions for formatting these terms, with examples.
 
-On a more technical level, HSDS also includes a [logical model](http://docs.openreferral.org/en/latest/hsds/logical_model/) that diagrams the relationships between these terms.
+On a more technical level, HSDS also includes a [logical model](./hsds/logical_model.md) that diagrams the relationships between these terms.
 
 Finally, HSDS provides guidance for structuring and packaging data so that it can be published on the web and/or exchanged between systems (see: [Github](https://github.com/codeforamerica/openreferral/specification) or our [documentation site](https://openreferral.readthedocs.io/)).
 
@@ -124,7 +124,7 @@ The outdated HSDS representation format of JSON Tables bundling CSV files is an 
 
 ## How do you address the matter of taxonomy (of types of services and situations)? 
 
-Open Referral recognizes the existence of a diverse array of taxonomies to describe types of services, organizations, and people for whom services are available. Given that such categories are inherently subjective, whereas Open Referral's format is describing only factual data, we do not prescribe a specific taxonomy. We do [recognize the existence of an array of taxonomies currently in use](https://github.com/openreferral/specification/blob/master/docs/design_principles.md#related-taxonomies), and our HSDS format [includes specifications for including any taxonomy in open data](http://docs.openreferral.org/en/latest/hsds/reference/#service_taxonomy).
+Open Referral recognizes the existence of a diverse array of taxonomies to describe types of services, organizations, and people for whom services are available. Given that such categories are inherently subjective, whereas Open Referral's format is describing only factual data, we do not prescribe a specific taxonomy. We do [recognize the existence of an array of taxonomies currently in use](https://github.com/openreferral/specification/blob/master/docs/design_principles.md#related-taxonomies), and our HSDS format [includes specifications for including any taxonomy in open data](./hsds/classifications.md).
 
 
 ## How does Open Referral handle eligibility criteria?
@@ -134,7 +134,7 @@ Good question. We don't currently specify a standardized method for structuring 
 
 ## What if I collect important information that isn't included in the Human Service Data specification?
 
-That's ok! The Human Services Data Specification is an extensible format to which additional layers of information can be added — [see guidance here](http://docs.openreferral.org/en/latest/hsds/extending/). (But we'd like to learn from your experience, so please share these insights!)
+That's ok! The Human Services Data Specification is an extensible format to which additional layers of information can be added — [see guidance here](./hsds/extending.md). (But we'd like to learn from your experience, so please share these insights!)
 
 
 ## What if the Human Service Data Specification requires kinds of information that I don't collect? 
@@ -175,7 +175,7 @@ We are seeking sponsorship to support long-term institutional development of Ope
 
 ## What is the licensing on this project?
 
-[Human Services Data Specification v2.0 is now available](https://github.com/openreferral/specification/blob/master/LICENSE) as [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+[Human Services Data Specification v3.0 is now available](https://github.com/openreferral/specification/blob/3.0/LICENSE) as [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Notes
 
