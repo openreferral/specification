@@ -7,7 +7,7 @@ This FAQ provides context for the Open Referral Initiative and its Human Service
 
 The Open Referral Initiative is a network of people and organizations working to promote the accessibility of information about health, human, and social services — i.e. _community resource directory data_.
 
-Our Human Service Data Specification (HSDS, AKA ‘the Open Referral format’) is a data exchange format that enables resource directory data to be shared among heterogeneous information systems. The Human Service Data API suite (HSDA) is a set of standardized OpenAPI protocols.
+Our Human Service Data Specification (HSDS, AKA ‘the Open Referral format’) is a data exchange format that enables resource directory data to be shared among heterogeneous information systems.
 
 Open Referral’s ecosystem includes a range of open source tools and web applications that facilitate the flow of resource directory information. See [examples of these tools and apps here](https://openreferral.org/about/technology-overview/).
 
