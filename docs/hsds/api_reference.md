@@ -28,13 +28,15 @@ After the header, a lists endpoint will contain an array of its main entities (e
 
 ## Query Parameters and Filters
 
-Many API endpoints defined in this API reference contain query parameters &ndash; allowing users to filter results by various dimensions. For example, calls to the `/services` endpoint can include a  `modified_after` query parameter to only include results modified on or after the supplied value.
+Many API endpoints defined in this API reference contain query parameters allowing users to filter results by various dimensions. For example, calls to the `/services` endpoint can include a  `modified_after` query parameter to only include results modified on or after the supplied value.
 
-Query parameters are intended to be *cumulative* in their effect. This can be thought of as a boolean `AND`, where the results fulfill the conditions of all supplied query parameters. For example, the following query will produce results which match `taxonomy_id=XXX` AND `organization_id=YYY`:
+Query parameters are *cumulative* in their effect, behaving as a boolean `AND` where the results fulfill the conditions of all supplied query parameters. For example, the following query will produce results which match `taxonomy_id=XXX` AND `organization_id=YYY`:
 
 ```
 /services?taxonomy_id=XXX&organization_id=YYY
 ```
+
+All APIs wishing to comply with this specification must ensure that query parameters are cumulative in their effect.
 
 ## Metadata
 
