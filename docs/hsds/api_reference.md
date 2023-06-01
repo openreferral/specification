@@ -26,6 +26,18 @@ The header returned must include these properties:
 
 After the header, a lists endpoint will contain an array of its main entities (e.g. services). The array will normally contain all direct properties of each item but need not contain arrays of child entities (e.g. service contacts).
 
+## Query Parameters and Filters
+
+Many API endpoints defined in this API reference contain query parameters allowing users to filter results by various dimensions. For example, calls to the `/services` endpoint can include a  `modified_after` query parameter to only include results modified on or after the supplied value.
+
+Query parameters are *cumulative* in their effect, behaving as a boolean `AND` where the results fulfill the conditions of all supplied query parameters. For example, the following query will produce results which match `taxonomy_id=XXX` AND `organization_id=YYY`:
+
+```
+/services?taxonomy_id=XXX&organization_id=YYY
+```
+
+All APIs wishing to comply with this specification must ensure that query parameters are cumulative in their effect.
+
 ## Metadata
 
 In HSDS each object has an optional `metadata` field containing a [metadata object](/schema_reference.md#metadata). Since an API response may contain a list of many objects &mdash; each with their own nested objects &mdash; this could result in a large quantity of metadata in the response.
