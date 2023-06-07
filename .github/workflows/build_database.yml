@@ -78,7 +78,9 @@ jobs:
     # If the MySQL stage above made changes, we need to pull first
     - run: git pull
     - name: Install Ubuntu libs
-      run: sudo apt-get install -y graphviz graphviz-dev postgresql-client-12 libpq-dev
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y graphviz graphviz-dev postgresql-client-12 libpq-dev
     - name: Install Python libs
       run: pip install -r requirements.txt
     - name: Install Python Libs for DB work
