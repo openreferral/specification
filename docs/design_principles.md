@@ -13,13 +13,11 @@ The format also specifies information about the _provenance_ of the data, as wel
 
 In order to ensure accessibility, the data must be a machine-readable and -writable format that can also be created, updated and deleted with a basic text editor.
 
-
-
-### Related standards
+## Related standards
 
 During the development of HSDS, we have charted our course in conscious relation to a range of related standards. These include:
 
-#### AIRS Standards
+### AIRS Standards
 
 The [Alliance of Information and Referral Systems](http://airs.org) is an international professional association that provides standards, accreditations and certifications for the information and referral sector. 
 
@@ -36,14 +34,14 @@ As described in the AIRS Standards and Quality Indicators publication, the Resou
 In part through engagement with Open Referral, [AIRS recently adopted an open source license (CC 4.0 BY-SA) for their Style Guide](https://openreferral.org/the-2016-airs-style-guide-newly-open-sourced/).
 
 
-#### schema.org for Civic Services (W3C)
+### schema.org for Civic Services (W3C)
 
 The [Civic Services schema](https://www.w3.org/wiki/WebSchemas/CivicServices) is a W3C-approved vocabulary, originally proposed by the Google.org Social Impact team in 2013, to extend the Schema.org schemas to better support the description of public civic services.
 
 It is a new vocabulary, similar to the European Commission ISA Core Public Service vocabulary. Its purpose is to improve search engines’ understanding of these services. The schema will provide "*enough information to determine the service, the area covered by the service, and relevant information for using the service*."
 
 
-#### National Information Exchange Model (NIEM)
+### National Information Exchange Model (NIEM)
 
 NIEM is the National Information Exchange Model. It is an interagency initiative to create a national-level interoperable information sharing and data exchange. The NIEM project began in 2005 as a joint venture between the U.S. Department of Homeland Security (DHS) and the U.S. Department of Justice (DOJ). The NIEM uses both the Global Justice XML Data Model (GJXDM) reference model and the GJXDM XML-based framework and support infrastructure.
 
@@ -55,23 +53,23 @@ NIEM consists of a  collection of data components organized in multiple kinds of
 The schema for the core components is available from [niem.gov](http://release.niem.gov/niem/niem-core/2.0/niem-core.xsd). Open Referral encourages the establishment of compatibility with NIEM.
 
 
-### Related Taxonomies
+## Related Taxonomies
 
 Open Referral recognizes the existence of a diverse array of taxonomies to describe types of services, organizations, and people for whom services are available. Given that such categories are inherently subjective, whereas Open Referral's format is describing only *factual* data, we do not prescribe a specific taxonomy. In the meantime, we recognize the existence of the following taxonomies, and offer guidance for using them in conjunction with HSDS.
 
 
-#### AIRS/211 Taxonomy
+### AIRS/211 Taxonomy
 
 [The AIRS/211 taxonomy](https://www.airs.org/i4a/pages/index.cfm?pageid=3386) is widely used among certified providers of ‘information and referral’ services, as well as some government agencies. The Taxonomy is a hierarchical system that contains more than 9,000 fully-defined terms that cover the complete range of human services. 
 
 The AIRS/211 taxonomy is the intellectual property of 2-1-1 Los Angeles. Licensees can use the taxonomy with data formatted in HSDS.
 
 
-#### Open Eligibility
+### Open Eligibility
 
 [Open Eligibility](http://openeligibility.org/) is a "*simple way to categorize human services and human situations*." It uses common categories for quickly finding human services for people in need, service providers and navigators. It takes a different approach than the AIRS taxonomy by offering up sets of 'tags' that describe _types of services_ and _types of situations_. Open Referral has included [a fork of Open Eligibility in our Github organization](https://github.com/openreferral/openeligibility).
 
 
-#### National Taxonomy of Exempt Entities (NTEE)
+### National Taxonomy of Exempt Entities (NTEE)
 
 [The NTEE system](http://nccs.urban.org/classification/national-taxonomy-exempt-entities) is used by the IRS and the National Center for Charitable Statistics to classify nonprofit organizations. It is also used by the Foundation Center to classify both grants and grant recipients (typically nonprofits or governments).
