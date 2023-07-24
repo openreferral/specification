@@ -50,6 +50,8 @@ Contents:
    hsds/uk_compliance
    hsds/changelog
 
+   profiles/overview
+
 .. toctree::
    :maxdepth: 1
    :caption: HSDS Implementation Guidance
@@ -67,7 +69,6 @@ Contents:
    :caption: Open Referral Initiative
 
    initiative/index
-   governance
    design_principles
    faq
    credits
