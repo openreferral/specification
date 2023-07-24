@@ -1,4 +1,0 @@
-HSDS Profiles
-===============
-
-Lorem Ipsum
