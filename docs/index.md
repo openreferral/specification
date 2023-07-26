@@ -45,9 +45,8 @@ Contents:
    hsds/schema_reference
    hsds/api_reference
    hsds/publication_formats_reference
-   hsds/profiles
-   hsds/logical_model
    hsds/variations_interoperability
+   hsds/logical_model
    hsds/uk_compliance
    hsds/changelog
 
