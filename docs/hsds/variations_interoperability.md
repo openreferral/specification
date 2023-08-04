@@ -47,7 +47,7 @@ Creating a new HSDS Profile is an involved but straightforward process:
 
 As noted in the introduction to this page, the standard permits certain adaptations of the schema. This makes it easier to publish some datasets which are less complex &ndash; but this results in interoperability considerations.
 
-If there is a situation where there is at most a 1:1 relationship in a particular system between items in two tables, where those items would be linked by IDs, then the standard permits that those tables be merged. Column must should be retained, however.
+If there is a situation where there is at most a 1:1 relationship in a particular system between items in two tables, where those items would be linked by IDs, then the standard permits that those tables be merged. Column names should be retained, however.
 
 If the system in question is part of a wider ecosystem, then the community around that ecosystem should agree on a common approach to interoperability around HSDS. For example &ndash;  agreeing on a common set of tables, or agreeing that standard HSDS should be available for interchange purposes.
 
