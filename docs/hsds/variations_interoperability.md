@@ -5,7 +5,7 @@ As an international standard, HSDS provides a common core of defintions and obje
 
 Being an international standard, however, means that the needs of HSDS publishers and users are often significantly variable across varying contexts. In different geographies, sectors, and scenarios of usage, users may need different information about services, locations, and organizations.
 
-To this end, HSDS makes several provisions to ensure that the standard can be effectively adapted for use in a given context. The first of these is the *HSDS Profiles* mechanism, by which people can collaboratively build upon HSDS as a base in ways that further shape the standard for a particulat purpose. HSDS also offers flexibility for publishing data using a simplified structure in some cases.
+To this end, HSDS makes several provisions to ensure that the standard can be effectively adapted for use in a given context. The first of these is the *HSDS Profiles* mechanism, by which people can collaboratively build upon HSDS as a base in ways that further shape the standard for a particular purpose. HSDS also offers flexibility for publishing data using a simplified structure in some cases.
 
 
 ## HSDS Profiles
