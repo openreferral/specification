@@ -14,13 +14,18 @@ The HSDS Profiles mechanism provides a method of building upon and tailoring the
 
 Profiles may do the following:
 
-* declare new optional or mandatory fields.
-* make existing optional fields mandatory.
-* introduce new validation rules.
-* introduce new structures.
-* declare new API endpoints in addition to those documented on the [HSDS API Reference](api_reference).
-* remove or override some parts of the HSDS Schema which are not relevant to them. (Note: This will not prevent a publisher from publishing such excluded data, but it may not be validated by tooling used by that Profile, as it is technically additional data from the Profile's perspective.)
-* recommend the use of particular value sets (taxonomies, enumerations, etc) to ensure semantic interoperability among datasets that use the Profile.
+* extend the HSDS specification by:
+  * adding new optional or mandatory fields
+  * adding new validation rules (including making optional fields 'required')
+  * adding new structures
+  * adding new API endpoints to the API specification
+  * recommending the use of particular value sets such as taxonomies or enumerations.
+* overriding or removing parts of the HSDS specification†:
+  * remove fields and their validation rules
+  * remove entire schemas/Tables/Objects
+  * remove API endpoints from the API specification
+
+† *This is generally done because not all parts of the HSDS schemas may be relevant to a Profile's use-cases and context. This doesn't prevent a publisher from publishing this data but tooling should treat this as 'additional' data from the perspective of the Profile and ignore it for the purposes of validation and quality checks*
 
 Profiles are generally developed and maintained by third parties to satisfy particular requirements for their context. These could arise from a community need, legal structures, taxonomy requirements, or other affordances of service provision specific to that context. In general, Profiles should provide robust documentation allowing a publisher or data user to understand its rules and structures both independantly and in comparison to the core HSDS schema.
 
