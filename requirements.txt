@@ -105,7 +105,7 @@ pandas==1.5.3
     # via flatterer
 picobox==2.2.0
     # via sphinxcontrib-openapi
-pygments==2.14.0
+pygments==2.15.0
     # via
     #   sphinx
     #   sphinx-mdinclude
