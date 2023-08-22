@@ -61,6 +61,8 @@ jinja2==3.1.2
     # via
     #   myst-parser
     #   sphinx
+json-merge-patch==0.2
+    # via hsds-schema-tools
 jsonpointer==2.3
     # via
     #   jsonschema
@@ -103,7 +105,7 @@ pandas==1.5.3
     # via flatterer
 picobox==2.2.0
     # via sphinxcontrib-openapi
-pygments==2.14.0
+pygments==2.15.0
     # via
     #   sphinx
     #   sphinx-mdinclude
@@ -124,6 +126,7 @@ pyyaml==6.0
 requests==2.31.0
     # via
     #   check-jsonschema
+    #   hsds-schema-tools
     #   sphinx
 rfc3339-validator==0.1.4
     # via jsonschema
