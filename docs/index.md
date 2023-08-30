@@ -41,13 +41,11 @@ Contents:
    :maxdepth: 1
    :caption: Human Services Data Spec
 
-   hsds/about
+   hsds/overview
    hsds/schema_reference
    hsds/api_reference
    hsds/publication_formats_reference
    hsds/variations_interoperability
-   hsds/logical_model
-   hsds/uk_compliance
    hsds/changelog
 
 

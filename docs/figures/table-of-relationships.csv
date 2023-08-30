@@ -1,0 +1,16 @@
+Object,organization,service,location,service_at_location
+program,1:many,,,
+service,1:many,,,
+service_at_location,,1:1,1:1,
+location,1:many,,,
+phone,1:many,1:many,1:many,1:many
+contact,1:many,1:many,,1:many
+address,,,1:many,
+schedule,,1:many,1:many,1:many
+funding,1:many,1:many,,
+service_area,,1:many,,
+required_document,,1:many,,
+language,,1:many,1:many,
+accessibility,,,1:many,
+cost_option,,1:many,,
+organization_identifier,1:many,,,
