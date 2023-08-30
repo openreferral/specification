@@ -5,13 +5,13 @@ Use Cases
 This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
 ```
 
-Open Referral's agenda is set by the prerogatives of a set of four types of users: 
+Open Referral's agenda is shaped by the prerogatives of four types of users: 
 * help seekers;
 * service providers;
 * researchers/analysts;
 * database administrators. 
 
- Read more about each of these personas in [our User Personas documentation](https://docs.google.com/document/d/1aodu4BUDVbUwVD02zlFs0WkCMn3UQEX1VHyI8ej6BCU/edit). 
+ Read more about each of these types of users in [the User Personas documentation]([https://docs.openreferral.org/en/latest/initiative/index.html#types-of-use-and-user-personas]). 
 
 
 **Current Human Services Data Specification Capabilities**
