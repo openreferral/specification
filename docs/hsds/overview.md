@@ -23,7 +23,7 @@ To this end, HSDS does not have a hierarchical model with a single top-level obj
 
 Each object in HSDS has an `id` property which contains a *uuid* as specified by [RFC 4122](https://datatracker.ietf.org/doc/html/rfc4122). This enables applications to store their data in a normalized database. When exchanging or publishing the data, applications must dereference these to meet the requirements of the HSDS JSON schema.
 
-In tabular serializations of HSDS (see [Publication Formats](publication_formats_reference)) the `id` property can act as a foreign key without the need for dereferencing.
+In tabular serializations of HSDS (see [Serialization & Publication Formats](serialization)) the `id` property can act as a foreign key without the need for dereferencing.
 
 
 ### Core objects

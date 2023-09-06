@@ -44,7 +44,7 @@ Contents:
    hsds/overview
    hsds/schema_reference
    hsds/api_reference
-   hsds/publication_formats_reference
+   hsds/serialization
    hsds/variations_interoperability
    hsds/changelog
 
