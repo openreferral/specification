@@ -39,7 +39,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Human Services Data Spec
+   :caption: HSDS Reference
 
    hsds/overview
    hsds/schema_reference
