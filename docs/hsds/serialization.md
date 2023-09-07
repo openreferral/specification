@@ -39,6 +39,6 @@ HSDS may also be serialized as a [Tabular Data Package](https://specs.frictionle
 
 Instead of dereferencing and embedding objects such as in the canonical JSON serialization, each object can refer to others via its `id` property in the appropriate column. This makes `id` behave like a foreign key in this serialization.
 
-We provide an existing package descriptor generated directly from the canonical HSDS JSON Schema files. It is available [here](../../datapackage.json). Publishers should use this to support their Tabular Data Package serialization rather than develop their own `datapackage.json` file.
+We provide an existing package descriptor generated directly from the canonical HSDS JSON Schema files. It is available [here](../../datapackage.json) and contains details of field names and file names for this serialization. Publishers should use this to support their Tabular Data Package serialization rather than develop their own `datapackage.json` file. Examples CSV files are available in the HSDS Github repo [here](https://github.com/openreferral/specification/tree/3.0/examples/csv).
 
 Prior to HSDS 3.0, Tabular Data Packages were the primary publication format for HSDS data.
