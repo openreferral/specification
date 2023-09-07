@@ -19,11 +19,10 @@ HSDS data is not hierarchichal in the sense that it does not have a single top-l
 
 Compiled schemas and example data, containing all HSDS objects, may be useful to publishers for a number of reasons. A number of compiled schema and example files are available from the [schema](https://github.com/openreferral/specification/tree/3.0/schema) and [examples](https://github.com/openreferral/specification/tree/3.0/examples) directories on the HSDS Github repository.
 
-## Objects Reference
+## Core Objects
 
-### Core Objects
 
-#### organization
+### organization
 
 `organization` is defined as:
 
@@ -60,7 +59,7 @@ Each `organization` object has the following fields:
 
 ::::
 
-#### service
+### service
 
 `service` is defined as:
 
@@ -97,7 +96,7 @@ Each `service` object has the following fields:
 
 ::::
 
-#### location
+### location
 
 `location` is defined as:
 
@@ -135,7 +134,7 @@ Each `location` object has the following fields:
 
 ::::
 
-#### service_at_location
+### service_at_location
 
 `service_at_location` is defined as:
 
@@ -175,9 +174,9 @@ Each `service_at_location` object has the following fields:
 
 ::::
 
-### Other Objects
+## Other Objects 
 
-#### address
+### address
 
 `address` is defined as:
 
@@ -218,7 +217,7 @@ Each `address` object has the following fields:
 ::::
 
 
-#### phone
+### phone
 
 `phone` is defined as:
 
@@ -259,7 +258,7 @@ Each `phone` object has the following fields:
 ::::
 
 
-#### schedule
+### schedule
 
 `schedule` is defined as:
 
@@ -298,7 +297,7 @@ Each `schedule` object has the following fields:
 ::::
 
 
-#### service_area
+### service_area
 
 `service_area` is defined as:
 
@@ -336,7 +335,7 @@ Each `service_area` object has the following fields:
 
 ::::
 
-#### language
+### language
 
 `language` is defined as:
 
@@ -375,7 +374,7 @@ Each `language` object has the following fields:
 ::::
 
 
-#### funding
+### funding
 
 `funding` is defined as:
 
@@ -412,7 +411,7 @@ Each `funding` object has the following fields:
 
 ::::
 
-#### accessibility
+### accessibility
 
 `accessibility` is defined as:
 
@@ -450,7 +449,7 @@ Each `accessibility` object has the following fields:
 ::::
 
 
-#### cost_option
+### cost_option
 
 `cost_option` is defined as:
 
@@ -488,7 +487,7 @@ Each `cost_option` object has the following fields:
 ::::
 
 
-#### program
+### program
 
 `program` is defined as:
 
@@ -527,7 +526,7 @@ Each `program` object has the following fields:
 ::::
 
 
-#### required_document
+### required_document
 
 `required_document` is defined as:
 
@@ -565,7 +564,7 @@ Each `required_document` object has the following fields:
 ::::
 
 
-#### contact
+### contact
 
 `contact` is defined as:
 
@@ -603,7 +602,7 @@ Each `contact` object has the following fields:
 
 ::::
 
-#### organization_identifier
+### organization_identifier
 
 `organization_identifier` is defined as:
 
@@ -641,7 +640,7 @@ Each `organization_identifier` object has the following fields:
 ::::
 
 
-#### attribute
+### attribute
 
 `attribute` is defined as:
 
@@ -681,7 +680,7 @@ Each `attribute` object has the following fields:
 ::::
 
 
-#### metadata
+### metadata
 
 `metadata` is defined as:
 
@@ -718,7 +717,7 @@ Each `metadata` object has the following fields:
 
 ::::
 
-#### meta_table_description
+### meta_table_description
 
 `meta_table_description` is defined as:
 
@@ -747,7 +746,7 @@ Each `meta_table_description` object has the following fields:
 
 ::::
 
-#### taxonomy
+### taxonomy
 
 `taxonomy` is defined as:
 
@@ -785,7 +784,7 @@ Each `taxonomy` object has the following fields:
 
 ::::
 
-#### taxonomy_term
+### taxonomy_term
 
 `taxonomy_term` is defined as:
 

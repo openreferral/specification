@@ -46,6 +46,7 @@ Contents:
    hsds/api_reference
    hsds/serialization
    hsds/identifiers
+   hsds/conformance
    hsds/variations_interoperability
    hsds/changelog
 
