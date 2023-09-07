@@ -11,7 +11,7 @@ This page provides, for each object in HSDS:
 
 For information on how to design API platforms to provide access to HSDS data, see the [API Reference](api_reference).
 
-For information on how to format HSDS data, including how to publish a tabular Data Package of HSDS data, see the [Publication Formats Reference](publication_formats_reference).
+For information on how to format HSDS data, including how to publish a tabular Data Package of HSDS data, see the [Serialization and Publication Formats](serialization).
 
 ## Schema structure
 

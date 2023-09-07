@@ -73,7 +73,7 @@ AKA 'the Open Referral format,' the HSDS is a data interchange format that enabl
 ## What is in the Human Services Data Specification (HSDS)?
 First, HSDS identifies a vocabulary of terms that describe what a service is, the institution that provides it, where the service can be accessed, and how to access it. These terms are designated as ‘required’ (meaning they must be included for data to be compliant) or ‘optional.’ The spec provides instructions for formatting these terms, with examples.
 
-On a more technical level, HSDS also includes a [logical model](./hsds/logical_model.md) that diagrams the relationships between these terms.
+On a more technical level, HSDS also includes a [logical model](./hsds/overview.md) that diagrams the relationships between these terms.
 
 Finally, HSDS provides guidance for structuring and packaging data so that it can be published on the web and/or exchanged between systems (see: [Github](https://github.com/codeforamerica/openreferral/specification) or our [documentation site](https://openreferral.readthedocs.io/)).
 

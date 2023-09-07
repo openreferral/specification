@@ -38,7 +38,7 @@ All APIs wishing to comply with this specification must ensure that query parame
 
 ## Metadata
 
-In HSDS each object has an optional `metadata` field containing a [metadata object](/schema_reference.md#metadata). Since an API response may contain a list of many objects &mdash; each with their own nested objects &mdash; this could result in a large quantity of metadata in the response.
+In HSDS each object has an optional `metadata` field containing a [metadata object](schema_reference.md#metadata). Since an API response may contain a list of many objects &mdash; each with their own nested objects &mdash; this could result in a large quantity of metadata in the response.
 
 It should be noted that the `metadata` field in each object is optional, and API implementors should consider what is an appropriate level of metadata to include in each response based on their use-case.
 

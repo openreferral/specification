@@ -45,6 +45,7 @@ Contents:
    hsds/schema_reference
    hsds/api_reference
    hsds/serialization
+   hsds/identifiers
    hsds/variations_interoperability
    hsds/changelog
 
@@ -57,7 +58,6 @@ Contents:
    hsds/names_and_descriptions
    hsds/schedules
    hsds/classifications
-   hsds/identifiers
    hsds/producing_sharing
    hsds/extending
 
