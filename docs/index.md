@@ -46,8 +46,8 @@ Contents:
    hsds/api_reference
    hsds/serialization
    hsds/identifiers
+   hsds/profiles
    hsds/conformance
-   hsds/variations_interoperability
    hsds/changelog
 
 
@@ -56,11 +56,11 @@ Contents:
    :caption: HSDS Implementation Guidance
 
    hsds/use_cases
+   hsds/using_profiles
    hsds/names_and_descriptions
    hsds/schedules
    hsds/classifications
    hsds/producing_sharing
-   hsds/extending
 
 .. toctree::
    :maxdepth: 1

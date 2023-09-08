@@ -50,7 +50,7 @@ According to [org-id.guide](http://docs.org-id.guide/en/latest/terminology/), th
 * **Third party identifiers** are identifiers drawn from lists that are assembled and maintained independently of the organizations they're identifying. They often assign identifiers to known organizations, but they do not have legal status. The proprietary [D-U-N-S](https://en.wikipedia.org/wiki/Data_Universal_Numbering_System) register maintained by Dun & Bradstreet is an example of a third party identifier.
 * **Local identifiers** are the internal system identifiers for organizations and entities within the context of a particular digital or information system, and cannot be expected to hold relevance outside of that system. An example of these would be an internal database identifier for an organization record in a software system or database.
 
-Where possible, HSDS publishers should seek to collect legal or Primary identifiers for organizations and publish these in their HSDS data. If these are not possible to collect for legal or practical reasons, then publishers should fall back on Secondary identifiers if available. If these are not available then Third Party identifiers should be used. Local identifiers may be used when no other identifiers are available.
+HSDS does not stipulate an official requirement to use a particular identifier however we hope that &mdash; where possible &mdash; HSDS publishers seek to collect legal or Primary identifiers for organizations and publish these in their HSDS data. If these are not possible to collect for legal or practical reasons, then we hope that publishers fall back on Secondary identifiers if available, and then Third Party identifiers if Secondary identifiers are not available. In some circumstances, Local identifiers may be the only identifiers available.
 
 Where a publisher has collected multiple different organization identifiers for an organization, they should publish each of these to promote interoperability and data analysis across as many different datasets as possible. The exception to this is Local Identifiers, which should be omitted if better identifiers are available.
 
@@ -65,5 +65,3 @@ There are other properties defined in `organization_identifier` which are necess
 
 * `organization_identifier/id` is the UUID for this specific `organization_identifier` object and used for Tabular serializations.
 * `organization_identifier/organization_id` is the UUID for the `organization` object which associated with this organization identifier. It should match the `organization/id` property of an `organization` elsewhere in the dataset. It is used for Tabular serializations but is not required in JSON as the `organization_identifier` object should be [dereferenced](serialization.md#dereferencing).
-
-
