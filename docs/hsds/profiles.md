@@ -26,16 +26,16 @@ In the case of the API specification file (`openapi.json`), modifications must b
 
 Profiles may choose any versioning scheme that is deemed suitable, but it is recommended to use [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-Profiles must be versioned independently of HSDS. For example if *Profile A* is derived from [HSDS 3.0](https://github.com/openreferral/specification/releases/tag/v3.0) then the *Profile A* must not be said to be *Profile A 3.0* unless its own version increments to `3.0` through its own upgrade and governance processes.
+Profiles should be versioned independently of HSDS. For example if *Profile A* is derived from [HSDS 3.0](https://github.com/openreferral/specification/releases/tag/v3.0) then the *Profile A* must not be said to be *Profile A 3.0* unless its own version increments to `3.0` through its own upgrade and governance processes.
 
-Profiles should adapt to upgrades in HSDS, which may be considered as 'upstream' for these purposes, however they may choose to ignore these upgrades. When a Profile adapts to changes in HSDS, it should update its own version number according to its versioning and governance processes.
+Profiles should adapt to upgrades in HSDS, which may be considered as 'upstream' for these purposes, however they may also choose to ignore these upgrades. When a Profile adapts to changes in HSDS, it should update its own version number according to its versioning and governance processes.
 
 ```{admonition} Worked Example:
 
 1. A new HSDS Profile, *Profile A* is released. It is based off of *HSDS 3.0*, however its internal version is `1.0` and it uses Semantic Versioning.
 2. *Profile A* develops new features independant of HSDS, which are considered MINOR changes to the Profile, and upgrades itself accordingly to version `1.1`.
 3. *HSDS 3.1* is released, incorporating some MINOR changes of its own which are considered desirable for *Profile A*. These changes also represent MINOR changes from the perspective of *Profile A*, so after bringing these changes through from *HSDS 3.1*, *Profile A* is now on version `1.2`.
-4. Some time later, *HSDS 3.2* is released which adds further MINOR changes to HSDS. These changes respond to similar demands as *Profile A* so implement some comparable features, but in a slightly different way. *Profile A* is still relevant, as it provides additional features and adaptions not represented in *HSDS 3.2*. After engagement with the community, the developers of *Profile A* decide that it would be best for interoperability to adapt to these changes. They bring through the changes from *HSDS 3.2* which replace some features of *Profile A*, representing a MAJOR change which is not backwards compatible for users of *Profile A 1.2*. *Profile A* is now on version `2.0`.
+4. Some time later, *HSDS 3.2* is released which adds further MINOR changes to HSDS. These changes respond to similar demands as *Profile A* so implement some comparable features, but in a slightly different way that is mutually incompatible with the features of *Profile A*. *Profile A* is still relevant as it provides additional features and adaptions not represented in *HSDS 3.2*. After engagement with the community, the developers of *Profile A* decide that it would be best to maintain interoperability with HSDS 3.2 and adapt *Profile A* to these changes. They bring through the changes from *HSDS 3.2* which replace some features of *Profile A*, representing a MAJOR change which is not backwards compatible for users of *Profile A 1.2*. *Profile A* is now on version `2.0`, being based on *HSDS 3.2*.
 
 ```
 

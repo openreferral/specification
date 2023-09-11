@@ -56,11 +56,11 @@ Contents:
    :caption: HSDS Implementation Guidance
 
    hsds/use_cases
+   hsds/mapping_guidance
+   hsds/extending
    hsds/using_profiles
-   hsds/names_and_descriptions
-   hsds/schedules
+   hsds/field_guidance
    hsds/classifications
-   hsds/producing_sharing
 
 .. toctree::
    :maxdepth: 1

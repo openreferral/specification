@@ -1,6 +1,9 @@
 Using Profiles
 =============================
 
+```{note}
+This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
+```
 As an international standard, HSDS provides a common core of defintions and objects for describing health, human, and social services as well as their locations and the organizations that provide them. This allows HSDS to acommodate a wide range of applications and provide value in a variety of use cases.
 
 Being an international standard, however, means that the needs of HSDS publishers and users are often significantly variable across varying contexts. In different geographies, sectors, and scenarios of usage, users may need different information about services, locations, and organizations.
@@ -37,7 +40,7 @@ You are encouraged to use existing profiles to publish HSDS data when suitable. 
 
 ### Known HSDS Profiles
 
-* [The Open Referral UK Profile](https://github.com/OpenReferralUK/uk-profile) (github)
+* [The Open Referral UK Profile](http://docs.openreferral.org/en/latest/)
 
 ## Developing a new Profile
 
