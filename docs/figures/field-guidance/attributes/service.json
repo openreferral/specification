@@ -1,0 +1,80 @@
+{
+  "services": [
+    {
+      "id": "72422080-aa96-418c-9ef3-f77d3e60aed7",
+      "name": "Kitten Time",
+      "description": "Time with Kittens!",
+      "status": "active",
+      "attributes": [
+        {
+          "id": "cb59e062-6e3f-451a-ab4f-5cc96bfdc172",
+          "taxonomy_term": {
+            "id": "8ba8f6d2-06d5-4a03-91c6-b87d99e3bbb9",
+            "name": "stress",
+            "description": "A Health Service for supporting people deal with stress, or aimed at reducing stress",
+            "taxonomy": "Fictional Health Service Taxonomy",
+            "taxonomy_details": {
+              "id": "34027579-8e06-4440-94d3-ea9fccf10d3f",
+              "name": "Fictional Health Service Taxonomy",
+	      "description": "An example taxonomy for describing different types of health services",
+              "uri": "https://fictional-health-service.example/taxonomies/health-service"
+            }
+          }
+        },
+        {
+          "id": "502b3383-de46-4b07-b110-76963acc4798",
+          "taxonomy_term": {
+            "id": "7856923f-2d44-4513-a239-29723b5350e5",
+            "name": "WORKPLACE",
+            "description": "A service which operates an outreach entering people's workplaces",
+            "taxonomy": "Fictional Service Location Descriptor Taxonomy",
+            "taxonomy_details": {
+              "id": "cba285aa-5ebc-43c8-909f-02c2ce128143",
+              "name": "Fictional Service Location Descriptor Taxonomy",
+	      "description": "An example taxonomy for desribing different types of service location",
+              "uri": "https://fictional-service-location-descriptor-taxonomy.example/taxonomy.json"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ae761ee1-73ba-44aa-b3d8-db7aa2d7394b",
+      "name": "Puppy Time",
+      "description": "Time with Puppies!",
+      "status": "active",
+      "attributes": [
+        {
+          "id": "3748b88b-2bcd-4294-8fcb-3e18e7158528",
+          "taxonomy_term": {
+            "id": "8ba8f6d2-06d5-4a03-91c6-b87d99e3bbb9",
+            "name": "stress",
+            "description": "A Health Service for supporting people deal with stress, or aimed at reducing stress",
+            "taxonomy": "Fictional Health Service Taxonomy",
+            "taxonomy_details": {
+              "id": "34027579-8e06-4440-94d3-ea9fccf10d3f",
+              "name": "Fictional Health Service Taxonomy",
+	      "description": "An example taxonomy for describing different types of health services",
+              "uri": "https://fictional-health-service.example/taxonomies/health-service"
+            }
+          }
+        },
+        {
+          "id": "101db525-2159-4f70-ba77-c4cf0aaa59bf",
+          "taxonomy_term": {
+            "id": "7856923f-2d44-4513-a239-29723b5350e5",
+            "name": "WORKPLACE",
+            "description": "A service which operates an outreach entering people's workplaces",
+            "taxonomy": "Fictional Service Location Descriptor Taxonomy",
+            "taxonomy_details": {
+              "id": "cba285aa-5ebc-43c8-909f-02c2ce128143",
+              "name": "Fictional Service Location Descriptor Taxonomy",
+	      "description": "An example taxonomy for desribing different types of service location",
+              "uri": "https://fictional-service-location-descriptor-taxonomy.example/taxonomy.json"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

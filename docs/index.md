@@ -60,7 +60,6 @@ Contents:
    hsds/extending
    hsds/using_profiles
    hsds/field_guidance
-   hsds/classifications
 
 .. toctree::
    :maxdepth: 1

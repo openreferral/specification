@@ -1,7 +1,7 @@
 Profiles Reference
 ==================
 
-*This section provides a normative reference for the HSDS Profiles mechanism. If you are looking for guidance on how to use or implement a HSDS Profile, please see the PROFILES GUIDANCE page.*
+*This section provides a normative reference for the HSDS Profiles mechanism. If you are looking for guidance on how to use or implement a HSDS Profile, please see the [Using Profiles](using_profiles) page.*
 
 
 As an international standard, HSDS provides a common core of defintions and objects for describing health, human, and social services as well as their locations and the organizations that provide them. This allows HSDS to acommodate a wide range of applications and provide value in a variety of use cases.
