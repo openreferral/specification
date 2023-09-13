@@ -44,7 +44,7 @@ It should be noted that the `metadata` field in each object is optional, and API
 
 ## Endpoint details
 
-This section contains details of each API endpoint. Each section presents an endpoint defined by the API and presents a technical reference for that endpoint including query parameters, status codes, and compliance rules for HSDS and Open Referral UK.
+This section contains details of each API endpoint. Each section presents an endpoint defined by the API and presents a technical reference for that endpoint including query parameters, status codes, and compliance rules for HSDS.
 
 ### The `/` endpoint
 
@@ -73,7 +73,6 @@ This section contains details of each API endpoint. Each section presents an end
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** Yes
-- **Required by Open Referral UK?** Yes
 ```
 
 #### Response details
@@ -111,7 +110,6 @@ This API response will return a JSON object containing the following key/value p
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** Yes
-- **Required by Open Referral UK?** Yes
 ```
 
 #### Response details
@@ -145,8 +143,6 @@ This API response will return [service](schema_reference.md#service) data.
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** Yes
-- **Required by Open Referral UK?** Yes
-- **Required parameters for Open Referral UK** page
 ```
 #### Response details
 
@@ -179,7 +175,6 @@ This API response will return [service](schema_reference.md#service) data.
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
-- **Required by Open Referral UK?** Yes
 ```
 
 #### Response details
@@ -213,8 +208,6 @@ This API response will return [taxonomy](schema_reference.md#taxonomy) data.
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
-- **Required by Open Referral UK?** Yes
-- **Required parameters for Open Referral UK** page
 ```
 #### Response details
 
@@ -247,7 +240,6 @@ This API response will return [taxonomy](schema_reference.md#taxonomy) data.
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
-- **Required by Open Referral UK?** No
 ```
 
 #### Response details
@@ -281,8 +273,6 @@ This API response will return [taxonomy terms](schema_reference.md#taxonomy_term
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
-- **Required by Open Referral UK?** No
-- **Required parameters for Open Referral UK** page
 ```
 
 #### Response details
@@ -316,7 +306,6 @@ This API response will return [taxonomy terms](schema_reference.md#taxonomy_term
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
-- **Required by Open Referral UK?** No
 ```
 
 #### Response details
@@ -350,8 +339,6 @@ This API response will return [organization](schema_reference.md#organization) d
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
-- **Required by Open Referral UK?** No
-- **Required parameters for Open Referral UK** page
 ```
 
 #### Response details
@@ -385,7 +372,6 @@ This API response will return [organization](schema_reference.md#organization) d
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
-- **Required by Open Referral UK?** Yes
 ```
 
 #### Response details
@@ -419,9 +405,6 @@ This API response will return [service at location](schema_reference.md#service_
 
 ```{admonition} The following compliance rules apply to this endpoint
 - **Required by HSDS?** No
-- **Required by Open Referral UK?** Yes
-- **Required parameters for Open Referral UK** page
-
 ```
 
 #### Response details
