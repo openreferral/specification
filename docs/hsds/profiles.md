@@ -64,19 +64,19 @@ Profiles are permitted a generous set of operations against the HSDS Specificati
 
 A Profile MAY:
 
-* Add new optional or required properties to its specification.
+* Add new optional or required properties to its specification. These SHOULD NOT overlap with terms already defined in HSDS.
 * Add new validation rules to its specification, including making existing HSDS properties 'required' and stipulating patterns or formats for conformance on existing HSDS properties.
-* Add new objects to its specification.
-* Add new API endpoints to its API specification.
+* Add new objects to its specification. These SHOULD NOT overlap with the semantics of objects already defined in HSDS.
+* Add new API endpoints to its API specification. These SHOULD NOT overlap with the intended use of API Endpoints defined in the HSDS API specification.
 * Recommend or require the use of particular value sets such as taxonomies or enumerations.
 
 #### Overriding the HSDS Specification
 
 A Profile MAY:
 
-* remove properties and their validation rules from the HSDS specifications by overriding their definitions with `null`.
-* remove entire objects from the HSDS Specification by overriding its object schema with `null`.
-* remove API endpoints from the API specification by overriding their definitions with `null`.
+* remove properties and their validation rules from the HSDS specifications by overriding their definitions with `null`. These MUST NOT then be replaced by alternative properties which have the same semantics as the removed properties.
+* remove entire objects from the HSDS Specification by overriding its object schema with `null`. These MUST NOT then be replaced by alternative objects which have the same semantics as the removed object.
+* remove API endpoints from the API specification by overriding their definitions with `null`. These MUST NOT bee replaced by alternative API endpoints which return the same values and take the same parameters as the removed endpoints.
 * override constraints on HSDS properties (e.g. string format requirements) by defining new constraints which will replace those defined in the HSDS Specification.
 
 ### Serializing to Tabular Data Packages

@@ -104,7 +104,7 @@ In the first two `schedule` objects the non-iCal fields `valid_from` and `valid_
 
 The final `schedule` object in the array omits the `valid_from` and `valid_to`because the RRULE is limited by its nature and it specifies when the series of events starts and ends.
 
-## Classifications, Attributesa, and Taxonomies
+## Classifications, Attributes, and Taxonomies
 
 HSDS is focused on providing information about services; it is not designed to be a taxonomy interchange format. Therefore, the features provided by HSDS are intended to be sufficient for users to transfer enough information about a taxonomy to make the data about services be useful. They are not intended to replace or stand in for existing taxonomy and classification system datasets, which should be defined externally.
 
