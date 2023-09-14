@@ -11,15 +11,19 @@ HSDS stipulates that the values in all `id` properties must conform to the *Univ
 
 A number of tools exist to support publishers generating UUIDs:
 
-* [Online UUID Generator](https://www.uuidgenerator.net/) (web)
-* [uuidgen](https://www.man7.org/linux/man-pages/man1/uuidgen.1.html) is available in the repos of many GNU/Linux and BSD systems (CLI)
-* UUID support was added to MySQL in [version 8.0](https://dev.mysql.com/blog-archive/mysql-8-0-uuid-support/) (database software)
-* PostgreSQL provides [UUID functions](https://www.postgresql.org/docs/current/functions-uuid.html) (database software)
-* MongoDB provides a [UUID function](https://www.mongodb.com/docs/manual/reference/method/UUID/) (database software)
-* [libuuid](https://sourceforge.net/projects/libuuid/files/) is a portable library for C to generate UUIDs (programming library)
-* Python3 provides a [uuid object](https://docs.python.org/3/library/uuid.html) (programming library)
-* There is a [uuid Crate](https://docs.rs/uuid/latest/uuid/#) available for Rust (programming library)
-* There is a [uuid package](https://www.npmjs.com/package/uuid) available for NodeJS via npm (programming library)
+* Web Tools
+  * [Online UUID Generator](https://www.uuidgenerator.net/)
+* CLI or Desktop Tools
+  * [uuidgen](https://www.man7.org/linux/man-pages/man1/uuidgen.1.html) is available in the repos of many GNU/Linux and BSD systems
+* Database Tools
+  * UUID support was added to MySQL in [version 8.0](https://dev.mysql.com/blog-archive/mysql-8-0-uuid-support/) 
+  * PostgreSQL provides [UUID functions](https://www.postgresql.org/docs/current/functions-uuid.html) 
+  * MongoDB provides a [UUID function](https://www.mongodb.com/docs/manual/reference/method/UUID/) 
+* Programming Libraries
+  * [libuuid](https://sourceforge.net/projects/libuuid/files/) is a portable library for C to generate UUIDs 
+  * Python3 provides a [uuid object](https://docs.python.org/3/library/uuid.html) 
+  * There is a [uuid Crate](https://docs.rs/uuid/latest/uuid/#) available for Rust 
+  * There is a [uuid package](https://www.npmjs.com/package/uuid) available for NodeJS via npm 
 
 There are likely many more suitable for your needs.
 
