@@ -40,7 +40,7 @@ You are encouraged to use existing profiles to publish HSDS data when suitable. 
 
 ### Known HSDS Profiles
 
-* [The Open Referral UK Profile](http://docs.openreferral.org/en/latest/)
+* [The Open Referral UK Profile](https://docs.openreferraluk.org/en/latest/)
 
 ## Developing a new Profile
 
