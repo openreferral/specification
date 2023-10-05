@@ -63,7 +63,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Open Referral Initiative
+   :caption: About the Open Referral Initiative
 
    initiative/index
    design_principles
