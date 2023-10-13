@@ -13,6 +13,8 @@ Open Referral's agenda is set by the prerogatives of a set of four types of user
 
  Read more about each of these personas in [our Types of Use / User Personas documentation](https://docs.openreferral.org/en/latest/initiative/index.html?highlight=types%20of%20use#types-of-use-and-user-personas). 
 
+Practically speaking, *database administrators are the primary type of user* of HSDS and associated tools. It is still important to understand the needs of other types of users – as database administrators work to meet such needs – so we filter our understanding of end users' needs through the lense of data administrators' perspectives. 
+
 
 **Current Human Services Data Specification Capabilities**
 
