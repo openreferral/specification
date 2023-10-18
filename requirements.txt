@@ -191,7 +191,7 @@ typing-extensions==4.5.0
     # via myst-parser
 uri-template==1.2.0
     # via jsonschema
-urllib3==1.26.15
+urllib3==1.26.18
     # via
     #   requests
     #   transifex-client
