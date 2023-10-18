@@ -49,6 +49,7 @@ Contents:
    hsds/profiles
    hsds/conformance
    hsds/changelog
+   hsds/hsds_faqs
 
 
 .. toctree::

@@ -1,4 +1,5 @@
-# Frequently Asked Questions
+FAQs
+====================
 
 This FAQ provides context for the Open Referral Initiative and its Human Services Data Specification (HSDS). You can read more about Open Referral at [https://openreferral.org](https://openreferral.org)
 
