@@ -19,7 +19,7 @@ Learn more about the why's, how's, and who's of the Open Referral Initiative in 
 
 **Join Open Referral's Community of Practice**
 
-* We are formally convened [in this Google Group](https://groups.google.com/g/openreferral).
+* We are formally convened [in this Community Forum](https://forum.openreferral.org/).
 * You can also join [our Slack team](https://openreferral.org/get-involved/join-our-slack-team/).
 * Sign up for our email newsletter [on our homepage](https://openreferral.org/).
 
@@ -63,7 +63,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Open Referral Initiative
+   :caption: About the Open Referral Initiative
 
    initiative/index
    design_principles
