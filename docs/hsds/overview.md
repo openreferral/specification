@@ -29,7 +29,7 @@ HSDS designates four objects as "core". These are the objects modelling concepts
 1. `organization` &ndash; See [Organization](schema_reference.md#organization). Organizations that provide services.
 2. `service` &ndash; See [Service](schema_reference.md#service). The service itself, with descriptions and classifications to allow potential service users to identify services which may meet their needs.
 3. `location` &ndash; See [Location](schema_reference.md#location). Locations where services are delivered either physically or virtually (e.g. over the phone or internet).
-4. `service_at_location` &ndash; See [Service at Location](schema_reference.md#service_at_location). A link between a `service` and a `location` to record where particular servics are available. This can also be used to override any default `service` or `location` information with information specific to a service at a specific location.
+4. `service_at_location` &ndash; See [Service at Location](schema_reference.md#service_at_location). A link between a `service` and a `location` to capture location-specific information about services that are provided at multiple locations. This can also be used to override any default `service` or `location` information with information specific to a service at a specific location.
 
 Additional information about organizations, locations, and services is held in separate objects. Full details are available on the [Schema Reference](schema_reference) page.
 
