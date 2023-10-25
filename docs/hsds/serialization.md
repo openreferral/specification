@@ -42,3 +42,44 @@ Instead of dereferencing and embedding objects such as in the canonical JSON ser
 We provide an existing package descriptor generated directly from the canonical HSDS JSON Schema files. It is available [here](../../datapackage.json) and contains details of field names and file names for this serialization. Publishers should use this to support their Tabular Data Package serialization rather than develop their own `datapackage.json` file. Examples CSV files are available in the HSDS Github repo [here](https://github.com/openreferral/specification/tree/3.0/examples/csv).
 
 Prior to HSDS 3.0, Tabular Data Packages were the primary publication format for HSDS data.
+
+### Entity Relationship Diagrams
+
+The following diagrams are generated directly from the [datapackage.json](https://raw.githubusercontent.com/openreferral/specification/3.0/datapackage.json) file. They are representative of the Tabular Data Package serialization of HSDS but not the JSON model.
+
+#### Core Objects only
+
+```{eval-rst}
+
+`[enlarge] <../_images/entity_relationship_diagram_core_tables.svg>`_
+
+.. raw:: html
+    :file: ../extras/_images/entity_relationship_diagram_core_tables.svg
+    
+:download:`[download] <../extras/_images/entity_relationship_diagram_core_tables.svg>`
+```
+
+#### Full
+
+<div style="background-color: #77DD77;">
+
+Core objects are shown in green.
+
+</div>
+
+<div style="background-color: #AEC6CF;">
+
+Other objects are shown in blue.
+
+</div>
+
+```{eval-rst}
+
+`[enlarge] <../_images/entity_relationship_diagram.svg>`_
+
+.. raw:: html
+    :file: ../extras/_images/entity_relationship_diagram.svg
+    
+:download:`[download] <../extras/_images/entity_relationship_diagram.svg>`
+
+```
