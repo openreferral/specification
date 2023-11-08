@@ -12,13 +12,13 @@ To this end, HSDS provides the [Profiles mechanism](profiles) which allows the c
 
 Profiles may do the following:
 
-* extend the HSDS specification by:
+* extend HSDS by:
   * adding new optional or mandatory fields
   * adding new validation rules (including making optional fields 'required')
   * adding new structures
   * adding new API endpoints to the API specification
   * recommending the use of particular value sets such as taxonomies or enumerations.
-* overriding or removing parts of the HSDS specification†:
+* overriding or removing parts of HSDS†:
   * remove fields and their validation rules
   * remove entire schemas/Tables/Objects
   * remove API endpoints from the API specification
