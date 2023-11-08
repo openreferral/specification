@@ -29,7 +29,7 @@ Publishers may find the [compiled schemas](https://github.com/openreferral/speci
 
 There are additional considerations for publishing HSDS JSON through an API.
 
-Due to the nature of HSDS' data model, the canonical HSDS JSON Schemas do not provide an official packaging format for publishing or exchanging multiple records in a single file. To provide this function in HSDS APIs, the [API Reference](api_reference) provides an embedded `Page` schema which is used in several endpoints. `Page` is documented on the [API Reference](api_reference.md#lists)
+Due to the nature of HSDS' data model, the canonical HSDS JSON Schemas do not provide an official packaging format for publishing or exchanging multiple records in a single file. To provide this function in HSDS APIs, the [API Reference](api_reference) provides an embedded `Page` schema which is used in several endpoints. `Page` is documented on the [API Reference](api_reference.md#lists-and-pagination)
 
 `Page` is not considered part of the HSDS 3.0 data model, but it is part of the API Reference. Therefore publishers seeking compliance with the HSDS 3.0 API Reference should ensure that they are using this correctly.
 

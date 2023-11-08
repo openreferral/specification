@@ -13,20 +13,21 @@ The Open Referral initiative used multiple methods of research and development t
 
 First, leaders of our pilot projects worked with stakeholders in their communities to develop a series of ‘user profiles’ that described the needs and behaviors of specific users.
 
-Then, at our Open Referral workshop in the summer of 2014, we compiled a set of ‘user personas’ that each describe one of four broad categories of use: seeking help, providing help, analyzing data, and administering data. [Read here for the set of user personas](http://docs.openreferral.org/en/latest/initiative/index.html#types-of-use-and-user-personas) developed through activities such as [the Open Referral workshop.](https://docs.google.com/document/d/1kivG6TTw1LKhJRAQHeqH7fTIxZZaDojXRRBYEd_ltWw/edit)
+Then, at our Open Referral workshop in the summer of 2014, we compiled a set of ‘user personas’ that each describe one of four broad categories of use: seeking help, providing help, analyzing data, and administering data. [Read here for the set of user personas](../initiative/index.md#types-of-use-and-user-personas) developed through activities such as [the Open Referral workshop.](https://docs.google.com/document/d/1kivG6TTw1LKhJRAQHeqH7fTIxZZaDojXRRBYEd_ltWw/edit)
 
 With this set of insights, we drafted an initial version of the specification that was then reviewed through several rounds of community feedback. During this time, members of our diverse network debated, clarified, and expanded the contents.
 
 Finally, we conducted initial tests of HSDS by using it to transform resource directory databases from pilot projects around the country.
 
 ## Who is the HSDS for?
-The primary users of HSDS are data administrators (who are responsible for managing systems that strive to meet the needs of other users). [Read our user personas here.](https://docs.openreferral.org/en/latest/initiative/index.html?highlight=types%20of%20use#types-of-use-and-user-personas)
+The primary users of HSDS are data administrators (who are responsible for managing systems that strive to meet the needs of other users). [Read our user personas here.](../initiative/index.md#types-of-use-and-user-personas)
 
 We define ‘data administrator’ broadly: while some data admins will be sophisticated managers of enterprise-grade referral systems, the vast majority of people who produce resource directory data are working with simpler technology such as Access, Excel, or even Word. Our goal is for HSDS to be usable by both the 2-1-1 resource data specialist and the IT volunteer who is helping out the neighborhood food pantry.
 
 ## What is in the HSDS?
 First, HSDS identifies a vocabulary of terms that describe what a service is, the institution that provides it, where the service can be accessed, and how to access it. These terms are designated as ‘required’ (meaning they must be included for data to be compliant) or ‘optional.’ The spec provides instructions for formatting these terms, with examples.
-On a more technical level, HSDS also includes a [logical model](https://docs.openreferral.org/en/documentation-review/hsds/overview.html) that diagrams the relationships between these terms.
+
+On a more technical level, HSDS also includes a [logical model](serialization) that diagrams the relationships between these terms.
 
 Finally, HSDS provides guidance for structuring and packaging data so that it can be published on the web and/or exchanged between systems. See our [Github].(https://github.com/codeforamerica/openreferral/specification)
 
@@ -83,7 +84,7 @@ In 2017, Open Referral developed a set of API protocols [known as the Human Serv
 With HSDS 3.0, we have consolidated these API protocols into the main specifications themselves – to simplify our products and promote an API-forward strategy. The primary format for HSDS is now JSON Schema, which can aid implementers in deploying or standardizing their own APIs for resource directory data access and exchange. 
 
 ## How does Open Referral handle eligibility criteria?
-Good question. [Our schema has a field for `eligibility_description` of a `service.`](https://docs.openreferral.org/en/latest/hsds/schema_reference.html#service) Beyond that, we don't currently specify a standardized method for structuring eligibility criteria. The kinds of eligibility rules are so variable and often complex and nuanced that we have not tried to develop a standardized set of them. (Expect future cycles of the Open Referral initiative to take on these issues more directly; however, for now we are merely looking to learn from the different ways in which various users address these common problems.)
+Good question. [Our schema has a field for `eligibility_description` of a `service.`](schema_reference.md#service) Beyond that, we don't currently specify a standardized method for structuring eligibility criteria. The kinds of eligibility rules are so variable and often complex and nuanced that we have not tried to develop a standardized set of them. (Expect future cycles of the Open Referral initiative to take on these issues more directly; however, for now we are merely looking to learn from the different ways in which various users address these common problems.)
 
 ## What if the Human Service Data Specification requires kinds of information that I don't collect?
 The Open Referral format has been developed to require a pretty minimal set of information. If your resource directory doesn’t contain certain required elements, we may need to get creative. Ask in [our Issues queue](https://github.com/openreferral/specification/issues) or [our Forum](https://forum.openreferral.org/) for clarification and context, and we'll try to answer you promptly.
@@ -92,7 +93,7 @@ The Open Referral format has been developed to require a pretty minimal set of i
 
 That’s Ok! The Human Services Data Specification allows extensions – i.e. custom fields that can include information that is important for your use case(s) but not defined in the standard itself. The only trade-off is that – since the specification doesn’t know about your fields – any HSDS validation and quality-checking tools will be unable to validate your additional fields.
 
-If you need a significant number of extensions in order to capture information that is not included in the core specification, you might want to consider developing a [HSDS Profile](https://docs.openreferral.org/en/documentation-review/hsds/profiles.html). This will allow you to define and document  your important fields in the Profile, allowing others to see them and allowing tools to validate them. We’d also love to learn from your experience, so please get in touch and share your thoughts on your information and HSDS.
+If you need a significant number of extensions in order to capture information that is not included in the core specification, you might want to consider developing a [HSDS Profile](profiles). This will allow you to define and document  your important fields in the Profile, allowing others to see them and allowing tools to validate them. We’d also love to learn from your experience, so please get in touch and share your thoughts on your information and HSDS.
 
 ## What languages is this project in?
 Currently Open Referral is in English, though we would welcome opportunities to support language localisation.

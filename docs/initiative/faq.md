@@ -1,4 +1,5 @@
-# Strategic Questions 
+Strategic Questions 
+======================
 
 ## What’s the problem you are trying to address? 
 See our Strategic Overview [here](https://openreferral.org/about/strategic-overview/). 
@@ -19,7 +20,7 @@ You can learn more about the industry of Information-and-Referral, and Open Refe
 ## Who are your users? 
 The primary users of HSDS are people who manage resource directory information systems. Of course, these users are themselves intermediaries, working to meet the needs of other users. So let’s back up to look at the big picture. 
 
-We’ve identified four primary types of use that are relevant to this domain. [Read more here for full personas and user stories](./initiative/index.md#types-of-use-and-user-personas).
+We’ve identified four primary types of use that are relevant to this domain. [Read more here for full personas and user stories](index.md#types-of-use-and-user-personas).
 
 - **Seeking help** (service users, clients, etc)
 - **Providing help** (service providers, i.e. anyone helping someone find information about services)
@@ -224,7 +225,7 @@ Reach out to explore more opportunities.
 ## What is Open Referral?
 The Open Referral Initiative is a network of people and organizations working to promote the accessibility of information about health, human, and social services — i.e. community resource directory data. The Open Referral community is primarily assembled in [our Forum](https://forum.openreferral.org/). We also use a [Slack team](https://openreferral.org/get-involved/join-our-slack-team/) for chat.
 
-Open Referral’s primary product is the [Human Service Data Specification (HSDS, AKA ‘the Open Referral format’)](../hsds/overview) – a set of data exchange protocols that enables resource directory data to be shared among heterogeneous information systems. These artifacts are freely accessible and adaptable by anyone (in accordance with our stated [principles and values](.index.html#values-and-principles)).
+Open Referral’s primary product is the [Human Service Data Specification (HSDS, AKA ‘the Open Referral format’)](../hsds/overview) – a set of data exchange protocols that enables resource directory data to be shared among heterogeneous information systems. These artifacts are freely accessible and adaptable by anyone (in accordance with our stated [principles and values](index.md#values-and-principles)).
 
 Open Referral’s ecosystem also includes a range of open source tools and web applications that facilitate the flow of resource directory information. See [examples of these tools and apps here](https://openreferral.org/about/technology-overview/). 
 
@@ -243,7 +244,7 @@ Various tasks in this network are taken on at various times by members who feel 
 
 ## How are decisions made? 
 
-[Learn more here in our project documentation](.index.md#governance-and-participation). Our governance model is structured around three activities: 1) a semi-regular Assembly (ie video call) open to all participants [see an archive of these videos [here](https://www.youtube.com/channel/UCtbojLVi_ti_MWyGD2-AM4A)], where announcements are shared and feedback is received; 2) convenings of diverse stakeholders in Open Referral workshops, where we deliberate on difficult issues and set priorities; and 3) ad hoc ‘workgroups’ consisting of leaders with a varied set of perspectives and experiences, which develop proposals for review and approval by the community at large. 
+[Learn more here in our project documentation](index.md#governance-and-participation). Our governance model is structured around three activities: 1) a semi-regular Assembly (ie video call) open to all participants [see an archive of these videos [here](https://www.youtube.com/channel/UCtbojLVi_ti_MWyGD2-AM4A)], where announcements are shared and feedback is received; 2) convenings of diverse stakeholders in Open Referral workshops, where we deliberate on difficult issues and set priorities; and 3) ad hoc ‘workgroups’ consisting of leaders with a varied set of perspectives and experiences, which develop proposals for review and approval by the community at large. 
 
 Of all the feedback received from many different contributors, we assign priority to the perspectives of the lead stakeholders of our pilot projects. This feedback is submitted to Open Referral's deputized technical leads, who ultimately make proposals, implement decisions, and document outcomes about our specifications. Through this process, stakeholders, workgroup members, or technical leads can also propose methods for future review and decision-making – subject to consent of the group.
 
@@ -289,7 +290,7 @@ If you’re interested in deploying or helping to develop such tools, we want to
 
 ## If I maintain a community resource directory — or if I partner with an organization that does — how would I get started?
 
-You can start by testing the viability of our format for your context. That may entail mapping your database's schema to [the Human Services Data Specification’s schema](.schema_reference.md)
+You can start by testing the viability of our format for your context. That may entail mapping your database's schema to [the Human Services Data Specification’s schema](../hsds/schema_reference)
 Once you've mapped your schema to ours, analyze the gaps. (You can ask questions or submit suggestions for improvements to our schema in our [Issues Queue](https://github.com/openreferral/specification/issues). (Read more in [our Contributors Guide](https://github.com/openreferral/specification/blob/master/CONTRIBUTING.md)).
 
 Then you can write a script to transform your data into this open format. We can likely help you with this process.
@@ -328,7 +329,7 @@ You may be one of our most important kinds of participants. Our work only succee
 
 **“I don’t code, I’m just a citizen and I want to help!”**
 
-There is LOTS of work to be done by people who don’t code! First, read through our [documentation](.index.md), and ask us questions about anything that’s unclear. Then, for example, you might start learning about how information about services gets collected in your community. Talk to the people who are already producing resource directories; see if they’re interested in finding new ways to produce and/or use this information. If so, write a summary of how they do their work and what they say that they need. 
+There is LOTS of work to be done by people who don’t code! First, read through our [documentation](index.md), and ask us questions about anything that’s unclear. Then, for example, you might start learning about how information about services gets collected in your community. Talk to the people who are already producing resource directories; see if they’re interested in finding new ways to produce and/or use this information. If so, write a summary of how they do their work and what they say that they need. 
 
 **NOTE:** The most powerful way to help may be to find and build relationships with a group of people who have all of the above experiences. If you can **form a team in your community** consisting of some combination of civic technologists, service providers, with support from local government and/or funders, we will help you launch a pilot Open Referral project!
 

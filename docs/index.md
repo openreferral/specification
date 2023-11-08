@@ -67,9 +67,9 @@ Contents:
    :caption: Open Referral Initiative
 
    initiative/index
-   design_principles
-   faq
-   credits
-   privacy-notice
+   initiative/design_principles
+   initiative/faq
+   initiative/credits
+   initiative/privacy-notice
 ```
 
