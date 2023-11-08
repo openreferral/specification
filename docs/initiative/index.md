@@ -199,11 +199,12 @@ Workgroups may be formed by any set of members to operate in accordance with the
 
 Workgroups should demonstrate that aspects of any proposal put forth are directly informed by perspectives and interests expressed by representatives of Open Referral’s [primary beneficiary groups](#types-of-use-and-user-personas) – and are expected to field and respond accordingly to any such feedback received externally. In instances where rough consensus cannot be attained, even after parties have put forth and evaluated alternative proposals and feedback from lead stakeholders of pilot projects has been solicited, Core Team leads reserve the right to make decisions (and will appropriately document the rationale for decisions and ensure the result of those decisions are subject to subsequent evaluation and possible revision). 
 
-**Assemblies and Workshops** – gatherings open to all members of the community are held on a quasi-regular basis to facilitate alignment around the mission of the Initiative.
+**Technical Standups and Community Assemblies** – In semi-regular meetings open to all members of the community, we facilitate alignment around the mission of the Initiative.
 
-Leadership and technical implementers regularly convene at Assemblies (a brief open meeting, held roughly monthly). The Assemblies are open; you can [join the Forum](https://forum.openreferral.org/) and request to be added to the calendar. 
+Leadership and technical implementers convene monthly at brief Technical Standups.  At semi-regular Assemblies, all are welcome to discuss issues of interest to the commnunity as a whole. Anyone can [join the Forum](https://forum.openreferral.org/) and request to be added to the calendar for these meetings. 
 
-We also host quasi-annual Workshops (longer open meetings) in which we share, learn, deliberate, and generate proposals. Workshops and Assemblies are not decision-making events, but are critical opportunities for sharing knowledge, building relationships, and setting the agenda for future development. These events can generate and prioritize “user stories,” feature backlogs, and possible courses of action to meet the needs expressed by those user stories. ([See this report back from the inaugural workshop.](https://docs.google.com/document/d/1kivG6TTw1LKhJRAQHeqH7fTIxZZaDojXRRBYEd_ltWw/edit#))
+**Summits**
+We also host quasi-annual Summits (longer open meetings) in which we convene share, learn, deliberate, and generate proposals. Summits are not decision-making events, but are critical opportunities for sharing knowledge, building relationships, and setting the agenda for future development. These events can generate and prioritize “user stories,” feature backlogs, and possible courses of action to meet the needs expressed by those user stories. ([See this report back from the inaugural workshop.](https://docs.google.com/document/d/1kivG6TTw1LKhJRAQHeqH7fTIxZZaDojXRRBYEd_ltWw/edit#))
 
 **Local pilots** implementing data exchanges, evaluating specs, planning for the future.
 
