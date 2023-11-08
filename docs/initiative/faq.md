@@ -185,7 +185,7 @@ The 2-1-1 taxonomy is widely used among certified providers of ‘information an
 
 We hold **open questions** about how the field might move beyond such barriers. Because 2-1-1 Taxonomy is such a valuable knowledge resource for the sectors of health, human, and social services – and because its true value only grows with the number of users – we believe it should be freely accessible for anyone to use. 
 
-How would the maintenance of such a resource possibly be sustained as a public good, given that it requires resources to maintain? We think that’s a great question. We should ask it, and seek answers! What do you think? [Let’s talk](info@openreferral.org) :)
+How would the maintenance of such a resource possibly be sustained as a public good, given that it requires resources to maintain? We think that’s a great question. We should ask it, and seek answers! What do you think? [Let’s talk](mailto:info@openreferral.org) :)
 
 ## Is Open Referral ‘scraping’ 2-1-1 data?
 No. Open Referral is not a database or a platform. We help other organizations evolve their resource databases into open platforms. 
@@ -224,7 +224,7 @@ Reach out to explore more opportunities.
 ## What is Open Referral?
 The Open Referral Initiative is a network of people and organizations working to promote the accessibility of information about health, human, and social services — i.e. community resource directory data. The Open Referral community is primarily assembled in [our Forum](https://forum.openreferral.org/). We also use a [Slack team](https://openreferral.org/get-involved/join-our-slack-team/) for chat.
 
-Open Referral’s primary product is the [Human Service Data Specification (HSDS, AKA ‘the Open Referral format’)](..index.md) – a set of data exchange protocols that enables resource directory data to be shared among heterogeneous information systems. These artifacts are freely accessible and adaptable by anyone (in accordance with our stated [principles and values](.index.html#values-and-principles)).
+Open Referral’s primary product is the [Human Service Data Specification (HSDS, AKA ‘the Open Referral format’)](../hsds/overview) – a set of data exchange protocols that enables resource directory data to be shared among heterogeneous information systems. These artifacts are freely accessible and adaptable by anyone (in accordance with our stated [principles and values](.index.html#values-and-principles)).
 
 Open Referral’s ecosystem also includes a range of open source tools and web applications that facilitate the flow of resource directory information. See [examples of these tools and apps here](https://openreferral.org/about/technology-overview/). 
 
