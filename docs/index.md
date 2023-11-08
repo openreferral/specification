@@ -49,6 +49,7 @@ Contents:
    hsds/profiles
    hsds/conformance
    hsds/changelog
+   hsds/hsds_faqs
 
 
 .. toctree::
@@ -66,9 +67,9 @@ Contents:
    :caption: About the Open Referral Initiative
 
    initiative/index
-   design_principles
-   faq
-   credits
-   privacy-notice
+   initiative/design_principles
+   initiative/faq
+   initiative/credits
+   initiative/privacy-notice
 ```
 
