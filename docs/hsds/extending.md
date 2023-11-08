@@ -5,46 +5,14 @@ Extending HSDS
 This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
 ```
 
-HSDS provides a common core for describing services, and includes a range of common fields, many of which are optional.
+Since service provision is local, there may be some fields of data which are important to include but are not a good fit for existing HSDS fields. 
 
-However, service provision is usually local, and so in a particular context there's likely to be fields that aren't relevant, and information that's important but isn't included in HSDS.
+The [Profile mechanism](profiles) is a way to formally extend HSDS with new properties, validation rules, and structures suitable for a local context. Publishers may want to develop a HSDS Profile for a particular geographic or legal boundary, or for a specific conceptual area of service delivery. See [Using Profiles](using_profiles) for more guidance on Profiles including how to publish data to an existing Profile and how to begin implementing a Profile.
 
-HSDS doesn't have a formal extension mechanism, but does suggest several patterns in which communities wanting to share information among themselves can use HSDS as a starting point
+In some cases, a publisher may only need to include a small amount of additional data in a HSDS publication. This may not necessitate or justify the effort of developing a formal Profile. As per the [Conformance](conformance) page in the Reference section, a HSDS publication is still conformant even it it includes properties and structures not defined in HSDS or one of its Profiles &ndash; as long as there isn't already a suitable property in HSDS. This means publishers and implementors may simply include new properties to meet their individual or local needs.
 
-## Patterns
+At a technical level, the HSDS Schemas permit the inclusion of new properties not defined in the schema itself. This means that data including additional properties will validate against the HSDS Schemas providing that it is otherwise correct.
 
-### Constrain
+It is important for additional properties to be documented, so that systems and humans can understand what they mean. Publishers and implementers should provide accessible documentation for any new properties they've added to their HSDS publication.
 
-Using the "constrain" pattern, a community can decide on certain fields or tables to not use at all.
-
-### Extend
-
-Using the "extend" pattern, a community can decide on a common approach to including information that the schema doesn't accomodate.
-
-If a community chooses to extend the standard, then we encourage them to share their work with the wider OpenReferral community so that others facing similar issues can learn from them and provide feedback.
-
-### Constrain & Extend
-
-The "constrain & extend" pattern combines the two previous patterns.
-
-## Principles
-
-When extending, implementations should try to follow the design of HSDS as closely as possible.
-
-If a field exists that's close to one that you need, then it's better to use it and describe how it's used in your documentation.
-
-## Engaging the Community
-
-The Open Referral community includes many people who've used HSDS in a range of contexts, from developing national ecosystems for sharing data, to deploying simple systems for use in low-tech community environments. They're always happen to share their experience. 
-
-## Sharing Your Work
-
-The Open Referral initiative is based on open sharing of ideas, code and data, because this leads to better quality work and more useful systems through interoperability. If you're able to share your changes to HSDS with the community, you can expect helpful feedback, and can contribute to improving the standard. 
-
-It's good practice to create a schema to reflect your data when extending or constraining the standard, so that you can continue to validate data and describe your data to potential users. We recommend creating a [JSON Merge Patch](https://tools.ietf.org/html/rfc7386) to share your work with the wider OR community, so that the changes are clear. There's some [helpful Python tooling](https://github.com/OpenDataServices/json-merge-patch) to help with this. 
-
-## Developing the Standard
-
-Extending the standard is a way to try out potential changes to the standard, so extensions play an important part in preparing for future releases. 
-
-
+HSDS can only be improved by participation, so we encourage publishers who've extended the data model either formally through Profiles or informally through additional properties to share their work via our [community forums](https://forum.openreferral.org/).

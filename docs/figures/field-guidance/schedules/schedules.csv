@@ -1,0 +1,4 @@
+id,service_id,description,dtstart,until,valid_from,valid_to,freq,byday,opens_at,closes_at
+ceee812e-6ed2-4fe1-87d1-2c88c2d6b8b3,ac148810-d857-441c-9679-408f346de14b,"Monday to Thursday, 9am to 12pm",2020-04-01,null,2020-04-01,2020-12-20,WEEKLY,"MO,TU,WE,TH",09:00:00Z,12:00:00Z
+887404d7-6479-48da-bb86-b1592da85aef,ac148810-d857-441c-9679-408f346de14b,"Monday to Thursday, 3pm to 5pm",2020-04-01,null,2020-04-01,2020-12-20,WEEKLY,"MO,TU,WE,TH",15:00:00Z,17:00:00Z
+23f3f9c6-431d-4e85-b59b-309d6d70274e,ac148810-d857-441c-9679-408f346de14b,"First Saturday of the month from July-Nov, 9am-5pm",2020-07-04,2020-11-07,null,null,MONTHLY,1SA,09:00:00Z,17:00:00Z

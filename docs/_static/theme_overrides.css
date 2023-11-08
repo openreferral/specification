@@ -6,8 +6,10 @@
 .wy-table-responsive {
     margin-bottom: 24px;
     max-width: 100%;
-    overflow: visible !important;
+/*    overflow: visible !important; */ /* This was the old value which enforced bisibility of the tables, breaking them out of their boundaries. We've replaced this with a scrollbar */
+    overflow-y: scroll;
 }
+
 
 /* To fit the ERD's on HSDS/Logical Model page properly. It's the same content as the theme does for img's. */
 .rst-content svg {
