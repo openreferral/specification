@@ -1,0 +1,3 @@
+id,name,description,uri
+34027579-8e06-4440-94d3-ea9fccf10d3f,Fictional Health Service Taxonomy,An example taxonomy for describing different types of health services,https://fictional-health-service.example/taxonomies/health-service
+cba285aa-5ebc-43c8-909f-02c2ce128143,Fictional Service Location Descriptor Taxonomy,An example taxonomy for desribing different types of service location,https://fictional-service-location-descriptor-taxonomy.example/taxonomy.json

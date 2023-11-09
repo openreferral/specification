@@ -1,0 +1,44 @@
+{
+  "services": [
+    {
+      "id": "ac148810-d857-441c-9679-408f346de14b",
+      "name": "Community Counselling",
+      "description": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
+      "status": "active",
+      "schedules": [
+        {
+          "id": "ceee812e-6ed2-4fe1-87d1-2c88c2d6b8b3",
+          "description": "Monday to Thursday, 9am to 12pm",
+          "dtstart": "2020-04-01",
+          "valid_from": "2020-04-01",
+          "valid_to": "2020-12-20",
+          "freq": "WEEKLY",
+          "byday": "MO,TU,WE,TH",
+          "opens_at": "09:00:00Z",
+          "closes_at": "12:00:00Z"
+        },
+        {
+          "id": "887404d7-6479-48da-bb86-b1592da85aef",
+          "description": "Monday to Thursday, 3pm to 5pm",
+          "dtstart": "2020-04-01",
+          "valid_from": "2020-04-01",
+          "valid_to": "2020-12-20",
+          "freq": "WEEKLY",
+          "byday": "MO,TU,WE,TH",
+          "opens_at": "15:00:00Z",
+          "closes_at": "17:00:00Z"
+        },
+        {
+          "id": "23f3f9c6-431d-4e85-b59b-309d6d70274e",
+          "description": "First Saturday of the month from July-Nov, 9am-5pm",
+          "dtstart": "2020-07-04",
+          "until": "2020-11-07",
+          "freq": "MONTHLY",
+          "byday": "1SA",
+          "opens_at": "09:00:00Z",
+          "closes_at": "17:00:00Z"
+        }
+      ]
+    }
+  ]
+}

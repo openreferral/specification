@@ -19,7 +19,7 @@ Learn more about the why's, how's, and who's of the Open Referral Initiative in 
 
 **Join Open Referral's Community of Practice**
 
-* We are formally convened [in this Google Group](https://groups.google.com/g/openreferral).
+* We are formally convened [in this Community Forum](https://forum.openreferral.org/).
 * You can also join [our Slack team](https://openreferral.org/get-involved/join-our-slack-team/).
 * Sign up for our email newsletter [on our homepage](https://openreferral.org/).
 
@@ -39,16 +39,17 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Human Services Data Spec
+   :caption: HSDS Reference
 
-   hsds/about
+   hsds/overview
    hsds/schema_reference
    hsds/api_reference
-   hsds/publication_formats_reference
-   hsds/variations_interoperability
-   hsds/logical_model
-   hsds/uk_compliance
+   hsds/serialization
+   hsds/identifiers
+   hsds/profiles
+   hsds/conformance
    hsds/changelog
+   hsds/hsds_faqs
 
 
 .. toctree::
@@ -56,21 +57,19 @@ Contents:
    :caption: HSDS Implementation Guidance
 
    hsds/use_cases
-   hsds/names_and_descriptions
-   hsds/schedules
-   hsds/classifications
-   hsds/identifiers
-   hsds/producing_sharing
+   hsds/mapping_guidance
    hsds/extending
+   hsds/using_profiles
+   hsds/field_guidance
 
 .. toctree::
    :maxdepth: 1
-   :caption: Open Referral Initiative
+   :caption: About the Open Referral Initiative
 
    initiative/index
-   design_principles
-   faq
-   credits
-   privacy-notice
+   initiative/design_principles
+   initiative/faq
+   initiative/credits
+   initiative/privacy-notice
 ```
 

@@ -3,8 +3,6 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
-Additional changes made to requirements of UK compliance are provided on a separate Changelog section of the [UK Compliance](uk_compliance.md#changelog) page.
-
 ## [v3.0](https://github.com/openreferral/specification/milestone/7)
 
 ### Backwards incompatible schema changes
@@ -74,7 +72,7 @@ Additional changes made to requirements of UK compliance are provided on a separ
 * Added reference page on UK compliance;
 * Created new API reference and reference page, removed HSDA pages;
 
-## [v2.0.1]()
+## [v2.0.1](https://github.com/openreferral/specification/releases/tag/2.0.1)
 
 * Re-added erroneously removed opens_at and closes_at fields to schedule table;
 * Added further guidance on schedules in response to community feedback;
