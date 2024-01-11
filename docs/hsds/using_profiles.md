@@ -31,14 +31,12 @@ Profiles are generally developed and maintained by third parties to satisfy part
 While Profiles may be used to extend the functionality of HSDS, they should not be mistaken as modular or re-usable "Extensions". The Profiles mechanism differs from that of an Extensions mechanism in other standards; as such, a given dataset may only implement a single Profile.
 ```
 
-## Publish data using an existing HSDS Profile
+## Existing HSDS Profiles
 
 You are encouraged to use existing profiles to publish HSDS data when suitable. This is a very straightforward process.
 
 1. **Ensure that you have implemented the Profile-specific requirements.** You should check the requirements of the Profile that you are publishing against and ensure that your data conforms to these. Do you have all the minumum required fields? Are all of your fields in the correct format?
 2. **Declare that you are using the Profile via your API output.** The [`/` endpoint](../hsds/api_reference.md#endpoint-details) of the HSDS API Reference includes a response key/value pair for `profile`. You should populate this with the URI to the profile you are using. Profile documentation should clearly state this value to avoid confusion &ndash; if you are unsure which value to use please get in touch with the implementer of the profile.
-
-### Known HSDS Profiles
 
 * [The Open Referral UK Profile](https://docs.openreferraluk.org/en/latest/)
 
