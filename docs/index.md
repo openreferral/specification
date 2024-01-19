@@ -64,11 +64,11 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
-   :caption: About the Open Referral Initiative
+   :caption: About
 
-   initiative/index
-   initiative/design_principles
-   initiative/faq
+   initiative/users-and-personas
+   initiative/design-principles
+   initiative/specification-governance
    initiative/credits
    initiative/privacy-notice
 ```
