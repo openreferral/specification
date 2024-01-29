@@ -15,7 +15,7 @@ These can be used to structure and exchange information about the accessibility 
 
 **Open Referral’s ecosystem** includes a range of working open source software applications that can be freely redeployed to work with HSDS-compatible data and/or APIs. Many of these tools can be found in [our Github organization](http://github.com/openreferral).
 
-Learn more about the why's, how's, and who's of the Open Referral Initiative in [our Public Documentation](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit?usp=drive_web), and browse all of our Project Documents on [Google Drive](https://drive.google.com/folderview?id=0B-5CZ4ZLjTHqfk12WTFUbVk1NjBYMjRaZTlZRlN1UjhWMS1MN0tLV3Q4ejY3TWpOYWwwVDg&usp=sharing)
+Learn more about the why's, how's, and who's of the Open Referral Initiative in [our Public Documentation](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit?usp=drive_web), and browse all of our Project Documents on [Google Drive](https://drive.google.com/drive/folders/0B-5CZ4ZLjTHqfk12WTFUbVk1NjBYMjRaZTlZRlN1UjhWMS1MN0tLV3Q4ejY3TWpOYWwwVDg?resourcekey=0-V8QRlJu4Jlrw40yN1U_TKQ&usp=sharing)
 
 **Join Open Referral's Community of Practice**
 
