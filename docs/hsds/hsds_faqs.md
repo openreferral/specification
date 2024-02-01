@@ -13,14 +13,14 @@ The Open Referral initiative used multiple methods of research and development t
 
 First, leaders of our pilot projects worked with stakeholders in their communities to develop a series of ‘user profiles’ that described the needs and behaviors of specific users.
 
-Then, at our Open Referral workshop in the summer of 2014, we compiled a set of ‘user personas’ that each describe one of four broad categories of use: seeking help, providing help, analyzing data, and administering data. [Read here for the set of user personas](../initiative/users-and-personas) developed through activities such as [the Open Referral workshop.](https://docs.google.com/document/d/1kivG6TTw1LKhJRAQHeqH7fTIxZZaDojXRRBYEd_ltWw/edit)
+Then, at our Open Referral workshop in the summer of 2014, we compiled a set of ‘user personas’ that each describe one of four broad categories of use: seeking help, providing help, analyzing data, and administering data. [Read here for the set of user personas](../about/users-and-personas) developed through activities such as [the Open Referral workshop.](https://docs.google.com/document/d/1kivG6TTw1LKhJRAQHeqH7fTIxZZaDojXRRBYEd_ltWw/edit)
 
 With this set of insights, we drafted an initial version of the specification that was then reviewed through several rounds of community feedback. During this time, members of our diverse network debated, clarified, and expanded the contents.
 
 Finally, we conducted initial tests of HSDS by using it to transform resource directory databases from pilot projects around the country.
 
 ## Who is the HSDS for?
-The primary users of HSDS are data administrators (who are responsible for managing systems that strive to meet the needs of other users). [Read our user personas here.](../initiative/users-and-personas)
+The primary users of HSDS are data administrators (who are responsible for managing systems that strive to meet the needs of other users). [Read our user personas here.](../about/users-and-personas)
 
 We define ‘data administrator’ broadly: while some data admins will be sophisticated managers of enterprise-grade referral systems, the vast majority of people who produce resource directory data are working with simpler technology such as Access, Excel, or even Word. Our goal is for HSDS to be usable by both the 2-1-1 resource data specialist and the IT volunteer who is helping out the neighborhood food pantry.
 
