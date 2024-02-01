@@ -17,15 +17,9 @@ The contents of the *HSDS Reference Section* contains specifications for HSDS' d
 
 ### Implementation Guidance
 
-Pages inside the *HSDS Implementation Guidance* section provide additional materials about specific topics in HSDS. These materials are *not considered normative* and should not take precedence over materials inside the *HSDS Reference* section.
+Pages inside the *HSDS Implementation Guidance* section provide additional materials about specific topics in HSDS. These materials are *informative* rather than normative and therefore should not take precedence over materials inside the *HSDS Reference* section.
 
 The contents of the *HSDS Implementation Guidance* are intended to be used by implementors, but may also be useful for data users wanting to understand more about HSDS to support their analysis.
-
-### Open Referral Initiative
-
-This documentation also provides materials about the Open Referral Initiative itself, which is distinct from HSDS. Pages in the *About the Open Referral Initiative* section are *not considered normative* because they are not directly describing HSDS in a technical manner.
-
-The contents of the *About the Open Referral Initiative* section may be of interest for those looking to understand more about the wider Open Referral project as well as other standards which are relevant to HSDS.
 
 ### Comment on our docs using Hypothes.is
 

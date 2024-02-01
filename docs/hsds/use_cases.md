@@ -2,7 +2,7 @@ Use Cases
 =========
 
 ```{note}
-This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
+This content is *informative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
 ```
 
 Open Referral's agenda is shaped by the prerogatives of four types of users: 

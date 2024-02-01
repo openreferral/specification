@@ -2,7 +2,7 @@ Field and Object Guidance
 =========================
 
 ```{note}
-This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
+This content is *informative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
 ```
 
 This page contains guidance on various topics specific to the properties and structures within HSDS.

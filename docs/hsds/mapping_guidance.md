@@ -2,7 +2,7 @@ Mapping Data to HSDS
 ====================
 
 ```{note}
-This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
+This content is *informative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
 ```
 
 Source data may or may not map directly to the HSDS. Guidelines are listed below to reduce ambiguity.
