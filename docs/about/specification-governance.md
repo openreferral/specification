@@ -15,7 +15,7 @@ The Technical Steward receives additional input from the community during this p
 
 HSDS uses [Semantic Versioning](https://semver.org/) to distinguish between different versions of the standard in the format of `MAJOR.MINOR.PATCH`.
 
-* MAJOR versions introduce backwards compatible changes
+* MAJOR versions introduce backwards incompatible changes
 * MINOR versions introduce new features or functionality in a backwards compatible manner
 * PATCH versions make backwards-compatible bugfixes
 
@@ -25,3 +25,12 @@ If a change is not backwards compatible it may mean that data published using an
 
 You can see a list of all the version upgrades in HSDS by reviewing our [changelog](../hsds/changelog)
 
+### PATCH Versions
+
+In recognition of the low impact of PATCH changes to the Standard, these are implemented by the Technical Steward and submitted as a PR which is reviewed and approved by a member of the Open Referral Core team.
+
+## Normative and Informative Documentation
+
+All of the content in the Reference section of this documentation site is considered *normative* which means it forms part of the standard. As such, it is versioned according to the governance and versioning process outlined above. For example, if a section of the API Reference page was reworded for clarity without changing its semantic meaning; this change would result in a new PATCH version.
+
+Other content in this site such as the Implementation Guidance and About sections contain *informative* content. While often important, this content is not considered normative in that it is not technical reference material or compulsory for an implementor. Instead it is designed to support implementors and users making decisions and understanding the specification. Informative content is not versioned according to the versioning and upgrade process and therefore may be updated at any time in response to the needs of the community.
