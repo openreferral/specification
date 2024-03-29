@@ -27,9 +27,9 @@ Learn more about the why's, how's, and who's of the Open Referral Initiative in 
 
 Questions not answered here? Suggestions for us?
 
-[Email us!](mailto:info@openreferral.org) We can discuss directly, and/or invite you to [join us in Slack](https://openreferral.org/get-involved/join-our-slack-team/), where we conduct weekly office hours on Fridays at 12p EST.
+[Email us!](mailto:info@openreferral.org) We can discuss directly, and/or invite you to join our [forum](https://forum.openreferral.org) where you can engage in the various topics and ongoing discussions surrounding Open Referral and HSDS.
 
-We also have an active [forum](https://forum.openreferral.org) which you can join to engage in the various topics and ongoing discussions surrounding Open Referral and HSDS.
+We also have a [Slack team](https://openreferral.org/get-involved/join-our-slack-team/), which isn't used all that often but feel free to request an invite and chat there.
 
 ## Site contents
 
