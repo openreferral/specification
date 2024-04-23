@@ -1,15 +1,51 @@
 Specification Governance
 =========================
 
-TODO intro text here
+_Approved in Spring 2024_
+
+## Terms and Definitions
+
+**The Human Services Data Standard (HSDS)** is a data exchange format for publishing machine-readable information about health, human, and social services: their locations, and the organizations that provide them. We define “human services” broadly, to include any organizational resource that is made available for a person in need – such as food assistance, job training, child care, etc. Anyone can propose changes to HSDS, through the project’s Github queue or Community Forum. HSDS is licensed as [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)  
+
+**Open Referral** is an unincorporated community of practice that facilitates the maintenance and development of free, open source resources for stakeholders around the world. One of those resources is the Human Service Data Standard (HSDS). 
+
+**Lead Organizer:** Open Referral is led by its founder and lead organizer, Greg Bloom. The lead organizer designs and facilitates Open Referral activities, manages community networks, oversees management of website and communications channels, represents Open Referral to public and philanthropic sectors, and raises funding to support development. They also liaise about strategic and fiscal matters with Open Referral’s US-based nonprofit fiscal sponsor, Aspiration.
+
+**Fiscal Sponsor:** [Aspiration](https://aspirationtech.org/) (a 501c3 nonprofit) is the fiscal sponsor of the Open Referral Initiative. This means that Aspiration receives and administers Open Referral’s intellectual property and financial assets (including grants, donations, revenue from service contracts for specification development). These assets are held in a restricted fund that operates under the direction of Open Referral’s lead organizer. (The Lead Organizer or fiscal sponsor can terminate this fiscal sponsor agreement in the event that the project can no longer operate, or in the event that the Lead Organizer designates a Successor organization that can legally receive and administer the project’s assets.) Aspiration also provides mentorship to Open Referral’s leadership, and sometimes co-designs and facilitates events for the Open Referral community. 
+
+**Technical Steward:** Through funds administered by Aspiration, under the direction of the lead organizer, the Open Referral Initiative funds the work of a technical steward. The technical steward codifies changes to HSDS. It does this by maintaining HSDS and related repositories in Github, co-developing and managing technical backlog, and co-facilitating technical meetings. The technical steward reports to the lead organizer. The technical steward is currently [the Open Data Services Cooperative](https://opendataservices.coop/).
+
+**Technical Committee:** The Technical Committee is a standing group that assesses and prioritizes among any and all proposed changes to HSDS. The Committee consists of people with a track record of contributing input to the HSDS development process, and a commitment to upholding Open Referral’s [mission, values, and principles](https://openreferral.org/about/our-values-and-principles/). The Committee advises the Lead Organizer and Fiscal Sponsor on matters pertaining to governance of the initiative, and issues binding recommendations to the Technical Steward on matters pertaining to HSDS. More detail follows below. 
 
 ## Stewardship and Governance
 
-Open Referral is the steward of HSDS. Open Referral's role is to facilitate and oversee appropriate maintenance and development of HSDS to ensure that it meets the needs of its users. Open Referral develops HSDS through facilitating transparent and consensus-based cycles which result in agreed upon technical changes to the specification.
+Open Referral is an open community of practice – anyone who shares [our vision and values](https://openreferral.org/about/our-values-and-principles/) is welcome. Our network (which includes human service referral providers, government officials, academics, vendors, community leaders, etc) is primarily assembled in our [Community Forum](https://forum.openreferral.org/). Though we are an international initiative, our subject matter is primarily local and therefore much of the work in our initiative is done locally. This means our decision-making processes are distributed – from global (as an open community of practice, developing a common standard, collateral materials, open source tools, etc) to local (as a set of place-based pilot projects led by stakeholders in a given geographical region) and sectoral (with projects in specific subdomains like legal aid, etc). We operate iteratively, with regular opportunities to reflect, change, and grow.
 
-Open Referral operates at multiple levels: globally, locally, and sectorally. At a global level, Open Referral has a Core Team consisting of technical and institutional leadership and a Lead Organizer (Greg Bloom). During development cycles, the lead organizer designates at least a lead Technical Steward to serve in the Core Team.
+**Open Referral's core team facilitates alignment and supports activities across the Open Referral network.**
 
-You can read more about Open Referral's Governance [on our website](https://openreferral.org/about/organizational-overview/governance-and-participation/).
+At a ‘global’ level, Open Referral's core team consists of technical and institutional leadership. Core team members a) set the agenda for public discussions; b) oversee accountable administration of any grant funding or other resources in the Open Referral Initiative’s control; and c) make decisions in any instances in which the community cannot reach rough consensus. For each development cycle, Open Referral's lead organizer (Greg Bloom) designates a lead technical steward to serve in the Core Team.
+
+### A standing Technical Committee oversees development of the Human Service Data Specifications.
+
+*Updated Spring 2024.* The Human Service Data Specifications – Open Referral's core technical product – are developed through transparent, consensus-based cycles that are facilitated by Open Referral's core leadership, governed by a standing Technical Committee, and codified by the designated technical steward.
+
+Technical committee members document and prioritize prospective changes to HSDS and help the technical stewards maintain a backlog of issues for further discussion. Committee members attend regular, open meetings with the Lead Organizer and Technical Steward where updates to HSDS are discussed. They also participate in discussion on the Open Referral Forums and HSDS Github repositories. 
+
+The committee consists of people with a track record of contributing input to the HSDS development process, and who are committed to upholding Open Referral’s mission, values, and principles.
+
+The committee also can advise Open Referral’s Lead Organizer on issues related to the Open Referral community at large, and can make recommendations as to investments in development of tools and other tech that can support adoption and use of HSDS.
+
+#### As of Spring 2024, the Open Referral Technical Committee is in formation
+
+Upon formation of this body, the body will manage itself – beginning by writing a charter that establishes: how people are added/removed, how decisions will be made, how the body can be dissolved, etc. This can be authored by the founding members and reviewed by the technical steward, and must be approved by the lead organizer and fiscal sponsor. 
+
+### The process for requesting changes to HSDS is open to anyone.
+
+Input on Open Referral's specifications and materials can be shared through several channels: our [Github queue](https://github.com/openreferral/specification/issues), our [Community Forum](https://forum.openreferral.org/), and occasional community Assemblies. The Technical Steward is responsible for receiving and synthesizing such input from across channels for review by the Technical Committee. The Technical Committee members are empowered to propose specific changes to the specifications; proposed changes that are met with rough consensus (i.e. most support and nobody objects) are acknowledged in the Forum advanced to the Technical Steward for codification. Upon receiving all outputs from the Technical Committee, the Technical Steward develops a fully specified proposal for a version upgrade, which is shared with the community for a Request for Comment period (usually of about two weeks). The Technical Steward receives any additional input through this period, and can call for additional meetings of the Technical Committee to seek consensus on additional changes as necessary.
+
+In any instance in which consensus cannot be reached (which has almost never happened in Open Referral's history) the Core Leadership reserves the right to make a direct decision – documenting the nature of the disagreement, the reasons for the decision, and the criteria by which the decision can be re-evaluated in the future. Upon achieving consent from the community for a proposed upgrade, the technical steward will implement the version change in machine and human readable formats with guidance documentation.
+
+You can read more about governance of the Open Referral Initiative overall [on our website](https://openreferral.org/about/organizational-overview/governance-and-participation/). Further details about governance of the specification follow below:
 
 ## Versioning and Upgrade Process
 
