@@ -3,7 +3,7 @@ About
 
 ![Open Referral](assets/OpenReferral_Logo_Green.png)
 
-The Open Referral Initiative develops data standards and open platforms that make it easy to share and find information about community resources. Learn more about the initiative at [OpenReferral.org](https://www.openreferral.org).
+The Open Referral Initiative develops data standards and open platforms that make it easy to share and find information about community resources. Learn more about the about at [OpenReferral.org](https://www.openreferral.org).
 
 ## Data Specifications
 
@@ -64,12 +64,12 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
-   :caption: About the Open Referral Initiative
+   :caption: About
 
-   initiative/index
-   initiative/design_principles
-   initiative/faq
-   initiative/credits
-   initiative/privacy-notice
+   about/users-and-personas
+   about/design-principles
+   about/specification-governance
+   about/credits
+   about/privacy-notice
 ```
 
