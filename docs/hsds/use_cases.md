@@ -5,14 +5,16 @@ Use Cases
 This page is *non-normative*, which means that it doesn't form part of the standard; if there is any ambiguity, the standard takes precedence. This page may be updated at any time in response to community demand.
 ```
 
-Open Referral's agenda is set by the prerogatives of a set of four types of users: 
+Open Referral's agenda is shaped by the prerogatives of four types of users: 
+
 * help seekers;
 * service providers;
 * researchers/analysts;
 * database administrators. 
 
- Read more about each of these personas in [our Types of Use / User Personas documentation](https://docs.openreferral.org/en/latest/initiative/index.html?highlight=types%20of%20use#types-of-use-and-user-personas). 
+Read more about each of these types of users in [the User Personas documentation](../initiative/index.md#types-of-use-and-user-personas). 
 
+In practice, we find that the primary type of user for HSDS and its associated tools are *Database Administrators*. It is still important for us to understand the needs of other types of end users &ndash; however we often process this understanding through the lense of Data Administrators to support them directly meeting the needs of end users.
 
 **Current Human Services Data Specification Capabilities**
 
