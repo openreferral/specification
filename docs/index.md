@@ -17,19 +17,20 @@ The contents of the *HSDS Reference Section* contains specifications for HSDS' d
 
 ### Implementation Guidance
 
-Pages inside the *HSDS Implementation Guidance* section provide additional materials about specific topics in HSDS. These materials are *not considered normative* and should not take precedence over materials inside the *HSDS Reference* section.
+The *HSDS Implementation Guidance* section provides additional materials about specific topics in HSDS. These materials are marked as *non-normative* &ndash; which means that adherence thereof is not strictly required in order to comply with the standard. These materials provide guidance to implementers, and should be considered a complement to the standard rather than technically part of the standard itself.
 
-The contents of the *HSDS Implementation Guidance* are intended to be used by implementors, but may also be useful for data users wanting to understand more about HSDS to support their analysis.
+The contents of the *HSDS Implementation Guidance* may also be useful to data users who want to understand more about HSDS in support of their analysis.
+
 
 ### Open Referral Initiative
 
-This documentation also provides materials about the Open Referral Initiative itself, which is distinct from HSDS. Pages in the *About the Open Referral Initiative* section are *not considered normative* because they are not directly describing HSDS in a technical manner.
+This documentation also provides materials about the Open Referral Initiative itself, which is distinct from HSDS. Pages in the *About the Open Referral Initiative* section do not directly describe HSDS, and therefore are not technically part of the standard.
 
 The contents of the *About the Open Referral Initiative* section may be of interest for those looking to understand more about the wider Open Referral project as well as other standards which are relevant to HSDS.
 
 ### Comment on our docs using Hypothes.is
 
-This documentation supports community comments via [Hypothesi.is](https://web.hypothes.is/).
+This documentation supports community comments via [Hypothes.is](https://web.hypothes.is/).
 
 Hypothes.is is an annotation service embedded into this documentation site. You may notice some text highlighted in yellow, or the button in the top right of each page which reveals the list of annotations for that page.
 
