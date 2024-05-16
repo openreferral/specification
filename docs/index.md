@@ -5,11 +5,36 @@ About
 
 The Open Referral Initiative develops data standards and open platforms that make it easy to share and find information about community resources. Learn more about the about at [OpenReferral.org](https://www.openreferral.org).
 
-## Data Specifications
+## Using this documentation
 
-This site contains documentation for the Human Services Data Specification (HSDS) and the API specification. 
+This documentation contains reference materials and guidance related to various aspects of the Human Services Data Specification (HSDS), as well as the Open Referral Initiative itself.
 
-These can be used to structure and exchange information about the accessibility of health, human, and social services. Specifically, the HSDS describes data about organizations, the services they provide, the locations at which these services can be accessed, and associated details. It also describes protocols for accessing and managing this data. 
+### Data Specifications
+
+Pages inside the *HSDS Reference* section of the docs provide reference materials for HSDS. These materials are considered *normative* and should be given priority over all other materials about HSDS, excepting the canonical HSDS schemas provided on our [Github repository](https://github.com/openreferral/specification).
+
+The contents of the *HSDS Reference Section* contains specifications for HSDS' data model, API reference, and HSDS Profiles. It also contains normative materials defining what it means to be conformant to HSDS, how identifiers of various kinds are used in HSDS, and how HSDS should be serialized.
+
+### Implementation Guidance
+
+The *HSDS Implementation Guidance* section provides additional materials about specific topics in HSDS. These materials are marked as *non-normative* &ndash; which means that adherence thereof is not strictly required in order to comply with the standard. These materials provide guidance to implementers, and should be considered a complement to the standard rather than technically part of the standard itself.
+
+The contents of the *HSDS Implementation Guidance* may also be useful to data users who want to understand more about HSDS in support of their analysis.
+
+
+### Open Referral Initiative
+
+This documentation also provides materials about the Open Referral Initiative itself, which is distinct from HSDS. Pages in the *About the Open Referral Initiative* section do not directly describe HSDS, and therefore are not technically part of the standard.
+
+The contents of the *About the Open Referral Initiative* section may be of interest for those looking to understand more about the wider Open Referral project as well as other standards which are relevant to HSDS.
+
+### Comment on our docs using Hypothes.is
+
+This documentation supports community comments via [Hypothes.is](https://web.hypothes.is/).
+
+Hypothes.is is an annotation service embedded into this documentation site. You may notice some text highlighted in yellow, or the button in the top right of each page which reveals the list of annotations for that page.
+
+To get involved in annotating the documentation, you'll need to create an account at Hypothes.is, but it's otherwise as simple as highlighting some text on the page and using the pop-up box to add your comments.
 
 ## Our ecosystem
 
