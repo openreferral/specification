@@ -121,6 +121,11 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
+# We need to define the html_baseurl variable now as Read the docs have stopped injecting this into conf.py
+# see https://about.readthedocs.com/blog/2024/07/addons-by-default/
+
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
