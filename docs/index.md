@@ -96,5 +96,6 @@ Contents:
    about/specification-governance
    about/credits
    about/privacy-notice
+   about/license
 ```
 
