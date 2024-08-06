@@ -3,6 +3,13 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
+## [v3.1](TODO)
+
+TODO: update link to this
+
+### Backwards compatible schema changes
+
+
 ## [v3.0](https://github.com/openreferral/specification/milestone/7)
 
 ### Backwards incompatible schema changes
