@@ -125,7 +125,7 @@
             "name": "address_type",
             "type": "string",
             "title": "Address Type",
-            "description": "The type of address which may be physical, postal, or virtual.",
+            "description": "The type of address which may be `physical`, `postal`, or `virtual`.",
             "constraints": {
                 "unique": false
             },
