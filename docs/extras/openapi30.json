@@ -503,7 +503,7 @@
         "properties": {
           "total_items": {
             "type": "integer",
-            "description": "Count of total results."
+            "description": "The total number of entities (e.g. services, organizations) returned"
           },
           "total_pages": {
             "type": "integer",
@@ -511,23 +511,23 @@
           },
           "page_number": {
             "type": "integer",
-            "description": "Current page number."
+            "description": "The number of the current page"
           },
           "size": {
             "type": "integer",
-            "description": "Size of current page."
+            "description": "The number of entities in the current page."
           },
           "first_page": {
             "type": "boolean",
-            "description": "Is this page the first page."
+            "description": "A Boolean value indicating if this is the first page"
           },
           "last_page": {
             "type": "boolean",
-            "description": "Is this page the last page."
+            "description": "A Boolean value indicating if this is the last page"
           },
           "empty": {
             "type": "boolean",
-            "description": "Is this page empty."
+            "description": "A Boolean value indicating if there is an empty result set"
           }
         }
       }

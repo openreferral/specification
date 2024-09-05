@@ -4737,7 +4737,7 @@
               "name": "wkst",
               "type": "string",
               "title": "Week Start",
-              "description": "iCal - The two-letter code for the day on which the week starts.",
+              "description": "iCal - The two-letter code for the day on which the week starts: `MO`, `TU`, `WE`, `TH`, `FR`, `FR`, `SA`, `SU`",
               "constraints": {
                 "unique": false
               },
@@ -4756,7 +4756,7 @@
               "name": "freq",
               "type": "string",
               "title": "Frequency",
-              "description": "iCal - How often the frequency repeats.",
+              "description": "iCal - How often the frequency repeats. Values can be `WEEKLY` or `MONTHLY`",
               "constraints": {
                 "unique": false
               },
@@ -5711,7 +5711,7 @@
             "name": "location_type",
             "type": "string",
             "title": "Location Type",
-            "description": "The type of location, which may be either physical, postal, or virtual.",
+            "description": "The type of location, which may be either `physical`, `postal`, or `virtual`.",
             "constraints": {
               "unique": false
             },
@@ -6853,7 +6853,7 @@
                   "name": "address_type",
                   "type": "string",
                   "title": "Address Type",
-                  "description": "The type of address which may be physical, postal, or virtual.",
+                  "description": "The type of address which may be `physical`, `postal`, or `virtual`.",
                   "constraints": {
                     "unique": false
                   },
@@ -13217,7 +13217,7 @@
                   "name": "wkst",
                   "type": "string",
                   "title": "Week Start",
-                  "description": "iCal - The two-letter code for the day on which the week starts.",
+                  "description": "iCal - The two-letter code for the day on which the week starts: `MO`, `TU`, `WE`, `TH`, `FR`, `FR`, `SA`, `SU`",
                   "constraints": {
                     "unique": false
                   },
@@ -13236,7 +13236,7 @@
                   "name": "freq",
                   "type": "string",
                   "title": "Frequency",
-                  "description": "iCal - How often the frequency repeats.",
+                  "description": "iCal - How often the frequency repeats. Values can be `WEEKLY` or `MONTHLY`",
                   "constraints": {
                     "unique": false
                   },
@@ -17967,7 +17967,7 @@
                   "name": "wkst",
                   "type": "string",
                   "title": "Week Start",
-                  "description": "iCal - The two-letter code for the day on which the week starts.",
+                  "description": "iCal - The two-letter code for the day on which the week starts: `MO`, `TU`, `WE`, `TH`, `FR`, `FR`, `SA`, `SU`",
                   "constraints": {
                     "unique": false
                   },
@@ -17986,7 +17986,7 @@
                   "name": "freq",
                   "type": "string",
                   "title": "Frequency",
-                  "description": "iCal - How often the frequency repeats.",
+                  "description": "iCal - How often the frequency repeats. Values can be `WEEKLY` or `MONTHLY`",
                   "constraints": {
                     "unique": false
                   },
@@ -26281,7 +26281,7 @@
                       "name": "location_type",
                       "type": "string",
                       "title": "Location Type",
-                      "description": "The type of location, which may be either physical, postal, or virtual.",
+                      "description": "The type of location, which may be either `physical`, `postal`, or `virtual`.",
                       "constraints": {
                         "unique": false
                       },
@@ -27423,7 +27423,7 @@
                             "name": "address_type",
                             "type": "string",
                             "title": "Address Type",
-                            "description": "The type of address which may be physical, postal, or virtual.",
+                            "description": "The type of address which may be `physical`, `postal`, or `virtual`.",
                             "constraints": {
                               "unique": false
                             },
@@ -33787,7 +33787,7 @@
                             "name": "wkst",
                             "type": "string",
                             "title": "Week Start",
-                            "description": "iCal - The two-letter code for the day on which the week starts.",
+                            "description": "iCal - The two-letter code for the day on which the week starts: `MO`, `TU`, `WE`, `TH`, `FR`, `FR`, `SA`, `SU`",
                             "constraints": {
                               "unique": false
                             },
@@ -33806,7 +33806,7 @@
                             "name": "freq",
                             "type": "string",
                             "title": "Frequency",
-                            "description": "iCal - How often the frequency repeats.",
+                            "description": "iCal - How often the frequency repeats. Values can be `WEEKLY` or `MONTHLY`",
                             "constraints": {
                               "unique": false
                             },

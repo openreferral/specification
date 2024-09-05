@@ -84,7 +84,7 @@
           "name": "location_type",
           "type": "string",
           "title": "Location Type",
-          "description": "The type of location, which may be either physical, postal, or virtual.",
+          "description": "The type of location, which may be either `physical`, `postal`, or `virtual`.",
           "constraints": {
             "unique": false
           },
