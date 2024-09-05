@@ -9,6 +9,7 @@ TODO: update link to this
 
 ### Backwards compatible schema changes
 
+* Descriptions for `address.address_type`, `location.location_type`, `schedule.wkst`, and `schedule.freq` have been updated to include their enum values.
 
 ## [v3.0](https://github.com/openreferral/specification/milestone/7)
 
