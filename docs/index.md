@@ -86,6 +86,7 @@ Contents:
    hsds/extending
    hsds/using_profiles
    hsds/field_guidance
+   hsds/database_schemas
 
 .. toctree::
    :maxdepth: 1
