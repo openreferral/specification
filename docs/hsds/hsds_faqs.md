@@ -78,6 +78,23 @@ Bulk Data Transfer:
 
 The outdated JSON Tables (CSV) representation is an important artefact for many HSDS users, and so will be maintained: we automatically generate a JSON Table Schema from a JSON Schema, so we expect that the shift will not cause any issues for any implementations that expect the datapackage from deprecated HSDS versions.
 
+## I see a discrepancy between some details of the ERD and the JSON schema. What's up with that?
+
+We have produced an Entity Relationship Diagram in order to provide a visual aid for understanding the objects and relationships in HSDS. Please note that the ERD is illustrative rather than normative, meaning that the official JSON schemas take precedence over it.
+
+A large version of the ERD diagram is available at the link below:
+
+* [ERD Diagram (large)](../extras/_images/entity_relationship_diagram.svg)
+
+
+There are some discrepancies between the ERD and the core JSON schema for HSDS. This is because the ERD diagram is generated from the "Frictionless Datapackage" format of HSDS, which offers a serialized version of HSDS adapted from the canonical JSON format. If in doubt you should always refer to the "schema reference" page of the HSDS documentation, as this is generated directly from the official schemas.
+
+* [Schema Reference](schema_reference)
+
+If you're developing a Frictionless Data Package publication, then it's fine and recommended to use the ERD diagram because it's generated from the Data Package schema. If you need further resources about the Frictionless Data Package publication format you can consult our package descriptor file for a description of each table in this format:
+
+* [Frictionless Data Package descriptor file](../../datapackage.json)
+
 ## How have the Human Service Data API protocols evolved? 
 In 2017, Open Referral developed a set of API protocols [known as the Human Service Data API Suite (HSDA)](https://openreferral.org/meet-the-human-service-data-api-protocols/) which corresponded with a now-deprecated version of HSDS (1.1). 
 
