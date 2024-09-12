@@ -26,7 +26,7 @@
             "name": "location_type",
             "type": "string",
             "title": "Location Type",
-            "description": "The type of location, which may be either `physical`, `postal`, or `virtual`.",
+            "description": "The type of location, which may be either `physical`, `postal`, `virtual`, or `redacted`.",
             "constraints": {
                 "unique": false
             },
@@ -35,7 +35,8 @@
             "enum": [
                 "physical",
                 "postal",
-                "virtual"
+                "virtual",
+		"redacted"
             ]
         },
         "url": {
