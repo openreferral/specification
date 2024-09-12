@@ -369,6 +369,12 @@
             "description": "Contains full nested organization information",
             "$ref": "#/components/parameters/full"
           },
+	  {
+            "$ref": "#/components/parameters/taxonomy_term_id"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_id"
+          },
           {
             "$ref": "#/components/parameters/page"
           },
