@@ -56,6 +56,15 @@
             },
             "example": "Counselling Services provided by trained professionals in the MyCity area."
         },
+	"service_areas": {
+            "name": "service_areas",
+            "type": "array",
+            "title": "Service Areas",
+            "description": "The details of the geographic area for which a service is available.",
+            "items": {
+                "$ref": "service_area.json"
+            }
+        },
         "contacts": {
             "name": "contacts",
             "type": "array",
