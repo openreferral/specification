@@ -28,7 +28,8 @@
       "description": "The human-readable label for this url e.g. “Twitter” or “Website”.",
       "constraints": {
         "unique": false
-      }
+      },
+      "example": "Website"
     },
     "url": {
       "name": "url",
@@ -38,7 +39,8 @@
       "description": "The URL for this URL object. This must be formatted as a valid URI.",
       "constraints": {
         "unique": false
-      }
+      },
+      "example": "https://example.org"
     }
   },
   "required": [
