@@ -1,0 +1,50 @@
+{
+  "name": "unit",
+  "path": "units.csv",
+  "description": "The details of units which are used to measure service capacity.",
+  "datapackage_metadata": {
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 99
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "name": "id",
+      "type": "string",
+      "format": "uuid",
+      "title": "Identifier",
+      "description": "The identifier for the unit object. Each unit must have a unique identifier."
+    },
+    "name": {
+      "name": "name",
+      "type": "string",
+      "title": "Name",
+      "description": "The human-readable name for this unit e.g. “Bed” or “Hours”"
+    },
+    "scheme": {
+      "name": "scheme",
+      "type": "string",
+      "title": "Scheme",
+      "description": "The scheme which formalizes the unit, if applicable e.g. “SI” for Standard International Units such as Kilogram, Litre, etc."
+    },
+    "identifier": {
+      "name": "identifier",
+      "type": "string",
+      "title": "Unit Identifier",
+      "description": "The identifier of the unit taken from the scheme if applicable e.g. `kg`."
+    },
+    "uri": {
+      "name": "uri",
+      "type": "string",
+      "format": "uri",
+      "title": "URI",
+      "description": "The URI to the definition of the unit, if applicable"
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ]
+}
