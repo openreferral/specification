@@ -1,386 +1,395 @@
 {
-    "name": "service",
-    "path": "services.csv",
-    "description": "The details of the services provided by organizations to a range of different groups.",
-    "datapackage_metadata": {
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 3
+  "name": "service",
+  "path": "services.csv",
+  "description": "The details of the services provided by organizations to a range of different groups.",
+  "datapackage_metadata": {
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 3
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "name": "id",
+      "type": "string",
+      "title": "Identifier",
+      "description": "The identifier for the service. Each service must have a unique identifier.",
+      "format": "uuid",
+      "constraints": {
+        "unique": true
+      },
+      "example": "ac148810-d857-441c-9679-408f346de14b",
+      "core": "Y"
     },
-    "type": "object",
-    "properties": {
-        "id": {
-            "name": "id",
-            "type": "string",
-            "title": "Identifier",
-            "description": "The identifier for the service. Each service must have a unique identifier.",
-            "format": "uuid",
-            "constraints": {
-                "unique": true
-            },
-            "example": "ac148810-d857-441c-9679-408f346de14b",
-            "core": "Y"
-        },
-        "organization_id": {
-            "name": "organization_id",
-            "type": "string",
-            "title": "Organization Identifier",
-            "description": "The identifier of the organization that provides this service.",
-            "format": "uuid",
-            "constraints": {
-                "unique": false
-            },
-            "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610",
-            "core": "Y"
-        },
-        "program_id": {
-            "name": "program_id",
-            "type": "string",
-            "title": "Program Identifier",
-            "description": "The identifier of the program this service is delivered under.",
-            "format": "uuid",
-            "constraints": {
-                "unique": false
-            },
-            "example": "e7ec2e57-4540-43fa-b2c7-6be5a0ef7f42"
-        },
-        "name": {
-            "name": "name",
-            "type": "string",
-            "title": "Name",
-            "description": "The official or public name of the service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "Community Counselling",
-            "core": "Y"
-        },
-        "alternate_name": {
-            "name": "alternate_name",
-            "type": "string",
-            "title": "Alternate Name",
-            "description": "An (optional) alternative name for this service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "MyCity Counselling Services"
-        },
-        "description": {
-            "name": "description",
-            "type": "string",
-            "title": "Description",
-            "description": "A free text description of the service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
-            "core": "Y"
-        },
-        "url": {
-            "name": "url",
-            "type": "string",
-            "title": "URL",
-            "description": "URL of the service",
-            "format": "uri",
-            "constraints": {
-                "unique": false
-            },
-            "example": "http://example.com/counselling",
-            "core": "Y"
-        },
-        "email": {
-            "name": "email",
-            "type": "string",
-            "title": "Email",
-            "description": "An email address which can be used to contact the service provider.",
-            "format": "email",
-            "constraints": {
-                "unique": false
-            },
-            "example": "email@example.com",
-            "core": "Y"
-        },
-        "status": {
-            "name": "status",
-            "type": "string",
-            "title": "Status",
-            "description": "The current status of the service which can be active, inactive, defunct, or temporarily closed.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "active",
-            "core": "Y",
-            "enum": [
-                "active",
-                "inactive",
-                "defunct",
-                "temporarily closed"
-            ]
-        },
-        "interpretation_services": {
-            "name": "interpretation_services",
-            "type": "string",
-            "title": "Interpretation Services",
-            "description": "A free text description of any interpretation services available for accessing this service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "Interpretation services are available in Urdu, Polish, and Slovak"
-        },
-        "application_process": {
-            "name": "application_process",
-            "type": "string",
-            "title": "Application Process",
-            "description": "A free text description of the steps needed to access this service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "If you are an NHS patient please ask your GP for a referral letter, we will then be in touch with you directly. If you are not an NHS patient you should ring our reception to arrange an appointment"
-        },
-        "fees_description": {
-            "name": "fees_description",
-            "type": "string",
-            "title": "Fees Description",
-            "description": "A free text description of any charges for service users to access this service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "Non-NHS patients are expected to pay for their counselling sessions. We charge a flat rate per hour of counselling. The current rate is \u00a350 per hour. Please see our website for up to date prices."
-        },
-        "wait_time": {
-            "name": "wait_time",
-            "type": "string",
-            "title": "Wait Time",
-            "description": "DEPRECATED: The time a client may expect to wait before receiving a service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "wait_time"
-        },
-        "fees": {
-            "name": "fees",
-            "type": "string",
-            "title": "Fees",
-            "description": "DEPRECATED: Details of any charges for service users to access this service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "fees_description"
-        },
-        "accreditations": {
-            "name": "accreditations",
-            "type": "string",
-            "title": "Accreditations",
-            "description": "A free text description of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "All of our practitioners are accredited by the BASC, UKCP, and the Professional Standards Body"
-        },
-        "eligibility_description": {
-            "name": "eligibility_description",
-            "type": "string",
-            "title": "Eligibility Description",
-            "description": "A free text description of the type of person for whom this service is intended.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "This service is intended for all people aged 12 and over who require counselling services in the MyCity area",
-            "core": "Y"
-        },
-        "minimum_age": {
-            "name": "minimum_age",
-            "type": "number",
-            "title": "Minimum Age",
-            "description": "The minimum age of a person required to meet this eligibility requirement.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "12"
-        },
-        "maximum_age": {
-            "name": "maximum_age",
-            "type": "number",
-            "title": "Maximum Age",
-            "description": "The maximum age of a person required to meet this eligibility requirement.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "100"
-        },
-        "assured_date": {
-            "name": "assured_date",
-            "type": "string",
-            "title": "Assured Date",
-            "description": "The date that the information about the service was last checked.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "2005-01-01",
-            "datapackage_type": "date"
-        },
-        "assurer_email": {
-            "name": "assurer_email",
-            "type": "string",
-            "title": "Assurer Email",
-            "description": "The contact e-mail address for the person or organization which last assured the service.",
-            "format": "email",
-            "constraints": {
-                "unique": false
-            },
-            "example": "email@example.com"
-        },
-        "licenses": {
-            "name": "licenses",
-            "type": "string",
-            "title": "Licenses",
-            "description": "DEPRECATED: An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "licences"
-        },
-        "alert": {
-            "name": "alert",
-            "type": "string",
-            "title": "Alert",
-            "description": "A description of any short term alerts concerning the service.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information."
-        },
-        "last_modified": {
-            "name": "last_modified",
-            "type": "string",
-            "format": "date-time",
-            "datapackage_type": "datetime",
-            "title": "Last Modified",
-            "description": "The datetime when the service, or any related information about the service, has changed. Should have millisecond accuracy.",
-            "constraints": {
-                "unique": false
-            },
-            "example": "2023-03-15T10:30:45.123Z"
-        },
-        "phones": {
-            "name": "phones",
-            "type": "array",
-            "title": "Phones",
-            "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
-            "items": {
-                "$ref": "phone.json"
-            }
-        },
-        "schedules": {
-            "name": "schedules",
-            "type": "array",
-            "title": "Schedules",
-            "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
-            "items": {
-                "$ref": "schedule.json"
-            }
-        },
-        "service_areas": {
-            "name": "service_areas",
-            "type": "array",
-            "title": "Service Areas",
-            "description": "The details of the geographic area for which a service is available.",
-            "items": {
-                "$ref": "service_area.json"
-            }
-        },
-        "service_at_locations": {
-            "name": "service_at_locations",
-            "type": "array",
-            "title": "Service At Locations",
-            "description": "A link between a service and a specific location.",
-            "items": {
-                "$ref": "service_at_location.json"
-            }
-        },
-        "languages": {
-            "name": "languages",
-            "type": "array",
-            "title": "Languages",
-            "description": "The details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
-            "items": {
-                "$ref": "language.json"
-            }
-        },
-        "organization": {
-            "name": "organization",
-            "title": "Organization",
-            "description": "The details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
-            "$ref": "organization.json"
-        },
-        "funding": {
-            "name": "funding",
-            "type": "array",
-            "title": "Funding",
-            "description": "The sources of funding for a service or organization.",
-            "items": {
-                "$ref": "funding.json"
-            }
-        },
-        "cost_options": {
-            "name": "cost_options",
-            "type": "array",
-            "title": "Cost Options",
-            "description": "The costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
-            "items": {
-                "$ref": "cost_option.json"
-            }
-        },
-        "program": {
-            "name": "program",
-            "title": "Program",
-            "description": "The details of collections of related services.",
-            "$ref": "program.json"
-        },
-        "required_documents": {
-            "name": "required_documents",
-            "type": "array",
-            "title": "Required Documents",
-            "description": "The details of any documents that are required in order to access or use services.",
-            "items": {
-                "$ref": "required_document.json"
-            }
-        },
-        "contacts": {
-            "name": "contacts",
-            "type": "array",
-            "title": "Contacts",
-            "description": "The details of the named contacts for services and organizations.",
-            "items": {
-                "$ref": "contact.json"
-            }
-        },
-        "attributes": {
-            "name": "attributes",
-            "type": "array",
-            "title": "Attributes",
-            "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
-            "items": {
-                "$ref": "attribute.json"
-            }
-        },
-        "metadata": {
-            "name": "metadata",
-            "type": "array",
-            "title": "Metadata",
-            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
-            "items": {
-                "$ref": "metadata.json"
-            }
-        }
+    "organization_id": {
+      "name": "organization_id",
+      "type": "string",
+      "title": "Organization Identifier",
+      "description": "The identifier of the organization that provides this service.",
+      "format": "uuid",
+      "constraints": {
+        "unique": false
+      },
+      "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610",
+      "core": "Y"
     },
-    "required": [
-        "id",
-        "name",
-        "status"
-    ],
-    "tabular_required": [
-        "organization_id"
-    ]
+    "program_id": {
+      "name": "program_id",
+      "type": "string",
+      "title": "Program Identifier",
+      "description": "The identifier of the program this service is delivered under.",
+      "format": "uuid",
+      "constraints": {
+        "unique": false
+      },
+      "example": "e7ec2e57-4540-43fa-b2c7-6be5a0ef7f42"
+    },
+    "name": {
+      "name": "name",
+      "type": "string",
+      "title": "Name",
+      "description": "The official or public name of the service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Community Counselling",
+      "core": "Y"
+    },
+    "alternate_name": {
+      "name": "alternate_name",
+      "type": "string",
+      "title": "Alternate Name",
+      "description": "An (optional) alternative name for this service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "MyCity Counselling Services"
+    },
+    "description": {
+      "name": "description",
+      "type": "string",
+      "title": "Description",
+      "description": "A free text description of the service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
+      "core": "Y"
+    },
+    "url": {
+      "name": "url",
+      "type": "string",
+      "title": "URL",
+      "description": "URL of the service",
+      "format": "uri",
+      "constraints": {
+        "unique": false
+      },
+      "example": "http://example.com/counselling",
+      "core": "Y"
+    },
+    "email": {
+      "name": "email",
+      "type": "string",
+      "title": "Email",
+      "description": "An email address which can be used to contact the service provider.",
+      "format": "email",
+      "constraints": {
+        "unique": false
+      },
+      "example": "email@example.com",
+      "core": "Y"
+    },
+    "status": {
+      "name": "status",
+      "type": "string",
+      "title": "Status",
+      "description": "The current status of the service which can be active, inactive, defunct, or temporarily closed.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "active",
+      "core": "Y",
+      "enum": [
+        "active",
+        "inactive",
+        "defunct",
+        "temporarily closed"
+      ]
+    },
+    "interpretation_services": {
+      "name": "interpretation_services",
+      "type": "string",
+      "title": "Interpretation Services",
+      "description": "A free text description of any interpretation services available for accessing this service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Interpretation services are available in Urdu, Polish, and Slovak"
+    },
+    "application_process": {
+      "name": "application_process",
+      "type": "string",
+      "title": "Application Process",
+      "description": "A free text description of the steps needed to access this service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "If you are an NHS patient please ask your GP for a referral letter, we will then be in touch with you directly. If you are not an NHS patient you should ring our reception to arrange an appointment"
+    },
+    "fees_description": {
+      "name": "fees_description",
+      "type": "string",
+      "title": "Fees Description",
+      "description": "A free text description of any charges for service users to access this service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Non-NHS patients are expected to pay for their counselling sessions. We charge a flat rate per hour of counselling. The current rate is £50 per hour. Please see our website for up to date prices."
+    },
+    "wait_time": {
+      "name": "wait_time",
+      "type": "string",
+      "title": "Wait Time",
+      "description": "DEPRECATED: The time a client may expect to wait before receiving a service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "wait_time"
+    },
+    "fees": {
+      "name": "fees",
+      "type": "string",
+      "title": "Fees",
+      "description": "DEPRECATED: Details of any charges for service users to access this service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "fees_description"
+    },
+    "accreditations": {
+      "name": "accreditations",
+      "type": "string",
+      "title": "Accreditations",
+      "description": "A free text description of any accreditations. Accreditation is the formal evaluation of an organization or program against best practice standards set by an accrediting organization.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "All of our practitioners are accredited by the BASC, UKCP, and the Professional Standards Body"
+    },
+    "eligibility_description": {
+      "name": "eligibility_description",
+      "type": "string",
+      "title": "Eligibility Description",
+      "description": "A free text description of the type of person for whom this service is intended.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "This service is intended for all people aged 12 and over who require counselling services in the MyCity area",
+      "core": "Y"
+    },
+    "minimum_age": {
+      "name": "minimum_age",
+      "type": "number",
+      "title": "Minimum Age",
+      "description": "The minimum age of a person required to meet this eligibility requirement.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "12"
+    },
+    "maximum_age": {
+      "name": "maximum_age",
+      "type": "number",
+      "title": "Maximum Age",
+      "description": "The maximum age of a person required to meet this eligibility requirement.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "100"
+    },
+    "assured_date": {
+      "name": "assured_date",
+      "type": "string",
+      "title": "Assured Date",
+      "description": "The date that the information about the service was last checked.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "2005-01-01",
+      "datapackage_type": "date"
+    },
+    "assurer_email": {
+      "name": "assurer_email",
+      "type": "string",
+      "title": "Assurer Email",
+      "description": "The contact e-mail address for the person or organization which last assured the service.",
+      "format": "email",
+      "constraints": {
+        "unique": false
+      },
+      "example": "email@example.com"
+    },
+    "licenses": {
+      "name": "licenses",
+      "type": "string",
+      "title": "Licenses",
+      "description": "DEPRECATED: An organization may have a license issued by a government entity to operate legally. A list of any such licenses can be provided here.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "licences"
+    },
+    "alert": {
+      "name": "alert",
+      "type": "string",
+      "title": "Alert",
+      "description": "A description of any short term alerts concerning the service.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "Following COVID-19 we have moved most of our counselling sessions online. Please contact the reception if you require further information."
+    },
+    "last_modified": {
+      "name": "last_modified",
+      "type": "string",
+      "format": "date-time",
+      "datapackage_type": "datetime",
+      "title": "Last Modified",
+      "description": "The datetime when the service, or any related information about the service, has changed. Should have millisecond accuracy.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "2023-03-15T10:30:45.123Z"
+    },
+    "phones": {
+      "name": "phones",
+      "type": "array",
+      "title": "Phones",
+      "description": "The details of the telephone numbers used to contact organizations, services, and locations.",
+      "items": {
+        "$ref": "phone.json"
+      }
+    },
+    "schedules": {
+      "name": "schedules",
+      "type": "array",
+      "title": "Schedules",
+      "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
+      "items": {
+        "$ref": "schedule.json"
+      }
+    },
+    "service_areas": {
+      "name": "service_areas",
+      "type": "array",
+      "title": "Service Areas",
+      "description": "The details of the geographic area for which a service is available.",
+      "items": {
+        "$ref": "service_area.json"
+      }
+    },
+    "service_at_locations": {
+      "name": "service_at_locations",
+      "type": "array",
+      "title": "Service At Locations",
+      "description": "A link between a service and a specific location.",
+      "items": {
+        "$ref": "service_at_location.json"
+      }
+    },
+    "languages": {
+      "name": "languages",
+      "type": "array",
+      "title": "Languages",
+      "description": "The details of the languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",
+      "items": {
+        "$ref": "language.json"
+      }
+    },
+    "organization": {
+      "name": "organization",
+      "title": "Organization",
+      "description": "The details about each organization delivering services. Each service should be linked to the organization responsible for its delivery. One organization may deliver many services.",
+      "$ref": "organization.json"
+    },
+    "funding": {
+      "name": "funding",
+      "type": "array",
+      "title": "Funding",
+      "description": "The sources of funding for a service or organization.",
+      "items": {
+        "$ref": "funding.json"
+      }
+    },
+    "cost_options": {
+      "name": "cost_options",
+      "type": "array",
+      "title": "Cost Options",
+      "description": "The costs of a service at certain points in time. This is an LGA Extension table. This table provides a structured version of the text information contained in the 'fees' field of the 'service' table.",
+      "items": {
+        "$ref": "cost_option.json"
+      }
+    },
+    "program": {
+      "name": "program",
+      "title": "Program",
+      "description": "The details of collections of related services.",
+      "$ref": "program.json"
+    },
+    "required_documents": {
+      "name": "required_documents",
+      "type": "array",
+      "title": "Required Documents",
+      "description": "The details of any documents that are required in order to access or use services.",
+      "items": {
+        "$ref": "required_document.json"
+      }
+    },
+    "contacts": {
+      "name": "contacts",
+      "type": "array",
+      "title": "Contacts",
+      "description": "The details of the named contacts for services and organizations.",
+      "items": {
+        "$ref": "contact.json"
+      }
+    },
+    "capacities": {
+      "name": "capacities",
+      "type": "array",
+      "title": "Capacities",
+      "description": "The details of capacities of this service. See `service_capacity`.",
+      "items": {
+        "$ref": "service_capacity.json"
+      }
+    },
+    "attributes": {
+      "name": "attributes",
+      "type": "array",
+      "title": "Attributes",
+      "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+      "items": {
+        "$ref": "attribute.json"
+      }
+    },
+    "metadata": {
+      "name": "metadata",
+      "type": "array",
+      "title": "Metadata",
+      "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+      "items": {
+        "$ref": "metadata.json"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "status"
+  ],
+  "tabular_required": [
+    "organization_id"
+  ]
 }
