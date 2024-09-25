@@ -83,7 +83,7 @@
       },
       "additional_websites": {
         "name": "additional_websites",
-        "title": "Additional Website",
+        "title": "Additional Websites",
         "description": "The details of additional websites for the organization.",
         "type": "array",
         "items": {
@@ -38276,7 +38276,7 @@
                 },
                 "additional_websites": {
                   "name": "additional_websites",
-                  "title": "Additional Website",
+                  "title": "Additional Websites",
                   "description": "The details of additional websites for the organization.",
                   "type": "array",
                   "items": {
