@@ -15,32 +15,37 @@
       "type": "string",
       "format": "uuid",
       "title": "Identifier",
-      "description": "The identifier for the unit object. Each unit must have a unique identifier."
+      "description": "The identifier for the unit object. Each unit must have a unique identifier.",
+      "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
     },
     "name": {
       "name": "name",
       "type": "string",
       "title": "Name",
-      "description": "The human-readable name for this unit e.g. “Bed” or “Hours”"
+      "description": "The human-readable name for this unit e.g. “Bed” or “Hours”",
+      "example": "Kilogram"
     },
     "scheme": {
       "name": "scheme",
       "type": "string",
       "title": "Scheme",
-      "description": "The scheme which formalizes the unit, if applicable e.g. “SI” for Standard International Units such as Kilogram, Litre, etc."
+      "description": "The scheme which formalizes the unit, if applicable e.g. “SI” for Standard International Units such as Kilogram, Litre, etc.",
+      "example": "SI"
     },
     "identifier": {
       "name": "identifier",
       "type": "string",
       "title": "Unit Identifier",
-      "description": "The identifier of the unit taken from the scheme if applicable e.g. `kg`."
+      "description": "The identifier of the unit taken from the scheme if applicable e.g. `kgm` for Kilogram.",
+      "example": "kgm"
     },
     "uri": {
       "name": "uri",
       "type": "string",
       "format": "uri",
       "title": "URI",
-      "description": "The URI to the definition of the unit, if applicable"
+      "description": "The URI to the definition of the unit, if applicable",
+      "example": "https://not-a-real-url.org/standard-international-units/kgm"
     }
   },
   "required": [
