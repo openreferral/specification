@@ -89,6 +89,15 @@
             "example": "http://example.com/counselling",
             "core": "Y"
         },
+        "additional_urls": {
+            "name": "additional_urls",
+            "type": "array",
+            "title": "Additional URLs",
+            "description": "The details of additional URLs for the service",
+            "items": {
+                "$ref": "url.json"
+            }
+        },
         "email": {
             "name": "email",
             "type": "string",
