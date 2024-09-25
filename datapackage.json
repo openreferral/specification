@@ -86,9 +86,9 @@
                     {
                         "name": "website",
                         "type": "string",
+                        "format": "uri",
                         "title": "Website",
                         "description": "The URL (website address) of the organization.",
-                        "format": "uri",
                         "constraints": {
                             "required": false,
                             "unique": false
@@ -2716,6 +2716,70 @@
                             "unique": false
                         },
                         "example": "version"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "url",
+            "path": "url.csv",
+            "description": "A URL with a label",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "profile": "tabular-data-resource",
+            "schema": {
+                "primaryKey": "id",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "string",
+                        "title": "Identifier",
+                        "description": "The identifier for the URL object. Each URL must have a unique identifier.",
+                        "format": "uuid",
+                        "constraints": {
+                            "required": true,
+                            "unique": true
+                        },
+                        "example": "30951f94-7b24-11ef-ba1b-a79405d4dcaa"
+                    },
+                    {
+                        "name": "label",
+                        "type": "string",
+                        "title": "Label",
+                        "description": "The human-readable label for this url e.g. \u201cTwitter\u201d or \u201cWebsite\u201d.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        },
+                        "example": "Website"
+                    },
+                    {
+                        "name": "url",
+                        "type": "string",
+                        "format": "uri",
+                        "title": "URL",
+                        "description": "The URL for this URL object. This must be formatted as a valid URI.",
+                        "constraints": {
+                            "required": true,
+                            "unique": false
+                        },
+                        "example": "https://example.org"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": "organization_id",
+                        "reference": {
+                            "resource": "organization",
+                            "fields": "id"
+                        }
+                    },
+                    {
+                        "fields": "service_id",
+                        "reference": {
+                            "resource": "service",
+                            "fields": "id"
+                        }
                     }
                 ]
             }

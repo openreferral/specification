@@ -4,6 +4,13 @@
   "alternate_name": "MyCity Counselling Services",
   "description": "Counselling Services provided by trained professionals. Suitable for people with mental health conditions such as anxiety, depression, or eating disorders as well as people experiencing difficult life events and circumstances. ",
   "url": "http://example.com/counselling",
+  "additional_urls": [
+    {
+      "id": "30951f94-7b24-11ef-ba1b-a79405d4dcaa",
+      "label": "Website",
+      "url": "https://example.org"
+    }
+  ],
   "email": "email@example.com",
   "status": "active",
   "interpretation_services": "Interpretation services are available in Urdu, Polish, and Slovak",
@@ -269,6 +276,13 @@
     "description": "Example Org is a non-profit organization dedicated to providing services to qualified beneficiaries",
     "email": "email@example.com",
     "website": "http://example.com",
+    "additional_websites": [
+      {
+        "id": "30951f94-7b24-11ef-ba1b-a79405d4dcaa",
+        "label": "Website",
+        "url": "https://example.org"
+      }
+    ],
     "tax_status": "tax_status",
     "year_incorporated": 2011,
     "legal_status": "Limited Company",

@@ -70,9 +70,9 @@
     "website": {
       "name": "website",
       "type": "string",
+      "format": "uri",
       "title": "Website",
       "description": "The URL (website address) of the organization.",
-      "format": "uri",
       "constraints": {
         "unique": false
       },
