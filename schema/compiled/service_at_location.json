@@ -15889,6 +15889,26 @@
                   "unique": false
                 },
                 "example": "https://example.org"
+              },
+              "organization_id": {
+                "name": "organization_id",
+                "type": "string",
+                "format": "uuid",
+                "title": "Organization Identifier",
+                "description": "The identifier for the organization associated with this URL object",
+                "constraints": {
+                  "unique": false
+                }
+              },
+              "service_id": {
+                "name": "service_id",
+                "type": "string",
+                "format": "uuid",
+                "title": "Service Identifier",
+                "description": "The identifier for the service associated with this URL object",
+                "constraints": {
+                  "unique": false
+                }
               }
             },
             "required": [
@@ -20877,6 +20897,26 @@
                       "unique": false
                     },
                     "example": "https://example.org"
+                  },
+                  "organization_id": {
+                    "name": "organization_id",
+                    "type": "string",
+                    "format": "uuid",
+                    "title": "Organization Identifier",
+                    "description": "The identifier for the organization associated with this URL object",
+                    "constraints": {
+                      "unique": false
+                    }
+                  },
+                  "service_id": {
+                    "name": "service_id",
+                    "type": "string",
+                    "format": "uuid",
+                    "title": "Service Identifier",
+                    "description": "The identifier for the service associated with this URL object",
+                    "constraints": {
+                      "unique": false
+                    }
                   }
                 },
                 "required": [
