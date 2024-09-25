@@ -1,0 +1,48 @@
+{
+  "name": "url",
+  "path": "url.csv",
+  "description": "A URL with a label",
+  "datapackage_metadata": {
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 99
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "name": "id",
+      "type": "string",
+      "title": "Identifier",
+      "description": "The identifier for the URL object. Each URL must have a unique identifier.",
+      "format": "uuid",
+      "constraints": {
+        "unique": true
+      },
+      "example": "30951f94-7b24-11ef-ba1b-a79405d4dcaa"
+    },
+    "label": {
+      "name": "label",
+      "type": "string",
+      "title": "Label",
+      "description": "The human-readable label for this url e.g. “Twitter” or “Website”.",
+      "constraints": {
+        "unique": false
+      }
+    },
+    "url": {
+      "name": "url",
+      "type": "string",
+      "format": "uri",
+      "title": "URL",
+      "description": "The URL for this URL object. This must be formatted as a valid URI.",
+      "constraints": {
+        "unique": false
+      }
+    }
+  },
+  "required": [
+    "id",
+    "url"
+  ]
+}
