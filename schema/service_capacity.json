@@ -18,6 +18,14 @@
       "description": "The identifier for the service_capacity object. Each service_capacity must have a unique identifier.",
       "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
     },
+    "service_id": {
+      "name": "service_id",
+      "title": "Service Identifier",
+      "type": "string",
+      "format": "uuid",
+      "description": "The identifier for the Service object associated with this service capacity object. Only required in the tabular representation.",
+      "example": "f75b808e-7bdb-11ef-afaa-ab00a77dc5c4"
+    },
     "unit": {
       "$ref": "unit.json"
     },
@@ -69,6 +77,7 @@
     "updated"
   ],
   "tabular_required": [
-    "unit_id"
+    "unit_id",
+    "service_id"
   ]
 }
