@@ -232,7 +232,7 @@ COMMENT ON COLUMN public.address.country IS 'The country in which the address is
 -- Name: COLUMN address.address_type; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.address.address_type IS 'The type of address which may be physical, postal, or virtual.';
+COMMENT ON COLUMN public.address.address_type IS 'The type of address which may be `physical`, `postal`, or `virtual`.';
 
 
 --
@@ -590,7 +590,7 @@ COMMENT ON COLUMN public.location.id IS 'The identifier of the location. Each lo
 -- Name: COLUMN location.location_type; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.location.location_type IS 'The type of location, which may be either physical, postal, or virtual.';
+COMMENT ON COLUMN public.location.location_type IS 'The type of location, which may be either `physical`, `postal`, or `virtual`.';
 
 
 --
@@ -1240,14 +1240,14 @@ COMMENT ON COLUMN public.schedule.count IS 'iCal - The number of times that the 
 -- Name: COLUMN schedule.wkst; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.schedule.wkst IS 'iCal - The two-letter code for the day on which the week starts.';
+COMMENT ON COLUMN public.schedule.wkst IS 'iCal - The two-letter code for the day on which the week starts: `MO`, `TU`, `WE`, `TH`, `FR`, `FR`, `SA`, `SU`';
 
 
 --
 -- Name: COLUMN schedule.freq; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.schedule.freq IS 'iCal - How often the frequency repeats.';
+COMMENT ON COLUMN public.schedule.freq IS 'iCal - How often the frequency repeats. Values can be `WEEKLY` or `MONTHLY`';
 
 
 --
