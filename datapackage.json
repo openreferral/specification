@@ -2764,6 +2764,28 @@
                             "unique": false
                         },
                         "example": "https://example.org"
+                    },
+                    {
+                        "name": "organization_id",
+                        "type": "string",
+                        "format": "uuid",
+                        "title": "Organization Identifier",
+                        "description": "The identifier for the organization associated with this URL object",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        }
+                    },
+                    {
+                        "name": "service_id",
+                        "type": "string",
+                        "format": "uuid",
+                        "title": "Service Identifier",
+                        "description": "The identifier for the service associated with this URL object",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        }
                     }
                 ],
                 "foreignKeys": [
