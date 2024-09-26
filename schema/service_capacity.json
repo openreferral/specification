@@ -24,6 +24,9 @@
       "type": "string",
       "format": "uuid",
       "description": "The identifier for the Service object associated with this service capacity object. Only required in the tabular representation.",
+      "constraints": {
+        "unique": false
+      },
       "example": "f75b808e-7bdb-11ef-afaa-ab00a77dc5c4"
     },
     "unit": {
@@ -68,6 +71,24 @@
       "format": "date-time",
       "description": "The datetime when this service_capacit y object was last updated or changed. Should have millisecond accuracy. ",
       "example": "2024-09-25T14:23:06.5+01:00"
+    },
+    "attributes": {
+      "name": "attributes",
+      "type": "array",
+      "title": "Attributes",
+      "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+      "items": {
+        "$ref": "attribute.json"
+      }
+    },
+    "metadata": {
+      "name": "metadata",
+      "type": "array",
+      "title": "Metadata",
+      "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+      "items": {
+        "$ref": "metadata.json"
+      }
     }
   },
   "required": [
