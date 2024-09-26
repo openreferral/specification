@@ -1762,6 +1762,56 @@ COMMENT ON COLUMN public.taxonomy_term.term_uri IS 'URI of the term.';
 
 
 --
+-- Name: url; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.url (
+    id character varying(250) NOT NULL,
+    label text,
+    url text NOT NULL,
+    organization_id character varying(250),
+    service_id character varying(250)
+);
+
+
+ALTER TABLE public.url OWNER TO postgres;
+
+--
+-- Name: COLUMN url.id; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.url.id IS 'The identifier for the URL object. Each URL must have a unique identifier.';
+
+
+--
+-- Name: COLUMN url.label; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.url.label IS 'The human-readable label for this url e.g. “Twitter” or “Website”.';
+
+
+--
+-- Name: COLUMN url.url; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.url.url IS 'The URL for this URL object. This must be formatted as a valid URI.';
+
+
+--
+-- Name: COLUMN url.organization_id; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.url.organization_id IS 'The identifier for the organization associated with this URL object';
+
+
+--
+-- Name: COLUMN url.service_id; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.url.service_id IS 'The identifier for the service associated with this URL object';
+
+
+--
 -- Name: accessibility accessibility_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1943,6 +1993,14 @@ ALTER TABLE ONLY public.taxonomy_term
 
 ALTER TABLE ONLY public.taxonomy_term
     ADD CONSTRAINT taxonomy_term_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: url url_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.url
+    ADD CONSTRAINT url_pkey PRIMARY KEY (id);
 
 
 --
@@ -2191,6 +2249,22 @@ ALTER TABLE ONLY public.service
 
 ALTER TABLE ONLY public.taxonomy_term
     ADD CONSTRAINT taxonomy_term_taxonomy_id_fkey FOREIGN KEY (taxonomy_id) REFERENCES public.taxonomy(id);
+
+
+--
+-- Name: url url_organization_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.url
+    ADD CONSTRAINT url_organization_id_fkey FOREIGN KEY (organization_id) REFERENCES public.organization(id);
+
+
+--
+-- Name: url url_service_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.url
+    ADD CONSTRAINT url_service_id_fkey FOREIGN KEY (service_id) REFERENCES public.service(id);
 
 
 --
