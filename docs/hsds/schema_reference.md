@@ -639,6 +639,81 @@ Each `organization_identifier` object has the following fields:
 
 ::::
 
+### unit
+
+`unit` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/unit/description
+```
+
+Each `unit` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Fields
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/unit
+:collapse: metadata,attributes
+
+```
+:::
+
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/unit.json
+    :jsonpointer:
+    :title: unit
+```
+:::
+
+:::{tab-item} Example
+```{eval-rst}
+.. jsoninclude:: ../../examples/unit.json
+    :jsonpointer:
+    :title: unit
+```
+:::
+
+::::
+
+### service_capacity
+
+`service_capacity` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/service_capacity/description
+```
+
+Each `service_capacity` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Fields
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/service_capacity
+:collapse: unit,metadata,attributes
+
+```
+:::
+
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/service_capacity.json
+    :jsonpointer:
+    :title: service_capacity
+```
+:::
+
+:::{tab-item} Example
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_capacity.json
+    :jsonpointer:
+    :title: service_capacity
+```
+:::
+
+::::
 
 ### attribute
 
