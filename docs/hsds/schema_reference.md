@@ -37,7 +37,7 @@ Each `organization` object has the following fields:
 :::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/organization
-:collapse: funding,contacts,phones,locations,programs,organization_identifiers,attributes,metadata
+:collapse: funding,contacts,phones,locations,programs,organization_identifiers,attributes,metadata,additional_websites
 ```
 :::
 
@@ -73,7 +73,7 @@ Each `service` object has the following fields:
 
 :::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
-:collapse: phones,schedules,service_areas,service_at_locations,languages,organization,funding,cost_options,program,required_documents,contacts,attributes,metadata
+:collapse: phones,schedules,service_areas,service_at_locations,languages,organization,funding,cost_options,program,required_documents,contacts,attributes,metadata,additional_urls
 ```
 :::
 
@@ -679,6 +679,44 @@ Each `attribute` object has the following fields:
 
 ::::
 
+### url
+
+`url` is defined as:
+
+```{jsoninclude-quote} ../../schema/compiled/service_with_definitions.json
+:jsonpointer: /definitions/url/description
+```
+
+Each `url` object has the following fields:
+
+::::{tab-set}
+
+:::{tab-item} Fields
+```{jsonschema} ../../schema/compiled/service_with_definitions.json
+:pointer: /definitions/url
+:collapse: taxonomy_term,metadata
+
+```
+:::
+
+:::{tab-item} Schema
+```{eval-rst}
+.. jsoninclude:: ../../schema/url.json
+    :jsonpointer:
+    :title: url
+```
+:::
+
+:::{tab-item} Example
+```{eval-rst}
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /url
+    :title: url
+```
+
+:::
+
+::::
 
 ### metadata
 
