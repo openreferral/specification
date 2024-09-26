@@ -597,6 +597,12 @@
           },
           {
             "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_term_id"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_id"
           }
         ],
         "responses": {
