@@ -16925,6 +16925,82 @@
             "example": "http://example.com/counselling",
             "core": "Y"
           },
+          "additional_urls": {
+            "name": "additional_urls",
+            "type": "array",
+            "title": "Additional URLs",
+            "description": "The details of additional URLs for the service",
+            "items": {
+              "name": "url",
+              "path": "url.csv",
+              "description": "A URL with a label",
+              "datapackage_metadata": {
+                "format": "csv",
+                "mediatype": "text/csv",
+                "profile": "tabular-data-resource",
+                "order": 99
+              },
+              "type": "object",
+              "properties": {
+                "id": {
+                  "name": "id",
+                  "type": "string",
+                  "title": "Identifier",
+                  "description": "The identifier for the URL object. Each URL must have a unique identifier.",
+                  "format": "uuid",
+                  "constraints": {
+                    "unique": true
+                  },
+                  "example": "30951f94-7b24-11ef-ba1b-a79405d4dcaa"
+                },
+                "label": {
+                  "name": "label",
+                  "type": "string",
+                  "title": "Label",
+                  "description": "The human-readable label for this url e.g. \u201cTwitter\u201d or \u201cWebsite\u201d.",
+                  "constraints": {
+                    "unique": false
+                  },
+                  "example": "Website"
+                },
+                "url": {
+                  "name": "url",
+                  "type": "string",
+                  "format": "uri",
+                  "title": "URL",
+                  "description": "The URL for this URL object. This must be formatted as a valid URI.",
+                  "constraints": {
+                    "unique": false
+                  },
+                  "example": "https://example.org"
+                },
+                "organization_id": {
+                  "name": "organization_id",
+                  "type": "string",
+                  "format": "uuid",
+                  "title": "Organization Identifier",
+                  "description": "The identifier for the organization associated with this URL object",
+                  "constraints": {
+                    "unique": false
+                  }
+                },
+                "service_id": {
+                  "name": "service_id",
+                  "type": "string",
+                  "format": "uuid",
+                  "title": "Service Identifier",
+                  "description": "The identifier for the service associated with this URL object",
+                  "constraints": {
+                    "unique": false
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "url"
+              ]
+            }
+          },
           "email": {
             "name": "email",
             "type": "string",
@@ -21910,14 +21986,90 @@
               "website": {
                 "name": "website",
                 "type": "string",
+                "format": "uri",
                 "title": "Website",
                 "description": "The URL (website address) of the organization.",
-                "format": "uri",
                 "constraints": {
                   "unique": false
                 },
                 "example": "http://example.com",
                 "core": "Y"
+              },
+              "additional_websites": {
+                "name": "additional_websites",
+                "title": "Additional Websites",
+                "description": "The details of additional websites for the organization.",
+                "type": "array",
+                "items": {
+                  "name": "url",
+                  "path": "url.csv",
+                  "description": "A URL with a label",
+                  "datapackage_metadata": {
+                    "format": "csv",
+                    "mediatype": "text/csv",
+                    "profile": "tabular-data-resource",
+                    "order": 99
+                  },
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "name": "id",
+                      "type": "string",
+                      "title": "Identifier",
+                      "description": "The identifier for the URL object. Each URL must have a unique identifier.",
+                      "format": "uuid",
+                      "constraints": {
+                        "unique": true
+                      },
+                      "example": "30951f94-7b24-11ef-ba1b-a79405d4dcaa"
+                    },
+                    "label": {
+                      "name": "label",
+                      "type": "string",
+                      "title": "Label",
+                      "description": "The human-readable label for this url e.g. \u201cTwitter\u201d or \u201cWebsite\u201d.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "Website"
+                    },
+                    "url": {
+                      "name": "url",
+                      "type": "string",
+                      "format": "uri",
+                      "title": "URL",
+                      "description": "The URL for this URL object. This must be formatted as a valid URI.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "https://example.org"
+                    },
+                    "organization_id": {
+                      "name": "organization_id",
+                      "type": "string",
+                      "format": "uuid",
+                      "title": "Organization Identifier",
+                      "description": "The identifier for the organization associated with this URL object",
+                      "constraints": {
+                        "unique": false
+                      }
+                    },
+                    "service_id": {
+                      "name": "service_id",
+                      "type": "string",
+                      "format": "uuid",
+                      "title": "Service Identifier",
+                      "description": "The identifier for the service associated with this URL object",
+                      "constraints": {
+                        "unique": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "url"
+                  ]
+                }
               },
               "tax_status": {
                 "name": "tax_status",
