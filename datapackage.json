@@ -643,6 +643,17 @@
                         },
                         "example": "value",
                         "core": "Y"
+                    },
+                    {
+                        "name": "label",
+                        "type": "string",
+                        "title": "Label",
+                        "description": "A free text label of the attribute.",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        },
+                        "example": "An Example Label"
                     }
                 ],
                 "foreignKeys": [
@@ -1818,6 +1829,19 @@
                         "core": "Y"
                     },
                     {
+                        "name": "service_at_location_id",
+                        "type": "string",
+                        "title": "Service At Location Identifier",
+                        "description": "The identifier of the service at location object linked to this object.",
+                        "format": "uuid",
+                        "constraints": {
+                            "required": false,
+                            "unique": false
+                        },
+                        "example": "af69894e-7bed-11ef-a85c-07e0918a608c",
+                        "core": "Y"
+                    },
+                    {
                         "name": "name",
                         "type": "string",
                         "title": "Name",
@@ -1880,6 +1904,13 @@
                         "fields": "service_id",
                         "reference": {
                             "resource": "service",
+                            "fields": "id"
+                        }
+                    },
+                    {
+                        "fields": "service_at_location_id",
+                        "reference": {
+                            "resource": "service_at_location",
                             "fields": "id"
                         }
                     }

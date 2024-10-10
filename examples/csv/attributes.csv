@@ -1,2 +1,2 @@
-id,link_id,taxonomy_term_id,link_type,link_entity,value
-ae58cc39-8b70-4ab1-8aea-786882e5ac8e,f28dd44b-0c4d-479f-8e90-4c52219a8b3c,3f7b145d-84af-42d7-8fae-eaca714b02b2,link_type,link_entity,value
+id,link_id,taxonomy_term_id,link_type,link_entity,value,label
+ae58cc39-8b70-4ab1-8aea-786882e5ac8e,f28dd44b-0c4d-479f-8e90-4c52219a8b3c,3f7b145d-84af-42d7-8fae-eaca714b02b2,link_type,link_entity,value,An Example Label

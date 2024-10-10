@@ -803,6 +803,16 @@
           "items": {
             "$ref": "#/definitions/metadata"
           }
+        },
+        "label": {
+          "name": "label",
+          "type": "string",
+          "title": "Label",
+          "description": "A free text label of the attribute.",
+          "constraints": {
+            "unique": false
+          },
+          "example": "An Example Label"
         }
       },
       "required": [
@@ -871,6 +881,15 @@
             "unique": false
           },
           "example": "Counselling Services provided by trained professionals in the MyCity area."
+        },
+        "service_areas": {
+          "name": "service_areas",
+          "type": "array",
+          "title": "Service Areas",
+          "description": "The details of the geographic area for which a service is available.",
+          "items": {
+            "$ref": "#/definitions/service_area"
+          }
         },
         "contacts": {
           "name": "contacts",
@@ -2037,6 +2056,18 @@
             "unique": false
           },
           "example": "ac148810-d857-441c-9679-408f346de14b",
+          "core": "Y"
+        },
+        "service_at_location_id": {
+          "name": "service_at_location_id",
+          "type": "string",
+          "title": "Service At Location Identifier",
+          "description": "The identifier of the service at location object linked to this object.",
+          "format": "uuid",
+          "constraints": {
+            "unique": false
+          },
+          "example": "af69894e-7bed-11ef-a85c-07e0918a608c",
           "core": "Y"
         },
         "name": {
