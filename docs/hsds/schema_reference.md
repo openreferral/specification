@@ -73,7 +73,7 @@ Each `service` object has the following fields:
 
 :::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
-:collapse: phones,schedules,service_areas,service_at_locations,languages,organization,funding,cost_options,program,required_documents,contacts,attributes,metadata,additional_urls
+:collapse: phones,schedules,service_areas,service_at_locations,languages,organization,funding,cost_options,program,required_documents,contacts,attributes,metadata,additional_urls,capacities
 ```
 :::
 

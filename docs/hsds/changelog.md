@@ -5,11 +5,50 @@ This page provides the list of changes that have been made to the HSDS schema.
 
 ## [v3.1](TODO)
 
-TODO: update link to this
+The header link to the 3.1 release will be added when this release has been approved.
+
+### New schemas
+
+* `url`
+* `service_capacity`
+* `unit`
 
 ### Backwards compatible schema changes
 
-* Descriptions for `address.address_type`, `location.location_type`, `schedule.wkst`, and `schedule.freq` have been updated to include their enum values.
+* For `address`
+  * Updated description of `address_type` to include enum values
+* For `attribute`
+  * added `label`
+* For `location`
+  * Updated description of `location_type` to include enum values
+* For `organization`
+  * Added `additional_websites`
+* For `schedule`
+  * Updated description of `wkst` to include enum values
+  * Updated description of `freq` to include enum values
+* For `service`
+  * Added `capacities`
+  * Added `additional_urls`
+* For `service_at_location`:
+  * Added `service_areas`
+* For `taxonomy_term`
+  * modified description of `language` to permit ISO 693-3 codes
+
+
+### Backwards compatible API changes
+
+* For `components/parameters/taxonomy_term_id`
+  * Modified description to make it generic to all record types
+* For `components/parameters/taxonomy_id`
+  * Modified description to make it generic to all record types
+* For `GET /organizations`
+  * Added `taxonomy_term_id` parameter
+  * Added `taxonomy_id` parameter
+* Added `POST /services`
+* Added `POST /taxonomies`
+* Added `POST /taxonomy_terms`
+* Added `POST /organizations`
+* Added `POST /service_at_locations`
 
 ## [v3.0](https://github.com/openreferral/specification/milestone/7)
 
