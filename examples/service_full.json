@@ -533,6 +533,22 @@
       ]
     }
   ],
+  "capacities": [
+    {
+      "id": "8896b788-7b3e-11ef-8db9-7f3d040352b3",
+      "unit": {
+        "id": "8896b788-7b3e-11ef-8db9-7f3d040352b3",
+        "name": "Kilogram",
+        "scheme": "SI",
+        "identifier": "kgm",
+        "uri": "https://not-a-real-url.org/standard-international-units/kgm"
+      },
+      "available": 12,
+      "maximum": 10,
+      "description": "Beds available for people experiencing homelessness.",
+      "updated": "2024-09-25T14:23:06.5+01:00"
+    }
+  ],
   "attributes": [
     {
       "id": "ae58cc39-8b70-4ab1-8aea-786882e5ac8e",

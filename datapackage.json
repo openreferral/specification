@@ -2752,6 +2752,71 @@
             }
         },
         {
+            "name": "service_capacity",
+            "path": "service_capacity.csv",
+            "description": "The details of service capacities for services.",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "profile": "tabular-data-resource",
+            "schema": {
+                "primaryKey": "id",
+                "fields": [
+                    {
+                        "name": "service_id",
+                        "title": "Service Identifier",
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "The identifier for the Service object associated with this service capacity object. Only required in the tabular representation.",
+                        "constraints": {
+                            "required": true,
+                            "unique": false
+                        },
+                        "example": "f75b808e-7bdb-11ef-afaa-ab00a77dc5c4"
+                    },
+                    {
+                        "name": "unit_id",
+                        "title": "Unit ID",
+                        "type": "string",
+                        "format": "uuid",
+                        "description": "The identifier for the unit object.",
+                        "constraints": {
+                            "required": true,
+                            "unique": false
+                        },
+                        "example": "187a37a2-7b40-11ef-9790-dbf7623d4407"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": "service_id",
+                        "reference": {
+                            "resource": "service",
+                            "fields": "id"
+                        }
+                    },
+                    {
+                        "fields": "unit_id",
+                        "reference": {
+                            "resource": "unit",
+                            "fields": "id"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "unit",
+            "path": "units.csv",
+            "description": "The details of units which are used to measure service capacity.",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "profile": "tabular-data-resource",
+            "schema": {
+                "primaryKey": "id",
+                "fields": []
+            }
+        },
+        {
             "name": "url",
             "path": "url.csv",
             "description": "A URL with a label",
