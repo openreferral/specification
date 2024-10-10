@@ -1,0 +1,104 @@
+{
+  "name": "service_capacity",
+  "path": "service_capacity.csv",
+  "description": "The details of service capacities for services.",
+  "datapackage_metadata": {
+    "format": "csv",
+    "mediatype": "text/csv",
+    "profile": "tabular-data-resource",
+    "order": 99
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "name": "id",
+      "title": "Identifier",
+      "type": "string",
+      "format": "uuid",
+      "description": "The identifier for the service_capacity object. Each service_capacity must have a unique identifier.",
+      "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
+    },
+    "service_id": {
+      "name": "service_id",
+      "title": "Service Identifier",
+      "type": "string",
+      "format": "uuid",
+      "description": "The identifier for the Service object associated with this service capacity object. Only required in the tabular representation.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "f75b808e-7bdb-11ef-afaa-ab00a77dc5c4"
+    },
+    "unit": {
+      "$ref": "unit.json"
+    },
+    "unit_id": {
+      "name": "unit_id",
+      "title": "Unit ID",
+      "type": "string",
+      "format": "uuid",
+      "description": "The identifier for the unit object.",
+      "constraints": {
+        "unique": false
+      },
+      "example": "187a37a2-7b40-11ef-9790-dbf7623d4407"
+    },
+    "available": {
+      "name": "available",
+      "title": "Available",
+      "type": "number",
+      "description": "The number of units available as of the last update.",
+      "example": "12"
+    },
+    "maximum": {
+      "name": "maximum",
+      "title": "Maximum",
+      "type": "number",
+      "description": "The maximum number of units that can be available for this service, if applicable",
+      "example": "10"
+    },
+    "description": {
+      "name": "description",
+      "title": "Description",
+      "type": "string",
+      "description": "A Human-Friendly description of this service capacity e.g. “Beds available for people experiencing homelessness”",
+      "example": "Beds available for people experiencing homelessness."
+    },
+    "updated": {
+      "name": "updated",
+      "title": "Date Updated",
+      "type": "string",
+      "format": "date-time",
+      "description": "The datetime when this service_capacit y object was last updated or changed. Should have millisecond accuracy. ",
+      "example": "2024-09-25T14:23:06.5+01:00"
+    },
+    "attributes": {
+      "name": "attributes",
+      "type": "array",
+      "title": "Attributes",
+      "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+      "items": {
+        "$ref": "attribute.json"
+      }
+    },
+    "metadata": {
+      "name": "metadata",
+      "type": "array",
+      "title": "Metadata",
+      "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+      "items": {
+        "$ref": "metadata.json"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "unit",
+    "available",
+    "updated"
+  ],
+  "tabular_required": [
+    "unit_id",
+    "service_id"
+  ]
+}

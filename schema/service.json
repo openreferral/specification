@@ -365,6 +365,15 @@
         "$ref": "contact.json"
       }
     },
+    "capacities": {
+      "name": "capacities",
+      "type": "array",
+      "title": "Capacities",
+      "description": "The details of capacities of this service. See `service_capacity`.",
+      "items": {
+        "$ref": "service_capacity.json"
+      }
+    },
     "attributes": {
       "name": "attributes",
       "type": "array",
