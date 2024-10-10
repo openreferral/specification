@@ -527,7 +527,7 @@
                       "name": "language",
                       "type": "string",
                       "title": "Language",
-                      "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                      "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                       "constraints": {
                         "unique": false
                       },
@@ -1671,7 +1671,7 @@
                                   "name": "language",
                                   "type": "string",
                                   "title": "Language",
-                                  "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                  "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                   "constraints": {
                                     "unique": false
                                   },
@@ -2478,7 +2478,7 @@
                             "name": "language",
                             "type": "string",
                             "title": "Language",
-                            "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                            "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                             "constraints": {
                               "unique": false
                             },
@@ -3286,7 +3286,7 @@
                       "name": "language",
                       "type": "string",
                       "title": "Language",
-                      "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                      "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                       "constraints": {
                         "unique": false
                       },
@@ -4313,7 +4313,7 @@
                             "name": "language",
                             "type": "string",
                             "title": "Language",
-                            "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                            "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                             "constraints": {
                               "unique": false
                             },
@@ -5120,7 +5120,7 @@
                       "name": "language",
                       "type": "string",
                       "title": "Language",
-                      "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                      "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                       "constraints": {
                         "unique": false
                       },
@@ -6212,7 +6212,7 @@
                       "name": "language",
                       "type": "string",
                       "title": "Language",
-                      "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                      "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                       "constraints": {
                         "unique": false
                       },
@@ -7260,7 +7260,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -8211,7 +8211,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -9361,7 +9361,7 @@
                                       "name": "language",
                                       "type": "string",
                                       "title": "Language",
-                                      "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                      "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                       "constraints": {
                                         "unique": false
                                       },
@@ -10168,7 +10168,7 @@
                                 "name": "language",
                                 "type": "string",
                                 "title": "Language",
-                                "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                 "constraints": {
                                   "unique": false
                                 },
@@ -10976,7 +10976,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -11856,7 +11856,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -12883,7 +12883,7 @@
                                 "name": "language",
                                 "type": "string",
                                 "title": "Language",
-                                "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                 "constraints": {
                                   "unique": false
                                 },
@@ -13690,7 +13690,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -14782,7 +14782,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -15589,7 +15589,7 @@
                     "name": "language",
                     "type": "string",
                     "title": "Language",
-                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                     "constraints": {
                       "unique": false
                     },
@@ -16397,7 +16397,7 @@
                 "name": "language",
                 "type": "string",
                 "title": "Language",
-                "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                 "constraints": {
                   "unique": false
                 },
@@ -16990,6 +16990,807 @@
                 "description": "The identifier for the service associated with this URL object",
                 "constraints": {
                   "unique": false
+                }
+              },
+              "attributes": {
+                "name": "attributes",
+                "type": "array",
+                "title": "Attributes",
+                "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+                "items": {
+                  "name": "attribute",
+                  "path": "attributes.csv",
+                  "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+                  "datapackage_metadata": {
+                    "format": "csv",
+                    "mediatype": "text/csv",
+                    "profile": "tabular-data-resource",
+                    "order": 4
+                  },
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "name": "id",
+                      "type": "string",
+                      "title": "Identifier",
+                      "description": "The identifier of the attribute entry. Each attribute entry should have a unique identifier.",
+                      "format": "uuid",
+                      "constraints": {
+                        "unique": true
+                      },
+                      "example": "ae58cc39-8b70-4ab1-8aea-786882e5ac8e",
+                      "core": "Y"
+                    },
+                    "link_id": {
+                      "name": "link_id",
+                      "type": "string",
+                      "title": "Link Identifier",
+                      "description": "The identifier of the entity to which this taxonomy term applies.",
+                      "format": "uuid",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "f28dd44b-0c4d-479f-8e90-4c52219a8b3c",
+                      "core": "Y"
+                    },
+                    "taxonomy_term_id": {
+                      "name": "taxonomy_term_id",
+                      "type": "string",
+                      "title": "Taxonomy Term Identifier",
+                      "description": "The identifier of this taxonomy term from the taxonomy table.",
+                      "format": "uuid",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "3f7b145d-84af-42d7-8fae-eaca714b02b2",
+                      "core": "Y"
+                    },
+                    "link_type": {
+                      "name": "link_type",
+                      "type": "string",
+                      "title": "Link Type",
+                      "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes, e.g. the service eligibility or intended audience.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "link_type",
+                      "core": "Y"
+                    },
+                    "link_entity": {
+                      "name": "link_entity",
+                      "type": "string",
+                      "title": "Link Entity",
+                      "description": "The table of the Link Identifier.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "link_entity",
+                      "core": "Y"
+                    },
+                    "value": {
+                      "name": "value",
+                      "type": "string",
+                      "title": "Value",
+                      "description": "The value (if any) of an attribute.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "value",
+                      "core": "Y"
+                    },
+                    "taxonomy_term": {
+                      "name": "taxonomy_term",
+                      "path": "taxonomy_terms.csv",
+                      "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term object contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
+                      "datapackage_metadata": {
+                        "format": "csv",
+                        "mediatype": "text/csv",
+                        "profile": "tabular-data-resource",
+                        "order": 16
+                      },
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "name": "id",
+                          "type": "string",
+                          "title": "Identifier",
+                          "description": "The identifier for this taxonomy term. Each taxonomy term must have a unique identifier, within the scope of the dataset.",
+                          "format": "uuid",
+                          "constraints": {
+                            "unique": true
+                          },
+                          "example": "3f7b145d-84af-42d7-8fae-eaca714b02b2",
+                          "core": "Y"
+                        },
+                        "code": {
+                          "name": "code",
+                          "type": "string",
+                          "title": "Code",
+                          "description": "The term identfier as used in the taxonomy. This and the taxonomy_id combined define the term.",
+                          "constraints": {
+                            "unique": true
+                          },
+                          "example": "code"
+                        },
+                        "name": {
+                          "name": "name",
+                          "type": "string",
+                          "title": "Name",
+                          "description": "The taxonomy term itself.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "name",
+                          "core": "Y"
+                        },
+                        "description": {
+                          "name": "description",
+                          "type": "string",
+                          "title": "Description",
+                          "description": "A free text description of the term.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "description"
+                        },
+                        "parent_id": {
+                          "name": "parent_id",
+                          "type": "string",
+                          "title": "Parent Identifier",
+                          "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this is not required.",
+                          "format": "uuid",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "0bc248fa-dc27-4650-9ba4-8f1a24ef16a2",
+                          "core": "Y"
+                        },
+                        "taxonomy": {
+                          "name": "taxonomy",
+                          "type": "string",
+                          "title": "Taxonomy",
+                          "description": "If this is an established taxonomy, a free text description of which taxonomy is in use. If possible, provide a URI.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "taxonomy",
+                          "core": "Y"
+                        },
+                        "taxonomy_detail": {
+                          "name": "taxonomy",
+                          "path": "taxonomies.csv",
+                          "description": "Taxonomies from which taxonomy terms are taken",
+                          "datapackage_metadata": {
+                            "format": "csv",
+                            "mediatype": "text/csv",
+                            "profile": "tabular-data-resource",
+                            "order": 21
+                          },
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "name": "id",
+                              "type": "string",
+                              "title": "Identifier",
+                              "description": "The identifier of the taxonomy. Each entry must have a unique identifier",
+                              "format": "uuid",
+                              "constraints": {
+                                "unique": true
+                              },
+                              "example": "5c4d79d7-cc55-470e-9f1f-8cad074e4892"
+                            },
+                            "name": {
+                              "name": "name",
+                              "type": "string",
+                              "title": "Name",
+                              "description": "The name of the taxonomy from which terms are sourced.",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "name"
+                            },
+                            "description": {
+                              "name": "description",
+                              "type": "string",
+                              "title": "Description",
+                              "description": "A free text description of the taxonomy.",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "description"
+                            },
+                            "uri": {
+                              "name": "uri",
+                              "type": "string",
+                              "title": "URI",
+                              "description": "The URI of the taxonomy.",
+                              "format": "uri",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "http://example.com"
+                            },
+                            "version": {
+                              "name": "version",
+                              "type": "string",
+                              "title": "Version",
+                              "description": "The version of the taxonomy.",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "version"
+                            },
+                            "metadata": {
+                              "name": "metadata",
+                              "type": "array",
+                              "title": "Metadata",
+                              "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                              "items": {
+                                "name": "metadata",
+                                "path": "metadata.csv",
+                                "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                                "datapackage_metadata": {
+                                  "format": "csv",
+                                  "mediatype": "text/csv",
+                                  "profile": "tabular-data-resource",
+                                  "order": 17
+                                },
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "name": "id",
+                                    "type": "string",
+                                    "title": "Identifier",
+                                    "description": "The identifier for this metadata. Each entry must have a unique identifier.",
+                                    "format": "uuid",
+                                    "constraints": {
+                                      "unique": true
+                                    },
+                                    "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+                                  },
+                                  "resource_id": {
+                                    "name": "resource_id",
+                                    "type": "string",
+                                    "title": "Resource Identifier",
+                                    "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+                                    "format": "uuid",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+                                  },
+                                  "resource_type": {
+                                    "name": "resource_type",
+                                    "type": "string",
+                                    "title": "Resource Type",
+                                    "description": "The type of entity being referenced.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "location"
+                                  },
+                                  "last_action_date": {
+                                    "name": "last_action_date",
+                                    "type": "string",
+                                    "title": "Last Action Date",
+                                    "description": "The date when data was changed.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "2011-01-01",
+                                    "datapackage_type": "date"
+                                  },
+                                  "last_action_type": {
+                                    "name": "last_action_type",
+                                    "type": "string",
+                                    "title": "Last Action Type",
+                                    "description": "The kind of change made to the data.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "update"
+                                  },
+                                  "field_name": {
+                                    "name": "field_name",
+                                    "type": "string",
+                                    "title": "Field Name",
+                                    "description": "The name of field that has been modified.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "name"
+                                  },
+                                  "previous_value": {
+                                    "name": "previous_value",
+                                    "type": "string",
+                                    "title": "Previous Value",
+                                    "description": "The previous value of the field that has been modified.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "MyCity Civic Center"
+                                  },
+                                  "replacement_value": {
+                                    "name": "replacement_value",
+                                    "type": "string",
+                                    "title": "Replacement Value",
+                                    "description": "The new value of the field that has been modified.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "MyCity New Civic Center"
+                                  },
+                                  "updated_by": {
+                                    "name": "updated_by",
+                                    "type": "string",
+                                    "title": "Updated By",
+                                    "description": "The name of the person who modified the field.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "Ann Persona"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "last_action_date",
+                                  "last_action_type",
+                                  "field_name",
+                                  "previous_value",
+                                  "replacement_value",
+                                  "updated_by"
+                                ],
+                                "tabular_required": [
+                                  "resource_id",
+                                  "resource_type"
+                                ]
+                              }
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "description"
+                          ],
+                          "title": "Taxonomy"
+                        },
+                        "language": {
+                          "name": "language",
+                          "type": "string",
+                          "title": "Language",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "eng"
+                        },
+                        "taxonomy_id": {
+                          "name": "taxonomy_id",
+                          "type": "string",
+                          "title": "Taxonomy Identifier",
+                          "description": "The identifier of the taxonomy containing the term.",
+                          "format": "uuid",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "07ff6aee-a219-438c-b694-d2fcb6c5373b"
+                        },
+                        "term_uri": {
+                          "name": "term_uri",
+                          "type": "string",
+                          "title": "Term URI",
+                          "description": "URI of the term.",
+                          "format": "uri",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "http://example.com"
+                        },
+                        "metadata": {
+                          "name": "metadata",
+                          "type": "array",
+                          "title": "Metadata",
+                          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                          "items": {
+                            "name": "metadata",
+                            "path": "metadata.csv",
+                            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                            "datapackage_metadata": {
+                              "format": "csv",
+                              "mediatype": "text/csv",
+                              "profile": "tabular-data-resource",
+                              "order": 17
+                            },
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "name": "id",
+                                "type": "string",
+                                "title": "Identifier",
+                                "description": "The identifier for this metadata. Each entry must have a unique identifier.",
+                                "format": "uuid",
+                                "constraints": {
+                                  "unique": true
+                                },
+                                "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+                              },
+                              "resource_id": {
+                                "name": "resource_id",
+                                "type": "string",
+                                "title": "Resource Identifier",
+                                "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+                                "format": "uuid",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+                              },
+                              "resource_type": {
+                                "name": "resource_type",
+                                "type": "string",
+                                "title": "Resource Type",
+                                "description": "The type of entity being referenced.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "location"
+                              },
+                              "last_action_date": {
+                                "name": "last_action_date",
+                                "type": "string",
+                                "title": "Last Action Date",
+                                "description": "The date when data was changed.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "2011-01-01",
+                                "datapackage_type": "date"
+                              },
+                              "last_action_type": {
+                                "name": "last_action_type",
+                                "type": "string",
+                                "title": "Last Action Type",
+                                "description": "The kind of change made to the data.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "update"
+                              },
+                              "field_name": {
+                                "name": "field_name",
+                                "type": "string",
+                                "title": "Field Name",
+                                "description": "The name of field that has been modified.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "name"
+                              },
+                              "previous_value": {
+                                "name": "previous_value",
+                                "type": "string",
+                                "title": "Previous Value",
+                                "description": "The previous value of the field that has been modified.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "MyCity Civic Center"
+                              },
+                              "replacement_value": {
+                                "name": "replacement_value",
+                                "type": "string",
+                                "title": "Replacement Value",
+                                "description": "The new value of the field that has been modified.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "MyCity New Civic Center"
+                              },
+                              "updated_by": {
+                                "name": "updated_by",
+                                "type": "string",
+                                "title": "Updated By",
+                                "description": "The name of the person who modified the field.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "Ann Persona"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "last_action_date",
+                              "last_action_type",
+                              "field_name",
+                              "previous_value",
+                              "replacement_value",
+                              "updated_by"
+                            ],
+                            "tabular_required": [
+                              "resource_id",
+                              "resource_type"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name",
+                        "description"
+                      ],
+                      "title": "Taxonomy Term"
+                    },
+                    "metadata": {
+                      "name": "metadata",
+                      "type": "array",
+                      "title": "Metadata",
+                      "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                      "items": {
+                        "name": "metadata",
+                        "path": "metadata.csv",
+                        "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                        "datapackage_metadata": {
+                          "format": "csv",
+                          "mediatype": "text/csv",
+                          "profile": "tabular-data-resource",
+                          "order": 17
+                        },
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "name": "id",
+                            "type": "string",
+                            "title": "Identifier",
+                            "description": "The identifier for this metadata. Each entry must have a unique identifier.",
+                            "format": "uuid",
+                            "constraints": {
+                              "unique": true
+                            },
+                            "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+                          },
+                          "resource_id": {
+                            "name": "resource_id",
+                            "type": "string",
+                            "title": "Resource Identifier",
+                            "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+                            "format": "uuid",
+                            "constraints": {
+                              "unique": false
+                            },
+                            "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+                          },
+                          "resource_type": {
+                            "name": "resource_type",
+                            "type": "string",
+                            "title": "Resource Type",
+                            "description": "The type of entity being referenced.",
+                            "constraints": {
+                              "unique": false
+                            },
+                            "example": "location"
+                          },
+                          "last_action_date": {
+                            "name": "last_action_date",
+                            "type": "string",
+                            "title": "Last Action Date",
+                            "description": "The date when data was changed.",
+                            "constraints": {
+                              "unique": false
+                            },
+                            "example": "2011-01-01",
+                            "datapackage_type": "date"
+                          },
+                          "last_action_type": {
+                            "name": "last_action_type",
+                            "type": "string",
+                            "title": "Last Action Type",
+                            "description": "The kind of change made to the data.",
+                            "constraints": {
+                              "unique": false
+                            },
+                            "example": "update"
+                          },
+                          "field_name": {
+                            "name": "field_name",
+                            "type": "string",
+                            "title": "Field Name",
+                            "description": "The name of field that has been modified.",
+                            "constraints": {
+                              "unique": false
+                            },
+                            "example": "name"
+                          },
+                          "previous_value": {
+                            "name": "previous_value",
+                            "type": "string",
+                            "title": "Previous Value",
+                            "description": "The previous value of the field that has been modified.",
+                            "constraints": {
+                              "unique": false
+                            },
+                            "example": "MyCity Civic Center"
+                          },
+                          "replacement_value": {
+                            "name": "replacement_value",
+                            "type": "string",
+                            "title": "Replacement Value",
+                            "description": "The new value of the field that has been modified.",
+                            "constraints": {
+                              "unique": false
+                            },
+                            "example": "MyCity New Civic Center"
+                          },
+                          "updated_by": {
+                            "name": "updated_by",
+                            "type": "string",
+                            "title": "Updated By",
+                            "description": "The name of the person who modified the field.",
+                            "constraints": {
+                              "unique": false
+                            },
+                            "example": "Ann Persona"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "last_action_date",
+                          "last_action_type",
+                          "field_name",
+                          "previous_value",
+                          "replacement_value",
+                          "updated_by"
+                        ],
+                        "tabular_required": [
+                          "resource_id",
+                          "resource_type"
+                        ]
+                      }
+                    },
+                    "label": {
+                      "name": "label",
+                      "type": "string",
+                      "title": "Label",
+                      "description": "A free text label of the attribute.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "An Example Label"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ],
+                  "tabular_required": [
+                    "link_id",
+                    "taxonomy_term_id",
+                    "link_entity"
+                  ]
+                }
+              },
+              "metadata": {
+                "name": "metadata",
+                "type": "array",
+                "title": "Metadata",
+                "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                "items": {
+                  "name": "metadata",
+                  "path": "metadata.csv",
+                  "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                  "datapackage_metadata": {
+                    "format": "csv",
+                    "mediatype": "text/csv",
+                    "profile": "tabular-data-resource",
+                    "order": 17
+                  },
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "name": "id",
+                      "type": "string",
+                      "title": "Identifier",
+                      "description": "The identifier for this metadata. Each entry must have a unique identifier.",
+                      "format": "uuid",
+                      "constraints": {
+                        "unique": true
+                      },
+                      "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+                    },
+                    "resource_id": {
+                      "name": "resource_id",
+                      "type": "string",
+                      "title": "Resource Identifier",
+                      "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+                      "format": "uuid",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+                    },
+                    "resource_type": {
+                      "name": "resource_type",
+                      "type": "string",
+                      "title": "Resource Type",
+                      "description": "The type of entity being referenced.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "location"
+                    },
+                    "last_action_date": {
+                      "name": "last_action_date",
+                      "type": "string",
+                      "title": "Last Action Date",
+                      "description": "The date when data was changed.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "2011-01-01",
+                      "datapackage_type": "date"
+                    },
+                    "last_action_type": {
+                      "name": "last_action_type",
+                      "type": "string",
+                      "title": "Last Action Type",
+                      "description": "The kind of change made to the data.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "update"
+                    },
+                    "field_name": {
+                      "name": "field_name",
+                      "type": "string",
+                      "title": "Field Name",
+                      "description": "The name of field that has been modified.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "name"
+                    },
+                    "previous_value": {
+                      "name": "previous_value",
+                      "type": "string",
+                      "title": "Previous Value",
+                      "description": "The previous value of the field that has been modified.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "MyCity Civic Center"
+                    },
+                    "replacement_value": {
+                      "name": "replacement_value",
+                      "type": "string",
+                      "title": "Replacement Value",
+                      "description": "The new value of the field that has been modified.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "MyCity New Civic Center"
+                    },
+                    "updated_by": {
+                      "name": "updated_by",
+                      "type": "string",
+                      "title": "Updated By",
+                      "description": "The name of the person who modified the field.",
+                      "constraints": {
+                        "unique": false
+                      },
+                      "example": "Ann Persona"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "last_action_date",
+                    "last_action_type",
+                    "field_name",
+                    "previous_value",
+                    "replacement_value",
+                    "updated_by"
+                  ],
+                  "tabular_required": [
+                    "resource_id",
+                    "resource_type"
+                  ]
                 }
               }
             },
@@ -17759,7 +18560,7 @@
                                 "name": "language",
                                 "type": "string",
                                 "title": "Language",
-                                "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                 "constraints": {
                                   "unique": false
                                 },
@@ -18566,7 +19367,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -19658,7 +20459,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -20570,7 +21371,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -21471,7 +22272,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -22061,6 +22862,807 @@
                     "constraints": {
                       "unique": false
                     }
+                  },
+                  "attributes": {
+                    "name": "attributes",
+                    "type": "array",
+                    "title": "Attributes",
+                    "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+                    "items": {
+                      "name": "attribute",
+                      "path": "attributes.csv",
+                      "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+                      "datapackage_metadata": {
+                        "format": "csv",
+                        "mediatype": "text/csv",
+                        "profile": "tabular-data-resource",
+                        "order": 4
+                      },
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "name": "id",
+                          "type": "string",
+                          "title": "Identifier",
+                          "description": "The identifier of the attribute entry. Each attribute entry should have a unique identifier.",
+                          "format": "uuid",
+                          "constraints": {
+                            "unique": true
+                          },
+                          "example": "ae58cc39-8b70-4ab1-8aea-786882e5ac8e",
+                          "core": "Y"
+                        },
+                        "link_id": {
+                          "name": "link_id",
+                          "type": "string",
+                          "title": "Link Identifier",
+                          "description": "The identifier of the entity to which this taxonomy term applies.",
+                          "format": "uuid",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "f28dd44b-0c4d-479f-8e90-4c52219a8b3c",
+                          "core": "Y"
+                        },
+                        "taxonomy_term_id": {
+                          "name": "taxonomy_term_id",
+                          "type": "string",
+                          "title": "Taxonomy Term Identifier",
+                          "description": "The identifier of this taxonomy term from the taxonomy table.",
+                          "format": "uuid",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "3f7b145d-84af-42d7-8fae-eaca714b02b2",
+                          "core": "Y"
+                        },
+                        "link_type": {
+                          "name": "link_type",
+                          "type": "string",
+                          "title": "Link Type",
+                          "description": "A code taken from an enumerated open codelist to indicate what the taxonomy term describes, e.g. the service eligibility or intended audience.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "link_type",
+                          "core": "Y"
+                        },
+                        "link_entity": {
+                          "name": "link_entity",
+                          "type": "string",
+                          "title": "Link Entity",
+                          "description": "The table of the Link Identifier.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "link_entity",
+                          "core": "Y"
+                        },
+                        "value": {
+                          "name": "value",
+                          "type": "string",
+                          "title": "Value",
+                          "description": "The value (if any) of an attribute.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "value",
+                          "core": "Y"
+                        },
+                        "taxonomy_term": {
+                          "name": "taxonomy_term",
+                          "path": "taxonomy_terms.csv",
+                          "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term object contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",
+                          "datapackage_metadata": {
+                            "format": "csv",
+                            "mediatype": "text/csv",
+                            "profile": "tabular-data-resource",
+                            "order": 16
+                          },
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "name": "id",
+                              "type": "string",
+                              "title": "Identifier",
+                              "description": "The identifier for this taxonomy term. Each taxonomy term must have a unique identifier, within the scope of the dataset.",
+                              "format": "uuid",
+                              "constraints": {
+                                "unique": true
+                              },
+                              "example": "3f7b145d-84af-42d7-8fae-eaca714b02b2",
+                              "core": "Y"
+                            },
+                            "code": {
+                              "name": "code",
+                              "type": "string",
+                              "title": "Code",
+                              "description": "The term identfier as used in the taxonomy. This and the taxonomy_id combined define the term.",
+                              "constraints": {
+                                "unique": true
+                              },
+                              "example": "code"
+                            },
+                            "name": {
+                              "name": "name",
+                              "type": "string",
+                              "title": "Name",
+                              "description": "The taxonomy term itself.",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "name",
+                              "core": "Y"
+                            },
+                            "description": {
+                              "name": "description",
+                              "type": "string",
+                              "title": "Description",
+                              "description": "A free text description of the term.",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "description"
+                            },
+                            "parent_id": {
+                              "name": "parent_id",
+                              "type": "string",
+                              "title": "Parent Identifier",
+                              "description": "If this is a child term in a hierarchical taxonomy, give the identifier of the parent category. For top-level categories, this is not required.",
+                              "format": "uuid",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "0bc248fa-dc27-4650-9ba4-8f1a24ef16a2",
+                              "core": "Y"
+                            },
+                            "taxonomy": {
+                              "name": "taxonomy",
+                              "type": "string",
+                              "title": "Taxonomy",
+                              "description": "If this is an established taxonomy, a free text description of which taxonomy is in use. If possible, provide a URI.",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "taxonomy",
+                              "core": "Y"
+                            },
+                            "taxonomy_detail": {
+                              "name": "taxonomy",
+                              "path": "taxonomies.csv",
+                              "description": "Taxonomies from which taxonomy terms are taken",
+                              "datapackage_metadata": {
+                                "format": "csv",
+                                "mediatype": "text/csv",
+                                "profile": "tabular-data-resource",
+                                "order": 21
+                              },
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "name": "id",
+                                  "type": "string",
+                                  "title": "Identifier",
+                                  "description": "The identifier of the taxonomy. Each entry must have a unique identifier",
+                                  "format": "uuid",
+                                  "constraints": {
+                                    "unique": true
+                                  },
+                                  "example": "5c4d79d7-cc55-470e-9f1f-8cad074e4892"
+                                },
+                                "name": {
+                                  "name": "name",
+                                  "type": "string",
+                                  "title": "Name",
+                                  "description": "The name of the taxonomy from which terms are sourced.",
+                                  "constraints": {
+                                    "unique": false
+                                  },
+                                  "example": "name"
+                                },
+                                "description": {
+                                  "name": "description",
+                                  "type": "string",
+                                  "title": "Description",
+                                  "description": "A free text description of the taxonomy.",
+                                  "constraints": {
+                                    "unique": false
+                                  },
+                                  "example": "description"
+                                },
+                                "uri": {
+                                  "name": "uri",
+                                  "type": "string",
+                                  "title": "URI",
+                                  "description": "The URI of the taxonomy.",
+                                  "format": "uri",
+                                  "constraints": {
+                                    "unique": false
+                                  },
+                                  "example": "http://example.com"
+                                },
+                                "version": {
+                                  "name": "version",
+                                  "type": "string",
+                                  "title": "Version",
+                                  "description": "The version of the taxonomy.",
+                                  "constraints": {
+                                    "unique": false
+                                  },
+                                  "example": "version"
+                                },
+                                "metadata": {
+                                  "name": "metadata",
+                                  "type": "array",
+                                  "title": "Metadata",
+                                  "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                                  "items": {
+                                    "name": "metadata",
+                                    "path": "metadata.csv",
+                                    "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                                    "datapackage_metadata": {
+                                      "format": "csv",
+                                      "mediatype": "text/csv",
+                                      "profile": "tabular-data-resource",
+                                      "order": 17
+                                    },
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "name": "id",
+                                        "type": "string",
+                                        "title": "Identifier",
+                                        "description": "The identifier for this metadata. Each entry must have a unique identifier.",
+                                        "format": "uuid",
+                                        "constraints": {
+                                          "unique": true
+                                        },
+                                        "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+                                      },
+                                      "resource_id": {
+                                        "name": "resource_id",
+                                        "type": "string",
+                                        "title": "Resource Identifier",
+                                        "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+                                        "format": "uuid",
+                                        "constraints": {
+                                          "unique": false
+                                        },
+                                        "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+                                      },
+                                      "resource_type": {
+                                        "name": "resource_type",
+                                        "type": "string",
+                                        "title": "Resource Type",
+                                        "description": "The type of entity being referenced.",
+                                        "constraints": {
+                                          "unique": false
+                                        },
+                                        "example": "location"
+                                      },
+                                      "last_action_date": {
+                                        "name": "last_action_date",
+                                        "type": "string",
+                                        "title": "Last Action Date",
+                                        "description": "The date when data was changed.",
+                                        "constraints": {
+                                          "unique": false
+                                        },
+                                        "example": "2011-01-01",
+                                        "datapackage_type": "date"
+                                      },
+                                      "last_action_type": {
+                                        "name": "last_action_type",
+                                        "type": "string",
+                                        "title": "Last Action Type",
+                                        "description": "The kind of change made to the data.",
+                                        "constraints": {
+                                          "unique": false
+                                        },
+                                        "example": "update"
+                                      },
+                                      "field_name": {
+                                        "name": "field_name",
+                                        "type": "string",
+                                        "title": "Field Name",
+                                        "description": "The name of field that has been modified.",
+                                        "constraints": {
+                                          "unique": false
+                                        },
+                                        "example": "name"
+                                      },
+                                      "previous_value": {
+                                        "name": "previous_value",
+                                        "type": "string",
+                                        "title": "Previous Value",
+                                        "description": "The previous value of the field that has been modified.",
+                                        "constraints": {
+                                          "unique": false
+                                        },
+                                        "example": "MyCity Civic Center"
+                                      },
+                                      "replacement_value": {
+                                        "name": "replacement_value",
+                                        "type": "string",
+                                        "title": "Replacement Value",
+                                        "description": "The new value of the field that has been modified.",
+                                        "constraints": {
+                                          "unique": false
+                                        },
+                                        "example": "MyCity New Civic Center"
+                                      },
+                                      "updated_by": {
+                                        "name": "updated_by",
+                                        "type": "string",
+                                        "title": "Updated By",
+                                        "description": "The name of the person who modified the field.",
+                                        "constraints": {
+                                          "unique": false
+                                        },
+                                        "example": "Ann Persona"
+                                      }
+                                    },
+                                    "required": [
+                                      "id",
+                                      "last_action_date",
+                                      "last_action_type",
+                                      "field_name",
+                                      "previous_value",
+                                      "replacement_value",
+                                      "updated_by"
+                                    ],
+                                    "tabular_required": [
+                                      "resource_id",
+                                      "resource_type"
+                                    ]
+                                  }
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "name",
+                                "description"
+                              ],
+                              "title": "Taxonomy"
+                            },
+                            "language": {
+                              "name": "language",
+                              "type": "string",
+                              "title": "Language",
+                              "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "eng"
+                            },
+                            "taxonomy_id": {
+                              "name": "taxonomy_id",
+                              "type": "string",
+                              "title": "Taxonomy Identifier",
+                              "description": "The identifier of the taxonomy containing the term.",
+                              "format": "uuid",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "07ff6aee-a219-438c-b694-d2fcb6c5373b"
+                            },
+                            "term_uri": {
+                              "name": "term_uri",
+                              "type": "string",
+                              "title": "Term URI",
+                              "description": "URI of the term.",
+                              "format": "uri",
+                              "constraints": {
+                                "unique": false
+                              },
+                              "example": "http://example.com"
+                            },
+                            "metadata": {
+                              "name": "metadata",
+                              "type": "array",
+                              "title": "Metadata",
+                              "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                              "items": {
+                                "name": "metadata",
+                                "path": "metadata.csv",
+                                "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                                "datapackage_metadata": {
+                                  "format": "csv",
+                                  "mediatype": "text/csv",
+                                  "profile": "tabular-data-resource",
+                                  "order": 17
+                                },
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "name": "id",
+                                    "type": "string",
+                                    "title": "Identifier",
+                                    "description": "The identifier for this metadata. Each entry must have a unique identifier.",
+                                    "format": "uuid",
+                                    "constraints": {
+                                      "unique": true
+                                    },
+                                    "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+                                  },
+                                  "resource_id": {
+                                    "name": "resource_id",
+                                    "type": "string",
+                                    "title": "Resource Identifier",
+                                    "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+                                    "format": "uuid",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+                                  },
+                                  "resource_type": {
+                                    "name": "resource_type",
+                                    "type": "string",
+                                    "title": "Resource Type",
+                                    "description": "The type of entity being referenced.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "location"
+                                  },
+                                  "last_action_date": {
+                                    "name": "last_action_date",
+                                    "type": "string",
+                                    "title": "Last Action Date",
+                                    "description": "The date when data was changed.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "2011-01-01",
+                                    "datapackage_type": "date"
+                                  },
+                                  "last_action_type": {
+                                    "name": "last_action_type",
+                                    "type": "string",
+                                    "title": "Last Action Type",
+                                    "description": "The kind of change made to the data.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "update"
+                                  },
+                                  "field_name": {
+                                    "name": "field_name",
+                                    "type": "string",
+                                    "title": "Field Name",
+                                    "description": "The name of field that has been modified.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "name"
+                                  },
+                                  "previous_value": {
+                                    "name": "previous_value",
+                                    "type": "string",
+                                    "title": "Previous Value",
+                                    "description": "The previous value of the field that has been modified.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "MyCity Civic Center"
+                                  },
+                                  "replacement_value": {
+                                    "name": "replacement_value",
+                                    "type": "string",
+                                    "title": "Replacement Value",
+                                    "description": "The new value of the field that has been modified.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "MyCity New Civic Center"
+                                  },
+                                  "updated_by": {
+                                    "name": "updated_by",
+                                    "type": "string",
+                                    "title": "Updated By",
+                                    "description": "The name of the person who modified the field.",
+                                    "constraints": {
+                                      "unique": false
+                                    },
+                                    "example": "Ann Persona"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "last_action_date",
+                                  "last_action_type",
+                                  "field_name",
+                                  "previous_value",
+                                  "replacement_value",
+                                  "updated_by"
+                                ],
+                                "tabular_required": [
+                                  "resource_id",
+                                  "resource_type"
+                                ]
+                              }
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "description"
+                          ],
+                          "title": "Taxonomy Term"
+                        },
+                        "metadata": {
+                          "name": "metadata",
+                          "type": "array",
+                          "title": "Metadata",
+                          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                          "items": {
+                            "name": "metadata",
+                            "path": "metadata.csv",
+                            "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                            "datapackage_metadata": {
+                              "format": "csv",
+                              "mediatype": "text/csv",
+                              "profile": "tabular-data-resource",
+                              "order": 17
+                            },
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "name": "id",
+                                "type": "string",
+                                "title": "Identifier",
+                                "description": "The identifier for this metadata. Each entry must have a unique identifier.",
+                                "format": "uuid",
+                                "constraints": {
+                                  "unique": true
+                                },
+                                "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+                              },
+                              "resource_id": {
+                                "name": "resource_id",
+                                "type": "string",
+                                "title": "Resource Identifier",
+                                "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+                                "format": "uuid",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+                              },
+                              "resource_type": {
+                                "name": "resource_type",
+                                "type": "string",
+                                "title": "Resource Type",
+                                "description": "The type of entity being referenced.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "location"
+                              },
+                              "last_action_date": {
+                                "name": "last_action_date",
+                                "type": "string",
+                                "title": "Last Action Date",
+                                "description": "The date when data was changed.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "2011-01-01",
+                                "datapackage_type": "date"
+                              },
+                              "last_action_type": {
+                                "name": "last_action_type",
+                                "type": "string",
+                                "title": "Last Action Type",
+                                "description": "The kind of change made to the data.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "update"
+                              },
+                              "field_name": {
+                                "name": "field_name",
+                                "type": "string",
+                                "title": "Field Name",
+                                "description": "The name of field that has been modified.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "name"
+                              },
+                              "previous_value": {
+                                "name": "previous_value",
+                                "type": "string",
+                                "title": "Previous Value",
+                                "description": "The previous value of the field that has been modified.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "MyCity Civic Center"
+                              },
+                              "replacement_value": {
+                                "name": "replacement_value",
+                                "type": "string",
+                                "title": "Replacement Value",
+                                "description": "The new value of the field that has been modified.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "MyCity New Civic Center"
+                              },
+                              "updated_by": {
+                                "name": "updated_by",
+                                "type": "string",
+                                "title": "Updated By",
+                                "description": "The name of the person who modified the field.",
+                                "constraints": {
+                                  "unique": false
+                                },
+                                "example": "Ann Persona"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "last_action_date",
+                              "last_action_type",
+                              "field_name",
+                              "previous_value",
+                              "replacement_value",
+                              "updated_by"
+                            ],
+                            "tabular_required": [
+                              "resource_id",
+                              "resource_type"
+                            ]
+                          }
+                        },
+                        "label": {
+                          "name": "label",
+                          "type": "string",
+                          "title": "Label",
+                          "description": "A free text label of the attribute.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "An Example Label"
+                        }
+                      },
+                      "required": [
+                        "id"
+                      ],
+                      "tabular_required": [
+                        "link_id",
+                        "taxonomy_term_id",
+                        "link_entity"
+                      ]
+                    }
+                  },
+                  "metadata": {
+                    "name": "metadata",
+                    "type": "array",
+                    "title": "Metadata",
+                    "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                    "items": {
+                      "name": "metadata",
+                      "path": "metadata.csv",
+                      "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+                      "datapackage_metadata": {
+                        "format": "csv",
+                        "mediatype": "text/csv",
+                        "profile": "tabular-data-resource",
+                        "order": 17
+                      },
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "name": "id",
+                          "type": "string",
+                          "title": "Identifier",
+                          "description": "The identifier for this metadata. Each entry must have a unique identifier.",
+                          "format": "uuid",
+                          "constraints": {
+                            "unique": true
+                          },
+                          "example": "6cd71e9f-1013-49d9-8370-26b8f59d3e5a"
+                        },
+                        "resource_id": {
+                          "name": "resource_id",
+                          "type": "string",
+                          "title": "Resource Identifier",
+                          "description": "The identifier of the resource (service, program, location, address, or contact) that this metadata describes.",
+                          "format": "uuid",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "38960354-e7d2-4cfa-a368-820f729d6ccf"
+                        },
+                        "resource_type": {
+                          "name": "resource_type",
+                          "type": "string",
+                          "title": "Resource Type",
+                          "description": "The type of entity being referenced.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "location"
+                        },
+                        "last_action_date": {
+                          "name": "last_action_date",
+                          "type": "string",
+                          "title": "Last Action Date",
+                          "description": "The date when data was changed.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "2011-01-01",
+                          "datapackage_type": "date"
+                        },
+                        "last_action_type": {
+                          "name": "last_action_type",
+                          "type": "string",
+                          "title": "Last Action Type",
+                          "description": "The kind of change made to the data.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "update"
+                        },
+                        "field_name": {
+                          "name": "field_name",
+                          "type": "string",
+                          "title": "Field Name",
+                          "description": "The name of field that has been modified.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "name"
+                        },
+                        "previous_value": {
+                          "name": "previous_value",
+                          "type": "string",
+                          "title": "Previous Value",
+                          "description": "The previous value of the field that has been modified.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "MyCity Civic Center"
+                        },
+                        "replacement_value": {
+                          "name": "replacement_value",
+                          "type": "string",
+                          "title": "Replacement Value",
+                          "description": "The new value of the field that has been modified.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "MyCity New Civic Center"
+                        },
+                        "updated_by": {
+                          "name": "updated_by",
+                          "type": "string",
+                          "title": "Updated By",
+                          "description": "The name of the person who modified the field.",
+                          "constraints": {
+                            "unique": false
+                          },
+                          "example": "Ann Persona"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "last_action_date",
+                        "last_action_type",
+                        "field_name",
+                        "previous_value",
+                        "replacement_value",
+                        "updated_by"
+                      ],
+                      "tabular_required": [
+                        "resource_id",
+                        "resource_type"
+                      ]
+                    }
                   }
                 },
                 "required": [
@@ -22567,7 +24169,7 @@
                               "name": "language",
                               "type": "string",
                               "title": "Language",
-                              "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                              "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                               "constraints": {
                                 "unique": false
                               },
@@ -23711,7 +25313,7 @@
                                           "name": "language",
                                           "type": "string",
                                           "title": "Language",
-                                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                           "constraints": {
                                             "unique": false
                                           },
@@ -24518,7 +26120,7 @@
                                     "name": "language",
                                     "type": "string",
                                     "title": "Language",
-                                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                     "constraints": {
                                       "unique": false
                                     },
@@ -25326,7 +26928,7 @@
                               "name": "language",
                               "type": "string",
                               "title": "Language",
-                              "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                              "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                               "constraints": {
                                 "unique": false
                               },
@@ -26353,7 +27955,7 @@
                                     "name": "language",
                                     "type": "string",
                                     "title": "Language",
-                                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                     "constraints": {
                                       "unique": false
                                     },
@@ -27160,7 +28762,7 @@
                               "name": "language",
                               "type": "string",
                               "title": "Language",
-                              "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                              "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                               "constraints": {
                                 "unique": false
                               },
@@ -28214,7 +29816,7 @@
                                     "name": "language",
                                     "type": "string",
                                     "title": "Language",
-                                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                     "constraints": {
                                       "unique": false
                                     },
@@ -29165,7 +30767,7 @@
                                     "name": "language",
                                     "type": "string",
                                     "title": "Language",
-                                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                     "constraints": {
                                       "unique": false
                                     },
@@ -30315,7 +31917,7 @@
                                                 "name": "language",
                                                 "type": "string",
                                                 "title": "Language",
-                                                "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                                "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                                 "constraints": {
                                                   "unique": false
                                                 },
@@ -31122,7 +32724,7 @@
                                           "name": "language",
                                           "type": "string",
                                           "title": "Language",
-                                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                           "constraints": {
                                             "unique": false
                                           },
@@ -31930,7 +33532,7 @@
                                     "name": "language",
                                     "type": "string",
                                     "title": "Language",
-                                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                     "constraints": {
                                       "unique": false
                                     },
@@ -32810,7 +34412,7 @@
                                     "name": "language",
                                     "type": "string",
                                     "title": "Language",
-                                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                     "constraints": {
                                       "unique": false
                                     },
@@ -33837,7 +35439,7 @@
                                           "name": "language",
                                           "type": "string",
                                           "title": "Language",
-                                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                           "constraints": {
                                             "unique": false
                                           },
@@ -34644,7 +36246,7 @@
                                     "name": "language",
                                     "type": "string",
                                     "title": "Language",
-                                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                     "constraints": {
                                       "unique": false
                                     },
@@ -35736,7 +37338,7 @@
                                     "name": "language",
                                     "type": "string",
                                     "title": "Language",
-                                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                     "constraints": {
                                       "unique": false
                                     },
@@ -36543,7 +38145,7 @@
                               "name": "language",
                               "type": "string",
                               "title": "Language",
-                              "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                              "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                               "constraints": {
                                 "unique": false
                               },
@@ -37420,7 +39022,7 @@
                               "name": "language",
                               "type": "string",
                               "title": "Language",
-                              "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                              "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                               "constraints": {
                                 "unique": false
                               },
@@ -38301,7 +39903,7 @@
                               "name": "language",
                               "type": "string",
                               "title": "Language",
-                              "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                              "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                               "constraints": {
                                 "unique": false
                               },
@@ -39113,7 +40715,7 @@
                         "name": "language",
                         "type": "string",
                         "title": "Language",
-                        "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                        "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                         "constraints": {
                           "unique": false
                         },
@@ -39982,7 +41584,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -40890,7 +42492,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -41764,7 +43366,7 @@
                         "name": "language",
                         "type": "string",
                         "title": "Language",
-                        "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                        "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                         "constraints": {
                           "unique": false
                         },
@@ -42636,7 +44238,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -43780,7 +45382,7 @@
                                       "name": "language",
                                       "type": "string",
                                       "title": "Language",
-                                      "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                      "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                       "constraints": {
                                         "unique": false
                                       },
@@ -44587,7 +46189,7 @@
                                 "name": "language",
                                 "type": "string",
                                 "title": "Language",
-                                "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                                "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                                 "constraints": {
                                   "unique": false
                                 },
@@ -45395,7 +46997,7 @@
                           "name": "language",
                           "type": "string",
                           "title": "Language",
-                          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                           "constraints": {
                             "unique": false
                           },
@@ -46202,7 +47804,7 @@
                     "name": "language",
                     "type": "string",
                     "title": "Language",
-                    "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+                    "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
                     "constraints": {
                       "unique": false
                     },

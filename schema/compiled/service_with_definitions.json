@@ -2532,7 +2532,7 @@
           "name": "language",
           "type": "string",
           "title": "Language",
-          "description": "An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
+          "description": "An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.",
           "constraints": {
             "unique": false
           },
@@ -3128,6 +3128,24 @@
           "description": "The identifier for the service associated with this URL object",
           "constraints": {
             "unique": false
+          }
+        },
+        "attributes": {
+          "name": "attributes",
+          "type": "array",
+          "title": "Attributes",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+          "items": {
+            "$ref": "#/definitions/attribute"
+          }
+        },
+        "metadata": {
+          "name": "metadata",
+          "type": "array",
+          "title": "Metadata",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+          "items": {
+            "$ref": "#/definitions/metadata"
           }
         }
       },
