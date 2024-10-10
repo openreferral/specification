@@ -669,8 +669,8 @@ Each `unit` object has the following fields:
 
 :::{tab-item} Example
 ```{eval-rst}
-.. jsoninclude:: ../../examples/unit.json
-    :jsonpointer:
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /capacities/0/unit
     :title: unit
 ```
 :::
@@ -707,8 +707,8 @@ Each `service_capacity` object has the following fields:
 
 :::{tab-item} Example
 ```{eval-rst}
-.. jsoninclude:: ../../examples/service_capacity.json
-    :jsonpointer:
+.. jsoninclude:: ../../examples/service_full.json
+    :jsonpointer: /capacities
     :title: service_capacity
 ```
 :::
@@ -785,7 +785,7 @@ Each `url` object has the following fields:
 :::{tab-item} Example
 ```{eval-rst}
 .. jsoninclude:: ../../examples/service_full.json
-    :jsonpointer: /url
+    :jsonpointer: /additional_urls
     :title: url
 ```
 
