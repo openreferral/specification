@@ -34,6 +34,18 @@
             "example": "ac148810-d857-441c-9679-408f346de14b",
             "core": "Y"
         },
+	"service_at_location_id": {
+            "name": "service_at_location_id",
+            "type": "string",
+            "title": "Service At Location Identifier",
+            "description": "The identifier of the service at location object linked to this object.",
+            "format": "uuid",
+            "constraints": {
+                "unique": false
+            },
+            "example": "af69894e-7bed-11ef-a85c-07e0918a608c",
+            "core": "Y"
+        },
         "name": {
             "name": "name",
             "type": "string",
