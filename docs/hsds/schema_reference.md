@@ -769,7 +769,7 @@ Each `url` object has the following fields:
 :::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/url
-:collapse: taxonomy_term,metadata
+:collapse: attributes,taxonomy_term,metadata
 
 ```
 :::
