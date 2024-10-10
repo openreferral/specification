@@ -370,6 +370,12 @@
             "$ref": "#/components/parameters/full"
           },
           {
+            "$ref": "#/components/parameters/taxonomy_term_id"
+          },
+          {
+            "$ref": "#/components/parameters/taxonomy_id"
+          },
+          {
             "$ref": "#/components/parameters/page"
           },
           {
@@ -599,7 +605,7 @@
         "name": "taxonomy_term_id",
         "in": "query",
         "required": false,
-        "description": "Search for services with particular taxonomy_term.",
+        "description": "Search for records with particular taxonomy_term.",
         "schema": {
           "type": "string"
         }
@@ -608,7 +614,7 @@
         "name": "taxonomy_id",
         "in": "query",
         "required": false,
-        "description": "Search for services which contain any term with this taxonomy.",
+        "description": "Search for records which contain any term with this taxonomy.",
         "schema": {
           "type": "string"
         }
