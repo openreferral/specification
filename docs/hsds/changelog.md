@@ -3,9 +3,7 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
-## [v3.1](TODO)
-
-The header link to the 3.1 release will be added when this release has been approved.
+## [v3.1](https://github.com/openreferral/specification/releases/tag/v3.1)
 
 ### New schemas
 
