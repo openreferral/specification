@@ -149,7 +149,7 @@ Each `service_at_location` object has the following fields:
 :::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/service_at_location
-:collapse: contacts,phones,schedules,location,attributes,metadata
+:collapse: contacts,phones,schedules,location,attributes,metadata,service_areas
 
 ```
 :::
@@ -769,7 +769,7 @@ Each `url` object has the following fields:
 :::{tab-item} Fields
 ```{jsonschema} ../../schema/compiled/service_with_definitions.json
 :pointer: /definitions/url
-:collapse: attributes,taxonomy_term,metadata
+:collapse: attributes,metadata
 
 ```
 :::
