@@ -99,7 +99,7 @@ myst-parser==0.17.2
     #   sphinxcontrib-opendataservices-jsonschema
 numpy==1.24.2
     # via pandas
-orjson==3.8.7
+orjson==3.9.15
     # via flatterer
 packaging==23.0
     # via sphinx
