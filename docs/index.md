@@ -22,7 +22,7 @@ The *HSDS Implementation Guidance* section provides additional materials about s
 The contents of the *HSDS Implementation Guidance* may also be useful to data users who want to understand more about HSDS in support of their analysis.
 
 
-### Open Referral Initiative
+### Adnout the Open Referral Initiative
 
 This documentation also provides materials about the Open Referral Initiative itself, which is distinct from HSDS. Pages in the *About the Open Referral Initiative* section do not directly describe HSDS, and therefore are not technically part of the standard.
 
