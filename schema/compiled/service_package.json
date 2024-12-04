@@ -48424,6 +48424,7 @@
                 "unique": false
               },
               "format": "date-time",
+              "datapackage_type": "datetime",
               "description": "The datetime when this service_capacit y object was last updated or changed. Should have millisecond accuracy. ",
               "example": "2024-09-25T14:23:06.5+01:00"
             },
