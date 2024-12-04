@@ -50,7 +50,8 @@
       "description": "The identifier for the organization associated with this URL object",
       "constraints": {
         "unique": false
-      }
+      },
+      "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610"
     },
     "service_id": {
       "name": "service_id",
@@ -60,7 +61,8 @@
       "description": "The identifier for the service associated with this URL object",
       "constraints": {
         "unique": false
-      }
+      },
+      "example": "ac148810-d857-441c-9679-408f346de14b"
     },
     "attributes": {
       "name": "attributes",

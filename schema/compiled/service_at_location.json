@@ -106,7 +106,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "af69894e-7bed-11ef-a85c-07e0918a608c",
+            "example": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
             "core": "Y"
           },
           "name": {
@@ -16980,7 +16980,8 @@
                 "description": "The identifier for the organization associated with this URL object",
                 "constraints": {
                   "unique": false
-                }
+                },
+                "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610"
               },
               "service_id": {
                 "name": "service_id",
@@ -16990,7 +16991,8 @@
                 "description": "The identifier for the service associated with this URL object",
                 "constraints": {
                   "unique": false
-                }
+                },
+                "example": "ac148810-d857-441c-9679-408f346de14b"
               },
               "attributes": {
                 "name": "attributes",
@@ -20950,7 +20952,7 @@
                 "constraints": {
                   "unique": false
                 },
-                "example": "af69894e-7bed-11ef-a85c-07e0918a608c",
+                "example": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
                 "core": "Y"
               },
               "name": {
@@ -22851,7 +22853,8 @@
                     "description": "The identifier for the organization associated with this URL object",
                     "constraints": {
                       "unique": false
-                    }
+                    },
+                    "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610"
                   },
                   "service_id": {
                     "name": "service_id",
@@ -22861,7 +22864,8 @@
                     "description": "The identifier for the service associated with this URL object",
                     "constraints": {
                       "unique": false
-                    }
+                    },
+                    "example": "ac148810-d857-441c-9679-408f346de14b"
                   },
                   "attributes": {
                     "name": "attributes",
@@ -47459,6 +47463,10 @@
                 "name": "id",
                 "title": "Identifier",
                 "type": "string",
+                "constraints": {
+                  "required": true,
+                  "unique": true
+                },
                 "format": "uuid",
                 "description": "The identifier for the service_capacity object. Each service_capacity must have a unique identifier.",
                 "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
@@ -47472,7 +47480,7 @@
                 "constraints": {
                   "unique": false
                 },
-                "example": "f75b808e-7bdb-11ef-afaa-ab00a77dc5c4"
+                "example": "ac148810-d857-441c-9679-408f346de14b"
               },
               "unit": {
                 "name": "unit",
@@ -47490,6 +47498,10 @@
                     "name": "id",
                     "type": "string",
                     "format": "uuid",
+                    "constraints": {
+                      "required": true,
+                      "unique": true
+                    },
                     "title": "Identifier",
                     "description": "The identifier for the unit object. Each unit must have a unique identifier.",
                     "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
@@ -47497,6 +47509,10 @@
                   "name": {
                     "name": "name",
                     "type": "string",
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    },
                     "title": "Name",
                     "description": "The human-readable name for this unit e.g. \u201cBed\u201d or \u201cHours\u201d",
                     "example": "Kilogram"
@@ -47504,6 +47520,10 @@
                   "scheme": {
                     "name": "scheme",
                     "type": "string",
+                    "constraints": {
+                      "required": false,
+                      "unique": false
+                    },
                     "title": "Scheme",
                     "description": "The scheme which formalizes the unit, if applicable e.g. \u201cSI\u201d for Standard International Units such as Kilogram, Litre, etc.",
                     "example": "SI"
@@ -47511,6 +47531,10 @@
                   "identifier": {
                     "name": "identifier",
                     "type": "string",
+                    "constraints": {
+                      "required": false,
+                      "unique": false
+                    },
                     "title": "Unit Identifier",
                     "description": "The identifier of the unit taken from the scheme if applicable e.g. `kgm` for Kilogram.",
                     "example": "kgm"
@@ -47518,6 +47542,10 @@
                   "uri": {
                     "name": "uri",
                     "type": "string",
+                    "constraints": {
+                      "required": false,
+                      "unique": false
+                    },
                     "format": "uri",
                     "title": "URI",
                     "description": "The URI to the definition of the unit, if applicable",
@@ -48339,12 +48367,16 @@
                 "constraints": {
                   "unique": false
                 },
-                "example": "187a37a2-7b40-11ef-9790-dbf7623d4407"
+                "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
               },
               "available": {
                 "name": "available",
                 "title": "Available",
                 "type": "number",
+                "constraints": {
+                  "required": true,
+                  "unique": false
+                },
                 "description": "The number of units available as of the last update.",
                 "example": "12"
               },
@@ -48352,6 +48384,10 @@
                 "name": "maximum",
                 "title": "Maximum",
                 "type": "number",
+                "constraints": {
+                  "required": false,
+                  "unique": false
+                },
                 "description": "The maximum number of units that can be available for this service, if applicable",
                 "example": "10"
               },
@@ -48359,6 +48395,10 @@
                 "name": "description",
                 "title": "Description",
                 "type": "string",
+                "constraints": {
+                  "required": false,
+                  "unique": false
+                },
                 "description": "A Human-Friendly description of this service capacity e.g. \u201cBeds available for people experiencing homelessness\u201d",
                 "example": "Beds available for people experiencing homelessness."
               },
@@ -48366,7 +48406,12 @@
                 "name": "updated",
                 "title": "Date Updated",
                 "type": "string",
+                "constraints": {
+                  "required": true,
+                  "unique": false
+                },
                 "format": "date-time",
+                "datapackage_type": "datetime",
                 "description": "The datetime when this service_capacit y object was last updated or changed. Should have millisecond accuracy. ",
                 "example": "2024-09-25T14:23:06.5+01:00"
               },
