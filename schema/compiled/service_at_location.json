@@ -106,7 +106,7 @@
             "constraints": {
               "unique": false
             },
-            "example": "af69894e-7bed-11ef-a85c-07e0918a608c",
+            "example": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
             "core": "Y"
           },
           "name": {
@@ -16980,7 +16980,8 @@
                 "description": "The identifier for the organization associated with this URL object",
                 "constraints": {
                   "unique": false
-                }
+                },
+                "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610"
               },
               "service_id": {
                 "name": "service_id",
@@ -16990,7 +16991,8 @@
                 "description": "The identifier for the service associated with this URL object",
                 "constraints": {
                   "unique": false
-                }
+                },
+                "example": "ac148810-d857-441c-9679-408f346de14b"
               },
               "attributes": {
                 "name": "attributes",
@@ -20950,7 +20952,7 @@
                 "constraints": {
                   "unique": false
                 },
-                "example": "af69894e-7bed-11ef-a85c-07e0918a608c",
+                "example": "e94c9f38-1e8f-4564-91d4-d53501ab1765",
                 "core": "Y"
               },
               "name": {
@@ -22851,7 +22853,8 @@
                     "description": "The identifier for the organization associated with this URL object",
                     "constraints": {
                       "unique": false
-                    }
+                    },
+                    "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610"
                   },
                   "service_id": {
                     "name": "service_id",
@@ -22861,7 +22864,8 @@
                     "description": "The identifier for the service associated with this URL object",
                     "constraints": {
                       "unique": false
-                    }
+                    },
+                    "example": "ac148810-d857-441c-9679-408f346de14b"
                   },
                   "attributes": {
                     "name": "attributes",
@@ -47476,7 +47480,7 @@
                 "constraints": {
                   "unique": false
                 },
-                "example": "f75b808e-7bdb-11ef-afaa-ab00a77dc5c4"
+                "example": "ac148810-d857-441c-9679-408f346de14b"
               },
               "unit": {
                 "name": "unit",
@@ -48363,7 +48367,7 @@
                 "constraints": {
                   "unique": false
                 },
-                "example": "187a37a2-7b40-11ef-9790-dbf7623d4407"
+                "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
               },
               "available": {
                 "name": "available",

@@ -31,7 +31,7 @@
       "constraints": {
         "unique": false
       },
-      "example": "f75b808e-7bdb-11ef-afaa-ab00a77dc5c4"
+      "example": "ac148810-d857-441c-9679-408f346de14b"
     },
     "unit": {
       "$ref": "unit.json"
@@ -45,7 +45,7 @@
       "constraints": {
         "unique": false
       },
-      "example": "187a37a2-7b40-11ef-9790-dbf7623d4407"
+      "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
     },
     "available": {
       "name": "available",

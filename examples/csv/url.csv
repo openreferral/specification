@@ -1,2 +1,2 @@
-id,label,url
-30951f94-7b24-11ef-ba1b-a79405d4dcaa,Website,https://example.org
+id,label,url,organization_id,service_id
+30951f94-7b24-11ef-ba1b-a79405d4dcaa,Website,https://example.org,d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610,ac148810-d857-441c-9679-408f346de14b
