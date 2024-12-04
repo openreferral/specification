@@ -15,4 +15,3 @@
 If you have edited any schema files:
 
 - [ ] Run `hsds_schema.py` to update `datapackage.json` and example files
-- [ ] Update the [logical model](http://docs.openreferral.org/en/latest/hsds/logical_model/) page if relevant
