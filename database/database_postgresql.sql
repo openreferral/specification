@@ -245,7 +245,8 @@ CREATE TABLE public.attribute (
     taxonomy_term_id character varying(250) NOT NULL,
     link_type text,
     link_entity text NOT NULL,
-    value text
+    value text,
+    label text
 );
 
 
@@ -291,6 +292,13 @@ COMMENT ON COLUMN public.attribute.link_entity IS 'The table of the Link Identif
 --
 
 COMMENT ON COLUMN public.attribute.value IS 'The value (if any) of an attribute.';
+
+
+--
+-- Name: COLUMN attribute.label; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.attribute.label IS 'A free text label of the attribute.';
 
 
 --
@@ -1528,6 +1536,7 @@ COMMENT ON COLUMN public.service.last_modified IS 'The datetime when the service
 CREATE TABLE public.service_area (
     id character varying(250) NOT NULL,
     service_id character varying(250),
+    service_at_location_id character varying(250),
     name text,
     description text,
     extent text,
@@ -1550,6 +1559,13 @@ COMMENT ON COLUMN public.service_area.id IS 'The identifier for the service area
 --
 
 COMMENT ON COLUMN public.service_area.service_id IS 'The identifier of the service for which this entry describes the service area';
+
+
+--
+-- Name: COLUMN service_area.service_at_location_id; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.service_area.service_at_location_id IS 'The identifier of the service at location object linked to this object.';
 
 
 --
@@ -1627,6 +1643,72 @@ COMMENT ON COLUMN public.service_at_location.location_id IS 'The identifier of t
 --
 
 COMMENT ON COLUMN public.service_at_location.description IS 'A free text description of the service at this specific location.';
+
+
+--
+-- Name: service_capacity; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.service_capacity (
+    id character varying(250) NOT NULL,
+    service_id character varying(250) NOT NULL,
+    unit_id character varying(250) NOT NULL,
+    available numeric NOT NULL,
+    maximum numeric,
+    description text,
+    updated timestamp without time zone NOT NULL
+);
+
+
+ALTER TABLE public.service_capacity OWNER TO postgres;
+
+--
+-- Name: COLUMN service_capacity.id; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.service_capacity.id IS 'The identifier for the service_capacity object. Each service_capacity must have a unique identifier.';
+
+
+--
+-- Name: COLUMN service_capacity.service_id; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.service_capacity.service_id IS 'The identifier for the Service object associated with this service capacity object. Only required in the tabular representation.';
+
+
+--
+-- Name: COLUMN service_capacity.unit_id; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.service_capacity.unit_id IS 'The identifier for the unit object.';
+
+
+--
+-- Name: COLUMN service_capacity.available; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.service_capacity.available IS 'The number of units available as of the last update.';
+
+
+--
+-- Name: COLUMN service_capacity.maximum; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.service_capacity.maximum IS 'The maximum number of units that can be available for this service, if applicable';
+
+
+--
+-- Name: COLUMN service_capacity.description; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.service_capacity.description IS 'A Human-Friendly description of this service capacity e.g. “Beds available for people experiencing homelessness”';
+
+
+--
+-- Name: COLUMN service_capacity.updated; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.service_capacity.updated IS 'The datetime when this service_capacit y object was last updated or changed. Should have millisecond accuracy. ';
 
 
 --
@@ -1744,7 +1826,7 @@ COMMENT ON COLUMN public.taxonomy_term.taxonomy IS 'If this is an established ta
 -- Name: COLUMN taxonomy_term.language; Type: COMMENT; Schema: public; Owner: postgres
 --
 
-COMMENT ON COLUMN public.taxonomy_term.language IS 'An ISO 639-1, or ISO 639-2 [language code](available at http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.';
+COMMENT ON COLUMN public.taxonomy_term.language IS 'An ISO 639-1, ISO 639-2, or ISO 639-3 [language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) to represent the language of the term. The three-letter codes from ISO 639-2 and ISO 639-3 provide greater accuracy when describing variants of languages, which may be relevant to particular communities.';
 
 
 --
@@ -1759,6 +1841,56 @@ COMMENT ON COLUMN public.taxonomy_term.taxonomy_id IS 'The identifier of the tax
 --
 
 COMMENT ON COLUMN public.taxonomy_term.term_uri IS 'URI of the term.';
+
+
+--
+-- Name: unit; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.unit (
+    id character varying(250) NOT NULL,
+    name text NOT NULL,
+    scheme text,
+    identifier text,
+    uri text
+);
+
+
+ALTER TABLE public.unit OWNER TO postgres;
+
+--
+-- Name: COLUMN unit.id; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.unit.id IS 'The identifier for the unit object. Each unit must have a unique identifier.';
+
+
+--
+-- Name: COLUMN unit.name; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.unit.name IS 'The human-readable name for this unit e.g. “Bed” or “Hours”';
+
+
+--
+-- Name: COLUMN unit.scheme; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.unit.scheme IS 'The scheme which formalizes the unit, if applicable e.g. “SI” for Standard International Units such as Kilogram, Litre, etc.';
+
+
+--
+-- Name: COLUMN unit.identifier; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.unit.identifier IS 'The identifier of the unit taken from the scheme if applicable e.g. `kgm` for Kilogram.';
+
+
+--
+-- Name: COLUMN unit.uri; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.unit.uri IS 'The URI to the definition of the unit, if applicable';
 
 
 --
@@ -1964,6 +2096,14 @@ ALTER TABLE ONLY public.service_at_location
 
 
 --
+-- Name: service_capacity service_capacity_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.service_capacity
+    ADD CONSTRAINT service_capacity_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: service service_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1993,6 +2133,14 @@ ALTER TABLE ONLY public.taxonomy_term
 
 ALTER TABLE ONLY public.taxonomy_term
     ADD CONSTRAINT taxonomy_term_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: unit unit_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.unit
+    ADD CONSTRAINT unit_pkey PRIMARY KEY (id);
 
 
 --
@@ -2204,6 +2352,14 @@ ALTER TABLE ONLY public.schedule
 
 
 --
+-- Name: service_area service_area_service_at_location_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.service_area
+    ADD CONSTRAINT service_area_service_at_location_id_fkey FOREIGN KEY (service_at_location_id) REFERENCES public.service_at_location(id);
+
+
+--
 -- Name: service_area service_area_service_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -2225,6 +2381,22 @@ ALTER TABLE ONLY public.service_at_location
 
 ALTER TABLE ONLY public.service_at_location
     ADD CONSTRAINT service_at_location_service_id_fkey FOREIGN KEY (service_id) REFERENCES public.service(id);
+
+
+--
+-- Name: service_capacity service_capacity_service_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.service_capacity
+    ADD CONSTRAINT service_capacity_service_id_fkey FOREIGN KEY (service_id) REFERENCES public.service(id);
+
+
+--
+-- Name: service_capacity service_capacity_unit_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.service_capacity
+    ADD CONSTRAINT service_capacity_unit_id_fkey FOREIGN KEY (unit_id) REFERENCES public.unit(id);
 
 
 --
