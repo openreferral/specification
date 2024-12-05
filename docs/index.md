@@ -28,14 +28,6 @@ This documentation also provides materials about the Open Referral Initiative it
 
 The contents of the *About the Open Referral Initiative* section may be of interest for those looking to understand more about the wider Open Referral project as well as other standards which are relevant to HSDS.
 
-### Comment on our docs using Hypothes.is
-
-This documentation supports community comments via [Hypothes.is](https://web.hypothes.is/).
-
-Hypothes.is is an annotation service embedded into this documentation site. You may notice some text highlighted in yellow, or the button in the top right of each page which reveals the list of annotations for that page.
-
-To get involved in annotating the documentation, you'll need to create an account at Hypothes.is, but it's otherwise as simple as highlighting some text on the page and using the pop-up box to add your comments.
-
 ## Our ecosystem
 
 **Open Referral’s ecosystem** includes a range of working open source software applications that can be freely redeployed to work with HSDS-compatible data and/or APIs. Many of these tools can be found in [our Github organization](http://github.com/openreferral).
