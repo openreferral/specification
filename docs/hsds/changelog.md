@@ -77,7 +77,7 @@ This page provides the list of changes that have been made to the HSDS schema.
     * added `minimum_age` and `maximum_age`
 * For `organization`
     * added `logo`
-    * added `parent_oranization_id`
+    * added `parent_organization_id`
     * added `uri`
     * added `website`
 * `organization_identifier` entity added
