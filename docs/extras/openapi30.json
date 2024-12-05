@@ -826,7 +826,10 @@
             "type": "boolean",
             "description": "A Boolean value indicating if there is an empty result set"
           }
-        }
+        },
+        "required": [
+          "empty"
+        ]
       }
     },
     "parameters": {
