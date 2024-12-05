@@ -5,8 +5,10 @@ This page provides the list of changes that have been made to the HSDS schema.
 
 ## [v3.1.1](https://github.com/openreferral/specification/releases/tag/v3.1.1)
 
-* Made Page.empty a required field for API responses
-
+* Made `Page.Empty` a required field for API responses
+* Fixed bad foreign keys and missing values in some example data 
+* Set `service_capacity.updated.datapackage_type` to `datetime`
+* Set `constraints` for fields in `unit` and `service_capacity` schemas 
 
 ## [v3.1](https://github.com/openreferral/specification/releases/tag/v3.1)
 
@@ -75,7 +77,7 @@ This page provides the list of changes that have been made to the HSDS schema.
     * added `minimum_age` and `maximum_age`
 * For `organization`
     * added `logo`
-    * added `parent_oranization_id`
+    * added `parent_organization_id`
     * added `uri`
     * added `website`
 * `organization_identifier` entity added
