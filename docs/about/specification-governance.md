@@ -27,7 +27,7 @@ At a ‘global’ level, Open Referral's core team consists of technical and ins
 
 ### A standing Technical Committee oversees development of the Human Service Data Specifications.
 
-*Updated Spring 2024.* The Human Service Data Specifications – Open Referral's core technical product – are developed through transparent, consensus-based cycles that are facilitated by Open Referral's core leadership, governed by a standing Technical Committee, and codified by the designated technical steward.
+The Human Service Data Specifications – Open Referral's core technical product – are developed through transparent, consensus-based cycles that are facilitated by Open Referral's core leadership, governed by a standing Technical Committee [(see the Technnical Committee Charter)](https://docs.google.com/document/d/1QBn5dqYIrrGwHKF_kwWVi_52ZWVa4UiVvVjctYlYXwo/edit?usp=sharing), and codified by the designated technical steward. 
 
 Technical committee members document and prioritize prospective changes to HSDS and help the technical stewards maintain a backlog of issues for further discussion. Committee members attend regular, open meetings with the Lead Organizer and Technical Steward where updates to HSDS are discussed. They also participate in discussion on the Open Referral Forums and HSDS Github repositories. 
 
