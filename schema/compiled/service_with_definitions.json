@@ -3075,189 +3075,6 @@
         "description"
       ]
     },
-    "url": {
-      "name": "url",
-      "path": "url.csv",
-      "description": "A URL with a label",
-      "datapackage_metadata": {
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 99
-      },
-      "type": "object",
-      "properties": {
-        "id": {
-          "name": "id",
-          "type": "string",
-          "title": "Identifier",
-          "description": "The identifier for the URL object. Each URL must have a unique identifier.",
-          "format": "uuid",
-          "constraints": {
-            "unique": true
-          },
-          "example": "30951f94-7b24-11ef-ba1b-a79405d4dcaa"
-        },
-        "label": {
-          "name": "label",
-          "type": "string",
-          "title": "Label",
-          "description": "The human-readable label for this url e.g. \u201cTwitter\u201d or \u201cWebsite\u201d.",
-          "constraints": {
-            "unique": false
-          },
-          "example": "Website"
-        },
-        "url": {
-          "name": "url",
-          "type": "string",
-          "format": "uri",
-          "title": "URL",
-          "description": "The URL for this URL object. This must be formatted as a valid URI.",
-          "constraints": {
-            "unique": false
-          },
-          "example": "https://example.org"
-        },
-        "organization_id": {
-          "name": "organization_id",
-          "type": "string",
-          "format": "uuid",
-          "title": "Organization Identifier",
-          "description": "The identifier for the organization associated with this URL object",
-          "constraints": {
-            "unique": false
-          },
-          "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610"
-        },
-        "service_id": {
-          "name": "service_id",
-          "type": "string",
-          "format": "uuid",
-          "title": "Service Identifier",
-          "description": "The identifier for the service associated with this URL object",
-          "constraints": {
-            "unique": false
-          },
-          "example": "ac148810-d857-441c-9679-408f346de14b"
-        },
-        "attributes": {
-          "name": "attributes",
-          "type": "array",
-          "title": "Attributes",
-          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
-          "items": {
-            "$ref": "#/definitions/attribute"
-          }
-        },
-        "metadata": {
-          "name": "metadata",
-          "type": "array",
-          "title": "Metadata",
-          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
-          "items": {
-            "$ref": "#/definitions/metadata"
-          }
-        }
-      },
-      "required": [
-        "id",
-        "url"
-      ]
-    },
-    "unit": {
-      "name": "unit",
-      "path": "units.csv",
-      "description": "The details of units which are used to measure service capacity.",
-      "datapackage_metadata": {
-        "format": "csv",
-        "mediatype": "text/csv",
-        "profile": "tabular-data-resource",
-        "order": 99
-      },
-      "type": "object",
-      "properties": {
-        "id": {
-          "name": "id",
-          "type": "string",
-          "format": "uuid",
-          "constraints": {
-            "required": true,
-            "unique": true
-          },
-          "title": "Identifier",
-          "description": "The identifier for the unit object. Each unit must have a unique identifier.",
-          "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
-        },
-        "name": {
-          "name": "name",
-          "type": "string",
-          "constraints": {
-            "required": true,
-            "unique": false
-          },
-          "title": "Name",
-          "description": "The human-readable name for this unit e.g. \u201cBed\u201d or \u201cHours\u201d",
-          "example": "Kilogram"
-        },
-        "scheme": {
-          "name": "scheme",
-          "type": "string",
-          "constraints": {
-            "required": false,
-            "unique": false
-          },
-          "title": "Scheme",
-          "description": "The scheme which formalizes the unit, if applicable e.g. \u201cSI\u201d for Standard International Units such as Kilogram, Litre, etc.",
-          "example": "SI"
-        },
-        "identifier": {
-          "name": "identifier",
-          "type": "string",
-          "constraints": {
-            "required": false,
-            "unique": false
-          },
-          "title": "Unit Identifier",
-          "description": "The identifier of the unit taken from the scheme if applicable e.g. `kgm` for Kilogram.",
-          "example": "kgm"
-        },
-        "uri": {
-          "name": "uri",
-          "type": "string",
-          "constraints": {
-            "required": false,
-            "unique": false
-          },
-          "format": "uri",
-          "title": "URI",
-          "description": "The URI to the definition of the unit, if applicable",
-          "example": "https://not-a-real-url.org/standard-international-units/kgm"
-        },
-        "attributes": {
-          "name": "attributes",
-          "type": "array",
-          "title": "Attributes",
-          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
-          "items": {
-            "$ref": "#/definitions/attribute"
-          }
-        },
-        "metadata": {
-          "name": "metadata",
-          "type": "array",
-          "title": "Metadata",
-          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
-          "items": {
-            "$ref": "#/definitions/metadata"
-          }
-        }
-      },
-      "required": [
-        "id",
-        "name"
-      ]
-    },
     "service_capacity": {
       "name": "service_capacity",
       "path": "service_capacity.csv",
@@ -3381,6 +3198,189 @@
       "tabular_required": [
         "unit_id",
         "service_id"
+      ]
+    },
+    "unit": {
+      "name": "unit",
+      "path": "units.csv",
+      "description": "The details of units which are used to measure service capacity.",
+      "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 99
+      },
+      "type": "object",
+      "properties": {
+        "id": {
+          "name": "id",
+          "type": "string",
+          "format": "uuid",
+          "constraints": {
+            "required": true,
+            "unique": true
+          },
+          "title": "Identifier",
+          "description": "The identifier for the unit object. Each unit must have a unique identifier.",
+          "example": "8896b788-7b3e-11ef-8db9-7f3d040352b3"
+        },
+        "name": {
+          "name": "name",
+          "type": "string",
+          "constraints": {
+            "required": true,
+            "unique": false
+          },
+          "title": "Name",
+          "description": "The human-readable name for this unit e.g. \u201cBed\u201d or \u201cHours\u201d",
+          "example": "Kilogram"
+        },
+        "scheme": {
+          "name": "scheme",
+          "type": "string",
+          "constraints": {
+            "required": false,
+            "unique": false
+          },
+          "title": "Scheme",
+          "description": "The scheme which formalizes the unit, if applicable e.g. \u201cSI\u201d for Standard International Units such as Kilogram, Litre, etc.",
+          "example": "SI"
+        },
+        "identifier": {
+          "name": "identifier",
+          "type": "string",
+          "constraints": {
+            "required": false,
+            "unique": false
+          },
+          "title": "Unit Identifier",
+          "description": "The identifier of the unit taken from the scheme if applicable e.g. `kgm` for Kilogram.",
+          "example": "kgm"
+        },
+        "uri": {
+          "name": "uri",
+          "type": "string",
+          "constraints": {
+            "required": false,
+            "unique": false
+          },
+          "format": "uri",
+          "title": "URI",
+          "description": "The URI to the definition of the unit, if applicable",
+          "example": "https://not-a-real-url.org/standard-international-units/kgm"
+        },
+        "attributes": {
+          "name": "attributes",
+          "type": "array",
+          "title": "Attributes",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+          "items": {
+            "$ref": "#/definitions/attribute"
+          }
+        },
+        "metadata": {
+          "name": "metadata",
+          "type": "array",
+          "title": "Metadata",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+          "items": {
+            "$ref": "#/definitions/metadata"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "url": {
+      "name": "url",
+      "path": "url.csv",
+      "description": "A URL with a label",
+      "datapackage_metadata": {
+        "format": "csv",
+        "mediatype": "text/csv",
+        "profile": "tabular-data-resource",
+        "order": 99
+      },
+      "type": "object",
+      "properties": {
+        "id": {
+          "name": "id",
+          "type": "string",
+          "title": "Identifier",
+          "description": "The identifier for the URL object. Each URL must have a unique identifier.",
+          "format": "uuid",
+          "constraints": {
+            "unique": true
+          },
+          "example": "30951f94-7b24-11ef-ba1b-a79405d4dcaa"
+        },
+        "label": {
+          "name": "label",
+          "type": "string",
+          "title": "Label",
+          "description": "The human-readable label for this url e.g. \u201cTwitter\u201d or \u201cWebsite\u201d.",
+          "constraints": {
+            "unique": false
+          },
+          "example": "Website"
+        },
+        "url": {
+          "name": "url",
+          "type": "string",
+          "format": "uri",
+          "title": "URL",
+          "description": "The URL for this URL object. This must be formatted as a valid URI.",
+          "constraints": {
+            "unique": false
+          },
+          "example": "https://example.org"
+        },
+        "organization_id": {
+          "name": "organization_id",
+          "type": "string",
+          "format": "uuid",
+          "title": "Organization Identifier",
+          "description": "The identifier for the organization associated with this URL object",
+          "constraints": {
+            "unique": false
+          },
+          "example": "d9d5e0f5-d3ce-4f73-9a2f-4dd0ecc6c610"
+        },
+        "service_id": {
+          "name": "service_id",
+          "type": "string",
+          "format": "uuid",
+          "title": "Service Identifier",
+          "description": "The identifier for the service associated with this URL object",
+          "constraints": {
+            "unique": false
+          },
+          "example": "ac148810-d857-441c-9679-408f346de14b"
+        },
+        "attributes": {
+          "name": "attributes",
+          "type": "array",
+          "title": "Attributes",
+          "description": "A link between a service and one or more classifications that describe the nature of the service provided.",
+          "items": {
+            "$ref": "#/definitions/attribute"
+          }
+        },
+        "metadata": {
+          "name": "metadata",
+          "type": "array",
+          "title": "Metadata",
+          "description": "A record of the changes that have been made to the data in order to maintain provenance information.",
+          "items": {
+            "$ref": "#/definitions/metadata"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "url"
       ]
     }
   }
