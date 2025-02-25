@@ -3,7 +3,7 @@
   "info": {
     "title": "HSDS OpenAPI",
     "version": "3.0",
-    "description": "Open API for the Human Services Data Specification. See [HSDS documentation](http://docs.openreferral.org/en/3.0/) for more details on the specification.",
+    "description": "\nOpen Referral develops data standards and open source tools that make it easier to share, find and use information about health, human, and social services i.e. community resource directory data. Our Human Service Data Specification (HSDS, AKA \u2018the Open Referral format\u2019) is a data exchange format that enables resource directory data to be shared among heterogeneous information systems. \n\nWe provide an [OpenAPI](https://www.openapis.org/) specification that can be used as a blueprint for the design or adaptation of API platforms to provide read or read/write access to information on organizations, services, locations and the details about them. The API protocol provides most of the functionality needed for simple access and exchange of data.\n\nThis Swagger UI will aid the development of API's that will validate against the Open API specification. \n\nFor further info please see:\n- [API Reference Section in the Docs](http://docs.openreferral.org/en/latest/hsds/api_reference.html#)\n- [API Specification (GitHub)](https://github.com/openreferral/specification/tree/3.0/schema/openapi.json) &  [Issue tracker](https://github.com/openreferral/specification/issues)\n        ",
     "license": {
       "name": "Creative Commons Attribution Share-Alike 4.0 license",
       "url": "https://creativecommons.org/licenses/by/4.0/"
