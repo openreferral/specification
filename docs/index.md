@@ -1,3 +1,8 @@
+
+```{eval-rst}
+.. include:: hsds/warningbox.rst
+```
+
 About
 =====
 

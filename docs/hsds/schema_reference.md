@@ -1,3 +1,7 @@
+```{eval-rst}
+.. include:: warningbox.rst
+```
+
 Schema Reference
 ================
 
