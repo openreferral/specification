@@ -1,5 +1,8 @@
 ```{eval-rst}
 .. _hsds-about:
+
+.. include:: warningbox.rst
+
 ```
 
 About HSDS
