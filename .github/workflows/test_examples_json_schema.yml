@@ -5,16 +5,12 @@ jobs:
   test_examples_json_schema:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Setup python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: 3.9
         architecture: x64
     - run: sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config
-    - uses: actions/cache@v1
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
     - run: pip install -r requirements.txt
     - run: ./validate_examples_json_schema.sh
