@@ -65911,7 +65911,7 @@
                 "format": "csv",
                 "mediatype": "text/csv",
                 "profile": "tabular-data-resource",
-                "order": 99
+                "order": 97
               },
               "type": "object",
               "properties": {
@@ -65946,7 +65946,7 @@
                     "format": "csv",
                     "mediatype": "text/csv",
                     "profile": "tabular-data-resource",
-                    "order": 99
+                    "order": 98
                   },
                   "type": "object",
                   "properties": {
