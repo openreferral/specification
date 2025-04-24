@@ -60,11 +60,11 @@ The [MARC 21 Format for Community Information](https://www.loc.gov/marc/communit
 
 It includes 5 subcategories:
 
-Individual - an individual with a particular expertise
-Organization - an organization or any group
-Program or service - an offering or activity of a group or institution which carries out the purposes of that group or institution
-Event - a scheduled happening
-Other - a kind of Community Information not mentioned above. For example, the data may be for a facility, such as a planetarium on a university campus.
+* Individual - an individual with a particular expertise
+* Organization - an organization or any group
+* Program or service - an offering or activity of a group or institution which carries out the purposes of that group or institution
+* Event - a scheduled happening
+* Other - a kind of Community Information not mentioned above. For example, the data may be for a facility, such as a planetarium on a university campus.
 
 ## Related Taxonomies
 
