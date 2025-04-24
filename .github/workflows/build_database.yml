@@ -54,11 +54,11 @@ jobs:
 #         git push
   build_database_postgresql:
     #needs: build_database_mysql
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     services:
       postgresql:
-        # 12 is chosen because that matches the version of the client utils we will install
-        image: postgres:12
+        # 16 is chosen because that matches the version of the client utils we will install
+        image: postgres:16
         env:
           POSTGRES_PASSWORD: 1234
         options: >-
@@ -80,7 +80,7 @@ jobs:
     - name: Install Ubuntu libs
       run: |
         sudo apt-get update
-        sudo apt-get install -y graphviz graphviz-dev postgresql-client-12 libpq-dev
+        sudo apt-get install -y graphviz graphviz-dev postgresql-client-16 libpq-dev
     - name: Install Python libs
       run: pip install -r requirements.txt
     - name: Install Python Libs for DB work
