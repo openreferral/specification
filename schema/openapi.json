@@ -43,7 +43,11 @@
                       "type": "string",
                       "format": "uri",
                       "description": "URL of the openapi JSON file which defines this API."
-                    }
+                    },
+		    "description": {
+		       "type": "string",
+		       "description": "A human-readable description of this API feed"
+		    }
                   }
                 }
               }
