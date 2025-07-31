@@ -1,0 +1,4 @@
+Code,Title,Description
+"required","Required","This endpoint is REQUIRED by the HSDS API Specification"
+"optional","Optional","This endpoint is OPTIONAL in the HSDS API Specification"
+"experimental","Experimental","This endpoint is experimental and is included for the purposes of testing and feedback from the community. It is considered OPTIONAL by the HSDS API Specification."
