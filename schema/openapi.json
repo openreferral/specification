@@ -22,7 +22,7 @@
        "description": "This endpoint is REQUIRED by the HSDS API Specification",
        "externalDocs": {
 	  "description": "This URI points to the codelist file used to define the codes in HSDS which are then used to define this tag. The OpenAPI Tag objects are used to implement the codelist, whereas the canonical definition is in the codelist. If there are any discrepancies between the description of this OpenAPI Tag and the codelist, the codelist takes priority.",
-	  "url": "https://docs.openreferral.org/en/latest/hsds/codelists.html#api-required-codelist"
+	  "url": "https://docs.openreferral.org/en/latest/hsds/codelists.html#api-endpoint-requirement"
        }
      },
      {
@@ -30,7 +30,7 @@
        "description": "This endpoint is OPTIONAL in the HSDS API Specification",
        "externalDocs": {
 	  "description": "This URI points to the codelist file used to define the codes in HSDS which are then used to define this tag. The OpenAPI Tag objects are used to implement the codelist, whereas the canonical definition is in the codelist. If there are any discrepancies between the description of this OpenAPI Tag and the codelist, the codelist takes priority.",
-	  "url": "https://docs.openreferral.org/en/latest/hsds/codelists.html#api-required-codelist"
+	  "url": "https://docs.openreferral.org/en/latest/hsds/codelists.html#api-endpoint-requirement"
        }
      },
      {
@@ -39,7 +39,7 @@
      },
      "externalDocs": {
 	  "description": "This URI points to the codelist file used to define the codes in HSDS which are then used to define this tag. The OpenAPI Tag objects are used to implement the codelist, whereas the canonical definition is in the codelist. If there are any discrepancies between the description of this OpenAPI Tag and the codelist, the codelist takes priority.",
-	  "url": "https://docs.openreferral.org/en/latest/hsds/codelists.html#api-required-codelist"
+	  "url": "https://docs.openreferral.org/en/latest/hsds/codelists.html#api-endpoint-requirement"
        }
   ],
   "paths": {
