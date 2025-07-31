@@ -47,6 +47,37 @@
 		    "description": {
 		       "type": "string",
 		       "description": "A human-readable description of this API feed"
+		    },
+		    "publisher": {
+		       "type": "object",
+		       "properties": {
+			  "name": {
+			    "type": "string",
+			    "description": "The name of the publisher of this API feed."
+			  },
+			  "identifier": {
+			     "type": "string",
+			     "description": "An organization identifier string formatted according to org-id.guide e.g. GB-COH-123456."
+			  },
+			  "email": {
+			      "type": "string",
+			      "format": "email",
+			      "description": "An email address that can be used to submit feedback about data in this feed."
+			  },
+			  "website": {
+			      "type": "string",
+			      "format": "uri",
+			      "description": "A URL that can be used to submit feedback about data in this feed."
+			  },
+			  "additional_websites": {
+				"type": "array",
+				"description": "Additional URLs that can be used to contact the Publisher about data in this feed.",
+				"items": {
+				    "type": "string",
+				    "format": "uri"
+				}
+			  }
+		       }
 		    }
                   }
                 }
