@@ -1,6 +1,8 @@
-# Types of User and User Personas
+# Types of Use and User Personas
 
-Open Referral recognizes a small set of ways that resource directory data is used – each such type of use is associated with diverse types of users. **These constitute our primary groups of stakeholders** – and this array of perspectives establishes the critical framework through which we conceive, design, and evaluate the products created by our initiative.
+Open Referral recognizes a small set of ways that resource directory data is used – each such _type of use_ is associated with diverse _types of users_. **These constitute our primary groups of stakeholders** – and this array of perspectives establishes the critical framework through which we conceive, design, and evaluate the products created by our initiative.
+
+Types of Use:
 
 **Seeking Help**
 
