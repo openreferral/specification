@@ -7,11 +7,15 @@ Unlike with the HSDS Schemas where we can provide canonical JSON Schema represen
 
 To overcome this limitation, the API specification on this page uses the key words "MUST", "REQUIRED" and "OPTIONAL" in accordance with [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) to describe whether each endpoint is required by the API Specification. This is used alongside the details of the canonical OpenAPI formatted reference file to measure compliance with the API Specification.
 
-The current canonical HSDS API specification in OpenAPI 3.1 format is available at the following URL: [https://raw.githubusercontent.com/openreferral/specification/3.0/schema/openapi.json](https://raw.githubusercontent.com/openreferral/specification/3.0/schema/openapi.json)
+The current canonical HSDS API specification in OpenAPI 3.1 format is available at the following URL: [https://raw.githubusercontent.com/openreferral/specification/3.2/schema/openapi.json](https://raw.githubusercontent.com/openreferral/specification/3.2/schema/openapi.json)
 
 For those more familiar with tools such as SwaggerUI, we provide [a Swagger UI representation](../extras/openapi.html). Readers should note that due to incompatibilities between Swagger UI and OpenAPI 3.1, the file powering the Swagger UI representation is compiled from the canonical HSDS API specification file. Therefore if there are any conflicts between the Swagger UI representation and the specification defined on this API Reference page, then *this specification takes precedence*.
 
 If there are errors or omissions in this API specification, you are encouraged to raise issues on [on the issue tracker](https://github.com/openreferral/specification/issues).
+
+## OpenAPI Tags
+
+The OpenAPI specification makes use of OpenAPI's [Tag object](https://spec.openapis.org/oas/latest.html#tag-object) to tad endpoints with tags drawn from the [API Endpoint Requirement codelist](./codelists.md#api-endpoint-requirement). For convenience, these codes and definitions have been reproduced in the OpenAPI file as `Tag`s. If there are any discrepencies between the definitions of these terms between the canonical codelists and the corresponding `Tag` objects in the OpenAPI file; **the canonical codelists take precedence**.
 
 ## Lists and Pagination
 

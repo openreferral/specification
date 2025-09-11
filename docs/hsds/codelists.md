@@ -10,7 +10,7 @@ This is used to define codes which are then implemented by the OpenAPI file &mda
 
 This codelist is the result of a knowledge exchange with [CommonGrants](https://commongrants.org/), who implement a similar system to overcome the challenge of using OpenAPI to encode an API Reference.
 
-```eval_rst
+```{eval-rst}
 .. csv-table:: 
    :file: ../../schema/codelists/api-endpoint-requirement.csv
    :header-rows: 1
