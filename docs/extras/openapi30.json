@@ -9,12 +9,33 @@
       "url": "https://creativecommons.org/licenses/by/4.0/"
     }
   },
+  "tags": [
+    {
+      "name": "required",
+      "description": "This endpoint is REQUIRED by the HSDS API Specification",
+      "externalDocs": {
+        "description": "This URI points to the codelist file used to define the codes in HSDS which are then used to define this tag. The OpenAPI Tag objects are used to implement the codelist, whereas the canonical definition is in the codelist. If there are any discrepancies between the description of this OpenAPI Tag and the codelist, the codelist takes priority.",
+        "url": "https://docs.openreferral.org/en/latest/hsds/codelists.html#api-endpoint-requirement"
+      }
+    },
+    {
+      "name": "optional",
+      "description": "This endpoint is OPTIONAL in the HSDS API Specification",
+      "externalDocs": {
+        "description": "This URI points to the codelist file used to define the codes in HSDS which are then used to define this tag. The OpenAPI Tag objects are used to implement the codelist, whereas the canonical definition is in the codelist. If there are any discrepancies between the description of this OpenAPI Tag and the codelist, the codelist takes priority.",
+        "url": "https://docs.openreferral.org/en/latest/hsds/codelists.html#api-endpoint-requirement"
+      }
+    }
+  ],
   "paths": {
     "/": {
       "get": {
         "description": "Retrieve information about this API and its relationship with HSDS.",
         "summary": "Retrieve information about this API and its relationship with HSDS.",
         "operationId": "getAPIMetaInformation",
+        "tags": [
+          "required"
+        ],
         "responses": {
           "200": {
             "description": "A JSON response providing information about this API.",
@@ -96,6 +117,9 @@
         "description": "Retrieve fully nested service with all related data with id.",
         "summary": "Retrieves a fully nested service with all related data with id.",
         "operationId": "getFullyNestedServiceById",
+        "tags": [
+          "required"
+        ],
         "responses": {
           "200": {
             "description": "A Service matching the {id}, with all related data according to the HSDS Specification for Service.",
@@ -115,6 +139,9 @@
         "description": "Retrieve fully nested service with all related data with id.",
         "summary": "Retrieves paginated listings of services that only have one-to-one fields in them.",
         "operationId": "getPaginatedListOfServices",
+        "tags": [
+          "required"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -178,6 +205,9 @@
         "description": "Retrieve fully nested service with all related data with id.",
         "summary": "Retrieves paginated listings of services that only have one-to-one fields in them.",
         "operationId": "getPaginatedListOfServices",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -254,6 +284,9 @@
         "description": "Full information on taxonomy.",
         "summary": "Retrieves full information on a taxonomy by {id}.",
         "operationId": "getTaxonomyById",
+        "tags": [
+          "optional"
+        ],
         "responses": {
           "200": {
             "description": "Full information on taxonomy.",
@@ -273,6 +306,9 @@
         "description": "Paginated listing of taxonomies.",
         "summary": "Paginated listing of taxonomies.",
         "operationId": "getPaginatedListOfTaxonomies",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -316,6 +352,9 @@
         "description": "Paginated listing of taxonomies.",
         "summary": "Paginated listing of taxonomies.",
         "operationId": "getPaginatedListOfTaxonomies",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -372,6 +411,9 @@
         "description": "Full information on a taxonomy term.",
         "summary": "Full information on a taxonomy term.",
         "operationId": "getPaginatedListOfTaxonomyTerms",
+        "tags": [
+          "optional"
+        ],
         "responses": {
           "200": {
             "description": "Full information on a taxonomy term.",
@@ -391,6 +433,9 @@
         "description": "Full information on a taxonomy term",
         "summary": "Paginated listing of taxonomy terms",
         "operationId": "getTaxonomyTermById",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -455,6 +500,9 @@
         "description": "Full information on a taxonomy term",
         "summary": "Paginated listing of taxonomy terms",
         "operationId": "getTaxonomyTermById",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -532,6 +580,9 @@
         "description": "Fully nested organization with service array that contains simple information which could only contain the service.id.",
         "summary": "Fully nested organization with service array that contains simple information which could only contain the service.id.",
         "operationId": "getOrganizationById",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/full_service"
@@ -556,6 +607,9 @@
         "description": "Paginated list of basic Organization information.",
         "summary": "Paginated list of basic Organization information",
         "operationId": "getPaginatedListOfOrganizations",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -612,6 +666,9 @@
         "description": "Paginated list of basic Organization information.",
         "summary": "Paginated list of basic Organization information",
         "operationId": "getPaginatedListOfOrganizations",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -681,6 +738,9 @@
         "description": "Retrieve fully nested service_at_location with all related data with specified id.",
         "summary": "Retrieve fully nested service_at_location with all related data with specified id.",
         "operationId": "getServiceAtLocationWithNestedDataById",
+        "tags": [
+          "optional"
+        ],
         "responses": {
           "200": {
             "description": "Retrieve fully nested service_at_location with all related data with specified id.",
@@ -700,6 +760,9 @@
         "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them.",
         "summary": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them.",
         "operationId": "getPaginatedListOfServiceAtLocation",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
@@ -765,6 +828,9 @@
         "description": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them.",
         "summary": "Retrieve paginated listings of service_at_location that only have one-to-one fields in them.",
         "operationId": "getPaginatedListOfServiceAtLocation",
+        "tags": [
+          "optional"
+        ],
         "parameters": [
           {
             "$ref": "#/components/parameters/search"

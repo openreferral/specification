@@ -1,0 +1,3 @@
+Code,Title,Description
+"required","Required","This endpoint is REQUIRED by the HSDS API Specification"
+"optional","Optional","This endpoint is OPTIONAL in the HSDS API Specification"
