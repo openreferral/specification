@@ -3,6 +3,36 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
+## [v3.2](https://github.com/openreferral/specification/releases/tag/v3.2)
+
+### New codelists
+
+* Added the [API Endpoint Requirement codelist](https://docs.openreferral.org/en/latest/codelists.html#api-endpoint-requirement)
+
+### Backwards compatible API changes
+
+* New optional `publisher` property on the response schema to `GET /`
+* New optional `data_guide` property on the response schema to `GET /`
+* New `Tag` objects defined in the canonical openapi.json file, which match codes defined in the new API Endpoint Requirement codelist: `required` and `optional`
+  * Applied `required` tag to the following endpoints:
+    * `GET /` 
+    * `GET /services/{id}`
+    * `GET /services`
+  * Applied `optional` tag to the following endpoints:
+    * `GET /taxonomies/{id}`
+    * `GET /taxonomies`
+    * `GET /taxonomy_terms/{id}`
+    * `GET /taxonomy_terms`
+    * `GET /organizations/{id}`
+    * `GET /organizations`
+    * `GET /service_at_locations/{id}`
+    * `GET /service_at_locations`
+    * `POST /services`
+    * `POST /taxonomies`
+    * `POST /taxonomy_terms`
+    * `POST /organizations`
+    * `POST /service_at_locations`
+
 ## [v3.1.1](https://github.com/openreferral/specification/releases/tag/v3.1.1)
 
 * Made `Page.Empty` a required field for API responses
