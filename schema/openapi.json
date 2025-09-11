@@ -904,164 +904,164 @@
           }
         }
       }
-    },
-    "components": {
-      "schemas": {
-        "Page": {
-          "type": "object",
-          "properties": {
-            "total_items": {
-              "type": "integer",
-              "description": "The total number of entities (e.g. services, organizations) returned"
-            },
-            "total_pages": {
-              "type": "integer",
-              "description": "Count of total pages."
-            },
-            "page_number": {
-              "type": "integer",
-              "description": "The number of the current page"
-            },
-            "size": {
-              "type": "integer",
-              "description": "The number of entities in the current page."
-            },
-            "first_page": {
-              "type": "boolean",
-              "description": "A Boolean value indicating if this is the first page"
-            },
-            "last_page": {
-              "type": "boolean",
-              "description": "A Boolean value indicating if this is the last page"
-            },
-            "empty": {
-              "type": "boolean",
-              "description": "A Boolean value indicating if there is an empty result set"
-            }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Page": {
+        "type": "object",
+        "properties": {
+          "total_items": {
+            "type": "integer",
+            "description": "The total number of entities (e.g. services, organizations) returned"
           },
-          "required": [
-            "empty"
-          ]
+          "total_pages": {
+            "type": "integer",
+            "description": "Count of total pages."
+          },
+          "page_number": {
+            "type": "integer",
+            "description": "The number of the current page"
+          },
+          "size": {
+            "type": "integer",
+            "description": "The number of entities in the current page."
+          },
+          "first_page": {
+            "type": "boolean",
+            "description": "A Boolean value indicating if this is the first page"
+          },
+          "last_page": {
+            "type": "boolean",
+            "description": "A Boolean value indicating if this is the last page"
+          },
+          "empty": {
+            "type": "boolean",
+            "description": "A Boolean value indicating if there is an empty result set"
+          }
+        },
+        "required": [
+          "empty"
+        ]
+      }
+    },
+    "parameters": {
+      "search": {
+        "name": "search",
+        "in": "query",
+        "required": false,
+        "description": "Full text search.",
+        "schema": {
+          "type": "string"
         }
       },
-      "parameters": {
-        "search": {
-          "name": "search",
-          "in": "query",
-          "required": false,
-          "description": "Full text search.",
-          "schema": {
-            "type": "string"
-          }
-        },
-        "page": {
-          "name": "page",
-          "in": "query",
-          "required": false,
-          "description": "Page number of paginated result.",
-          "schema": {
-            "type": "integer"
-          }
-        },
-        "per_page": {
-          "name": "per_page",
-          "in": "query",
-          "required": false,
-          "description": "Number of results requested in a single page.",
-          "schema": {
-            "type": "integer"
-          }
-        },
-        "minimal": {
-          "name": "minimal",
-          "in": "query",
-          "required": false,
-          "description": "Return array of just service 'id' and 'modified_date'.  When using this parameter aim to return all services within one call.",
-          "schema": {
-            "type": "boolean"
-          }
-        },
-        "full": {
-          "name": "full",
-          "in": "query",
-          "required": false,
-          "description": "Return a fully nested service, service_at_location, or organization based on the request.",
-          "schema": {
-            "type": "boolean"
-          }
-        },
-        "modified_after": {
-          "name": "modified_after",
-          "in": "query",
-          "required": false,
-          "description": "Return all results modified on or after this datetime.",
-          "schema": {
-            "type": "string",
-            "format": "datetime"
-          }
-        },
-        "taxonomy_term_id": {
-          "name": "taxonomy_term_id",
-          "in": "query",
-          "required": false,
-          "description": "Search for records with particular taxonomy_term.",
-          "schema": {
-            "type": "string"
-          }
-        },
-        "taxonomy_id": {
-          "name": "taxonomy_id",
-          "in": "query",
-          "required": false,
-          "description": "Search for records which contain any term with this taxonomy.",
-          "schema": {
-            "type": "string"
-          }
-        },
-        "organization_id": {
-          "name": "organization_id",
-          "in": "query",
-          "required": false,
-          "description": "Search for services which contain services that that this organization provides.",
-          "schema": {
-            "type": "string"
-          }
-        },
-        "full_service": {
-          "name": "full_service",
-          "in": "query",
-          "required": false,
-          "description": "Fully nested organization with service array that contains full service information.",
-          "schema": {
-            "type": "boolean"
-          }
-        },
-        "postcode": {
-          "name": "postcode",
-          "in": "query",
-          "required": false,
-          "description": "The postcode or zip code of a point used to check service coverage. If `service_area` is available, only return results where the postcode exists within the `service_area`.  If `proximity` is provided, only show results within the proximity from the centroid of the postcode.",
-          "schema": {
-            "type": "string"
-          }
-        },
-        "proximity": {
-          "name": "proximity",
-          "in": "query",
-          "required": false,
-          "description": "Return services that exist within meters from the centroid of the provided postcode",
-          "schema": {
-            "type": "string"
-          }
-        },
-        "format": {
-          "name": "format",
-          "in": "query",
-          "required": false,
-          "description": "Return results in the specified format. Default is `json`. Could be `ndjson` which should stream all the results without pagination.",
-          "schema": {
-            "type": "string"
-          }
+      "page": {
+        "name": "page",
+        "in": "query",
+        "required": false,
+        "description": "Page number of paginated result.",
+        "schema": {
+          "type": "integer"
+        }
+      },
+      "per_page": {
+        "name": "per_page",
+        "in": "query",
+        "required": false,
+        "description": "Number of results requested in a single page.",
+        "schema": {
+          "type": "integer"
+        }
+      },
+      "minimal": {
+        "name": "minimal",
+        "in": "query",
+        "required": false,
+        "description": "Return array of just service 'id' and 'modified_date'.  When using this parameter aim to return all services within one call.",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "full": {
+        "name": "full",
+        "in": "query",
+        "required": false,
+        "description": "Return a fully nested service, service_at_location, or organization based on the request.",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "modified_after": {
+        "name": "modified_after",
+        "in": "query",
+        "required": false,
+        "description": "Return all results modified on or after this datetime.",
+        "schema": {
+          "type": "string",
+          "format": "datetime"
+        }
+      },
+      "taxonomy_term_id": {
+        "name": "taxonomy_term_id",
+        "in": "query",
+        "required": false,
+        "description": "Search for records with particular taxonomy_term.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "taxonomy_id": {
+        "name": "taxonomy_id",
+        "in": "query",
+        "required": false,
+        "description": "Search for records which contain any term with this taxonomy.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "organization_id": {
+        "name": "organization_id",
+        "in": "query",
+        "required": false,
+        "description": "Search for services which contain services that that this organization provides.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "full_service": {
+        "name": "full_service",
+        "in": "query",
+        "required": false,
+        "description": "Fully nested organization with service array that contains full service information.",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "postcode": {
+        "name": "postcode",
+        "in": "query",
+        "required": false,
+        "description": "The postcode or zip code of a point used to check service coverage. If `service_area` is available, only return results where the postcode exists within the `service_area`.  If `proximity` is provided, only show results within the proximity from the centroid of the postcode.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "proximity": {
+        "name": "proximity",
+        "in": "query",
+        "required": false,
+        "description": "Return services that exist within meters from the centroid of the provided postcode",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "format": {
+        "name": "format",
+        "in": "query",
+        "required": false,
+        "description": "Return results in the specified format. Default is `json`. Could be `ndjson` which should stream all the results without pagination.",
+        "schema": {
+          "type": "string"
         }
       }
     }
