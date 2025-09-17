@@ -2,6 +2,8 @@
 -- PostgreSQL database dump
 --
 
+\restrict Y3Pr6YIEkLe040ZZglTkAtqTz4huBsf1CGGzSvAXvQ1e8S2eQHVxrfhNhBKaND9
+
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -2442,4 +2444,6 @@ ALTER TABLE ONLY public.url
 --
 -- PostgreSQL database dump complete
 --
+
+\unrestrict Y3Pr6YIEkLe040ZZglTkAtqTz4huBsf1CGGzSvAXvQ1e8S2eQHVxrfhNhBKaND9
 
