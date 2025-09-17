@@ -62,6 +62,11 @@
                       "type": "string",
                       "description": "A human-readable description of this API feed"
                     },
+                    "data_guide": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "A URI to a human-readable data guide which can support people understanding this dataset."
+                    },
                     "publisher": {
                       "type": "object",
                       "properties": {
@@ -91,11 +96,6 @@
                             "format": "uri"
                           }
                         }
-                      },
-                      "data_guide": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "A URI to a human-readable data guide which can support people understanding this dataset."
                       }
                     }
                   }
