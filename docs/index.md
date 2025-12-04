@@ -58,6 +58,7 @@ Contents:
 
    hsds/overview
    hsds/schema_reference
+   hsds/codelists
    hsds/api_reference
    hsds/serialization
    hsds/identifiers

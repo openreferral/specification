@@ -35,10 +35,6 @@ The committee consists of people with a track record of contributing input to th
 
 The committee also can advise Open Referral’s Lead Organizer on issues related to the Open Referral community at large, and can make recommendations as to investments in development of tools and other tech that can support adoption and use of HSDS.
 
-#### As of Spring 2024, the Open Referral Technical Committee is in formation
-
-Upon formation of this body, the body will manage itself – beginning by writing a charter that establishes: how people are added/removed, how decisions will be made, how the body can be dissolved, etc. This can be authored by the founding members and reviewed by the technical steward, and must be approved by the lead organizer and fiscal sponsor. 
-
 ### The process for requesting changes to HSDS is open to anyone.
 
 Input on Open Referral's specifications and materials can be shared through several channels: our [Github queue](https://github.com/openreferral/specification/issues), our [Community Forum](https://forum.openreferral.org/), and occasional community Assemblies. The Technical Steward is responsible for receiving and synthesizing such input from across channels for review by the Technical Committee. The Technical Committee members are empowered to propose specific changes to the specifications; proposed changes that are met with rough consensus (i.e. most support and nobody objects) are acknowledged in the Forum advanced to the Technical Steward for codification. Upon receiving all outputs from the Technical Committee, the Technical Steward develops a fully specified proposal for a version upgrade, which is shared with the community for a Request for Comment period (usually of about two weeks). The Technical Steward receives any additional input through this period, and can call for additional meetings of the Technical Committee to seek consensus on additional changes as necessary.
