@@ -32,7 +32,7 @@ The contents of the *About the Open Referral Initiative* section may be of inter
 
 **Open Referral’s ecosystem** includes a range of working open source software applications that can be freely redeployed to work with HSDS-compatible data and/or APIs. Many of these tools can be found in [our Github organization](http://github.com/openreferral).
 
-Learn more about the why's, how's, and who's of the Open Referral Initiative on [our website](https://openreferral.org/about/organizational-overview/), and browse all of our Project Documents on [Google Drive](https://drive.google.com/drive/folders/0B-5CZ4ZLjTHqfk12WTFUbVk1NjBYMjRaZTlZRlN1UjhWMS1MN0tLV3Q4ejY3TWpOYWwwVDg?resourcekey=0-V8QRlJu4Jlrw40yN1U_TKQ&usp=sharing)
+Learn more about the why's, how's, and who's of the Open Referral Initiative in [our Public Documentation](https://docs.google.com/document/d/17cJxF_1P6fafcsFJQERFQifKKc_kPbAKmAXwe2LWDcI/edit?usp=drive_web), and browse all of our Project Documents on [Google Drive](https://drive.google.com/drive/folders/0B-5CZ4ZLjTHqfk12WTFUbVk1NjBYMjRaZTlZRlN1UjhWMS1MN0tLV3Q4ejY3TWpOYWwwVDg?resourcekey=0-V8QRlJu4Jlrw40yN1U_TKQ&usp=sharing)
 
 **Join Open Referral's Community of Practice**
 
@@ -45,6 +45,8 @@ Learn more about the why's, how's, and who's of the Open Referral Initiative on 
 Questions not answered here? Suggestions for us?
 
 [Email us!](mailto:info@openreferral.org) We can discuss directly, and/or invite you to join our [forum](https://forum.openreferral.org) where you can engage in the various topics and ongoing discussions surrounding Open Referral and HSDS.
+
+We also have a [Slack team](https://openreferral.org/get-involved/join-our-slack-team/), which isn't used all that often but feel free to request an invite and chat there.
 
 ## Site contents
 
