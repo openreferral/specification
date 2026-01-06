@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/organization_identifier.json",
     "name": "organization_identifier",
     "path": "organization_identifiers.csv",
     "description": "The details of the third party identifiers for organizations, such as: company registration number, charity number, tax registration number.",

@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/required_document.json",
     "name": "required_document",
     "path": "required_documents.csv",
     "description": "The details of any documents that are required in order to access or use services.",

@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/unit.json",
   "name": "unit",
   "path": "units.csv",
   "description": "The details of units which are used to measure service capacity.",

@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/contact.json",
     "name": "contact",
     "path": "contacts.csv",
     "description": "The details of the named contacts for services and organizations.",

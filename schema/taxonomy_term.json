@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/taxonomy_term.json",
     "name": "taxonomy_term",
     "path": "taxonomy_terms.csv",
     "description": "Each service can be categorized according to one or more taxonomy terms. The taxonomy_term object contains a list of taxonomy terms, their names, and, for hierarchical taxonomies, their structure.",

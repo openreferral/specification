@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/location.json",
     "name": "location",
     "path": "locations.csv",
     "description": "The locations where organizations operate. Locations may be virtual, and one organization may have many locations.",

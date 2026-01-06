@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/language.json",
     "name": "language",
     "path": "languages.csv",
     "description": "The languages that are spoken at locations or services. This does not include languages which can only be used with interpretation.",

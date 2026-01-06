@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/attribute.json",
   "name": "attribute",
   "path": "attributes.csv",
   "description": "A link between a service and one or more classifications that describe the nature of the service provided.",

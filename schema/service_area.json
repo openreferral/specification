@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/service_area.json",
     "name": "service_area",
     "path": "service_areas.csv",
     "description": "The details of the geographic area for which a service is available.",

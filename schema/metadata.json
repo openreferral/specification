@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/metadata.json",
     "name": "metadata",
     "path": "metadata.csv",
     "description": "A record of the changes that have been made to the data in order to maintain provenance information.",

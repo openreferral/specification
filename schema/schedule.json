@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/schedule.json",
     "name": "schedule",
     "path": "schedules.csv",
     "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",

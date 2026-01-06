@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/openreferral/specification/refs/heads/3.2/schema/address.json",
     "name": "address",
     "path": "addresses.csv",
     "description": "The addresses of locations where organizations operate.",
