@@ -20,7 +20,7 @@ With this set of insights, we drafted an initial version of the specification th
 Finally, we conducted initial tests of HSDS by using it to transform resource directory databases from pilot projects around the country.
 
 ## Who is the HSDS for?
-The primary users of HSDS are data administrators (who are responsible for managing systems that strive to meet the needs of other users). [Read our user personas here.](../about/users-and-personas)
+The primary users of HSDS are data administrators (who are responsible for managing systems that strive to meet the needs of other users). [Read our user personas here.](https://docs.openreferral.org/en/latest/about/users-and-personas.html)
 
 We define ‘data administrator’ broadly: while some data admins will be sophisticated managers of enterprise-grade referral systems, the vast majority of people who produce resource directory data are working with simpler technology such as Access, Excel, or even Word. Our goal is for HSDS to be usable by both the 2-1-1 resource data specialist and the IT volunteer who is helping out the neighborhood food pantry.
 
@@ -29,7 +29,7 @@ First, HSDS identifies a vocabulary of terms that describe what a service is, th
 
 On a more technical level, HSDS also includes a [logical model](serialization) that diagrams the relationships between these terms.
 
-Finally, HSDS provides guidance for structuring and packaging data so that it can be published on the web and/or exchanged between systems. See our [Github].(https://github.com/codeforamerica/openreferral/specification)
+Finally, HSDS provides guidance for structuring and packaging data so that it can be published on the web and/or exchanged between systems. See [the Guidance section on our Documentation site](https://docs.openreferral.org/en/latest/hsds/mapping_guidance.html).
 
 ## What’s not in the HSDS?
 HSDS does not attempt to describe every type of information that might be relevant to people working with resource directory data. We have attempted to maintain a strict focus on specifying only relevant factual attributes that are shared by most services. That means we excluded many kinds of information that are unique to specific kinds of services (such as the accreditation of child care providers, or the availability of beds in a shelter).
@@ -41,7 +41,7 @@ Finally, HSDS does not specify any information regarding how referrals actually 
 That said, this model can and should be extended! Users can expand HSDS to meet their own needs, in their own systems. Groups of stakeholders from particular service domains (such as legal aid) or geographies (such as the UK) can develop extended ‘profiles’ that are tailored to their situation. In future iterations of the Open Referral process, extensions created and documented by members of our community can then be considered for inclusion as part of the core specs.
 
 ## What is the format of HSDS? Why JSON? 
-Version 3.0 of HSDS has established JSON as the primary standard format. (The initial versions of HSDS used the CSV format, with multiple tables wrapped by a JSON datapackage.) This change brings many benefits to the standard, which are detailed [here](https://docs.google.com/document/d/1oUSI4NLvdKG3Eb1TyFq_VOaAuhSoMg9zRUnmgltTMAg/edit#) alongside a discussion of risks and mitigations of those risks.
+Version 3.0 of HSDS established JSON as the primary standard format. (The initial versions of HSDS used the CSV format, with multiple tables wrapped by a JSON datapackage.) 
 
 The decision to change the primary format to JSON was the result of a participatory decision-making process, involving stakeholders from across our network, led by a volunteer working group and implemented by Open Data Service Cooperative.
 
@@ -98,7 +98,7 @@ If you're developing a Frictionless Data Package publication, then it's fine and
 ## How have the Human Service Data API protocols evolved? 
 In 2017, Open Referral developed a set of API protocols [known as the Human Service Data API Suite (HSDA)](https://openreferral.org/meet-the-human-service-data-api-protocols/) which corresponded with a now-deprecated version of HSDS (1.1). 
 
-With HSDS 3.0, we have consolidated these API protocols into the main specifications themselves – to simplify our products and promote an API-forward strategy. The primary format for HSDS is now JSON Schema, which can aid implementers in deploying or standardizing their own APIs for resource directory data access and exchange. 
+With HSDS 3.0, [we consolidated these API protocols into the main specifications themselves](https://openreferral.org/introducing-version-3-0-of-the-human-service-data-specifications/) – to simplify our products and promote an API-forward strategy. The primary format for HSDS is now JSON Schema, which can aid implementers in deploying or standardizing their own APIs for resource directory data access and exchange. 
 
 ## How does Open Referral handle eligibility criteria?
 Good question. [Our schema has a field for `eligibility_description` of a `service.`](schema_reference.md#service) Beyond that, we don't currently specify a standardized method for structuring eligibility criteria. The kinds of eligibility rules are so variable and often complex and nuanced that we have not tried to develop a standardized set of them. (Expect future cycles of the Open Referral initiative to take on these issues more directly; however, for now we are merely looking to learn from the different ways in which various users address these common problems.)
