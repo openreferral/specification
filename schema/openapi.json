@@ -759,7 +759,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/compiled/service.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.0/schema/compiled/service_at_location.json"
                 }
               }
             }

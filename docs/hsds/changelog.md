@@ -3,6 +3,12 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
+## [v3.2.1](https://github.com/openreferral/specification/releases/tag/v3.2.1)
+
+### Bugfixes
+
+* Fixed a bug where the `GET /service_at_locations/{id}` endpoint was declared as returning an instance of `service.json`. It now correctly declares that it returns an instance of `service_at_location.json`.
+
 ## [v3.2](https://github.com/openreferral/specification/releases/tag/v3.2)
 
 ### New codelists
