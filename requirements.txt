@@ -125,7 +125,7 @@ pyyaml==6.0
     # via
     #   myst-parser
     #   sphinxcontrib-openapi
-requests==2.31.0
+requests==2.32.4
     # via
     #   check-jsonschema
     #   hsds-schema-tools
