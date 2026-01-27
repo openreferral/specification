@@ -129,4 +129,10 @@ We are seeking sponsorship to support long-term institutional development of Ope
 
 ## What is the licensing on this project?
 The [Human Services Data Specification](https://github.com/openreferral/specification/blob/master/LICENSE) is now available as [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## My question isn’t here. How can I ask it?
+If you have a question about Open Referral's structure or strategy, [there is another FAQ section on our organization website](https://openreferral.org/faq/) about organizational topics, which may be of use. 
+
+We’d love to hear from you!  you can reach out to us via [our Community Forum](https://forum.openreferral.org/) or email info@openreferral.org 
+
   
