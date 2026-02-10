@@ -3,6 +3,13 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
+
+## [v3.1.2](https://github.com/openreferral/specification/releases/tag/v3.1.2)
+
+### Bugfixes
+
+* Fixed `$ref` values inside `openapi.json` which were pointing to an older version of HSDS schemas
+
 ## [v3.1.1](https://github.com/openreferral/specification/releases/tag/v3.1.1)
 
 * Made `Page.Empty` a required field for API responses
