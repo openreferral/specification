@@ -3,6 +3,13 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
+## [v3.2.2](https://github.com/openreferral/specification/releases/tag/v3.2.2)
+
+* Fixed a big where the `openapi.json` file was referring to schemas from the HSDS 3.0 version
+
+### Bugfixes
+
+
 ## [v3.2.1](https://github.com/openreferral/specification/releases/tag/v3.2.1)
 
 ### Bugfixes
