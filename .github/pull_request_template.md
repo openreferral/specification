@@ -15,3 +15,8 @@
 If you have edited any schema files:
 
 - [ ] Run `hsds_schema.py` to update `datapackage.json` and example files
+
+If you are working towards a new MINOR release:
+
+- [ ] Update any `$id` values in schema files where appropriate
+- [ ] Update the `$ref` values in `openapi.json`
