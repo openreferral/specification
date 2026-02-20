@@ -133,8 +133,6 @@ referencing==0.35.1
     #   jsonschema
     #   jsonschema-specifications
 regress==2024.11.1
-    # via check-jsonschema
-    # via
     #   check-jsonschema
     #   hsds-schema-tools
     #   sphinx
