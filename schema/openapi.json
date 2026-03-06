@@ -446,7 +446,7 @@
       "post": {
         "description": "Full information on a taxonomy term",
         "summary": "Paginated listing of taxonomy terms",
-        "operationId": "getTaxonomyTermById",
+        "operationId": "getPaginatedListOfTaxonomyTerms",
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
