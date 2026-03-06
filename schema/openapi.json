@@ -359,7 +359,7 @@
       "get": {
         "description": "Full information on a taxonomy term.",
         "summary": "Full information on a taxonomy term.",
-        "operationId": "getPaginatedListOfTaxonomyTerms",
+        "operationId": "getTaxonomyTermById",
         "responses": {
           "200": {
             "description": "Full information on a taxonomy term.",
@@ -378,7 +378,7 @@
       "get": {
         "description": "Full information on a taxonomy term",
         "summary": "Paginated listing of taxonomy terms",
-        "operationId": "getTaxonomyTermById",
+        "operationId": "getPaginatedListOfTaxonomyTerms",
         "parameters": [
           {
             "$ref": "#/components/parameters/search"
