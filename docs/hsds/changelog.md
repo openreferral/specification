@@ -3,6 +3,12 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
+## [v3.1.3](https://github.com/openreferral/specification/releases/tag/v3.1.3)
+
+### Bugfixes
+
+* **Refactored Schema Composition:** Standardized paginated response models by moving `allOf` to the root level. This resolves validation failures caused by sibling `properties` conflicts in tools like Spectral and Swagger Editor.
+* **Fixed Endpoint Naming:** Corrected the inverted `operationId` values for `/taxonomy_terms` and `/taxonomy_terms/{id}` to prevent incorrect client SDK method generation.
 
 ## [v3.1.2](https://github.com/openreferral/specification/releases/tag/v3.1.2)
 
