@@ -438,7 +438,7 @@
       "get": {
         "description": "Full information on a taxonomy term.",
         "summary": "Full information on a taxonomy term.",
-        "operationId": "getPaginatedListOfTaxonomyTerms",
+        "operationId": "getTaxonomyTermById",
         "tags": [
           "optional"
         ],
@@ -460,7 +460,7 @@
       "get": {
         "description": "Full information on a taxonomy term",
         "summary": "Paginated listing of taxonomy terms",
-        "operationId": "getTaxonomyTermById",
+        "operationId": "getPaginatedListOfTaxonomyTerms",
         "tags": [
           "optional"
         ],
