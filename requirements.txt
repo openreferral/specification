@@ -111,7 +111,7 @@ pandas==1.5.3
     # via flatterer
 picobox==2.2.0
     # via sphinxcontrib-openapi
-pygments==2.15.0
+pygments==2.20.0
     # via
     #   sphinx
     #   sphinx-mdinclude
@@ -127,12 +127,14 @@ pyyaml==6.0
     # via
     #   myst-parser
     #   sphinxcontrib-openapi
-requests==2.32.4
 referencing==0.35.1
     # via
     #   jsonschema
     #   jsonschema-specifications
 regress==2024.11.1
+    # via check-jsonschema
+requests==2.32.4
+    # via
     #   check-jsonschema
     #   hsds-schema-tools
     #   sphinx
