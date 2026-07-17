@@ -3,6 +3,21 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
+## [v3.3](https://github.com/openreferral/specification/releases/tag/v3.3)
+
+### Backwards compatible schema changes
+
+* For `schedule`
+  * New optional property `group`
+* For `service`
+  * New optional property `operating_hours`
+  * New optional property `events`
+
+### Deprecations
+
+* For `service`
+  * `schedules` has been deprecated in favor of `operating_hours` and `events`
+
 ## [v3.2.3](https://github.com/openreferral/specification/releases/tag/v3.2.3)
 
 ### Bugfixes
