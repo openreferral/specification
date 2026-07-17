@@ -193,7 +193,7 @@ sphinxcontrib-openapi==0.8.1
     # via -r requirements.in
 sphinxcontrib-opendataservices==0.5.0
     # via -r requirements.in
-sphinxcontrib-opendataservices-jsonschema==0.5.1
+sphinxcontrib-opendataservices-jsonschema @ git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices-jsonschema.git@ce81aa6b06f212fb6d4578eec6f275c308c0da3e
     # via
     #   -r requirements.in
     #   sphinxcontrib-opendataservices

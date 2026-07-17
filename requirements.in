@@ -12,6 +12,10 @@ myst-parser<0.18
 erd-from-json-table-schema
 # sphinxcontrib jsonschema
 sphinxcontrib-opendataservices-jsonschema
+# Use a pinned commit for this to support the `deprecated` keyword
+# The docs will fail to build using the default branch of sphinxcontrib-opendataservices-jsonschema due to it not supporting the boolean version of `deprecated`
+# Thankfully @duncandewhurst has already done the work for this, although the PR has been blocked.
+#git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices-jsonschema.git@ce81aa6b06f212fb6d4578eec6f275c308c0da3e#egg=sphinxcontrib-opendataservices-jsonschema
 # sphinxcontrib ODSC
 sphinxcontrib-opendataservices
 sphinxcontrib_openapi==0.8.1
