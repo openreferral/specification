@@ -174,7 +174,8 @@
           "closes_at": "18:00:00",
           "schedule_link": "http://example.com",
           "attending_type": "You can attend this service in-person or remotely via video conferencing",
-          "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
+          "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400",
+          "group": "holiday-schedule-2026"
         }
       ]
     }
@@ -263,7 +264,58 @@
           "closes_at": "18:00:00",
           "schedule_link": "http://example.com",
           "attending_type": "You can attend this service in-person or remotely via video conferencing",
-          "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
+          "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400",
+          "group": "holiday-schedule-2026"
+        }
+      ],
+      "operating_hours": [
+        {
+          "id": "48102e86-bb50-41c4-8f1e-e269368c41d1",
+          "valid_from": "2005-01-01",
+          "valid_to": "2005-01-01",
+          "dtstart": "2005-01-01",
+          "timezone": 3,
+          "until": "2005-01-01",
+          "count": 3,
+          "wkst": "TU",
+          "freq": "WEEKLY",
+          "interval": 1,
+          "byday": "TH,FR",
+          "byweekno": "41,42",
+          "bymonthday": "2,3,4",
+          "byyearday": "2,3,4",
+          "description": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
+          "opens_at": "10:00:00",
+          "closes_at": "18:00:00",
+          "schedule_link": "http://example.com",
+          "attending_type": "You can attend this service in-person or remotely via video conferencing",
+          "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400",
+          "group": "holiday-schedule-2026"
+        }
+      ],
+      "events": [
+        {
+          "id": "48102e86-bb50-41c4-8f1e-e269368c41d1",
+          "valid_from": "2005-01-01",
+          "valid_to": "2005-01-01",
+          "dtstart": "2005-01-01",
+          "timezone": 3,
+          "until": "2005-01-01",
+          "count": 3,
+          "wkst": "TU",
+          "freq": "WEEKLY",
+          "interval": 1,
+          "byday": "TH,FR",
+          "byweekno": "41,42",
+          "bymonthday": "2,3,4",
+          "byyearday": "2,3,4",
+          "description": "The service is available from 10 am to 6pm weekdays. The service is not available on public holidays.",
+          "opens_at": "10:00:00",
+          "closes_at": "18:00:00",
+          "schedule_link": "http://example.com",
+          "attending_type": "You can attend this service in-person or remotely via video conferencing",
+          "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400",
+          "group": "holiday-schedule-2026"
         }
       ],
       "service_areas": [
@@ -354,7 +406,8 @@
               "closes_at": "18:00:00",
               "schedule_link": "http://example.com",
               "attending_type": "You can attend this service in-person or remotely via video conferencing",
-              "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
+              "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400",
+              "group": "holiday-schedule-2026"
             }
           ],
           "location": {
@@ -463,7 +516,8 @@
                 "closes_at": "18:00:00",
                 "schedule_link": "http://example.com",
                 "attending_type": "You can attend this service in-person or remotely via video conferencing",
-                "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400"
+                "notes": "Some of our staff will be unavailable during their lunch break which may be any 30 minute period between 1200 and 1400",
+                "group": "holiday-schedule-2026"
               }
             ]
           }
