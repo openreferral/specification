@@ -22524,7 +22524,11 @@
                   "id"
                 ]
               },
-              "deprecated": true
+              "deprecated": true,
+              "deprecatedDetails": {
+                "deprecatedVersion": "3.3",
+                "description": "This field is deprecated in favor of `operating_hours` and `events` to promote a semantic distinction between operating hours and events."
+              }
             },
             "operating_hours": {
               "name": "operating_hours",
