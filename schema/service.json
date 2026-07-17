@@ -288,6 +288,25 @@
       "description": "The details of when a service or location is open. Entries are RFC 5545 RRULES.",
       "items": {
         "$ref": "schedule.json"
+      },
+      "deprecated": true
+    },
+    "operating_hours": {
+      "name": "operating_hours",
+      "type": "array",
+      "title": "Operating Hours",
+      "description": "An array of `Schedule` objects which detail when a service operates",
+      "items": {
+        "$ref": "schedule.json"
+      }
+    },
+    "events": {
+      "name": "events",
+      "type": "array",
+      "title": "Events",
+      "description": "An array of `Schedule ` objects which give details of events associated with the Service. These may or may not be aligned with the Service's regular operating hours.",
+      "items": {
+        "$ref": "schedule.json"
       }
     },
     "service_areas": {
