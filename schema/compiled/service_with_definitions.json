@@ -308,7 +308,7 @@
       "name": "events",
       "type": "array",
       "title": "Events",
-      "description": "An array of `Schedule ` objects which give details of events associated with the Service. These may or may not be aligned with the Service's regular operating hours.",
+      "description": "An array of `Schedule` objects which give details of events associated with the Service. These may or may not be aligned with the Service's regular operating hours.",
       "items": {
         "$ref": "#/definitions/schedule"
       }
