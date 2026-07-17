@@ -131,7 +131,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/service.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/service.json"
                 }
               }
             }
@@ -197,7 +197,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/service_list.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/service_list.json"
                           }
                         }
                       },
@@ -269,7 +269,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/service_list.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/service_list.json"
                           }
                         }
                       },
@@ -310,7 +310,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/taxonomy.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/taxonomy.json"
                 }
               }
             }
@@ -356,7 +356,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/taxonomy.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/taxonomy.json"
                           }
                         }
                       },
@@ -408,7 +408,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/taxonomy.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/taxonomy.json"
                           }
                         }
                       },
@@ -449,7 +449,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/taxonomy_term.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/taxonomy_term.json"
                 }
               }
             }
@@ -516,7 +516,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/taxonomy_term.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/taxonomy_term.json"
                           }
                         }
                       },
@@ -589,7 +589,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/taxonomy_term.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/taxonomy_term.json"
                           }
                         }
                       },
@@ -635,7 +635,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/organization.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/organization.json"
                 }
               }
             }
@@ -694,7 +694,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/organization_list.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/organization_list.json"
                           }
                         }
                       },
@@ -759,7 +759,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/organization_list.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/organization_list.json"
                           }
                         }
                       },
@@ -800,7 +800,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/service_at_location.json"
+                  "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/service_at_location.json"
                 }
               }
             }
@@ -868,7 +868,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/service_at_location_list.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/service_at_location_list.json"
                           }
                         }
                       },
@@ -942,7 +942,7 @@
                         "contents": {
                           "type": "array",
                           "items": {
-                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.2/schema/compiled/service_at_location_list.json"
+                            "$ref": "https://raw.githubusercontent.com/openreferral/specification/3.3/schema/compiled/service_at_location_list.json"
                           }
                         }
                       },
