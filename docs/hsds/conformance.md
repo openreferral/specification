@@ -17,7 +17,7 @@ A publication MAY be conformant either to HSDS as specified by this reference or
 2. It MUST NOT use terms outside of this specification where terms from this specification would suffice.
 3. It MUST use terms from this specification in a manner that is consistent with the semantics of those terms as defined in this specification.
 4. It MAY use terms from outside of this specification where this specification's terms are insufficient.[^additional-fields]
-5. If the publication serializes to JSON, then it MUST validate against the this specification's [JSON Schemas](https://github.com/openreferral/specification/tree/3.0/schema).
+5. If the publication serializes to JSON, then it MUST validate against the this specification's [JSON Schemas](https://github.com/openreferral/specification/tree/3.3/schema).
 
 (The above was inspired by the [Popolo Project](https://www.popoloproject.com/specs/#conformance)'s conformance section)
 
@@ -37,7 +37,7 @@ HSDS Profiles provide a method of building upon and tailoring the core HSDS Sche
 
 Each Profile's specification and rules are different, so we outline the high-level rules for conformance to a HSDS Profile here.
 
-1. A publication conforming to a HSDS Profile MUST declare the canonical URI of the Profile as specified in the [API Specification](https://github.com/openreferral/specification/blob/3.0/schema/openapi.json).
+1. A publication conforming to a HSDS Profile MUST declare the canonical URI of the Profile as specified in the [API Specification](https://github.com/openreferral/specification/blob/3.3/schema/openapi.json).
 2. A publication conforming to a HSDS Profile MAY only use a subset of that Profile's specified terms.
 3. It MUST NOT use terms outside of that Profile's specification where terms from the Profile's specification would suffice.
 4. It MUST use terms from the Profile's specification in a manner that is consistent with the semantics of those terms defined in the Profile.

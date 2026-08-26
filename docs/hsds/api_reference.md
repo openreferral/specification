@@ -7,7 +7,7 @@ Unlike with the HSDS Schemas where we can provide canonical JSON Schema represen
 
 To overcome this limitation, the API specification on this page uses the key words "MUST", "REQUIRED" and "OPTIONAL" in accordance with [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) to describe whether each endpoint is required by the API Specification. This is used alongside the details of the canonical OpenAPI formatted reference file to measure compliance with the API Specification.
 
-The current canonical HSDS API specification in OpenAPI 3.1 format is available at the following URL: [https://raw.githubusercontent.com/openreferral/specification/3.2/schema/openapi.json](https://raw.githubusercontent.com/openreferral/specification/3.2/schema/openapi.json)
+The current canonical HSDS API specification in OpenAPI 3.1 format is available at the following URL: [https://raw.githubusercontent.com/openreferral/specification/3.3/schema/openapi.json](https://raw.githubusercontent.com/openreferral/specification/3.3/schema/openapi.json)
 
 For those more familiar with tools such as SwaggerUI, we provide [a Swagger UI representation](../extras/openapi.html). Readers should note that due to incompatibilities between Swagger UI and OpenAPI 3.1, the file powering the Swagger UI representation is compiled from the canonical HSDS API specification file. Therefore if there are any conflicts between the Swagger UI representation and the specification defined on this API Reference page, then *this specification takes precedence*.
 
