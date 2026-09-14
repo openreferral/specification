@@ -78,6 +78,10 @@ Contents:
    hsds/using_profiles
    hsds/field_guidance
    hsds/database_schemas
+   guidance/validating-compliance
+   guidance/creating-profiles
+   guidance/hsds-profile-cookbook
+   guidance/using-hsds-profile-wizard
 
 .. toctree::
    :maxdepth: 1

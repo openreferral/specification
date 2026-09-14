@@ -3,7 +3,6 @@ Creating Profiles
 
 ```{admonition} This content is not normative
 This page is not a normative part of the Standard. If there is any ambiguity, the normative [Profile Reference](../hsds/profiles) takes precedence.
-
 ```
 
 In HSDS, a Profile is a derivative of the specification which has been tailored to meet specific needs. HSDS is an international standard and while it has been designed to accommodate as many use cases as possible, different contexts have different needs. These contexts could be national or geographic, sector-specific, or simply different scenarios of use.
