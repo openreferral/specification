@@ -43,7 +43,7 @@ Commands:
   init       Initialise a new Profile
 ```
 
-# Setting up your Profile project directory
+## Setting up your Profile project directory
 
 If you haven't done so already, create a new empty directory for your Profile. Going forward, this tutorial assumes all commands are run inside of the directory for your new profile.
 
