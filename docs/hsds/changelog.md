@@ -3,6 +3,12 @@ Changelog
 
 This page provides the list of changes that have been made to the HSDS schema.
 
+## [v3.3.2](https://github.com/openreferral/specification/releases/tag/v3.3.2)
+
+### Bugfixes
+
+* Fixed errors in compiled schemas (see [forum thread](https://forum.openreferral.org/t/compiled-schemas-considered-harmful/839/))
+
 ## [v3.3.1](https://github.com/openreferral/specification/releases/tag/v3.3.1)
 
 ### Bugfixes
