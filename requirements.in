@@ -11,15 +11,16 @@ sphinx-rtd-theme
 myst-parser<0.18
 erd-from-json-table-schema
 # sphinxcontrib jsonschema
-sphinxcontrib-opendataservices-jsonschema
+#sphinxcontrib-opendataservices-jsonschema
 # Use a pinned commit for this to support the `deprecated` keyword
 # The docs will fail to build using the default branch of sphinxcontrib-opendataservices-jsonschema due to it not supporting the boolean version of `deprecated`
 # Thankfully @duncandewhurst has already done the work for this, although the PR has been blocked.
-#git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices-jsonschema.git@ce81aa6b06f212fb6d4578eec6f275c308c0da3e#egg=sphinxcontrib-opendataservices-jsonschema
+git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices-jsonschema.git@ce81aa6b06f212fb6d4578eec6f275c308c0da3e#egg=sphinxcontrib-opendataservices-jsonschema
 # sphinxcontrib ODSC
 sphinxcontrib-opendataservices
 sphinxcontrib_openapi==0.8.1
 sphinx-design
-git+https://github.com/openreferral/hsds_schema_tools
+# Pin the HSDS Schema tools to the commit removing the compiled schemas from the docs-all command, this is because it's not properly versioned upstream so we need to work around this.
+git+https://github.com/openreferral/hsds_schema_tools.git@0803cee97173170b6217df2f3e8ce787b31ee9a9
 jsonschema[format]
 check-jsonschema
