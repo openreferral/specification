@@ -231,6 +231,12 @@
       "items": {
         "$ref": "metadata.json"
       }
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "$ref": "service.json"
+      }
     }
   },
   "required": [
