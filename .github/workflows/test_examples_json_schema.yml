@@ -13,4 +13,10 @@ jobs:
         architecture: x64
     - run: sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config
     - run: pip install -r requirements.txt
-    - run: ./validate_examples_json_schema.sh
+    #- run: ./validate_examples_json_schema.sh
+    - run: check-jsonschema --schemafile schema/location.json examples/location.json
+    - run: check-jsonschema --schemafile schema/organization.json examples/organization_full.json
+    - run: check-jsonschema --schemafile schema/service_at_location.json examples/service_at_location_full.json
+    - run: check-jsonschema --schemafile schema/service.json examples/service_full.json
+    - run: check-jsonschema --schemafile schema/taxonomy.json examples/taxonomy.json
+    - run: check-jsonschema --schemafile schema/taxonomy_term.json examples/taxonomy_term.json
